@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='566.93pt' height='566.93pt' viewBox='0 0 566.93 566.93'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw1NjYuOTN8MC4wMHw1NjYuOTM='>
+    <rect x='0.00' y='0.00' width='566.93' height='566.93' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw1NjYuOTN8MC4wMHw1NjYuOTM=)'>
+<rect x='0.000000000000064' y='0.00' width='566.93' height='566.93' style='stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMTguMjJ8NTYxLjQ1fDQ1LjA1fDUyOC45Mw=='>
+    <rect x='18.22' y='45.05' width='543.23' height='483.88' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMTguMjJ8NTYxLjQ1fDQ1LjA1fDUyOC45Mw==)'>
+<rect x='18.22' y='45.05' width='543.23' height='483.88' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<text x='289.83' y='317.46' text-anchor='middle' style='font-size: 85.36px; fill: #FDE725; font-family: Helvetica Neue;' textLength='123.24px' lengthAdjust='spacingAndGlyphs'>TEI</text>
+<text x='271.73' y='442.77' text-anchor='middle' style='font-size: 64.46px; fill: #1FA188; font-family: Helvetica Neue;' textLength='131.36px' lengthAdjust='spacingAndGlyphs'>XML</text>
+<text x='332.42' y='190.55' text-anchor='middle' style='font-size: 41.33px; fill: #3D4D8A; font-family: Helvetica Neue;' textLength='141.57px' lengthAdjust='spacingAndGlyphs'>Internet</text>
+<text x='398.68' y='320.18' text-anchor='middle' style='font-size: 32.98px; fill: #463480; font-family: Helvetica Neue;' textLength='54.92px' lengthAdjust='spacingAndGlyphs'>GIS</text>
+<text x='170.26' y='280.67' text-anchor='middle' style='font-size: 32.45px; fill: #46327E; font-family: Helvetica Neue;' textLength='70.29px' lengthAdjust='spacingAndGlyphs'>OCR</text>
+<text x='405.31' y='255.29' text-anchor='middle' style='font-size: 31.69px; fill: #46307E; font-family: Helvetica Neue;' textLength='61.00px' lengthAdjust='spacingAndGlyphs'>NLP</text>
+<text x='179.68' y='335.94' text-anchor='middle' style='font-size: 30.11px; fill: #472C7A; font-family: Helvetica Neue;' textLength='46.79px' lengthAdjust='spacingAndGlyphs'>API</text>
+<text x='210.19' y='195.51' text-anchor='middle' style='font-size: 29.52px; fill: #472A7A; font-family: Helvetica Neue;' textLength='57.94px' lengthAdjust='spacingAndGlyphs'>RDF</text>
+<text x='420.95' y='379.01' text-anchor='middle' style='font-size: 29.28px; fill: #472A7A; font-family: Helvetica Neue;' textLength='92.20px' lengthAdjust='spacingAndGlyphs'>Python</text>
+<text x='137.85' y='384.46' text-anchor='middle' style='font-size: 24.77px; fill: #481F70; font-family: Helvetica Neue;' textLength='78.44px' lengthAdjust='spacingAndGlyphs'>GitHub</text>
+<text x='459.03' y='304.26' text-anchor='middle' style='font-size: 23.76px; fill: #481C6E; font-family: Helvetica Neue;' textLength='40.92px' lengthAdjust='spacingAndGlyphs'>DOI</text>
+<text x='126.20' y='213.63' text-anchor='middle' style='font-size: 23.02px; fill: #481B6D; font-family: Helvetica Neue;' textLength='69.92px' lengthAdjust='spacingAndGlyphs'>Voyant</text>
+<text x='374.92' y='432.11' text-anchor='middle' style='font-size: 22.71px; fill: #481B6D; font-family: Helvetica Neue;' textLength='30.68px' lengthAdjust='spacingAndGlyphs'>IIIF</text>
+<text x='119.42' y='337.18' text-anchor='middle' style='font-size: 22.41px; fill: #481A6C; font-family: Helvetica Neue;' textLength='45.22px' lengthAdjust='spacingAndGlyphs'>LOD</text>
+<text transform='translate(467.65,208.79) rotate(-90)' text-anchor='middle' style='font-size: 22.25px; fill: #481A6C; font-family: Helvetica Neue;' textLength='59.30px' lengthAdjust='spacingAndGlyphs'>Gephi</text>
+<text x='314.89' y='126.40' text-anchor='middle' style='font-size: 22.09px; fill: #48196B; font-family: Helvetica Neue;' textLength='45.40px' lengthAdjust='spacingAndGlyphs'>TXM</text>
+<text x='218.10' y='121.78' text-anchor='middle' style='font-size: 21.93px; fill: #48196B; font-family: Helvetica Neue;' textLength='101.91px' lengthAdjust='spacingAndGlyphs'>stylometry</text>
+<text x='393.62' y='124.56' text-anchor='middle' style='font-size: 20.11px; fill: #481568; font-family: Helvetica Neue;' textLength='77.85px' lengthAdjust='spacingAndGlyphs'>SPARQL</text>
+<text x='82.80' y='256.65' text-anchor='middle' style='font-size: 19.22px; fill: #471366; font-family: Helvetica Neue;' textLength='63.37px' lengthAdjust='spacingAndGlyphs'>XQuery</text>
+<text x='148.70' y='434.72' text-anchor='middle' style='font-size: 18.86px; fill: #471365; font-family: Helvetica Neue;' textLength='60.40px' lengthAdjust='spacingAndGlyphs'>Omeka</text>
+<text x='88.48' y='298.37' text-anchor='middle' style='font-size: 18.10px; fill: #471164; font-family: Helvetica Neue;' textLength='48.23px' lengthAdjust='spacingAndGlyphs'>CARE</text>
+<text x='442.96' y='430.78' text-anchor='middle' style='font-size: 18.10px; fill: #471164; font-family: Helvetica Neue;' textLength='69.03px' lengthAdjust='spacingAndGlyphs'>MALLET</text>
+<text transform='translate(499.85,302.07) rotate(-90)' text-anchor='middle' style='font-size: 17.52px; fill: #471063; font-family: Helvetica Neue;' textLength='46.35px' lengthAdjust='spacingAndGlyphs'>JSON</text>
+<text x='119.19' y='167.50' text-anchor='middle' style='font-size: 17.31px; fill: #471063; font-family: Helvetica Neue;' textLength='43.59px' lengthAdjust='spacingAndGlyphs'>HTTP</text>
+<text x='496.25' y='242.81' text-anchor='middle' style='font-size: 15.40px; fill: #470D60; font-family: Helvetica Neue;' textLength='32.49px' lengthAdjust='spacingAndGlyphs'>FAIR</text>
+<text transform='translate(432.24,177.23) rotate(-90)' text-anchor='middle' style='font-size: 15.17px; fill: #470C5F; font-family: Helvetica Neue;' textLength='30.02px' lengthAdjust='spacingAndGlyphs'>CSV</text>
+<text x='389.30' y='463.88' text-anchor='middle' style='font-size: 14.70px; fill: #460B5E; font-family: Helvetica Neue;' textLength='33.73px' lengthAdjust='spacingAndGlyphs'>XSLT</text>
+<text x='490.46' y='205.99' text-anchor='middle' style='font-size: 14.46px; fill: #460B5E; font-family: Helvetica Neue;' textLength='29.17px' lengthAdjust='spacingAndGlyphs'>NER</text>
+<text x='296.17' y='495.60' text-anchor='middle' style='font-size: 14.22px; fill: #460B5E; font-family: Helvetica Neue;' textLength='48.97px' lengthAdjust='spacingAndGlyphs'>Tableau</text>
+<text x='64.86' y='331.99' text-anchor='middle' style='font-size: 13.46px; fill: #460A5D; font-family: Helvetica Neue;' textLength='26.65px' lengthAdjust='spacingAndGlyphs'>HTR</text>
+<text x='501.83' y='365.86' text-anchor='middle' style='font-size: 13.46px; fill: #460A5D; font-family: Helvetica Neue;' textLength='30.16px' lengthAdjust='spacingAndGlyphs'>OWL</text>
+<text x='516.23' y='294.33' text-anchor='middle' style='font-size: 13.20px; fill: #46095D; font-family: Helvetica Neue;' textLength='22.94px' lengthAdjust='spacingAndGlyphs'>GUI</text>
+<text transform='translate(447.33,175.59) rotate(-90)' text-anchor='middle' style='font-size: 12.94px; fill: #46095C; font-family: Helvetica Neue;' textLength='37.81px' lengthAdjust='spacingAndGlyphs'>MARC</text>
+<text x='309.95' y='87.03' text-anchor='middle' style='font-size: 12.39px; fill: #46085C; font-family: Helvetica Neue;' textLength='25.90px' lengthAdjust='spacingAndGlyphs'>Java</text>
+<text x='205.29' y='152.60' text-anchor='middle' style='font-size: 11.20px; fill: #46075A; font-family: Helvetica Neue;' textLength='39.77px' lengthAdjust='spacingAndGlyphs'>Palladio</text>
+<text x='347.61' y='88.98' text-anchor='middle' style='font-size: 11.20px; fill: #46075A; font-family: Helvetica Neue;' textLength='30.04px' lengthAdjust='spacingAndGlyphs'>TFIDF</text>
+<text x='167.47' y='463.32' text-anchor='middle' style='font-size: 10.89px; fill: #46065A; font-family: Helvetica Neue;' textLength='39.07px' lengthAdjust='spacingAndGlyphs'>RESTful</text>
+<text x='242.76' y='83.20' text-anchor='middle' style='font-size: 10.56px; fill: #450659; font-family: Helvetica Neue;' textLength='56.64px' lengthAdjust='spacingAndGlyphs'>Levenshtein</text>
+<text x='239.59' y='493.76' text-anchor='middle' style='font-size: 10.56px; fill: #450659; font-family: Helvetica Neue;' textLength='35.16px' lengthAdjust='spacingAndGlyphs'>MySQL</text>
+<text x='187.05' y='232.74' text-anchor='middle' style='font-size: 10.56px; fill: #450659; font-family: Helvetica Neue;' textLength='21.28px' lengthAdjust='spacingAndGlyphs'>SVG</text>
+<text x='521.38' y='320.65' text-anchor='middle' style='font-size: 9.52px; fill: #450558; font-family: Helvetica Neue;' textLength='28.38px' lengthAdjust='spacingAndGlyphs'>MODS</text>
+<text x='462.77' y='267.87' text-anchor='middle' style='font-size: 8.35px; fill: #450457; font-family: Helvetica Neue;' textLength='26.42px' lengthAdjust='spacingAndGlyphs'>ArcGIS</text>
+<text x='160.17' y='164.79' text-anchor='middle' style='font-size: 8.35px; fill: #450457; font-family: Helvetica Neue;' textLength='18.09px' lengthAdjust='spacingAndGlyphs'>ODD</text>
+<text x='140.22' y='133.06' text-anchor='middle' style='font-size: 7.92px; fill: #450357; font-family: Helvetica Neue;' textLength='23.29px' lengthAdjust='spacingAndGlyphs'>Drupal</text>
+<text x='453.51' y='329.02' text-anchor='middle' style='font-size: 7.92px; fill: #450357; font-family: Helvetica Neue;' textLength='15.54px' lengthAdjust='spacingAndGlyphs'>SQL</text>
+<text x='70.95' y='221.71' text-anchor='middle' style='font-size: 7.92px; fill: #450357; font-family: Helvetica Neue;' textLength='14.36px' lengthAdjust='spacingAndGlyphs'>XSL</text>
+<text x='355.76' y='487.24' text-anchor='middle' style='font-size: 7.47px; fill: #440356; font-family: Helvetica Neue;' textLength='40.46px' lengthAdjust='spacingAndGlyphs'>PostgreSQL</text>
+<text transform='translate(363.21,382.15) rotate(-90)' text-anchor='middle' style='font-size: 6.99px; fill: #440256; font-family: Helvetica Neue;' textLength='7.76px' lengthAdjust='spacingAndGlyphs'>git</text>
+<text x='491.66' y='388.34' text-anchor='middle' style='font-size: 6.99px; fill: #440256; font-family: Helvetica Neue;' textLength='18.89px' lengthAdjust='spacingAndGlyphs'>METS</text>
+<text x='68.77' y='354.25' text-anchor='middle' style='font-size: 6.99px; fill: #440256; font-family: Helvetica Neue;' textLength='16.94px' lengthAdjust='spacingAndGlyphs'>QGIS</text>
+<text x='68.47' y='374.30' text-anchor='middle' style='font-size: 6.99px; fill: #440256; font-family: Helvetica Neue;' textLength='19.02px' lengthAdjust='spacingAndGlyphs'>SKOS</text>
+<text x='425.47' y='454.40' text-anchor='middle' style='font-size: 6.47px; fill: #440256; font-family: Helvetica Neue;' textLength='12.54px' lengthAdjust='spacingAndGlyphs'>CTS</text>
+<text x='515.25' y='261.87' text-anchor='middle' style='font-size: 6.47px; fill: #440256; font-family: Helvetica Neue;' textLength='16.25px' lengthAdjust='spacingAndGlyphs'>Jekyll</text>
+<text x='524.45' y='335.68' text-anchor='middle' style='font-size: 6.47px; fill: #440256; font-family: Helvetica Neue;' textLength='24.02px' lengthAdjust='spacingAndGlyphs'>Terminal</text>
+<text transform='translate(476.91,157.50) rotate(-90)' text-anchor='middle' style='font-size: 6.47px; fill: #440256; font-family: Helvetica Neue;' textLength='17.21px' lengthAdjust='spacingAndGlyphs'>XPath</text>
+<text x='69.38' y='205.33' text-anchor='middle' style='font-size: 5.90px; fill: #440255; font-family: Helvetica Neue;' textLength='18.87px' lengthAdjust='spacingAndGlyphs'>Docker</text>
+<text transform='translate(208.98,222.42) rotate(-90)' text-anchor='middle' style='font-size: 5.90px; fill: #440255; font-family: Helvetica Neue;' textLength='9.38px' lengthAdjust='spacingAndGlyphs'>NEI</text>
+<text transform='translate(87.16,351.71) rotate(-90)' text-anchor='middle' style='font-size: 5.28px; fill: #440155; font-family: Helvetica Neue;' textLength='17.17px' lengthAdjust='spacingAndGlyphs'>NoSQL</text>
+<text transform='translate(87.46,385.12) rotate(-90)' text-anchor='middle' style='font-size: 5.28px; fill: #440155; font-family: Helvetica Neue;' textLength='13.65px' lengthAdjust='spacingAndGlyphs'>SPSS</text>
+<text x='487.99' y='179.80' text-anchor='middle' style='font-size: 5.28px; fill: #440155; font-family: Helvetica Neue;' textLength='13.95px' lengthAdjust='spacingAndGlyphs'>YAML</text>
+<text transform='translate(214.58,313.83) rotate(-90)' text-anchor='middle' style='font-size: 4.57px; fill: #440154; font-family: Helvetica Neue;' textLength='9.04px' lengthAdjust='spacingAndGlyphs'>DTD</text>
+<text x='143.89' y='405.44' text-anchor='middle' style='font-size: 4.57px; fill: #440154; font-family: Helvetica Neue;' textLength='20.71px' lengthAdjust='spacingAndGlyphs'>MongoDB</text>
+<text transform='translate(171.88,224.90) rotate(-90)' text-anchor='middle' style='font-size: 4.57px; fill: #440154; font-family: Helvetica Neue;' textLength='15.29px' lengthAdjust='spacingAndGlyphs'>oXygen</text>
+<text x='139.22' y='306.09' text-anchor='middle' style='font-size: 4.57px; fill: #440154; font-family: Helvetica Neue;' textLength='8.88px' lengthAdjust='spacingAndGlyphs'>TCP</text>
+<text x='197.87' y='359.00' text-anchor='middle' style='font-size: 4.57px; fill: #440154; font-family: Helvetica Neue;' textLength='12.68px' lengthAdjust='spacingAndGlyphs'>WWW</text>
+<text x='171.80' y='405.13' text-anchor='middle' style='font-size: 3.73px; fill: #440154; font-family: Helvetica Neue;' textLength='12.66px' lengthAdjust='spacingAndGlyphs'>ggplot2</text>
+<text x='156.14' y='235.06' text-anchor='middle' style='font-size: 3.73px; fill: #440154; font-family: Helvetica Neue;' textLength='7.16px' lengthAdjust='spacingAndGlyphs'>LAN</text>
+<text x='434.14' y='212.52' text-anchor='middle' style='font-size: 3.73px; fill: #440154; font-family: Helvetica Neue;' textLength='11.37px' lengthAdjust='spacingAndGlyphs'>matlab</text>
+<text x='492.99' y='261.71' text-anchor='middle' style='font-size: 3.73px; fill: #440154; font-family: Helvetica Neue;' textLength='11.30px' lengthAdjust='spacingAndGlyphs'>SQLite</text>
+<text x='235.46' y='154.56' text-anchor='middle' style='font-size: 3.73px; fill: #440154; font-family: Helvetica Neue;' textLength='9.09px' lengthAdjust='spacingAndGlyphs'>Turtle</text>
+</g>
+<g clip-path='url(#cpMC4wMHw1NjYuOTN8MC4wMHw1NjYuOTM=)'>
+<rect x='405.57' y='493.35' width='137.92' height='30.74' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<image width='86.40' height='17.28' x='457.09' y='493.35' preserveAspectRatio='none' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAABCAYAAABkOJMpAAAA70lEQVQ4jX2Ty5HEMAhEX6PUJoTJPxSxBwFC8ngPLtNf4SpZH30dGZLABBKSwYEFFlw+1n0AyV8+0WarTiSAA3v6LbTOG0euc5WLPlfy7B0AtzWnv3Ry7vng6F2c3fHZbrz23e9T00P7lelnHTz/527+bY9H5kU79/Cnp+1YOpv34Gm5pflD16Utb2penep+eWk6NN9HhWddYS8MeRUXNrw61rXYXpMj8k1xdml2a+xu03MemhhgzMqNzIQ2NFv/XJ7sIXya1TvYc/qN2TI/OM2FW25kZ/Sd+e5dO9uN43ddGRgCQ8HBkALHc2ALbPwB7h+QCmyJ9x8AAAAASUVORK5CYII='/>
+<text x='477.71' y='521.93' text-anchor='middle' style='font-size: 8.80px; font-family: Baskerville;' textLength='13.20px' lengthAdjust='spacingAndGlyphs'>250</text>
+<text x='498.35' y='521.93' text-anchor='middle' style='font-size: 8.80px; font-family: Baskerville;' textLength='13.20px' lengthAdjust='spacingAndGlyphs'>500</text>
+<text x='518.99' y='521.93' text-anchor='middle' style='font-size: 8.80px; font-family: Baskerville;' textLength='13.20px' lengthAdjust='spacingAndGlyphs'>750</text>
+<text x='539.63' y='521.93' text-anchor='middle' style='font-size: 8.80px; font-family: Baskerville;' textLength='17.60px' lengthAdjust='spacingAndGlyphs'>1000</text>
+<text x='405.57' y='512.37' style='font-size: 11.00px; font-family: Baskerville;' textLength='46.04px' lengthAdjust='spacingAndGlyphs'>Frequency</text>
+<line x1='477.71' y1='510.63' x2='477.71' y2='507.17' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<line x1='498.35' y1='510.63' x2='498.35' y2='507.17' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<line x1='518.99' y1='510.63' x2='518.99' y2='507.17' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<line x1='539.63' y1='510.63' x2='539.63' y2='507.17' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<line x1='477.71' y1='496.80' x2='477.71' y2='493.35' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<line x1='498.35' y1='496.80' x2='498.35' y2='493.35' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<line x1='518.99' y1='496.80' x2='518.99' y2='493.35' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<line x1='539.63' y1='496.80' x2='539.63' y2='493.35' style='stroke-width: 0.38; stroke: #FFFFFF; stroke-linecap: butt;' />
+<text x='18.22' y='17.40' style='font-size: 18.00px; font-family: Baskerville;' textLength='396.70px' lengthAdjust='spacingAndGlyphs'>The 70 most frequent tools in DH conference abstracts</text>
+<text x='561.45' y='551.91' text-anchor='end' style='font-size: 7.20px; font-family: Baskerville;' textLength='331.75px' lengthAdjust='spacingAndGlyphs'>Data: Weingart et al., 'Index of Digital Humanities Conferences Data', https://doi.org/10.1184/R1/12987959.v4.</text>
+<text x='561.45' y='559.69' text-anchor='end' style='font-size: 7.20px; font-family: Baskerville;' textLength='80.93px' lengthAdjust='spacingAndGlyphs'>Till Grallert, CC BY-SA 4.0</text>
+</g>
+</svg>

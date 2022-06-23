@@ -1,0 +1,5 @@
+Ich bin ein Sozialhistoriker und möchte datengetriebene Forschung zum "grauen" Handel mit Archivalien, Postkarten etc. auf Plattformen wie Ebay.com oder Delcampe.net betreiben.
+
+Dabei ist die Frage, ob über eine API strukturiert abgefragt werden kann, wer die zentralen Knoten in einem Netzwerk von Händlern sind, welche Artefakte welche Preise erzielen, wie viele von den angebotenen Artefakten überhaupt verkauft werden, von wem diese gekauft werden etc.
+
+Anlass sind Konvolute von Feldpostbriefen deutscher Soldaten von 1918 aus Damaskus (z.B. <https://www.ebay.de/itm/363180492548>) und einzelne Seiten aus Akten aus den Nachlässen deutscher Soldaten, die für jeweils mehrere hundert Euro pro Seite angeboten werden (z.B. <https://www.ebay.de/itm/133900062827>).

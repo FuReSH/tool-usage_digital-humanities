@@ -11,19 +11,19 @@ theme_set(theme_bw())
 
 # load data
 # 1. DH conferences
-setwd("/BachCloud/HUBox/user-stories/data/dh-conferences")
+setwd(here("data", "dh-conferences"))
 load("dh-conferences-frequencies_titles.rda")
 load("dh-conferences-frequencies_abstracts.rda")
 load("dh-conferences-frequencies_keywords.rda")
 # 2. FuReSH tool list
-df.tools <- read_csv("/BachCloud/HUBox/Werkzeuge/tool.csv")
+df.tools <- read_csv(here("data","tools.csv"))
 df.tools <- df.tools %>%
   rename(word = tool) %>%
   dplyr::distinct(word) %>%
   # add lower case for easier joining of data frames
   dplyr::mutate(word.lc = stringr::str_to_lower(word))
 save(df.tools, file = "furesh-tools.rda")
-df.concepts <- read_csv("/BachCloud/HUBox/Werkzeuge/concepts.csv")
+df.concepts <- read_csv(here("data", "concepts.csv"))
 df.concepts <- df.concepts %>%
   rename(word = concept) %>%
   dplyr::distinct(word) %>%
@@ -150,18 +150,3 @@ f.wordcloud.frequency(df.tools.abstracts, 100, "tools in DH conference abstracts
 f.wordcloud.frequency(df.tools.abstracts, 100, "tools in DH conference abstracts", "png")
 f.wordcloud.frequency(df.concepts.abstracts, 100, "concepts in DH conference abstracts", "svg")
 f.wordcloud.frequency(df.concepts.abstracts, 100, "concepts in DH conference abstracts", "png")
-
-
-
-ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, colour = Petal.Length)) +
-  geom_point() +
-  scale_colour_paletteer_c("pals::kovesi.diverging_gwv_55_95_c39") +
-  theme(
-    legend.position = c(0.84,0.01),
-    legend.direction = "horizontal",
-    legend.key = element_rect(fill = NULL),
-    legend.margin = margin(0),
-    legend.justification = "bottom"
-  )
-
-df.palettes <- palettes_c_names

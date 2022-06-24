@@ -28,6 +28,13 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
 
 # to do
 
-- Currently we use lower-case string matching, which will produce false positives for some tools, whose name is a commonly used word and only distinguished by case, such as "MAX", "eLaborate"
 - add DHd abstracts from the GitHub repositories
 - run R scripts for frequencies of our controlled vocabulary of tools and concepts on the DHd data
+
+## done
+
+- case matching
+    + Currently we use lower-case string matching, which will produce false positives for some tools, whose name is a commonly used word and only distinguished by case, such as "MAX", "eLaborate"
+    + The opposite will also cause false negatives as "Topic modelling" won't match "topic modelling"
+    + Solution
+        * add second column to tools.csv with variant spelling

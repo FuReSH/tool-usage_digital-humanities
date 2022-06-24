@@ -16,20 +16,23 @@ load("dh-conferences-frequencies_titles.rda")
 load("dh-conferences-frequencies_abstracts.rda")
 load("dh-conferences-frequencies_keywords.rda")
 # 2. FuReSH tool list
-df.tools <- read_csv(here("data","tools.csv"))
-df.tools <- df.tools %>%
+df.tools <- read_csv(here("data","tools.csv")) %>%
   rename(word = tool) %>%
   dplyr::distinct(word) %>%
   # add lower case for easier joining of data frames
   dplyr::mutate(word.lc = stringr::str_to_lower(word))
 save(df.tools, file = "furesh-tools.rda")
-df.concepts <- read_csv(here("data", "concepts.csv"))
-df.concepts <- df.concepts %>%
+df.concepts <- read_csv(here("data", "concepts.csv")) %>%
   rename(word = concept) %>%
   dplyr::distinct(word) %>%
   # add lower case for easier joining of data frames
   dplyr::mutate(word.lc = stringr::str_to_lower(word))
 save(df.concepts, file = "furesh-concepts.rda")
+# 3. load DHd data from Henny and Jettka
+df.dhd.tools <- read_csv(here("data/DHd/henny-jettka/software-names-counts-total.csv"), col_names = FALSE) %>%
+  dplyr::rename(word = X1,
+                freq = X2) %>%
+  dplyr::mutate(word.lc = stringr::str_to_lower(word))
 
 # pre-process data
 # get all three and four letter words from the data set
@@ -52,7 +55,6 @@ write.table(df.concepts.abstracts, file = "dh-conferences-frequencies_concepts-a
 
 # wordclouds with ggplot
 # some variables
-v.label.source = "Data: Weingart et al., 'Index of Digital Humanities Conferences Data', https://doi.org/10.1184/R1/12987959.v4" # source information
 v.label.license = "Till Grallert, CC BY-SA 4.0"
 font.words = "Helvetica Neue"
 # sizes
@@ -142,11 +144,15 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
 }
 
 # variables for saving plots
-width.Plot <- 200
-height.Plot <- 200
+width.Plot <- 300
+height.Plot <- 300
 dpi.Plot <- 300
 
+v.label.source = "Data: Weingart et al., 'Index of Digital Humanities Conferences Data', https://doi.org/10.1184/R1/12987959.v4" # source information
 f.wordcloud.frequency(df.tools.abstracts, 100, "tools in DH conference abstracts", "svg")
 f.wordcloud.frequency(df.tools.abstracts, 100, "tools in DH conference abstracts", "png")
 f.wordcloud.frequency(df.concepts.abstracts, 100, "concepts in DH conference abstracts", "svg")
 f.wordcloud.frequency(df.concepts.abstracts, 100, "concepts in DH conference abstracts", "png")
+
+.label.source = "Data: Henny-Kramer et al., 'Softwarezitation in Den Digital Humanities', https://doi.org/10.5281/zenodo.5106391" # source information
+f.wordcloud.frequency(df.dhd.tools, 100, "tools in DHd conference abstracts", "png")

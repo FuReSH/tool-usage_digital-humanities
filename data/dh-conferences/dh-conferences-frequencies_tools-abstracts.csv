@@ -1,234 +1,138 @@
-"term","term.lc","freq"
-"TEI","tei",1222
-"R","r",1166
-"XML","xml",430
-"Internet","internet",202
-"GIS","gis",188
-"OCR","ocr",171
-"RDF","rdf",158
-"NLP","nlp",151
-"API","api",141
-"DARIAH","dariah",137
-"Python","python",129
-"IIIF","iiif",95
-"Voyant","voyant",89
-"TXM","txm",88
-"DOI","doi",80
-"Gephi","gephi",80
-"LOD","lod",77
-"TCP","tcp",63
-"GitHub","github",62
-"XQuery","xquery",59
-"Omeka","omeka",57
-"stylometry","stylometry",51
-"SPARQL","sparql",48
-"JSON","json",47
-"CLARIN","clarin",45
-"CSV","csv",41
-"MALLET","mallet",41
-"CollateX","collatex",40
-"CATMA","catma",37
-"P5","p5",35
-"XSLT","xslt",33
-"NER","ner",30
-"OWL","owl",30
-"HTR","htr",29
-"Stylo","stylo",29
-"GUI","gui",26
-"AI","ai",25
-"Palladio","palladio",24
-"Pliny","pliny",24
-"Zooniverse","zooniverse",24
-"Java","java",23
-"Transkribus","transkribus",23
-"Juxta","juxta",19
-"MARC","marc",19
-"RESTful","restful",18
-"CATview","catview",17
-"Levenshtein","levenshtein",17
-"MySQL","mysql",17
-"CLARIAH","clariah",16
-"HTTP","http",16
-"SVG","svg",16
-"Tableau","tableau",15
-"MODS","mods",14
-"IncipitSearch","incipitsearch",13
-"TextGrid","textgrid",13
-"CTS","cts",11
-"FAIR","fair",11
-"GATE","gate",11
-"LERA","lera",11
-"SQL","sql",11
-"XSL","xsl",11
-"ML","ml",10
-"SKOS","skos",10
-"ArcGIS","arcgis",9
-"Drupal","drupal",9
-"IP","ip",9
-"METS","mets",9
-"OA","oa",9
-"ResearchSpace","researchspace",9
-"Salt","salt",9
-"ODD","odd",8
-"QGIS","qgis",8
-"Topic Modelling","topic modelling",8
-"Verovio","verovio",8
-"Gensim","gensim",7
-"Jekyll","jekyll",7
-"PostgreSQL","postgresql",7
-"Protégé","protégé",7
-"XPath","xpath",7
-"CWRC-Writer","cwrc-writer",6
-"git","git",6
-"Textual Communities","textual communities",6
-"Carto","carto",5
-"LIWC","liwc",5
-"Annotation Studio","annotation studio",4
-"Docker","docker",4
-"eHinman","ehinman",4
-"FreeLing","freeling",4
-"FromThePage","fromthepage",4
-"NoSQL","nosql",4
-"SPSS","spss",4
-"YAML","yaml",4
-"HeidelTime","heideltime",3
-"MongoDB","mongodb",3
-"Versioning Machine","versioning machine",3
-"CorA","cora",2
-"DTD","dtd",2
-"ecdosis","ecdosis",2
-"Edirom","edirom",2
-"ggplot2","ggplot2",2
-"OCRopus","ocropus",2
-"P3","p3",2
-"P4","p4",2
-"Pandas","pandas",2
-"SALSAH","salsah",2
-"SQLite","sqlite",2
-"Turtle","turtle",2
-"WebLicht","weblicht",2
-"ANNIS","annis",1
-"CLI","cli",1
-"CQPweb","cqpweb",1
-"eLaborate","elaborate",1
-"ELAN","elan",1
-"LAN","lan",1
-"MariaDB","mariadb",1
-"MOM-CA","mom-ca",1
-"oXygen","oxygen",1
-"Terminal","terminal",1
-"TextGridLab","textgridlab",1
-"Toolbox","toolbox",1
-"WissKI","wisski",1
-"WWW","www",1
-"#LancsBox","#lancsbox",NA
-"Academy CRIS","academy cris",NA
-"ATHEN","athen",NA
-"BAZ-GA Oxygen-Framework","baz-ga oxygen-framework",NA
-"Beaconizer","beaconizer",NA
-"Beethovens Werkstatt Tools","beethovens werkstatt tools",NA
-"CARE","care",NA
-"Classical Text Editor","classical text editor",NA
-"CMDI-Maker","cmdi-maker",NA
-"CorpusExplorer","corpusexplorer",NA
-"CorrespSearch","correspsearch",NA
-"CTE","cte",NA
-"Cultural Heritage Framework","cultural heritage framework",NA
-"DARIAH Topics Explorer","dariah topics explorer",NA
-"DiaCollo","diacollo",NA
-"digiCULT","digicult",NA
-"digiCULT.web","digicult.web",NA
-"digiCULT.xTree","digicult.xtree",NA
-"Digital Catalogue Raisonné","digital catalogue raisonné",NA
-"DTA::CAB","dta::cab",NA
-"Dualist","dualist",NA
-"Duraark","duraark",NA
-"Easy Linavis","easy linavis",NA
-"ediarum","ediarum",NA
-"Edirom Editor","edirom editor",NA
-"Edirom Online","edirom online",NA
-"EFES","efes",NA
-"ekdosis","ekdosis",NA
-"eXGraphs","exgraphs",NA
-"EXMARaLDA","exmaralda",NA
-"Extranet","extranet",NA
-"Ezlinavis","ezlinavis",NA
-"FLEx","flex",NA
-"FuD","fud",NA
-"GAMS","gams",NA
-"GeTa","geta",NA
-"GitLab","gitlab",NA
-"GRACE","grace",NA
-"GROBID","grobid",NA
-"heiANNO","heianno",NA
-"heiEDITIONS","heieditions",NA
-"heiMPT","heimpt",NA
-"Hoftheater-Tool","hoftheater-tool",NA
-"iART","iart",NA
-"IEEE 802.11","ieee 802.11",NA
-"IIIF Image Server","iiif image server",NA
-"Image Markup Tool","image markup tool",NA
-"INCEpTION","inception",NA
-"InCritApp","incritapp",NA
-"Intranet","intranet",NA
-"Isilex","isilex",NA
-"Kitodo","kitodo",NA
-"LAKomp","lakomp",NA
-"Linked Stage Graph","linked stage graph",NA
-"LOD Vocabulary Editor and URI Resolver","lod vocabulary editor and uri resolver",NA
-"LombardPress","lombardpress",NA
-"Lyra","lyra",NA
-"ManuscriptDesk","manuscriptdesk",NA
-"matlab","matlab",NA
-"MAX","max",NA
-"Measure Detector","measure detector",NA
-"MEI Metadata Editor","mei metadata editor",NA
-"MEI Score Editor","mei score editor",NA
-"meico","meico",NA
-"MEIGarage","meigarage",NA
-"MerMEId","mermeid",NA
-"Multiple-Channel Reverberation","multiple-channel reverberation",NA
-"musiXplora","musixplora",NA
-"Near Duplicate Detection","near duplicate detection",NA
-"NEI","nei",NA
-"New Testament Virtual Manuscript Room","new testament virtual manuscript room",NA
-"Node Goat","node goat",NA
-"NTVMR","ntvmr",NA
-"OSDS","osds",NA
-"Pepper","pepper",NA
-"PHAIDRA","phaidra",NA
-"PhiloEditor","philoeditor",NA
-"Poemage","poemage",NA
-"prometheus","prometheus",NA
-"Reledmac","reledmac",NA
-"SADE","sade",NA
-"ScoreTube","scoretube",NA
-"Scripto","scripto",NA
-"SentText","senttext",NA
-"Shadowthing","shadowthing",NA
-"SMuFL-Browser","smufl-browser",NA
-"SPEEDy","speedy",NA
-"Stereoscope","stereoscope",NA
-"StoryMap","storymap",NA
-"T-Pen","t-pen",NA
-"TEASys","teasys",NA
-"TEI Critical Apparatus Toolbox","tei critical apparatus toolbox",NA
-"TFIDF","tfidf",NA
-"tidyverse","tidyverse",NA
-"TMW","tmw",NA
-"TOPORAZ","toporaz",NA
-"TPen","tpen",NA
-"Transcribo","transcribo",NA
-"TUSTEP","tustep",NA
-"VAnnotatoR","vannotator",NA
-"Variance Viewer","variance viewer",NA
-"Vertaktoid","vertaktoid",NA
-"VPN","vpn",NA
-"WACZ","wacz",NA
-"WAN","wan",NA
-"WebAnno","webanno",NA
-"WebMAUS","webmaus",NA
-"WeGA-Webapp","wega-webapp",NA
-"WITTfind","wittfind",NA
-"WMRCRE","wmrcre",NA
-"XTriples","xtriples",NA
+"term","freq"
+"TEI",1222
+"R",1166
+"XML",430
+"GitHub",359
+"Internet",294
+"GIS",188
+"OCR",171
+"RDF",158
+"NLP",151
+"Python",142
+"API",141
+"DARIAH",137
+"Topic Modeling",136
+"IIIF",94
+"Voyant",89
+"TXM",88
+"DOI",80
+"Gephi",80
+"LOD",77
+"LDA",74
+"TCP",63
+"Neural Networks",61
+"XQuery",59
+"Omeka",57
+"stylometry",51
+"SPARQL",48
+"CSV",47
+"JSON",47
+"CLARIN",45
+"MALLET",41
+"CollateX",40
+"CATMA",37
+"P5",35
+"XSLT",33
+"NER",30
+"OWL",30
+"HTR",29
+"Stylo",29
+"Word Embeddings",29
+"GUI",26
+"AI",25
+"word2vec",25
+"Palladio",24
+"Pliny",24
+"Zooniverse",24
+"Java",23
+"Transkribus",23
+"GeoJSON",22
+"MEI",22
+"CSS",21
+"Juxta",19
+"MARC",19
+"RESTful",18
+"CATview",17
+"Levenshtein",17
+"MySQL",17
+"CLARIAH",16
+"HTTP",16
+"SVG",16
+"Sentiment Analysis",15
+"Tableau",15
+"MODS",14
+"IncipitSearch",13
+"jQuery",13
+"TextGrid",13
+"CTS",11
+"FAIR",11
+"GATE",11
+"LERA",11
+"SQL",11
+"XSL",11
+"ML",10
+"SKOS",10
+"ArcGIS",9
+"Drupal",9
+"IP",9
+"METS",9
+"OA",9
+"ResearchSpace",9
+"Salt",9
+"TF-IDF",9
+"ODD",8
+"QGIS",8
+"Verovio",8
+"Gensim",7
+"Jekyll",7
+"PostgreSQL",7
+"Protégé",7
+"XPath",7
+"CWRC-Writer",6
+"git",6
+"Textual Communities",6
+"AntConc",5
+"Carto",5
+"Jupyter Notebook",5
+"LIWC",5
+"Annotation Studio",4
+"Docker",4
+"eHinman",4
+"FreeLing",4
+"FromThePage",4
+"NoSQL",4
+"SPSS",4
+"YAML",4
+"HeidelTime",3
+"MongoDB",3
+"Versioning Machine",3
+"Bash",2
+"CorA",2
+"DTD",2
+"ecdosis",2
+"Edirom",2
+"ggplot2",2
+"OCRopus",2
+"P3",2
+"P4",2
+"Pandas",2
+"SALSAH",2
+"SQLite",2
+"Turtle",2
+"WebLicht",2
+"ANNIS",1
+"CLI",1
+"CQPweb",1
+"eLaborate",1
+"ELAN",1
+"LAN",1
+"MariaDB",1
+"MOM-CA",1
+"oXygen",1
+"SpaCy",1
+"Terminal",1
+"TextGridLab",1
+"Tidyverse",1
+"Toolbox",1
+"WissKI",1
+"WWW",1

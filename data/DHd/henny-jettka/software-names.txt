@@ -1,0 +1,139 @@
+Academy CRIS
+ANNIS
+Annotation Studio
+ATHEN
+BAZ-GA Oxygen-Framework
+Beaconizer
+Beethovens Werkstatt Tools
+Carto
+CATMA
+CATview
+Classical Text Editor
+CMDI-Maker
+CollateX
+CorA
+CorpusExplorer
+CorrespSearch
+CQPweb
+Cultural Heritage Framework
+CWRC-Writer
+DARIAH Topics Explorer
+DiaCollo
+digiCULT.web
+digiCULT.xTree
+Digital Catalogue Raisonné
+DTA::CAB
+Dualist
+Duraark
+ecdosis
+ediarum
+Edirom Editor
+Edirom Online
+Easy Linavis
+EFES
+eHinman
+ekdosis
+eLaborate
+ELAN
+eXGraphs
+EXMARaLDA
+Ezlinavis
+FLEx
+FreeLing
+FromThePage
+FuD
+GAMS
+GATE
+Gensim
+Gephi
+GeTa
+GRACE
+GROBID
+heiANNO
+HeidelTime
+heiEDITIONS
+heiMPT
+Hoftheater-Tool
+iART
+IIIF Image Server
+Image Markup Tool
+INCEpTION
+IncipitSearch
+InCritApp
+Isilex
+Juxta
+Kitodo
+LAKomp
+#LancsBox
+LERA
+Linked Stage Graph
+LIWC
+LOD Vocabulary Editor and URI Resolver
+LombardPress
+Lyra
+MALLET
+ManuscriptDesk
+MariaDB
+MAX
+MEI Metadata Editor
+MEI Score Editor
+meico
+MEIGarage
+MerMEId
+Measure Detector
+MOM-CA
+Multiple-Channel Reverberation
+musiXplora
+Near Duplicate Detection
+New Testament Virtual Manuscript Room
+NTVMR
+OCRopus
+Omeka
+OSDS
+Pepper
+PHAIDRA
+PhiloEditor
+Pliny
+Poemage
+prometheus
+Protégé
+Reledmac
+ResearchSpace
+SADE
+SALSAH
+Salt
+Shadowthing
+ScoreTube
+Scripto
+SentText
+SMuFL-Browser
+SPEEDy
+Stereoscope
+Stylo
+TEASys
+TEI Critical Apparatus Toolbox
+TextGridLab
+Textual Communities
+TMW
+T-Pen
+Toolbox
+TOPORAZ
+Transcribo
+Transkribus
+TUSTEP
+TXM
+VAnnotatoR
+Variance Viewer
+Verovio
+Versioning Machine
+Vertaktoid
+Voyant
+WebAnno
+WebLicht
+WebMAUS
+WeGA-Webapp
+WissKI
+WITTfind
+WMRCRE
+XTriples
+Zooniverse

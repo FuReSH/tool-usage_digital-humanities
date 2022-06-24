@@ -35,7 +35,7 @@ setwd("../")
 save(df.dhconfs.works, file = "dh_conferences_works.rda")
 
 
-# generate frequency lists
+# generate frequency lists: generic term-document-matrix
 f.frequency.list <- function(input) {
   docs <- Corpus(VectorSource(input))
   # build a term-document matrix to get a frequency list
@@ -48,6 +48,16 @@ f.frequency.list <- function(input) {
   output <- data.frame(word = names(v),freq=v)
   output
 }
+
+df.freq.titles <- f.frequency.list(df.dhconfs.works$title.lc)
+df.freq.keywords <- f.frequency.list(df.dhconfs.works$keywords.lc)
+df.freq.abstracts <- f.frequency.list(df.dhconfs.works$text.lc)
+save(df.freq.titles, file = "dh-conferences-frequencies_titles.rda")
+save(df.freq.abstracts, file = "dh-conferences-frequencies_abstracts.rda")
+save(df.freq.keywords, file = "dh-conferences-frequencies_keywords.rda")
+write.table(df.freq.titles, file = "dh-conferences-frequencies_titles.csv", row.names = F, quote = T, sep = ",")
+write.table(df.freq.keywords, file = "dh-conferences-frequencies_keywords.csv", row.names = F, quote = T, sep = ",")
+write.table(df.freq.abstracts, file = "dh-conferences-frequencies_abstracts.csv", row.names = F, quote = T, sep = ",")
 
 # frequency list with stemming
 # PROBLEM: hunspell will not work with most accronyms
@@ -70,14 +80,3 @@ a1 <- f.frequency.list(df.dhconfs.works$title.lc)
 a2 <- f.frequency.list.2(df.dhconfs.works$title.lc)
 head(a1)
 head(a2)
-
-
-df.freq.titles <- f.frequency.list(df.dhconfs.works$title.lc)
-df.freq.keywords <- f.frequency.list(df.dhconfs.works$keywords.lc)
-df.freq.abstracts <- f.frequency.list(df.dhconfs.works$text.lc)
-save(df.freq.titles, file = "dh-conferences-frequencies_titles.rda")
-save(df.freq.abstracts, file = "dh-conferences-frequencies_abstracts.rda")
-save(df.freq.keywords, file = "dh-conferences-frequencies_keywords.rda")
-write.table(df.freq.titles, file = "dh-conferences-frequencies_titles.csv", row.names = F, quote = T, sep = ",")
-write.table(df.freq.keywords, file = "dh-conferences-frequencies_keywords.csv", row.names = F, quote = T, sep = ",")
-write.table(df.freq.abstracts, file = "dh-conferences-frequencies_abstracts.csv", row.names = F, quote = T, sep = ",")

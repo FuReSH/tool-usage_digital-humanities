@@ -1,68 +1,75 @@
-"word","word.lc","freq"
-"TEI","tei",106
-"XML","xml",48
-"stylometry","stylometry",29
-"GIS","gis",28
+"term","term.lc","freq"
+"TEI","tei",128
+"XML","xml",63
+"GIS","gis",32
 "Internet","internet",25
-"OCR","ocr",17
-"DARIAH","dariah",11
-"IIIF","iiif",10
-"NLP","nlp",10
+"OCR","ocr",20
+"DARIAH","dariah",18
+"AI","ai",12
+"R","r",12
+"IIIF","iiif",11
+"NLP","nlp",11
 "Voyant","voyant",9
+"API","api",8
 "TXM","txm",8
-"API","api",7
 "LOD","lod",7
+"P5","p5",7
 "Pliny","pliny",7
+"RDF","rdf",7
+"CTS","cts",6
 "HTR","htr",6
-"CARE","care",5
+"CLARIN","clarin",5
 "DTD","dtd",5
-"ODD","odd",5
-"RDF","rdf",5
 "Stylo","stylo",5
 "Toolbox","toolbox",5
+"WWW","www",5
 "XQuery","xquery",5
-"CLARIN","clarin",4
-"CTS","cts",4
 "FAIR","fair",4
-"GitHub","github",4
 "Juxta","juxta",4
+"ODD","odd",4
 "Omeka","omeka",4
 "SVG","svg",4
-"WWW","www",4
+"Annotation Studio","annotation studio",3
 "CATMA","catma",3
-"ELAN","elan",3
+"CWRC-Writer","cwrc-writer",3
+"GitHub","github",3
 "METS","mets",3
+"OWL","owl",3
 "TextGrid","textgrid",3
+"Topic Modelling","topic modelling",3
 "XSL","xsl",3
-"CorA","cora",2
-"CorrespSearch","correspsearch",2
+"CLARIAH","clariah",2
 "Drupal","drupal",2
-"eLaborate","elaborate",2
+"ELAN","elan",2
 "IncipitSearch","incipitsearch",2
 "Java","java",2
-"MALLET","mallet",2
 "MySQL","mysql",2
 "NER","ner",2
 "SPARQL","sparql",2
+"SPSS","spss",2
+"stylometry","stylometry",2
+"Textual Communities","textual communities",2
+"Versioning Machine","versioning machine",2
 "XSLT","xslt",2
-"CATview","catview",1
-"CLARIAH","clariah",1
+"CARE","care",1
 "CollateX","collatex",1
+"CorA","cora",1
+"eLaborate","elaborate",1
 "FromThePage","fromthepage",1
 "GAMS","gams",1
 "Gephi","gephi",1
 "GUI","gui",1
+"Image Markup Tool","image markup tool",1
 "LERA","lera",1
+"MALLET","mallet",1
 "MARC","marc",1
-"NEI","nei",1
 "NoSQL","nosql",1
-"OWL","owl",1
 "Python","python",1
 "ResearchSpace","researchspace",1
 "RESTful","restful",1
 "SKOS","skos",1
 "SPEEDy","speedy",1
-"SPSS","spss",1
+"TCP","tcp",1
 "Terminal","terminal",1
 "Transcribo","transcribo",1
 "Transkribus","transkribus",1
@@ -72,24 +79,23 @@
 "Zooniverse","zooniverse",1
 "#LancsBox","#lancsbox",NA
 "Academy CRIS","academy cris",NA
-"AI","ai",NA
 "ANNIS","annis",NA
-"Annotation Studio","annotation studio",NA
 "ArcGIS","arcgis",NA
 "ATHEN","athen",NA
 "BAZ-GA Oxygen-Framework","baz-ga oxygen-framework",NA
 "Beaconizer","beaconizer",NA
 "Beethovens Werkstatt Tools","beethovens werkstatt tools",NA
 "Carto","carto",NA
+"CATview","catview",NA
 "Classical Text Editor","classical text editor",NA
 "CLI","cli",NA
 "CMDI-Maker","cmdi-maker",NA
 "CorpusExplorer","corpusexplorer",NA
+"CorrespSearch","correspsearch",NA
 "CQPweb","cqpweb",NA
 "CSV","csv",NA
 "CTE","cte",NA
 "Cultural Heritage Framework","cultural heritage framework",NA
-"CWRC-Writer","cwrc-writer",NA
 "DARIAH Topics Explorer","dariah topics explorer",NA
 "DiaCollo","diacollo",NA
 "digiCULT","digicult",NA
@@ -134,7 +140,6 @@
 "iART","iart",NA
 "IEEE 802.11","ieee 802.11",NA
 "IIIF Image Server","iiif image server",NA
-"Image Markup Tool","image markup tool",NA
 "INCEpTION","inception",NA
 "InCritApp","incritapp",NA
 "Intranet","intranet",NA
@@ -168,6 +173,7 @@
 "Multiple-Channel Reverberation","multiple-channel reverberation",NA
 "musiXplora","musixplora",NA
 "Near Duplicate Detection","near duplicate detection",NA
+"NEI","nei",NA
 "New Testament Virtual Manuscript Room","new testament virtual manuscript room",NA
 "Node Goat","node goat",NA
 "NTVMR","ntvmr",NA
@@ -177,7 +183,6 @@
 "oXygen","oxygen",NA
 "P3","p3",NA
 "P4","p4",NA
-"P5","p5",NA
 "Palladio","palladio",NA
 "Pandas","pandas",NA
 "Pepper","pepper",NA
@@ -188,7 +193,6 @@
 "prometheus","prometheus",NA
 "Protégé","protégé",NA
 "QGIS","qgis",NA
-"R","r",NA
 "Reledmac","reledmac",NA
 "SADE","sade",NA
 "SALSAH","salsah",NA
@@ -204,22 +208,18 @@
 "StoryMap","storymap",NA
 "T-Pen","t-pen",NA
 "Tableau","tableau",NA
-"TCP","tcp",NA
 "TEASys","teasys",NA
 "TEI Critical Apparatus Toolbox","tei critical apparatus toolbox",NA
 "TextGridLab","textgridlab",NA
-"Textual Communities","textual communities",NA
 "TFIDF","tfidf",NA
 "tidyverse","tidyverse",NA
 "TMW","tmw",NA
-"Topic Modelling","topic modelling",NA
 "TOPORAZ","toporaz",NA
 "TPen","tpen",NA
 "Turtle","turtle",NA
 "VAnnotatoR","vannotator",NA
 "Variance Viewer","variance viewer",NA
 "Verovio","verovio",NA
-"Versioning Machine","versioning machine",NA
 "Vertaktoid","vertaktoid",NA
 "VPN","vpn",NA
 "WACZ","wacz",NA

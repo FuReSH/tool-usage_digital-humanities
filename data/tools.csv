@@ -1,54 +1,144 @@
 "tool"
+#LancsBox
+Academy CRIS
 AI
+ANNIS
+Annotation Studio
 API
 ArcGIS
+ATHEN
+BAZ-GA Oxygen-Framework
+Beaconizer
+Beethovens Werkstatt Tools
 CARE
+Carto
+CATMA
+CATview
+Classical Text Editor
 CLI
+CMDI-Maker
+CollateX
+CorA
+CorpusExplorer
+CorrespSearch
+CQPweb
 CSV
+CTE
 CTS
+Cultural Heritage Framework
+CWRC-Writer
+DARIAH Topics Explorer
+DiaCollo
+digiCULT.web
+digiCULT.xTree
+Digital Catalogue Raisonné
 Docker
 DOI
 Drupal
+DTA::CAB
 DTD
+Dualist
+Duraark
+Easy Linavis
+ecdosis
+ediarum
+Edirom Editor
+Edirom Online
+EFES
+eHinman
+ekdosis
+eLaborate
+ELAN
+eXGraphs
+EXMARaLDA
 Extranet
+Ezlinavis
 FAIR
+FLEx
+FreeLing
+FromThePage
+FuD
+GAMS
+GATE
+Gensim
 Gephi
+GeTa
 ggplot2
 GIS
 git
 GitHub
 GitLab
+GRACE
+GROBID
 GUI
+heiANNO
+HeidelTime
+heiEDITIONS
+heiMPT
+Hoftheater-Tool
 HTR
 HTTP
+iART
 IEEE 802.11
 IIIF
+IIIF Image Server
+Image Markup Tool
+INCEpTION
+IncipitSearch
+InCritApp
 Internet
 Intranet
 IP
+Isilex
 Java
 Jekyll
 JSON
+Juxta
+Kitodo
+LAKomp
 LAN
+LERA
 Levenshtein
+Linked Stage Graph
+LIWC
 LOD
+LOD Vocabulary Editor and URI Resolver
+LombardPress
+Lyra
 MALLET
+ManuscriptDesk
 MARC
+MariaDB
 matlab
+MAX
+Measure Detector
+MEI Metadata Editor
+MEI Score Editor
+meico
+MEIGarage
+MerMEId
 METS
 ML
 MODS
+MOM-CA
 MongoDB
+Multiple-Channel Reverberation
+musiXplora
 MySQL
+Near Duplicate Detection
 NEI
 NER
+New Testament Virtual Manuscript Room
 NLP
 Node Goat
 NoSQL
+NTVMR
 OA
 OCR
+OCRopus
 ODD
 Omeka
+OSDS
 OWL
 oXygen
 P3
@@ -56,38 +146,83 @@ P4
 P5
 Palladio
 Pandas
+Pepper
+PHAIDRA
+PhiloEditor
+Pliny
+Poemage
 PostgreSQL
+prometheus
+Protégé
 Python
 QGIS
 R
-R
 RDF
+Reledmac
+ResearchSpace
 RESTful
+SADE
+SALSAH
+Salt
+ScoreTube
+Scripto
+SentText
+Shadowthing
 SKOS
+SMuFL-Browser
 SPARQL
+SPEEDy
 SPSS
 SQL
 SQLite
+Stereoscope
 StoryMap
+Stylo
 stylometry
 SVG
+T-Pen
 Tableau
 TCP
+TEASys
 TEI
+TEI Critical Apparatus Toolbox
 Terminal
+TextGridLab
+Textual Communities
 TFIDF
 tidyverse
+TMW
+Toolbox
 Topic Modelling
+TOPORAZ
+TPen
+Transcribo
+Transkribus
 Turtle
+TUSTEP
 TXM
+VAnnotatoR
+Variance Viewer
+Verovio
+Versioning Machine
+Vertaktoid
 Voyant
 VPN
 WACZ
 WAN
+WebAnno
+WebLicht
+WebMAUS
+WeGA-Webapp
+WissKI
+WITTfind
+WMRCRE
 WWW
 XML
 XPath
 XQuery
 XSL
 XSLT
+XTriples
 YAML
+Zooniverse

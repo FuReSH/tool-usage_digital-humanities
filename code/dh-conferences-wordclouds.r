@@ -12,17 +12,19 @@ theme_set(theme_bw())
 # load data
 # 1. DH conferences
 setwd(here("data", "dh-conferences"))
+load("dh_conferences_works.rda")
+# legacy data: this can be removed
 load("dh-conferences-frequencies_titles.rda")
 load("dh-conferences-frequencies_abstracts.rda")
 load("dh-conferences-frequencies_keywords.rda")
-load("dh_conferences_works.rda")
 # 2. FuReSH tool list
 df.tools <- read_csv(here("data","tools.csv")) %>%
-  rename(term = tool) %>%
-  dplyr::distinct(term) %>%
+  #rename(term = tool) %>%
+  #dplyr::distinct(term) %>%
   # add lower case for easier joining of data frames
   dplyr::mutate(term.lc = stringr::str_to_lower(term))
 save(df.tools, file = "furesh-tools.rda")
+#write.table(df.tools, file = "furesh-tools.csv", row.names = F, quote = F, sep = ",")
 df.concepts <- read_csv(here("data", "concepts.csv")) %>%
   rename(term = concept) %>%
   dplyr::distinct(term) %>%
@@ -33,7 +35,7 @@ save(df.concepts, file = "furesh-concepts.rda")
 df.dhd.tools <- read_csv(here("data/DHd/henny-jettka/software-names-counts-total.csv"), col_names = FALSE) %>%
   dplyr::rename(term = X1,
                 freq = X2) %>%
-  dplyr::mutate(term.lc = stringr::str_to_lower(word))
+  dplyr::mutate(term.lc = stringr::str_to_lower(term))
 
 # pre-process data
 # get all three and four letter words from the data set to look for accronyms
@@ -81,13 +83,22 @@ df.dhconfs.titles.tools <- f.stringmatch.frequency(df.dhconfs.titles, df.tools$t
 df.dhconfs.abstracts.tools <- f.stringmatch.frequency(df.dhconfs.abstracts, df.tools$term)
 
 # control for correct case of matches
-df.dhconfs.titles.tools.case <- dplyr::left_join(df.tools, df.dhconfs.titles.tools, by = c("term" = "term")) %>%
-  dplyr::arrange(desc(freq))
-df.dhconfs.abstracts.tools.case <- dplyr::left_join(df.tools, df.dhconfs.abstracts.tools, by = c("term" = "term")) %>%
-  dplyr::arrange(desc(freq))
+# better approach: match all the variants and then group by term
+f.clean.variants <- function(df.input) {
+  df.output <- dplyr::left_join(df.tools, df.input, by = c("variant" = "term")) %>%
+    tidyr::drop_na()%>%
+    dplyr::group_by(term) %>%
+    dplyr::summarise(freq = sum(freq)) %>%
+    dplyr::arrange(desc(freq))
+  df.output
+}
+df.dhconfs.titles.tools.case <- f.clean.variants(df.dhconfs.titles.tools)
+df.dhconfs.abstracts.tools.case <- f.clean.variants(df.dhconfs.abstracts.tools)
 
 write.table(df.dhconfs.titles.tools.case, file = "dh-conferences-frequencies_tools-titles.csv", row.names = F, quote = T, sep = ",")
 write.table(df.dhconfs.abstracts.tools.case, file = "dh-conferences-frequencies_tools-abstracts.csv", row.names = F, quote = T, sep = ",")
+
+# better approach: match all the variants and then group by term
 
 # wordclouds with ggplot
 # some variables
@@ -120,8 +131,9 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
   #dplyr::mutate(angle = 45 * sample(-2:2, n(), replace = TRUE, prob = c(1, 1, 4, 1, 1)))
   # labels, captions, other variables
   v.output.device = output.device
+  v.total.values = nrow(data.frequency)
   font = "Baskerville"
-  v.title = paste("The", nrow(data.frequency), "most frequent", label.text, sep = " ")
+  v.title = paste("The", v.total.values, "most frequent", label.text, sep = " ")
   v.caption = paste(v.label.source, ".\n", v.label.license, sep = "")
   # plot
   plot.base <- ggplot(data.frequency, aes(x = 1, y = 1, size = freq, label = term, colour = freq)) +
@@ -174,9 +186,9 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
   #plot.repel
   #plot.wordcloud
   # save output: with the latest update of ggplot2, ragg is not needed anymore and Arabic is correctly printed
-  ggsave(plot = plot.wordcloud, filename = paste("wordcloud_", label.text, "-w_", max.values,".", v.output.device, sep = ""),
+  ggsave(plot = plot.wordcloud, filename = paste("wordcloud_", label.text, "-w_", v.total.values,".", v.output.device, sep = ""),
          device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
-  ggsave(plot = plot.repel, filename = paste("wordcloud-repel_", label.text, "-w_", max.values,".", v.output.device, sep = ""),
+  ggsave(plot = plot.repel, filename = paste("wordcloud-repel_", label.text, "-w_", v.total.values,".", v.output.device, sep = ""),
          device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
 }
 
@@ -186,15 +198,10 @@ height.Plot <- 300
 dpi.Plot <- 300
 
 v.label.source = "Data: Weingart et al., 'Index of Digital Humanities Conferences Data', https://doi.org/10.1184/R1/12987959.v4" # source information
-f.wordcloud.frequency(df.dhconfs.abstracts.tools.case, 100, "tools in DH conference abstracts", "svg")
-f.wordcloud.frequency(df.dhconfs.abstracts.tools.case, 100, "tools in DH conference abstracts", "png")
+f.wordcloud.frequency(df.dhconfs.abstracts.tools.case, 150, "tools in DH conference abstracts", "svg")
+f.wordcloud.frequency(df.dhconfs.abstracts.tools.case, 150, "tools in DH conference abstracts", "png")
 f.wordcloud.frequency(df.concepts.abstracts, 100, "concepts in DH conference abstracts", "svg")
 f.wordcloud.frequency(df.concepts.abstracts, 100, "concepts in DH conference abstracts", "png")
 
 .label.source = "Data: Henny-Kramer et al., 'Softwarezitation in Den Digital Humanities', https://doi.org/10.5281/zenodo.5106391" # source information
 f.wordcloud.frequency(df.dhd.tools, 100, "tools in DHd conference abstracts", "png")
-
-
-# playground
-
-

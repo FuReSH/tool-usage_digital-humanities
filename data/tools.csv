@@ -1,234 +1,285 @@
-"tool"
-#LancsBox
-Academy CRIS
-AI
-ANNIS
-Annotation Studio
-API
-ArcGIS
-ATHEN
-BAZ-GA Oxygen-Framework
-Beaconizer
-Beethovens Werkstatt Tools
-CARE
-Carto
-CATMA
-CATview
-CLARIAH
-CLARIN
-Classical Text Editor
-CLI
-CMDI-Maker
-CollateX
-CorA
-CorpusExplorer
-CorrespSearch
-CQPweb
-CSV
-CTE
-CTS
-Cultural Heritage Framework
-CWRC-Writer
-DARIAH
-DARIAH Topics Explorer
-DiaCollo
-digiCULT
-digiCULT.web
-digiCULT.xTree
-Digital Catalogue Raisonné
-Docker
-DOI
-Drupal
-DTA::CAB
-DTD
-Dualist
-Duraark
-Easy Linavis
-ecdosis
-ediarum
-Edirom
-Edirom Editor
-Edirom Online
-EFES
-eHinman
-ekdosis
-eLaborate
-ELAN
-eXGraphs
-EXMARaLDA
-Extranet
-Ezlinavis
-FAIR
-FLEx
-FreeLing
-FromThePage
-FuD
-GAMS
-GATE
-Gensim
-Gephi
-GeTa
-ggplot2
-GIS
-git
-GitHub
-GitLab
-GRACE
-GROBID
-GUI
-heiANNO
-HeidelTime
-heiEDITIONS
-heiMPT
-Hoftheater-Tool
-HTR
-HTTP
-iART
-IEEE 802.11
-IIIF
-IIIF Image Server
-Image Markup Tool
-INCEpTION
-IncipitSearch
-InCritApp
-Internet
-Intranet
-IP
-Isilex
-Java
-Jekyll
-JSON
-Juxta
-Kitodo
-LAKomp
-LAN
-LERA
-Levenshtein
-Linked Stage Graph
-LIWC
-LOD
-LOD Vocabulary Editor and URI Resolver
-LombardPress
-Lyra
-MALLET
-ManuscriptDesk
-MARC
-MariaDB
-matlab
-MAX
-Measure Detector
-MEI Metadata Editor
-MEI Score Editor
-meico
-MEIGarage
-MerMEId
-METS
-ML
-MODS
-MOM-CA
-MongoDB
-Multiple-Channel Reverberation
-musiXplora
-MySQL
-Near Duplicate Detection
-NEI
-NER
-New Testament Virtual Manuscript Room
-NLP
-Node Goat
-NoSQL
-NTVMR
-OA
-OCR
-OCRopus
-ODD
-Omeka
-OSDS
-OWL
-oXygen
-P3
-P4
-P5
-Palladio
-Pandas
-Pepper
-PHAIDRA
-PhiloEditor
-Pliny
-Poemage
-PostgreSQL
-prometheus
-Protégé
-Python
-QGIS
-R
-RDF
-Reledmac
-ResearchSpace
-RESTful
-SADE
-SALSAH
-Salt
-ScoreTube
-Scripto
-SentText
-Shadowthing
-SKOS
-SMuFL-Browser
-SPARQL
-SPEEDy
-SPSS
-SQL
-SQLite
-Stereoscope
-StoryMap
-Stylo
-stylometry
-SVG
-T-Pen
-Tableau
-TCP
-TEASys
-TEI
-TEI Critical Apparatus Toolbox
-Terminal
-TextGrid
-TextGridLab
-Textual Communities
-TFIDF
-tidyverse
-TMW
-Toolbox
-Topic Modelling
-TOPORAZ
-TPen
-Transcribo
-Transkribus
-Turtle
-TUSTEP
-TXM
-VAnnotatoR
-Variance Viewer
-Verovio
-Versioning Machine
-Vertaktoid
-Voyant
-VPN
-WACZ
-WAN
-WebAnno
-WebLicht
-WebMAUS
-WeGA-Webapp
-WissKI
-WITTfind
-WMRCRE
-WWW
-XML
-XPath
-XQuery
-XSL
-XSLT
-XTriples
-YAML
-Zooniverse
+"term","variant"
+#LancsBox,#LancsBox
+Academy CRIS,Academy CRIS
+AI,AI
+Anaconda,Anaconda
+ANNIS,ANNIS
+Annotation Studio,Annotation Studio
+AntConc,AntConc
+API,API
+ArcGIS,ArcGIS
+ATHEN,ATHEN
+Bash,Bash
+Bash,bash
+BAZ-GA Oxygen-Framework,BAZ-GA Oxygen-Framework
+Beaconizer,Beaconizer
+Beethovens Werkstatt Tools,Beethovens Werkstatt Tools
+BERT,BERT
+CARE,CARE
+Carto,Carto
+CATMA,CATMA
+CATview,CATview
+CLARIAH,CLARIAH
+CLARIN,CLARIN
+CLI,CLI
+CMDI-Maker,CMDI-Maker
+CollateX,CollateX
+CorA,CorA
+CorpusExplorer,CorpusExplorer
+CorrespSearch,CorrespSearch
+CQPweb,CQPweb
+CSS,CSS
+CSV,CSV
+CSV,csv
+CSV,TSV
+CSV,tsv
+CTE,Classical Text Editor
+CTE,CTE
+CTS,CTS
+Cultural Heritage Framework,Cultural Heritage Framework
+CWRC-Writer,CWRC-Writer
+DARIAH Topics Explorer,DARIAH Topics Explorer
+DARIAH,DARIAH
+DiaCollo,DiaCollo
+digiCULT,digiCULT
+digiCULT.web,digiCULT.web
+digiCULT.xTree,digiCULT.xTree
+Digital Catalogue Raisonné,Digital Catalogue Raisonné
+Docker,Docker
+DOI,DOI
+Drupal,Drupal
+DTA::CAB,DTA::CAB
+DTD,DTD
+Dualist,Dualist
+Duraark,Duraark
+Easy Linavis,Easy Linavis
+ecdosis,ecdosis
+ediarum,ediarum
+Edirom Editor,Edirom Editor
+Edirom Online,Edirom Online
+Edirom,Edirom
+EFES,EFES
+eHinman,eHinman
+ekdosis,ekdosis
+eLaborate,eLaborate
+ELAN,ELAN
+eXGraphs,eXGraphs
+EXMARaLDA,EXMARaLDA
+Extranet,Extranet
+Ezlinavis,Ezlinavis
+FAIR,FAIR
+FLEx,FLEx
+FreeLing,FreeLing
+FromThePage,FromThePage
+FuD,FuD
+GAMS,GAMS
+GATE,GATE
+Gensim,Gensim
+GeoJSON,GeoJSON
+Gephi,Gephi
+GeTa,GeTa
+ggplot2,ggplot
+ggplot2,ggplot2
+GIS,geographic information system
+GIS,GIS
+git,git
+GitHub,GitHub
+GitHub,github
+GitLab,GitLab
+GitLab,gitlab
+GRACE,GRACE
+GROBID,GROBID
+GUI,GUI
+heiANNO,heiANNO
+HeidelTime,HeidelTime
+heiEDITIONS,heiEDITIONS
+heiMPT,heiMPT
+Hoftheater-Tool,Hoftheater-Tool
+HTR,HTR
+HTTP,HTTP
+HTTPS,HTTPS
+iART,iART
+IEEE 802.11,IEEE 802.11
+IIIF Image Server,IIIF Image Server
+IIIF,IIIF
+Image Markup Tool,Image Markup Tool
+INCEpTION,INCEpTION
+IncipitSearch,IncipitSearch
+InCritApp,InCritApp
+Internet,Internet
+Internet,internet
+Intranet,Intranet
+IP,IP
+Isilex,Isilex
+Java,Java
+Jekyll,Jekyll
+jQuery,jQuery
+JS,JavaScript
+JS,JS
+JSON,JSON
+JSON-LD,JSON-LD
+JSON-LD,json-ld
+Jupyter Notebook,Jupyter Notebook
+Juxta,Juxta
+Kitodo,Kitodo
+LAKomp,LAKomp
+LAN,LAN
+LDA,LDA
+LERA,LERA
+Levenshtein,Levenshtein
+Linked Stage Graph,Linked Stage Graph
+LIWC,LIWC
+LOD Vocabulary Editor and URI Resolver,LOD Vocabulary Editor and URI Resolver
+LOD, Linked Open Data
+LOD, linked open data
+LOD,LOD
+LombardPress,LombardPress
+Lyra,Lyra
+MALLET,MALLET
+ManuscriptDesk,ManuscriptDesk
+MARC,MARC
+MariaDB,MariaDB
+matlab,matlab
+MAX,MAX
+Measure Detector,Measure Detector
+MEI Metadata Editor,MEI Metadata Editor
+MEI Score Editor,MEI Score Editor
+MEI,MEI
+MEI,Music Encoding Initiative
+meico,meico
+MEIGarage,MEIGarage
+MerMEId,MerMEId
+METS,METS
+ML,machine learning
+ML,Machine Learning
+ML,ML
+MODS,MODS
+MOM-CA,MOM-CA
+MongoDB,MongoDB
+Multiple-Channel Reverberation,Multiple-Channel Reverberation
+musiXplora,musiXplora
+MySQL,MySQL
+Near Duplicate Detection,Near Duplicate Detection
+NEI,NEI
+NER, Named Entity Recognition
+NER, named entity recognition
+NER,NER
+Neural Networks,Neural Networks
+Neural Networks,neural networks
+New Testament Virtual Manuscript Room,New Testament Virtual Manuscript Room
+NLP, Natural Language Processing
+NLP, natural language processing
+NLP,NLP
+Node Goat,Node Goat
+NoSQL,NoSQL
+NTVMR,NTVMR
+OA,OA
+OA,Open Access
+OA,open access
+OCR,OCR
+OCRopus,OCRopus
+ODD,ODD
+Omeka,Omeka
+OSDS,OSDS
+OWL,OWL
+oXygen,oXygen
+P3,P3
+P4,P4
+P5,P5
+Palladio,Palladio
+Pandas,Pandas
+Pepper,Pepper
+PHAIDRA,PHAIDRA
+PhiloEditor,PhiloEditor
+Pliny,Pliny
+Poemage,Poemage
+PostgreSQL,PostgreSQL
+prometheus,prometheus
+Protégé,Protégé
+Python,Python
+Python,python
+QGIS,QGIS
+R,R
+RDF, Resource Description Framework
+RDF,RDF
+Reledmac,Reledmac
+ResearchSpace,ResearchSpace
+RESTful,RESTful
+SADE,SADE
+SALSAH,SALSAH
+Salt,Salt
+ScoreTube,ScoreTube
+Scripto,Scripto
+SeaDragon,SeaDragon
+Sentiment Analysis,Sentiment Analysis
+SentText,SentText
+Shadowthing,Shadowthing
+SKOS,SKOS
+SMuFL-Browser,SMuFL-Browser
+SpaCy,SpaCy
+SPARQL,SPARQL
+SPEEDy,SPEEDy
+SPSS,SPSS
+SQL,SQL
+SQLite,SQLite
+Stereoscope,Stereoscope
+StoryMap,StoryMap
+Stylo,Stylo
+stylometry,stylometry
+SVG,SVG
+T-Pen,T-Pen
+Tableau,Tableau
+TCP,TCP
+TEASys,TEASys
+TEI Critical Apparatus Toolbox,TEI Critical Apparatus Toolbox
+TEI,TEI
+TEI,Text Encoding Initiative
+TEI,text encoding initiative
+Terminal,Terminal
+TextGrid,TextGrid
+TextGridLab,TextGridLab
+Textual Communities,Textual Communities
+TF-IDF,TF-IDF
+Tidyverse,tidyverse
+Tidyverse,Tidyverse
+TMW,TMW
+Toolbox,Toolbox
+Topic Modeling,topic modeling
+Topic Modeling,Topic Modeling
+Topic Modeling,topic modelling
+Topic Modeling,Topic Modelling
+TOPORAZ,TOPORAZ
+TPen,TPen
+Transcribo,Transcribo
+Transkribus,Transkribus
+Turtle,Turtle
+TUSTEP,TUSTEP
+TXM,TXM
+VAnnotatoR,VAnnotatoR
+Variance Viewer,Variance Viewer
+Verovio,Verovio
+Versioning Machine,Versioning Machine
+Vertaktoid,Vertaktoid
+Voyant,Voyant
+VPN,VPN
+WACZ,WACZ
+WAN,WAN
+WebAnno,WebAnno
+WebLicht,WebLicht
+WebMAUS,WebMAUS
+WeGA-Webapp,WeGA-Webapp
+WissKI,WissKI
+WITTfind,WITTfind
+WMRCRE,WMRCRE
+Word Embeddings,Word Embeddings
+Word Embeddings,word embeddings
+word2vec,word2vec
+WWW,WWW
+XML,XML
+XPath,XPath
+XQuery,XQuery
+XSL,XSL
+XSLT,XSLT
+XTriples,XTriples
+YAML,YAML
+Zooniverse,Zooniverse

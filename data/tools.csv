@@ -7,6 +7,7 @@ ANNIS,ANNIS
 Annotation Studio,Annotation Studio
 AntConc,AntConc
 API,API
+APIs,APIs
 ArcGIS,ArcGIS
 ATHEN,ATHEN
 Bash,Bash
@@ -64,6 +65,8 @@ ekdosis,ekdosis
 eLaborate,eLaborate
 ELAN,ELAN
 eXGraphs,eXGraphs
+eXistDB,eXist DB
+eXistDB,eXistDB
 EXMARaLDA,EXMARaLDA
 Extranet,Extranet
 Ezlinavis,Ezlinavis
@@ -200,8 +203,8 @@ Python,Python
 Python,python
 QGIS,QGIS
 R,R
-RDF, Resource Description Framework
 RDF,RDF
+RDF,Resource Description Framework
 Reledmac,Reledmac
 ResearchSpace,ResearchSpace
 RESTful,RESTful

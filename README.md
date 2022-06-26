@@ -28,6 +28,9 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
 
 # to do
 
+- results
+    + `R` is strikingly prominent
+        * add column with KWIC to the intermediate data output 
 - add DHd abstracts from the GitHub repositories
 - run R scripts for frequencies of our controlled vocabulary of tools and concepts on the DHd data
 

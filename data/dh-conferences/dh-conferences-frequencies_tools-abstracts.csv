@@ -1,41 +1,46 @@
 "term","freq"
-"TEI",1222
+"TEI",1273
 "R",1166
 "XML",430
 "GitHub",359
+"NLP",312
 "Internet",294
-"GIS",188
+"ML",214
+"GIS",190
+"LOD",184
+"Topic Modeling",179
 "OCR",171
-"RDF",158
-"NLP",151
+"RDF",163
+"OA",153
 "Python",142
 "API",141
 "DARIAH",137
-"Topic Modeling",136
-"IIIF",94
+"IIIF",95
 "Voyant",89
 "TXM",88
 "DOI",80
 "Gephi",80
-"LOD",77
+"NER",77
 "LDA",74
 "TCP",63
 "Neural Networks",61
 "XQuery",59
 "Omeka",57
 "stylometry",51
+"CSV",48
 "SPARQL",48
-"CSV",47
 "JSON",47
 "CLARIN",45
 "MALLET",41
 "CollateX",40
+"JS",38
 "CATMA",37
+"APIs",35
 "P5",35
 "XSLT",33
-"NER",30
 "OWL",30
 "HTR",29
+"MEI",29
 "Stylo",29
 "Word Embeddings",29
 "GUI",26
@@ -47,7 +52,6 @@
 "Java",23
 "Transkribus",23
 "GeoJSON",22
-"MEI",22
 "CSS",21
 "Juxta",19
 "MARC",19
@@ -70,13 +74,11 @@
 "LERA",11
 "SQL",11
 "XSL",11
-"ML",10
 "SKOS",10
 "ArcGIS",9
 "Drupal",9
 "IP",9
 "METS",9
-"OA",9
 "ResearchSpace",9
 "Salt",9
 "TF-IDF",9
@@ -111,6 +113,7 @@
 "DTD",2
 "ecdosis",2
 "Edirom",2
+"eXistDB",2
 "ggplot2",2
 "OCRopus",2
 "P3",2

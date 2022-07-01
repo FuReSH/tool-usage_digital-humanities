@@ -1,19 +1,22 @@
 "term","freq"
-"TEI",128
+"TEI",132
 "XML",63
 "GIS",32
 "Internet",25
-"Topic Modeling",21
+"LOD",25
+"NLP",24
+"Topic Modeling",24
+"ML",22
 "OCR",20
 "DARIAH",18
+"OA",14
 "AI",12
 "R",12
 "IIIF",11
-"NLP",11
 "Voyant",9
 "API",8
 "TXM",8
-"LOD",7
+"NER",7
 "P5",7
 "Pliny",7
 "RDF",7
@@ -31,6 +34,7 @@
 "FAIR",4
 "Juxta",4
 "LDA",4
+"MEI",4
 "ODD",4
 "Omeka",4
 "SVG",4
@@ -42,14 +46,13 @@
 "OWL",3
 "TextGrid",3
 "XSL",3
+"APIs",2
 "CLARIAH",2
 "Drupal",2
 "ELAN",2
 "IncipitSearch",2
 "Java",2
-"MEI",2
 "MySQL",2
-"NER",2
 "SPARQL",2
 "SPSS",2
 "stylometry",2

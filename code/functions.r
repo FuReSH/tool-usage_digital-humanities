@@ -39,9 +39,9 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
     dplyr::filter(freq > 1) %>% # remove unique terms
     slice(1:max.values) %>% # limit the length of the data set
     # add some 90 degree angles to 20 % of all terms
-    dplyr::mutate(angle = 90 * sample(c(0, 1), n(), replace = TRUE, prob = c(80, 20))) %>%
+    dplyr::mutate(angle = 90 * sample(c(0, 1), n(), replace = TRUE, prob = c(80, 20))) #%>%
     # add some 45 degree angles: can be removed, I suppose
-    dplyr::mutate(angle = 45 * sample(-2:2, n(), replace = TRUE, prob = c(1, 1, 4, 1, 1)))
+    #dplyr::mutate(angle = 45 * sample(-2:2, n(), replace = TRUE, prob = c(1, 1, 4, 1, 1)))
   # labels, captions, other variables
   v.output.device = output.device
   v.total.values = nrow(data.frequency)
@@ -55,7 +55,7 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
   # labs
   layer.labs <- labs(x = "", y = "", 
                      title = v.title,
-                     subtitle = "",
+                     subtitle = "by number of texts",
                      caption = v.caption)
   layer.text.repel <- c(
     geom_text_repel(segment.size = 0, force = 10, max.overlaps = 500, family = font.words),

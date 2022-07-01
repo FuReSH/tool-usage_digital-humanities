@@ -1,82 +1,80 @@
 # this script generates and saves term-frequency lists from the DH conferences corpus
 library(tidyverse)
-library(tm)
 library(here)
-library(hunspell)
 # enable unicode
 Sys.setlocale("LC_ALL", "en_US.UTF-8")
-# set a general theme for all ggplots
-theme_set(theme_bw())
 
-# load data: DH conference abstracts 
-setwd(here("data/dh-conferences/12987959"))
-df.dhconfs <- readr::read_csv("dh_conferences_works.csv")
-df.dhconfs.works <- df.dhconfs %>%
-  dplyr::select(work_title, work_authors, full_text, conference_year, keywords, topics, languages) %>%
-  dplyr::rename(title = work_title,
-                text = full_text,
-                authors = work_authors,
-                year = conference_year)
-rm(df.dhconfs)
+# load functions and variables/parameters
+source(here("code", "functions.r"))
 
-# processing cleaning
-## lower case
-df.dhconfs.works <- df.dhconfs.works %>%
-  dplyr::mutate(title.lc = stringr::str_to_lower(title),
-                text.lc = stringr::str_to_lower(text),
-                keywords.lc = stringr::str_to_lower(keywords)
-  )
-## keywords and topics need to be split along ";"
-df.test <- df.dhconfs.works %>%
-  tidyr::separate(keywords.lc, into = c("k1", "k2", "k3", "k4", "k5", "k6", "k7", "k8"), sep = ";")
+# load data
+# 1. DH conferences
+setwd(here("data", "dh-conferences"))
+load("dh_conferences_works.rda")
 
-# save data
-setwd("../")
-save(df.dhconfs.works, file = "dh_conferences_works.rda")
+# 2. FuReSH tool list
+df.tools <- read_csv(here("data","tools.csv")) %>%
+  #rename(term = tool) %>%
+  #dplyr::distinct(term) %>%
+  # add lower case for easier joining of data frames
+  dplyr::mutate(term.lc = stringr::str_to_lower(term))
+save(df.tools, file = here("data/furesh-tools.rda"))
+#write.table(df.tools, file = "furesh-tools.csv", row.names = F, quote = F, sep = ",")
+df.concepts <- read_csv(here("data", "concepts.csv")) %>%
+  rename(term = concept) %>%
+  dplyr::distinct(term) %>%
+  # add lower case for easier joining of data frames
+  dplyr::mutate(term.lc = stringr::str_to_lower(term))
+save(df.concepts, file = here("data/furesh-concepts.rda"))
+
+# pre-process data
+df.dhconfs.titles <- df.dhconfs.works %>%
+  dplyr::select(title) %>%
+  dplyr::rename(text = title)
+df.dhconfs.abstracts <- df.dhconfs.works %>%
+  dplyr::select(text)
+
+# actual analysis: use the external stringmatch function
+df.dhconfs.titles.tools <- f.stringmatch.frequency(df.dhconfs.titles, df.tools$variant)
+df.dhconfs.abstracts.tools <- f.stringmatch.frequency(df.dhconfs.abstracts, df.tools$variant)
+
+# control for correct case of matches: match all the variants and then group by term
+df.dhconfs.titles.tools <- f.clean.variants(df.dhconfs.titles.tools)
+df.dhconfs.abstracts.tools <- f.clean.variants(df.dhconfs.abstracts.tools)
+
+write.table(df.dhconfs.titles.tools, file = "dh-conferences-frequencies_tools-titles.csv", row.names = F, quote = T, sep = ",")
+write.table(df.dhconfs.abstracts.tools, file = "dh-conferences-frequencies_tools-abstracts.csv", row.names = F, quote = T, sep = ",")
 
 
-# generate frequency lists: generic term-document-matrix
-f.frequency.list <- function(input) {
-  docs <- Corpus(VectorSource(input))
-  # build a term-document matrix to get a frequency list
-  dtm <- TermDocumentMatrix(docs, control = list(removePunctuation = TRUE, 
-                                                 stopwords = FALSE,
-                                                 stemming = FALSE) # stemming is too aggressive for what we want to achieve
-                            )
-  m <- as.matrix(dtm)
-  v <- sort(rowSums(m), decreasing = TRUE)
-  output <- data.frame(word = names(v),freq=v)
-  output
+# wordclouds with ggplot: external function
+v.label.source = "Data: Weingart et al., 'Index of Digital Humanities Conferences Data', https://doi.org/10.1184/R1/12987959.v4" # source information
+f.wordcloud.frequency(df.dhconfs.titles.tools, 150, "tools in DH conference paper titles", "png")
+f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, "tools in DH conference abstracts", "svg")
+f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, "tools in DH conference abstracts", "png")
+f.wordcloud.frequency(df.concepts.abstracts, 100, "concepts in DH conference abstracts", "svg")
+f.wordcloud.frequency(df.concepts.abstracts, 100, "concepts in DH conference abstracts", "png")
+
+.label.source = "Data: Henny-Kramer et al., 'Softwarezitation in Den Digital Humanities', https://doi.org/10.5281/zenodo.5106391" # source information
+f.wordcloud.frequency(df.dhd.tools, 100, "tools in DHd conference abstracts", "png")
+
+# playground
+f.stringmatch <- function(df.input, list.strings) {
+  df.output <- df.input %>%
+    dplyr::mutate(
+      term = str_extract_all(text, 
+                             regex(paste0("\\b", list.strings, "\\b", collapse = '|'),
+                                   ignore_case = FALSE)), # it might make sense to add an input variable for this choice
+      KWIC = str_extract_all(text, 
+                             regex(paste0("\\w+\\b", list.strings, "\\b\\w+", collapse = '|'),
+                                   ignore_case = FALSE))
+    )%>%
+      tidyr::unnest(cols = c("term"))
+      df.output
 }
 
-df.freq.titles <- f.frequency.list(df.dhconfs.works$title.lc)
-df.freq.keywords <- f.frequency.list(df.dhconfs.works$keywords.lc)
-df.freq.abstracts <- f.frequency.list(df.dhconfs.works$text.lc)
-save(df.freq.titles, file = "dh-conferences-frequencies_titles.rda")
-save(df.freq.abstracts, file = "dh-conferences-frequencies_abstracts.rda")
-save(df.freq.keywords, file = "dh-conferences-frequencies_keywords.rda")
-write.table(df.freq.titles, file = "dh-conferences-frequencies_titles.csv", row.names = F, quote = T, sep = ",")
-write.table(df.freq.keywords, file = "dh-conferences-frequencies_keywords.csv", row.names = F, quote = T, sep = ",")
-write.table(df.freq.abstracts, file = "dh-conferences-frequencies_abstracts.csv", row.names = F, quote = T, sep = ",")
-
-# frequency list with stemming
-# PROBLEM: hunspell will not work with most accronyms
-# PROBLEM: hunspell is quite slow
-#df.allwords <- hunspell_parse(df.dhconfs.works$text)
-#v.stems <- unlist(hunspell_stem(unlist(df.allwords)))
-#df.freq.abstracts.stems <- as_tibble(table(v.stems))
-
-f.frequency.list.2 <- function(input) {
-  allwords <- hunspell_parse(input)
-  stems <- unlist(hunspell_stem(unlist(allwords)))
-  output <- as_tibble(table(stems)) %>%
-    dplyr::rename(stem = stems,
-                  freq = n) %>%
-    dplyr::arrange(desc(freq))
-  output
-}
-
-a1 <- f.frequency.list(df.dhconfs.works$title.lc)
-a2 <- f.frequency.list.2(df.dhconfs.works$title.lc)
-head(a1)
-head(a2)
+a <- slice(df.dhconfs.abstracts)
+a <- f.stringmatch(df.dhconfs.titles, df.tools$term)
+b <- slice_head(a) %>%
+  tidyr::unnest_longer(KWIC)
+a[[1,3]]
+  

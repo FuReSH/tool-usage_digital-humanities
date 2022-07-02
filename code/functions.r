@@ -43,6 +43,13 @@ f.read.yaml.furesh <- function(filename) {
     dplyr::na_if("NULL")
   df.input
 }
+# build data frame from  list of file names
+f.read.txt.files <- function(filenames) {
+  df.output <- map_df(filenames, ~ tibble(
+    text = read_file(.x)) %>%
+      mutate(filename = basename(.x))
+  )
+}
 # Wordcloud with ggplot2
 # the input requires a column named "term"
 f.wordcloud.frequency <- function(input, max.values, label.text, output.device) {

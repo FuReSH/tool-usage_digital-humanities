@@ -1,0 +1,58 @@
+- name: AI
+  expansion: artificial intelligence
+- name: distant reading
+  category: method
+- name: Gephi
+  category: software
+- name: HTR
+  expansion: Handwritten Text Recognition
+  category: method
+- name: Jekyll
+  category: software
+- name: JSON
+  category: serialization
+- name: layout recognition
+  category: method
+- name: maker culture
+- name: minimal computing
+- name: ML
+  expansion: machine learning
+- name: NER
+  expansion: Named Entity Recognition
+- name: network analysis
+  category: method
+- name: neural networks
+- name: NLP
+  expansion: Natural Language Processing
+  category: method
+- name: OCR
+  expansion: Optical Character Recognition
+  category: method
+- name: Pandas
+  category: software
+- name: Python
+  category: language
+- name: R
+  category: language
+- name: RStudio
+  category: software
+- name: RDF
+  expansion: Resource Description Framework
+  category: serialization
+- name: stylometry
+  category: method
+- name: stylo
+  category: software
+- name: Tidyverse
+  category: software
+- name: Voyant Tools
+  category: software
+- name: Wax
+  category: software
+- name: XML
+  expansion: eXtensible Markup Language
+  category: 
+    - language
+    - serialization
+- name: YAML
+  category: serialization

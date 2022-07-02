@@ -1,6 +1,7 @@
 # this script generates and saves term-frequency lists from the DH conferences corpus
 library(tidyverse)
 library(here)
+library(DataExplorer) # for quick exploration
 # enable unicode
 Sys.setlocale("LC_ALL", "en_US.UTF-8")
 
@@ -29,10 +30,21 @@ save(df.concepts, file = here("data/furesh-concepts.rda"))
 
 # pre-process data
 df.dhconfs.titles <- df.dhconfs.works %>%
-  dplyr::select(title) %>%
-  dplyr::rename(text = title)
+  dplyr::select(title, year) %>%
+  dplyr::rename(text = title) %>%
+  tidyr::drop_na(text) %>%
+  dplyr::arrange(year)
+
 df.dhconfs.abstracts <- df.dhconfs.works %>%
-  dplyr::select(text)
+  dplyr::select(text, year) %>%
+  tidyr::drop_na(text) %>%
+  dplyr::arrange(year)
+
+# quick exploration
+summary(df.dhconfs.titles)
+summary(df.dhconfs.abstracts)
+plot_histogram(df.dhconfs.titles)
+plot_histogram(df.dhconfs.abstracts)
 
 # actual analysis: use the external stringmatch function
 df.dhconfs.titles.tools <- f.stringmatch.frequency(df.dhconfs.titles, df.tools$variant)
@@ -45,19 +57,34 @@ df.dhconfs.abstracts.tools <- f.clean.variants(df.dhconfs.abstracts.tools)
 write.table(df.dhconfs.titles.tools, file = "dh-conferences-frequencies_tools-titles.csv", row.names = F, quote = T, sep = ",")
 write.table(df.dhconfs.abstracts.tools, file = "dh-conferences-frequencies_tools-abstracts.csv", row.names = F, quote = T, sep = ",")
 
+# analysis: slice data into years
 
 # wordclouds with ggplot: external function
 v.label.source = "Data: Weingart et al., 'Index of Digital Humanities Conferences Data', https://doi.org/10.1184/R1/12987959.v4" # source information
-f.wordcloud.frequency(df.dhconfs.titles.tools, 150, "tools in DH conference paper titles", "png")
-f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, "tools in DH conference abstracts", "svg")
-f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, "tools in DH conference abstracts", "png")
-f.wordcloud.frequency(df.concepts.abstracts, 100, "concepts in DH conference abstracts", "svg")
-f.wordcloud.frequency(df.concepts.abstracts, 100, "concepts in DH conference abstracts", "png")
+v.label.abstracts.summary = paste("in ", nrow(df.dhconfs.abstracts), " DH conference paper abstracts (", min(df.dhconfs.abstracts$year), "-", max(df.dhconfs.abstracts$year), ")", sep = "")
+v.label.titles.summary = paste("in ", nrow(df.dhconfs.titles), " DH conference paper titles (", min(df.dhconfs.titles$year), "-", max(df.dhconfs.titles$year), ")", sep = "")
+f.wordcloud.frequency(df.dhconfs.titles.tools, 150, paste("tools", v.label.titles.summary, sep = " "), "png")
+f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, paste("tools", v.label.abstracts.summary, sep = " "), "svg")
+f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, paste("tools", v.label.abstracts.summary, sep = " "), "png")
+f.wordcloud.frequency(df.concepts.abstracts, 100, paste("concepts", v.label.abstracts.summary, sep = " "), "svg")
+f.wordcloud.frequency(df.concepts.abstracts, 100, paste("concepts", v.label.abstracts.summary, sep = " "), "png")
 
 .label.source = "Data: Henny-Kramer et al., 'Softwarezitation in Den Digital Humanities', https://doi.org/10.5281/zenodo.5106391" # source information
 f.wordcloud.frequency(df.dhd.tools, 100, "tools in DHd conference abstracts", "png")
 
+
+
 # playground
+
+df.test <- df.dhconfs.titles.tools %>%
+  mutate(label = glue::glue("<span style='display: block; width: {sqrt(freq)}; height'>{term}</span>"))
+ggplot(df.test) +
+  geom_label_repel(aes(x = 1, y = 1, label = term, color = freq),
+                   segment.size = 0, force = 10, max.overlaps = 500, family = font.words)
+  scale_size(range = c(1.5, 40), guide = "none")
+  
+
+# playground: KWIC
 f.stringmatch <- function(df.input, list.strings) {
   df.output <- df.input %>%
     dplyr::mutate(

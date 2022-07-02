@@ -21,6 +21,6 @@ size.Subtitle.Px = size.Subtitle * size.Base.Px
 size.Text.Px = size.Text * size.Base.Px
 
 # variables for saving plots
-width.Plot <- 300
-height.Plot <- 300
+width.Plot <- 240
+height.Plot <- width.Plot
 dpi.Plot <- 300

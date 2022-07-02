@@ -31,6 +31,18 @@ f.clean.variants <- function(df.input) {
   df.output
 }
 
+# read our YAML for tools
+f.read.yaml.furesh <- function(filename) {
+  list.input <- read_yaml(file = filename, readLines.warn = FALSE)
+  df.input <- tibble(
+    name = purrr::map(list.input, "name"),
+    expansion = purrr::map(list.input, "expansion"),
+    category = purrr::map(list.input, "category")
+  ) %>%
+    unnest(cols = c(name, expansion, category)) %>%
+    dplyr::na_if("NULL")
+  df.input
+}
 # Wordcloud with ggplot2
 # the input requires a column named "term"
 f.wordcloud.frequency <- function(input, max.values, label.text, output.device) {
@@ -46,7 +58,7 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
   v.output.device = output.device
   v.total.values = nrow(data.frequency)
   font = "Baskerville"
-  v.title = paste("The", v.total.values, "most frequent", label.text, sep = " ")
+  v.title = paste("The", v.total.values, "most frequent", label.text, "\nby number of texts", sep = " ")
   v.caption = paste(v.label.source, ".\n", v.label.license, sep = "")
   # plot
   plot.base <- ggplot(data.frequency, aes(x = 1, y = 1, size = freq, label = term, colour = freq)) +
@@ -55,20 +67,20 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
   # labs
   layer.labs <- labs(x = "", y = "", 
                      title = v.title,
-                     subtitle = "by number of texts",
                      caption = v.caption)
   layer.text.repel <- c(
     geom_text_repel(segment.size = 0, force = 10, max.overlaps = 500, family = font.words),
     scale_size(range = c(1.5, 40), guide = FALSE))
   layer.text.wordcloud <- c(
     geom_text_wordcloud(aes(angle = angle), # use the angle information
-                        family = font.words, 
-                        area_corr = FALSE, # for frequency corresponding to area
+                        family = font.words,
+                        # frequency = area or font size. If font.size, readers will get the wrong impression
+                        area_corr = TRUE, 
                         eccentricity = 1, # to form a circle
                         rm_outside = TRUE, # if there are too many terms, the smallest ones should be removed if they cannot fit onto the canvas
                         grid_margin = 0.5, seed = 43,
                         show.legend = T),
-    scale_size_area(max_size = 30)
+    scale_size_area(max_size = 60)
     #scale_radius(range = c(0, 30), limits = c(0, NA))
   )
   

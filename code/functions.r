@@ -15,9 +15,12 @@ f.stringmatch.frequency <- function(df.input, list.strings) {
                                    ignore_case = FALSE)) # it might make sense to add an input variable for this choice
     ) %>%
     unnest(term) %>%
-    # this should be grouped by text and term to provide frequency as number of texts the term is mentioned in
-    dplyr::group_by(term, text) %>%
-    dplyr::summarise(freq = n()) %>%
+    # step 1: group by text and term: get frequency of number of hits per term per text
+    group_by(text, term) %>%
+    summarise(freq = n()) %>%
+    # step 2: group by term: get frequency of number of texts per term
+    group_by(term) %>%
+    summarise(freq = n()) %>%
     dplyr::arrange(desc(freq))
   df.output
 }

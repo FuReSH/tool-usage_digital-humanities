@@ -1,32 +1,31 @@
 "term","freq"
-"TEI",132
-"XML",63
-"GIS",32
+"TEI",128
+"XML",61
+"GIS",30
 "Internet",25
 "LOD",25
 "NLP",24
 "Topic Modeling",24
 "ML",22
-"OCR",20
+"OCR",19
 "DARIAH",18
 "OA",14
 "AI",12
 "R",12
 "IIIF",11
+"API",10
 "Voyant",9
-"API",8
 "TXM",8
 "NER",7
 "P5",7
-"Pliny",7
 "RDF",7
-"CTS",6
 "HTR",6
+"Pliny",6
 "CLARIN",5
+"CTS",5
 "DTD",5
 "Neural Networks",5
 "Sentiment Analysis",5
-"Stylo",5
 "Toolbox",5
 "Word Embeddings",5
 "WWW",5
@@ -37,6 +36,7 @@
 "MEI",4
 "ODD",4
 "Omeka",4
+"Stylo",4
 "SVG",4
 "Annotation Studio",3
 "CATMA",3
@@ -46,7 +46,6 @@
 "OWL",3
 "TextGrid",3
 "XSL",3
-"APIs",2
 "CLARIAH",2
 "Drupal",2
 "ELAN",2

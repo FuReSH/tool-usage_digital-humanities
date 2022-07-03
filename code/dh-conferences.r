@@ -54,6 +54,7 @@ df.dhconfs.abstracts.tools <- f.stringmatch.frequency(df.dhconfs.abstracts, df.t
 df.dhconfs.titles.tools <- f.clean.variants(df.dhconfs.titles.tools)
 df.dhconfs.abstracts.tools <- f.clean.variants(df.dhconfs.abstracts.tools)
 
+setwd(here("data", "dh-conferences"))
 write.table(df.dhconfs.titles.tools, file = "dh-conferences-frequencies_tools-titles.csv", row.names = F, quote = T, sep = ",")
 write.table(df.dhconfs.abstracts.tools, file = "dh-conferences-frequencies_tools-abstracts.csv", row.names = F, quote = T, sep = ",")
 

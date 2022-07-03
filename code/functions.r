@@ -26,11 +26,18 @@ f.stringmatch.frequency <- function(df.input, list.strings) {
 }
 # control for correct case of matches
 # match all the variants and then group by term
-f.clean.variants <- function(df.input) {
+f.clean.variants <- function(df.input, number.of.texts) {
   df.output <- dplyr::left_join(df.tools, df.input, by = c("variant" = "term")) %>%
     tidyr::drop_na()%>%
     dplyr::group_by(term) %>%
     dplyr::summarise(freq = sum(freq)) %>%
+    # normalise frequencies: 
+    dplyr::mutate(
+    # 1. relative to each other
+      freq.rel = freq / max(df.input$freq),
+      freq.rel.100 = freq.rel * 100,
+    # 2. as percentage of total number of input texts
+      freq.text.100 = freq / number.of.texts * 100) %>%
     dplyr::arrange(desc(freq))
   df.output
 }
@@ -59,7 +66,7 @@ f.read.txt.files <- function(filenames) {
 f.wordcloud.frequency <- function(input, max.values, label.text, output.device) {
   # process data: frequency list
   data.frequency <- input %>%
-    dplyr::filter(freq > 1) %>% # remove unique terms
+    #dplyr::filter(freq > 1) %>% # remove unique terms: this needs to be commented out for relative frequencies
     slice(1:max.values) %>% # limit the length of the data set
     # add some 90 degree angles to 20 % of all terms
     dplyr::mutate(angle = 90 * sample(c(0, 1), n(), replace = TRUE, prob = c(80, 20))) #%>%
@@ -69,18 +76,19 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
   v.output.device = output.device
   v.total.values = nrow(data.frequency)
   font = "Baskerville"
-  v.title = paste("The", v.total.values, "most frequent", label.text, "\nby number of texts", sep = " ")
+  v.title = paste("The", v.total.values, "most frequent", label.text, sep = " ")
   v.caption = paste(v.label.source, ".\n", v.label.license, sep = "")
-  # plot
-  plot.base <- ggplot(data.frequency, aes(x = 1, y = 1, size = freq, label = term, colour = freq)) +
+  # plot: use normalised relative frequencies
+  plot.base <- ggplot(data.frequency, aes(x = 1, y = 1, size = freq.100, label = term, colour = freq.100)) +
     scale_y_continuous(breaks = NULL) +
     scale_x_continuous(breaks = NULL)
   # labs
   layer.labs <- labs(x = "", y = "", 
                      title = v.title,
+                     subtitle = 'By number of texts',
                      caption = v.caption)
   layer.text.repel <- c(
-    geom_text_repel(segment.size = 0, force = 10, max.overlaps = 500, family = font.words),
+    geom_text_repel(segment.size = 0, force = 20, max.overlaps = 500, family = font.words),
     scale_size(range = c(1.5, 40), guide = FALSE))
   layer.text.wordcloud <- c(
     geom_text_wordcloud(aes(angle = angle), # use the angle information
@@ -97,12 +105,8 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
   
   plot.base.final <- plot.base +
     layer.labs +
-    #scale_color_gradient(low = "darkgreen", high = "red") +
-    #scale_color_paletteer_c("scico::tokyo") +
-    #scale_color_paletteer_c("oompaBase::jetColors") +
-    #scale_colour_paletteer_c("pals::kovesi.diverging_gwv_55_95_c39") +
     scale_colour_paletteer_c("viridis::viridis") +
-    guides(color = guide_colorbar("Frequency", order = 1),
+    guides(color = guide_colorbar("Frequency (%)", order = 1),
            size = "none")+ #guide_legend("Frequency", order = 2)) +
     theme(
       text = element_text(family = font, face = "plain"),

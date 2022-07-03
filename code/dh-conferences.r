@@ -51,8 +51,8 @@ df.dhconfs.titles.tools <- f.stringmatch.frequency(df.dhconfs.titles, df.tools$v
 df.dhconfs.abstracts.tools <- f.stringmatch.frequency(df.dhconfs.abstracts, df.tools$variant)
 
 # control for correct case of matches: match all the variants and then group by term
-df.dhconfs.titles.tools <- f.clean.variants(df.dhconfs.titles.tools)
-df.dhconfs.abstracts.tools <- f.clean.variants(df.dhconfs.abstracts.tools)
+df.dhconfs.titles.tools <- f.clean.variants(df.dhconfs.titles.tools, nrow(df.dhconfs.titles))
+df.dhconfs.abstracts.tools <- f.clean.variants(df.dhconfs.abstracts.tools, nrow(df.dhconfs.abstracts))
 
 setwd(here("data", "dh-conferences"))
 write.table(df.dhconfs.titles.tools, file = "dh-conferences-frequencies_tools-titles.csv", row.names = F, quote = T, sep = ",")
@@ -64,6 +64,13 @@ write.table(df.dhconfs.abstracts.tools, file = "dh-conferences-frequencies_tools
 v.label.source = "Data: Weingart et al., 'Index of Digital Humanities Conferences Data', https://doi.org/10.1184/R1/12987959.v4" # source information
 v.label.abstracts.summary = paste("in ", nrow(df.dhconfs.abstracts), " DH conference paper abstracts (", min(df.dhconfs.abstracts$year), "-", max(df.dhconfs.abstracts$year), ")", sep = "")
 v.label.titles.summary = paste("in ", nrow(df.dhconfs.titles), " DH conference paper titles (", min(df.dhconfs.titles$year), "-", max(df.dhconfs.titles$year), ")", sep = "")
+# select normalised relative frequencies
+df.titles.plot <- df.dhconfs.titles.tools %>%
+  dplyr::select(term, freq.100) %>%
+  dplyr::rename(freq = freq.100)
+df.abstracts.plot <- df.dhconfs.abstracts.tools %>%
+  dplyr::select(term, freq.100) %>%
+  dplyr::rename(freq = freq.100)
 f.wordcloud.frequency(df.dhconfs.titles.tools, 150, paste("tools", v.label.titles.summary, sep = " "), "png")
 f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, paste("tools", v.label.abstracts.summary, sep = " "), "svg")
 f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, paste("tools", v.label.abstracts.summary, sep = " "), "png")

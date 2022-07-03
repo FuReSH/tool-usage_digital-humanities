@@ -32,10 +32,10 @@ df.tools.yml <- f.read.yaml.furesh(here("data/tools.yml"))
 
 # run frequency analysis
 df.4memory.tools <- f.stringmatch.frequency(df.4memory, df.tools$variant)
-df.4memory.tools <- f.clean.variants(df.4memory.tools)
-write.table(df.dhq.tools, file = here("data/nfdi4memory/4memory-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
+df.4memory.tools <- f.clean.variants(df.4memory.tools, nrow(df.4memory))
+write.table(df.4memory.tools, file = here("data/nfdi4memory/4memory-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
 df.dhq.tools <- f.stringmatch.frequency(df.dhq, df.tools$variant)
-df.dhq.tools <- f.clean.variants(df.dhq.tools)
+df.dhq.tools <- f.clean.variants(df.dhq.tools, nrow(df.dhq))
 write.table(df.dhq.tools, file = here("data/dhq/dhq-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
 # save data
 

@@ -30,21 +30,25 @@ save(df.concepts, file = here("data/furesh-concepts.rda"))
 
 # pre-process data
 df.dhconfs.titles <- df.dhconfs.works %>%
-  dplyr::select(title, year) %>%
+  dplyr::select(id, title, year) %>%
   dplyr::rename(text = title) %>%
   tidyr::drop_na(text) %>%
   dplyr::arrange(year)
 
 df.dhconfs.abstracts <- df.dhconfs.works %>%
-  dplyr::select(text, year) %>%
+  dplyr::select(id, text, year) %>%
   tidyr::drop_na(text) %>%
   dplyr::arrange(year)
+
+# there is a problem with the abstracts: they are mostly full TEI XML files, which need to be parsed
+# this is done in an external preprocessing script
 
 # quick exploration
 summary(df.dhconfs.titles)
 summary(df.dhconfs.abstracts)
 plot_histogram(df.dhconfs.titles)
 plot_histogram(df.dhconfs.abstracts)
+
 
 # actual analysis: use the external stringmatch function
 df.dhconfs.titles.tools <- f.stringmatch.frequency(df.dhconfs.titles, df.tools$variant)

@@ -79,19 +79,21 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
   v.title = paste("The", v.total.values, "most frequent", label.text, sep = " ")
   v.caption = paste(v.label.source, ".\n", v.label.license, sep = "")
   # plot: use normalised relative frequencies
-  plot.base <- ggplot(data.frequency, aes(x = 1, y = 1, size = freq.100, label = term, colour = freq.100)) +
+  plot.base <- ggplot(data.frequency, aes(x = 1, y = 1, label = term)) +
     scale_y_continuous(breaks = NULL) +
     scale_x_continuous(breaks = NULL)
   # labs
   layer.labs <- labs(x = "", y = "", 
-                     title = v.title,
-                     subtitle = 'By number of texts',
-                     caption = v.caption)
-  layer.text.repel <- c(
-    geom_text_repel(segment.size = 0, force = 20, max.overlaps = 500, family = font.words),
+      title = v.title,
+      caption = v.caption)
+  layer.labs.rel.100 <- labs(subtitle = 'Normalised relative frequencies by number of texts \nMost frequent term = 100')
+  layer.labs.text.100 <- labs(subtitle = 'Normalised relative frequencies by number of texts \nNumber of texts = 100')
+  layer.repel.text.100 <- c(
+    geom_text_repel(aes(size = freq.text.100, colour = freq.text.100),
+        segment.size = 0, force = 20, max.overlaps = 500, family = font.words),
     scale_size(range = c(1.5, 40), guide = FALSE))
-  layer.text.wordcloud <- c(
-    geom_text_wordcloud(aes(angle = angle), # use the angle information
+  layer.wordcloud.text.100 <- c(
+    geom_text_wordcloud(aes(size = freq.text.100, colour = freq.text.100, angle = angle), # use the angle information
                         family = font.words,
                         # frequency = area or font size. If font.size, readers will get the wrong impression
                         area_corr = TRUE, 
@@ -99,8 +101,21 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
                         rm_outside = TRUE, # if there are too many terms, the smallest ones should be removed if they cannot fit onto the canvas
                         grid_margin = 0.5, seed = 43,
                         show.legend = T),
-    scale_size_area(max_size = 60)
-    #scale_radius(range = c(0, 30), limits = c(0, NA))
+    scale_size_area(max_size = 60) #, scale_radius(range = c(0, 30), limits = c(0, NA))
+  )
+  layer.repel.rel.100 <- c(
+    geom_text_repel(aes(size = freq.rel.100, colour = freq.rel.100),
+        segment.size = 0, force = 20, max.overlaps = 500, family = font.words),
+    scale_size(range = c(1.5, 40), guide = FALSE))
+  layer.wordcloud.rel.100 <- c(
+    geom_text_wordcloud(aes(size = freq.rel.100, colour = freq.rel.100, angle = angle), # use the angle information
+                        family = font.words,
+                        area_corr = TRUE, 
+                        eccentricity = 1, # to form a circle
+                        rm_outside = TRUE, # if there are too many terms, the smallest ones should be removed if they cannot fit onto the canvas
+                        grid_margin = 0.5, seed = 43,
+                        show.legend = T),
+    scale_size_area(max_size = 60) #, scale_radius(range = c(0, 30), limits = c(0, NA))
   )
   
   plot.base.final <- plot.base +
@@ -119,16 +134,28 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
       legend.margin = margin(0),
       legend.justification = "bottom",
       panel.border = element_blank()) 
-  plot.repel <- plot.base.final +
-    layer.text.repel
-  plot.wordcloud <- plot.base.final +
-    layer.text.wordcloud
-  #plot.repel
-  #plot.wordcloud
+  plot.repel.text.100 <- plot.base.final +
+    layer.labs.text.100 +
+    layer.repel.text.100
+  plot.wordcloud.text.100 <- plot.base.final +
+    layer.labs.text.100 +
+    layer.wordcloud.text.100
+  plot.repel.rel.100 <- plot.base.final +
+    layer.labs.rel.100 +
+    layer.repel.rel.100
+  plot.wordcloud.rel.100 <- plot.base.final +
+    layer.labs.rel.100 +
+    layer.wordcloud.rel.100
+  # print output to console
+  # plot.repel.text.100
   # save output: with the latest update of ggplot2, ragg is not needed anymore and Arabic is correctly printed
-  ggsave(plot = plot.wordcloud, filename = paste("wordcloud_", label.text, "-w_", v.total.values,".", v.output.device, sep = ""),
+  ggsave(plot = plot.wordcloud.text.100, filename = paste("wordcloud-text-100_", label.text, "-w_", v.total.values,".", v.output.device, sep = ""),
          path = here("visualization"), device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
-  ggsave(plot = plot.repel, filename = paste("wordcloud-repel_", label.text, "-w_", v.total.values,".", v.output.device, sep = ""),
+  ggsave(plot = plot.repel.text.100, filename = paste("wordcloud-text-100-repel_", label.text, "-w_", v.total.values,".", v.output.device, sep = ""),
+         path = here("visualization"), device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
+  ggsave(plot = plot.wordcloud.rel.100, filename = paste("wordcloud-rel-100_", label.text, "-w_", v.total.values,".", v.output.device, sep = ""),
+         path = here("visualization"), device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
+  ggsave(plot = plot.repel.rel.100, filename = paste("wordcloud-rel-100-repel_", label.text, "-w_", v.total.values,".", v.output.device, sep = ""),
          path = here("visualization"), device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
 }
 

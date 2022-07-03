@@ -23,4 +23,4 @@ size.Text.Px = size.Text * size.Base.Px
 # variables for saving plots
 width.Plot <- 240
 height.Plot <- width.Plot
-dpi.Plot <- 300
+dpi.Plot <- 600

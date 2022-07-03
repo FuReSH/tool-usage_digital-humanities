@@ -45,15 +45,17 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
     + Solution
         * add second column to tools.csv with variant spelling
 - TEI processing
-    + I exportet all texts from the `dh-conferences` data to individual files. The result are three types of files (all with `.xml` file ending)
+    + I exported all texts from the `dh-conferences` data to individual files. The result are three types of files (all with `.xml` file ending)
         1. plain text files: 
             - all 5-digit file names
-            - IDs: 3xxx, 4xxx
+            - IDs: 3xxx, 4xxx, 7837, 7840
             - to do: rename to `.txt` and move
         2. TEI XML fragments
             - to do: make them into full TEI XML files
                 + regex: 
                     - `^\A(<text.+)$` to find all files that begin with `<text`
                     - `^(.*</text>)$\n*\z` to find all files ending with `</text>`
+            - problems
+                + 6366, 6483: a lot of illformed endnote XML inserts
         3. full TEI XML files
             - to do: run some XSLT to convert to `.txt`

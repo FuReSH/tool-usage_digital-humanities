@@ -15,7 +15,8 @@ f.stringmatch.frequency <- function(df.input, list.strings) {
                                    ignore_case = FALSE)) # it might make sense to add an input variable for this choice
     ) %>%
     unnest(term) %>%
-    dplyr::group_by(term) %>%
+    # this should be grouped by text and term to provide frequency as number of texts the term is mentioned in
+    dplyr::group_by(term, text) %>%
     dplyr::summarise(freq = n()) %>%
     dplyr::arrange(desc(freq))
   df.output
@@ -119,9 +120,9 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
   #plot.wordcloud
   # save output: with the latest update of ggplot2, ragg is not needed anymore and Arabic is correctly printed
   ggsave(plot = plot.wordcloud, filename = paste("wordcloud_", label.text, "-w_", v.total.values,".", v.output.device, sep = ""),
-         device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
+         path = here("visualization"), device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
   ggsave(plot = plot.repel, filename = paste("wordcloud-repel_", label.text, "-w_", v.total.values,".", v.output.device, sep = ""),
-         device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
+         path = here("visualization"), device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
 }
 
 # load parameters

@@ -1,0 +1,111 @@
+Notre présentation concerne un travail exploratoire aux objectifs qualitatifs, qui ambitionne de fournir des pistes de reflexion pour avancer vers la semantisation des metadonnees des documents d’archives et la représentation a l’ecran de ces donnees RDF, en vues multidimensionnelles, porteuses de sens et manipulables.
+
+Trois organismes français (les Archives nationales de France, la Bibliotheque nationale de France, le Service interministeriel des Archives de France) et un laboratoire de recherche canadien (le Departement d’histoire de l’art et des etudes cinematographiques de l’Universite de Montreal) se sont associes en 2015 pour réaliser une preuve de concept visant a demontrer qu’il est possible :
+
+•    de représenter en RDF, en veillant a la précision, a l’exactitude et a l’utilisabilite des triplets obtenus, des metadonnees archivistiques produites de differentes manieres et selon diverses perspectives (celles d’institutions patrimoniales, celles d’un chercheur) ;
+
+•    d’enrichir les triplets obtenus en créant de nouveaux triplets, qu’il s’agisse de proréder à des alignements ou d’établir de nouvelles relations par inference ;
+
+•    de produire une interface de recherche et d’exploration analytique et graphique qui soit dynamique, ergonomique et signifiante,
+
+sans sacrifier la granularite informationnelle ni la lisibilite.
+
+Il s’agit donc de réaliser un demonstrateur, sous la forme d’une application web construite en utilisant des composants libres, dont les sources seront plarées sous licence libre et deposees dans un entrepot public.
+
+Cette operation est relativement complexe. Il n’y a pas de reel precedent dans le domaine des archives. De plus, jusqu’a ce jour, il n’existait pas d’ontologie generique du domaine. Enfin, il n’existe pas a priori de librairie ou logiciel satisfaisant directement la totalite des besoins, en particulier pour ce qui concerne la visualisation des jeux de donnees.
+
+Les bibliotheques, comme la Bibliotheque nationale de France (avec data.bnf.fr), et plusieurs musees, se sont lances dans la conversion en RDF de leurs metadonnees et dans la realisation d’interfaces de presentation de ces donnees, des lors que des modeles conceptuels et ontologies appropries ont ete disponibles pour représenter leurs collections (CIDOC-CRM et FRBR). Par contre, si divers projets specifiques ont deja, soit produit des ontologies pour la description des archives et mis en œuvre ces ontologies (par exemple le projet LOCAH, dont les résultats sont consultables via The Archives Hub Linked Data), soit cherche a produire des representations analytiques ou graphiques de ces descriptions, jusqu’ici ces realisations n’avaient pas en meme temps les ambitions de la genericite, de la completude et d’une grande precision.
+
+Il a fallu attendre fin 2016 pour la publication d’un modele conceptuel global pour la description des archives (Records In Contexts-Conceptual Model ou RiC-CM) ; l’ontologie OWL correspondante, Records In Contexts-Ontology ou RiC-O), qui est l’ontologie de reference pour notre projet, sera publiee en 2017.
+
+En outre, si la data visualisation est aujourd’hui devenue, en s’appuyant sur des technologies de plus en plus performantes, un important domaine d’action et d’innovation pour les humanites numeriques, il est a notre connaissance encore très rare de trouver articules la dimension temporelle, très forte en archivistique et en histoire, et une representation precise, en graphe, d’objets historiques et des differents elements de leur contexte, le tout etant susceptible de former un reseau très dense. Ainsi, les divers projets realises jusqu’ici présentent uniquement de façon relativement simple les agents et les documents (bibliotheque publique de la ville de New York), ou encore uniquement des reseaux d’agents (SNAC), ou encore des agents, leur histoire et leurs relations dans une perspective diachronique, mais pas les ressources documentaires liées (Kindred Britain).
+
+Dans le cas de notre projet, nous avons commencé par choisir un perimetre pour les jeux de metadonnees source et préparer ces jeux de metadonnees, chaque partenaire travaillant de son cote, selon sa propre perspective, tout en respectant quelques règles élaborées en commun.
+
+Les jeux de metadonnees sont composes de notices descriptives d’organismes et personnes physiques acteurs dans deux domaines fonctionnels de l’administration française (la gestion des monuments historiques et batiments civils des annees 1795 a nos jours ; la gestion des bibliotheques publiques et de la lecture du 19e siecle a nos jours) et d’instruments de recherche archivistiques decrivant les ensembles documentaires produits par ces entites. Ils sont conformes aux standards archivistiques actuels que sont les normes ISAD(G) et ISAAR(CPF) et leurs transpositions techniques, la DTD EAD 2002 et le schema XML/EAC-CPF. Nous avons choisi de proceder nous-memes a la semantisation de ces jeux de metadonnees. Un vocabulaire des fonctions des entites encode en SKOS/RDF, le seul a avoir ete produit collectivement, s’ajoute a ce corpus.
+
+Un cahier des charges a ete elaboré, une consultation lancee et une societe de services a ete choisie fin octobre 2016 pour concevoir et réaliser le demonstrateur. Elle réalisera le travail selon une approche agile, en interaction forte avec l’equipe projet, qu’il s’agisse d’analyser l’ontologie et les triplets RDF fournis en entrée, de batir des scenarios de recherche, d’alignement, d’enrichissement ou de visualisation, ou de tester les versions successives du logiciel.
+
+Comme le projet sera acheve fin octobre 2017, une version quasiment definitive du prototype devrait etre disponible en aout 2017. Un bilan critique, methodologique et prospectif sera ensuite réalise et publie par les entites impliquees. En avant-premiere, apres une présentation rapide des objectifs, des enjeux et de l’historique du projet, nous nous attacherons a évoquer deux de ses aspects principaux :
+
+• la mise en œuvre, pour la représentation en RDF des metadonnees archivistiques retenues, de l’ontologie RiC-O : présentation de l’ontologie et de ses principes de conception, discussion des choix d’adaptation qui ont ete faits pour les besoins du projet, présentation des résultats obtenus, evaluation de ces résultats en ce qui
+
+concerne la granularité d’expression et les possibilités de raisonnement induites ;
+
+• la conception de l’interface de recherche et de visualisation : presentation de la methode suivie, des choix faits et des résultats obtenus, de leur interet et de leurs limites pour l’utilisateur final, que celui-ci soit un chercheur averti ou un amateur moins connaisseur des concepts archivistiques.
+
+Bibliographie
+
+Bertin, J. (1977). La graphique et le traitement graphique de l'information. Paris : Flammarion.
+
+Bibliothèque nationale de France (2011-). Data.bnf.fr. http://data.bnf.fr
+
+Drucker, J. (2014J. Graphesis: visual forms of knowledge production. MetaLABprojects. ISBN 9780674724938
+
+Fekete, J-D. (2010). “Visualiser l’information pour la comprendre vite et bien”. Dans L'Usager numérique. Séminaire INRIA, 27 septembre-1er octobre 2010. ADBS, pp. 161-194.
+
+Few, S. (2013). “ Data Visualization for Human Perception ”. Dans Soegaard, M. et Friis Dam, R. (eds.), The Encyclopedia of Human-Computer Interaction, 2e edition. En    ligne    :    https://www.interaction-
+
+design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/data-visualization-for-human-perception
+
+Friendly, M. (2009). Milestones in the history of thematic cartography, statistical graphics, and data visualization. Version PDF en ligne : http://www.math.yorku.ca/SCS/Gallery/milestone/mil estone.pdf
+
+Gibbs, F. W. (2016). “ New Forms of History: Critiquing Data and Its Representations ”. The American Historian, 7.
+
+En ligne : http://tah.oah.org/february-2016/new-forms-of-
+
+history-critiquing-data-and-its-representations/
+
+Grandjean, M. (2014). “ La connaissance est un reseau ”. Les Cahiers du Numérique, 10/3 :    37-54. DOI
+
+:10.3166/LCN.10.3.37-54.
+
+Grandjean, M. (2015). “ Introduction a la visualisation de donnees, l’analyse de reseau en histoire ”. Geschichte und Informatik, 18-19 : 109-128. Version PDF en ligne : http://www.martingrandjean.ch/wp-
+
+content/uploads/2015/09/Grandjean2015.pdf
+
+Januals, B. et Minel, J-L. (2016). “ La construction d’un espace patrimonial partage dans le Web de données ouvert ”. Communication,    34/1. En ligne :
+
+http://communication.revues.org/6650.    DOI :
+
+10.4000/communication.6650.
+
+Jenkins, N., Meeks, E. et Murray, S. (2013). Kindred Britain. Stanford    University    Libraries.
+
+http://kindred.stanford.edu/
+
+Manovich, L. (2010). What is Visualization? En ligne : http://manovich.net/content/04-projects/064-what-is-visualization/61_article_2010.pdf
+
+Natale, E., Sibille, Ch., Chachereau, N., Kammerer, P., Hiestand, M. et al (2015). “ La visualisation des donnees en histoire / Visualisierung von Daten in der Geschichtswissenschaft ”. Geschichte und Informatik, 18/19.
+
+Krempel, L. (2011). “ Network visualization ”. Dans Scott, John G. et Carrington, P. J. (eds.), The SAGE handbook of social network analysis. Pp. 558-577.
+
+International Council on Archives. Experts Group on Archival Description (2016). Records In Contexts: a conceptual model for archival description. Consultation Draft v0.1. En ligne : http://www.ica.org/fr/publication-de-records-contexts-par-legad
+
+The New York Public Library. (n. d.) Archives and manuscripts:    beta tools & experiments.
+
+http://archives.nypl.org/tools
+
+University of Liverpool (2010-2013). The Archives hub Linked Data. http://data.archiveshub.ac.uk/
+
+University of Virginia Institute for Advanced Technology in the Humanities. (n.d.) Social Networks and Archival Contexts    (SNAC)    prototype.
+
+http://socialarchive.iath.virginia.edu/home_prototype. html
+
+Yau, N. (2013). Data Points: Visualization That Means Something. John Wiley & Sons. ISBN 978-1-118-462195
+
+International Council on    Museums (ICOM).
+
+International Committee    for Documentation
+
+(CIDOC) (2011). CIDOC Conceptual Reference Model. Version 5.0.4. En ligne : http://www.cidoc-crm.org/get-last-official-release
+
+International Federation of Libraries Associations and Institutions (2008). Functional Requirements for Bibliographic    Records (FRBR).    En ligne :
+
+http://www.ifla.org/files/assets/cataloguing/frbr/frbr _2008.pdf    (en)    ;
+
+http://www.bnf.fr/documents/frbr_rapport_final.pdf (fr).
+
+International Federation of Libraries Associations and Institutions (2016). FRBR-Library Reference Model (FRBR-LRM). Draft for world-wide review. En ligne : http://www.ifla.org/files/assets/cataloguing/frbr-lrm/frbr-lrm_20160225.pdf
+
+International Working Group on FRBR and CIDOC CRM Harmonisation (2008). FRBR object-oriented definition and mapping to FRBRer. Version 0.9 draft. En ligne http://archive.ifla.org/VII/s13/wgfrbr/FRBRoo_V9.1_P R.pdf.

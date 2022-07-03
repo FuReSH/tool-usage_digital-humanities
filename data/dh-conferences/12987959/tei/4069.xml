@@ -1,0 +1,51 @@
+Digital history is concerned with the incorporation of digital methods in historical research practices. Thus, digital history aims to use methods, concepts, or tools from other disciplines to the benefit of historical research, making it a form of methodological interdisciplinarity (Klein, 2014). This requires expertise of different facets, such as technology, history, and data management, and as a result many digital history activities are a collaboration of professionals and scholars from different backgrounds. Such collaborations would fit Svensson’s characterisation of digital humanities as a fractioned trading zone (2011; 2012). Simply stated, this means first that digital humanities functions as heterogeneous collaborations, i.e. with participants from different backgrounds, and second that the participants act voluntarily. In this paper, we will investigate these two aspects in the context of digital history to understand how digital history projects function as heterogeneous collaborations, and what the participants’ incentives are for entering such collaborations. We will discuss this by presenting findings from interviews with practitioners in digital history projects, and reflections on projects in which the author himself has participated.
+
+The concept of trading zones was coined by Galison who described it as “an arena in which radically different activities could be locally, but not globally, coordinated” (1996, p. 119). That is, although the disciplines of e.g. computer science and history cannot coordinate activities on a global disciplinewide level, and do not contribute towards one another as disciplines, in local collaborations it is possible to communicate and coordinate a shared goal of research within a so-called trading zone. This concept was further developed by Collins et al. (2007) who suggested four types of trading zones using two dimensions. The first dimension is cultural maintenance from homogeneous to heterogeneous, i.e., how the two groups define themselves and to what extent they aim to maintain their identity. On this scale, more homogeneous means the two groups become more alike to form a single group, while more heterogeneous means they remain two distinct groups. The second is coercion from collaborative to coercive, i.e., what the power relations in the trading zone are. On this scale, more collaborative means the two groups are both acting out of free will, while more coercive means one group is imposing practices upon the other. When a trading zone is heterogeneous and collaborative, we speak of a fractioned trading zone as Svensson does.
+
+One instantiation of this is through boundary objects, a concept developed by Star and Griesemer to describe objects used in heterogeneous collaborations where different parties may have different understandings of the object, while the object keeps a common core identity to all parties (Star and Griesemer, 1989; Star, 2010). This concept could be used to refer to the tool under development or the data on which the tool and historian will work. However, in this paper we will approach the project itself as boundary object; the project binds the participants together, but we will ask what each participant expects out of the project, and how participants individually approach the project.
+
+This leads us to the second part of our investigation, the incentives for collaboration. When writing about interdisciplinary collaboration in digital history, this is almost always done to underscore the positive or even necessary effects (e.g. Eijnatten et al., 2013; Hitchcock, 2014; Sternfeld, 2011). However, such collaboration is not trivial and requires dedication and investments from all involved, e.g. as shown by Siemens (Siemens et al., 2009; Siemens and INKE Research Group, 2012). In previous research, it has been shown that the incentives for joining a project had a strong influence on the success of collaborations between computer scientists and earth scientists (Weedman, 1998). To understand these incentives, we follow this work and look at reasons for joining the project, individual goals for the project, and expected effects of the participation after the project has ended. From these aspects, we will analyse situations of conflicting interests and expectations. For example, in an interview one historian noted about their project:
+
+”[W]e’re supposed to be advising the team developing the tool. And trying to then carry out research on a specific case study. And so originally it was like wow we’re going to be able to use the tool, but very quickly it became clear ok actually probably we’re not going to be able to use the tool.”
+
+In this paper, we will thus unpack the fractioned trading zones of digital history projects, to gain an understanding of how heterogeneous, interdisciplinary collaborations work, and why participants join these collaborations.
+
+Bibliography
+
+Collins, H., Evans, R. and Gorman, M. (2007). Trading zones and interactional expertise. Studies in History and Philosophy of Science Part A, 38(4): 657-66 doi:10.1016/j.shpsa.2007.09.003.
+
+Eijnatten, J. van, Pieters, T. and Verheul, J. (2013). Big Data for Global History: The Transformative Promise of Digital Humanities. BMGN - Low Countries Historical Review, 128(4): 55-77.
+
+Galison, P. (1996). Computer simulations and the trading zone. The Disunity of Science: Boundaries, Contexts, And Power. Stanford University Press, pp. 118-57.
+
+Hitchcock, T. (2014). Big Data, Small Data and Meaning Historyonics
+
+http://historyonics.blogspot.co.uk/2014/11/big-data-
+
+small-data-and-meaning 9.html.
+
+Klein, J. T. (2014). Interdisciplining Digital Humanities: Boundary Work in an Emerging Field. online. University of Michigan Press doi:10.3998/dh.12869322.0001.001.
+
+Siemens, L., Duff, W., Cunningham, R. and Warwick, C.
+
+(2009). “It challenges members to think of their work through another kind of specialist's eyes’: Exploration of the benefits and challenges of diversity in digital project teams. Proceedings of the American Society for Information Science and Technology, 46(1): 1-14 doi:10.1002/meet.2009.1450460223.
+
+Siemens, L. and INKE Research Group (2012). From Writing the Grant to Working the Grant: An Exploration of Processes and Procedures in Transition. Scholarly and Research Communication, 3(1).
+
+Star, S. L. (2010). This is Not a Boundary Object: Reflections on the Origin of a Concept. Science, Technology & Human Values,    35(5):    601-17
+
+doi:10.1177/0162243910377624.
+
+Star, S. L. and Griesemer, J. R. (1989). Institutional Ecology, 'Translations’ and Boundary Objects: Amateurs and Professionals in Berkeley’s Museum of Vertebrate
+
+Zoology, 1907-39. Social Studies of Science, 19(3): 387420 doi:10.1177/030631289019003001.
+
+Sternfeld, J. (2011). Archival theory and digital historiography: Selection, search, and metadata as archival processes for assessing historical contextualization. American Archivist, 74(2): 544-75.
+
+Svensson, P. (2011). The digital humanities as a humanities project.    a    11(1-2):    42-60
+
+doi:10.1177/1474022211427367.
+
+Svensson, P. (2012). Beyond the Big Tent. In Gold, M. K. (ed), Debates in the Digital Humanities. online. University of Minnesota Press.
+
+Weedman, J. (1998). The Structure of Incentive: Design and Client Roles in Application-Oriented Research. Science, Technology & Human Values, 23(3): 315-45 doi:10.1177/016224399802300303.

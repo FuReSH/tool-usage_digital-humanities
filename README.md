@@ -44,3 +44,16 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
     + The opposite will also cause false negatives as "Topic modelling" won't match "topic modelling"
     + Solution
         * add second column to tools.csv with variant spelling
+- TEI processing
+    + I exportet all texts from the `dh-conferences` data to individual files. The result are three types of files (all with `.xml` file ending)
+        1. plain text files: 
+            - all 5-digit file names
+            - IDs: 4061, 3802, 3909, 4032, 3913
+            - to do: rename to `.txt` and move
+        2. TEI XML fragments
+            - to do: make them into full TEI XML files
+                + regex: 
+                    - `^\A(<text.+)$` to find all files that begin with `<text`
+                    - `^(.*</text>)$\n*\z` to find all files ending with `</text>`
+        3. full TEI XML files
+            - to do: run some XSLT to convert to `.txt`

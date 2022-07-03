@@ -8,15 +8,18 @@ date: 2022-03-23
 lang: de
 ---
 
-Dieser Ordner enthält die Daten zu den User Stories. 
+Dieser Ordner enthält Daten und Code zu User Stories und weitere Corpora, die wir für die Kuratierung der Werkzeugliste auswerten. 
 
 Die Daten liegen in folgenden Unterordnern:
 
+- `code/`
 - `data/`
     + `dh-conferences/`: 
         * `12987959/`: data on mainly English DH conferences from Weingart, Scott B., Eichmann-Kalwara, Nickoal, and Lincoln, Matthew. “The Index of Digital Humanities Conferences Data.” Carnegie Mellon University, September 22, 2020. <https://doi.org/10.1184/R1/12987959.v4>.
-        * `DHd/`: data on DHd conferences from the [DHd GitHub](https://github.com/DHd-Verband) repositories
-            - `software-names-counts-total.csv`: Henny-Krahmer, Ulrike, and Daniel Jettka. *Softwarezitation in Den Digital Humanities*. Zenodo, 2021. <https://doi.org/10.5281/zenodo.5106391>.
+    * `DHd/`: data on DHd conferences from the [DHd GitHub](https://github.com/DHd-Verband) repositories
+        - `software-names-counts-total.csv`: Henny-Krahmer, Ulrike, and Daniel Jettka. *Softwarezitation in Den Digital Humanities*. Zenodo, 2021. <https://doi.org/10.5281/zenodo.5106391>.
+    - `dhq/`: TEI XML files from "[Digital Humanities Quarterly](http://digitalhumanities.org/)". A corpus of 429 articles published until 2019 is available as zipped folder at <http://digitalhumanities.org/dhq/data/dhq-xml.zip>.
+    - `nfdi4history`: a CSV/TSV dump of their user stories
     - `txt/`: Plaintextdateien. Unterordner für Sprachen
         - `de/`: deutsche Texte
         - `en/`: englische Texte
@@ -32,7 +35,7 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
     + `R` is strikingly prominent
         * add column with KWIC to the intermediate data output 
 - add DHd abstracts from the GitHub repositories
-- run R scripts for frequencies of our controlled vocabulary of tools and concepts on the DHd data
+- the (TEI) XML in the corpora might need some preprocessing to CSV with metadata, plain text
 
 ## done
 

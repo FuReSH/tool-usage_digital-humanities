@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Digital data preservation is complex and multi-layered. The digital humanities brings unique challenges and opportunities to "keeping data alive" that are leading to innovative cross- disciplinary solutions. Data preservation involves standards, guidelines, open-source vs. proprietary software, accessibility, and much more. While establishing best practices, cultivating a community of experts, and developing infrastructure for 3D data used in cultural heritage has been the focus of several coordinated efforts in Europe over the past decade (Campana and Remondino 2014; Fresa and Prandoni 2015; Vecchio et al. 2015), efforts have been less systematic in the United States. Recently, however, digital humanities practitioners have spearheaded 3D data preservation and sharing in the United States.</p>
@@ -68,3 +81,4 @@
             </div>
         </back>
     </text>
+</TEI>

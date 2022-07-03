@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This panel brings together four papers that span from modern Asia to contemporary Texas: two studies of land ownership, based on historical cadasters in modern Shanghai and imperial Korea, a spatial analysis of advertising development in modern Shanghai, and a survey of municipal annexation as a mechanism for suburban expansion in San Antonio, Texas. In this panel, we argue that spatial concepts and practices can serve as a bridge to connect distant topics, spaces and times.</p>
@@ -7,3 +20,4 @@
             <p>As a panel, we find significant cross-fertilization between DH and geography, or even DH and social sciences. We believe that the “digital” affects the whole array of disciplines in the humanities and social sciences, tearing down walls and borders, and creating bridges and intersectional analyses. We contend that “DH questions” lay at the very heart of what we have proposed. For instance, archival documents offer insight on the localized political debates that shaped the terrain of our respective sites. Similarly, oral histories, public records, contemporaneous publications help us to analyze the changes in metropolitan spatial practices over time, as well as popular responses to such shifts. We also argue that “spatial humanities” are part and parcel of DH. In fact, spatial humanities represent a major part of DH worldwide. The questions we ask start from our terrains and our disciplines, but we work through methods, tools and notions that are deeply rooted in the digital practice of humanities.</p>
         
     </text>
+</TEI>

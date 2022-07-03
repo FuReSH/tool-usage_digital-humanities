@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Houston Community College is one of the leading two-year colleges in the United States incorporating digital storytelling into the curriculum while reaching out to the community to achieve the history of the diverse communities with vibrant background that provides such a rich tapestry that makes Houston the city it is today.</p>
@@ -52,3 +65,4 @@
             </div>
         </back>
     </text>
+</TEI>

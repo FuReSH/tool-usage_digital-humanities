@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This paper is an intervention that addresses an epistemological conundrum likely to become increasingly common and acute as the digital humanities both grow more diverse and increasingly encompass knowledge that has been produced outside of the parameters of Euro-American normativity. This contribution is in the spirit of addressing the need for cultural critique in the digital humanities along the lines that Alan Liu has called for (2012). I make use of an instantiated example, a text analysis tool for visualizing properties of a particular digitized text corpus in relation to trends of usage of specific words in the corpus, but I argue that the key insights are generalizable to a large spectrum of digital humanities tools.
@@ -46,3 +59,4 @@
             </div>
         </back>
     </text>
+</TEI>

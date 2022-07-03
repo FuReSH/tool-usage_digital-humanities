@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>One of the challenges of doing archival research with respect to colonial-era Indian print archives is orthography. A substantial number of Indian newspapers produced under have now been digitized, and are accessible through services such as Readex’s “South Asian Newspapers” archive, the Digital Library of India, the Panjab Digital Library, and others. </p>
@@ -17,3 +30,4 @@
             </div>
         </back>
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Over a year before Donald Trump took the presidency in 2016, a group of self-identified Cuban brujas, latina practitioners of witchcraft and/or indigenous rituals, led by Yeni Sleidi released an online video titled “Brujas Hex Trump.” From this platform on YouTube, the video called for fellow witches in both the digital and physical realms to intervene in the presidential candidate’s campaign through a type of activism not previously considered political — ritual, witchcraft, hexing. Since this initial call via YouTube, monthly hexes have continued among Brooklyn-based latinas, organized via social media.</p>
@@ -6,3 +19,4 @@
             <p>Using a theoretical frame based on Chela Sandoval’s work on dissident coalition building, Chon Noriega’s understanding of museological power structures, and the investments of black digital studies in a radical black archival practice, we build from embodied theories of ethnic studies and art ecosystems to find a method for considering race and ritual in the digital sphere. Undertaken primarily by women of color, digital witchcraft is successful at translating online presence into embodied action in ways that perhaps offer strategies for other social, institutional, and cultural communities and their activism. By studying the ways in which these digital witchcraft communities make use of social media platforms in order to bridge these divides, sometimes by using them against their designed purposes, the potential of digital activism, and its implications for studies of chicana and black feminism, indigenous studies, and other branches of ethnic studies, digital or otherwise, can be considered. </p>
         
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Teaching digital humanities at the undergraduate level is as much about issues of critical theory, inclusion, and diversity as it is about teaching digital tools and methods. Examining DH methods such as topic modeling introduces students to the concept of algorithmic bias, pointing to the algorithms that shape our daily lives. Working with DH tools such as Palladio enables students to confront and reveal the layers of representation (and inequality) that structure the virtual and physical spaces that we inhabit. And creating digital archives with platforms such as Omeka challenges students to question the purpose and limits of digital tools, offering opportunities to reflect on the ethics of (digital) representation. The dialectics of teaching new DH tools and questions of critique, the archive, and representation central to the humanities form the basis of the undergraduate Digital Humanities Minor at our institution, in which students take two sequential, required courses: “Introduction to Digital Humanities” and the “Seminar in the Digital Humanities”. Our talk will explore how we weave together these courses to create a holistic and critical approach to the foundations of digital humanities at the undergraduate level.</p>
@@ -19,3 +32,4 @@
             <p>Taken together, these two undergraduate courses expose students to a range of digital tools and methods for humanistic inquiry, providing them with experience overseeing their own DH project from conception to completion as well as participating in a semester-long team project. In different ways, the courses introduce students to critical frameworks for asking humanities questions of the digital and for using the digital to ask humanities questions. Teaching DH and critical thought as two sides of the same coin, this DH sequence provides students with tools to not only understand, but also intervene in a world increasingly mediated by digital processes.</p>
         
     </text>
+</TEI>

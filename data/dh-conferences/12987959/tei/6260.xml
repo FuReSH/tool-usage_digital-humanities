@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This workshop will focus on how international partnership can benefit large-scale research projects in digital scholarship. During the workshop, participants will learn about the Digging into Data Challenge 4, an initiative of the Trans-Atlantic Platform (T-AP) for Social Sciences and Humanities, a network of public funders representing countries in Europe, North America, and South America. The Digging into Data Challenge invited international teams to undertake multidisciplinary projects that use techniques of large-scale data analysis and demonstrate how these can lead to new insights. The Digging into Data Challenge has had four rounds of funding, and offers an valuable opportunity to (1) see how the international dimension benefits the scholarship; (2) understand the challenges of working internationally on big data projects addressing questions in the humanities and social sciences; (3) understand how international funding initiatives might enable research in ways that domestic funding cannot. </p>
@@ -13,3 +26,4 @@
             </p>
         
     </text>
+</TEI>

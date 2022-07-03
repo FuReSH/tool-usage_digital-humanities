@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>My research is multi- and interdisciplinary focusing on electronic literature and cybercultures in/of Latin America. My latest articles and book manuscript explore the divide and convergence in literature and technology. This project lends itself well to the application of those theories and the evaluation of how they can best be implemented in classroom practices and complemented with co-curricular modules. I will therefore present my research findings on the use of Digital Humanities components specifically for the teaching of Latin American Studies. The presentation would thus serve as a report of: 1) initial research findings and best practices found at other institutions; 2) work accomplished at the DHSI 2018 Workshop (Victoria, Canada) “Critical Pedagogy and Digital Praxis in the Humanities”; 3) feedback gained from presentation at the DHSI 2018 Conference &amp; Colloquium; and, 4) samples of syllabi to foster a lively discussion on the application of such a course with co-curricular components for Latin American Studies programs.</p>
@@ -38,3 +51,4 @@
             </list>
         
     </text>
+</TEI>

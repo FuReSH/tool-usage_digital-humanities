@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The 1853 New York Crystal Palace, also known as the Exhibition of the Industry of All Nations, was the center of America’s first World’s Fair. Modeled on the Great Exhibition held at the Crystal Palace in London, the exhibition sought to “draw forth such a representation of the world’s industry and resources as would enable us to measure the strength and value of our own, while it indicated new aims for our enterprise and skill.” While the exhibition burnt down by the end of the decade, it survives through catalogues documenting its success and breadth.</p>
@@ -54,3 +67,4 @@
             </div>
         </back>
     </text>
+</TEI>

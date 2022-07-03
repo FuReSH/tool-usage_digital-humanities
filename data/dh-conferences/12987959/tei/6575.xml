@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This paper presents a practical approach to building digital humanities (DH) at a university, across disciplines with diverse requirements, starting without institutional support, with scarce staff on a low budget. Examples are provided from the Centre For 21
@@ -48,3 +61,4 @@
             </div>
         </back>
     </text>
+</TEI>

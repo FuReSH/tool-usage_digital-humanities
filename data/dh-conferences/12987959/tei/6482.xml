@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>
@@ -325,3 +338,4 @@
             <p>Figura 5.- Se muestra la misma vista de la imagen anterior pero desde el lado norte. Es una foto del sitio Cerro de las Minas que nos permite comparar entre lo real y lo virtual</p>
         
     </text>
+</TEI>

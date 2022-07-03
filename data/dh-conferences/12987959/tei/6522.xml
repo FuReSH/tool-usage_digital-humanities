@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>La presente propuesta está basada en la experiencia y las reflexiones que han ido surgiendo en el transcurso del trabajo de investigación de doctorado todavía en proceso. Con el título "La disputa de Internet. Análisis de los marcos de acción colectiva del activismo tecnológico en México", este estudio busca describir, analizar e interpretar cuáles son los problemas sociotécnicos que diagnostican los propios actores sociales, quiénes son los causantes de esos problemas, quiénes componen un "nosotros" entre los movimientos ciberactivistas, quién es la audiencia a la que va dirigida la acción colectiva y cuál es la propuesta sociopolítica que plantean para resolver el problema. Todo ello desde la propuesta de los marcos de acción colectiva y la metodología basada en la etnografía de lo digital.</p>
@@ -35,3 +48,4 @@
             </div>
         </back>
     </text>
+</TEI>

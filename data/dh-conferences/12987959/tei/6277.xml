@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Introduction</p>
@@ -234,3 +247,4 @@
             <p>Through a computational analysis, the underlying structure of the dictionary reveals the doubled work of lexicography. Quotations are both empirical proofs of contingent meaning, and, in turn, receive meaning themselves through accretion: slow layering of the conceptual unities between the words that they are used to define. The complexities of the dictionary reveal a set of organizing principles embedded in the quotations: this project allows us to extract these patterns and reveal their fundamental influence on the development of, not just lexicography, but language itself across that last three hundred years. </p>
         
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The methods of network analysis are becoming increasingly relevant to the digital humanities, particularly in relation to the study of literary characters (Moretti 2011; Pohl, Reitz, and Birke 2008; Park et al. 2013; Trilcke, Fischer, and Kampkaspar 2015; Elson, Dames, and McKeown 2010; Agarwal et al. 2012; Waumans, Nicodème, and Bersini 2015; Xanthos et al. 2016; Choi and Kim 2007; Bollen 2017; Fischer et al. 2017). Several recent studies and presentations have focused on drama. Most studies deal with European and American drama and this is possibly due in part due to easily available data.</p>
@@ -138,3 +151,4 @@
             </div>
         </back>
     </text>
+</TEI>

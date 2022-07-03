@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This poster will introduce the Iowa Canon of Greek and Latin Authors and Works, which aims to be the most comprehensive list of classical texts from the origins of Greek and Latin literature through the end of the Antiquity (the 6
@@ -33,3 +46,4 @@
             </div>
         </back>
     </text>
+</TEI>

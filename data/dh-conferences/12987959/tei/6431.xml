@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>En mi investigación doctoral exploro el “archivo de escritor” como un artefacto que cambia la manera en que los lectores se relacionan con los textos de determinado escritor, entendiendo como dispositivo la: “disposición de una serie de prácticas y de mecanismos (conjuntamente lingüísticos y no lingüísticos, jurídicos […]) con el objetivo de hacer frente a una urgencia y de conseguir un efecto” (Agamben). En este orden de ideas, una cita a Derrida es acertada y ahí radica lo arcóntico del archivo: “
@@ -60,3 +73,4 @@
             </div>
         </back>
     </text>
+</TEI>

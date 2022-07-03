@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>En respuesta a los nuevos hábitos de lectura y escritura que están surgiendo a raíz de la edición digital, el proyecto eLITE-CM, Edición Literaria Electrónica, (H2015/HUM-3426), nace –bajo los auspicios de la Comunidad de Madrid, en colaboración con la Biblioteca Nacional de España y co-liderado por el grupo de investigación LOEP–, con el objetivo de crear tres colecciones de libros enriquecidos pertenecientes a la denominada Otra Edad de Plata de la Literatura Española (Ena, 2013): 1) Colección 
@@ -110,3 +123,4 @@
             </div>
         </back>
     </text>
+</TEI>

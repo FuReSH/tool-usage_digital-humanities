@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The poster introduces a project to develop a visualization application for a unique data source on Czech sciences. Information Register of R&amp;D Results (RIV) is the Czech Republic’s inventory of the outputs of basic and applied research since 1992. Although it is potentially an important source of data for analyses of various aspects of the intellectual organization and publication culture in Czech sciences, this particular data source has earned itself a pejorative nickname – “a coffee grinder” – for its central role in purely mechanistic science evaluation in the country.</p>
@@ -59,3 +72,4 @@
             </div>
         </back>
     </text>
+</TEI>

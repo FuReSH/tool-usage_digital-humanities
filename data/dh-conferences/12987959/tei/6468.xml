@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p rend="No Spacing">El Archivo Histórico Riva-Agüero (AHRA), unidad académica del Instituto Riva-Agüero (IRA) de la Pontificia Universidad Católica del Perú (PUCP), guarda entre su acervo documental, no sólo documentos manuscritos e impresos sino un enorme conjunto de documentos gráficos reunidos en las diferentes colecciones que lo conforman. Dentro de las colecciones gráficas y fotográficas de épocas diversas que custodia; en la actualidad se quiere poner en valor y difundir proyectos que vinculen a las humanidades con lo digital, presentando el caso de 3 proyectos realizados con dicho fin. En primer lugar "Postales de Guerra. Centenario de la primera guerra mundial", luego "Balcones de Lima: Centro Histórico" y finalmente "Arzobispos de Lima y religiosidad en el Perú”. Estos proyectos vinculan propuestas humanísticas que requieren de plataformas digitales y móviles para su difusión.</p>
@@ -65,3 +78,4 @@
             <p>Se propone la realización de una web 3.0 que permita la difusión e intercambio de conocimientos, tomando como inspiración plataformas de difusión como the programming historian, wikis, internet archive, etc.  se podrá generar una red colaborativa (crowdsourcing) en donde los investigadores podrán mostrar sus trabajos académicos, las instituciones y aliados estratégicos nos proporcionarán las fuentes para futuras investigaciones y el público en general podrá acceder a esta información a través de materiales didácticos elaborados por los usuarios que se registren en nuestra plataforma.</p>
         
     </text>
+</TEI>

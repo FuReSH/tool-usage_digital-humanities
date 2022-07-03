@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Lorenzetti Digital es un proyecto de historia digital e historia pública que pretende mostrar perspectivas de la Edad Media desde Latinoamérica a un público especializado, escolar y no especializado. Esto se hace buscando conexiones en el mundo medieval desde los frescos de Ambrogio Lorenzetti 
@@ -50,3 +63,4 @@
             </div>
         </back>
     </text>
+</TEI>

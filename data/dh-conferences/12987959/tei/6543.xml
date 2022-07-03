@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Hasta hace pocos años, la Web proporcionaba información unilateralmente. Por un lado, estaban las grandes empresas e instituciones, que eran las que poseían espacio en la red, y por el otro, los usuarios, en actitud receptora y pasiva. Esa tendencia está siendo modificada por el movimiento denominado Web 2.0 que propugna que todos somos potenciales surtidores de contenidos y creadores de los registros del conocimiento. La evolución natural en la sociedad de la información se expresa en la metáfora del paso del ciudadano 1.0, consumidor de recursos, al ciudadano 2.0, creador de recursos, evidenciando la horizontalización y democratización de las fuerzas que rigen la red. Las Humanidades Digitales son un resultado de esas transfiguraciones digitales y como un ámbito disciplinar de convergencia cultural e investigativa, dejó de ser una moda para convertirse en una urgencia para cultura y memoria del mundo. </p>
@@ -15,3 +28,4 @@
             <p>En el futuro cercano, se proyecta una postura sinérgica que aproveche los aprendizajes de las Humanidades Digitales del Sur, con un enfoque parecido a la realidad cubana y se articule en una iniciativa nacional o proyecto de Asociación de Humanistas Digitales. </p>
         
     </text>
+</TEI>

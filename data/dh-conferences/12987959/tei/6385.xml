@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>EPAD is an emerging network of scholars investigating the history of European performing arts (theatre, music, cinema) using digital methods and (shared) datasets. EPAD builds on the infrastructure and expertise collected in existing projects at the CREATE research program at the University of Amsterdam with a data-driven approach to the history of cinema, theatre and music performances, functioning as point of departure from where more extensive European cross-sectorial cooperation can develop.</p>
@@ -97,3 +110,4 @@
             </div>
         </back>
     </text>
+</TEI>

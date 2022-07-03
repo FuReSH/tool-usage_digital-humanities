@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p rend="No Spacing">Publicaciones y exposiciones online, así como otros recursos interactivos, se encuentran entre los recursos online más utilizados por museos de arte en todo el mundo para transmitir historias vinculadas a obras de arte y colecciones. Los formatos tradicionalmente utilizados por museos para contar la historia del arte están siendo reconceptualizados a través de las cualidades y funcionalidades que nos ofrece el medio digital. El proceso experimental que aquí se expone nace con el objetivo de visualizar las particularidades que definen las narrativas generadas en los recursos online de museos de arte. Una selección de seis recursos online representativos de las tipologías más comunes producidos por museos de los Estados Unidos, España y Reino Unido* han sido la base para, por un lado, recabar datos sobre la perspectiva de los productores, y por otro, la de los usuarios especializados—una audiencia de perfil académico/investigador en el área de la historia del arte. Los datos se obtuvieron a través de dos métodos: entrevistas con los productores involucrados en la creación de los recursos online seleccionados, y en el caso de los usuarios, a través del protocolo conocido como “pensamiento en voz alta” (thinking aloud protocol) que ayuda a capturar información relevante a los procesos de navegación de los recursos online. Ambos procedimientos fueron grabados y transcritos para un facilitar el análisis posterior. Estos datos que se codificaron y analizaron desde una perspectiva narratológica permitiendo la observación de elementos configurantes de las narrativas: autoría, recepción como lectoespectador, estructuración, espacialidad, cronología. </p>
@@ -62,3 +75,4 @@
             </div>
         </back>
     </text>
+</TEI>

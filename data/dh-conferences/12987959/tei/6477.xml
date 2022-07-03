@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Cuando hablamos de pensar filosóficamente las humanidades digitales, nos referimos a la producción de un tipo de aproximación crítica que revisa la configuración tecnológica, así como la producción discursiva que la acompaña. Dicha configuración en algún momento se pensó gozaba de cierta neutralidad, pero el análisis de la tecnología ha conducido, cada vez más, a reconocer que la producción de estas herramientas tiene supuestos teóricos que, a partir de un examen filosófico, permiten encontrar parte de sus problemas y posibilidades. Por otra parte, si los discursos se reconocen técnicos pueden contribuir a fortalecer la tradición de investigación dirigida por la lectura y escritura de textos, a partir de las posibilidades de visualización, producción de datos, acumulación y procesamiento de información. Pensar filosóficamente las humanidades digitales se trata no sólo de una oportunidad de hacer consciente el carácter técnico del trabajo académico en las humanidades, sino de mostrar un desplazamiento en la producción del saber humanístico, y el sentido que éste tiene, a partir de la intervención tecnológica.</p>
@@ -350,3 +363,4 @@
             </div>
         </back>
     </text>
+</TEI>

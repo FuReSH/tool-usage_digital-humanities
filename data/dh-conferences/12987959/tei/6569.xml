@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Calha Norte is the northernmost region of the Brazilian Amazon, and constitutes the largest mosaic of protected areas in the world, encompassing nearly 14 million hectares of land. It stretches from the Amazon river in the south to the frontier regions between Brazil and the Guianese and Surinamese borders in the north, encompassing half of Pará and the state of Amapá in its entirety. Due to the vastness of the area, enforcement of protected areas can be poor, and far too little is done to involve local communities in the decision-making processes that inform conservation policy. Increasingly, digital technologies are helping to overcome some of the challenges to conservation. </p>
@@ -61,3 +74,4 @@
             </div>
         </back>
     </text>
+</TEI>

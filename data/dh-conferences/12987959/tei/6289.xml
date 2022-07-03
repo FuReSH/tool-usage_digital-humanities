@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>El 3 de mayo de 2017, el cuerpo sin vida de una mujer de 22 años fue encontrado dentro de un campus universitario de la capital mexicana. En su difusión por Twitter de los avances del caso, la Procuraduría General Judicial de la Ciudad de México difundió detalles como el nombre de la joven (Lesvy Berlín) y realizó afirmaciones con respecto a que ella vivía con su pareja, que habría interrumpido sus estudios dos años atrás, que antes de hacerlo no habría aprobado varias asignaturas y que de forma inmediatamente previa a su fallecimiento la mujer y su pareja habrían consumido bebidas alcohólicas y drogas en las instalaciones de la universidad. En Twitter, el recibimiento de la difusión del caso inmediatamente se transformó en una recriminación ciudadana contra la Procuraduría General Judicial, al compartirse generalizadamente la impresión de que la forma en que la instancia presentó a Lesvy Berlín generaba un discurso justificatorio de su muerte y que, en última instancia, hacía recaer en ella la responsabilidad de haber perdido la vida. La crítica social ante este discurso se canalizó hacia el hashtag #SiMeMatan, al cual las y los usuarios de redes sociales le acompañaron de descripciones de sus propias vidas que, en el hipotético caso de que se les encontrase sin vida, las instituciones de procuración de justicia potencialmente podrían difundir para crear una impresión de lo “justificado” de su fallecimiento.</p>
@@ -50,3 +63,4 @@
             </div>
         </back>
     </text>
+</TEI>

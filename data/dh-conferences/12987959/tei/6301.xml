@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The past decade has witnessed a wave of manuscript digitization projects initiated by museums, libraries, and individual scholars. This paper will address digitization of some primary sources essential for the study of late antiquity and Byzantine history and religion. Many of these initiatives will advance the study of Greek and Latin texts, as well as Hebrew—the primary languages of the Christian canon and the early to medieval Christian tradition in the West. Research in Syriac, Coptic, and Christian Arabic, however, are essential for understanding the development of religion in the late antique and early Medieval or Byzantine periods. The digitization of their sources has lagged behind. Focusing specifically on Coptic manuscripts—the texts of early and medieval Christian Egypt—this paper will explore the role of colonialism in in the history of Coptic archives and how to resist reinscribing both colonial epistemologies and traditional notions of “canon” after the “digital turn” in archival studies. </p>
@@ -34,3 +47,4 @@
             </div>
         </back>
     </text>
+</TEI>

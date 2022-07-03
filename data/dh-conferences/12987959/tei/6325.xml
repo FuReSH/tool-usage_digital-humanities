@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>How can the unknown be organised? When working with a script and language that has not been (completely) deciphered yet, primarily an inventory of all signs used must be compiled. What at first seems to be a diligent but routine piece of work, quickly turns out to be a complex classification task, for there is still much unknown. Questions arise about a signs' use-context, the extent of the sign inventory and, above all, how the signs can be classified. Particularly the unambiguous identification of signs has some pitfalls. The difference in meaning of a sign is determined on the one hand by its graphic representation (grapheme) and on the other hand by its phonetic value (phoneme). Since the latter can only be achieved by decipherment work that has already been done, the error-free classification of undeciphered signs is a challenging task. In addition, the investigation of archaic texts creates different contexts that lead to different interpretations. The resulting hypotheses must be included in the classification and decoding tasks of a script if a resilient research basis is to be created.</p>
@@ -155,3 +168,4 @@
             </div>
         </back>
     </text>
+</TEI>

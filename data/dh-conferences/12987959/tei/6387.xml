@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>In his influential article “There are no Visual Media”, theorist of visual culture W.J.T Mitchell argues that “all media are mixed media” (Mitchell, 2005). In earlier work, Mitchell already noted that composite works—media formats that consist of both image and text—cannot be adequately studied by comparing the meaning of these two forms of representation separately (Mitchell, 1994, p. 89). The subject matter of these “imagetexts”, is, rather, the “whole ensemble of relations between media” (Mitchell, 1994, p. 89). In other words, the meaning of one of the components of an imagetext, be it either the image or the text, can only be understood in relation to the other. This paper combines methods from text mining, computer vision, and information theory to increase our understanding of this relationship throughout several historical datasets.</p>
@@ -58,3 +71,4 @@
             </div>
         </back>
     </text>
+</TEI>

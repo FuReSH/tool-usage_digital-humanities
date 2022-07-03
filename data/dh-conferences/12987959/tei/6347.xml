@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>18thConnect.org es una comunidad en línea de académicos que realizan revisión por pares de materiales digitales obteniendo metadatos de los mismos para colocarlos en nuestro buscador que está disponible de forma gratuita. Los materiales patentados, tales como Early English Books Online (EEBO) y Eighteenth-Century Collections Online (ECCO) también se pueden buscar a través de nuestro asistente de búsqueda. Además, los libros y documentos de las colecciones EEBO y ECCO de la literatura moderna temprana están disponibles en 18thConnect para que los usuarios corrijan sus transcripciones mecánicas, a través de nuestra herramienta TypeWright. Cualquier persona que corrige un documento puede, entonces, tenerlo tanto en formato de texto plano como en XSLT. Exhortamos a los especialistas a corregir textos, crear ediciones digitales en GitHub o enviarlas al TEI Archiving and Publishing Access Service (TAPAS), así como a enviar sus ediciones a 18thConnect para su revisión por pares y para publicarlas en acceso abierto.</p>
@@ -41,3 +54,4 @@
             </div>
         </back>
     </text>
+</TEI>

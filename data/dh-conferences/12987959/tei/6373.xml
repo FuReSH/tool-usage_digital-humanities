@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>El póster tiene como objetivos aportar conocimientos sobre los orígenes de las HD en América Latina y mostrar los primeros procesos computacionales realizados por los investigadores de la UNAM, Maurice Swadehs y Juan José Rendón, dedicados a la lingüística comparada de las lenguas mayas utilizando una computadora IBM 650 de alquiler.</p>
@@ -69,3 +82,4 @@
             </div>
         </back>
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Chen Duxiu (1879-1942) co-founded the Chinese Communist Party in 1920, and served as its secretary general from 1921 to 1927. He was a prolific author and a cultural rebel whose writings transformed the intellectual and social landscape of 20
@@ -34,3 +47,4 @@
             </div>
         </back>
     </text>
+</TEI>

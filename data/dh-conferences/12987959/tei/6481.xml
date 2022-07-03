@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Computing capabilities for rendering high-quality three-dimensional graphics have progressed remarkably in recent years, largely in response to competition in the gaming and defense industries. While public awareness and engagement with virtual reality (VR) and/or augmented reality (AR) platforms has risen sharply, scholars are taking a measured and thoughtful approach, engaging with the new technology while remaining meta-critical about how high-speed computational capabilities like 3D, VR and AR can effectively represent the multiple dimensions in their digital humanities research. </p>
@@ -122,3 +135,4 @@
             </div>
         </back>
     </text>
+</TEI>

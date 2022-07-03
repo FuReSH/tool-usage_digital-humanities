@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Providing scholarly access to large collections that are distributed across various content providers, and to create user-friendly applications to work with that data in a diversity of scholarly projects is the underlying goal of the development of the Common Lab Research Infrastructure for the Arts and Humanities (CLARIAH
@@ -147,3 +160,4 @@
             </div>
         </back>
     </text>
+</TEI>

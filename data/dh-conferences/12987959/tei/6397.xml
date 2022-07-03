@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <figure>
@@ -14,3 +27,4 @@
             <p>Con este poster, quisiéramos mostrar todas las posibilidades que ofrece actualmente “ISIDORE” para el mundo hispánico en CHS, con lo que nos permite también contemplar colaboraciones fructuosas que contribuirán sin duda a alimentar esta plataforma y, al final, a enriquecer las búsquedas de investigadores o estudiantes francófonos de “ISIDORE” que tendrían acceso a más recursos en español, así como las investigaciones de usuarios hispanohablantes y angloparlantes. También tener la oportunidad de presentar este póster en el cuadro del congreso DH en México permitiría intercambiar con usuarios potenciales sobre sus necesidades, y alrededor de los futuros desarrollos de la plataforma.</p>
         
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Digital approaches to palaeography – the study of historical or ancient handwriting – have received significant attention in recent years. Projects like ORIFLAMMS (Stutzmann, 2016) and DigiPal (Brookes, 2015) have focussed on this, as well as projects aimed more at the book or written object in general such as HisDoc and Diva DIA, work on the Cairo Genizah (e.g. Wolf et al., 2011), work at the Centre for the Study of Manuscript Cultures (CSMC) in Hamburg; and many more. Although taking different approaches and addressing different aspects of palaeography, these projects have all made significant and important advances. However, relatively few have addressed explicit semantic modelling of handwriting itself. One such model was developed for the DigiPal project (Stokes, 2012) and has since been implemented in open-access and freely-available software called Archetype (2017). The model was developed initially for the Latin alphabet, but it has proven to be much more versatile than anticipated, with application to Hebrew and decoration (Brookes et al., 2015), bilingual Greek-Latin inscriptions, and experiments with Chinese, Cuneiform, Mayan, and others (see Figure 1 and Figure 2).</p>
@@ -164,3 +177,4 @@
             </div>
         </back>
     </text>
+</TEI>

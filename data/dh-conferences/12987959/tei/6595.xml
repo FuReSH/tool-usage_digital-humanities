@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The purpose of this ten-minute presentation is to present this thematic site which we have constructed in 2016 (and is bilingual) and is of use for professors, students, and general public. The object this academic web page (the first of its kind in this specific field) is to provide a large amount of documents (including links to over 200 working papers) historical statistics (over 600 Excel charts and graphs), bibliographies, guides to archival sources and short historical summaries of the banking histories of many countries in Latin America as well as Spain. Both El Colegio de México and the University of Cantabria (Spain) have collaborated in this project under the direction of Dr. Carlos Marichal. The site will soon be transferred to the electronic resources of the Libraries of both academic institutions. </p>
@@ -19,3 +32,4 @@
             </p>
         
     </text>
+</TEI>

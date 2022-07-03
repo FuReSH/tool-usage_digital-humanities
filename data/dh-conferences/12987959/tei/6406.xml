@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The project aims to employ Geographical Information Technologies to develop a pilot version of the digital mapping system “Museum Soft Power Map.” It explores key factors in the time-space development of museum capacities to contribute to local creative economy by attracting tourism and generating economic activity. In collaboration with the Australian Centre for the Moving Image (ACMI), the project creates a dynamic digital map to visualize a growing in time geographic diversity of the Centre's collections, programming, audiences and partnerships. It reveals what factors affect the development of the ACMI’s global brand recognition and influence its capacity to attract larger visitation and revenue. </p>
@@ -30,3 +43,4 @@
             </div>
         </back>
     </text>
+</TEI>

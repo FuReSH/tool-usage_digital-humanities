@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The Research Environment for Ancient Documents (READ) project commenced in 2013 with development support from a consortium of institutions (University of Washington in Seattle, Ludwig Maximillian University in Munich, University of Lausanne, University of Sydney and Prakaś Foundation) involved in the study and publication of ancient Buddhist documents preserved in Gāndhārī.</p>
@@ -13,3 +26,4 @@
             <p>The strategy adopted with Workbench was to design a solution architecture within which to reframe some of the ubiquitous issues in the conventional corpus development model; ownership, control, confidentiality, innovation, standardization, portability, resourcing and support. The critical innovation in maximizing development flexibility and in balancing autonomy and collaboration across the range of individual, collection and corpora development projects is the TextBase; the target of text alignment, the substrate for registration of analysis and the object aggregated.</p>
         
     </text>
+</TEI>

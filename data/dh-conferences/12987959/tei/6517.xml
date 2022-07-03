@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Las manifestaciones afrolatinoamericanas y sus conexiones con el mundo digital han comenzado a generar un creciente interés en diversos campos de estudio: las humanidades digitales, los estudios culturales, literarios y antropológicos entre otros. A pesar del interés, el estudio de tal intersección se encuentra en una etapa inicial debido a factores como a) las limitaciones de acceso a herramientas digitales por parte de algunos agentes y comunidades identificadas y auto-identificadas como afrolatinoamericanas/afrolatinas; b) limitaciones en la consecución de derechos de autor de algunas piezas y manifestaciones cuya distribución e intercambio digital se hace más difícil; y c) falta de innovación en la forma de clasificar piezas y manifestaciones que, en muchos casos, no coinciden con la tradición letrada que subyace al proceso de archivo ya sea digital o no. Tales limitaciones han hecho más difícil la consolidación de propuestas analíticas que, desde las humanidades digitales, den cuenta del estado y evolución de las culturas afrolatinoamericanas, así como de sus aportes a nivel de conocimiento en espacios locales, regionales y globales. </p>
@@ -32,3 +45,4 @@
             </div>
         </back>
     </text>
+</TEI>

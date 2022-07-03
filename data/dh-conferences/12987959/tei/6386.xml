@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>As it developed, the field of Digital Humanities has had a particular set of advantages in making advancements and gaining approval among the scientific community, allowing it to serve as a “means to revitalize the humanities” in the face of decreased funding and appreciation for its contributions (Reid 2011, pp. 352-353). Both for Digital Humanities and Computational Social Science, principal among these advantages are:</p>
@@ -51,3 +64,4 @@
             </div>
         </back>
     </text>
+</TEI>

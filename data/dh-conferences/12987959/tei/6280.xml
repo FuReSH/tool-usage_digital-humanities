@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The experiences of six million victims of the Holocaust perished with them. This paper will discuss the ways text and data mining technology has helped to recover fragments of lost experiences out of oral history interviews with survivors. The paper will also present how a data-driven anthology of these fragments has been built. The first part situates the challenge of uncovering experiences of the voiceless in historiography. The second part shows how text and data mining techniques have been applied to recover fragments of lost experiences from a big corpus of English language interview transcripts in the collection of the United States Holocaust Memorial Museum (USHMM). The third part demonstrates how web technology and visualization are used to render these fragments in a digital anthology. </p>
@@ -74,3 +87,4 @@
             </div>
         </back>
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This poster proposes a discussion on the challenges and lessons learned in the integration of digital humanities pedagogy into a traditional graduate foreign language course through a heterogeneous collaboration among global DH scholars and North American experts in geographic information systems (GIS), copyright, digital humanities, and area studies. Significant barriers of entry exist for humanities students and faculty attempting to introduce DH into their departments and classrooms. Uneven institutional infrastructure and programmatic presence of DH at universities leave faculty with the dilemma of simultaneously learning DH methods themselves and integrating DH pedagogy into the curriculum for their students. As such, DH methods can present real and perceived psychological and cultural barriers (Battershill and Shawna, 2017) that surpass the digital and technology competencies of students or faculty. Humanities departments recognize the value of DH methods, research, and the need to develop the next generation of DH scholars, but may lack in-house expertise to design the initial curriculum. </p>
@@ -19,3 +32,4 @@
             </div>
         </back>
     </text>
+</TEI>

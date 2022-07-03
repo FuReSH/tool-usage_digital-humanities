@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>El 26 de noviembre de 2016 el Congreso colombiano votó su aprobación al “Acuerdo final para la terminación del conflicto y la construcción de una paz estable y duradera”, firmados por el presidente de la República Santos y el comandante del Estado Mayor central de la guerrilla de las FARC-EP Jiménez. El fin legal del largo conflicto armado interno puso en marcha la creación de una nueva institucionalidad estatal para transitar hacia los necesarios procesos de, que lentamente y entre muchas resistencias ha ido tomando cuerpo en el año que siguió a la aprobación parlamentaria. </p>
@@ -48,3 +61,4 @@
             </div>
         </back>
     </text>
+</TEI>

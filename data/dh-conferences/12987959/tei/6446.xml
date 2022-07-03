@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The way we conceptualise our world is dependent on various aspects, differing with culture, time and language, and may even be subject to change over the years [5,6]. In this paper, we introduce a visual analysis tool that supports the exploration of indigenous knowledge concepts of a historic language collection, the Database of Bavarian dialects in Austria (DBÖ, dboe@ema), originally and partially collected by means of systematic questionnaires in the area of the former Austro-Hungarian empire. The collection we focus on in this work consists of 109 (original-conceptual) and 9 (supplementary) questionnaires, designed between 1913 and 1920, with answers (about 5 million paper slips). Around 11.100 persons of regional importance with various professional backgrounds and different roles in the compilation process were involved for almost a century [further info c.f. 1,8].</p>
@@ -51,3 +64,4 @@
             </div>
         </back>
     </text>
+</TEI>

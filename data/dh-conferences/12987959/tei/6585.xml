@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>In the past ten years, advancements in computing technology have lent themselves to diverse applications in teaching and learning such as seen with MOOCS, learning managements systems, networked collaborative pedagogy, virtual/augmented reality course modules, and algorithmic-driven approaches to personalized learning. While these engagements represent a variety of exciting (though often controversial) new directions for educational technology, the changing socio-technological conditions of our information landscape call for new critical approaches towards its development and use. Information communication technology (ICT) in educational settings should not only be evaluated according to the way it supports intended learning goals, but also according to the type of technological consciousness it produces in students. In this paper I will draw from methods and values in participatory design (Simonsen), critical pedagogy (Freire; Shor), and the digital humanities (Drucker &amp; Svensson; Rockwell &amp; Sinclair) to outline a way that academic technological practices and infrastructure might be re-engineered to foster more critical and participatory relationships to digital technology within higher education. I will focus specifically on how this approach has particular value for the teaching and use of writing in undergraduate and graduate education in that it enables a praxis-oriented approach to analyzing and designing digitally-mediated rhetorical situations within and beyond academia. I will then describe KNIT, a digital commons at UC San Diego that aims to develop a participatory model of educational technology, and describe the challenges and opportunities experienced in its development.</p>
@@ -35,3 +48,4 @@
             </div>
         </back>
     </text>
+</TEI>

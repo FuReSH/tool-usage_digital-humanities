@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Este panel se propone avanzar, desde un punto de vista metodológico, en el análisis a gran escala de la revista como institución cultural, una aproximación que puede cuestionar centros de producción literaria y revelar dinámicas de relación hasta ahora desconocidas entre las mal denominadas literaturas periféricas y los centros culturales hegemónicos. Para ello, los coordinadores de este panel proponemos cuatro presentaciones que abordan el estudio de revistas culturales históricas del ámbito hispánico y lusófono a través de diversos estudios de caso que utilizan herramientas digitales y combinan intereses disciplinares en los campos de la historia de las ideas, la historia cultural, los estudios de traducción, y la literatura comparada desde una perspectiva transnacional. El panel se propone dar muestra del estado actual del estudio de revistas culturales en los espacios hispánico y lusófono a través del uso de herramientas digitales que permitan avanzar en la discusión metodológica.</p>
@@ -339,3 +352,4 @@
             </div>
         
     </text>
+</TEI>

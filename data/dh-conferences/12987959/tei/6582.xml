@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Accurate information about the human population distribution is essential for formulating informed hypothesis in the context of several social, economic, and environmental issues. Government instigated national censuses are authoritative sources of population data, subdividing space into discrete areas (e.g., fixed administrative units) and providing multiple snapshots of society at regular intervals, typically every 10 years. Many research institutions or national statistical offices have developed historical Geographical Information Systems (GIS), containing statistical data from previous censuses together with the administrative boundaries (i.e., records of administrative boundary changes) used to publish them over long periods of time. However, using these data can still be quite challenging, particularly when looking at changes over time.</p>
@@ -42,3 +55,4 @@
             </div>
         </back>
     </text>
+</TEI>

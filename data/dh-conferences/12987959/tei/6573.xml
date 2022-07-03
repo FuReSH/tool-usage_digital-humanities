@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>In recent years, the use and development of Podcasts has significantly grown. Podcasts allow us to listen to topics we are interested in and learn more about an issue or community. Podcasts like 
@@ -16,3 +29,4 @@
             <p>As a pilot project, this use of podcasting in the classroom may pave the way for further research opportunities about the benefit of podcasting in advanced language courses, service-learning and heritage language learners. This course enhancement will also provide students with a structured opportunity to make deeper connections with Latino/a campus community, to reflect on that experience, and to gain interviewing skills that will serve them in the future. Additionally, students will be instructed in (1) Language and intercultural skills 2) Organizational and professional skills through the research of a topic, securing a guest that can speak about the topic, preparing the guest with agreed up points of conversation, and practicing before recording the interview (3) Technical skills through using recording equipment and editing software.</p>
         
     </text>
+</TEI>

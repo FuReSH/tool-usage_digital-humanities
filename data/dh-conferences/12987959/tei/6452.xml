@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The violence and trauma of climate change have arrived. The Caribbean region is the unfortunate recipient of the impacts of climate change and, much like its inheritance of plantation slavery and colonialism, it is left with the infrastructural, social and cultural pillage of imperial and neocolonial imposition. My talk will consider whether and how the humanities, and digital humanities in particular, can produce the ideal intersection between planetary responsibility, community accountability and sustainable living. </p>
@@ -15,3 +28,4 @@
             <p>Finalmente, pongo en práctica los discursos del afrofuturismo para imaginar un futuro caribeño alternativo representado en el rediseño, la imaginación y representación digitales de ciertas comunidades caribeñas. Al ofrecer modelos para repensar, visualizar y reconstruir los espacios físicos, deseo despertar preguntas y ofrecer entendimiento acerca del poder que las humanidades digitales tienen para crear justicia social y ambiental en el Caribe contemporáneo y futuro. La meta es también ofrecer este modelo como una plantilla para desarrollar otros proyectos de mapeo que pueden proponer un futuro alternativo para el Sur Global.</p>
         
     </text>
+</TEI>

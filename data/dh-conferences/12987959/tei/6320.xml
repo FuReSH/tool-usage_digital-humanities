@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Thanks to recent advances in scanning technologies there has been an increase in the number of methods developed for digitizing cultural heritage objects. Many of the resulting 3D models are used for visualization or archiving purposes. Unfortunately, there are still few projects oriented to gain archaeological knowledge from point clouds and triangular meshes.</p>
@@ -133,3 +146,4 @@
             </div>
         </back>
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Though directly addressing the reader in fiction is often associated with cloying sentimentality, many different forms of direct address are employed across nineteenth- and twentieth-century novels. Upton Sinclair’s use of address in 
@@ -37,3 +50,4 @@
             </div>
         </back>
     </text>
+</TEI>

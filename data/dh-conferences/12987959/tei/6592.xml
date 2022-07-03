@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Atraviesan al concepto étnico-geográfico definido como Latinoamérica distintos procesos regionales en los que se observan políticas para impulsar estrategias de acceso a internet, incorporación de las tecnologías digitales al sistema educativo y/o implementación de programas de alfabetización digital. Desde la Cumbre Iberoamericana de San Salvador en el año 2008 se viene sosteniendo, por ejemplo, la necesidad de "impulsar políticas, que incluyan el marco de la colaboración público-privada, encaminadas a facilitar la integración plena de las y los jóvenes en la Sociedad de la Información y del Conocimiento a través del acceso universal a las Tecnologías de la Información y de la Comunicación (TIC) y el desarrollo de contenidos digitales, mediante programas de alfabetización digital que reduzcan la brecha existente y con la mira puesta en facilitar el acceso al empleo, el emprendimiento y la realización personal" (INTEF, 2013). </p>
@@ -52,3 +65,4 @@
             </div>
         </back>
     </text>
+</TEI>

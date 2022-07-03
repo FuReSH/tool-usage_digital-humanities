@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>We present the Scholar Index: a platform to index the literature and primary sources of the arts and humanities through citations. These resources are becoming increasingly digital, thanks in part to digitization campaigns and a shift towards digital publishing. Nevertheless, the coverage of commercial citation indexes is still poor and mostly limited to publications in English (Mongeon and Paul-Hus, 2015). This situation results in an untapped opportunity, as the literature refers to a wealth of primary sources from institutions such as libraries, archives and museums (Knievel and Kellsey, 2005). As a consequence, a comprehensive indexing of its citations would constitute a unique opportunity to greatly enhance the search capacities of scholars and interconnect collections currently set apart.</p>
@@ -134,3 +147,4 @@
             </div>
         </back>
     </text>
+</TEI>

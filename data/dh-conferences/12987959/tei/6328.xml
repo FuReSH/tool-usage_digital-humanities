@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>At the beginning of a research project, every scholar in the humanities asks a question: what should I read? This paper presents a new search engine that sifts through large corpora of unstructured text in order to find particular passages that deal with a concept of interest. Its underlying algorithm is based on the practice of concept search, which was originally developed in legal practice to efficiently automate the process of document review (Blair, 1985; Bai, 2005; Algee-Hewitt, 2008; Zhu, 2009; King, 2017). Our search engine builds upon that technique by applying it to large corpora relevant to humanistic scholarship and, crucially, dividing each text into passages of a standard size, improving the specificity of results. In order to demonstrate the fullest potential of this technique, our paper will focus upon its application to a specific problem in eighteenth-century intellectual history, while also discussing its most significant theoretical implications, including a reevaluation of the tight connection that has developed between the computational evaluation of the great unread through distant reading (Cohen, 1999; Moretti, 2013).</p>
@@ -113,3 +126,4 @@
             </div>
         </back>
     </text>
+</TEI>

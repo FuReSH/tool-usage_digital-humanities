@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This poster will present the Manifold Scholarship project ( http://manifold.umn.org ), an open-source scholarly communication and book publishing platform funded by the Andrew W. Mellon Foundation. Created by the University of Minnesota Press, The GC Digital Scholarship Lab, and Cast Iron Coding, Manifold aims to present the scholarly monograph in a new networked and iterative form that still has strong ties to print. </p>
@@ -6,3 +19,4 @@
             <p>This poster will explain what Manifold is, how it works, how it integrates into existing university-press publishing workflows, and how others may begun using it on their own for a variety of publishing and pedagogical needs. </p>
         
     </text>
+</TEI>

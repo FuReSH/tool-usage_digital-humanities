@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>La presente ponencia tiene como objetivo presentar el estudio de caso del proceso de modernización del Centro de Documentación Histórica “Lic. Rafael Montejano y Aguiñaga” de la Universidad Autónoma de San Luis Potosí (CDHRMA-UASLP), México, constituido por una colección de aproximadamente 100 mil volúmenes bibliográficos, una amplia sección de manuscritos, publicaciones periódicas, e impresos , y un gran acervo documental que incluye el Archivo Histórico de la UASLP. </p>
@@ -7,3 +20,4 @@
             <p> La experiencia y reflexión planteada en ésta ponencia, busca poner sobre la mesa la importancia que herramientas como el software libre, y el desarrollo de aplicaciones tecnológicas e informáticas, puede impactar de manera favorable en la conservación y difusión de acervos bibliográficos y documentales de alto valor patrimonial, y garantizar el acceso a ellas por parte de los investigadores y público interesado tanto del presente como de generaciones futuras. </p>
         
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This workshop introduces 
@@ -35,3 +48,4 @@
             <p>Visualising and contextualizing geographical information within documents can be an important step in reaching a deeper understanding of their content, potentially highlighting phenomena that would have been otherwise difficult to identify. It is also an effective tool for engaging students when encountering historical texts and collections. The design of Recogito 2 is intended to make the production of semantic annotations easy and intuitive, opening the door of the Linked Open Data ecosystem to a wide range of users, including without prior experience of semantic technologies.</p>
         
     </text>
+</TEI>

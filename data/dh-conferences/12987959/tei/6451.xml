@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>La trama es el hilo que se teje entre la urdimbre, son nuestro papel y lápiz para crear un lienzo. Juntos, trama y urdimbre, son el puente que unen los hilos con nuestro pasado y nuestro presente, tejemos las grecas de Mitla como una forma de leer o interpretar y escribir a nuestros ancestros, pero también para contar nuestros sueños y nuestras experiencias. Tramamos en zapoteco. Cuando terminamos un tapete lo compartimos con el mundo, y aunque el tejido está en zapoteco se puede interpretar en inglés, en español, en mixteco o en chatino.</p>
@@ -7,3 +20,4 @@
             <p>Digital media can be seen as a warp on which the speakers of indigenous languages have an opportunity to weave their word and to share it within their own community and beyond.  Although in our times digital media and social networks are a practical part of our daily lives and of our interactions with the world, we as speakers of indigenous languages must truly appropriate these spaces, to weave our word well, in order to liberate ourselves from the a denial of the present.</p>
         
     </text>
+</TEI>

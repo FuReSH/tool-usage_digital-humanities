@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Calha Norte is the northernmost region of the Brazilian Amazon, and the largest mosaic of protected areas in the world, encompassing nearly 14 million hectares. Given the vastness of this area, government enforcement of parks and conservation zones can be poor, and scarce resources prevent authorities from providing much-needed support to the inhabitants of protected areas. This poster focuses on the Calha Norte Portal, a digital project that constitutes a personal initiative to encourage awareness of conservation efforts in the region. The portal is an educational tool intended to demonstrate the power of digital technologies for fostering greater transparency in conservation management. It also aims to provide a clearer understanding of the social, political, economic and historical dynamics which have shaped the challenges to protecting the Amazon forest today. </p>
@@ -28,3 +41,4 @@
             </div>
         </back>
     </text>
+</TEI>

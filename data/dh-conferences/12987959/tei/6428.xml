@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This poster offers a playful introduction to network analysis as a means to study and compare dramatic texts. Its more serious purpose is a didactic intervention in the now well-established methods of literary network analysis, which are not always applied with sufficient reflection. The calculation of complex network metrics is often not followed by a leap to meaningful interpretation. What does it really mean, for example, that the average path length of the social network extracted from Shakespeare’s 
@@ -59,3 +72,4 @@
             </div>
         </back>
     </text>
+</TEI>

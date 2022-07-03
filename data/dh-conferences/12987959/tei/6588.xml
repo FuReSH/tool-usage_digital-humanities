@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p rend="Body">The nascent field of queer game studies has expanded exponentially in recent years thanks to the work of scholars such as Adrienne Shaw, Bonnie Ruberg, and Edmond Chang. This growth in scholarship has paralleled a significant rise in LGBTQ representation in games, including games such as 
@@ -88,3 +101,4 @@
             </div>
         </back>
     </text>
+</TEI>

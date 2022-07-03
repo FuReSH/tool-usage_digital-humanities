@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This paper analyzes how in the context of Mexican museums, the lack of policies, frameworks and strategic planning has led to the creation of unsustainable cultural digital collections. It focuses on the challenges in rescuing the digital collection “Bienal Internacional de Poesía Visual y Experimental” [Biennale of Visual and Experimental Poetry], held at the Mediateque of the Museo Universitario del Chopo.</p>
@@ -8,3 +21,4 @@
             <p>This poster describes the rescuing process and the guidelines we create in order to prevent the creation of unsustainable digital collections within cultural memory institutions.</p>
         
     </text>
+</TEI>

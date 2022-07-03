@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p rend="Normal1">A recent article has propped up the strawman that is the scientism of Digital Humanities (Brennan, 2017). This is not the first time that DH has been called out in terms of its supposed lack of success as a science (Allington, Brouillette, Golumbia, 2016). To be sure, scientific achievements are wonderfully measurable; they can be measured in terms of a year of progress – or ten years or the last 100 years – are marked by notions of societal impact. What has science done for us lately? We ask, as we point to discoveries and solutions. Likewise, a reputable humanities scholar asks, what has DH accomplished with all the money it has been bestowed? DH hasn’t “reveal[ed] the secrets 
@@ -172,3 +185,4 @@
             </div>
         </back>
     </text>
+</TEI>

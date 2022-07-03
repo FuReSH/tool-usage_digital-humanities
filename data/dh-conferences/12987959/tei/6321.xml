@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p rend="p1">Digital Humanities, and by extension digital humanists, tend towards a culture of open access, interdisciplinary collaboration, and a maker ethos. These disciplinary values position the digital humanities for high impact reaching beyond disciplinary boundaries into more public fora. One might argue that this public-facing ethos is a natural extension of web-based scholarship.
@@ -62,3 +75,4 @@
             </div>
         </back>
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>When it comes to promoting the importance of open scholarship, Latin America and the Caribbean stand out in a sense that the concept of “openness” is generally accepted all over the region. Several countries, such as Peru, Argentina, Brazil and Mexico, have shown real advances in terms of national laws that seek to make knowledge produced with public funds a common good, managed by the academic community. We can also highlight regional projects such as SciELO and redalyc.org that have played a unique role to make the production published in Ibero American and Latin American journals available free of charge. Open access is now established in Latin America and the Caribbean as the most extended communication model in the academic community, giving visibility and value to scientific production at a regional and global level. </p>
@@ -62,3 +75,4 @@
             </div>
         </back>
     </text>
+</TEI>

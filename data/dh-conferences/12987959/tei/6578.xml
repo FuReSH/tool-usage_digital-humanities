@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Scholars are producing and using 3D content more than ever due the advancement and availability of 3D technology. How is this 3D content and its metadata being captured, disseminated, and preserved? How is this digital scholarship being made available and discoverable for pedagogical and research purposes? </p>
@@ -53,3 +66,4 @@
             </div>
         </back>
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Starting in Buenos Aires with Eloísa Cartonera in 2003, Cartonera publishers emerged as a reaction to the over commercialization of the book industry and its ever-growing conglomerates. With their unique hand embellished covers and their peculiar aesthetics, these publishers have challenged how books and literature are produced and distributed. Their collective manual process is equal to the intellectual one, resulting in a more democratic mode of production. </p>
@@ -15,3 +28,4 @@
             </div>
         </back>
     </text>
+</TEI>

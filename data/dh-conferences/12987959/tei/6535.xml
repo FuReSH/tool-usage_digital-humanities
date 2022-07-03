@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The Coptic language is the last phase of the Egyptian language family, descending ultimately from the ancient hieroglyphs. Coptic Scriptorium has developed a multidisciplinary research platform using core Corpus Linguistics tools and methods in collaboration with other disciplinary methods. This paper will argue that this collaborative, interdisciplinary approach allows for the creation of research resources that enrich even 
@@ -11,3 +24,4 @@
             <p>We presented the very beginnings of the Coptic Scriptorium project at DH 2014 in Switzerland. This short paper will demonstrate the extensive progress made as a result of collaboration and interdisciplinary partnerships.</p>
         
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Can data-capture be a tool for feminist historiography? Can contemporary frameworks for understanding networks—actor-network theory, linked open data standards—help to shift our understanding of cultural production and literary history? This paper argues that data capture modelled on the principles of the “ego-network” is rich in its potential to address persistent problems in the recovery of non-canonical literary history. An ego-network is a data representation of the way that individuals are “embedded in local social structures” (Hanneman). Women’s cultural production has frequently been that of secondary cultural labours like editorship. Literary scholarship has struggled with appraising this secondary labour since at least 1986, with the publication of Shari Benstock’s foundational 
@@ -73,3 +86,4 @@
             </div>
         </back>
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>PoéticaSonora is a research group interested in the study of sound, listening, and legibility at the intersection of art and literary studies. The group has worked together for two years, organizing several events and projects that operate under two main axes, activation and preservation. The most important project on the preservation axis is dedicated to the design, creation, and development of a digital audio repository (DAR) for sound art and sound poetry in Latin America. During the first phase of the project to gather audio files for the repository, we have conducted fieldwork and archival research in different public centers and private collections, mostly in Mexico City. The DAR prototype was designed and developed by graduate students at Concordia University, in Montreal, with an initial sample of 317 audio tracks, performed or composed by around 180 artists, most of them from Mexico but also Argentina, Brazil, and the US. These tracks have previously been classified as sound art, sound poetry, radioart, experimental music, spoken word, poetry slam, performance, hip hop, indigenous language poetry, among many other terms.</p>
@@ -15,3 +28,4 @@
             </p>
         
     </text>
+</TEI>

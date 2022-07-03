@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p> Dunhuang documents consist of about 40 thousand documents from 5th to 11th century. The documents were discovered in Mogao Cave 17, in Dunhuang, China, by the Daoist monk Wang Yuanlu in 1900. At that time, many foreign explorers visited Central Asia and especially Dunhuang: the Hungarian-British archaeologist Aurel Stein in 1907, followed by the French Sinologist Paul Pelliot in 1908. Both brought back to Europe thousands of documents that they bought from the monk. Although scattered in many countries, the documents are available on the International Dunhuang Project website and the Gallica website of the French National Library; however, except the digital images and bibliographic data, there is no further information on the constituent materials (paper, ink, dyes etc.)</p>
@@ -17,3 +30,4 @@
             </div>
         </back>
     </text>
+</TEI>

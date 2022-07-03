@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>In contemporary anthropology, nearly all of us work with sound – usually oral interviews – but its quality as such is often taken for granted. Audio files of interviews are often quickly transcribed or qualitatively coded into text, then analyzed and written into books. And the soundscapes of our fieldwork sites are often taken for granted as well. Their meanings and textures as sounds are thus erased. The small sounds of voices and places often invoke an intimacy that anthropologists may attempt to render in text through “thick description” (Geertz 1973) and hopefully also “sincerity” (Jackson 2005), drawing from hermeneutic and poetic approaches in literary studies (Clifford and Marcus 1986, Behar and Gordon 1995). </p>
@@ -33,3 +46,4 @@
             </div>
         </back>
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>What constitutes an alignment, different varieties of alignment, or even different degrees of alignment is a topic in need of further interdisciplinary discussion. The co-authors of this paper have been working on the computational alignment of medieval poetry, an exchange that has resulted in the design of a visual analytics system for the exploration of complex textual traditions. The purpose of this paper is twofold: first, to describe how we arrived at the user centered design of the VA system (Heuwing et al., 2016) and second, to introduce an alternative means of alignment, that of Sequence-to-Sequence Models based on recurrent neural networks, that does not oblige the user to adopt a parameter driven approach, but still allows for discovery of baseline potential alignment for subsequent human scoring. </p>
@@ -169,3 +182,4 @@
             </div>
         </back>
     </text>
+</TEI>

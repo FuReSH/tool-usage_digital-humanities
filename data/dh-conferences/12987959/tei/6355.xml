@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p rend="normal">Digital humanists taking up the challenge of the decolonialist approach face, with regards to information management, the question of how to structure their data in a way which escapes the confines of the repressive episteme that they seek to challenge. And yet, the database and the data form have enormous potential to replicate and even intensify, in a new medium, the colonial intersection of knowledge and power. A data model operates, at least potentially, on its ‘subject’ as an authoritative power, disenfranchising the epistemological constellations of those it chooses to represent and submitting them to a colonial order of knowledge. Such subjugation can be argued to be represented in classic arrangements of knowledge like the ‘tombstone’ data explaining objects in museums and archaeological collections. In such data models, the analyses that go along with the object and which tie these objects into a web of knowledge privilege the interpretation of the scholars who speak of and for the object. It is often the agency of the ‘discovering’ or ‘gifting’ agent that is most associated to the object over/above the cultures, groups and individuals for whom the object was a living part of life and practice. (saywhatnathan, 2017) The digital humanist would work on a corpus of well-formatted data in order to build up a new knowledge, contesting colonial representations, but the epistemic, ethical and pragmatic challenge comes together here: what can be the form of this representation and how to conceptualize and maintain it, without re-introducing imperialistic paradigms?
@@ -69,3 +82,4 @@
             </div>
         </back>
     </text>
+</TEI>

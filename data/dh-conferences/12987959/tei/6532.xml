@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Open research data is facilitating broader ways of using, reusing, enriching, and linking research results. Many services use metadata to bring the information of different repositories together. Europeana, for example, links material from various thematic focal points with diverse origins and makes a wide range of collections, archives and source objects searchable. Other platforms interlink and aggregate material for one distinct discipline or thematic interest.</p>
@@ -116,3 +129,4 @@
             </div>
         </back>
     </text>
+</TEI>

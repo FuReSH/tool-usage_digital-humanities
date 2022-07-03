@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The role of women in industrial development is now largely recognized in sociological and economic studies on developing countries during the first industrial revolution in Europe. Yet data on their remuneration, schedules and domestic work, and that of men working in the same sectors, remains deficient for many regions, especially for France. The Time-Us project aims to reconstruct the remuneration and time budgets of women and men working in the textile trades in four French industrial regions (Lille, Paris, Lyon, Marseille) in a long-term perspective, by bringing together a multidisciplinary team of historians, natural language processing (NLP) experts and sociologists. It will create comparable series on the remuneration and time allocation of employed men and women (i) through classical sources and company and trade association archives, and (ii) by piecing together a series of qualitative sources identifying words and actions associated with work in both domestic and non-domestic activities. The project will provide keys to understanding the gender gap by analyzing changes in work and time uses during the first industrialization process.</p>
@@ -61,3 +74,4 @@
             </div>
         </back>
     </text>
+</TEI>

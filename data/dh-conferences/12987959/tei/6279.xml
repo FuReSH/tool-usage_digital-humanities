@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Digital environments now serve as the primary network for academic and non-academic modes of communication, research practices, and knowledge dissemination. This shift has resulted in greater ease of pursuing collaborative modes of engagement. Social knowledge creation, citizen scholarship, interdisciplinary collaborations, and university-community partnerships have become more common and more visible. Engaging with such transformations in knowledge creation has been a significant research focus for the Electronic Textual Cultures Lab (ETCL) at the University of Victoria. This presentation will detail the intellectual foundations of social knowledge creation, as well as the major initiatives undertaken by the ETCL to pursue and enact this research. The ETCL explores these topics via on-campus activities as well as three substantial environmental scans: Social Knowledge Creation: Three Annotated Bibliographies” (Arbuckle, Belojevic, Hiebert, Siemens, et al., 2014), “An Annotated Bibliography on Social Knowledge Creation” (Arbuckle, Belojevic, El Hajj, El Khatib, Seatter, Siemens, et al., 2018), and “Open Social Scholarship Annotated Bibliography” (El-Hajj, El Khatib, Leibel, Seatter, et al., under development). The annotated bibliographies bring together myriad perspectives on how collaborative knowledge creation and engagement practices have been carried out, historically as well as currently. This work suggests how elements of academia might be reimagined in order to effectively integrate collaborative, interdisciplinary, public-minded praxis. Building on field touchstones like Kathleen Fitzpatrick’s 
@@ -41,3 +54,4 @@
             </div>
         </back>
     </text>
+</TEI>

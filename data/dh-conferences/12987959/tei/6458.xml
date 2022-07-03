@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>While crucial progress has been made toward the equitable distribution and acknowledgement of DH labor, important work remains to be done to address and amend the overarching precarious nature of labor in the digital humanities. Many DH practitioners find themselves in situations that require both specialized and general knowledge, as well as a vast—and outlandish—technological skill set. In a field that relies heavily on grants and temporary positions, many of the people who occupy DH positions find themselves juggling the impossible task of keeping up with advances in technology, advising stakeholders from divisions across campus, researching, writing, and teaching, often without the security of long-term employment.
@@ -96,3 +109,4 @@
             </div>
         </back>
     </text>
+</TEI>

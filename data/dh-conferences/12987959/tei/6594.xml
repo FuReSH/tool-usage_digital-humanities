@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>El uso de tecnologías digitales para el registro y conservación del patrimonio ha demostrado ser de gran utilidad ya que permite contar con una documentación exacta que puede constituir la base para proyectos de restauración, pero también de investigación y difusión (De Reu et al., 2013; Forte et al., 2015). En las últimas dos décadas, el cambio climático, la creciente inestabilidad política y el saqueo han llevado al deterioro de numerosos sitios arqueológicos mesoamericanos (Juárez Cossío, 2000; Lario Villalta, 2000; Noriega y Quintana, 2002). En este escenario, la documentación del patrimonio digital y la difusión de datos en línea se convierten en recursos invaluables para registrar, monitorear y preservar el patrimonio cultural maya del sur de México. (Forte et al., 2015)</p>
@@ -83,3 +96,4 @@
             </div>
         </back>
     </text>
+</TEI>

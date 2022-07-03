@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>En esta presentación se busca mostrar el avance obtenido en un año de trabajo en el proyecto de creación de un mapa literario de México en el que se representen gráficamente las obras y los espacios en las que éstas se desarrollan. El 
@@ -19,3 +32,4 @@
             </p>
         
     </text>
+</TEI>

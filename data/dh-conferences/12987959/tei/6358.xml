@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p rend="Cuerpo">We are proposing to develop a storytelling tool that integrates multimodal mapping for use in language classrooms. Through a Digital Humanities approach on Storytelling Labs, we will be integrating the App StoryMapJS in order to create a storymap of their cultural heritages. This DH tool is very accessible and it will allow the student to engage mapping narrative through images, videos, music, writing and maps; so the heritage learners will interpret space by their personal print, and it will let to other readers from the course or outside the course, to confront other sociopolitical contexts.</p>
@@ -6,3 +19,4 @@
             <p rend="Cuerpo">The idea to expand the personal stories and experience in the US of the heritage learners is essential for the course; so the learners engaged Spanish in the sociopolitical context of bilingualism of their own families and community. Their narratives, our narratives, will enrich the course. </p>
         
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This panel brings together practitioners of digital humanities with backgrounds in history, anthropology, and film to discuss projects that embrace interdisciplinary perspectives in exploring cross-cultural conversations about the role of expert knowledge and digital technologies in community and tourism development, indigenous cultural heritage protection, and learning pedagogies. Using digital technologies and interfaces, the four projects bring to light historical and contemporary indigenous experience in various communities in Yucatán, Mexico. </p>
@@ -68,3 +81,4 @@
             <p rend="x_msonormal">This paper is part of both the author’s academic book manuscript in progress on the social, political, and ecological effects of tourism development in Yucatán, as well as part of a more recent collaborative educational ethnographic documentary on uneven forms of globalization in the region developed between the University of California San Diego and the Universidad Autónoma de Yucatán. This ethnographic documentary, still in its preliminary phases, will be part of a larger interdisciplinary and collaborative effort between the social sciences and the humanities, digital media technologies and documentary film and media to translate concepts and ethnographic research on global-local relations, uneven geographical development and cultural life into the world of audiovisual storytelling for research and pedagogic purposes. Our aim is to put together a grant proposal to fund an examination of historical and contemporary forms of everyday life in rural communities in the state of Yucatán, Mexico, using a combination of experimental media and historical and anthropological approaches to the study of culture.</p>
         
     </text>
+</TEI>

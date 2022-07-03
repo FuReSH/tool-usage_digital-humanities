@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This paper reports on the completion and launch of the locative media app “Go Queer.” Taking the theorization, iteration, and development of “Go Queer” as a model and case study, the paper argues that locative media is uniquely suited to re/mediating queerness. It then proposes that these findings can be used as a framework and set of best practices for developing a variety of queer history applications.</p>
@@ -70,3 +83,4 @@
             </div>
         </back>
     </text>
+</TEI>

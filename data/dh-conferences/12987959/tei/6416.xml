@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Vivimos en la sociedad de la imagen y la información (Manuel Castells, 1996) que se caracteriza por la hiperproducción de conocimiento. Esto representa un verdadero desafío estructural a la hora de formular proyectos relevantes en los que el desarrollo y la investigación no sean los únicos enfoques de un humanista digital: se requiere aplicar la empatía digital como puente que equilibre el desarrollo de productos digitales. </p>
@@ -62,3 +75,4 @@
             </div>
         </back>
     </text>
+</TEI>

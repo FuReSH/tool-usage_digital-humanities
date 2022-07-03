@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This poster presents the technical redesign of the web resource 
@@ -10,3 +23,4 @@
             <p>Data resources of the project are being described using Dublin Core metadata vocabulary.  Sources with annotations or other semantic enhancement adhere to TEI (Text Coding Initiative) P5 using the DTA base format.  Linked-open data representations are being be stored in RDF-XML.  Using Scalar’s built-in API, all content will be made available directly via URL-based requests in RDF-XML.  This is also the technical basis for user content "remixing" and user publication facilitation being developed within the GHDI environment. Authority control for personal names and other entities, both in consumption and publication, will be assured through GND and similarly broadly accepted standards.  Resources suitable for language analyses tools conform to Component MetaData Infrastructure (CDMI) as prescribed by CLARIN-DE data centers.   Geographic data is being encoded in GeoJSON.   All data will be published to prioritize permissiveness of use under Creative Commons licensing. </p>
         
     </text>
+</TEI>

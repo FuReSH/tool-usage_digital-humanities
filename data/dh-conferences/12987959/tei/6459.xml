@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The Digital Humanities is largely a textual field. In part, this is a reflection of the supremacy of the written word in wider academic production; in part, of the history of the Digital Humanities as an interdiscipline in the study of textual sources, from poems to administrative records. As a community, we have become proficient in the creation of images - thinking and even programming through diagrams, visualising the results. The study of images, on the other hand, has had no such computational revival. </p>
@@ -48,3 +61,4 @@
             <p>Van Eck, C., (2007). Classical rhetoric and the arts in early modern Europe. Cambridge and New York: Cambridge University Press.</p>
         
     </text>
+</TEI>

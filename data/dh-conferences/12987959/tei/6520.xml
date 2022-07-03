@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Automated lemmatization, that is the retrieval of dictionary headwords, is an active area of research in Latin text analysis. Latinists have available web-based applications like Collatinus (Ouvard and Verkerk, 2014) and LemLat (Bozzi et al., 1992) and web services like Morpheus (Almas, 2015). LatMor (Springmann, 2016) and TreeTagger (Schmid, 1994) offer lemmatization as a byproduct of their primary tasks as morphological taggers. Recent work, to name a few developments, has seen lexicon-assisted tagging and rule induction (Eger et al., 2015; cf. Juršič, 2010) as well as neural networks (Kestemont and De Gussem, 2017) used as strategies for improving Latin lemmatization.</p>
@@ -62,3 +75,4 @@
             </div>
         </back>
     </text>
+</TEI>

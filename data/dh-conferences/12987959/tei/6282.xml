@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>37% of the United States population is non-white, but 90% of the books published for children during the last twenty-one years contain no multicultural content. This discrepancy has been called “The Diversity Gap” (Erlick, 2015) and, more starkly, the “Apartheid of Children’s Literature” (Myers, 2014). Based on data gathered since 1985 by the Cooperative Children’s Book Center, the representation gap has barely shifted over thirty years, with books by and about non-white people hovering between 10-14% of total children’s book production (CCBC 2017). Panels and initiatives about diversity in book publishing have not actually produced more books by and about non-white people. Book discoverability is thus a significant challenge to parents, librarians, and teachers seeking picture books depicting the lives of non-white children. </p>
@@ -77,3 +90,4 @@
             </div>
         </back>
     </text>
+</TEI>

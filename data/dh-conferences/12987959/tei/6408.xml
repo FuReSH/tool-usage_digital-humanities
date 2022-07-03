@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p rend="Paragraph">Humanities Commons is an open-source, open-access not-for-profit social network and scholarly communication platform founded by the Modern Language Association and supported by a collective of scholarly organizations. Scholars and practitioners across the humanities and around the globe can create a professional profile, discuss common interests with colleagues, develop new publications, and share their work with other scholars and with the world. </p>
@@ -15,3 +28,4 @@
             <p rend="Paragraph">This poster presentation will include an active demo of Humanities Commons as well as discussions of its platform, its community, its sustainability plan, and its development roadmap. We want to encourage members of the ADHO community to join the network and connect with one another across the conference and throughout the year. We also want to invite active participation among ADHO members and constituent organizations in the network’s development process.</p>
         
     </text>
+</TEI>

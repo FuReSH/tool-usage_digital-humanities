@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Concert goers are growing accustomed to performers, particularly small ensembles, who bring a tablet computer on stage and place it on the music stand before they begin to play. Perhaps less noticed, a silent tap on the side of a screen, or the nimble pressing of a foot pedal has replaced the rustle of page turning. Notwithstanding an observable increase in the use of digital devices to study and perform music, the transactions between score and performers are only mildly affected: the digital score primarily acts like its paper counterpart: a static, largely reliable instrument for learning and performing a given work of music. The flexibility of the digital medium, as opposed to something fixed on paper, calls for a more modern concept of the score, one that undermines its prescriptiveness by making room for material and features targeted at supporting performers in their interpretation and advocacy of a musical work. What would such a truly digital score look like? And more importantly, what are the critical instruments necessary to understand its impact on performance and music making at large? </p>
@@ -41,3 +54,4 @@
             <p>The dynamic scores are published as a dedicated website by using Verovio, an engraving engine for MEI. By producing SVG output that maps directly to the underlying MEI encoding, Verovio makes it possible to locate the pre-composed variants in the text and manipulate the score according to weather data</p>
         
     </text>
+</TEI>

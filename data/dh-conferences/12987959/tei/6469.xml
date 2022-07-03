@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Digital humanities can be understood as a “trading zone” between different disciplinary traditions (McCarty, 2003). Critical theory and empirical practice may appear to operate at different extremes of research enterprise, and yet – as our panel seeks to demonstrate – the notion of “the archive” can function as a bridge between them, as a pathway or method between the trading zones. For us, the bridge has its strongest resonances in that academic endeavour where “the archive” is most revered, where it is used as a rite of passage, a marker of authority buried in footnotes: history writing. In this incarnation “the archive” often represents physical buildings with physical holdings.</p>
@@ -128,3 +141,4 @@
             </div>
         </back>
     </text>
+</TEI>

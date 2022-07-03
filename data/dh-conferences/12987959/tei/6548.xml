@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Alan​ ​Liu​ ​has​ ​called​ ​upon​ ​digital​ ​humanists​ ​to​ ​think​ ​more​ ​critically​ ​about​ ​infrastructure​ ​-​ ​the​ ​“social cum​ ​technological​ ​milieu​ ​that​ ​at​ ​once​ ​enables​ ​the​ ​fulfillment​ ​of​ ​human​ ​experience​ ​and​ ​enforces constraints​ ​on​ ​that​ ​experience” (Liu, 2017).​ ​Liu’s​ ​invitation​ ​comes​ ​at​ ​the​ ​moment​ ​when​ ​researchers​ ​involved​ ​in large-scale,​ ​long-term​ ​projects​ ​are​ ​shifting​ ​focus​ ​from​ ​remediation​ ​and​ ​the​ ​creation​ ​of​ ​digital incunabula​ ​to​ ​transmediation​ ​and​ ​the​ ​development​ ​of​ ​systems​ ​that​ ​support​ ​sustained​ ​discourse across​ ​ever-morphing​ ​digital​ ​networks,​ ​when​ ​we​ ​are​ ​recognizing​ ​the​ ​potential​ ​for​ ​“dynamism​ ​of​ ​the base​ ​or​ ​serialized​ ​form​ ​of​ ​the​ ​text—the​ ​state​ ​in​ ​which​ ​it​ ​is​ ​stored—as​ ​opposed​ ​to​ ​dynamic​ ​modes​ ​of presentation” (Brown, 2016: 288)​. ​REED​ ​London​ ​is​ ​one​ ​such​ ​project​ ​with​ ​a​ ​polyvalent​ ​dataset​ ​that​ ​spans​ ​over​ ​500 years’​ ​worth​ ​of​ ​archival​ records, ​embracing​ ​from​ ​the​ ​start​ ​the​ ​need​ ​to​ ​establish​ ​a​ ​stable, ​responsive production​ ​and​ ​presentation​ ​environment​ ​primed​ ​for​ ​use​ ​by​ ​a​ ​wide​ ​range​ ​of​ ​scholarly​ ​audiences. Thus​ ​we​ ​find​ ​that​ ​we​ ​are​ ​immediately​ ​testing​ ​those​ ​infrastructural​ constraints. ​In​ ​this​ ​paper, members​ ​of​ ​the​ ​REED​ ​London​ ​project​ ​team​ ​will​ ​address​ ​the​ ​challenges​ ​we​ ​face​ ​as​ ​we​ ​develop​ ​and implement​ ​a​ ​framework​ ​that​ ​trains​ ​us​ ​to​ ​think​ ​about​ ​our​ ​collected​ ​data​ ​in​ ​relation​ ​to​ ​much​ ​larger networks​ ​of​ ​disparate​ ​resources​ ​and​ ​user​ ​needs.</p>
@@ -111,3 +124,4 @@
             </div>
         </back>
     </text>
+</TEI>

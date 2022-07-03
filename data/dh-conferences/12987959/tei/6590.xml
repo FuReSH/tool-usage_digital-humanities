@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The largest collections of art historical images are not found online but are safeguarded by museums and other cultural institutions in photographic libraries. These collections can encompass millions of reproductions of paintings, drawings, engravings and sculptures. The 14 largest institutions hold together an estimated 31 million images (Pharos). Manual digitization and extraction of image metadata undertaken over the years has succeeded in placing less than 100,000 of these items for search online. Given the sheer size of the corpus, it is pressing to devise new ways for the automatic digitization of these art historical archives and the extraction of their descriptive information (metadata which can contain artist names, image titles, and holding collection). This paper focuses on the crucial pre-processing steps that permit the extraction of information directly from scans of a digitized photo collection. Taking the photographic library of the Giorgio Cini Foundation in Venice as a case study, this paper presents a technical pipeline which can be employed in the automatic digitization and information extraction of large collections of art historical images. In particular, it details the automatic extraction and alignment of artist names to known databases, which opens a window into a collection whose contents are unknown. Numbering nearing one million images, the art history library of the Cini Foundation was established in the mid-twentieth century to collect and record the history of Venetian art. The current study examines the corpus of the 330’000+ digitized images.</p>
@@ -113,3 +126,4 @@
             </div>
         </back>
     </text>
+</TEI>

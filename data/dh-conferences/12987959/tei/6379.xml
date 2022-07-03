@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This poster presentation demonstrates the use of computational methods to discover hidden collectives and communities from Korean historical data. The overarching question is derived from the intellectual history of early modern Korea, which was defined by the coalescence of several schools of Neo-Confucian thought and literary movements. Such developments took place at a time of increasing localization of population, material resources, state institutions, and culture. In the existing body of research, the connections between the material and ideational aspects of the yangban aristocracy have been unclear, owing in large part to the undue attention given to a small number of famous personalities, source materials, and locations. Can this skewed picture be redrawn from the bottom-up, through a more balanced and fuller use empirical data? Fortunately for social scientifically-minded historians of Korea, the government of South Korea has aggressively funded the digitization of cultural heritage. Access to this “big data” has allowed me to embark on a critique of existing reified generalities with large-scale data analysis. This kind of data also demands a new type of research concerning social, cultural, and historical entities which may not yet have been identified and therefore not yet been given a label. The data are drawn from two sources: (1) 50,000 civil service examination degree holders and their extended kin and (2) 198 million Sinitic characters of writing extracted from 1200 collected works. The pilot run has already revealed a surprising assemblage of 
@@ -8,3 +21,4 @@
             </p>
         
     </text>
+</TEI>

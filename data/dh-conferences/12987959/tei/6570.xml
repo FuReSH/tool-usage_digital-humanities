@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Letters stand as one of the most extensive sources of information on daily life in the early modern period and the study of epistolary culture(s) is a vital and growing area in Renaissance studies (see Daybell and Gordon, 2016; Daybell, 2012; Del Lungo Camiciotti and Pallotti, 2014). Access to such archives and collections is rapidly expanding – and changing – in the wake of mass digitization, online editions, OCR and federated search. In this paper I explore the extension of the narrative of archival history and epistolary provenance into the digital realm. Specifically, I compare the contextual afterlife of early modern letters in nascent state archives to their representation in the digital world, with particular emphasis on classification and metadata, surrogacy and access. Going beyond paralleled modern and early modern anxieties of information overload (the standard comparison of the print and digital revolution), this allows me to explore issues of access, search, and retrieval; control, preservation, and loss, then and now. This is an under-studied area ripe for discussion, and this paper aims to test these ideas in preparation for a wider study that connects the gathering, transmission, and preservation of political information in the early modern period to the digital life of these material primary sources and to our lives as digital researchers. There is a ready parallel to be found between the burgeoning administrative and institutional drive to preservation found in the early modern period – essentially the evolution of state archiving – and the informational anxieties of the internet age, where that largest of archives can offer everything and nothing, excess and restriction, results or dead ends. I explore tensions around archives facilitating both preservation and forgetting, which finds its apotheosis in the endless loss and abandonment of digital data, and in digital methods of retrieval as strict gatekeepers (a roulette of keyword search, privations of metadata, and dreams of text analysis).</p>
@@ -47,3 +60,4 @@
             </div>
         </back>
     </text>
+</TEI>

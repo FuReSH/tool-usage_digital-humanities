@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Statistics describing the inequitable conditions for women in global film industries have been gathered and circulated for more than 30 years. These statistics have barely deviated despite the development and application of a range of equity policies. In some instances the participation of women has become marginally worse. Furthermore, the repeated release of poor equity data has given the industry’s structural misogyny an air of inevitability. This situation is not unique to the film industry.</p>
@@ -38,3 +51,4 @@
             </div>
         </back>
     </text>
+</TEI>

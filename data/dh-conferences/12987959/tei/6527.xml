@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>What is a literary character made of? To this question, a pragmatic answer is to say that it exists as a result of a chain of different linguistic elements, scattered throughout the text. The aim of this paper is to propose a digital method for collecting these elements, so as to analyse their nature, to observe their repartition in texts, and, ultimately, to contribute to a deeper understanding of the functions the literary device called “character” assumes in a text.</p>
@@ -34,3 +47,4 @@
             </div>
         </back>
     </text>
+</TEI>

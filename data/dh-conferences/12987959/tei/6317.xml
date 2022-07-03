@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Pensar la mancuerna mujeres y tecnología en tiempos de capitalismo cognitivo, vigilancia masiva, violencia en línea, hiper mediación, control por parte de las empresas proveedoras de servicios y fabricantes de 
@@ -140,3 +153,4 @@
             </div>
         </back>
     </text>
+</TEI>

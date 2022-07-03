@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>
@@ -43,3 +56,4 @@
             <p>The READ project began in 2013 and has been funded by Ludwig-Maximilians Universität, Munich, Germany; the University of Washington, Seattle, USA; Université de Lausanne, Switzerland; University of Sydney, Australia; and Prakaś Foundation, Sydney, Australia.</p>
         
     </text>
+</TEI>

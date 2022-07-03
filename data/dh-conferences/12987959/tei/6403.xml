@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>In the field of Chinese ancient texts digitalization, the digitization of Buddhist scriptures has been regarded as a relatively complete and fruitful collection. The Chinese Buddhist Electronic Text Association (CBETA) has made the Chinese electronic Tripiṭaka collection widely available for many years and provided a resourceful platform for the studies on Chinese Buddhist texts. As of the 2016 version(CBETA 2016), more than 210 million Chinese characters are freely and publicly available in digital form through the efforts of the CBETA. </p>
@@ -104,3 +117,4 @@
             </div>
         </back>
     </text>
+</TEI>

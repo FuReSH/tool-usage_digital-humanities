@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The stains found on medieval manuscripts are signs that indicate a past life, more specifically the visible and invisible remains of human interaction over time. Reading these signals - in concert with conventional information such as script, collation, illumination, and size - can add to our understanding of their history and use. While recent work has been done on the uses of multispectral imaging in understanding the degradation and preservation of parchment, there is little pre-existing scholarship on the presence and nature of stains in medieval texts. Indeed, the significance of stains has traditionally been underestimated.
@@ -73,3 +86,4 @@
             </div>
         </back>
     </text>
+</TEI>

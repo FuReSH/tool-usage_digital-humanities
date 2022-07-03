@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Though quantitative methods are becoming increasingly common within the humanities, few researchers readily describe their primary texts as data. Most prefer to see their objects of study as contextually situated and socially constructed entities with independent value that resist complete digital representation. Miriam Posner argues that for many humanities researchers, describing an artifact as data implies “that it exists in discrete, fungible units; that it is computationally tractable; that its meaningful qualities can be enumerated in a finite list; and that someone else performing the same operations on the same data will come up with the same results.” Defined this way, digital artifacts and metadata seem to simultaneously insist on particular interpretations and to be bereft of deeper meaning outside of an aggregate state, thereby resisting the hermeneutic methodologies which form the core of humanistic inquiry.</p>
@@ -74,3 +87,4 @@
             </div>
         </back>
     </text>
+</TEI>

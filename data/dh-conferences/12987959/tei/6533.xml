@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Da modernidade até aquilo que Lipovetsky e Serroy (2010) nomearam como hipermodernidade, o sistema de construção de imagens e recepção delas passaram por diferentes fases e evoluções, transformando radicalmente as relações individuais e interações sociais. Para Pierre Lévy (2010), a partir da multiplicação de dispositivos móveis e suas funções comunicativas a nível global, as relações sociais deslocaram-se de contextos locais de interação e foram rearranjadas em extensões indefinidas, baseadas em uma noção de espaço-tempo diferenciados. Essas novas conexões aglutinam indivíduos em afinidades de interesses e conhecimentos, propiciando um processo de cooperação e troca entre eles que independe de proximidades geográficas, mas que evidentemente constitui uma nova forma de organização social (Lévy, 2010:134). </p>
@@ -94,3 +107,4 @@
             </p>
         
     </text>
+</TEI>

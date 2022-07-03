@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The history and context of the development of Digital Humanities in Russia as outlined in this paper shows that there are various influences at play which have led to the forming of the Russian DH field. We link the quantitative methods used to previous trends in scholarship, including mathematics, Russian editorial practices, and the development of museum computing in the country. By doing so we can consider the individual societal contexts which encourage a field to emerge, and although that field may look similar to outsiders, identify the lineage of intellectual approaches which still influence methods and cultures within the discipline. </p>
@@ -148,3 +161,4 @@
             </div>
         </back>
     </text>
+</TEI>

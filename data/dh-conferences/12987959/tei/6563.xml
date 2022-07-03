@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>The question of when “digital humanities” will drop the “digital” modifier and become “humanities” has special resonance for adjunct instructors. Digital humanities senior scholars might bridge the gap between tenured working conditions and adjunct working condition when crafting field infrastructures: not just because adjuncts merit both employment protections and what I call “microbenefactions” (more on that below), but because adjuncts are the invisible mass of humanities faculty buttressing every kind of institution, from community college to elite research-1 university. Adjuncts shoulder the humanities enterprise, teaching the general education classes that free researchers to pursue critical questions that advance the field. </p>
@@ -211,3 +224,4 @@
             </div>
         </back>
     </text>
+</TEI>

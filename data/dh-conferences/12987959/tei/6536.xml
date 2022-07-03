@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Code and codework share many properties with text and writing, and code can be seen as an argument, corresponding to Galey and Ruecker’s (2010) understanding of the epistemological status of graphical user interfaces as argument. From an epistemic point of view, the practice of a programmer is no different from the practice of a scholar when it comes to writing (Van Zundert, 2016). Both are creating theories about existing epistemic objects (e.g. text and material artifacts, or data) by developing new epistemic objects (e.g. journal articles and critical editions, or code) to formulate and support these theories. However, as expressions of a technē whose inner workings are opaque to most humanities scholars, code and codework are all too often treated as an invisible hand, influencing humanities research in ways that are not transparent. The software used in research is treated as a black box in the sense of information science—expected to produce a certain output given a certain input—but at the same time often mistrusted precisely for this lack of transparency.</p>
@@ -99,3 +112,4 @@
             </div>
         </back>
     </text>
+</TEI>

@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>La presente ponencia tiene como objetivo analizar la estructura del campo del arte en San Luis Potosí, México, de 1950 a 2017, desde el estudio del capital social de sus actores, mediante la metodología del Análisis de Redes Sociales.</p>
@@ -7,3 +20,4 @@
             <p>Ante este panorama, la presente ponencia busca estudiar el impacto que esta perspectiva puede tener para el estudio del campo del arte y la manera en que el uso de una metodología que es resultado de la interacción de herramientas y perspectivas teóricas de diversos campos, con enfoques contemporáneos como el Análisis de Redes Sociales, nos pueden permitir acceder a explicaciones más completas y contextualizadas de lo que los estudios tradicionales, generalmente disciplinares, pueden ofrecer. </p>
         
     </text>
+</TEI>

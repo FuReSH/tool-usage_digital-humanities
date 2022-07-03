@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Proponemos evaluar los retos que plantean los recursos digitales disponibles para el estudio de las escritoras europeas a lo largo de los siglos, atendiendo a la interoperabilidad y usabilidad de tales recursos, así como a la cantidad y pertinencia de sus datos en cuestiones de género. Para ello partimos de nuestra experiencia en la coordinación del grupo de trabajo de 
@@ -28,3 +41,4 @@
             <p>La pertinencia de las categorías y de los datos, la interoperabilidad y la usabilidad de todas las bibliotecas y repositorios, bases de datos y páginas analizados son retos que exigen respuestas no solo a escala global, sino también local.</p>
         
     </text>
+</TEI>

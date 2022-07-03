@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>In this short paper I will explore some of the problems—particularly those having to do with power and access—inherent in collaboratively produced community digital history projects. I will focus on two projects currently in development in which I (working from within an academic institution and digital media lab) have partnered with people from marginalized populations located in geographic areas that have been given relatively little attention. One of my goals in initiating these projects has been to explore how to use institutional resources, including grants and IT support, to work outside of institutional structures. In each instance, my community partners and I have created projects centered on individual, personal narratives as they relate to place. Our objective has been to develop a kind of “people’s history,” giving voice to those who have traditionally been excluded from historical research and writing. In the course of conceptualizing and beginning to make these projects, however, we’ve encountered a number of thorny questions about notions of community, access, and narrative form and content. </p>
@@ -12,3 +25,4 @@
             <p>The second half of this talk will examine a series of thorny questions we have encountered in the process of our work: Who controls the projects? What role does the institution play in supporting the projects, and how does this institutional affiliation shape the outcome in each case? How do we develop the projects for maximum input from collaborative partners? As we are working outside of an institutional structure, how do we define “community”? When should we, or is it necessary to, protect the storyteller? And finally, what does this type of project reveal about access to digital media? </p>
         
     </text>
+</TEI>

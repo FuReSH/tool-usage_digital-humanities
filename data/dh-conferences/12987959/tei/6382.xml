@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This poster session showcases “the spatial humanities kit”: a combination of gear, open source code, and teaching materials for narrative GIS projects (http://spatialhumanitieskit.org/). The kit was derived and assembled from two international mapping projects executed by students and guided by faculty at Molloy College and Hofstra University. The kit includes the following gear and code, all of which will be available for faculty to interact with at DH 2018: an introduction to GeoJson with code also applicable for Mapbox, Open Street Map, and ArcGIS, an Insta 360 Camera, Snapchat Spectacles, two Garmin ETreX 20x GPS devices with preinstalled maps, a Samsung 360 Camera, a chicken foot tripod, Samsung Gear Oculus HMD, user cell phone cameras, a Skyroam Global Hotspot, a GoPuck Qualcomm Charge 3.0, and a GoPro Session.</p>
@@ -22,3 +35,4 @@
             </div>
         </back>
     </text>
+</TEI>

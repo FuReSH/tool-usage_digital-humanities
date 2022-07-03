@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p rend="normal">Digital archivists tend to disagree about the place of paratexts. Whereas 
@@ -21,3 +34,4 @@
             <p rend="normal">I will consider the problem of inclusion and exclusion in digital archive curation. As paratexts, illustrations are lumped together with a number of visual objects that initially accompanied fictions. For this reason I explain the necessity of using metadata to differentiate illustration types. The large decorative initials which appear in many nineteenth-century texts, but originated in medieval manuscripts, are less illustrations of the text than embellishments. However, their ideological function is significant and multifold. Similarly, advertisements were often in conversation with serialized fictions—whether thematically or stylistically. In this paper I discuss strategies to enable digital image archivists committed to creating an authentic encounter with the history of print to avoid ignoring or marginalizing these types of unique and difficult paratexts. </p>
         
     </text>
+</TEI>

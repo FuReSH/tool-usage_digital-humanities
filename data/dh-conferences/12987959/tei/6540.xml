@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>A presente comunicação (resultante de pesquisa em fase inicial) tem como objetivo geral, a análise e a reflexão, sob uma perspectiva metodológica qualitativa, acerca da formação de professores/pesquisadores de História no contexto da cibercultura e na sua esteira, da chamada História Digital (
@@ -45,3 +58,4 @@
             </div>
         </back>
     </text>
+</TEI>

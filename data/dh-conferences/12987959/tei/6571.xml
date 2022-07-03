@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>In the wake of Michael Brown’s murder in Ferguson, Missouri, on August 9, 2014, and the non-indictment of police officer Darren Wilson on November 25, 2014, backlashing protests and riots took to the streets of Ferguson and to other major American cities across the country. They also took to the Twittersphere. A national conversation about police brutality and the American criminal justice system exploded on Twitter during this time period, eventually elevating the hashtag #Ferguson, tweeted over 27 million times, to the most frequent in Twitter’s ten-year history, and the hashtag #BlackLivesMatter, tweeted over 12 million times, to third place (Sichynsky, 2016). First coined by Alicia Garza, Patrisse Cullors, and Opal Tometi in July 2013, the hashtag #BlackLivesMatter became a banner for a national protest movement and an index for conversations about the systematic devaluing and elimination of black life. Over the last five years, literary scholars and historians have noted that, within this massive social media movement, the novelist, essayist, and civil rights literary icon James Baldwin seemed to be often and increasingly invoked (Maxwell, 2016). The perceived frequency of Baldwin-related tweets has been pointed to by many as evidence of the Harlem-born author’s 21
@@ -59,3 +72,4 @@
             </div>
         </back>
     </text>
+</TEI>

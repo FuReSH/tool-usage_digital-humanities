@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>A cultura digital do século XXI tem sido marcada pela ascensão de um imaginário mágico em relação ao poder das tecnologias. Por meio de uma produção monumental de símbolos, as indústrias culturais e a publicidade das mais diversas empresas de tecnologia têm veiculado mensagens a fim de relacionar o consumo tecnológico à conquista progressiva da autonomia, da liberdade, da felicidade e, em última instância, da transcendência. Este imaginário que induz à devoção das tecnologias parece seduzir as novas gerações com a promessa da elevação dos seres humanos à condição de semidivindades a partir do consumo físico e simbólico de produtos e marcas.</p>
@@ -19,3 +32,4 @@
             </div>
         </back>
     </text>
+</TEI>

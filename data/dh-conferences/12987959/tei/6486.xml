@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Authorship attribution, the analysis of a document’s contents to determine its author, is an important issue in the digital humanities. An accurate answer to this question is important, as not only do scholars rely on this type of analysis, but they are also used, for example, to help settle real disputes in the court system (Solan, 2012). It is thus important both to have analyses that are as accuracy, and to know what the expected accuracy levels are. </p>
@@ -104,3 +117,4 @@
             </div>
         </back>
     </text>
+</TEI>

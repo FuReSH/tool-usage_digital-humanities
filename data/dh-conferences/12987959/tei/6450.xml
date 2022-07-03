@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Standard collections information management principles in use by settler colonial cultural institutions derive from the foundation of museums as repositories to showcase the extent of empire and, as with all ‘Euro-Western’ disciplines, are not capable of objectivity in approach or in reflecting the multiplicity of identities in non-Western world views (Garneau, 2016). As a reflection of contemporary society, cultural institutions must be at the forefront of the decolonisation movement, and not simply initiate projects that perpetuate the museum as the authority to further (consciously or unconsciously) settler colonialist aspirations as one of the “…lasting effects of European colonialism on the multiple stagings and worldings of nations and societies across the globe” (Byrd, 2017: 176). Decolonisation in Canada means critically reflecting on the colonial bias for accepted ‘truths’ projected by the actions and ethos of cultural institutions, especially museums, to analysis bias in information management from the point of ingestion to management and re-presentation. </p>
@@ -79,3 +92,4 @@
             </div>
         </back>
     </text>
+</TEI>

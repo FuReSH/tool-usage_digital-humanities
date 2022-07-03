@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>
@@ -68,3 +81,4 @@
             <p>The Academy of Finland is a government agency within the administrative branch of the Finnish Ministry of Education, Science and Culture. Its mission is to fund high-quality scientific research, provide expertise in science and science policy, and strengthen the position of science and research.</p>
         
     </text>
+</TEI>

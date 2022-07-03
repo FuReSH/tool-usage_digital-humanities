@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>2017 saw the 50th anniversary of the Gen Con gaming convention, the oldest and largest continuously running gaming convention in the United States. Started in 1967 as a wargaming convention, Gen Con faced exponential growth following the 1974 creation of Dungeons &amp; Dragons by one of its founders, Gary Gygax. Since then, Gen Con has seen a wealth of change. Evolving from a wargaming convention to a roleplaying game convention, growing to encompass video games and board games and finally reaching its current state of a gaming convention with close ties to popular culture. Aside from the content Gen Con has covered, the convention has also seen fluctuations in the populations that attend the event. All of these factors make Gen Con a prime target for scholarly study in areas of popular culture, games, gender in games studies, and the impact of Dungeons &amp; Dragons. Scholars in media studies, history, material culture and gender studies, to name a few, would all be interested in data related to Gen Con.</p>
@@ -19,3 +32,4 @@
             </div>
         </back>
     </text>
+</TEI>

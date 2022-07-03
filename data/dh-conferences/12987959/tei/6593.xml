@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>
@@ -11,3 +24,4 @@
             <p>In this paper, I will introduce the project and present our website, which we expect to launch in March 2018. I will solicit critical feedback and offer reflections of my own on the capabilities and limits of new digital methods for enhancing our research of the varied sonic cultures of North American religious life. One of the goals of the American Religious Sounds Project is to provide a bridge between our academic settings and our local communities. That work must be done carefully and respectfully in the present political and religious climate of the United States. I will end with some thoughts on the precarious work of the public presentation of religious sounds and communities on an open accessible digital platform.</p>
         
     </text>
+</TEI>

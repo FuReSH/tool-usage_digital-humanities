@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>This long paper will offer an archeology of the Gale database 
@@ -8,3 +21,4 @@
             <p>I will conclude by considering my own work towards this end in the context of the Digital Bibliotheca Americana project. It assembles a freely-available dataset that re-centers indigenous and Spanish-language texts, offers insight into the contours of Americana at scale, and enables computational analysis of the material and conceptual relocation of “Americana” to the United States over the course of the nineteenth century.</p>
         
     </text>
+</TEI>

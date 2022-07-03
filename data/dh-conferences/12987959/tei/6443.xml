@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>no title</titleStmt>
+		</fileDesc>
+		<publicationStmt>
+			<p>Unpublished</p>
+		</publicationStmt>
+		<sourceDesc>
+			<p>Converted a TEI XML fragment</p>
+		</sourceDesc>
+	</teiHeader>
 <text>
         
             <p>Software development is often an integral aspect of Digital Humanities projects.  By working to generalize and build small modules or utilities targeting specific needs rather than large-scale systems, DH software developers have the capacity to generate tools with greater potential for scholarly reuse, which should enable more rapid development on future projects, and allow developers to focus on innovative work. This poster demonstrates a case study of modular software developed as part of ongoing DH projects.</p>
@@ -74,3 +87,4 @@
             </div>
         </back>
     </text>
+</TEI>

@@ -24,7 +24,7 @@ df.4memory <- read_delim("problem-stories_nfdi_anonym.csv", delim = ";") %>%
 
 # DHQ articles
 setwd(here("data/dhq"))
-v.files.dhq <- list.files(path = "tei", pattern = "*.xml",  ignore.case = T, full.names = T)
+v.files.dhq <- list.files(path = "txt", pattern = "*.txt",  ignore.case = T, full.names = T)
 df.dhq <- f.read.txt.files(v.files.dhq)
 # load tool list
 load(file = here("data/furesh-tools.rda"))

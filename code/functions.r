@@ -2,6 +2,7 @@ library(tidyverse)
 library(ggrepel)
 library(ggwordcloud)
 library(paletteer) # for better palettes
+library(yaml)
 # set a general theme for all ggplots
 theme_set(theme_bw())
 
@@ -91,7 +92,7 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
   layer.repel.text.100 <- c(
     geom_text_repel(aes(size = freq.text.100, colour = freq.text.100),
         segment.size = 0, force = 20, max.overlaps = 500, family = font.words),
-    scale_size(range = c(1.5, 40), guide = FALSE))
+    scale_size(range = c(1.5, 30), guide = FALSE))
   layer.wordcloud.text.100 <- c(
     geom_text_wordcloud(aes(size = freq.text.100, colour = freq.text.100, angle = angle), # use the angle information
                         family = font.words,
@@ -101,12 +102,12 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
                         rm_outside = TRUE, # if there are too many terms, the smallest ones should be removed if they cannot fit onto the canvas
                         grid_margin = 0.5, seed = 43,
                         show.legend = T),
-    scale_size_area(max_size = 60) #, scale_radius(range = c(0, 30), limits = c(0, NA))
+    scale_size_area(max_size = 50) #, scale_radius(range = c(0, 30), limits = c(0, NA))
   )
   layer.repel.rel.100 <- c(
     geom_text_repel(aes(size = freq.rel.100, colour = freq.rel.100),
         segment.size = 0, force = 20, max.overlaps = 500, family = font.words),
-    scale_size(range = c(1.5, 40), guide = FALSE))
+    scale_size(range = c(1.5, 30), guide = FALSE))
   layer.wordcloud.rel.100 <- c(
     geom_text_wordcloud(aes(size = freq.rel.100, colour = freq.rel.100, angle = angle), # use the angle information
                         family = font.words,
@@ -115,7 +116,7 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
                         rm_outside = TRUE, # if there are too many terms, the smallest ones should be removed if they cannot fit onto the canvas
                         grid_margin = 0.5, seed = 43,
                         show.legend = T),
-    scale_size_area(max_size = 60) #, scale_radius(range = c(0, 30), limits = c(0, NA))
+    scale_size_area(max_size = 50) #, scale_radius(range = c(0, 30), limits = c(0, NA))
   )
   
   plot.base.final <- plot.base +
@@ -128,11 +129,13 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
       plot.title = element_text(size = size.Title.Px),
       plot.subtitle = element_text(size = size.Subtitle.Px),
       plot.caption = element_text(size = size.Text.Px),
-      legend.position = c(0.84,0.01),
+      #legend.position = c(0.84,0.01),
+      #legend.position = c(0.84,1),
+      legend.position = c(0.1,0.01),
+      legend.justification = "bottom",
       legend.direction = "horizontal",
       legend.key = element_rect(fill = NULL),
       legend.margin = margin(0),
-      legend.justification = "bottom",
       panel.border = element_blank()) 
   plot.repel.text.100 <- plot.base.final +
     layer.labs.text.100 +

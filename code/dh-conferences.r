@@ -13,6 +13,33 @@ source(here("code", "functions.r"))
 setwd(here("data", "dh-conferences"))
 load("dh_conferences_works.rda")
 
+# titles
+df.dhconfs.titles <- df.dhconfs.works %>%
+  dplyr::select(id, title, year) %>%
+  dplyr::rename(text = title) %>%
+  tidyr::drop_na(text) %>%
+  dplyr::arrange(year)
+# abstracts
+#df.dhconfs.abstracts <- df.dhconfs.works %>%
+#  dplyr::select(id, text, year) %>%
+#  tidyr::drop_na(text) %>%
+#  dplyr::arrange(year)
+
+# there is a problem with the abstracts: they are mostly full TEI XML files. I therefore load a folder of text files
+setwd(here("data/dh-conferences/12987959/"))
+v.files.abstracts <- list.files(path = "txt", pattern = "*.txt",  ignore.case = T, full.names = T)
+df.dhconfs.abstracts <- f.read.txt.files(v.files.abstracts) %>%
+  dplyr::mutate(id = str_replace(filename, '^(.+)\\.txt', '\\1'))
+
+# some join to get years
+# fix data type of ID
+df.dhconfs.works$id <- as.character(df.dhconfs.works$id)
+df.dhconfs.abstracts <- df.dhconfs.abstracts %>%
+  dplyr::left_join(df.dhconfs.works, by = c('id' = 'id')) %>%
+  dplyr::rename(text = text.x) %>%
+  dplyr::select(id, text, year) %>% # this can include more columns if needed
+  dplyr::arrange(year)
+
 # 2. FuReSH tool list
 df.tools <- read_csv(here("data","tools.csv")) %>%
   #rename(term = tool) %>%
@@ -27,21 +54,6 @@ df.concepts <- read_csv(here("data", "concepts.csv")) %>%
   # add lower case for easier joining of data frames
   dplyr::mutate(term.lc = stringr::str_to_lower(term))
 save(df.concepts, file = here("data/furesh-concepts.rda"))
-
-# pre-process data
-df.dhconfs.titles <- df.dhconfs.works %>%
-  dplyr::select(id, title, year) %>%
-  dplyr::rename(text = title) %>%
-  tidyr::drop_na(text) %>%
-  dplyr::arrange(year)
-
-df.dhconfs.abstracts <- df.dhconfs.works %>%
-  dplyr::select(id, text, year) %>%
-  tidyr::drop_na(text) %>%
-  dplyr::arrange(year)
-
-# there is a problem with the abstracts: they are mostly full TEI XML files, which need to be parsed
-# this is done in an external preprocessing script
 
 # quick exploration
 summary(df.dhconfs.titles)
@@ -68,16 +80,9 @@ write.table(df.dhconfs.abstracts.tools, file = "dh-conferences-frequencies_tools
 v.label.source = "Data: Weingart et al., 'Index of Digital Humanities Conferences Data', https://doi.org/10.1184/R1/12987959.v4" # source information
 v.label.abstracts.summary = paste("in ", nrow(df.dhconfs.abstracts), " DH conference paper abstracts (", min(df.dhconfs.abstracts$year), "-", max(df.dhconfs.abstracts$year), ")", sep = "")
 v.label.titles.summary = paste("in ", nrow(df.dhconfs.titles), " DH conference paper titles (", min(df.dhconfs.titles$year), "-", max(df.dhconfs.titles$year), ")", sep = "")
-# select normalised relative frequencies
-df.titles.plot <- df.dhconfs.titles.tools %>%
-  dplyr::select(term, freq.100) %>%
-  dplyr::rename(freq = freq.100)
-df.abstracts.plot <- df.dhconfs.abstracts.tools %>%
-  dplyr::select(term, freq.100) %>%
-  dplyr::rename(freq = freq.100)
 f.wordcloud.frequency(df.dhconfs.titles.tools, 150, paste("tools", v.label.titles.summary, sep = " "), "png")
-f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, paste("tools", v.label.abstracts.summary, sep = " "), "svg")
 f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, paste("tools", v.label.abstracts.summary, sep = " "), "png")
+f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, paste("tools", v.label.abstracts.summary, sep = " "), "svg")
 f.wordcloud.frequency(df.concepts.abstracts, 100, paste("concepts", v.label.abstracts.summary, sep = " "), "svg")
 f.wordcloud.frequency(df.concepts.abstracts, 100, paste("concepts", v.label.abstracts.summary, sep = " "), "png")
 

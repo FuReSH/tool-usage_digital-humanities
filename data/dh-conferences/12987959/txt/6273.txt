@@ -1,0 +1,20 @@
+
+
+# notes
+
+[^1]: Figure 1, 
+                            2 and 
+                            6 were generated using the ‘stylo’ package for R. 
+                            Figure 3, 
+                            4 and 
+                            5 were created using the ‘DramaAnalysis’ package for R (Nils Reiter, Marcus Willand). https://github.com/quadrama/DramaAnalysis. The visualization of 
+                            Figure 2 was done in Gephi.
+                        
+[^2]:  The act boundaries are marked with underscores in the illustration. 
+[^3]:  To compare: Fields, Bassist and Roper use segments of only 200 words each.
+[^4]:  Although some speech segments fall below a length of 1000 words, it should still be feasible to use a vector length of 1000 MFW (Eder, 2017b). The results of 
+                            Figure 2 support this hypothesis, but a larger scale study on this topic is a future task.
+                        
+[^5]:  I analyzed 13 texts – three by Lessing, four by Friedrich Schiller, three by Johann Wolfgang Goethe and three by Friedrich Hebbel – with a total of 175 speech segments. Parameters used: 1000 MFW, no culling, Cosine Delta, Ward Clustering. The visualization is not shown in the paper. 
+[^6]:  See Eder (2017a) for advantages of stylometrics visualized by network plots. 
+[^7]:  For this purpose, five dictionaries on the topics of family, war, love, ratio and religion were created, enlisting 65 to 110 words each. The words were used in dramas between 1770 and 1830 (Willand, Reiter 2017).

@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p> Recently rediscovered at The Morgan Library, fashion plates from the 
+<text><body><p> Recently rediscovered at The Morgan Library, fashion plates from the 
                 <hi rend="italic">Journal Des Dames et Des Modes</hi>, taught all Europeans how to look, read, and entertain themselves as modern individuals. Dating from 1797-1804, they represent the most radical changes in all of clothing history. This revolution in consumer culture signals the birth of fashion as we know it and transformed conceptions of identity, gender, and power. Their revolutionary representations of fashion generates cult followings within both academic and hobbyist circles; among whom are art historians, antiquarian bibliophiles, and historical fashionistas. However, the plates lack circulation and few digital sources present research that is both academically rigorous and accessible to learners of all levels. Our work seeks to remedy this issue and bridge the accessibility gap by creating a digital exhibit of the most rare and stylistically revolutionary plates. In doing so, we have produced our exhibit using minimal computing approaches developed at Columbia University Library and the Group for Experimental Methods in the Humanities. 
             </p>
             <p>
@@ -37,7 +35,5 @@
                 <hi rend="italic color(181818)" xml:space="preserve">Journal Des Dames et Des Modes </hi>
                 <hi rend="color(181818)" xml:space="preserve">helps to create this framework and guides the viewer to a deeper, more meaningful understanding of how a seemingly inconsequential fad within fashion can create a paradigm shift in societal conceptions of consumer culture and its importance in material representations of our modern day identity. Simultaneously, we are modeling how collaborative work in the beginner digital humanities classroom can achieve almost complete control of an online exhibit of public import. </hi>
                 <hi rend="color(222222)">This work will act as the foundation for an ongoing, larger project— and has already begun to be added upon. We look forward to the constant evolution of new projects, as we believe the increased attention our site provides will generate a response of scholarship, with which, we will continue to expand our project.</hi>
-            </p>
-        
-    </text>
+            </p></body></text>
 </TEI>

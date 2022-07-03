@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="italic">devochdelia</hi> es la versión digital y en línea
                 <note place="foot" xml:id="ftn1" n="1">
                     <p rend="footnote text"> http://devochdelia.cl</p>
@@ -57,7 +55,7 @@
                 <p>Cada entrada puede ser corregida y estas modificaciones ser vistas sin la necesidad de registrarse o iniciar sesión. Asimismo, cada corrección tiene que ser autoevaluada por el corrector, comunicando el nivel de la corrección a otros usuarios y a los editores.</p>
                 <p>Este proyecto muestra que, con pocos recursos, es posible digitalizar obras lexicográficas complejas haciendo partícipes en el proceso a quienes se interesan por ellas. Asimismo sirve de base para digitalizar diccionarios a otra escala.</p>
             </div>
-        
+</body>
         <back>
             <div type="bibliogr">
                 <listbibl>

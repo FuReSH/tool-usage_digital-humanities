@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <p rend="normal">
                 <hi rend="bold color(434343)">1. Introduction and Overview</hi>
             </p>
@@ -66,9 +66,7 @@
             </p>
             <p rend="normal">
                 <hi rend="color(434343)" xml:space="preserve">Currently, the chart allows the user to touch any square to turn on the corresponding LED. The next steps are to design and implement the interaction that will allow the user to create and input their own events; and to design and implement a color picker, perhaps employing a digital interface. The goal for this phase of the project is to complete a start-to-finish interaction from selecting a historical event, choosing its color and position, and then visualizing it on the mural chart.  </hi>
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

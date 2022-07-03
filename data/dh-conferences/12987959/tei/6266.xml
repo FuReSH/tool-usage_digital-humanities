@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Abstract </p>
+<text><body><p>Abstract </p>
             <p>In this workshop for non - coders, participants will be guided through two tasks: the first task will guide participants in creating an application to tap into Twitter’s API, in our case to get Twitter data. The second task will guide participants in the use of a Google spreadsheet to capture streaming (live) data from Twitter in order to archive it, download it and perform text analysis, data visualization and other studies. This workshop will include a brief introduction contextualizing social media data collection good practices including user data privacy issues. </p>
             <p>
                 <hi rend="bold" xml:space="preserve">Keywords: </hi>Archiving, Data Collection, Social Media, Twitter, Text Analysis 
@@ -43,9 +41,7 @@
             <p>https://tags.hawksey.info/ </p>
             <p>• Voyant Tools </p>
             <p>https://voyant - tools.org/ </p>
-            <p>El taller se puede dar también en español o bilingüe inglés - español. </p>
-        
-        <back>
+            <p>El taller se puede dar también en español o bilingüe inglés - español. </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

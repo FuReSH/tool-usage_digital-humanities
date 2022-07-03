@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Resumen</p>
+<text><body><p>Resumen</p>
             <p>El desarrollo de productos dentro las Humanidades Digitales podría verse como la diferencia entre círculo y circunferencia. La circunferencia es lo que rodea al círculo, y el círculo es todo lo que contiene la circunferencia. En este orden de ideas, el objetivo de este panel es plantear las diferentes posiciones desde lo que rodea al producto como: la estrategia digital, el diseño emocional, las herramientas para producirlas, y cómo esto ha pasado de la teoría a la práctica.</p>
             <p>Con ocasión de la Conferencia de Humanidades Digitales de la ADHO, queremos proponer esta conversación desde algunos escenarios y casos de estudio colombianos para integrarnos en las discusiones regionales e internacionales sobre lo que significa para nosotros estudiar las Humanidades Digitales desde América Latina; y, además, porque el espíritu del libro encaja muy bien dentro de la temática de la Conferencia. </p>
             <p>Esta conversación nos permitirá plantear una postura desde el Grupo de Investigación sobre lo que entendemos por Humanidades Digitales en Colombia a partir de un contexto de producción “circunferencia”. Reconocemos que desde el mundo hispanohablante ha habido un trabajo arduo por alcanzar un consenso, pero la diversidad de prácticas ha señalado particularidades que hacen que continuamente se revalúen las tentativas definiciones. </p>
@@ -85,9 +83,7 @@
             <p rend="p1">La experiencia de crear productos digitales en la Biblioteca Nacional de Colombia hace parte de la transformación en la forma en como se hacen y se muestran los productos digitales para un contexto latinoamericano y específicamente colombiano y particularmente desde uno de nuestros proyectos llamado Piedra y Cielo, un movimiento poético alternativo de finales de los años 30, integrado por Integrado por Jorge Rojas, Carlos Martín, Arturo Camacho Ramírez, Eduardo Carranza, Tomás Vargas Osorio, Gerardo Valencia y Darío Samper, en el que deciden publicar “su entrañable verdad”, la poesía en sí misma sin mensajes políticos ni segundas intenciones.</p>
             <p rend="p1">Varias cosas fueron transversales en la construcción de Piedra y cielo, como la conformación de un equipo multidisciplinar compuesto por un coordinador, una investigadora, cuatro editores, una diseñadora, dos ingenieros y una estratega digital que empatizó con los contenidos y con la relevancia del proyecto. Así mismo, representa una forma de trabajo no piramidal, podríamos decir que 
                 <hi rend="italic">circular</hi> en la distribución y liderazgo de tareas.
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliografía

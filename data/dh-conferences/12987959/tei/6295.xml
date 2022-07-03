@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <p rend="normal">Science fiction has been theorized as a laboratory in which text serves as the medium for experimentation with perspective and epistemology.
                 <note place="foot" xml:id="ftn1" n="1">
                     <p rend="normal"> Jones, Gwyneth, 
@@ -196,7 +196,5 @@
             </p>
             <p rend="normal">Though we think of XML as a stable sustainable archiving medium, the repeated collapsing and expansion of hierarchies in our collation process makes us consider that for the viability of digital textual scholarship, ordered hierarchies of content objects might best be designed with leveling in mind, and that building with XML may be optimized when it is open to transformation. Preparing diversely encoded documents for collation challenges us to consider inconsistent and overlapping hierarchies as a tractable matter for computational alignment
                 <hi rend="background(white)">—</hi>where alignment becomes an organizing principle that fractures hierarchies, chunking if not atomizing them at the level of the smallest meaningfully sharable semantic features. 
-            </p>
-        
-    </text>
+            </p></body></text>
 </TEI>

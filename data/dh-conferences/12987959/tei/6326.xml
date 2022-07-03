@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Abstract</p>
+<text><body><p>Abstract</p>
             <p>We present LitViz, a webbased tool for visualizing literary data which utilizes the text2voronoi algorithm to map natural language texts onto voronoi diagrams. These diagrams can be used, for example, to visually differentiate between (groups of) authors. Text2voronoi utilizes the paradigm of text visualization to reconstruct text classification (e.g., authorship attribution) as a task of image classification. This means that, in contrast to conventional approaches to text classifiction, we do not directly use linguistic features, but explore visual features derived from the texts' visualizations to perform operations on texts. We illustrate LitViz by means of 18 authors, each of whom is represented by 5 literary works.</p>
             <p>Introduction</p>
             <p>In this paper we present a new tool, called LitViz, for the visual depiction of literary works. To this end, we utilize the text2voronoi algorithm (see Mehler et al. (2016b)) which maps natural language texts to image representations. The idea is to generate images of texts which can be used instead of these texts’ symbolic information to characterize them, for example, in terms of authorship, topic or genre. Text2voronoi is in line with the paradigm of text visualization to reconstruct text classification (e.g., authorship attribution) as a task of image classification. In contrast to conventional approaches to text classification, we therefore do not directly use linguistic features, but explore visual features derived from the texts’ visualizations in order to identify, for example, their authors. We exemplify LitViz by means of 18 authors each of whom is represent by 5 literary works. LitViz allows for interacting with the visualizations of these works in two modes: two- and three-dimensionally (see Figure 1 and 2).</p>
@@ -63,9 +61,7 @@
             <p>Conclusion</p>
             <p>We introduced a novel web tool, called LitViz, for visually depicting natural language texts based on the text2voronoi algorithm. LitViz enables the comparison of the visualizations of different texts. This allows, for example, for comparing the styles of the underlying authors visually. In this way, we extend the existing tool palette of distant reading. LitViz can be accessed via: 
                 <ref target="http://alba.hucompute.org/text2voronoi">http://alba.hucompute.org/text2voronoi</ref>
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

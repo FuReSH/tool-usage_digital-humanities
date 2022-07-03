@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <anchor xml:id="id_docs-internal-guid-ce89161c-c5dd-fcba-86bf-91ac23e9ff30"></anchor>
                 <anchor xml:id="id_docs-internal-guid-ce89161c-c5f8-c367-8a41-fb2222e5e0a5"></anchor>
                 <hi rend="color(#000000)">This paper is based on our commitment to the possibilities of re-thinking the processes of digitization such that digitization does not end with the uploading the scanned object and archivally-mandated metadata. Rather, that point is merely the beginning of the life of any particular digital collection. The ways that any collection is used by academic researchers, community groups, and members of the public should contribute to the processes of digitization. These collections live when they are used and these uses should be reflected in the collection so that other researchers can see and build on this work. Every collection that has been digitized has an afterlife. But how can we use new technologies – in particular, the International Image Interoperability Framework (IIIF) and linked data –  in order to make these afterlives visible and usable? How can we develop infrastructure and protocols so that the metadata </hi>
@@ -29,7 +27,5 @@
             <p>
                 <hi rend="color(#222222) background-color(#ffffff)">This paper reports on the progress we have made in developing this platform, and will also briefly outline the possibilities for the use of this platform beyond this specific collection of images. </hi>
                 <hi rend="color(#000000)">Although museums and archives are under enormous pressure to digitize their collections, and are rapidly in the process of doing so, these digitization initiatives are rarely undertaken in conversation with some of the primary users of these digitized texts and objects: academic researchers. For example, metadata that meets archiving standards is not necessarily useful for researchers, and is often based on hegemonic archival practices that reinforce colonial structures and narratives. At the same time, academic researchers often have resources to contribute to, and enrich, the digitization that has been accomplished as well as facilitate postcolonial interpretations of the archive. This project brings academics and digital archivists together in order to develop protocols so that digitized collections can be dynamically connected to the communities using them. Once digitized, a collection does not need to remain static. It can respond to, and include, the findings of researchers in the community; and these findings could and should be made available to other users of the collection. However, protocols for curating, organizing, and disseminating this information must be developed. This project will use one specific collection, an archive of approximately 40, 000 head tax certificates held by LAC and digitized by Canadiana, as a test case for developing precisely the kinds of protocols that would allow a digitized collection of materials to leverage the findings emerging from people using these materials. </hi>
-            </p>
-        
-    </text>
+            </p></body></text>
 </TEI>

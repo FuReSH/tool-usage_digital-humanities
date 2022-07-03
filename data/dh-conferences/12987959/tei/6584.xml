@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>1. Summary</p>
+<text><body><p>1. Summary</p>
             <p>
                 <hi rend="color(#000000) background-color(#ffffff)">The paper presents how digital photographs of street art and graffiti writing</hi>
                 <hi rend="color(#000000) background-color(#ffffff)">[1]</hi>
@@ -70,9 +68,7 @@
                 <figure>
                     <graphic url="Pictures/e6d564daa3d411048e19378825b2e6c2.png"></graphic>
                 </figure>Fig.3: Search results for figure and text to its right on interface; image collection of Brazilian street artists OsGemeos
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

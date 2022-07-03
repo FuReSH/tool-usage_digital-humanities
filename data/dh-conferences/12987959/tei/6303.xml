@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Introduction</p>
+<text><body><p>Introduction</p>
             <p>Ideophones, sometimes called “mimetics” (Akita, 2009) or “expressives” (Diffloth, 1976) are expressions that communicate sensory aspects of the physical word such as sound (i.e., onomatopoeia), movement, color, etc., or cognitive/emotional states (e.g., “ta-da” in English). Although most linguistics description of and inquiry into ideophones have focused on vocal expressions, gestures are integrated with ideophonic utterances in some languages. The analysis of these gestures and their symbolism may augment scholars’ understanding of the target language including how native speakers mentally represent their environment.</p>
             <p>In this paper, we describe a web-based tool, 
                 <hi rend="italic">Quechua Real Words</hi>, used by ideophonic linguists at [institution] to catalog and study multimedia representations of gestured ideophones as performed by native speakers of Pastaza Quichua. Research based on this tool is opening new understanding of the target language’s aesthetics, especially regarding the non-arbitrariness of gestured signs. We also discuss the relationship between this tool and other digital humanities efforts.
@@ -63,9 +61,7 @@
             </p>
             <p>Additionally, we are working with [institution’s library] to add 
                 <hi rend="italic">Quechua Real Words</hi> to their federated search databases. This will increase the site’s discoverability by scholars and students throughout the world.
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

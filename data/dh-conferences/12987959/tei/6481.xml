@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Computing capabilities for rendering high-quality three-dimensional graphics have progressed remarkably in recent years, largely in response to competition in the gaming and defense industries. While public awareness and engagement with virtual reality (VR) and/or augmented reality (AR) platforms has risen sharply, scholars are taking a measured and thoughtful approach, engaging with the new technology while remaining meta-critical about how high-speed computational capabilities like 3D, VR and AR can effectively represent the multiple dimensions in their digital humanities research. </p>
+<text><body><p>Computing capabilities for rendering high-quality three-dimensional graphics have progressed remarkably in recent years, largely in response to competition in the gaming and defense industries. While public awareness and engagement with virtual reality (VR) and/or augmented reality (AR) platforms has risen sharply, scholars are taking a measured and thoughtful approach, engaging with the new technology while remaining meta-critical about how high-speed computational capabilities like 3D, VR and AR can effectively represent the multiple dimensions in their digital humanities research. </p>
             <p>
                 <hi rend="color(181818)">A</hi>
                 <hi rend="color(444444)">n increasing number of m</hi>
@@ -28,9 +26,7 @@
                 <hi rend="color(212529)">the first dedicated humanities computing center</hi>
                 <hi rend="color(181818)" xml:space="preserve">. Amanda Licastro will discuss her work in critiquing and building VR applications with undergraduate students. Micki Kaufman will show the results of her utilization of three-dimensional interactive spaces for data visualization and storytelling of the Kissinger Correspondence, </hi>Angel David Nieves, of Yale University, will discuss the ways in which 3D historical reconstructions can be used as tools for the promotion of social justice advocacy in digital humanities. 
                 <hi rend="color(181818)">In addition, Geoffrey Rockwell of the University of Alberta will report on recent experimentations with augmented reality and the role of play in pedagogy.</hi>
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

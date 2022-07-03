@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <anchor xml:id="Hlk499308385"></anchor>
                 <hi rend="bold">Introduction</hi>
                 <lb></lb>Today, users of many modern minority and historic scripts in Unicode are not able to reliably send text electronically, because Unicode-enabled fonts and software are not available.
@@ -81,9 +79,7 @@
                 <hi rend="bold">Funding</hi>
                 <lb></lb>
                 <hi rend="color(2A2A2A)">This work was supported by the National Endowment for the Humanities [grant number PR-253360-17].</hi>
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

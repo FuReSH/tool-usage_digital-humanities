@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Open research data is facilitating broader ways of using, reusing, enriching, and linking research results. Many services use metadata to bring the information of different repositories together. Europeana, for example, links material from various thematic focal points with diverse origins and makes a wide range of collections, archives and source objects searchable. Other platforms interlink and aggregate material for one distinct discipline or thematic interest.</p>
+<text><body><p>Open research data is facilitating broader ways of using, reusing, enriching, and linking research results. Many services use metadata to bring the information of different repositories together. Europeana, for example, links material from various thematic focal points with diverse origins and makes a wide range of collections, archives and source objects searchable. Other platforms interlink and aggregate material for one distinct discipline or thematic interest.</p>
             <p>To connect musicological collections and repositories, we created a metasearch that builds up on annotated music. IncipitSearch is a tool and a service specifically tailored for research on music incipits, the initial sequences of notes that characterise a work. It is simultaneously a centralised data endpoint, where multiple aggregated catalogues can be accessed and searched by their music incipits, as well as a decentralised software and data cluster.</p>
             <div type="div1" rend="DH-Heading1">
                 Open Data and Meta Search Engines: Perspectives for Digital Musicology?
@@ -108,7 +106,7 @@
                     </item>
                 </list>
             </div>
-        
+</body>
         <back>
             <div type="bibliogr">
                 <listbibl>

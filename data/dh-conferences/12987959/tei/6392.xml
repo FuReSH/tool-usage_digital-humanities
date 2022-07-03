@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>1. Initial situation and target group</p>
+<text><body><p>1. Initial situation and target group</p>
             <p>Our target group are (digital) humanities scholars who want to present small, non-funded projects on their own website but have little or no experience with web design and development. Always the same questions have to be asked at the beginning of a website project to find out how complex or easy it is to implement the project. These circumstances are excellent conditions to offer a “how to”-flowchart with different applications as decision support. The poster is therefore designed as a decision flowchart and gives an overview of the possibilities and limitations of certain applications. All applications are differentiated according to whether static, dynamic or semi-dynamic websites can be built with them. Depending on which content should be presented and how, even beginners with little or no previous knowledge can create a website or get a feeling for when the support of a web developer is necessary. The questions that are answered in the flowchart concern...</p>
             <list type="ordered">
                 <item>… the complexity of the site (see 2.1. for details).</item>
@@ -74,9 +72,7 @@
             <p>Discussion</p>
             <p>In the course of this project, we were confronted with various issues that all revolve around sustainability in the broadest sense: </p>
             <p>What if the formats presented here are obsolete? This risk exists for any technology application. This project is meant to be a pragmatic guide. We cannot solve the problem, but we use tools that are freely available and extendable. </p>
-            <p>If a website should be sustainable, i. e. available in the long term, where should it be hosted to guarantee long-term accessibility? Again, there is no guarantee how long the services presented here are available. As far as the sustainability of humanities websites, i. e. cultural knowledge in any form is concerned, we see it as universities, libraries and archives duty to provide and maintain the corresponding infrastructure.</p>
-        
-        <back>
+            <p>If a website should be sustainable, i. e. available in the long term, where should it be hosted to guarantee long-term accessibility? Again, there is no guarantee how long the services presented here are available. As far as the sustainability of humanities websites, i. e. cultural knowledge in any form is concerned, we see it as universities, libraries and archives duty to provide and maintain the corresponding infrastructure.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

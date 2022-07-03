@@ -1,0 +1,89 @@
+
+What constitutes an alignment, different varieties of alignment, or even different degrees of alignment is a topic in need of further interdisciplinary discussion. The co-authors of this paper have been working on the computational alignment of medieval poetry, an exchange that has resulted in the design of a visual analytics system for the exploration of complex textual traditions. The purpose of this paper is twofold: first, to describe how we arrived at the user centered design of the VA system (Heuwing et al., 2016) and second, to introduce an alternative means of alignment, that of Sequence-to-Sequence Models based on recurrent neural networks, that does not oblige the user to adopt a parameter driven approach, but still allows for discovery of baseline potential alignment for subsequent human scoring. 
+
+Pre-modern writing exhibiting both textual and performative forms of instability is challenging for alignment. Twentieth-century print editions employed synoptic style layouts for textual traditions where line-level interpolation and excision were most common, as well as rough stanza-to-stanza numbering based on narrative cues in the poem, as in the case of the mid-century edition of the Chanson de Roland (Mortier, 1940-44). Alignment in print could not be more granular on account of the highly complex patterns of textual recombination found across different redactions. 
+
+Sequence alignment algorithms were originally developed in bioinformatics to identify and analyze functional or evolutionary relationships between genome sequences. Unfortunately, these algorithms are not straightforwardly adaptable to the computational alignment of textual traditions rife with orthographic and transpositional variance (Dekker and Middell, 2011). A number of algorithms have been developed and implemented in user centered design models to examine intertextual similarities, but none of them delivers fully satisfactory results for medieval vernacular poetry (Jänicke and Wrisley, 2017a). 
+
+Our computational alignment compares each line of one edition to each line of another edition, marking all significantly similar line pairs as alignment candidates. Whereas for the human reader such candidates are obviously valid alignments, they are not easy to detect by purely computational means. For example, using CollateX for aligning a pair of lines from the tradition of the Vie de saint Marie l’Egyptienne ( Anon_RenartContre1325 : Dix sept ans tel vye mena | Rutebeuf_SteMarie : Dis et set anz mena tel vie) yields the following result: 
+
+Having only one word match and one transposed word, the pair of lines would not be classified as an alignment candidate. Whereas morpho-syntactic tagging could be helpful in surmounting the problem of orthographic variance, we are still faced with the problem of word order. 
+
+In previous work, we have implemented a user defined parameter system in order to achieve initial alignment results, with subsequent scoring by a specialized user. We developed the “white box” alignment system iteal that uses a set of user-configurable parameters to steer the alignment procedure (Jänicke and Wrisley, 2017b): 
+
+
+- Edit distance: With orthographically unstable language, variant spellings needed to be taken into account. We define two words as spelling variants if they have the same first letter, and if the string similarity of the remaining substrings is higher than a user-configurable threshold. 
+- Coverage: In order to ensure that a specific proportion of words of both lines are aligned, the user can configure a minimum coverage value of the line. 
+- N-grams: The user can configure the minimum required n-gram size n that is the largest number of subsequent word matches of both lines. 
+- Broken n-grams: Quite often, the only difference between two lines is a single word in the middle of a line that is either inserted, synonymous, or a transposed stopword. Large n-grams, from this perspective, are not achieved. Thus, we allow the user to consider broken n-grams. 
+
+
+Indeed, a parameter-driven approach has suggested many possible sequential alignments. Traditional scenarios of intertextual expansion or contraction of poetry are visualized quite clearly. Take, for example, the condensation of episodes of Rutebeuf’s Vie de saint Marie l’Egyptienne in the Renart le Contrefait that exhibits a conservatism in replication of whole lines or excision of whole lines: 
+
+Different redactions of the epic poem the Chanson de Roland illustrate a more complex, recombinatory intertextuality. The Venice 7 version is double the length of the oldest extant version known as the Oxford version and the Lyons manuscript is 75% the length of the Oxford. Alignment in this case depends heavily on the use of broken n-grams and edit distance since the versions vary significantly in orthography, word choice and order: 
+
+Oxford : Ki est de France, si est mult riches hom 
+
+Venice 7 : Bien est de Franse, mult par est riches hon 
+
+and 
+
+Oxford : Ja cil d'Espaigne n'avrunt de mort guarant 
+
+Venice 7 : Ja cil d’Espeigne de mort n’aront garant. 
+
+Sequentially the lines above are divergent, and yet semantically they are nearly identical. 
+
+Using the aforementioned example from the Vie de saint Marie l’Egyptienne , an alignment example is considered an alignment candidate by iteal using a combination of several parameter settings, e.g., a string similarity of 80%, a coverage of 40% and allowing for broken 4-grams: 
+
+Different parameter settings yield very different initial alignments for consideration and scoring by the specialized user. Too liberal or too strict of a choice in settings yields either too many possible alignments or almost none at all. 
+
+In oral literatures textual reuse is not limited to full-line intertextuality, however, but rather exists along a continuum: from small formulaic expressions to partial and full line reuse. It is on this point that iteal does not allow for more granular scoring of partial line alignments or multi-line segment alignment, as in the examples that follow: 
+
+Oxford : Je vos plevis, ja returnerunt Franc. 
+
+Venice 7 : Je vos plevis, ja sera il tornez, 
+
+Lyons : je vos plevis sempres ert retornant 
+
+and 
+
+Anon_RenartContre1325 : Ainsi paist comme beste mue. 
+
+Rutebeuf_SteMarie : Si comme une autre beste mue. 
+
+To make matters more complex, rewriting of medieval texts engages with different genres and prosodies as well as jumping back and forth between poetry and prose. Iteal does not perform optimally yet with different forms. Our research, thus far, has focused on poetry, where the common denominator across textual redactions is the poetic line. Below we see some examples of alignments across versions of the Vie de saint Alexis (one written in octosyllablic verse and the other in decasyllablic), 3-grams matches produce simply too many false alignments to be valid. Alignments based on 4-gram point to common narrative leitmotifs within the text, such as the force against which the saint resists, his father’s home as a setting: 
+
+AlexisOctP : Treire par force et par engin 
+
+AlexisPRI: II me prendront par force et par poeste 
+
+and 
+
+AlexisOctP : Que il laissa en la maison son pére 
+
+AlexisPRI : Enz la meson son pére issi. 
+
+Whereas we implemented the calculation (or exclusion) of alignments using a medieval French stopword list, this is not necessarily valid across our samples, as the proposed alignments below illustrate: 
+
+AlexisPQ : Adonc le fist son pére de l’escole partir 
+
+AlexisP11 : Il le nonçat son pedre Eufemien 
+
+and 
+
+AlexisPQ : Ad un des porz qui plus est pres de Rome 
+
+AlexisP11 : Li uns des pers de Romme c’on nommoit Contantin. 
+
+Whereas the latter set of aligned lines satisfies a computational condition of a broken 4-gram and minimum coverage of 40%, ultimately the alignment seems silly to a human reader for the collapsing of two substantives, porz [seaport] and pers [great men]. 
+
+A parameter-driven “white box“ system might seem appealing for its algorithmic transparency in the alignment of medieval text versions, however, we are now turning to an alternative “black box” solution that employs Sequence-to-Sequence Models based on recurrent neural networks (Sutskever et al., 2014). While this idea was not implemented initially, as it makes it difficult to backtrack, our work has begun to migrate to such models (Cho et al., 2014; Bengio et al., 2015). As opposed to a parameter set with its concomitant results, the recurrent neural network system functions with requisite semi-automated training indicating which alignments are appropriate, and which ones are not. While taking into account the contexts in which words appear, the neutral network suggests alignment candidates. We can deliberately map Line-i-of-Edition-A to a certain hash value, and likewise its variant Line-j-of-Edition-B , thereby training the neural network to find the candidate Line-k-of-Edition-C automatically, in turn mapping similar lines to the same hash value. 
+
+The potential of this computational shift is that we can further nuance the palette of possible alignments, without remaining bound to the traditional starting parameters. We plan to move beyond our original model of line to line comparisons and to accommodate other units of comparison. By presenting the results of work in progress in the final section of our paper, we intend to explore whether recurrent neural networks produce results for similar text genres and prosodies. 
+
+
+# notes
+
+[^1]: https://collatex.net/
+[^2]: http://iteal.vizcovery.org/

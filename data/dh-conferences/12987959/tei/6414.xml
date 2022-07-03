@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="italic">Digital Humanities</hi>
                 <hi rend="italic">(DIGIHUM)</hi> is a four-year research programme funded by the Academy of Finland. Its aim is to address novel methods and techniques in which digital technology and state-of-the-art computational science are used for collecting, managing and analysing data in humanities and social sciences research as well as for modelling humanities and social science phenomena.
             </p>
@@ -78,7 +76,5 @@
                     </hi>Peter Sarlin, Hanken School of Economics).
                 </item>
             </list>
-            <p>The Academy of Finland is a government agency within the administrative branch of the Finnish Ministry of Education, Science and Culture. Its mission is to fund high-quality scientific research, provide expertise in science and science policy, and strengthen the position of science and research.</p>
-        
-    </text>
+            <p>The Academy of Finland is a government agency within the administrative branch of the Finnish Ministry of Education, Science and Culture. Its mission is to fund high-quality scientific research, provide expertise in science and science policy, and strengthen the position of science and research.</p></body></text>
 </TEI>

@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>This poster offers a playful introduction to network analysis as a means to study and compare dramatic texts. Its more serious purpose is a didactic intervention in the now well-established methods of literary network analysis, which are not always applied with sufficient reflection. The calculation of complex network metrics is often not followed by a leap to meaningful interpretation. What does it really mean, for example, that the average path length of the social network extracted from Shakespeare’s 
+<text><body><p>This poster offers a playful introduction to network analysis as a means to study and compare dramatic texts. Its more serious purpose is a didactic intervention in the now well-established methods of literary network analysis, which are not always applied with sufficient reflection. The calculation of complex network metrics is often not followed by a leap to meaningful interpretation. What does it really mean, for example, that the average path length of the social network extracted from Shakespeare’s 
                 <hi rend="italic">Hamlet</hi> is 1.69 and the density of the same network is 0.34? However, when we look at these values in relation to the corresponding values of other dramatic texts, such network statistics become much more meaningful.
             </p>
             <p>In order to cultivate comparative sensitivity in the context of literary network analysis, we build on a gamification approach. Unlike other experiments in this direction – such as the Android and web app 
@@ -33,9 +31,7 @@
             </p>
             <p>The 
                 <hi rend="italic">dramavis</hi> tool can be fed with a customisable canon file to create your own deck of cards.
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

@@ -1,0 +1,55 @@
+
+Brief Description: 
+
+Are you in need of a way to provide access to oral histories not recorded in English? Do you have dreams of creating multilingual metadata for interviews recorded in English to non-English speaking communities/users? In late 2016 The University of Kentucky Nunn Center updated the OHMS application and viewer to have multilingual functionalities, creating the capability to synchronize both a transcript/translation, as well as to create a bilingual index, making all of these searchable and synchronized to the corresponding moment in the audio or video. In this mini-workshop OHMS power users Teague Schneiter and Brendan Coates will demonstrate the multilingual functionalities of OHMS. Through demonstration of a bilingual use case, instructors will walk attendees through each step of the indexing process to prepare a sample Spanish-English index. Instructors will also guide attendees to develop workflows to support multilingual indexing. 
+
+Workshop outline: 
+
+
+- OHMS intro 
+
+- History 
+- Development 
+- Multilingual Functionality 
+
+
+- OHMS basics - in conjunction with a worksheet sent prior to conference 
+
+- setting up an account 
+
+- Linking a video 
+- adding thesaurus/ ontology/ data dictionary 
+- End user functionality, switching languages, etc. 
+
+
+
+
+- Basic indexing 
+
+
+a. Instructors lead group in indexing a video 
+
+
+- in small groups or pairs, index a video 
+- Multilingual indexing 
+- Instructors lead group in creating a multilingual index of a video 
+
+
+*Note - participants do not need to be bilingual, videos can be indexed as Index1 - Index2 instead of English - Non-English 
+
+Instructors: 
+
+Teague Schneiter is an Audiovisual Archivist, Project Manager and Strategist who is currently working for the Academy of Motion Picture Arts and Sciences as Senior Manager (and founder) of the Oral History Projects department, instituting digital content initiatives around filmmaker oral histories. Her professional experience spans moving image preservation and access infrastructure, with the bulk of her experience in human rights and cultural heritage content. Her work at WITNESS solidified her interest in web knowledge management projects and in people organizing, and concretized a firm belief that communication technologies in the digital age should facilitate openness, innovation, participation among individuals and communities, and should further social change. In the past she has worked as a long-term consultant for indigenous media organization IsumaTV, focused mostly on outreach, strategic planning, knowledge-sharing and social media. 
+
+Brendan Coates is an Audiovisual Archivist and Preservationist, currently working at the Academy of Motion Picture Arts and Sciences, where he oversees the ingest, description, preservation, and dissemination of the Academy’s Oral History holdings. Prior to this, he ran the UCSB Library’s audiovisual digitization and preservation program, including its Cylinder Audio Archive, and its participation in the Library of Congress National Jukebox project and the Discography of American Historical Recordings (DAHR). His research interests are grounded in workflow automation and quality control, ensuring that video is digitized to appropriate standards and is playable and accessible long into the future. 
+
+Target Audience: 
+
+Our target audience is anybody working with video assets who would like to make subject/ language/ community specific, time-based metadata to describe them. We’re anticipating about 20 people. 
+
+Technological support: 
+
+The workshop will require a computer with projection, WiFi and participants will need their own workstations or to bring their own laptops. 
+
+
+# notes

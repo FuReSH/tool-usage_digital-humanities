@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Providing scholarly access to large collections that are distributed across various content providers, and to create user-friendly applications to work with that data in a diversity of scholarly projects is the underlying goal of the development of the Common Lab Research Infrastructure for the Arts and Humanities (CLARIAH
+<text><body><p>Providing scholarly access to large collections that are distributed across various content providers, and to create user-friendly applications to work with that data in a diversity of scholarly projects is the underlying goal of the development of the Common Lab Research Infrastructure for the Arts and Humanities (CLARIAH
                 <ref target="#_ftn1">[1]</ref>).
             </p>
             <p>Big-scale infrastructure projects in the humanities and social sciences such as the Digital Research Infrastructure for the Arts and Humanities (DARIAH) (Edmond et al., 2017), or the Common Language Resources and Technology Infrastructure (CLARIN) (Hinrichs and Krauwer, 2014) aim to provide solutions for both preservation and access to collections and data necessary for scholarly research
@@ -116,7 +114,7 @@
                     <ref target="#_ftnref3">[3]</ref> Indeed, an adopted strategy at the CLARIAH project level, has been to offer grants to scholars to conduct small scale research pilot projects using the CLARIAH infrastructure. In the media studies focus that we describe in this paper, almost ten scholars participate as co-developers. We follow an Agile methodology for implementation, which despite criticisms has proved to be useful for this type of projects (van Zundert, 2012)
                 </p>
             </div>
-        
+</body>
         <back>
             <div type="bibliogr">
                 <listbibl>

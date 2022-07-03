@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>In his essay “How Not to Teach Digital Humanities,” Ryan Cordell outlines some of the pedagogical and institutional challenges of integrating DH into larger humanities curricula. Importantly, Cordell argues that successful Digital Humanities pedagogy must always take into account local institutional and infrastructural contexts, and notes his structuring of previous classes in order to afford students’ leveraging of campus archival collections.</p>
+<text><body><p>In his essay “How Not to Teach Digital Humanities,” Ryan Cordell outlines some of the pedagogical and institutional challenges of integrating DH into larger humanities curricula. Importantly, Cordell argues that successful Digital Humanities pedagogy must always take into account local institutional and infrastructural contexts, and notes his structuring of previous classes in order to afford students’ leveraging of campus archival collections.</p>
             <p>Cordell’s focus on material and institutional infrastructure as the “context” of Digital Humanities work dovetails with other scholars’ calls to productive engage with the wider “structures” that enable DH work,
                 <hi rend="endnote_reference">
                     <note place="end">
@@ -154,9 +152,7 @@
                 </hi> But if not us, then whom? And who better to build material-epistemic infrastructures that subvert the bracketing of critical thought and technical practice, that challenge the very ideological tenets of instrumentalism, than digital humanists? By entangling ourselves in the apparatuses of STEM education, and by building frameworks for STEM students—especially those in engineering and computer science—to ideologically contextualize their own educational experiences in their technical majors, digital humanities pedagogy can make inroads into dismantling technocratic culture by allying with the very persons in the best position to reproduce it.
             </p>
             <p>Acknowledgements:</p>
-            <p>Activities described in this paper were made possible in part by the National Endowment for the Humanities.</p>
-        
-        <back>
+            <p>Activities described in this paper were made possible in part by the National Endowment for the Humanities.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Proponemos evaluar los retos que plantean los recursos digitales disponibles para el estudio de las escritoras europeas a lo largo de los siglos, atendiendo a la interoperabilidad y usabilidad de tales recursos, así como a la cantidad y pertinencia de sus datos en cuestiones de género. Para ello partimos de nuestra experiencia en la coordinación del grupo de trabajo de 
+<text><body><p>Proponemos evaluar los retos que plantean los recursos digitales disponibles para el estudio de las escritoras europeas a lo largo de los siglos, atendiendo a la interoperabilidad y usabilidad de tales recursos, así como a la cantidad y pertinencia de sus datos en cuestiones de género. Para ello partimos de nuestra experiencia en la coordinación del grupo de trabajo de 
                 <ref target="https://www.dariah.eu/">DARIAH-EU</ref>, 
                 <ref target="https://www.dariah.eu/activities/working-groups/women-writers-in-history/">
                     <hi rend="italic">Women Writers in History</hi>
@@ -38,7 +36,5 @@
                 <ref target="https://dariah-days.sciencesconf.org/">Berlín</ref> (abril 2017) hasta la presentación de sus líneas de trabajo y buenas prácticas en 
                 <ref target="https://www.dariah.eu/activities/annual-event/">París</ref> (mayo 2018). 
             </p>
-            <p>La pertinencia de las categorías y de los datos, la interoperabilidad y la usabilidad de todas las bibliotecas y repositorios, bases de datos y páginas analizados son retos que exigen respuestas no solo a escala global, sino también local.</p>
-        
-    </text>
+            <p>La pertinencia de las categorías y de los datos, la interoperabilidad y la usabilidad de todas las bibliotecas y repositorios, bases de datos y páginas analizados son retos que exigen respuestas no solo a escala global, sino también local.</p></body></text>
 </TEI>

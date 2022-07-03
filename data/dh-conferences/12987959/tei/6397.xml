@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <figure>
                 <graphic n="1001" width="12.714186111111111cm" height="3.6648583333333336cm" url="Pictures/4b4aacf25cf2ac75b6849d80e09d4126.png" rend="inline"></graphic>
             </figure>
@@ -24,7 +24,5 @@
             <p>Esta característica permite al investigador no-francófono de tener acceso a nuevos datos con enriquecimientos, enlaces y clasificaciones en tres idiomas, permitiéndole medir, por ejemplo, el interés de fuentes en idioma francés sugeridas por “ISIDORE” en la interfaz (bien sea en inglés o en español). </p>
             <p>De momento, casi 220 000 documentos en español se encuentran en “ISIDORE” y la plataforma contempla cosechar aún más en el futuro.</p>
             <p>En paralelo, otros desarrollos que hacen de “ISIDORE” una herramienta cada vez más personalizada, han venido completando sus funcionalidades y abriendo perspectivas. Es el caso del widget “IMoCO”, ISIDORE Motor Constructor que permite crear sólo en unos clics, una interfaz de consulta personalizada de los recursos disponibles en la plataforma “ISIDORE” (por ejemplo recursos específicos sobre un tema). Así, “IMoCO” está diseñado para los usuarios que deseen incluir en su sitio Web el buscador “ISIDORE” haciendo una simple copia/pega de un código HTML. Simple y neutral, se adapta a la mayoría de los sitios Web. Además, IMoCO puede ser totalmente personalizado con sus estilos CSS. También el widget multiligue WordPress “ISIDORE suggestions” (https://fr.wordpress.org/plugins/isidore-suggestions/) permite al usuario de blogs WordPress conseguir sugerencias de documentos presentes en “ISIDORE”. Estas sugerencias se hacen basadas en palabras claves asociadas al artículo que el usuario esté leyendo. Es posible afinar su búsqueda, subrayando el contenido del artículo consultado o seleccionando una o varias disciplinas.</p>
-            <p>Con este poster, quisiéramos mostrar todas las posibilidades que ofrece actualmente “ISIDORE” para el mundo hispánico en CHS, con lo que nos permite también contemplar colaboraciones fructuosas que contribuirán sin duda a alimentar esta plataforma y, al final, a enriquecer las búsquedas de investigadores o estudiantes francófonos de “ISIDORE” que tendrían acceso a más recursos en español, así como las investigaciones de usuarios hispanohablantes y angloparlantes. También tener la oportunidad de presentar este póster en el cuadro del congreso DH en México permitiría intercambiar con usuarios potenciales sobre sus necesidades, y alrededor de los futuros desarrollos de la plataforma.</p>
-        
-    </text>
+            <p>Con este poster, quisiéramos mostrar todas las posibilidades que ofrece actualmente “ISIDORE” para el mundo hispánico en CHS, con lo que nos permite también contemplar colaboraciones fructuosas que contribuirán sin duda a alimentar esta plataforma y, al final, a enriquecer las búsquedas de investigadores o estudiantes francófonos de “ISIDORE” que tendrían acceso a más recursos en español, así como las investigaciones de usuarios hispanohablantes y angloparlantes. También tener la oportunidad de presentar este póster en el cuadro del congreso DH en México permitiría intercambiar con usuarios potenciales sobre sus necesidades, y alrededor de los futuros desarrollos de la plataforma.</p></body></text>
 </TEI>

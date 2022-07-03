@@ -1,0 +1,10 @@
+
+
+# notes
+
+[^1]:  The Bible is divided into basic text elements called 
+                            verses.
+                        
+[^2]:  An 
+                            n-gram is a contiguous sequence of n words from a text.
+                        

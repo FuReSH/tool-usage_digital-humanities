@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <p rend="First Paragraph">This poster (with accompanying downloadable dataset and application) will demonstrate as a proof-of-concept a comprehensive image-based publication and analysis of a text bearing artifact, [catalog number redacted for anonymous review], a hitherto unpublished 10th Century palimpsest fragment of the Gospel According to Matthew. The fragment contains most of the “Parable of the Sower”.</p>
             <p>In editing this text, we sought to be as comprehensive as possible, capturing:</p>
             <list type="unordered">
@@ -52,7 +52,5 @@
                     <p rend="footnote text"> Existing code libraries for working with CEX include a microservice framework that delivers textual and other data from CEX files as JSON objects, via HTTP requests (see https://github.com/cite-architecture/scs-akka ) and libraries that export CEX data into other formats, such as 2-column tabular data or 82XF (see https://github.com/cite-architecture/scm ).</p>
                 </note>
             </p>
-            <p>All project data is under version control in a public GitHub repository, and licensed under a CC-BY license. All source code is under either a GPL or MIT public license.</p>
-        
-    </text>
+            <p>All project data is under version control in a public GitHub repository, and licensed under a CC-BY license. All source code is under either a GPL or MIT public license.</p></body></text>
 </TEI>

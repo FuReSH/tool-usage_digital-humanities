@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Resumen </p>
+<text><body><p>Resumen </p>
             <p>
                 <hi rend="color(#000000)">El surgimiento de las narrativas hipermedia y transmedia así como de los productos culturales propios de la era digital como los </hi>
                 <hi rend="color(#000000)italic">Juegos Serios</hi>
@@ -68,9 +66,7 @@
             </p>
             <p>
                 <anchor xml:id="id__6yf7qndwmruy"></anchor>Las pruebas con el prototipo analógico del juego mostraron que los jugadores problematizaron la vida carmelita y manifestaron emociones e interés. Se recomienda evaluar con la versión digital para determinar si la interpretación temática aplicada al diseño de un juego serio genera experiencia memorable al divulgar conocimiento histórico.
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

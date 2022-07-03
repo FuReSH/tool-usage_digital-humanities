@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="bold">Multiple Paper Session</hi>: “Networks of Communication and Collaboration in Latin America”
             </p>
             <p>
@@ -87,7 +85,5 @@
                 <hi rend="italic">Narratopedia</hi>, Doménico Chiappe's 
                 <hi rend="italic">La Huella de Cosmos</hi>, and Leonardo Valencia's and Eugenio Tiselli's 
                 <hi rend="italic">El Libro Flotante</hi> in order to highlight collective practices of creation involved in digital productions. Through a discussion of these issues, I offer an overview of ongoing changes wrought by digital technology in contemporary Latin American cultural production.
-            </p>
-        
-    </text>
+            </p></body></text>
 </TEI>

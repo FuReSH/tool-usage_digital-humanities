@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <list type="ordered">
                 <item>Introduction</item>
             </list>
@@ -58,9 +58,7 @@
                 <item>Outlook</item>
             </list>
             <p>We obtained very promising results of a stylometric analyses of comics artist based on CNN features trained on photographs. Given this successful transfer, we suspect that such features are general enough to be applied in a wide variety of other domains in which a visual stylometry may be useful. For example, arts historians may be interested in combining the method with nearest neighbor search to describe how close different artist are in feature space (cf. Saleh and Elgammal for a similar approach based on classic features). Historians may find visual feature based analyses useful for annotation of documents containing images along with text. </p>
-            <p>If stylometry works so well, CNN features can probably be used for detecting visual elements such as speech bubbles or characters within panels. We currently experiment with YOLO 9000 (Redmond and Farhadi, 2017), which does a very good job at locating objects and persons in panels, and is likely to also function well as a speech bubble locator with additional training. If such object classes can be located automatically, implementation into an annotation tool might make the tedious task of annotation significantly easier, so that annotators have more time to concentrate on work at the narratological level.</p>
-        
-        <back>
+            <p>If stylometry works so well, CNN features can probably be used for detecting visual elements such as speech bubbles or characters within panels. We currently experiment with YOLO 9000 (Redmond and Farhadi, 2017), which does a very good job at locating objects and persons in panels, and is likely to also function well as a speech bubble locator with additional training. If such object classes can be located automatically, implementation into an annotation tool might make the tedious task of annotation significantly easier, so that annotators have more time to concentrate on work at the narratological level.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

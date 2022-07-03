@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <p rend="normal">Introduction</p>
             <p rend="normal">This paper discusses the promises and pitfalls of linking historical data on cultural events. Quite a few datasets on historical European music, theatre and film are now publicly available online (Baptist 2017). The ones that contain programming information are, at least to some extent, already event-based. However, they are highly heterogeneous in scale and scope, and they generally do not use the same definitions for, for example, venues, events, or companies. Conceptualizing and embedding cultural events such as concerts or theatrical performances in a linked data framework helps to overcome such issues without forcing an overarching ontology, and it enables researchers to acknowledge the performative and interactive nature of cultural expressions within their (local) societal context (Nijboer and Rasterhoff 2018). </p>
             <p rend="normal">By linking event data internally as well as to external knowledge bases such as DBpedia and Wikidata by means of shared vocabularies, researchers are invited to systematically analyse cultural life cross-sectorally (i.e. theatre, music), internationally (European comparisons and connections), and contextually (in relation to local social, economic, political and cultural features) (cf. 
@@ -30,9 +30,7 @@
                     <hi rend="underline color(1155CC)">schema.org</hi>
                 </ref> and 
                 <ref target="http://lov.okfn.org/vocommons/voaf/v2.3/">Vocabulary of a Friend (VOAF)</ref>. In this paper we illustrate research potential, but also practical issues by discussing a recent project on the establishment of movie theatres in the city of Amsterdam in the early twentieth century. By linking data on the history of cinema and movie-going to local contextual data (e.g. census data, municipal election data), we assess how linked data might be used to analyse how specific local historical characteristics shaped form and function of urban cultural life.
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

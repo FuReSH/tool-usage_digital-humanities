@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <p rend="p1">Digital Humanities, and by extension digital humanists, tend towards a culture of open access, interdisciplinary collaboration, and a maker ethos. These disciplinary values position the digital humanities for high impact reaching beyond disciplinary boundaries into more public fora. One might argue that this public-facing ethos is a natural extension of web-based scholarship.
                 <hi rend="apple-converted-space"> </hi>
             </p>
@@ -41,9 +41,7 @@
             <p rend="p1">Participatory Engagement projects provide us with opportunities to rethink our roles as researchers and as teachers, about our obligations to those in society who have not had the same opportunities as we have, and last, but not least, how to build meaningful, socially relevant, digital collections for our own and future generations.</p>
             <p rend="p1">Yet, these types of projects have different lifecycles, require different staffing and skills, and come with different obligations than more traditional DH projects, and many project teams are not prepared for this. This talk will explore the motivations of the public in participating in our scholarship,
                 <hi rend="apple-converted-space"> </hi>our responsibilities in inviting them as collaborators, and new ways to think about the goals, motivations, and audiences for our research.
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

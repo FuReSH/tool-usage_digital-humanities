@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="color(#000000)italic">1. Introdução</hi>
             </p>
             <p> O rótulo das Humanidades Digitais (HDs) ainda não é amplamente conhecido, ou deveríamos dizer reivindicado, pela academia no Brasil. Isto não quer dizer que não haja reflexões e produções sobre tecnologia digital e com tecnologia digital sendo realizadas em departamentos de Letras, de Artes, de Ciências Humanas e Sociais Aplicadas.</p>
@@ -113,9 +111,7 @@
                 <hi rend="color(#000000)"> O artigo publicado em maio deste ano no periódico da FAPESP, intitulado A realidade que emerge da avalanche de dados, diz com muita propriedade que “Humanidades digitais se disseminam por várias disciplinas, influenciam formação de pesquisadores e inspiram políticas públicas” (Marques, 2017</hi>: 
                 <hi rend="color(#000000)">19). De fato, a apropriação das tecnologias permite que façamos mais rápido e mais além do que fazíamos anteriormente - principalmente com relação à análise de grandes volumes de dados -, motivando pesquisadores a buscarem formações inovadoras que os capacitem.</hi>
             </p>
-            <p> Logo, seja como novo campo seja como comunidade de práticas, as HD se colocam o desafio de incorporar novas perguntas, epistemologias e métodos à tradicional forma de trabalhar das Ciências Sociais. Emergem, portanto, questões teórico-metodológicas, éticas e políticas que se impõem a pesquisadores, educadores e estudantes.</p>
-        
-        <back>
+            <p> Logo, seja como novo campo seja como comunidade de práticas, as HD se colocam o desafio de incorporar novas perguntas, epistemologias e métodos à tradicional forma de trabalhar das Ciências Sociais. Emergem, portanto, questões teórico-metodológicas, éticas e políticas que se impõem a pesquisadores, educadores e estudantes.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <anchor xml:id="id_docs-internal-guid-f209a3eb-227d-2b55-07ae-c729cca4363e"></anchor>
                 <hi rend="color(#000000)">What can be said, at an empirical level, about the internal structure of literary narratives? Can we model the “shape” of a plot? In recent years, there has been a surge of interest in what might be thought of as a computational form of narratology. Instead of flattening out the text into an unordered bag of words, a series of studies have looked at the fluctuation of different types of literary signals across “novel time,” the linear space between the beginning and end of a text. Most well-known is probably Matt Jockers' work with Syuzhet, an R package that calculates the dispersion of positive and negative sentiment across novels. Ben Schmidt, working with a corpus of movie and TV scripts, tracked the distribution of topics across the screenplays, finding a footprint of the prototypical cop drama, with a crime at the beginning and a trial at the end. Andrew Piper, writing in New Literary History, identifies a signature for the “conversional” narrative, based on Augustine's </hi>
                 <hi rend="color(#000000)italic">Confessions</hi>
@@ -91,9 +89,7 @@
                     </p><p>The distribution of “the,” sliced by corpus, publication date, author gender, and canonicity. (Gale American Fiction, Chicago Novel Corpus)</p>
                 
             
-            <p>We also find that the patterns are significantly different than trends observed in a corpus of ~20k nonfiction volumes from HathiTrust (Underwood et al., 2015), which suggests that they mark something specific about the structure of (fictional) narratives, and not just something that arises generally in long documents. Beyond the aggregate trends -- we explore the degree to which individual texts do and don’t conform to the corpus-level averages, with a focus on what can be learned from the extreme examples that most strongly exemplify and resist the overall trends -- for example, the ~1% of novels for which “a” increases consistently across the entire text at a statistically significant level.</p>
-        
-        <back>
+            <p>We also find that the patterns are significantly different than trends observed in a corpus of ~20k nonfiction volumes from HathiTrust (Underwood et al., 2015), which suggests that they mark something specific about the structure of (fictional) narratives, and not just something that arises generally in long documents. Beyond the aggregate trends -- we explore the degree to which individual texts do and don’t conform to the corpus-level averages, with a focus on what can be learned from the extreme examples that most strongly exemplify and resist the overall trends -- for example, the ~1% of novels for which “a” increases consistently across the entire text at a statistically significant level.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

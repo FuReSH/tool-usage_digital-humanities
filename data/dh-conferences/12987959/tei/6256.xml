@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Brief Description:</p>
+<text><body><p>Brief Description:</p>
             <p>Are you in need of a way to provide access to oral histories not recorded in English? Do you have dreams of creating multilingual metadata for interviews recorded in English to non-English speaking communities/users? In late 2016 The University of Kentucky Nunn Center updated the OHMS application and viewer to have multilingual functionalities, creating the capability to synchronize both a transcript/translation, as well as to create a bilingual index, making all of these searchable and synchronized to the corresponding moment in the audio or video. In this mini-workshop OHMS power users Teague Schneiter and Brendan Coates will demonstrate the multilingual functionalities of OHMS. Through demonstration of a bilingual use case, instructors will walk attendees through each step of the indexing process to prepare a sample Spanish-English index. Instructors will also guide attendees to develop workflows to support multilingual indexing. </p>
             <p>Workshop outline:</p>
             <list type="ordered">
@@ -50,7 +48,5 @@
             <p>Target Audience:</p>
             <p>Our target audience is anybody working with video assets who would like to make subject/ language/ community specific, time-based metadata to describe them. We’re anticipating about 20 people.</p>
             <p>Technological support:</p>
-            <p>The workshop will require a computer with projection, WiFi and participants will need their own workstations or to bring their own laptops.</p>
-        
-    </text>
+            <p>The workshop will require a computer with projection, WiFi and participants will need their own workstations or to bring their own laptops.</p></body></text>
 </TEI>

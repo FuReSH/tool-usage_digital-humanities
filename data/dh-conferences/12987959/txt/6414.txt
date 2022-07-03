@@ -1,0 +1,48 @@
+
+Digital Humanities (DIGIHUM) is a four-year research programme funded by the Academy of Finland. Its aim is to address novel methods and techniques in which digital technology and state-of-the-art computational science are used for collecting, managing and analysing data in humanities and social sciences research as well as for modelling humanities and social science phenomena. 
+
+Finland has a strong tradition in digital humanities. By bringing together the existing best knowledge and skills in digital humanities, Finland aims to put itself in a strong position to become a world leader in this rapidly evolving field. The programme is grounded in the needs of basic research, but technological advances in this area also have great potential for practical applications that warrant research. 
+
+The development of research in this area is based on broad collaboration involving not only researchers in the field but also technology experts, representatives of memory organisations (libraries, archives) and database administrators and developers. One aspect of the programme is to examine digitalisation as a cultural and social phenomenon. 
+
+The programme has three thematic areas: 
+
+
+- Research into digital interaction and digital services 
+- Employing open, multiform and/or real-time data in research 
+- Data-based analysis and modelling of humanities and social sciences phenomena. 
+
+
+The programme produces new and more comprehensive knowledge and understanding about the themes under investigation. It fosters dialogue and exchange between a wide variety of scientific fields and disciplines, for example, by integrating methodologies and networking at national and international level. The programme encourages interdisciplinary or multidisciplinary projects that combine two or more fields of scientific research employing different methodologies and approaches. The aim is to promote: 
+
+
+- collaboration among producers, processors and users of humanities and social sciences data 
+- the development of research methods 
+- ethical examination of the research field 
+- the usability and awareness of datasets. 
+
+
+The poster will interactively introduce the programme’s themes and objectives as well as the six research consortia that form the core of the programme: 
+
+
+- Profiling Premodern Authors (Prof. Marjo Kaartinen et al., University of Turku) 
+- Interfacing Structured and Unstructured Data in Sociolinguistic Research on Language Change (Prof. Terttu Nevalainen et al., University of Helsinki) 
+- Citizen Mindscapes – Detecting Social, Emotional and National Dynamics in Social Media (Prof. Jussi Pakkasvirta et al., University of Helsinki) 
+- Computational History and the Transformation of Public Discourse in Finland, 1640–1910 (Prof. Hannu Salmi et al., University of Turku) 
+- Digital Face (Prof. Janne Seppänen et al., University of Tampere) 
+- Digital Language Typology: Mining from the Surface to the Core (Prof. Martti Vainio et al., University of Helsinki). 
+
+
+The poster will also introduce the four additional projects related to the Trans-Atlantic (T-AP) Platform Digging into Data Challenge : 
+
+
+- Digging into Manuscript Data (Prof. Eero Hyvönen, University of Helsinki) 
+- Analyzing Child Language Experiences Around the World (Prof. Okko Räsänen, Aalto University) 
+- Oceanic Exchanges: Tracing Global Information Networks in Historical Newspaper Repositories, 1840–1914 (Prof. Hannu Salmi, University of Turku) 
+- Digging into High Frequency Data: Present and Future Risks and Opportunities (Prof. Peter Sarlin, Hanken School of Economics). 
+
+
+The Academy of Finland is a government agency within the administrative branch of the Finnish Ministry of Education, Science and Culture. Its mission is to fund high-quality scientific research, provide expertise in science and science policy, and strengthen the position of science and research. 
+
+
+# notes

@@ -1,0 +1,8 @@
+
+
+# notes
+
+[^1]:  http://www.wipo.int/meetings/en/details.jsp?meeting_id=42302
+[^2]:  https://absch.cbd.int/es/
+[^3]:  https://tags.hawksey.info/
+[^4]:  http://openrefine.org/

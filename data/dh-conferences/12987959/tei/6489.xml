@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Context</p>
+<text><body><p>Context</p>
             <p>
                 <hi rend="Standaardalinea-lettertype">One of the bigger problems in comparing historic Dutch texts is wildly differing spelling of the same word. Seventeenth century Dutch did not have standardized spelling. Many spelling variants of the same word coexisted, making it very difficult to use any language processing tools on such texts because they depend on the same word being spelled the same way. So, for example basic algorithms like named entity recognition to recognize place or personal names, or even just part-of-speech tagging to find the grammatical context of words to analyze, for example, changing meanings of words of phrases work less well on older texts. Other languages, of course, have the same problem.</hi>
             </p>
@@ -74,7 +72,5 @@
                 <hi rend="Standaardalinea-lettertype">All in all, with a few additions and modifications a tool like VARD2 can be successfully converted to work on a Early Modern Dutch. Tests on other types of texts (a treatise on mathematics from 1605, the description of a beached whale from 1599, a description of the New World from 1770, a poetry book from 1637 etc) show promising results, indicating that a little extra training can make this configuration work well for different genres. Automatic respelling of the entire 1657 bible at a 95% confidence level resulted in automatic re-spelling of 62% of 340,000 variants. For the earlier edition (1637), automatically correcting at 95% confidence corrects 60% of just short of 350.000 unknown words, at 75% confidence 84% of the variants were corrected. The paper will show the results of automatically re-spelling 17
                     <hi rend="superscript">th</hi> century texts using a VARD2 trained on just the first two chapters of the bible.
                 </hi>
-            </p>
-        
-    </text>
+            </p></body></text>
 </TEI>

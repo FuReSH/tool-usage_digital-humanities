@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Desde el año 2010, el Grupo de investigación 
+<text><body><p>Desde el año 2010, el Grupo de investigación 
                 <ref target="http://www.ucm.es/leethi">LEETHI</ref> (Literaturas Europeas del tExto al Hipermedia) desde la Facultad de Filología y el grupo 
                 <ref target="http://ilsa.fdi.ucm.es/ilsa/ilsa.php">ILSA</ref> (Implementation of Language-Driven Software and Applications) desde la Facultad de Informática de la Universidad Complutense de Madrid trabajan juntos afin de dar respuesta concreta a necesidades de la docencia y la investigación en Humanidades en la UCM. Han diseñado y probado sistemas y herramientas que permiten tanto la construcción de repertorios digitales para colecciones propias como el comentario detallado y a la edición creativa; han desarrollado repertorios como las bibliotecas 
                 <ref target="http://repositorios.fdi.ucm.es/CIBERIA">Mnemosine</ref> con el grupo 
@@ -102,7 +100,7 @@
                 <item>Se requerirá una sala con ordenadores o, en su defecto, se requerirá a los participantes que aporten sus propios equipos. En cualquier caso, será necesaria una buena conexión a Internet.</item>
                 <item>Todas las sesiones se desarrollarán en portugués y en español, según el equipo que presente cada herramienta.</item>
             </list>
-        
+</body>
         <back>
             <div type="bibliogr">
                 <listbibl>

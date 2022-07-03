@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="bold">Introduction</hi>
                 <lb></lb>In 2015, our team began work to get the Mayan hieroglyphs into the international standard Unicode, so Mayan text can be reliably interchanged on computers and other devices. Thanks to collaboration with standards experts and recent advances in computer technology and Mayan decipherment, the work to encode Mayan in Unicode has progressed significantly from the state we reported at DH2016 [1]. This paper will describe the challenges that prevented scholars from encoding Mayan in the past, and the strategies we used to overcome these hurdles. We will also give examples of the rapidly expanding repository of digitally encoded, machine-readable Mayan texts, and report on the implications for future research. 
             </p>
@@ -211,9 +209,7 @@
                 <hi rend="superscript color(222222)">13</hi>
                 <hi rend="color(222222)" xml:space="preserve">] to adapt and expand this powerful engine into a “Mayan-READ”. This tool would provide scholars and humanities students with the full-range of our open-access online resources, </hi>allowing them greater access and interactivity with our datasets, plus the ability to contribute in expanding a Unicode-based repository of digitally encoded, machine-readable Mayan hieroglyphic texts. In so doing, we are also seeking to establish innovative collaborations with cultural institutions and research groups (such as INAH in Mexico). Part of this effort involves organizing workshops, where our workflow and methodologies can be learned by other teams 
                 <anchor xml:id="Hlk499048721"></anchor>in Mexico and other locations, and ultimately put into practice in ways that can have greater impact to benefit the humanities research community as a whole. 
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

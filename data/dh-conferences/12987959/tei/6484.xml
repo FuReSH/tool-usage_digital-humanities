@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="bold" xml:space="preserve">Description: </hi>This panel examines the ways spatial and geographical formation in African American Studies have integrated with or failed to integrate with Digital Humanities scholarship and the growing use of mapping technology. Literary and historical scholarship on black geographies has grappled with the epistemological, political, and ethical problems of recovering the locations and routes of black resistance in both the antebellum U.S. and Jim Crow South. Katherine McKittrick has criticized the resulting tendency of scholars to translate blackness as “ungeographic” and Saidiya Hartman similarly writes about the historian’s struggle “within and against the constraints and silences imposed by the nature of the archive.”
                 <note place="foot" xml:id="ftn1" n="1">
                     <p rend="footnote text"> See McKittrick, Katherine. 
@@ -85,7 +83,5 @@
             <p>In the project’s further elaborations and revisions, Thompson critiques the use of geographic information system tools to “map” a writer who had experienced extensive surveillance by the FBI. This critique is informed by African American literary theories of place, especially Toni Morrison’s “literary archeology” and Baldwin’s notions of being in “contact” and being a “witness.”</p>
             <p>The next stage in the development of “Baldwin’s Paris” will move beyond the initial work of tagging locations in Baldwin’s texts to embedding the theories of literary archeology, being in contact and being a witness, into Carto and the interface of the site. For it is in UI/UX design that the connections between data, tool, and critique ultimately lie.</p>
             <p>***</p>
-            <p>This panel ultimately seeks to think through a hybrid empirical-theoretical approach; that is, a hybrid of the empirical methodologies that have characterized DH and of the more theoretical concerns of traditional humanities scholarship. The panel will ask what new methodologies, for both working with existing digital tools but also for directing the conceptualization of new tools informed by the unique demands of black literary geographies, emerge from the above hybrid frameworks: the mapping of the aesthetic of ambivalence toward representation in post-bellum black literature, mappings that subvert totalizing narratives of abolitionist history through disfiguring lines, the geographic tensions of black mobility in slave narrative, and the cartographic exploration of the connections between data, tool, and literary critique.</p>
-        
-    </text>
+            <p>This panel ultimately seeks to think through a hybrid empirical-theoretical approach; that is, a hybrid of the empirical methodologies that have characterized DH and of the more theoretical concerns of traditional humanities scholarship. The panel will ask what new methodologies, for both working with existing digital tools but also for directing the conceptualization of new tools informed by the unique demands of black literary geographies, emerge from the above hybrid frameworks: the mapping of the aesthetic of ambivalence toward representation in post-bellum black literature, mappings that subvert totalizing narratives of abolitionist history through disfiguring lines, the geographic tensions of black mobility in slave narrative, and the cartographic exploration of the connections between data, tool, and literary critique.</p></body></text>
 </TEI>

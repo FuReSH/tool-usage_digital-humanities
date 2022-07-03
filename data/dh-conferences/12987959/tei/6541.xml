@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="color(111111)" xml:space="preserve">This paper discusses the endeavours of the research project </hi>
                 <hi rend="italic color(111111)">MIMEHIST: Annotating EYE’s Jean Desmet Collection</hi>
                 <hi rend="color(111111)" xml:space="preserve"> (2017-2018) - funded by the Netherlands Scientific Research Organisation - to do optical character recognition (OCR) and apply various computer vision techniques on the business archive of film distributor and exhibitor Jean Desmet</hi>
@@ -39,7 +37,5 @@
                 <hi rend="color(111111)" xml:space="preserve">In addition to a discussion of these steps, our paper reflects on the results’ epistemological implications for future research, by discussing them in relation to previous quantitative approaches to the Desmet Collection. From this vantage point, our paper argues that while previous quantitative studies of Desmet’s business documents were premised in the coding and transcription procedures of Cliometrics and </hi>
                 <hi rend="italic color(111111)" xml:space="preserve">Annales </hi>
                 <hi rend="color(111111)">historiography, MIMEHIST’s results nurture exploratory and qualitative research coupled with serendipitous search and annotation procedures focusing also on visual features. Consequently, the paper argues, researchers may to a greater degree than hitherto highlight data contingencies and multiplicity of viewpoints in the Desmet business archive.</hi>
-            </p>
-        
-    </text>
+            </p></body></text>
 </TEI>

@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <p rend="Body">
                 <anchor xml:id="Hlk512543707"></anchor>Hacia 1875-1877, el fotógrafo francés Jean Laurent retrató la Sala de la Reina Isabel del Museo del Prado en Madrid (Fig. 1). Ocupando un espacio absidial en el centro del edificio que el arquitecto Juan de Villanueva había planeado un siglo antes como un salón de juntas, la Sala de la Reina Isabel reunía los cuadros que entonces se consideraban las “perlas” de la colección. De modo similar a la Tribuna de la Galería de los Uffizi o el Salon Carré del Louvre, la colocación de los cuadros propiciaba comparaciones estéticas. En 1893, el espacio fue reformado y en 1899 se convirtió en la Sala Velázquez.
             </p>
@@ -36,9 +36,7 @@
             <figure>
                 <graphic n="1003" width="16.002cm" height="10.458097222222221cm" url="Pictures/c5e79df3906284e3bd15ef9cfbbbae03.png" rend="inline"></graphic>
             </figure>
-            <p>Fig. 3. Reconstrucción para cualquier dispositivo</p>
-        
-        <back>
+            <p>Fig. 3. Reconstrucción para cualquier dispositivo</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

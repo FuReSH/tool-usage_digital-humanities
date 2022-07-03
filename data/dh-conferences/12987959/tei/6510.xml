@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="italic" xml:space="preserve">The Programming Historian </hi>comenzó en el año 2008 como una publicación de acceso abierto que publica tutoriales revisados por pares dirigidos a humanistas para aprender una amplia gama de herramientas, técnicas computacionales y flujos de trabajo útiles para investigación y pedagogía. El proyecto está liderado por un equipo de doce editores voluntarios de seis países con el objetivo de crear una comunidad colaborativa y una audiencia de carácter global. Desde agosto de 2016, el equipo editorial de contenidos en español de PH comenzó el proceso de traducción de los más de 50 tutoriales publicados en el portal del proyecto en inglés. Al la fecha se han traducido alrededor de 30 tutoriales a partir de la participación de alrededor de 15 colaboradores de países como Argentina, España, Colombia y México. 
             </p>
             <p>La expansión de una comunidad de práctica de humanidades digitales en el mundo hispanoparlante plantea preguntas sobre acceso y diversidad. La brecha digital, en su dimensión de uso y aprovechamiento de tecnologías de la información y el desarrollo de competencias digitales, implica serios retos para la producción de conocimiento sobre HD en el sur global. PH, una publicación en línea de acceso abierto bilingüe, ha desarrollado un modelo para afrontar el problema del acceso global y lingüístico a recursos, metodologías y herramientas digitales para las humanidades. Este compromiso con la diversidad lingüística y geográfica en las humanidades digitales significa comprender los límites y posibilidades de los contextos institucionales, históricos, culturales y económicos en el mundo hispanoparlante.</p>
@@ -93,7 +91,5 @@
                     <cell>5,800</cell>
                 </row>
             </table>
-            <p>Figura 2. Número de sesiones en portal de PH desde países angloparlantes, 2017 </p>
-        
-    </text>
+            <p>Figura 2. Número de sesiones en portal de PH desde países angloparlantes, 2017 </p></body></text>
 </TEI>

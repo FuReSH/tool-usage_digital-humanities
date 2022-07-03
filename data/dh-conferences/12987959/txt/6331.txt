@@ -1,0 +1,7 @@
+
+
+# notes
+
+[^1]:  Note that the Riddle corpus’ novels show the one-sidedness of the market: it consists of few genres, there are very few novels by people of color, it contains mostly European and North-American novels. 
+[^2]:  The factor of translation will be taken into account in further development of this pilot, for information on effects within the larger project, see van Dalen-Oskam, 2016. 
+[^3]:  To distinguish genres, we roughly base ourselves on Dutch publishers’ assignments of genre, which is done through a uniform classification system in the Netherlands. 

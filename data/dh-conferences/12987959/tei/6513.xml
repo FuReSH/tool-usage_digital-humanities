@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <p rend="First Paragraph">Introducción</p>
             <p>La creación de la Secretaría de Cultura Federal del Gobierno de México, trajo consigo la creación de la Dirección General de Tecnologías de la Información y Comunicaciones, y con esta, el mandato de construir la Agenda Digital de Cultura. Dentro de las atribuciones que tiene la Dirección se encuentra la interoperabilidad de las colecciones digitales albergadas y administradas por la Secretaría de Cultura. Para poder responder a este mandato se ha puesto en marcha el desarrollo del “Repositorio Digital de Patrimonio Cultural de México (RDPCM)”,  primer esfuerzo de largo alcance y con visión integral desde el gobierno de México para integrar los acervos digitales de museos, bibliotecas, televisoras, radiodifusoras y diferentes instituciones culturales que son coordinadas por la Secretaría de Cultura. </p>
             <p>En el presente artículo, se describirán los diferentes módulos de trabajo que se han planteado para sentar las bases de este Repositorio y el grado de avance que cuenta al día de hoy. Asimismo se plantearán los retos técnicos, económicos y de gestión que ha implicado e implicará un proyecto de esta envergadura. </p>
@@ -56,9 +56,7 @@
             </list>
             <p rend="First Paragraph">6. Conclusiones finales</p>
             <p>México es un país con un enorme y valioso patrimonio cultural, la creación del RDPCM es una medida prioritaria y necesaria para el estado mexicano, que permitirá coadyuvar al acceso universal al patrimonio cultural mexicano para beneficiar a más audiencias educando, compartiendo conocimiento y transformando el mundo a través de la cultura.</p>
-            <p>Esta es una oportunidad para enriquecer la web con acciones positivas que refirmen la cultura en el mundo digital. La estrategía del RDPCM a 10 años, es proyectar el mayor número de objetos con una excelente calidad y a través de colaboraciones creativas e innovadoras, ofrecer un gran número de colecciones curadas en línea de acceso público para la investigación, el aprendizaje y la sociedad. </p>
-        
-        <back>
+            <p>Esta es una oportunidad para enriquecer la web con acciones positivas que refirmen la cultura en el mundo digital. La estrategía del RDPCM a 10 años, es proyectar el mayor número de objetos con una excelente calidad y a través de colaboraciones creativas e innovadoras, ofrecer un gran número de colecciones curadas en línea de acceso público para la investigación, el aprendizaje y la sociedad. </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliografía

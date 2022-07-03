@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>How can the unknown be organised? When working with a script and language that has not been (completely) deciphered yet, primarily an inventory of all signs used must be compiled. What at first seems to be a diligent but routine piece of work, quickly turns out to be a complex classification task, for there is still much unknown. Questions arise about a signs' use-context, the extent of the sign inventory and, above all, how the signs can be classified. Particularly the unambiguous identification of signs has some pitfalls. The difference in meaning of a sign is determined on the one hand by its graphic representation (grapheme) and on the other hand by its phonetic value (phoneme). Since the latter can only be achieved by decipherment work that has already been done, the error-free classification of undeciphered signs is a challenging task. In addition, the investigation of archaic texts creates different contexts that lead to different interpretations. The resulting hypotheses must be included in the classification and decoding tasks of a script if a resilient research basis is to be created.</p>
+<text><body><p>How can the unknown be organised? When working with a script and language that has not been (completely) deciphered yet, primarily an inventory of all signs used must be compiled. What at first seems to be a diligent but routine piece of work, quickly turns out to be a complex classification task, for there is still much unknown. Questions arise about a signs' use-context, the extent of the sign inventory and, above all, how the signs can be classified. Particularly the unambiguous identification of signs has some pitfalls. The difference in meaning of a sign is determined on the one hand by its graphic representation (grapheme) and on the other hand by its phonetic value (phoneme). Since the latter can only be achieved by decipherment work that has already been done, the error-free classification of undeciphered signs is a challenging task. In addition, the investigation of archaic texts creates different contexts that lead to different interpretations. The resulting hypotheses must be included in the classification and decoding tasks of a script if a resilient research basis is to be created.</p>
             <p>In our talk we present a concept for the classification and systematisation of characters for writing systems that have not been (completely) deciphered yet. We applied this concept to the Maya hieroglyphs and created a digital sign catalogue that was developed in close interdisciplinary cooperation between epigraphy and information science and technology. The digital sign catalogue can be used to identify, systematise and classify signs and it also offers a starting point for further analyses that can present reliable deciphering.</p>
             <p>We took an ontological approach to model the sign catalogue. To use this type of knowledge representation for the classification of signs is a novel approach to digital epigraphy. </p>
             <div type="div1" rend="DH-Heading">
@@ -107,7 +105,7 @@
                     <hi rend="color(#000000)">. In particular, the separation of the sign in a graphic and a functional-phonemic level - that can be related to each other depending on the level of knowledge - offers a flexibility that redefines the classification of signs and allows precise identification on the basis of distinguishing characteristics. The ontological modelling approach and the implementation in a RDF data model enables new insights into character classification. By incorporating known and adapting new results, the digital sign catalogue is specifically designed to deal with ambiguousness in research processes.</hi>
                 </p>
             </div>
-        
+</body>
         <back>
             <div type="bibliogr">
                 <listbibl>

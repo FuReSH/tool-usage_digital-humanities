@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="bold">Panel: Las Humanidades Digitales en la Mixteca de Oaxaca, México: reflexiones y proyecciones sobre la Herencia Viva o Patrimonio</hi>
             </p>
             <p>Emmanuel Posselt Santoyo</p>
@@ -335,7 +333,5 @@
             <figure>
                 <graphic n="10023" width="15.58925cm" height="5.9180166666666665cm" url="Pictures/cc89e606f8efdec9419864821fdf1ab0.jpeg" rend="inline"></graphic>
             </figure>
-            <p>Figura 5.- Se muestra la misma vista de la imagen anterior pero desde el lado norte. Es una foto del sitio Cerro de las Minas que nos permite comparar entre lo real y lo virtual</p>
-        
-    </text>
+            <p>Figura 5.- Se muestra la misma vista de la imagen anterior pero desde el lado norte. Es una foto del sitio Cerro de las Minas que nos permite comparar entre lo real y lo virtual</p></body></text>
 </TEI>

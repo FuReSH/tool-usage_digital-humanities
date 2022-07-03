@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <p rend="Body">We are developing a methodology for exploring and finding meaning in large corpuses that contain images, such as archives of periodic publications. We focus this work on 
                 <hi rend="italic">Time</hi> magazine, and in particular on images of faces in 
                 <hi rend="italic">Time</hi>. We use computer vision analysis, combined with contextual research and methods from the humanities, to elucidate trends and patterns in the visual culture reflected by the publication. In particular, we are examining how representations of the human face have changed over time, and seeking relationships between the visual features we discover and their corresponding socio-political contexts. Specifically, we are interested in gaining insight about how the form and context of representations of women and ethnic minorities have changed over time. Our preliminary research focuses on the correlation between changes in facial representations in 
@@ -39,9 +39,7 @@
                         <date when="2018-02-02T15:57:00Z"></date>Will there be a bibliography for these citations.
                     </note>
                 </hi>.
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

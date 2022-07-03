@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Following on from a successful 
+<text><body><p>Following on from a successful 
                 <ref target="https://tinyurl.com/DH2017-AdvancingLOD">
                     <hi rend="underline color(1155CC)">LOD workshop in Montreal</hi>
                 </ref> that saw 30 plus people come together and discuss the potential for linked data in the humanities, we propose a workshop that focuses more specifically on interacting with Linked Data. There are many different platforms for working with linked data 
@@ -140,7 +138,5 @@
             <p>
                 <hi rend="color(1A1A1A)">Deb Stacey</hi>
                 <hi rend="color(1A1A1A)"> Professor, Computer Science University of Guelph</hi>
-            </p>
-        
-    </text>
+            </p></body></text>
 </TEI>

@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>We present ongoing research using data visualization and complex network analysis to historicize the production of three periodicals: 
+<text><body><p>We present ongoing research using data visualization and complex network analysis to historicize the production of three periodicals: 
                 <hi rend="italic">Fireweed, Fuse,</hi> and 
                 <hi rend="italic" xml:space="preserve">Border/Lines. </hi>Computational methods allow for the visualization of metadata describing these magazine issues as a complex network – but what do these visualizations reveal about real social relations involved in the production and circulation of these magazines? 
             </p>
@@ -50,9 +48,7 @@
             <p>Figure 1. A Multi Modal graph (Figure 1) maps relationships between contributors and issues of magazines with a high degree of betweenness centrality: 
                 <hi rend="italic" xml:space="preserve">Fuse </hi>(purple) previously titled, Centerfold (orange); Fireweed (green), and 
                 <hi rend="italic" xml:space="preserve">Border/Lines </hi>(blue).
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

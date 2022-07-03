@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>This Digital Humanities project is an interdisciplinary project effort that uses the lens of, and data from, the U.S. TV show 
+<text><body><p>This Digital Humanities project is an interdisciplinary project effort that uses the lens of, and data from, the U.S. TV show 
                 <hi rend="italic">Seinfeld</hi> to explore questions about television and other media. 
                 <hi rend="italic">Seinfeld</hi>
                 <hi rend="italic" xml:space="preserve"> </hi>has significant cultural influence over other media, but what is its 
@@ -60,9 +58,7 @@
             <p>IMDb, which started in the early 1990s, is very robust, and provides information for free download using Python, but is not usable ’as is.’ Entries may be misleading, incomplete, or unclear, with genres in particular organized in unhelpful ways. The Downloadable information includes the full cast and some types of crew members, but not others. In addition, the fields of the two faculty members made shared vocabulary difficult, and getting complete and clean data that could be turned into tables and graphs meant conducting additional research outside of IMDb, and reorganizing the data significantly from the way Dr. Conaway initially tagged it. SUNY Empire State College also lacks the structures that many institutions have for conducting Digital Humanities work.</p>
             <p>However, we have been able to create some early data visualizations that will show a microcosm of how the US entertainment industry works for various types of actors and crew members, using specifically the data from television programs. We’ve compared 
                 <hi rend="italic">Seinfeld</hi>’s numbers of actors and crew to that of other shows, analyzed how the media items break down by genre, and visualized how women’s careers wax and wane in different patterns from men’s careers. In the future we will do the same for subgenres, actors of color, and actors of various age groups. 
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

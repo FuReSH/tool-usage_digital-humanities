@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body xml:lang="es">
             <div type="div1" rend="DH-Heading1">
                 </div>
                 <p>Las prácticas de humanidades digitales y la incorporación de archivos para analizar otras historias y saberes conllevan a lo que Roopika Risam describe como un entrecruce de la teoría con la práctica desde una perspectiva poscolonial que cuestiona la representación desde la producción del saber (2017). De acuerdo a Risam, “postcolonial digital humanities offers a language to ask of digital humanities important questions such as who is speaking, who is being spoken of, who is spoken for, which languages are being used, and what assumptions subtend its productions, distribution, and consumption” (2017). Esto es importante ya que el contenido de archivos visualiza otras historias que al incorporarse a plataformas digitales logran mayor alcance y difusión del material.  Sin embargo, el acceso a los archivos varía según su estado ya que algunos pertenecen a instituciones gubernamentales, privadas, u organizaciones no lucrativas lo que afecta su disponibilidad y acceso en línea. Por otra parte, el estado físico del material también puede llegar a limitar el acceso dado a que su mantenimiento, por lo general, depende de su relevancia
@@ -56,10 +56,7 @@
                     <figure>
                         <graphic url="Pictures/3bce6c309ab70069bc0f3246ee4a22be.jpg"></graphic>
                     </figure>
-                </p>
-            
-        
-        <back>
+                </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

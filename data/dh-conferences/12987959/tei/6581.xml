@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Abstract</p>
+<text><body><p>Abstract</p>
             <p>This paper describes a study which analyzes natural disasters described in the Chinese Standard Histories. We first define the scope and nature of disasters as presented in the Standard Histories. The records, in plain text but usually contain the dates, locations, type, and severity of the natural disasters, are then extracted. The extracted records are further annotated with metadata so as to meet the needs of the studies on the history of disasters. In order to ensure flexibility and extensibility, we have designed a markup language, WXML, to tag the information. A search/retrieval system with GIS is then developed to provide visualization of the distribution of time, space, and type of disasters of the search result. </p>
             <p>We have made some preliminary observations. For instance, the number of disasters recorded during the Yuan Dynasty is significantly higher than the other dynasties (both in absolute number and on average). As another example, disasters seem to disproportionately concentrate around urban centers, in particular the capital of the time. This shows that the records in the Standard Histories may not accurately reflect the actual events, but rather how they were documented by the officials.</p>
             <list type="ordered">
@@ -123,9 +121,7 @@
                 <hi rend="italic">Wuxhingzhi</hi> and 
                 <hi rend="italic">Benji</hi>, and developed a markup language WXML to tag the events. We then build a system which is flexible in that one can use any of the measures mentioned above to show the results. Since the records are time-standardized and geo-referenced, our system also allows one to specify the type of disasters, time period, and locations and present the results either as charts or geographically. We are currently developing our system to allow full-text search to add flexibility.
             </p>
-            <p>We presented some preliminary observations. They seem to show that the natural disasters documented in the Standard Histories may not truthfully reflect the actual natural disasters that occurred. In other words, the records may reflect more on the circumstances under which the books were produced rather than the actual disasters that occurred. To more accurately capture natural disasters in Chinese history, one should at least also consult the local gazetteers (difangzhi, 地方志) (Chen, 2016). The WXML that we have designed is sufficiently flexible to incorporate those records as well.</p>
-        
-        <back>
+            <p>We presented some preliminary observations. They seem to show that the natural disasters documented in the Standard Histories may not truthfully reflect the actual natural disasters that occurred. In other words, the records may reflect more on the circumstances under which the books were produced rather than the actual disasters that occurred. To more accurately capture natural disasters in Chinese history, one should at least also consult the local gazetteers (difangzhi, 地方志) (Chen, 2016). The WXML that we have designed is sufficiently flexible to incorporate those records as well.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

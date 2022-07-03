@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>This poster will present a progress report on a project that aims to explore how historians and other humanities scholars can most effectively access and use the data hidden in the silos of digital archival collections to craft narratives about significant developments and critical junctures in historical events, using Linked Data and event-based description. This project has two objectives: 1) to investigate the efficacy of an event-based model of description that will facilitate search across archival inventories and textual documents found in archival collections, and, 2) to develop and test a software tool that will allow scholars to more easily discover and use these hidden nuggets of information about events, and facilitate the construction of explanatory narratives about historical phenomena.</p>
+<text><body><p>This poster will present a progress report on a project that aims to explore how historians and other humanities scholars can most effectively access and use the data hidden in the silos of digital archival collections to craft narratives about significant developments and critical junctures in historical events, using Linked Data and event-based description. This project has two objectives: 1) to investigate the efficacy of an event-based model of description that will facilitate search across archival inventories and textual documents found in archival collections, and, 2) to develop and test a software tool that will allow scholars to more easily discover and use these hidden nuggets of information about events, and facilitate the construction of explanatory narratives about historical phenomena.</p>
             <div type="div1" rend="DH-Heading1">
                 Linked Data and Event-Based Description
                 <p>
@@ -35,7 +33,7 @@
                 </p>
                 <p>This poster will provide a progress report on the following activities: 1) Testing the event model with semantic metadata drawn from the May 4 Collection, which is an archival collection from the Kent State University Libraries; 2) Developing and refining a web-based tool to assist historians and cultural heritage scholars in building and testing hypothetical narratives based on the linking of event information from various sources.</p>
             </div>
-        
+</body>
         <back>
             <div type="bibliogr">
                 <listbibl>

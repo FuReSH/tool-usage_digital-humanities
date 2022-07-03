@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Since its inception in 2012, the 
+<text><body><p>Since its inception in 2012, the 
                 <ref target="http://viraltexts.org/">
                     <hi rend="italic">Viral Texts Project</hi>
                 </ref> has identified several millions of reprinted texts from corpora of nineteenth-century newspapers. The project began with the aim of isolating texts worthy of closer academic scrutiny from the “big data” of scanned newspapers, but the project’s derived data is itself now so big that it cannot be effectively studied through browsing and reading alone. This poster describes our efforts to theorize and implement one solution to this challenge, through computational classification that identifies reprinted texts by genre. The poster will also share a prototype crowd-sourcing experiment that creates a bridge between computational research and various publics by encouraging scholars, students, journalists, and others to explore the strange genres of the nineteenth-century newspaper while enhancing our ground-truth data for training improved classifiers. Following other scholars who affirm the importance of human judgment in computational text analysis 
@@ -35,9 +33,7 @@
             </figure>
             <p>The poster we propose will outline our process, describe what we’re learning about genre in the nineteenth-century periodical press, present early results and visualizations, and offer conference attendees the opportunity to try out “
                 <ref target="http://home.jonathandfitzgerald.com:3838/VT-Crowdsource/">The Amazing Generic Automaton</ref>.” We expect our presentation will lead to meaningful conversations about innovative approaches to genre classification, the nature of literary genre situated in specific historical periods, and the benefits of creating bridges between complex computational text analysis work and the public.
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

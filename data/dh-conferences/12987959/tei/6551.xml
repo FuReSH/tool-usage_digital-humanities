@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="bold" xml:space="preserve">PI and Presenter: </hi>Brad Rittenhouse
             </p>
             <p>
@@ -29,9 +27,7 @@
                 <graphic n="1001" width="16.51cm" height="10.31875cm" url="Pictures/d54e5de94c202cef1354fda44dcbef75.png" rend="inline"></graphic>
                 Figure 
             </figure>
-            <p>This curatorial process builds upon the methods described by Long and So in their recent article “Literary Pattern Recognition: Modernism between Close Reading and Machine Learning,” using high-powered computing and statistical analysis on a corpus scale to identify information-dense passages for later close reading and analysis. Reading literature as information, the methodology is flexible in not only illuminating macro-scale trends, but also identifying human-readable works and passages for literary critics who also value critical reading practices. The project also runs in parallel to Dennis Yi Tenen’s recent work in its “articulation of ‘effect spaces’ via material density,” though it pulls from a broader range of quantitative, grammatical measures in its attempt to broaden the generic construct of encyclopedic writing. </p>
-        
-        <back>
+            <p>This curatorial process builds upon the methods described by Long and So in their recent article “Literary Pattern Recognition: Modernism between Close Reading and Machine Learning,” using high-powered computing and statistical analysis on a corpus scale to identify information-dense passages for later close reading and analysis. Reading literature as information, the methodology is flexible in not only illuminating macro-scale trends, but also identifying human-readable works and passages for literary critics who also value critical reading practices. The project also runs in parallel to Dennis Yi Tenen’s recent work in its “articulation of ‘effect spaces’ via material density,” though it pulls from a broader range of quantitative, grammatical measures in its attempt to broaden the generic construct of encyclopedic writing. </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

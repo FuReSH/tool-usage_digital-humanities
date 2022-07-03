@@ -1,0 +1,11 @@
+
+
+# notes
+
+[^1]:  A user interface for designing these ontologies is under development.
+[^2]:  Integrated Authority File, Deutsche National Bibliothek, 
+                                http://www.dnb.de/EN/Standardisierung/GND/gnd_node.html
+[^3]:  Text with Standoff Markup, 
+                                http://www.knora.org/documentation/manual/rst/knora-ontologies/knora-base.html#text-with-standoff-markup
+[^4]:  Creating a Custom Mapping, 
+                                http://www.knora.org/documentation/manual/rst/knora-api-server/api_v1/create-a-mapping.html#creating-a-custom-mapping

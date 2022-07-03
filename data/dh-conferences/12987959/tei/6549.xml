@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>La criptografía por fin está detrás de prácticamente cualquier acción que emprendamos en Internet — Hemos llegado por fin a una adopción masiva del cifrado para la mayor parte de las comunicaciones en línea. Esto puede leerse desde ángulos muy distintos — Por un lado, nuestras comunicaciones están seguras del espionaje o modificación por parte de terceros. Por otro lado, está 
+<text><body><p>La criptografía por fin está detrás de prácticamente cualquier acción que emprendamos en Internet — Hemos llegado por fin a una adopción masiva del cifrado para la mayor parte de las comunicaciones en línea. Esto puede leerse desde ángulos muy distintos — Por un lado, nuestras comunicaciones están seguras del espionaje o modificación por parte de terceros. Por otro lado, está 
                 <hi rend="italic">firmada</hi> –por nosotros y por nuestra contraparte– de forma que permite un 
                 <hi rend="italic">no repudio</hi>. 
             </p>
@@ -35,7 +33,5 @@
             </p>
             <p>Pero además, todos estos grupos, con sus características únicas y sus distintos grados de formalidad/informalidad/aformalidad, se han ido engranando y retroalimentando. La 
                 <hi rend="italic">cultura hacker</hi> es, ante todo, cultura. Los espacios (presenciales o electrónicos) de reunión de hackers son, necesariamente, espacios de creación cultural. Y mostraremos cómo todos estos grupos se han convertido en referentes de la creación cultural, de la generación de movimientos sociales — Estando, en todo momento, vinculados con sus principios creadores: Con la belleza técnica y elegancia algorítmica que posibilitan la existencia de la criptografía.
-            </p>
-        
-    </text>
+            </p></body></text>
 </TEI>

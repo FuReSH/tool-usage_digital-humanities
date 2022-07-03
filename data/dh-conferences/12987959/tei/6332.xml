@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>1. Introduction</p>
+<text><body><p>1. Introduction</p>
             <p>
                 <hi rend="color(353535)">In Fall 2015, we were approached by author (and prominent DH-skeptic [2012]) Stephen Marche with a request that we help him use computational textual analysis to allow him to write “the perfect science fiction story.” His specific request was for a set of “rules” to follow in composing such a story. On consultation with Marche, we devised an approach that would derive “rules” related to theme (using topic modelling) and style (using a variety of techniques, including our own original work on quantifying style) from a hand-selected corpus of Marche’s 50 favourite science fiction stories. In Fall 2016, we sent Marche a list of 14 thematic rules and created a system to provide real-time stylistic feedback on his efforts to meet a set of 24 stylistic targets. In December 2017, the resulting story, “Twinkle Twinkle,” was published in the popular technology magazine</hi>
                 <hi rend="italic color(353535)" xml:space="preserve">Wired </hi>
@@ -158,9 +156,7 @@
             <p>
                 <hi rend="bold color(353535)">5. Conclusion</hi>
             </p>
-            <p>The “Twinkle, Twinkle” project will likely be received by the public as another instance in the longstanding debate about the proper role of machines in storytelling. Yet for us, its significance is rather different. It served as an opportunity to use tools and approaches designed for the analysis of literature in creative production; to validate our 6-dimensional approach to style; and to reach across the divide that continues to separate academic work on literary analysis both from contemporary creative writers and their popular audiences.</p>
-        
-        <back>
+            <p>The “Twinkle, Twinkle” project will likely be received by the public as another instance in the longstanding debate about the proper role of machines in storytelling. Yet for us, its significance is rather different. It served as an opportunity to use tools and approaches designed for the analysis of literature in creative production; to validate our 6-dimensional approach to style; and to reach across the divide that continues to separate academic work on literary analysis both from contemporary creative writers and their popular audiences.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>This workshop introduces 
+<text><body><p>This workshop introduces 
                 <ref target="http://recogito.pelagios.org/">
                     <hi rend="italic">Recogito 2</hi>
                 </ref>, a tool developed by Pelagios Commons that enables annotation of geographic place references in text, images and data through a user-friendly online platform. Perhaps the most notable feature of Recogito 2 is the ability to produce semantic data without the need to work with formal languages directly, while at the same time allowing the user to export the annotations produced as valid RDF, XML and GeoJSON formats.
@@ -45,7 +43,5 @@
                 <lb></lb>Finally, participants will learn how to export data from Recogito in a variety of formats suitable for visualizing and analysis in other tools, such as spreadsheets, databases or GIS.
             </p>
             <p>To maximise the benefit of the workshop, participants are invited to bring their own data and documents to annotate. Recogito currently has greatest support for ancient and modern sources (including most languages). Materials from other periods can also be annotated but the level and quality of georesolution may vary. The workshop will provide sample texts, imagery and data for attendees without their own datasets. The workshop will show examples of annotations of different kind of sources, and discuss their specific challenges. Throughout the workshop there will be opportunities for participants to discuss how Recogito 2 might be used to support their own research. </p>
-            <p>Visualising and contextualizing geographical information within documents can be an important step in reaching a deeper understanding of their content, potentially highlighting phenomena that would have been otherwise difficult to identify. It is also an effective tool for engaging students when encountering historical texts and collections. The design of Recogito 2 is intended to make the production of semantic annotations easy and intuitive, opening the door of the Linked Open Data ecosystem to a wide range of users, including without prior experience of semantic technologies.</p>
-        
-    </text>
+            <p>Visualising and contextualizing geographical information within documents can be an important step in reaching a deeper understanding of their content, potentially highlighting phenomena that would have been otherwise difficult to identify. It is also an effective tool for engaging students when encountering historical texts and collections. The design of Recogito 2 is intended to make the production of semantic annotations easy and intuitive, opening the door of the Linked Open Data ecosystem to a wide range of users, including without prior experience of semantic technologies.</p></body></text>
 </TEI>

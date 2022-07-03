@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <p rend="normal">Este artículo explora las prácticas colaborativas de catalogación y creación de metadatos en archivos localizados en contextos de escasa conectividad, acceso tecnológico limitado, e incipiente desarrollo de nuevos alfabetismos. Tomando como ejemplo el proyecto de Catalogación Colaborativa del Fondo Notaría Segunda del Archivo Histórico Regional de Boyacá en la ciudad de Tunja, Colombia, analizamos cómo una plataforma digital y una comunidad de práctica pueden suplir las necesidades de acceso a tecnología, información y conocimiento a través de la “producción entre pares” o “
                 <hi rend="italic">peer production</hi>” (Benkler 2006; Benkler, Shaw, &amp; Hill 2015) y la cultura participativa (Jenkins et al. 2006; Jenkins 2010). Dada la desigualdad de acceso a recursos tecnológicos, culturales y humanos para proyectos de digitalización y catalogación documental, en este artículo identificamos estrategias para acceder a tecnologías abiertas, y desarrollar nuevos alfabetismos (Lankshear and Nobel 2006, 2007; Dussel 2009; Jenkins et al. 2006; Jenkins 2010) que faciliten la producción colectiva de conocimiento y la construcción de culturas participativas desde el sur global. 
             </p>
@@ -22,9 +22,7 @@
             </p>
             <p rend="normal">Existen diversos proyectos de 
                 <hi rend="italic">crowdsourcing</hi> en las humanidades digitales que han sido objeto de análisis en el mundo angloparlante (Terras 2016). Sin embargo, los retos de la colaboración abierta distribuida en el sur global están conectados a factores culturales, económicos y de acceso a tecnología, que han sido poco estudiados. Nuestro análisis del proyecto del AHRB permite apreciar cómo la comunidad de práctica conformada para la catalogación de documentos históricos le ofrece a los participantes no solo la oportunidad de contribuir a la construcción de la memoria pública (Owens 2012) sino también desarrollar nuevos alfabetismos como el trabajo en red entre pares y la inteligencia colectiva (Jenkins et. al. 2006). A pesar de las brechas digitales existentes en algunos contextos locales, el proceso de catalogación colaborativa permite crear puentes de acceso a tecnología, tejer redes entre expertos y aficionados, y cultivar una cultura participativa, a la vez que contribuye a la conservación y promoción del patrimonio cultural. 
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliografía

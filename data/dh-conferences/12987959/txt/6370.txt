@@ -1,0 +1,8 @@
+
+
+# notes
+
+[^1]:  Romanov, M, OpenITI. http://alraqmiyyat.github.io/OpenITI/
+[^2]:  T. Zerrouki, Tashaphyne, Arabic light stemmer, https://pypi.python.org/pypi/Tashaphyne/0.2
+[^3]:  http://inl.github.io/BlackLab/
+[^4]:  https://github.com/arabic-digital-humanities

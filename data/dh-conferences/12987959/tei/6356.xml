@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="background(white)" xml:space="preserve">In his preface to </hi>
                 <hi rend="italic background(white)" xml:space="preserve">Doing Digital Humanities: Practice, Training, Research </hi>
                 <hi rend="background(white)" xml:space="preserve">(2016), Ray Siemens points out that imagining digital humanities as a community of practice wherein participants come into conversation with one another over shared approaches to craft establishes a “methodological commons” where fields intersect by sharing their work processes. Presenting a taxonomy of approaches to training that span from the informal to the formal within the methodological commons, Siemens suggests that the variety of possible approaches builds an infrastructure for “self-determination” in humanists’ approach to learning useful skills. Somewhere between informal consultations and formal degree programs, short courses and “bootcamps” offer professional and research skill development opportunities that scholars can choose from based on their most pressing needs. </hi>
@@ -40,9 +38,7 @@
             <p>
                 <hi rend="background(white)" xml:space="preserve">Our poster will feature curricula, pedagogical materials such as datasets, and resources developed for the ten-day residential institute, where participants will explore interdisciplinary digital humanities research and teaching with leading DH scholars, develop core computational research skills through hands-on workshops, and begin developing versions of the DHRI for their own communities. </hi>We will share lessons learned and provide information about forthcoming institutes. Short video clips will feature our unique approach to digital humanities pedagogy and 
                 <anchor xml:id="ux24okaqmmt4"></anchor>interviews with previous institute instructors and participants. 
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

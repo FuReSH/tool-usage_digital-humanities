@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Overview/Panel Abstract</p>
+<text><body><p>Overview/Panel Abstract</p>
             <p> First developed in 2013, the Praxis Network (praxis-network.org) brought attention to the ways in which digital humanities was being used to rethink the nature of student training, campus partnerships, and pedagogy. The institutions profiled in the project aimed to reorient student training towards new, collaborative practices that would prepare students for forward-looking scholarship and meaningful careers in the humanities. Five years later, at DH 2018, we propose to reflect on these efforts, to assess the current state of digital humanities training and its relationship to and effects on praxis-oriented pedagogy.</p>
             <p> The participants assembled for this roundtable session represent both the past and the future of these efforts to join theory and practice, classroom and public. Part of the roundtable will consist of participants that were part of the original Praxis Network, longstanding presences on their local campuses whose architects will report on the institutional challenges and successes they have faced in the five years since their profiling in the Network. The University of Virginia’s Praxis Program Fellowship, for example, annually engages student cohorts in the development of collaborative research projects, but the program’s success exposes limitations offered by this model even given attempts to expand it to a wider community with regional partners. Similarly, a representative from Michigan State University will discuss attempts to expand the collaborative nature of student work while also turning the projects increasingly towards the public. And the CUNY Graduate Center will share recent efforts by their digital fellows program to develop weeklong institutes in digital methods both locally and nationally.</p>
             <p> The remaining institutions on the roundtable all represent new, like-minded initiatives with unique constituencies and concerns. Many of our programs encourage public-facing scholarship, and a representative from Brown University’s Center for Public Humanities and Cultural Heritage will argue for experiential learning in the digital humanities in a public humanities context. The Five College Digital Humanities and Blended Learning Initiative offers lessons in how to address resistance to incorporating praxis-oriented methodologies in the classroom. Alt.code, an initiative funded by the National Endowment for the Humanities at Renssealaer Polytechnic Institute, offers a model for joining the instruction of technical skills with critical perspectives on technology as linked parts of the same epistemic domain. Finally, a trio of scholars from the Universidad Nacional Autónoma de México and Tecnológico de Monterrey will speak to the difficulties they have encountered developing pedagogical and institutional initiatives based in digital humanities in Mexico.</p>
@@ -103,9 +101,7 @@
                 <hi rend="background(white)" xml:space="preserve"> provide doctoral students in good standing with funds to propose and prototype research projects. Students write proposals and budgets, execute their idea, and present ongoing work at the end-of-year, community showcase. Previous student projects have received external funding and awards, including the </hi>
                 <hi rend="color(333333) background(white)">Lisa Lena Opas-Hänninen Prize for New and Young Scholars and the Paul Fortier Prize for New and Young Scholars.</hi>
             </p>
-            <p> Through examples of student projects, research, and professional development workshops, this presentation will offer an overview of the opportunities and challenges of scaling out graduate training in digital humanities methods to wider communities.</p>
-        
-        <back>
+            <p> Through examples of student projects, research, and professional development workshops, this presentation will offer an overview of the opportunities and challenges of scaling out graduate training in digital humanities methods to wider communities.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

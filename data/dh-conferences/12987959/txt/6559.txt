@@ -1,0 +1,22 @@
+
+
+# notes
+
+[^1]: This contribution is concerned with the linguistic manifestation of emotions in literary texts on the textual surface. See Winko, 2003 for a discussion of how emotional meaning and literary texts are related.
+[^2]: The anti-slavery novel, for example, has been defined in terms of its atmosphere of fear, but also by vigorous interferences of the narrator. Cf. Rivas, 1990.
+[^3]: This is a subcollection of a larger corpus of Spanish American novels being prepared in the context of the junior research group 
+                        Computation Literary Genre Stylistics (CLiGS), see 
+                        .
+                    
+[^4]: Because the many variations found had to be normalized for this computational analysis, an interpretive step was unavoidable.
+[^5]: Novels of manners in the context of the Costumbrismo movement.
+[^6]: The distribution of novels shows that there is a tendency for sentimental novels to belong to the first half and for non-sentimental novels to the second half of the century. This observation may be relevant for future tasks with a bigger corpus and interested in the development of genres over time. More detailed metadata for the novels can be found at 
+                        .
+                    
+[^7]: SentiWordNet can be used for Spanish because the synset IDs can be mapped to the Spanish version of WordNet. The NRC lexicon has been translated into Spanish automatically. See Baccianella et al., 2010 for evaluation reports for SentiWordNet. The authors of the NRC lexicon state that the translated versions may contain errors. An orthographic check on the NRC lexicon returned 409 entries that were not recognized as Spanish words. A further evaluation and improvement of the translated lexica is desirable.
+[^8]: The Sentiment Analysis could be refined further by considering the sentence structure (and negation), which is a future task.
+[^9]: Restricting the tree depth helps to prevent overfitting and usually leads to a better performance of the classifier on the test set.
+[^10]: See Hettinger et al., 2016 for a discussion of various types of features (MFW, topics, networks) for subgenre classification, stating that genre classification in general works best with most frequent words, all words, and the like.
+[^11]: The results of all experiments can be found at 
+                        .
+                    

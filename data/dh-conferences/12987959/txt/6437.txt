@@ -1,0 +1,17 @@
+
+
+# notes
+
+[^1]:  Este trabajo se enmarca dentro del proyecto de investigación Starting Grant Poetry Standardization and Linked Open Data: POSTDATA (ERC-2015-STG-679528), financiado por el European Research Council (ERC) bajo el programa: European Union´s Horizon 2020 research and innovation programme, dirigido como Investigador Principal por la profesora Elena González-Blanco, LINHD UNED (
+                            http://postdata.linhd.es/).
+                        
+[^2]: http://prosody.lib.virginia.edu/
+[^3]: http://versologie.cz/v2/web_content/
+[^4]: http://adso.gplsi.es/index.php/es/demostracion/
+[^5]: http://www.separarensilabas.com/index.php
+[^6]: http://lexiquetos.org/silio/
+[^7]: https://metricalizer.de/en/metrikanalyse/poem
+[^8]: http://aoidos.ufsc.br/
+[^9]: http://www.sci.utah.edu/~nmccurdy/rhymeDesign/
+[^10]: https://sites.google.com/site/spanishenjambment/
+[^11]: https://sites.google.com/site/spanishenjambment/legend

@@ -1,0 +1,32 @@
+
+
+# notes
+
+[^1]:  This image was downloaded from <http://www.lyqtzz.com/uploadfile/20110817165325665.jpg>. The Tang dynasty existed between 688CE and 907CE. More images of tomb biographies are available at <http://goo.gl/XHCL9P>.
+[^2]:  The China Biographical Database (https://projects.iq.harvard.edu/cbdb/home) is a free and open database for Chinese studies.
+[^3]:  The 
+                            precision rate, 
+                            recall rate, and 
+                            F measure are designed for evaluating the effectiveness of information retrieval and extraction. F
+                            1 is a popular choice of the F measure.
+                        
+[^4]:  Shiji (史記) and Zuozhuan (左傳) are two very important sources about Chinese history.
+[^5]:  The 
+                            item accuracy evaluates the labeling judgments including both punctuated and non-punctuated items. In a typical sentence segmentation task, there are many more non-punctuated items than punctuated items, so it is relatively easier to achieve attractive figures for the item accuracy than for the F measure.
+                        
+[^6]:  We interviewed Hongsu Wang (王宏甦), the project manager of the China Biographical Database Project at Harvard University, about his preferences in post-checking the segmentation results that are produced by software. He suggests that higher precision rates are preferred. When seeking higher recall rates (often sacrificing the precision rates), the false-positive recommendations for punctuation are annoying to the researchers.
+[^7]:  In terms of Linguistics, we have 5505 character types and 2,461,000 character tokens.
+[^8]:  30 is an arbitrary choice, and can be changed easily.
+[^9]:  Due to the constraint on the word count in DH 2018 proposals, we can only briefly outline the steps for training and testing CRF models. More details can be provided in the presentation and in an extended report.
+[^10]:  Here, we adopt typical notations for CRF-based applications. w[0] is the current word, w[-1] is the neighbor word to the left of the current word, w[1] is the neighbor word to the right of the current word. Two actual instances that are produced from “孝敬天啟，動必以禮” for character-based segmentations will look like the following. O w[-1]=敬,w[0]=天,w[1]=啟M w[-1]=天,w[0]=啟,w[1]=動Two instances that are produced from “母子 忠孝 ， 天下 榮 之” for the word-based segmentations will look like the following.M w[-1]=母子,w[0]=忠孝,w[1]=天下 O w[-1]=忠孝,w[0]=天下,w[1]=榮
+[^11]:  CRFSuite: <http://www.chokkan.org/software/crfsuite/>
+[^12]:  Thus, the instances for testing CRFs look like (1) and (2) that do not carry the correct labels, M and O, respectively..
+[^13]:  Recall that we used only those biographies that have no less than 30 characters.
+[^14]:  Here, w[-1_0] is the bigram on the left side of the current word, and w[0_1] is the bigram to the right of the current word. When we consider bigrams for a wider context, we may consider bigrams like w[-2_-1] and w[1_2].
+[^15]: Guangyun and 
+                                Pingshuiyun are《廣韻》and《平水韻》, respectively
+                            
+[^16]:  This does not suggest that using the pronunciation information alone was not useful. We have conducted more experiments to evaluate the effectiveness of using the pronunciation information for the segmentation tasks, and will provide more details in the presentation and in an extended report.
+[^17]:  In Table 2, WOC stands for “Width of Context”, “P” stands for precision, “R” stands for recall, “C+B” stand for “Characters and Bigrams” and “C+B+W” stands for “Characters, Bigrams, and Words”.
+[^18]:  In addition to Hongsu Wang of Harvard University, we also consulted Professor Zhaoquan He (何兆泉) of the China Jiliang University. They use tomb biographies of the Tang and the Song dynasties in their research. 
+[^19]:  Again, we could not provide details about more experiments because of the word limit for DH 2018 submissions.

@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <anchor xml:id="Hlk499472137"></anchor>The Research Environment for Ancient Documents (READ) is an integrated Open Source web platform for epigraphical and manuscript research. It may be configured as the underlying engine for a text repository or as a complementary research toolset to an existing repository. The defining innovation of this software is the atomization of text into orthographic subunits (as opposed to lines or words). This enables mapping across all layers of textual analysis, from factual data (the location of a character on a surface) through contestable (the transcription of a character) to the purely interpretive (a semantic annotation). This data architecture enables:
             </p>
             <list type="unordered">
@@ -53,7 +51,5 @@
                     <lb></lb>READ has been designed as a collaborative tool from the outset. Researchers can choose to share visibility and editing rights to any of the elements in their work. Work can also be published in mutable and immutable forms via the READ viewer interface, as well full text editions in TEI, exported HTML, and RTF that can be opened in common word processing and desktop publishing software applications. 
                 </item>
             </list>
-            <p>The READ project began in 2013 and has been funded by Ludwig-Maximilians Universität, Munich, Germany; the University of Washington, Seattle, USA; Université de Lausanne, Switzerland; University of Sydney, Australia; and Prakaś Foundation, Sydney, Australia.</p>
-        
-    </text>
+            <p>The READ project began in 2013 and has been funded by Ludwig-Maximilians Universität, Munich, Germany; the University of Washington, Seattle, USA; Université de Lausanne, Switzerland; University of Sydney, Australia; and Prakaś Foundation, Sydney, Australia.</p></body></text>
 </TEI>

@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="italic bold color(212121)">Bibliographic data visualization: the use of VOSviewer as a tool for keywords bibliometric analysis on Digital Humanities production</hi>
             </p>
             <p>O objetivo dessa pesquisa é mapear, através da identificação de termos de palavras-chave, quais as principais atividades presentes nas humanidades digitais construindo e visualizando mapas bibliométricos oriundos de uma revisão de literatura deste tema. Dessa forma é proposta uma análise desses dados a partir da utilização do software VOSviewer para construção de redes de relacionamento dos termos provenientes das bases: Web Of Science (WoS) e Scopus. Assim, foram gerados grafos de palavras-chave baseados nos termos atribuídos à literatura registrada nessas duas bases de dados. Buscamos dessa forma combinar essas duas análises a partir da construção de dois mapas distintos e possibilitar seu cotejamento.</p>
@@ -66,9 +64,7 @@
                 <hi rend="italic">digitization</hi> (cluster 5). Vale destacar que o termo com maior peso foi 
                 <hi rend="italic">digital libraries</hi> tanto na WoS como na Scopus.
             </p>
-            <p> Dessa forma os mapas permitem visualizar termos e conceitos mais presentes na literatura e, consequentemente, possibilitam a clarificação da relação entre eles. Apesar da grande rede de relacionamento que os mapas exibem é possível, mesmo interpretando apenas os clusters criados, contemplar, por exemplo, as áreas principais que interagem para formar a ideia de humanidades digitais na literatura. Além disso, sobretudo, o cotejamento dos grafos provenientes de cada repositório de literatura permite corroborar quais termos se consolidam através de sua reincidência nos mapas.</p>
-        
-        <back>
+            <p> Dessa forma os mapas permitem visualizar termos e conceitos mais presentes na literatura e, consequentemente, possibilitam a clarificação da relação entre eles. Apesar da grande rede de relacionamento que os mapas exibem é possível, mesmo interpretando apenas os clusters criados, contemplar, por exemplo, as áreas principais que interagem para formar a ideia de humanidades digitais na literatura. Além disso, sobretudo, o cotejamento dos grafos provenientes de cada repositório de literatura permite corroborar quais termos se consolidam através de sua reincidência nos mapas.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

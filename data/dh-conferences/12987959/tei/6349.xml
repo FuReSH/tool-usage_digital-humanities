@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="color(181818)">The Serge Prokofiev Archive as Data</hi>
             </p>
             <p>
@@ -40,9 +38,7 @@
                 <hi rend="color(181818)">. In Kate Theimer’s notion of</hi>
                 <hi rend="color(1A1A1A)" xml:space="preserve"> “archives as platform,” tools and technologies help users interact with archives in creative ways that add value to their lives and experiences. Work that takes place “behind the scenes” (</hi>Theimer, 2014
                 <hi rend="color(1A1A1A)" xml:space="preserve">) by archivists and their collaborators helps define the archive as a dynamic cross-disciplinary learning space. </hi>
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

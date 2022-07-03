@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>The methods of network analysis are becoming increasingly relevant to the digital humanities, particularly in relation to the study of literary characters (Moretti 2011; Pohl, Reitz, and Birke 2008; Park et al. 2013; Trilcke, Fischer, and Kampkaspar 2015; Elson, Dames, and McKeown 2010; Agarwal et al. 2012; Waumans, Nicodème, and Bersini 2015; Xanthos et al. 2016; Choi and Kim 2007; Bollen 2017; Fischer et al. 2017). Several recent studies and presentations have focused on drama. Most studies deal with European and American drama and this is possibly due in part due to easily available data.</p>
+<text><body><p>The methods of network analysis are becoming increasingly relevant to the digital humanities, particularly in relation to the study of literary characters (Moretti 2011; Pohl, Reitz, and Birke 2008; Park et al. 2013; Trilcke, Fischer, and Kampkaspar 2015; Elson, Dames, and McKeown 2010; Agarwal et al. 2012; Waumans, Nicodème, and Bersini 2015; Xanthos et al. 2016; Choi and Kim 2007; Bollen 2017; Fischer et al. 2017). Several recent studies and presentations have focused on drama. Most studies deal with European and American drama and this is possibly due in part due to easily available data.</p>
             <p>
                 <hi rend="color(00000A)" xml:space="preserve">However, we believe that network analysis can be used to interrogate interesting features of Javanese theatre as well. Our research focuses on </hi>
                 <hi rend="italic color(00000A)">wayang kulit</hi>
@@ -95,9 +93,7 @@
             <p>
                 <hi rend="bold color(00000A)">Figure 5.</hi>
                 <hi rend="color(00000A)" xml:space="preserve"> Network-theoretical measures for a given character (Baladewa in this example), forthcoming online portal.</hi>
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

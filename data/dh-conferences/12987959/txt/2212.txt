@@ -1,0 +1,140 @@
+
+
+# The History of Medicinal Plants from the New World Case Study 
+
+
+As proof of concept for semantic interoperability, our work focuses on cultural heritage data relating to the history of medicinal plants in the Low Countries roughly from the moment that natural drug components from the New World started penetrating Europe until the introduction of chemical and synthetic drugs in the nineteenth century (i.e., 1550–1850). The resulting system aims at enabling a historian to investigate the trajectories of colonial drug components in the Low Countries, and the patterns of correspondence, trade, and knowledge exchange that lie underneath it. Our case study is meant to provide the aggregated data required for new information to surface, which an individual researcher is unable to produce by means of traditional historical research alone. 
+
+The factors leading to the adoption of a given drug component are revealing of the dynamics of the medical market at that historical period of time. Recent research showed that drug adoption has only partly to do with therapeutic qualities. Equally important are non-medical factors such as public acceptance, marketing, and availability (Pieters, 2004; Gijswijt-Hofstra et al., 2002; Friedrich and Müller-Jahncke, 2009). A special focus on the trajectories of individual drugs has proven itself a valuable research method in this respect. For colonial botanical drugs in the early modern period, several publications have paved the way for this novel approach in the history of tropical medicine (e.g., Vöttiner-Pletz [1990] on guaiacum, used to treat syphilis; Foust [1992] on rhubarb; Jarcho [1993] on Peruvian bark). 
+
+Another interesting aspect of our case study relates to the circulation of knowledge and goods in the early modern period with particular attention to exotic botany and pharmacy in the Netherlands (as in, e.g., Wilson, 2000; Schiebinger and Swan, 2005; Cook, 2007; Dauser et al., 2008; Dupré and Lüthy, 2011; Snelders, 2012; Van Gelder, 2012). Knowledge about the vicissitudes of individual drugs across time and place may enrich current debates about the circulation of knowledge and goods. Moreover, sequenced data about colonial drugs may reveal trajectory patterns and the mechanisms of trade and exchange in the early modern period. 
+
+These aspects of our case study make it thus an excellent ground for digital research methods experimentation and a resource for other humanities areas, such as pharmacy, ethno-botany, philosophy, and science of the Enlightenment period, and socio-economic studies of the respective colonial trade period. 
+
+
+# Creating Time Capsules 2 
+
+
+Our data sources are of two main categories: structured database data, referring to linguistic, pharmaceutical, and botanical data, such as the Dutch Chronological Dictionary and the Economic Botany Database; and unstructured free text corpora collections, such as pharmacopoeias, medical books, and other Early Dutch text corpora. The complete list of our current data sources is illustrated in Table 1. 
+
+
+# Figure 1. Time capsule architecture overview. 
+
+
+An important consideration and challenge in our database data lie in their various formats (relational database, Excel tables, etc.) and in our text data (OCR errors and transcribed data in Latin or Early Dutch). Most importantly, a serious issue lies in the spelling and semantic variation of both drug component as well as plant names and in the ambiguity of their taxonomic classification, which introduces fuzziness into our data classification. For example, a drug ingredient may or may not originate from a certain plant, which may or may not belong to a given plant taxonomy class and may or may not correspond to a given contemporary name. 
+
+For the semantic integration of our data, we adopt a linked-data approach whereby our data sources are first converted into RDF and then linked to our Historical Drug Components Ontology, so as to enrich existing information of the respective KB, as illustrated in Figure 1. In order to address the issues associated with variation, we incorporate historical lexicon resources, and we further enrich these by application of automatic spelling variation detection (Reynaert, 2014). The issue of uncertainty in our data classification is currently addressed by adopting a fuzzy classification approach, whereby an ambiguous instance may be classified into more categories—e.g., a name can be an instance of both a plant concept and a drug component concept. Finally, our structured data sources are used as a resource in detecting relevant information about drug components and their potential use in text documents. The resulting semantic annotations in these historical text corpora are in turn also converted into RDF and automatically linked to our structured sources, so that original historical written evidence is provided to the researchers. 
+
+| Structured Data  || Botanical, pharmaceutical, historical, and image resources  || 
+Ontology of Historical Drug Components 
+
+Historical drug components information found in historical pharmaceutical sources 
+ || National Museum for the History of Pharmacy  || 
+Economic Botany Database 
+
+Metadata of objects in the Economic Botany Collection 
+ || Naturalis Biodiversity Center  || 
+BRAHMS 
+
+Metadata for 1.2 million records of plant collections 
+ || Naturalis Biodiversity Center  || 
+Snippendaalcatalogus 
+
+Inventory of plants of the Snippendaal’s 1646 Amsterdam botanic garden 
+ || 
+Hortus Botanicus Amsterdam 
+ || 
+IrisBG 
+
+Current information about the plants of the Amsterdam botanic garden, including pictures 
+ || 
+Hortus Botanicus Amsterdam 
+
+http://dehortus.gardenexplorer.org/ 
+ || 
+Dutch Nature Images Collection 
+
+Images of flora and fauna in the Netherlands and the Dutch Antilles 
+ || 
+Netherlands Institute for Sound and Vision—Stichting Natuurbeelden 
+
+http://www.natuurbeelden.nl/ 
+ || 
+RADAR 
+
+Geographical and research data about botanical macro remains collected during archaeological excavations on Dutch territory 
+ || Cultural Heritage Agency (RCE)  || Lexical resources  || 
+PLAND 
+
+Plant names in various Dutch dialects, including sources, dates, locations, and name distributions 
+ || 
+Meertens Institute 
+
+http://www.meertens.knaw.nl/pland/ 
+ || 
+Chronological Dictionary 
+
+Historical/etymological Dutch dictionary including first observed sources and dates 
+ || 
+Meertens Institute 
+
+http://dbnl.org/tekst/sijs002chro01_01/ 
+ || 
+GiGaNT 
+
+Diachronic Dutch lexicon (6th century–present), including spelling variations, proper names, and morpho-syntactic information 
+ || 
+Institute for Dutch Lexicology (INL) 
+
+http://www.inl.nl/onderzoek-a-onderwijs/projecten/gigant 
+ || Free-text data  || 
+Looted Letters 
+
+Transcriptions and metadata of c. 3,500 letters, taken as loot from Dutch ships during the Anglo-Dutch wars (1652–1805) 
+ || 
+Meertens Institute 
+
+http://www.gekaaptebrieven.nl/ 
+ || 
+Letters as Loot 
+
+Linguistically analysed subset of c. 1,000 letters from the Looted Letters collection 
+ || 
+Institute for Dutch Lexicology (INL) 
+
+http://brievenalsbuit.inl.nl/ 
+ || 
+CKCC corpus 
+
+Transcriptions and metadata of c. 20,000 letters from the correspondence of 17th-century scholars in the Netherlands 
+ || 
+Huygens ING (and partners) 
+
+http://ckcc.huygens.knaw.nl/ 
+ || 
+DBNL corpus 
+
+Subset of DBNL 16th- to 19th-century texts, including literary, medical, biographical, and other texts 
+ || 
+DBNL–National Library of the Netherlands (KB) 
+
+http://dbnl.org/index.php 
+ || 
+Pharmacopoeias 
+
+Collection of scanned images of apothecary data 
+ || Google Books  |
+
+
+Apart from data aggregation, our time capsules should allow for information re-contextualisation. This issue is partially addressed by our semantic data integration, thus providing the researcher with different but related information sources and aspects (botanical, linguistic, historical). Another important aspect in contextualisation lies in making explicit the relation of data to space and time, thus allowing the virtual spatio-temporal ‘reconstruction’ of the knowledge transfer trajectories. For this purpose, we exploit a combination of spatio-temporal information in our data sources with spatio-temporal reasoning using OWL-Time (W3C, 2006) and SOWL (Batsakis and Petrakis, 2011), an ontology framework for representing and reasoning over spatio-temporal information in OWL. 
+
+In the current version of our system, our structured and free-text sources are being processed and integrated, while a demo interface is gradually developed for querying the aggregated data. Our next steps include the development of an exploratory search interface and visualisations of data overviews. A particular challenge lies in the development of a user-friendly web interface for querying our RDF data using SPARQL (W3C, 2013). Future work finally includes the application of our system to a different case study and different types of data (text and images), so as to test its portability and its functionality in a different domain. 
+
+Notes 
+
+1. From the early ’70s until his death in 1987, Warhol selected items from correspondence, newspapers, gifts, photographs, and other material and preserved them in sealed boxes, which he marked with a date or title. These so-called time capsules provide a unique view into Warhol’s private world, as well as an enlightening window on the interrelatedness of culture, media, politics, economics, and science in the 1970s and 1980s. 
+
+2. http://www.timecapsule.nu/. 
+
+
+# notes

@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>En esta presentación se busca mostrar el avance obtenido en un año de trabajo en el proyecto de creación de un mapa literario de México en el que se representen gráficamente las obras y los espacios en las que éstas se desarrollan. El 
+<text><body><p>En esta presentación se busca mostrar el avance obtenido en un año de trabajo en el proyecto de creación de un mapa literario de México en el que se representen gráficamente las obras y los espacios en las que éstas se desarrollan. El 
                 <hi rend="italic">Atlas de la Narrativa Mexicana del siglo XX</hi> compila y presenta visualmente información geográfica proveniente de las obras más representativas de la literatura mexicana contemporánea con un propósito educativo. Además, el proyecto busca servir como base para la realización de conexiones sociohistóricas que los estudiantes pueden realizar, pues la visualización de las distintas versiones de México presentes en la literatura es un paso importante para la evolución de la identidad cultural del país, así como una manera innovadora de reconocer nuestra realidad dentro de los textos. Por otra parte, este proyecto requiere analizar la narrativa sobre México utilizando herramientas de análisis literario, historia y geografía, a través de medios digitales. Esta naturaleza interdisciplinaria vuelve al proyecto pertinente dentro del marco de las Humanidades Digitales y arroja ya resultados que contribuyen a la metodología de su aplicación en clase.
             </p>
             <p>El primer paso del proyecto (aprobado por la Convocatoria de Experimentación en Innovación Educativa NOVUS en agosto de 2017) ha sido recopilar la información necesaria, creando un corpus de las novelas más representativas de la literatura mexicana del siglo XX (de inicio, por medio de un compilado de Novelas de la Revolución Mexicana: 
@@ -29,7 +27,5 @@
             </p>
             <p>Al final del proyecto, se espera contar con un producto demostrable y perfectible (el 
                 <hi rend="italic">Atlas de la Narrativa Mexicana del siglo XX</hi>), así como con grupos de estudiantes que han pasado por el proceso de contribuir a su creación y que, a través de ello, han aumentado su interés y desempeño en las clases de literatura mexicana. De manera tangible, los alumnos serán capaces de mostrar en un mapa de México los espacios detectados dentro de las obras literarias leídas, así como de explicar distintas relaciones entre el espacio y la obra. 
-            </p>
-        
-    </text>
+            </p></body></text>
 </TEI>

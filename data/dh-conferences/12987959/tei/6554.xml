@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Background</p>
+<text><body><p>Background</p>
             <p>The infrastructures that we use to navigate the world often become invisible as they become indispensable (Bowker and Star, 2000). However, critical examination of information systems is necessary to understand their implicit biases, and the ways that they invite some types of engagement and restrict others. Structures of power continue to be replicated in the ways that technologies are deployed in our lives (Noble, 2016; Tufekci, 2016), and the inability to access and assess the standards which make digital communication possible risks the uncritical perpetuation of those power structures (Drabinski, 2013). The moments of rupture, when an established system takes on a new facet with unintended consequences, can be an important moment of visibility, where we are able to reveal its ideological foundations, and the ways that its users adapt their own behaviors to it, or push back against its uncomfortable constraints (Raley, 2006; Marino, 2007). The introduction of emojis to the Unicode Standard, and their widespread adoption over the decade from 2006-2017 is one such moment of transition.</p>
             <p> Scholars of standards and standardization argue that the input of users is necessary for a standard to meet the needs of those users (Foray, 1994), and while the process of adding content to the Unicode Standard remains rigid, the unicode.org website provides an explicit record of the development and evolution of the face that Unicode presents to its users, and is able to be read as a text which reveals the contemporary state of Unicode and the cultural ideologies which shape it.</p>
             <p>Methodology</p>
@@ -48,9 +46,7 @@
             <p>This research project addresses issues of digital infrastructure from a unique angle: one that considers the socially-constructed nature of technology, as well as the meta-narrative of maintenance and upkeep of a system that has become crucial to our ability to communicate in a digital world. Through analysis of the secondary documents relating to the Unicode Standard, it is possible to gain invaluable insights into the ways that knowledge is organized collectively and continuously, as well as the embedded values that shape who can access and influence that knowledge.</p>
             <p>
                 <hi rend="color(333333) background(white)">This case study will provide a foundation for more expansive examination of systems of digital infrastructure</hi>. It is a beginning point both for further analysis of the adoption and adaptation of Unicode (and emojis in particular), but also as a framework for examining other forms of scaffolding which uphold the content of digital spaces. 
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

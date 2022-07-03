@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Faced with the challenge of organizing the digital processing and publication of a large collection of historical newspaper data from the 18
+<text><body><p>Faced with the challenge of organizing the digital processing and publication of a large collection of historical newspaper data from the 18
                 <hi rend="superscript">th</hi> century publication known as the 
                 <hi rend="italic">Wien[n]erisches Diarium</hi>, a small project located at the Austrian Centre for Digital Humanities (ACDH) in Vienna has opted for a user-centred, participatory approach and employs methods of community involvement to tackle the specific challenges that arise from the particular qualities of the historical source material.
             </p>
@@ -41,7 +39,5 @@
             <p>To ensure users’ ongoing engagement with the texts even beyond the initial phase and to provide a way to preserve and publicize the results, the platform has been designed with continuous annotation activities in mind. Any user shall be able to make annotations and contribute to the encoding source via the web-app, which will support four basic types of annotations: 1) full text, 2) named entity identification, 3) text or layout corrections, and 4) semantic or structural annotations.</p>
             <p>In pioneering a user-centred approach in the development of a digital newspaper resource, the 
                 <hi rend="italic">Diarium</hi> project generates new insights in the potential of community involvement for similar projects. It roadtests methods for motivating both digital and ‘traditional’ humanities researchers to contribute to a collaborative resource and for creating highly sustainable and re-usable resources that will meet the needs of diverse user communities, and encourage ongoing engagement.
-            </p>
-        
-    </text>
+            </p></body></text>
 </TEI>

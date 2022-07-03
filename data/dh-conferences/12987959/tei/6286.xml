@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+    <body>
             <p rend="Plain Text">Introduction</p>
             <p rend="Plain Text">The relationship between the entropy of language and its complexity has been the subject of much speculation – some seeing the increase of linguistic entropy as a sign of linguistic complexification or interpreting entropy drop as a marker of greater regularity (Montemurro and Zanette 2011, Juola 2016, Bentz et al. 2017). Some evolutionary explanations, like the learning bottleneck hypothesis, argues that communication systems having more regular structures tend to have evolutionary advantages over more complex structures (Kirby 2001, Tamariz and Kirby 2016, Ferrer I Cancho 2017). Other structural effects of communication networks, like globalization of exchanges or algorithmic mediation, have been hypothesized to have a regularization effect on language (Kaplan 2014). </p>
             <p rend="Plain Text">Longer-term studies are now possible thanks to the arrival of large-scale diachronic corpora, like newspaper archives or digitized libraries (Westin and Geisler 2002, Fries and Lehmann 2006, Lyse and Andersen 2012, Rochat et al. 2016). However, simple analyses of such datasets are prone to misinterpretations due to significant variations of corpus size over the years and the indirect effect this can have on various measures of language change and linguistic complexity (Buntinx et al. 2017). In particular, it is important not to misinterpret the arrival of new words as an increase in complexity as this variation is intrinsical, as is the variation of corpus size.</p>
@@ -225,9 +225,7 @@
             <figure>
                 <graphic n="10010" width="14.515041666666667cm" height="10.489847222222222cm" url="Pictures/20159d811a1630a94bf5b3e732e5273d.png" rend="inline"></graphic>
             </figure>
-            <p rend="No Spacing">Figure 4: PCA projection of distance matrix using kernel entropy correlation-based distance for Google Books corpora: British English, US English, French, German, Italian, Spanish and Russian.</p>
-        
-        <back>
+            <p rend="No Spacing">Figure 4: PCA projection of distance matrix using kernel entropy correlation-based distance for Google Books corpora: British English, US English, French, German, Italian, Spanish and Russian.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

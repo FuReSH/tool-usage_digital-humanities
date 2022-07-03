@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>
+<text><body><p>
                 <hi rend="bold" xml:space="preserve">Abstract: </hi>The digital landscape for teaching and learning increasingly supports the inclusion of multimedia-based instructional strategies. In higher education, a culminating class project or final assignment often requires students to synthesize, analyze, and create content using a variety of communication modalities. Such projects, when closely aligned with course content and desired learning outcomes, allows for relevant and authentic assessment that leverages digital communication strategies. This paper presents an emerging practical model, CASPA, to promote curriculum-based integration of multimodal projects for assessment in higher education courses. Additionally, we report on initial implementation results and recommendations for practice and further research.
             </p>
             <div type="div1" rend="DH-Heading1">
@@ -56,7 +54,7 @@
                 </list>
                 <p>The tenets of the CASPA model support instructors and students alike in the important academic processes of analyzing, synthesizing, and conveying compelling arguments. The following section illustrates these processes in an application scenario derived from real experiences at William and Mary. </p>
             </div>
-        
+</body>
         <back>
             <div type="bibliogr">
                 <listbibl>

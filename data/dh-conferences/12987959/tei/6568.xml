@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Introducción</p>
+<text><body><p>Introducción</p>
             <p>Una de las características de la cultura jurídica del antiguo régimen era la evidente polisemia de sus conceptos (Hespanha, 2002). Términos que actualmente pertenecen al plano teológico, moral, histórico y literario; tenían un valor normativo dentro del lenguaje jurídico que afectaba la práctica del gobierno y la justicia. Como explica Alejandro Agüero, la perspectiva crítica develó una lógica del orden natural del mundo y del poder político en la que el derecho escrito si bien no es irrelevante tampoco cumple el papel protagónico en la organización de las ciudades y los reinos (Agüero Nazar, 2012: 84). </p>
             <p>El giro metodológico, de la exégesis a la auscultación del pensamiento jurídico a través de los conceptos centrales del discurso normativo desde la edad media europea, ha implicado cruzar las fronteras de la historia del derecho como campo especializado del estudio del derecho para entrar a discutir con la disciplina histórica. La hermenéutica jurídica trasciende por lo tanto el ejercicio de la interpretación del texto para remitirse al “sentido” (
                 <hi rend="italic">sinn</hi>) del derecho en un enfoque cercano a la filosofía hermenéutica (Costa, 1972: 46), cuya derivación más conocida por los historiadores la representan Gadamer y Koselleck (1997).
@@ -102,9 +100,7 @@
             <p>Gráfica 2. Red semántica centrada en el concepto indulto (1790-1807). R5-L5, MI(5)</p>
             <p>Proyecciones</p>
             <p>Este ejercicio abarca varios procesos relevantes para el análisis de corpus de información histórica no estructurada. Con el avance de la digitalización de fuentes documentales en archivos y bibliotecas en ambos lados del Atlántico la tarea de recuperación y macroanálisis de la información se hace más compleja, por lo cual es necesario ya no sólo introducir metodologías computacionales utilizadas en contextos anglosajones, sino construir estrategias propias que permitan lidiar con una tradición paleográfica y archivística particular.</p>
-            <p>Las tareas inmediatas que se plantean para este proyecto incluyen el resolver la transcripción de documentos para lo cual se está explorando la plataforma Omeka S, así como la posible exportación de elementos y modelarlos en XML-TEI. Del mismo modo, se pretende mejorar el modelo de segmentación construyendo una estrategia para resolver las disparidades grafológicas. Se espera que estos ejercicios en un futuro pueden ser relevantes para los proyectos de digitalización actuales en Latinoamérica.</p>
-        
-        <back>
+            <p>Las tareas inmediatas que se plantean para este proyecto incluyen el resolver la transcripción de documentos para lo cual se está explorando la plataforma Omeka S, así como la posible exportación de elementos y modelarlos en XML-TEI. Del mismo modo, se pretende mejorar el modelo de segmentación construyendo una estrategia para resolver las disparidades grafológicas. Se espera que estos ejercicios en un futuro pueden ser relevantes para los proyectos de digitalización actuales en Latinoamérica.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliografía

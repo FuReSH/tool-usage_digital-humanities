@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <p rend="normal">Arts and Humanities research has to address new challenges raised by the increasing amount of digital sources, contents and tools. New digital practices and protocols, new digital methodologies and services, new software and databases, offer a completely renewed framework for research, and encourage the emergence of a next generation of digitally-aware scholars. </p>
             <p rend="normal">Digital infrastructures, such as PARTHENOS, aim at supporting and accompanying the rise of this new generation of scholars by offering innovative solutions to connect digital tools and contents to Arts and Humanities researchers’ needs. PARTHENOS has thus acknowledged the growing importance to develop a data-centered strategy for the management of scientific data (European Commission, 2010), and is currently developing the Standardization Survival Kit (“SSK”) to help Arts and Humanities scholars understand the crucial role that proper data modelling and standards have to play in making digital contents sustainable, interoperable and reusable. </p>
             <p rend="normal">Accompanied by a live demo of the website
@@ -51,9 +51,7 @@
                         </ref>
                     </p>
                 </note>. A dedicated interface in the Standardization Survival Kit will enable users to make suggestions, automatically converted in TEI according to the appropriate schema. The poster will present this interface and the associated functionalities. And for those who will be eager to test it, a live demo will be provided.
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

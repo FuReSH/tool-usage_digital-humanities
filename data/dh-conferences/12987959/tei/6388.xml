@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Calha Norte is the northernmost region of the Brazilian Amazon, and the largest mosaic of protected areas in the world, encompassing nearly 14 million hectares. Given the vastness of this area, government enforcement of parks and conservation zones can be poor, and scarce resources prevent authorities from providing much-needed support to the inhabitants of protected areas. This poster focuses on the Calha Norte Portal, a digital project that constitutes a personal initiative to encourage awareness of conservation efforts in the region. The portal is an educational tool intended to demonstrate the power of digital technologies for fostering greater transparency in conservation management. It also aims to provide a clearer understanding of the social, political, economic and historical dynamics which have shaped the challenges to protecting the Amazon forest today. </p>
+<text><body><p>Calha Norte is the northernmost region of the Brazilian Amazon, and the largest mosaic of protected areas in the world, encompassing nearly 14 million hectares. Given the vastness of this area, government enforcement of parks and conservation zones can be poor, and scarce resources prevent authorities from providing much-needed support to the inhabitants of protected areas. This poster focuses on the Calha Norte Portal, a digital project that constitutes a personal initiative to encourage awareness of conservation efforts in the region. The portal is an educational tool intended to demonstrate the power of digital technologies for fostering greater transparency in conservation management. It also aims to provide a clearer understanding of the social, political, economic and historical dynamics which have shaped the challenges to protecting the Amazon forest today. </p>
             <p>The data for the Calha Norte Portal was gathered during my work with the Social Policy department of the Amazonian Institute for Man and the Environment (Imazon), an environmental NGO based in Belém. In accordance with the department’s focus on communities in the Calha Norte region, I compiled information from various sources about the region’s history, cultural diversity, transportation networks, governing bodies, development indices, demographics, economic activities, protected area implementation, and accessibility. This data was then used to create the Calha Norte Portal, a website and blog with an interactive Google map of the municipal capitals and protected areas in the region. The Google Earth application allows the user to navigate through protected areas, indigenous territories, maroon communities, and municipalities. At a click, each area on the map displays a pop-up window with historical information, demographic statistics, economic and political data, photos, deforestation figures and an implementation index for protected areas. Furthermore, users can look back in time at satellite images from 1960 to the present and visualize patterns of deforestation, and urban sprawl over time. </p>
             <figure>
                 <graphic n="1001" width="16.002cm" height="10.807347222222223cm" url="Pictures/f878e696dda13533ee231cc0b3abd019.png" rend="inline"></graphic>
@@ -25,9 +23,7 @@
             <figure>
                 <graphic n="1003" width="16.002cm" height="9.082263888888889cm" url="Pictures/19ecbdab9c72a055be5db600fb84d57d.png" rend="inline"></graphic>
             </figure>
-            <p>Ex.3: Calha Norte in Google Earth. The portal offers users the opportunity to navigate through the online version of the map, or the option to download Google Earth and the Calha Norte KMZ file, for a more complete user experience.</p>
-        
-        <back>
+            <p>Ex.3: Calha Norte in Google Earth. The portal offers users the opportunity to navigate through the online version of the map, or the option to download Google Earth and the Calha Norte KMZ file, for a more complete user experience.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>What constitutes an alignment, different varieties of alignment, or even different degrees of alignment is a topic in need of further interdisciplinary discussion. The co-authors of this paper have been working on the computational alignment of medieval poetry, an exchange that has resulted in the design of a visual analytics system for the exploration of complex textual traditions. The purpose of this paper is twofold: first, to describe how we arrived at the user centered design of the VA system (Heuwing et al., 2016) and second, to introduce an alternative means of alignment, that of Sequence-to-Sequence Models based on recurrent neural networks, that does not oblige the user to adopt a parameter driven approach, but still allows for discovery of baseline potential alignment for subsequent human scoring. </p>
+<text><body><p>What constitutes an alignment, different varieties of alignment, or even different degrees of alignment is a topic in need of further interdisciplinary discussion. The co-authors of this paper have been working on the computational alignment of medieval poetry, an exchange that has resulted in the design of a visual analytics system for the exploration of complex textual traditions. The purpose of this paper is twofold: first, to describe how we arrived at the user centered design of the VA system (Heuwing et al., 2016) and second, to introduce an alternative means of alignment, that of Sequence-to-Sequence Models based on recurrent neural networks, that does not oblige the user to adopt a parameter driven approach, but still allows for discovery of baseline potential alignment for subsequent human scoring. </p>
             <p>Pre-modern writing exhibiting both textual and performative forms of instability is challenging for alignment. Twentieth-century print editions employed synoptic style layouts for textual traditions where line-level interpolation and excision were most common, as well as rough stanza-to-stanza numbering based on narrative cues in the poem, as in the case of the mid-century edition of the 
                 <hi rend="italic" xml:space="preserve">Chanson de Roland </hi>(Mortier, 1940-44). Alignment in print could not be more granular on account of the highly complex patterns of textual recombination found across different redactions. 
             </p>
@@ -150,9 +148,7 @@
                 <hi rend="italic">Line-j-of-Edition-B</hi>, thereby training the neural network to find the candidate 
                 <hi rend="italic">Line-k-of-Edition-C</hi> automatically, in turn mapping similar lines to the same hash value.
             </p>
-            <p>The potential of this computational shift is that we can further nuance the palette of possible alignments, without remaining bound to the traditional starting parameters. We plan to move beyond our original model of line to line comparisons and to accommodate other units of comparison. By presenting the results of work in progress in the final section of our paper, we intend to explore whether recurrent neural networks produce results for similar text genres and prosodies. </p>
-        
-        <back>
+            <p>The potential of this computational shift is that we can further nuance the palette of possible alignments, without remaining bound to the traditional starting parameters. We plan to move beyond our original model of line to line comparisons and to accommodate other units of comparison. By presenting the results of work in progress in the final section of our paper, we intend to explore whether recurrent neural networks produce results for similar text genres and prosodies. </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

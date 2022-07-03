@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>The French TGIR Huma-Num, whose mission is to facilitate the digital turn in Humanities and Social Sciences research, offers services dedicated to the production and reuse of data. These services aim at avoiding loss and facilitating the reuse of scientific data in Social Sciences and Humanities. To do this, Huma-Num supports research teams and disciplinary consortia throughout their digital projects to allow the sharing, reuse and preservation of data thanks to a chain of devices focused on interoperability. Through these processes, Huma-Num also encourages compliance with the FAIR data principles.</p>
+<text><body><p>The French TGIR Huma-Num, whose mission is to facilitate the digital turn in Humanities and Social Sciences research, offers services dedicated to the production and reuse of data. These services aim at avoiding loss and facilitating the reuse of scientific data in Social Sciences and Humanities. To do this, Huma-Num supports research teams and disciplinary consortia throughout their digital projects to allow the sharing, reuse and preservation of data thanks to a chain of devices focused on interoperability. Through these processes, Huma-Num also encourages compliance with the FAIR data principles.</p>
             <p>Huma-Num’s tools connect normalised metadata to the Linked Open Data cloud and give them an extended visibility. By labelling consortia (through scientific, financial and technical support when needed), Huma-Num drives and supports them in this initiative: data producers are encouraged to clean and normalise their data, they benefit from Huma-Num’s services to store, share, expose, signal and enrich their data. What’s more, at the end of the chain, these processes also allow the data to be “ready” or, at least, “prepared” for archiving, which is a real issue for research data.</p>
             <p>But what is the effect induced on the data producers by sharing their resources, particularly on the metadata? Do they realize that the metadata produced for a specific project are not suitable for more generic needs and need some polishing?</p>
             <p>Does this virtuous circle produce in turn better metadata and also better practices?</p>
@@ -85,6 +83,6 @@
                     <p>Normalized vocabularies are a bridge between repositories, making it possible to bring together isolated data and thus to give them a richer context, improving their readability. For example, the use of the Lexvo vocabulary - which includes all the codes of the ISO-639-3 standard - makes it possible to reconcile recordings, scientific documentation, geopolitical information, etc. for a given language.</p>
                 </div>
             </div>
-        
+</body>
     </text>
 </TEI>

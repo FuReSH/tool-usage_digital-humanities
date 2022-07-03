@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>1. Introduction</p>
+<text><body><p>1. Introduction</p>
             <p>Today, many institutions provide digital image data for their collections. Easy access to high-quality images not only improves efficiency in art history research but also changes how research is conducted. Our approach to a style-comparative study makes use of this trend with a web-based tool called the “IIIF Curation Viewer,” built using IIIF (International Image Interoperability Framework), to change the input and output of research. </p>
             <p> We studied pictorial manuscripts called “Emaki,” “Eiribon,” or “Nara Ehon” (illustrated scrolls and books with calligraphy) from the Edo period in Japan through the IIIF Curation Viewer, then discussed the efficiency and shareability of this approach. </p>
             <p>2. Tools and materials</p>
@@ -29,9 +27,7 @@
             <p>4. Conclusion</p>
             <p>The IIIF Curation Viewer is important not only for making the entrance process easy through its cut and paste function, but also for making the output process useful through its sharing function. Both insertion and output is useful to art history research, in particular, in Eiribon research. There are many remaining unexamined Eiribon ; each Eiribon has many facial expressions. An easy cut, paste and share tool has been long awaited, and we hope it will enable the creation of a comprehensive facial expression database of Eiribon and Emaki.</p>
             <p> We focused on Japanese art in this paper, but we can use this tool for any artwork as long as the images are served in IIIF. For example, we picked up facial expressions from portraits in the Yale Center for British Art and grouped them by century. The increased reusability of research extends possibilities for art historians terms of education and machine learning. Curated data can be reused as training data for machine learning.</p>
-            <p> Two issues remain for futures study. First, we need to increase IIIF-compliant image services. Especially in Japan, few institutions provide digital images in IIIF. Second, we need an ecosystem for sharing the results of curation, such as correcting metadata, identifier, and a repository for sharing and editing.</p>
-        
-        <back>
+            <p> Two issues remain for futures study. First, we need to increase IIIF-compliant image services. Especially in Japan, few institutions provide digital images in IIIF. Second, we need an ecosystem for sharing the results of curation, such as correcting metadata, identifier, and a repository for sharing and editing.</p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

@@ -1,0 +1,5 @@
+
+
+# notes
+
+[^1]:  FRBR introduces the concepts of Item, the material book, Manifestation, the prototypical book, Expression, the text of a book, and Work, the overall work conveyed by the book.

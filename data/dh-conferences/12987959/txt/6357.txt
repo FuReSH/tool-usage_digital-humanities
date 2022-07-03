@@ -1,0 +1,16 @@
+
+
+# notes
+
+[^1]:  Among chant scholars, the most important digital resources are the manuscript databases of the Cantus Index network. (See http://cantus.uwaterloo.ca/) These datasets include information about the manuscripts themselves in addition to the encoding of text and music.   Unlike the Cantus system, however, we encode staffless neumes without imposing interpreted equivalences to later musical notation on staffs. Of the XML systems, the most significant is the Music Encoding Initiative (MEI) (http://music-encoding.org/documentation/3.0.0/neumes). It is largely inspired by work at Tübingen.  Our system also allows encoding of basic neumes with extended properties (liquescence, episema) in a specified syntax, enabling us to take account or ignore these properties in computational manipulation. Neither the current XML schemes nor the Cantus Index allow these properties to be optional.
+[^2]:  Called ‘Virgapes’ for the first one and two-note neumes, 
+                                virga and 
+                                pes.
+                            
+[^3]:  These are available from our Github repository: https://github.com/HCMID/chant.
+[^4]:  This system was developed as part of the CITE Architecture for the Homer Multitext Project 2010-18, and applied to this project: 
+                                http://cite-architecture.github.io/ctsurn/.
+                            
+[^5]:  A standard chant reference work compiled by Dom Hesbert in the early 20
+                                th century. It contains transcriptions of six important sources of Gregorian chant.
+                            

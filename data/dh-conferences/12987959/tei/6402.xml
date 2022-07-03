@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>MonroeWorkToday.org, launched in November 2016, is a digital history project that synthesizes current historical research on the scope of American lynchings. The website was updated again in October 2017 with additional content digitized from Tuskegee University Archives.</p>
+<text><body><p>MonroeWorkToday.org, launched in November 2016, is a digital history project that synthesizes current historical research on the scope of American lynchings. The website was updated again in October 2017 with additional content digitized from Tuskegee University Archives.</p>
             <p>Lynchings in the United States were perpetrated as homegrown acts, not orchestrated regionally in any way. This exhibit focuses on people of color murdered over 100 years in this fashion under the pretext of white supremacy. Yet unlike most academic studies, the project does not compartmentalize by region (e.g. the South or West) or by group (e.g. Mexican-Americans). By contrast, 
                 <hi rend="italic">Monroe Work Today</hi> is the first of its kind to use web technologies to visualize the entirety of these documented events, connecting scholarship about African Americans, Native Peoples, Mexicans, Sicilians and Chinese immigrants across the United States (Carrigan and Webb, 2013) (Frazier, 2015) (Pfaelzer, 2007) (Pfeifer, 2013) (and others). Through four years of work, Auut Studio meticulously created a database and directory in the form of a map, compiling all modern academic research with century-old archives of the Tuskegee Institute. This national map carries the names of 4166 victims of lynchings and nearly 600 other victims of racialized mob violence. The project gives clarity to the sheer extent of the murders.
             </p>
@@ -31,7 +29,7 @@
             <figure>
                 <graphic n="1001" width="16.002cm" height="10.616847222222223cm" url="Pictures/ff770058c615eb13a89e8efda2ba44f2.jpg" rend="inline"></graphic>
             </figure>
-        
+</body>
         <back>
             <div type="bibliogr">
                 <listbibl>

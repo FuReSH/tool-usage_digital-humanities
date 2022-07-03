@@ -1,0 +1,35 @@
+
+Resumen 
+
+El surgimiento de las narrativas hipermedia y transmedia así como de los productos culturales propios de la era digital como los Juegos Serios , expanden el espectro de los medios de comunicación tradicionalmente usados para divulgar la historia . Con estos nuevos medios es factible realizar divulgación bajo el modelo contextual, el cual, al contrario del modelo de déficit, considera las respuestas del público y la complejidad del fenómeno comunicativo de la divulgación (Leewenstein, 2003 ). En este sentido, se propone un Juego Serio sobre la vida conventual de los Carmelitas Descalzos que habitaron el Desierto de los Leones que estimule una experiencia memorable en jóvenes . 
+
+  
+
+Divulgación de la historia 
+
+Se retoma el concepto de comunicación de la ciencia propuesto por Burns et al. (2003: 1991) para aplicarlo a la divulgación de la historia. Ellos plantean que la divulgación debe provocar alguna de las siguientes respuestas en la audiencia con relación a la ciencia: sensibilización, disfrute, interés, construción de opinión y/o análisis de contenido. 
+
+Se siguió la metodología de interpretación temática propuesta por Ham (2013) para responder a la pregunta de cómo comunicar el conocimiento histórico acerca de los carmelitas a un público joven, este último definido según Feixa (2003), a través de un videojuego y generar lazos de identidad fincados en valores culturales. 
+
+Esta metodología resalta la importancia de conocer la audiencia y sus intereses para provocar en ella reflexiones, cuestionamientos o la generación de nuevos significados, de modo que recuerde la experiencia divulgativa. Gándara añade, además, la importancia que tiene la narrativa para crear divulgación significativa (Gándara citado por Sánchez, 2016). Es de destacar también, que las emociones son relevantes en el divulgación , ya que pueden lograr que esta sea más recordada (Bonfil , 2003) . 
+
+Si bien hay antecedentes del uso de videojuegos para tratar temas históricos, (Caldera Estudios, 2010), (Mulaka, 2018), (Nomdedeu, 2015), ( Rodríguez et al, 2017), (Salinas et al, 2017), no se encontró uno cuyo diseño emplee la interpretación temática. 
+
+Los Carmelitas Descalzos 
+
+Esta orden fue una de las últimas que llegaron a la Nueva España. Aún cuando el cometido de estos frailes fue evangelizar a la población indígena,  decidieron que su misión sería continuar su vida contemplativa que, según su cosmovisión, los acercaba a Dios (Ramírez, 2015). Formaron la Provincia de San Alberto con conventos en las principales ciudades de la Nueva España. Así, la Corona les permitió edificar el Desierto en el Monte de Santa Fe. Este yermo fue un espacio donde renunciaban a todo placer sensorial, como el disfrute de la comida, la prohibición de mirar a otra persona a los ojos, y el cumplimiento de la regla del silencio y del claustro para dedicarse a la contemplación (Báez, 1981). 
+
+Videojuegos 
+
+Se escogió el juego serio ya que “buscan cumplir un propósito más allá del propósito autocontenido de los juegos de entretenimiento” (Mitgush y Alvarado, 2012: 121, citado por González, 2017). Las emociones son observadas desde el enfoque de los videojuegos, como lo propone Lazzaro (2004). Finalmente, para el diseño del videojuego se siguieron los lineamientos propuestos por Shell (2005) y la metodología de interpretación temática. En esta, es primordial escoger un Tema (Ham, 2003) que guíe el contenido del objeto comunicativo. 
+
+Después de analizar los documentos históricos y desde la perspectiva de una audiencia jóven, se definió el tema como los espacios donde se ejerce control sobre las personas  anulan la individualidad y fomentan el desarraigo . A partir de allí, se modeló la vida de los frailes en términos de tentaciones, recuerdos de la vida pasada, castigos, recompensas, el diablo, reglas, obediencia. El tema también determinó la estética gráfica, la animaciones y la música. 
+
+El videojuego se titula Tentación en el Desierto y es de tipo Click and Point . El jugador ayuda a un fraile Carmelita recién llegado al Yermo de Santa Fe a luchar contra tentaciones para que lo acepten como ermitaño mientras explora elementos de diferentes espacios del convento.  Hay cinemáticas que muestran los recuerdos del personaje antes de convertirse en fraile;  las tentaciones, castigos y retos del diablo son representados como minijuegos que el jugador debe resolver; la obediencia a las reglas es la energía del fraile; hay un diario escrito en primera persona el cual brinda información acerca del contexto histórico. 
+
+Conclusiones 
+
+Las pruebas con el prototipo analógico del juego mostraron que los jugadores problematizaron la vida carmelita y manifestaron emociones e interés. Se recomienda evaluar con la versión digital para determinar si la interpretación temática aplicada al diseño de un juego serio genera experiencia memorable al divulgar conocimiento histórico. 
+
+
+# notes

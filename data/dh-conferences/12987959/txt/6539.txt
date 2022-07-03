@@ -1,0 +1,24 @@
+
+
+# notes
+
+[^1]: https://github.com/postdataproject/disco/
+                        
+[^2]: https://doi.org/10.5281/zenodo.1012567
+[^3]:  About 125 sonnets by approx. 20 authors whose production took place in the early 20th century (with date of death prior to 1936) are also included in the corpus; the documentation on the GitHub repository (footnote 1 above) provides more details. 
+[^4]:  Whereas the publication of literary corpora in Linked Open Data formats is not widespread, inspiration could be drawn from the linguistics community, which has been especially successful in building the means to convert resources with linguistic annotations to the Resource Description Framework model (see McCrae et al., 2011; Chiarcos and Ejavec, 2011). In addition, more general projects, not limited to linguistic analysis, are being developed as well: see work on building a TEI ontology in Ciotti et al (2016). 
+[^5]: https://github.com/bncolorado/adsoScansionSystem
+[^6]:  The tool detects different types of enjambment (i.e. a mismatch between syntactic and metrical structure) as characterized by Quilis (1964). The tool also detect’s Spang’s (1983) concept of 
+                                enlace, which takes place when a subject or direct object occur in a line adjacent to their governing verb’s line, and which triggers a less noticeable effect than the enjambment types defined by Quilis
+                            
+[^7]:  See 
+                                https://sites.google.com/site/spanishenjambment/ for details
+                            
+[^8]:  See Bermudez-Sabel et al. (2017). 
+                                Version 0.2 of the POSTDATA model is available at https://doi.org/10.5281/zenodo.832906
+[^9]:  See Domínguez Caparrós (2014: 143) or Henríquez Ureña (1919: 132) for details on 
+                            a maiori and 
+                            a minori patterns. The main 
+                            a maiori variants as described in previous literature are 2 6 10 and 3 6 10; this is confirmed in our data. Patterns are formalized as a series of numbers indicating stressed syllables, e.g. 2 6 10 for the second, sixth and tenth syllables. Note that 10th-syllable stress is mandatory in all patterns. 
+                        
+[^10]:  In Spanish, the alexandrine has 14 metrical syllables. In sonnets, the hendecasyllable predominates almost exclusively. However, particularly since the 19th century, alexandrine sonnets have been written. 

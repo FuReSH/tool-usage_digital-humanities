@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>The most important publication to emerge from 18
+<text><body><p>The most important publication to emerge from 18
                 <hi rend="superscript">th</hi>-century Europe was arguably the 
                 <hi rend="italic" xml:space="preserve">Encyclopedia </hi>by Denis Diderot (1713-1784 CE). The 
                 <hi rend="italic" xml:space="preserve">Encyclopedia </hi>sought to “change the general way of thinking,” challenging all forms of bigotry, repression, fanaticism, and misinformation (Fowler, 2011). Through his commission of articles on a variety of topics, Diderot endeavored to summarize and disseminate the world’s information in order to help human society progress to new heights of accomplishment while also mitigating the sufferings of civilization. Helped by the mathematician Jean Le Rond d’Alembert (1717-1783) as well as Montesquieu (1689-1755 CE) and Voltaire (1694-1778), Diderot’s 
@@ -39,9 +37,7 @@
                 <ref target="http://commons.pelagios.org/">
                     <hi rend="underline color(1155CC)">http://commons.pelagios.org/</hi>
                 </ref>).
-            </p>
-        
-        <back>
+            </p></body><back>
             <div type="bibliogr">
                 <listbibl>
                     Bibliography

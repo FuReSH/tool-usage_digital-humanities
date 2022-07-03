@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Introduction</p>
+<text><body><p>Introduction</p>
             <p> While written works are often encountered by readers as linear phenomena, one of the most important conceptual advances offered by the Digital Humanities is the way that computational text analysis has permitted researchers to find non-linear patterns that speak to organizational principles embedded in even a single text. The methods developed to parse thousands, or millions, of texts can, in the context of a single work, reveal connections and patterns that are unavailable to a human reader. </p>
             <p> Even in reference books, whose alphabetic order discourages the same kind of linearity found in novels, digital methods have proven effective at revealing alternative ordering principles. This has been particular important in eighteenth-century studies. For example, recent digital work on the French 
                 <hi rend="italic">Encyclopédie</hi> has sought to assess the compatibility of the multiple ways in which the text was organized by its authors. In their 2002 article, Gilles Blanchard and Mark Olsen measure the knowledge domains described by Diderot in his introduction by counting the number of renvois, or “see alsos” between articles in each domain. Similarly, Heuser, Algee-Hewitt and Bender have also reconstructed the French 
@@ -244,7 +242,5 @@
             <p>
                 <hi rend="italic color(44546A)">Figure 2: Detail of "negative affect" cluster of verbs in part of speech network</hi>
             </p>
-            <p>Through a computational analysis, the underlying structure of the dictionary reveals the doubled work of lexicography. Quotations are both empirical proofs of contingent meaning, and, in turn, receive meaning themselves through accretion: slow layering of the conceptual unities between the words that they are used to define. The complexities of the dictionary reveal a set of organizing principles embedded in the quotations: this project allows us to extract these patterns and reveal their fundamental influence on the development of, not just lexicography, but language itself across that last three hundred years. </p>
-        
-    </text>
+            <p>Through a computational analysis, the underlying structure of the dictionary reveals the doubled work of lexicography. Quotations are both empirical proofs of contingent meaning, and, in turn, receive meaning themselves through accretion: slow layering of the conceptual unities between the words that they are used to define. The complexities of the dictionary reveal a set of organizing principles embedded in the quotations: this project allows us to extract these patterns and reveal their fundamental influence on the development of, not just lexicography, but language itself across that last three hundred years. </p></body></text>
 </TEI>

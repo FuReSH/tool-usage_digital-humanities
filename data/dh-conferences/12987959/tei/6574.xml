@@ -12,7 +12,7 @@
 </fileDesc>
 	</teiHeader>
 <text>
-        
+        <body>
             <p rend="normal">Digital archivists tend to disagree about the place of paratexts. Whereas 
                 <hi rend="italic" xml:space="preserve">Google Books </hi>often scans texts at such a low resolution that anything but printed words are difficult to discern, Andrew Stauffer’s 
                 <ref target="http://www.booktraces.org/">
@@ -31,7 +31,5 @@
                 <hi rend="italic">Visual Haggard</hi>, a 
                 <hi rend="italic" xml:space="preserve">NINES </hi>indexed and peer reviewed archive that contextualizes and improves access to the illustrations of Victorian novelist H. Rider Haggard (1856 - 1925), I argue that digitizing illustrations must be inclusive. 
             </p>
-            <p rend="normal">I will consider the problem of inclusion and exclusion in digital archive curation. As paratexts, illustrations are lumped together with a number of visual objects that initially accompanied fictions. For this reason I explain the necessity of using metadata to differentiate illustration types. The large decorative initials which appear in many nineteenth-century texts, but originated in medieval manuscripts, are less illustrations of the text than embellishments. However, their ideological function is significant and multifold. Similarly, advertisements were often in conversation with serialized fictions—whether thematically or stylistically. In this paper I discuss strategies to enable digital image archivists committed to creating an authentic encounter with the history of print to avoid ignoring or marginalizing these types of unique and difficult paratexts. </p>
-        
-    </text>
+            <p rend="normal">I will consider the problem of inclusion and exclusion in digital archive curation. As paratexts, illustrations are lumped together with a number of visual objects that initially accompanied fictions. For this reason I explain the necessity of using metadata to differentiate illustration types. The large decorative initials which appear in many nineteenth-century texts, but originated in medieval manuscripts, are less illustrations of the text than embellishments. However, their ideological function is significant and multifold. Similarly, advertisements were often in conversation with serialized fictions—whether thematically or stylistically. In this paper I discuss strategies to enable digital image archivists committed to creating an authentic encounter with the history of print to avoid ignoring or marginalizing these types of unique and difficult paratexts. </p></body></text>
 </TEI>

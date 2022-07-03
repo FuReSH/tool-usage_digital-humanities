@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>Context: as the digital humanities take firm root in the humanities curriculum, institutions around the world are now committing significant resources toward developing DH and integrating it in standalone courses, graduate degrees and undergraduate majors and minors within and across departments. With this commitment comes the realization that such formal implementation of DH and its siblings (e.g. digital social sciences, digital media, etc.) at a degree-granting level requires articulation of core requirements and competencies, identification and hiring of faculty who are capable of teaching DH in a variety of learning environments (coding, systems, application of methods), evaluating a broad spectrum of student work, and beyond. It also changes the foundational principles of the work of those in our network, as training increasingly involves learning how to teach competencies at the same time as we ourselves develop and maintain them in light of fast-paced advances.</p>
+<text><body><p>Context: as the digital humanities take firm root in the humanities curriculum, institutions around the world are now committing significant resources toward developing DH and integrating it in standalone courses, graduate degrees and undergraduate majors and minors within and across departments. With this commitment comes the realization that such formal implementation of DH and its siblings (e.g. digital social sciences, digital media, etc.) at a degree-granting level requires articulation of core requirements and competencies, identification and hiring of faculty who are capable of teaching DH in a variety of learning environments (coding, systems, application of methods), evaluating a broad spectrum of student work, and beyond. It also changes the foundational principles of the work of those in our network, as training increasingly involves learning how to teach competencies at the same time as we ourselves develop and maintain them in light of fast-paced advances.</p>
             <p>2018 Focus, and Call for Proposals: at the 2017 mini-conference, attendees reached consensus about forming an ADHO Special Interest Group (SIG) dedicated to DH Pedagogy in all its forms. In support of this, for our 2018 mini-conference and meeting, we continue in inviting proposals for lightning talks on all topics relating to digital pedagogy and training -- and especially this year for those that will lead us to substantial discussion about how a SIG could support instructors, students, practitioners, and administrators. Mini-conference talks will take place in the morning, and the afternoon member meeting will be dedicated to work on a collaborative draft of the SIG proposal. In particular, we welcome proposals with a focus on:</p>
             <list type="unordered">
                 <item>Ways in which individual universities, colleges, and other educational institutions are extending DH in the classroom.</item>
@@ -24,6 +22,6 @@
                 <item>Discussion of pedagogical materials, pre-circulated for critique and consideration. We are particularly interested in the submission of specific syllabi, tutorials, exercises, learning outcomes, assessment and rubrics that attendees might complete during the workgroup portion of the mini-conference.</item>
                 <item>Any topics that might further inform our discussion about DH training.</item>
             </list>
-        
+</body>
     </text>
 </TEI>

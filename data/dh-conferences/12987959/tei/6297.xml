@@ -11,9 +11,7 @@
 	</sourceDesc>
 </fileDesc>
 	</teiHeader>
-<text>
-        
-            <p>My research is multi- and interdisciplinary focusing on electronic literature and cybercultures in/of Latin America. My latest articles and book manuscript explore the divide and convergence in literature and technology. This project lends itself well to the application of those theories and the evaluation of how they can best be implemented in classroom practices and complemented with co-curricular modules. I will therefore present my research findings on the use of Digital Humanities components specifically for the teaching of Latin American Studies. The presentation would thus serve as a report of: 1) initial research findings and best practices found at other institutions; 2) work accomplished at the DHSI 2018 Workshop (Victoria, Canada) “Critical Pedagogy and Digital Praxis in the Humanities”; 3) feedback gained from presentation at the DHSI 2018 Conference &amp; Colloquium; and, 4) samples of syllabi to foster a lively discussion on the application of such a course with co-curricular components for Latin American Studies programs.</p>
+<text><body><p>My research is multi- and interdisciplinary focusing on electronic literature and cybercultures in/of Latin America. My latest articles and book manuscript explore the divide and convergence in literature and technology. This project lends itself well to the application of those theories and the evaluation of how they can best be implemented in classroom practices and complemented with co-curricular modules. I will therefore present my research findings on the use of Digital Humanities components specifically for the teaching of Latin American Studies. The presentation would thus serve as a report of: 1) initial research findings and best practices found at other institutions; 2) work accomplished at the DHSI 2018 Workshop (Victoria, Canada) “Critical Pedagogy and Digital Praxis in the Humanities”; 3) feedback gained from presentation at the DHSI 2018 Conference &amp; Colloquium; and, 4) samples of syllabi to foster a lively discussion on the application of such a course with co-curricular components for Latin American Studies programs.</p>
             <p>The goal of this project is to do a detailed study of program and curriculum design at other institutions on the use of DH modules specifically for Latin America/US Latino culture with a focus on pedagogical methodologies that engage critically about the problems that DH platforms do and do not resolve in Latin American Studies. The course design and the co-curricular components complement and intersect each other. This project will facilitate the assessment of various curriculums and specialized courses for the digital humanities and would ultimately lead to develop a course for all students interested in DH Latin American Studies.
                 <note place="foot" xml:id="ftn1" n="1">
                     <p rend="footnote text"> Students in this course would include (but not limited to) those in the Latin American Studies Minor Program, International Business, International Studies (BAIS and GPIS), Humanities, Political Science, Spanish majors and Minors, World Cultural Studies majors and minors.</p>
@@ -49,6 +47,6 @@
                 <item>Language Without Borders Initiative: Create the next generation of global professionals through innovative language education, with Superior level proficiency in Spanish and overseas internship experience.</item>
                 <item>DH and Latin/o American Cybercultures Initiative: Exposure to the digital culture of Latin America through seminars, symposia, courses, exhibitions, and workshops.</item>
             </list>
-        
+</body>
     </text>
 </TEI>

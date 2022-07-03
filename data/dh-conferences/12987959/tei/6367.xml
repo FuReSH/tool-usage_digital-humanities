@@ -2,14 +2,14 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
-			<titleStmt>no title</titleStmt>
-		</fileDesc>
-		<publicationStmt>
-			<p>Unpublished</p>
-		</publicationStmt>
-		<sourceDesc>
-			<p>Converted a TEI XML fragment</p>
-		</sourceDesc>
+	<titleStmt><title>no title</title></titleStmt>
+	<publicationStmt>
+		<p>Unpublished</p>
+	</publicationStmt>
+	<sourceDesc>
+		<p>Converted a TEI XML fragment</p>
+	</sourceDesc>
+</fileDesc>
 	</teiHeader>
 <text>
         

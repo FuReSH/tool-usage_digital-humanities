@@ -28,19 +28,20 @@ f.stringmatch.frequency <- function(df.input, list.strings) {
 # control for correct case of matches
 # match all the variants and then group by term
 f.clean.variants <- function(df.input, number.of.texts) {
-  df.output <- dplyr::left_join(df.tools, df.input, by = c("variant" = "term")) %>%
+  df.grouped <- dplyr::left_join(df.tools, df.input, by = c("variant" = "term")) %>%
     tidyr::drop_na()%>%
     dplyr::group_by(term) %>%
-    dplyr::summarise(freq = sum(freq)) %>%
+    dplyr::summarise(freq = sum(freq))
+  df.normalised <- df.grouped %>%
     # normalise frequencies: 
     dplyr::mutate(
     # 1. relative to each other
-      freq.rel = freq / max(df.input$freq),
+      freq.rel = freq / max(df.grouped$freq),
       freq.rel.100 = freq.rel * 100,
     # 2. as percentage of total number of input texts
       freq.text.100 = freq / number.of.texts * 100) %>%
     dplyr::arrange(desc(freq))
-  df.output
+  df.normalised
 }
 
 # read our YAML for tools

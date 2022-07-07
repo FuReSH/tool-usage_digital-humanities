@@ -39,6 +39,7 @@ df.dhconfs.abstracts <- df.dhconfs.abstracts %>%
   dplyr::rename(text = text.x) %>%
   dplyr::select(id, text, year) %>% # this can include more columns if needed
   dplyr::arrange(year)
+save(df.dhconfs.abstracts, file = here("data", "dh-conferences", "dh-conferences_abstracts.rda"))
 
 # 2. FuReSH tool list
 df.tools <- read_csv(here("data","tools.csv")) %>%
@@ -121,4 +122,3 @@ a <- f.stringmatch(df.dhconfs.titles, df.tools$term)
 b <- slice_head(a) %>%
   tidyr::unnest_longer(KWIC)
 a[[1,3]]
-  

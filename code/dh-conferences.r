@@ -81,9 +81,9 @@ write.table(df.dhconfs.abstracts.tools, file = "dh-conferences-frequencies_tools
 v.label.source = "Data: Weingart et al., 'Index of Digital Humanities Conferences Data', https://doi.org/10.1184/R1/12987959.v4" # source information
 v.label.abstracts.summary = paste("in ", nrow(df.dhconfs.abstracts), " DH conference paper abstracts (", min(df.dhconfs.abstracts$year), "-", max(df.dhconfs.abstracts$year), ")", sep = "")
 v.label.titles.summary = paste("in ", nrow(df.dhconfs.titles), " DH conference paper titles (", min(df.dhconfs.titles$year), "-", max(df.dhconfs.titles$year), ")", sep = "")
-f.wordcloud.frequency(df.dhconfs.titles.tools, 150, paste("tools", v.label.titles.summary, sep = " "), "png")
-f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, paste("tools", v.label.abstracts.summary, sep = " "), "png")
-f.wordcloud.frequency(df.dhconfs.abstracts.tools, 150, paste("tools", v.label.abstracts.summary, sep = " "), "svg")
+f.wordcloud.frequency(df.dhconfs.titles.tools, 100, paste("tools", v.label.titles.summary, sep = " "), "png")
+f.wordcloud.frequency(df.dhconfs.abstracts.tools, 100, paste("tools", v.label.abstracts.summary, sep = " "), "png")
+f.wordcloud.frequency(df.dhconfs.abstracts.tools, 100, paste("tools", v.label.abstracts.summary, sep = " "), "svg")
 f.wordcloud.frequency(df.concepts.abstracts, 100, paste("concepts", v.label.abstracts.summary, sep = " "), "svg")
 f.wordcloud.frequency(df.concepts.abstracts, 100, paste("concepts", v.label.abstracts.summary, sep = " "), "png")
 

@@ -46,6 +46,7 @@ digiCULT,digiCULT
 digiCULT.web,digiCULT.web
 digiCULT.xTree,digiCULT.xTree
 Digital Catalogue Raisonné,Digital Catalogue Raisonné
+distant reading,distant reading
 Docker,Docker
 DOI,DOI
 Drupal,Drupal
@@ -127,14 +128,16 @@ Juxta,Juxta
 Kitodo,Kitodo
 LAKomp,LAKomp
 LAN,LAN
+LDA,latent Dirichlet allocation
+LDA,Latent Dirichlet Allocation
 LDA,LDA
 LERA,LERA
 Levenshtein,Levenshtein
 Linked Stage Graph,Linked Stage Graph
 LIWC,LIWC
 LOD Vocabulary Editor and URI Resolver,LOD Vocabulary Editor and URI Resolver
-LOD, Linked Open Data
-LOD, linked open data
+LOD,Linked Open Data
+LOD,linked open data
 LOD,LOD
 LombardPress,LombardPress
 Lyra,Lyra
@@ -167,6 +170,7 @@ NEI,NEI
 NER, Named Entity Recognition
 NER, named entity recognition
 NER,NER
+network analysis,network analysis
 Neural Networks,Neural Networks
 Neural Networks,neural networks
 New Testament Virtual Manuscript Room,New Testament Virtual Manuscript Room
@@ -191,6 +195,9 @@ P4,P4
 P5,P5
 Palladio,Palladio
 Pandas,Pandas
+PCA,PCA
+PCA,principal component analysis
+PCA,Principal Component Analysis
 Pepper,Pepper
 PHAIDRA,PHAIDRA
 PhiloEditor,PhiloEditor
@@ -239,6 +246,7 @@ TEI,TEI
 TEI,Text Encoding Initiative
 TEI,text encoding initiative
 Terminal,Terminal
+text mining,text mining
 TextGrid,TextGrid
 TextGridLab,TextGridLab
 Textual Communities,Textual Communities

@@ -75,6 +75,12 @@ setwd(here("data", "dh-conferences"))
 write.table(df.dhconfs.titles.tools, file = "dh-conferences-frequencies_tools-titles.csv", row.names = F, quote = T, sep = ",")
 write.table(df.dhconfs.abstracts.tools, file = "dh-conferences-frequencies_tools-abstracts.csv", row.names = F, quote = T, sep = ",")
 
+# results for pretty printing
+df.dhconfs.abstracts.tools.print <- df.dhconfs.abstracts.tools %>%
+  dplyr::select(term, freq, freq.rel) %>%
+  dplyr::mutate(freq.rel = round(freq.rel, 2)) %>%
+  write.table(file = 'dh-conferences-frequencies_tools-abstracts_print.csv', row.names = F, quote = F, sep = ',')
+
 # analysis: slice data into years
 
 # wordclouds with ggplot: external function

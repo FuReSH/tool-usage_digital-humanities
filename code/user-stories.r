@@ -44,3 +44,4 @@ v.label.source = "Data: NFDI4Memory"
 f.wordcloud.frequency(df.4memory.tools, 100, "tools in NFDI4Memory user stories", "png")
 v.label.source = "Data: Digital Humanities Quarterly, http://digitalhumanities.org/dhq/"
 f.wordcloud.frequency(df.dhq.tools, 100, paste("tools in", nrow(df.dhq),  "articles from Digital Humanities Quarterly"), "png")
+f.wordcloud.frequency(df.dhq.tools, 100, paste("tools in", nrow(df.dhq),  "articles from Digital Humanities Quarterly"), "svg")

@@ -35,7 +35,6 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
     + `R` is strikingly prominent
         * add column with KWIC to the intermediate data output 
 - add DHd abstracts from the GitHub repositories
-- the (TEI) XML in the corpora might need some preprocessing to CSV with metadata, plain text
 
 ## done
 

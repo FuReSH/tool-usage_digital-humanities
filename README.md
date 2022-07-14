@@ -37,6 +37,10 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
 - data
     + [ ] add DHd abstracts from the GitHub repositories
     + [ ] add descriptions from DFG [GEPRIS - Geförderte Projekte der Deutschen Forschungsgemeinschaft](https://gepris.dfg.de/gepris/OCTOPUS) database on funded projects
+        * Unfortunately, DFG does not provide an API or machine-actionable data for reuse
+        * Scraping:
+            - the URLs are easy to scrape as they seem to include a simple nummerical ID: `https://gepris.dfg.de/gepris/projekt/5358364`
+            - one can iterate over these IDs, scrape every result and write it into a structured format
 
 ## done
 

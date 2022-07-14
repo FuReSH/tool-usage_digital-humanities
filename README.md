@@ -33,8 +33,10 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
 
 - results
     + `R` is strikingly prominent
-        * add column with KWIC to the intermediate data output 
-- add DHd abstracts from the GitHub repositories
+        * [ ] add column with KWIC to the intermediate data output 
+- data
+    + [ ] add DHd abstracts from the GitHub repositories
+    + [ ] add descriptions from DFG [GEPRIS - Geförderte Projekte der Deutschen Forschungsgemeinschaft](https://gepris.dfg.de/gepris/OCTOPUS) database on funded projects
 
 ## done
 

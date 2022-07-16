@@ -12,9 +12,9 @@ setwd(here("data/dfg"))
 # https://rud.is/b/2017/07/28/analyzing-wait-delay-settings-in-common-crawl-robots-txt-data-with-r/
 
 # short wrapper function to directly get the text content of an HTML element
-f.get.text <- function(url, xpath) {
-  html_element(url, xpath = xpath) %>% 
-    html_text2()
+f.get.text <- function(html, xpath) {
+  rvest::html_element(html, xpath = xpath) %>% 
+    rvest::html_text2()
 }
 # scrape a single GEPRIS entry
 f.scrape.gepris.entry <- function(project.id) {
@@ -26,13 +26,17 @@ f.scrape.gepris.entry <- function(project.id) {
   # problem: the number of divs changes, depending on presence of data. Selection by index will therefore be errorprone
   df.gepris <- dplyr::tibble(
     id = as.double(project.id),
+    #html.details = rvest::html_element(v.page, xpath = v.xpath.details),
     title = f.get.text(v.page, paste(v.xpath.details, "h1[1]", sep = "/")),
-    antragsteller = f.get.text(v.page, paste(v.xpath.details, "div[1]/span[@class = 'value']", sep = "/")),
-    antragstellerId = str_replace(f.get.text(v.page, 
-                                             paste(v.xpath.details, "div[1]/span[@class = 'value']/a/@href", sep = "/")),
-        '^.*?(\\d+)$', '\\1'),
-    fachlicheZuordnung = f.get.text(v.page, paste(v.xpath.details, "div[@class = 'firstUnderAntragsbeteiligte']/span[@class = 'value']", sep = "/")),
-    dates = f.get.text(v.page, paste(v.xpath.details, "div[3]/span[@class = 'value']", sep = "/")),
+    #antragsteller = f.get.text(v.page, paste(v.xpath.details, "div[1]/span[@class = 'value']", sep = "/")),
+    antragsteller = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'value'][starts-with(a/@href, '/gepris/person')]", sep = "//")),
+    #antragstellerId = str_replace(f.get.text(v.page, paste(v.xpath.details, "div[1]/span[@class = 'value']/a/@href", sep = "/")),'^.*?(\\d+)$', '\\1'),
+    antragstellerId = str_replace(f.get.text(v.page, paste(v.xpath.details, "span[@class = 'value']/a[starts-with(@href, '/gepris/person')]/@href", sep = "//")),
+                                  '^.*?(\\d+)$', '\\1'),
+    #fachlicheZuordnung = f.get.text(v.page, paste(v.xpath.details, "div[@class = 'firstUnderAntragsbeteiligte']/span[@class = 'value']", sep = "/")),
+    fachlicheZuordnung = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'name'][text() = 'Fachliche Zuordnung']/following-sibling::span[@class = 'value']", sep = "//")),
+    #dates = f.get.text(v.page, paste(v.xpath.details, "div[3]/span[@class = 'value']", sep = "/")),
+    dates = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'name'][text() = 'Förderung']/following-sibling::span[@class = 'value']", sep = "//")),
     projektText = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']", sep = "/")),
     dfgVerfahren = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[1]/span[@class = 'value']", sep = "/"))
   )
@@ -81,18 +85,20 @@ df.ids.project <- tibble(id = v.ids.project) %>%
   dplyr::arrange(id)
 # save to disk
 write.table(df.ids.project, file = "dfg_project-ids-humanities.csv", row.names = F, sep = ",")
+# load if previously generated
+df.ids.project <- readr::read_csv("dfg_project-ids-humanities.csv")
 
 # iterate through a range of project IDs
-df.gepris = f.scrape.gepris.entry(df.ids.project[1, "id"])
+df.dfg.projects = f.scrape.gepris.entry(df.ids.project[1, "id"])
 for(id in df.ids.project[2:100, ]$id) {
   print(paste("Scraping DFG project no.", id, "from GEPRIS", sep = " "))
-  df.gepris <- df.gepris %>%
+  df.dfg.projects <- df.dfg.projects %>%
     add_row(f.scrape.gepris.entry(id))
-  Sys.sleep(1)
+  Sys.sleep(0.5)
 }
 
 # postprocessing
-df.gepris <- df.gepris %>%
+df.dfg.projects <- df.dfg.projects %>%
   mutate(onset = as.double(str_replace(dates, '^.*?(\\d{4}).*$', '\\1')),
          terminus = as.double(str_replace(dates, '^.*(\\d{4})*.*(\\d{4}).*?$', '\\2')))
 

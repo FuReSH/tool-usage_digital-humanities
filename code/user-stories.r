@@ -26,17 +26,31 @@ df.4memory <- read_delim("problem-stories_nfdi_anonym.csv", delim = ";") %>%
 setwd(here("data/dhq"))
 v.files.dhq <- list.files(path = "txt", pattern = "*.txt",  ignore.case = T, full.names = T)
 df.dhq <- f.read.txt.files(v.files.dhq)
+
+# DFG GEPRIS
+setwd(here("data/dfg"))
+load("dfg_projects.rda")
+df.dfg <- df.gepris %>%
+  dplyr::rename(text = projektText) %>%
+  dplyr::select(id, text)
+
 # load tool list
 load(file = here("data/furesh-tools.rda"))
 df.tools.yml <- f.read.yaml.furesh(here("data/tools.yml")) 
+
 
 # run frequency analysis
 df.4memory.tools <- f.stringmatch.frequency(df.4memory, df.tools$variant)
 df.4memory.tools <- f.clean.variants(df.4memory.tools, nrow(df.4memory))
 write.table(df.4memory.tools, file = here("data/nfdi4memory/4memory-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
+
 df.dhq.tools <- f.stringmatch.frequency(df.dhq, df.tools$variant)
 df.dhq.tools <- f.clean.variants(df.dhq.tools, nrow(df.dhq))
 write.table(df.dhq.tools, file = here("data/dhq/dhq-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
+
+df.dfg.tools <- f.stringmatch.frequency(df.dfg, df.tools$variant)
+df.dfg.tools <- f.clean.variants(df.dfg.tools, nrow(df.dfg))
+write.table(df.dfg.tools, file = here("data/dfg/dfg-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
 # save data
 
 # wordcloud

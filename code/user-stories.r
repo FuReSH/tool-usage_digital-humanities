@@ -30,7 +30,7 @@ df.dhq <- f.read.txt.files(v.files.dhq)
 # DFG GEPRIS
 setwd(here("data/dfg"))
 load("dfg_projects.rda")
-df.dfg <- df.gepris %>%
+df.dfg <- df.dfg.projects %>%
   dplyr::rename(text = projektText) %>%
   dplyr::select(id, text)
 

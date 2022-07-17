@@ -103,8 +103,8 @@ df.dfg.projects <- df.dfg.projects %>%
          terminus = as.double(str_replace(dates, '^.*(\\d{4})*.*(\\d{4}).*?$', '\\2')))
 
 # save output
-save(df.gepris, file = "dfg_projects.rda")
-write.table(df.gepris, file = "dfg_projects.csv", row.names = F, sep = ",")
+save(df.dfg.projects, file = "dfg_projects.rda")
+write.table(df.dfg.projects, file = "dfg_projects.csv", row.names = F, sep = ",")
 # iterate through a nummerical range of project IDs
 # NOT FEASIBLE as this would need 1 billion iterations to find c.130000 existing IDs
 v.id = 172886252

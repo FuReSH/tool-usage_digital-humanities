@@ -36,6 +36,8 @@ df.dfg <- df.dfg.projects %>%
 
 # load tool list
 load(file = here("data/furesh-tools.rda"))
+df.tools <- df.tools %>%
+  dplyr::filter(term != 'Internet')
 df.tools.yml <- f.read.yaml.furesh(here("data/tools.yml")) 
 
 
@@ -51,7 +53,6 @@ write.table(df.dhq.tools, file = here("data/dhq/dhq-frequencies_tools.csv"), row
 df.dfg.tools <- f.stringmatch.frequency(df.dfg, df.tools$variant)
 df.dfg.tools <- f.clean.variants(df.dfg.tools, nrow(df.dfg))
 write.table(df.dfg.tools, file = here("data/dfg/dfg-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
-# save data
 
 # wordcloud
 v.label.source = "Data: NFDI4Memory"
@@ -59,3 +60,8 @@ f.wordcloud.frequency(df.4memory.tools, 100, "tools in NFDI4Memory user stories"
 v.label.source = "Data: Digital Humanities Quarterly, http://digitalhumanities.org/dhq/"
 f.wordcloud.frequency(df.dhq.tools, 100, paste("tools in", nrow(df.dhq),  "articles from Digital Humanities Quarterly"), "png")
 f.wordcloud.frequency(df.dhq.tools, 100, paste("tools in", nrow(df.dhq),  "articles from Digital Humanities Quarterly"), "svg")
+
+v.label.source = "Data: DFG GEPRIS"
+v.label.title = paste("tools in ", nrow(df.dfg),  " project descriptions from DFG GEPRIS (", min(df.dfg.projects$onset, na.rm = T), "-", max(df.dfg.projects$terminus, na.rm = T), ")", sep = '')
+f.wordcloud.frequency(df.dfg.tools, 100, v.label.title, "png")
+f.wordcloud.frequency(df.dfg.tools, 100, v.label.title, "svg")

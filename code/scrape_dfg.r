@@ -90,7 +90,7 @@ df.ids.project <- readr::read_csv("dfg_project-ids-humanities.csv")
 
 # iterate through a range of project IDs
 df.dfg.projects = f.scrape.gepris.entry(df.ids.project[1, "id"])
-for(id in df.ids.project[2:100, ]$id) {
+for(id in df.ids.project[10001:15873, ]$id) {
   print(paste("Scraping DFG project no.", id, "from GEPRIS", sep = " "))
   df.dfg.projects <- df.dfg.projects %>%
     add_row(f.scrape.gepris.entry(id))

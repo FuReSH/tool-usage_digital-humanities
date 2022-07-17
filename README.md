@@ -36,19 +36,7 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
         * [ ] add column with KWIC to the intermediate data output 
 - data
     + [ ] add DHd abstracts from the GitHub repositories
-    + [ ] add descriptions from DFG [GEPRIS - Geförderte Projekte der Deutschen Forschungsgemeinschaft](https://gepris.dfg.de/gepris/OCTOPUS) database on funded projects
-        * Unfortunately, DFG does not provide an API or machine-actionable data for reuse
-        * Scraping:
-            - the URLs are easy to scrape as they include a simple nummerical ID: `https://gepris.dfg.de/gepris/projekt/5358364`
-                + for the project results add `/ergebnisse` to this URL
-            - one can iterate over these IDs, scrape every result and write it into a structured format
-            - **PROBLEM**: IDs are not strictly sequential and have at least up to 9 digits, which would mean a total of 1 billion potential IDs to find the 135273 actual projects listed in GEPRIS. With a 1 second delay between calls, this will take 9259 days or more than 25 years
-                + idea: iterate over the 2706 katalog pages to find the 50 projekt IDs per page
-                    * URLs
-                        - <https://gepris.dfg.de/gepris/OCTOPUS?beginOfFunding=&bewilligungsStatus=&bundesland=DEU%23&context=projekt&einrichtungsart=-1&fachgebiet=11&fachkollegium=%23&findButton=historyCall&gefoerdertIn=&ggsHunderter=0&index=0&nurProjekteMitAB=false&oldGgsHunderter=0&oldfachgebiet=11&pemu=%23&task=doKatalog&teilprojekte=true&zk_transferprojekt=false>
-                        - <https://gepris.dfg.de/gepris/OCTOPUS?beginOfFunding=&bewilligungsStatus=&bundesland=DEU%23&context=projekt&einrichtungsart=-1&fachgebiet=11&fachkollegium=%23&findButton=historyCall&gefoerdertIn=&ggsHunderter=0&index=50&nurProjekteMitAB=false&oldGgsHunderter=0&oldfachgebiet=11&pemu=%23&task=doKatalog&teilprojekte=true&zk_transferprojekt=false>
-                    * iterate 318 pages for humanities (https://gepris.dfg.de/gepris/OCTOPUS?task=doKatalog&context=projekt&oldfachgebiet=11&fachgebiet=11&fachkollegium=%23&nurProjekteMitAB=false&bundesland=DEU%23&pemu=%23&zk_transferprojekt=false&teilprojekte=false&teilprojekte=true&bewilligungsStatus=&beginOfFunding=&gefoerdertIn=&oldGgsHunderter=0&ggsHunderter=0&einrichtungsart=-1&findButton=Finden)
-        - [x] scraper function
+    
 
 ## done
 
@@ -72,3 +60,17 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
                 + 6366, 6483: a lot of illformed endnote XML inserts
         3. full TEI XML files
             - to do: run some XSLT to convert to `.txt`
+- Add data from DFG's GEPRIS
+    +  [x] add descriptions from DFG [GEPRIS - Geförderte Projekte der Deutschen Forschungsgemeinschaft](https://gepris.dfg.de/gepris/OCTOPUS) database on funded projects
+    * Unfortunately, DFG does not provide an API or machine-actionable data for reuse
+    * Scraping:
+        - the URLs are easy to scrape as they include a simple nummerical ID: `https://gepris.dfg.de/gepris/projekt/5358364`
+            + for the project results add `/ergebnisse` to this URL
+        - one can iterate over these IDs, scrape every result and write it into a structured format
+        - **PROBLEM**: IDs are not strictly sequential and have at least up to 9 digits, which would mean a total of 1 billion potential IDs to find the 135273 actual projects listed in GEPRIS. With a 1 second delay between calls, this will take 9259 days or more than 25 years
+            + [x] idea: iterate over the 2706 katalog pages to find the 50 projekt IDs per page
+                * URLs
+                    - <https://gepris.dfg.de/gepris/OCTOPUS?beginOfFunding=&bewilligungsStatus=&bundesland=DEU%23&context=projekt&einrichtungsart=-1&fachgebiet=11&fachkollegium=%23&findButton=historyCall&gefoerdertIn=&ggsHunderter=0&index=0&nurProjekteMitAB=false&oldGgsHunderter=0&oldfachgebiet=11&pemu=%23&task=doKatalog&teilprojekte=true&zk_transferprojekt=false>
+                    - <https://gepris.dfg.de/gepris/OCTOPUS?beginOfFunding=&bewilligungsStatus=&bundesland=DEU%23&context=projekt&einrichtungsart=-1&fachgebiet=11&fachkollegium=%23&findButton=historyCall&gefoerdertIn=&ggsHunderter=0&index=50&nurProjekteMitAB=false&oldGgsHunderter=0&oldfachgebiet=11&pemu=%23&task=doKatalog&teilprojekte=true&zk_transferprojekt=false>
+                * [x] iterate 318 pages for humanities (https://gepris.dfg.de/gepris/OCTOPUS?task=doKatalog&context=projekt&oldfachgebiet=11&fachgebiet=11&fachkollegium=%23&nurProjekteMitAB=false&bundesland=DEU%23&pemu=%23&zk_transferprojekt=false&teilprojekte=false&teilprojekte=true&bewilligungsStatus=&beginOfFunding=&gefoerdertIn=&oldGgsHunderter=0&ggsHunderter=0&einrichtungsart=-1&findButton=Finden)
+    - [x] scraper functions

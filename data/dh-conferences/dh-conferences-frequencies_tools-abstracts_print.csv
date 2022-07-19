@@ -1,7 +1,6 @@
 term,freq,freq.rel
 R,259,1
 TEI,155,0.6
-Internet,134,0.52
 NLP,118,0.46
 XML,117,0.45
 GitHub,98,0.38
@@ -35,6 +34,7 @@ Voyant,19,0.07
 GUI,18,0.07
 MALLET,18,0.07
 P5,18,0.07
+stylo(),17,0.07
 CLARIN,16,0.06
 DOI,16,0.06
 stylometry,16,0.06
@@ -49,7 +49,6 @@ CollateX,9,0.03
 jQuery,9,0.03
 MARC,9,0.03
 SQL,9,0.03
-Stylo,9,0.03
 word2vec,9,0.03
 Juxta,8,0.03
 SKOS,8,0.03
@@ -98,7 +97,7 @@ CWRC-Writer,2,0.01
 DTD,2,0.01
 eHinman,2,0.01
 GATE,2,0.01
-ggplot2,2,0.01
+ggplot(),2,0.01
 HeidelTime,2,0.01
 Jupyter Notebook,2,0.01
 NoSQL,2,0.01

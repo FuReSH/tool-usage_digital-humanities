@@ -35,7 +35,8 @@ df.dfg <- df.dfg.projects %>%
   dplyr::select(id, text)
 
 # load tool list
-load(file = here("data/furesh-tools.rda"))
+#load(file = here("data/furesh-tools.rda"))
+df.tools <- read_csv(here("data","tools.csv"))
 df.tools <- df.tools %>%
   dplyr::filter(term != 'Internet')
 df.tools.yml <- f.read.yaml.furesh(here("data/tools.yml")) 

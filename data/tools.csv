@@ -49,6 +49,8 @@ Digital Catalogue Raisonné,Digital Catalogue Raisonné
 distant reading,distant reading
 Docker,Docker
 DOI,DOI
+dplyr(),dplyr
+dplyr(),Dplyr
 Drupal,Drupal
 DTA::CAB,DTA::CAB
 DTD,DTD
@@ -82,8 +84,8 @@ Gensim,Gensim
 GeoJSON,GeoJSON
 Gephi,Gephi
 GeTa,GeTa
-ggplot2,ggplot
-ggplot2,ggplot2
+ggplot(),ggplot
+ggplot(),ggplot2
 GIS,geographic information system
 GIS,GIS
 git,git
@@ -234,7 +236,8 @@ SQL,SQL
 SQLite,SQLite
 Stereoscope,Stereoscope
 StoryMap,StoryMap
-Stylo,Stylo
+stylo(),Stylo
+stylo(),stylo
 stylometry,stylometry
 SVG,SVG
 T-Pen,T-Pen
@@ -251,6 +254,8 @@ TextGrid,TextGrid
 TextGridLab,TextGridLab
 Textual Communities,Textual Communities
 TF-IDF,TF-IDF
+tidyr(),Tidyr
+tidyr(),tidyr
 Tidyverse,tidyverse
 Tidyverse,Tidyverse
 TMW,TMW

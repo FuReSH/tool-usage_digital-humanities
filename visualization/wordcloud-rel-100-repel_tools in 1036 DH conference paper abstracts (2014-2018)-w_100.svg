@@ -27,206 +27,205 @@
 </defs>
 <g clip-path='url(#cpMTguMjJ8Njc0Ljg0fDU5LjYzfDY0Mi4zMg==)'>
 <rect x='18.22' y='59.63' width='656.62' height='582.69' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
-<line x1='486.27' y1='206.08' x2='347.32' y2='350.15' style='stroke-width: 0.00; stroke: #FDE725;' />
-<line x1='326.21' y1='330.51' x2='345.72' y2='350.17' style='stroke-width: 0.00; stroke: #22A785;' />
-<line x1='455.73' y1='303.31' x2='347.62' y2='350.50' style='stroke-width: 0.00; stroke: #20938C;' />
-<line x1='332.67' y1='376.45' x2='346.00' y2='351.94' style='stroke-width: 0.00; stroke: #25848E;' />
-<line x1='385.04' y1='163.30' x2='346.75' y2='349.91' style='stroke-width: 0.00; stroke: #25838E;' />
-<line x1='498.96' y1='477.08' x2='347.42' y2='351.71' style='stroke-width: 0.00; stroke: #2C718E;' />
-<line x1='258.32' y1='482.95' x2='345.91' y2='351.90' style='stroke-width: 0.00; stroke: #31688E;' />
-<line x1='307.49' y1='529.88' x2='346.30' y2='352.03' style='stroke-width: 0.00; stroke: #365D8D;' />
-<line x1='329.40' y1='232.96' x2='346.37' y2='349.90' style='stroke-width: 0.00; stroke: #365C8D;' />
-<line x1='352.95' y1='345.19' x2='347.38' y2='350.21' style='stroke-width: 0.00; stroke: #39558C;' />
-<line x1='330.66' y1='345.82' x2='345.39' y2='350.60' style='stroke-width: 0.00; stroke: #3B528B;' />
-<line x1='324.29' y1='449.81' x2='346.29' y2='352.03' style='stroke-width: 0.00; stroke: #3B528B;' />
-<line x1='175.80' y1='269.75' x2='345.46' y2='350.46' style='stroke-width: 0.00; stroke: #3B528B;' />
-<line x1='394.31' y1='537.52' x2='346.80' y2='352.02' style='stroke-width: 0.00; stroke: #3C508B;' />
-<line x1='276.48' y1='162.95' x2='346.15' y2='349.95' style='stroke-width: 0.00; stroke: #3D4E8A;' />
-<line x1='319.22' y1='381.36' x2='345.77' y2='351.82' style='stroke-width: 0.00; stroke: #424086;' />
-<line x1='359.77' y1='494.87' x2='346.63' y2='352.05' style='stroke-width: 0.00; stroke: #424086;' />
-<line x1='447.30' y1='517.03' x2='347.10' y2='351.92' style='stroke-width: 0.00; stroke: #433E85;' />
-<line x1='498.26' y1='244.16' x2='347.48' y2='350.30' style='stroke-width: 0.00; stroke: #46317E;' />
-<line x1='401.19' y1='293.71' x2='347.31' y2='350.15' style='stroke-width: 0.00; stroke: #46307E;' />
-<line x1='186.06' y1='210.66' x2='345.66' y2='350.22' style='stroke-width: 0.00; stroke: #472C7A;' />
-<line x1='307.60' y1='348.05' x2='345.32' y2='350.88' style='stroke-width: 0.00; stroke: #472A7A;' />
-<line x1='158.63' y1='463.01' x2='345.52' y2='351.57' style='stroke-width: 0.00; stroke: #482475;' />
-<line x1='437.74' y1='322.65' x2='347.67' y2='350.62' style='stroke-width: 0.00; stroke: #482475;' />
-<line x1='421.16' y1='206.97' x2='347.04' y2='349.99' style='stroke-width: 0.00; stroke: #482374;' />
-<line x1='420.21' y1='443.84' x2='347.23' y2='351.86' style='stroke-width: 0.00; stroke: #482374;' />
-<line x1='280.17' y1='214.84' x2='346.05' y2='349.98' style='stroke-width: 0.00; stroke: #481F70;' />
-<line x1='469.17' y1='444.03' x2='347.45' y2='351.67' style='stroke-width: 0.00; stroke: #481D6F;' />
-<line x1='363.77' y1='260.18' x2='346.73' y2='349.91' style='stroke-width: 0.00; stroke: #481C6E;' />
-<line x1='240.06' y1='425.86' x2='345.58' y2='351.64' style='stroke-width: 0.00; stroke: #481B6D;' />
-<line x1='355.76' y1='438.69' x2='346.64' y2='352.05' style='stroke-width: 0.00; stroke: #481A6C;' />
-<line x1='358.25' y1='188.56' x2='346.61' y2='349.90' style='stroke-width: 0.00; stroke: #481A6C;' />
-<line x1='419.79' y1='377.01' x2='347.66' y2='351.37' style='stroke-width: 0.00; stroke: #481A6C;' />
-<line x1='300.24' y1='192.36' x2='346.22' y2='349.93' style='stroke-width: 0.00; stroke: #48186A;' />
-<line x1='117.11' y1='392.42' x2='345.34' y2='351.19' style='stroke-width: 0.00; stroke: #48186A;' />
-<line x1='53.12' y1='366.47' x2='345.32' y2='351.04' style='stroke-width: 0.00; stroke: #48186A;' />
-<line x1='519.28' y1='359.96' x2='347.74' y2='351.04' style='stroke-width: 0.00; stroke: #481668;' />
-<line x1='249.20' y1='277.16' x2='345.60' y2='350.27' style='stroke-width: 0.00; stroke: #481668;' />
-<line x1='133.05' y1='340.27' x2='345.32' y2='350.91' style='stroke-width: 0.00; stroke: #481668;' />
-<line x1='131.52' y1='117.02' x2='345.76' y2='350.14' style='stroke-width: 0.00; stroke: #471164;' />
-<line x1='96.36' y1='435.17' x2='345.39' y2='351.36' style='stroke-width: 0.00; stroke: #471063;' />
-<line x1='183.93' y1='115.98' x2='345.89' y2='350.06' style='stroke-width: 0.00; stroke: #471063;' />
-<line x1='331.87' y1='380.77' x2='346.04' y2='351.96' style='stroke-width: 0.00; stroke: #470E61;' />
-<line x1='358.28' y1='362.29' x2='347.35' y2='351.77' style='stroke-width: 0.00; stroke: #470E61;' />
-<line x1='405.61' y1='113.76' x2='346.79' y2='349.92' style='stroke-width: 0.00; stroke: #470D60;' />
-<line x1='543.52' y1='390.17' x2='347.71' y2='351.21' style='stroke-width: 0.00; stroke: #470D60;' />
-<line x1='227.86' y1='454.46' x2='345.66' y2='351.73' style='stroke-width: 0.00; stroke: #460B5E;' />
-<line x1='251.05' y1='317.32' x2='345.40' y2='350.58' style='stroke-width: 0.00; stroke: #460B5E;' />
-<line x1='393.05' y1='398.99' x2='347.32' y2='351.79' style='stroke-width: 0.00; stroke: #460B5E;' />
-<line x1='249.19' y1='253.18' x2='345.72' y2='350.17' style='stroke-width: 0.00; stroke: #460B5E;' />
-<line x1='404.63' y1='488.93' x2='346.95' y2='351.98' style='stroke-width: 0.00; stroke: #460B5E;' />
-<line x1='175.87' y1='414.26' x2='345.41' y2='351.39' style='stroke-width: 0.00; stroke: #460B5E;' />
-<line x1='332.66' y1='414.11' x2='346.30' y2='352.03' style='stroke-width: 0.00; stroke: #460A5D;' />
-<line x1='154.92' y1='434.37' x2='345.44' y2='351.45' style='stroke-width: 0.00; stroke: #460A5D;' />
-<line x1='403.30' y1='250.72' x2='347.07' y2='350.01' style='stroke-width: 0.00; stroke: #460A5D;' />
-<line x1='419.03' y1='420.29' x2='347.35' y2='351.76' style='stroke-width: 0.00; stroke: #460A5D;' />
-<line x1='477.21' y1='218.37' x2='347.33' y2='350.16' style='stroke-width: 0.00; stroke: #460A5D;' />
-<line x1='531.84' y1='418.31' x2='347.65' y2='351.38' style='stroke-width: 0.00; stroke: #460A5D;' />
-<line x1='306.56' y1='262.51' x2='346.08' y2='349.97' style='stroke-width: 0.00; stroke: #460A5D;' />
-<line x1='366.70' y1='304.05' x2='346.96' y2='349.97' style='stroke-width: 0.00; stroke: #46085C;' />
-<line x1='421.94' y1='219.80' x2='347.08' y2='350.01' style='stroke-width: 0.00; stroke: #46085C;' />
-<line x1='321.07' y1='475.63' x2='346.31' y2='352.03' style='stroke-width: 0.00; stroke: #46085C;' />
-<line x1='208.39' y1='510.71' x2='345.79' y2='351.83' style='stroke-width: 0.00; stroke: #46085C;' />
-<line x1='444.50' y1='240.00' x2='347.28' y2='350.13' style='stroke-width: 0.00; stroke: #46085C;' />
-<line x1='200.71' y1='297.98' x2='345.40' y2='350.57' style='stroke-width: 0.00; stroke: #46075A;' />
-<line x1='187.59' y1='314.63' x2='345.35' y2='350.70' style='stroke-width: 0.00; stroke: #46075A;' />
-<line x1='460.41' y1='398.57' x2='347.63' y2='351.43' style='stroke-width: 0.00; stroke: #46075A;' />
-<line x1='488.55' y1='479.79' x2='347.38' y2='351.74' style='stroke-width: 0.00; stroke: #46075A;' />
-<line x1='137.30' y1='140.03' x2='345.73' y2='350.16' style='stroke-width: 0.00; stroke: #450559;' />
-<line x1='269.39' y1='270.79' x2='345.74' y2='350.15' style='stroke-width: 0.00; stroke: #450559;' />
-<line x1='375.95' y1='424.60' x2='346.93' y2='351.99' style='stroke-width: 0.00; stroke: #450559;' />
-<line x1='483.72' y1='417.35' x2='347.59' y2='351.49' style='stroke-width: 0.00; stroke: #450559;' />
-<line x1='414.30' y1='355.44' x2='347.74' y2='351.05' style='stroke-width: 0.00; stroke: #450559;' />
-<line x1='146.75' y1='283.83' x2='345.39' y2='350.59' style='stroke-width: 0.00; stroke: #450559;' />
-<line x1='352.93' y1='458.44' x2='346.59' y2='352.05' style='stroke-width: 0.00; stroke: #450559;' />
-<line x1='489.57' y1='339.39' x2='347.74' y2='350.88' style='stroke-width: 0.00; stroke: #450457;' />
-<line x1='506.61' y1='379.70' x2='347.72' y2='351.19' style='stroke-width: 0.00; stroke: #450457;' />
-<line x1='457.70' y1='354.95' x2='347.74' y2='351.02' style='stroke-width: 0.00; stroke: #450457;' />
-<line x1='197.47' y1='489.91' x2='345.69' y2='351.75' style='stroke-width: 0.00; stroke: #450457;' />
-<line x1='454.11' y1='489.71' x2='347.22' y2='351.86' style='stroke-width: 0.00; stroke: #450457;' />
-<line x1='449.56' y1='264.61' x2='347.41' y2='350.23' style='stroke-width: 0.00; stroke: #450457;' />
-<line x1='62.06' y1='484.64' x2='345.45' y2='351.48' style='stroke-width: 0.00; stroke: #450457;' />
-<line x1='384.45' y1='274.64' x2='347.02' y2='349.99' style='stroke-width: 0.00; stroke: #450457;' />
-<line x1='118.04' y1='314.68' x2='345.33' y2='350.78' style='stroke-width: 0.00; stroke: #440256;' />
-<line x1='283.43' y1='237.83' x2='345.99' y2='350.01' style='stroke-width: 0.00; stroke: #440256;' />
-<line x1='189.53' y1='235.55' x2='345.59' y2='350.29' style='stroke-width: 0.00; stroke: #440256;' />
-<line x1='536.16' y1='267.85' x2='347.62' y2='350.50' style='stroke-width: 0.00; stroke: #440256;' />
-<line x1='207.48' y1='257.25' x2='345.56' y2='350.32' style='stroke-width: 0.00; stroke: #440256;' />
-<line x1='473.04' y1='269.04' x2='347.51' y2='350.34' style='stroke-width: 0.00; stroke: #440256;' />
-<line x1='219.34' y1='531.61' x2='345.88' y2='351.89' style='stroke-width: 0.00; stroke: #440256;' />
-<line x1='367.66' y1='227.98' x2='346.71' y2='349.91' style='stroke-width: 0.00; stroke: #440256;' />
-<line x1='382.18' y1='477.38' x2='346.82' y2='352.02' style='stroke-width: 0.00; stroke: #440256;' />
-<line x1='224.01' y1='472.63' x2='345.72' y2='351.78' style='stroke-width: 0.00; stroke: #440256;' />
-<line x1='456.79' y1='464.41' x2='347.32' y2='351.79' style='stroke-width: 0.00; stroke: #440154;' />
-<line x1='368.78' y1='403.01' x2='346.96' y2='351.98' style='stroke-width: 0.00; stroke: #440154;' />
-<line x1='393.90' y1='466.27' x2='346.94' y2='351.99' style='stroke-width: 0.00; stroke: #440154;' />
-<line x1='341.53' y1='344.05' x2='345.87' y2='350.07' style='stroke-width: 0.00; stroke: #440154;' />
-<line x1='342.97' y1='274.65' x2='346.48' y2='349.90' style='stroke-width: 0.00; stroke: #440154;' />
-<line x1='473.12' y1='441.91' x2='347.47' y2='351.65' style='stroke-width: 0.00; stroke: #440154;' />
-<line x1='215.29' y1='234.58' x2='345.67' y2='350.21' style='stroke-width: 0.00; stroke: #440154;' />
-<text x='489.00' y='204.28' text-anchor='middle' style='font-size: 85.36px; fill: #FDE725; font-family: Helvetica Neue;' textLength='58.46px' lengthAdjust='spacingAndGlyphs'>R</text>
-<text x='303.51' y='328.71' text-anchor='middle' style='font-size: 66.84px; fill: #22A785; font-family: Helvetica Neue;' textLength='96.50px' lengthAdjust='spacingAndGlyphs'>TEI</text>
-<text x='564.38' y='323.67' text-anchor='middle' style='font-size: 62.38px; fill: #20938C; font-family: Helvetica Neue;' textLength='213.70px' lengthAdjust='spacingAndGlyphs'>Internet</text>
-<text x='274.31' y='409.16' text-anchor='middle' style='font-size: 58.75px; fill: #25848E; font-family: Helvetica Neue;' textLength='113.13px' lengthAdjust='spacingAndGlyphs'>NLP</text>
-<text x='385.69' y='161.50' text-anchor='middle' style='font-size: 58.51px; fill: #25838E; font-family: Helvetica Neue;' textLength='119.22px' lengthAdjust='spacingAndGlyphs'>XML</text>
-<text x='586.00' y='497.85' text-anchor='middle' style='font-size: 53.83px; fill: #2C718E; font-family: Helvetica Neue;' textLength='170.47px' lengthAdjust='spacingAndGlyphs'>GitHub</text>
-<text x='254.06' y='521.29' text-anchor='middle' style='font-size: 51.18px; fill: #31688E; font-family: Helvetica Neue;' textLength='79.57px' lengthAdjust='spacingAndGlyphs'>API</text>
-<text x='306.83' y='565.99' text-anchor='middle' style='font-size: 48.07px; fill: #365D8D; font-family: Helvetica Neue;' textLength='67.67px' lengthAdjust='spacingAndGlyphs'>OA</text>
-<text x='329.26' y='231.16' text-anchor='middle' style='font-size: 47.78px; fill: #365C8D; font-family: Helvetica Neue;' textLength='68.16px' lengthAdjust='spacingAndGlyphs'>ML</text>
-<text x='385.74' y='343.39' text-anchor='middle' style='font-size: 45.98px; fill: #39558C; font-family: Helvetica Neue;' textLength='76.59px' lengthAdjust='spacingAndGlyphs'>GIS</text>
-<text x='175.34' y='361.52' text-anchor='middle' style='font-size: 45.05px; fill: #3B528B; font-family: Helvetica Neue;' textLength='307.04px' lengthAdjust='spacingAndGlyphs'>Topic Modeling</text>
-<text x='277.33' y='468.76' text-anchor='middle' style='font-size: 44.73px; fill: #3B528B; font-family: Helvetica Neue;' textLength='90.33px' lengthAdjust='spacingAndGlyphs'>LOD</text>
-<text x='103.59' y='284.92' text-anchor='middle' style='font-size: 44.73px; fill: #3B528B; font-family: Helvetica Neue;' textLength='140.81px' lengthAdjust='spacingAndGlyphs'>Python</text>
-<text x='395.60' y='570.80' text-anchor='middle' style='font-size: 44.10px; fill: #3C508B; font-family: Helvetica Neue;' textLength='95.55px' lengthAdjust='spacingAndGlyphs'>OCR</text>
-<text x='272.31' y='161.15' text-anchor='middle' style='font-size: 43.45px; fill: #3D4E8A; font-family: Helvetica Neue;' textLength='323.33px' lengthAdjust='spacingAndGlyphs'>network analysis</text>
-<text x='186.71' y='399.74' text-anchor='middle' style='font-size: 39.31px; fill: #424086; font-family: Helvetica Neue;' textLength='261.43px' lengthAdjust='spacingAndGlyphs'>distant reading</text>
-<text x='359.81' y='524.74' text-anchor='middle' style='font-size: 39.31px; fill: #424086; font-family: Helvetica Neue;' textLength='77.17px' lengthAdjust='spacingAndGlyphs'>RDF</text>
-<text x='488.01' y='531.91' text-anchor='middle' style='font-size: 38.57px; fill: #433E85; font-family: Helvetica Neue;' textLength='77.82px' lengthAdjust='spacingAndGlyphs'>NER</text>
-<text x='585.65' y='255.82' text-anchor='middle' style='font-size: 34.62px; fill: #46317E; font-family: Helvetica Neue;' textLength='171.17px' lengthAdjust='spacingAndGlyphs'>text mining</text>
-<text x='435.61' y='304.05' text-anchor='middle' style='font-size: 34.19px; fill: #46307E; font-family: Helvetica Neue;' textLength='65.23px' lengthAdjust='spacingAndGlyphs'>LDA</text>
-<text x='141.02' y='221.62' text-anchor='middle' style='font-size: 32.43px; fill: #472C7A; font-family: Helvetica Neue;' textLength='86.47px' lengthAdjust='spacingAndGlyphs'>Gephi</text>
-<text x='247.21' y='359.45' text-anchor='middle' style='font-size: 31.97px; fill: #472A7A; font-family: Helvetica Neue;' textLength='117.19px' lengthAdjust='spacingAndGlyphs'>DARIAH</text>
-<text x='109.47' y='473.97' text-anchor='middle' style='font-size: 29.56px; fill: #482475; font-family: Helvetica Neue;' textLength='94.73px' lengthAdjust='spacingAndGlyphs'>Omeka</text>
-<text x='469.35' y='332.72' text-anchor='middle' style='font-size: 29.56px; fill: #482475; font-family: Helvetica Neue;' textLength='59.62px' lengthAdjust='spacingAndGlyphs'>PCA</text>
-<text x='422.99' y='205.17' text-anchor='middle' style='font-size: 29.05px; fill: #482374; font-family: Helvetica Neue;' textLength='57.54px' lengthAdjust='spacingAndGlyphs'>CSV</text>
-<text x='438.96' y='455.25' text-anchor='middle' style='font-size: 29.05px; fill: #482374; font-family: Helvetica Neue;' textLength='33.90px' lengthAdjust='spacingAndGlyphs'>JS</text>
-<text x='242.03' y='223.82' text-anchor='middle' style='font-size: 27.45px; fill: #481F70; font-family: Helvetica Neue;' textLength='72.68px' lengthAdjust='spacingAndGlyphs'>JSON</text>
-<text x='570.99' y='454.19' text-anchor='middle' style='font-size: 26.89px; fill: #481D6F; font-family: Helvetica Neue;' textLength='200.02px' lengthAdjust='spacingAndGlyphs'>Neural Networks</text>
-<text x='364.02' y='258.38' text-anchor='middle' style='font-size: 26.32px; fill: #481C6E; font-family: Helvetica Neue;' textLength='35.56px' lengthAdjust='spacingAndGlyphs'>IIIF</text>
-<text x='208.72' y='435.63' text-anchor='middle' style='font-size: 25.73px; fill: #481B6D; font-family: Helvetica Neue;' textLength='59.08px' lengthAdjust='spacingAndGlyphs'>XSLT</text>
-<text x='355.80' y='458.42' text-anchor='middle' style='font-size: 25.12px; fill: #481A6C; font-family: Helvetica Neue;' textLength='50.67px' lengthAdjust='spacingAndGlyphs'>CSS</text>
-<text x='358.28' y='186.76' text-anchor='middle' style='font-size: 25.12px; fill: #481A6C; font-family: Helvetica Neue;' textLength='52.56px' lengthAdjust='spacingAndGlyphs'>Java</text>
-<text x='459.74' y='386.48' text-anchor='middle' style='font-size: 25.12px; fill: #481A6C; font-family: Helvetica Neue;' textLength='76.29px' lengthAdjust='spacingAndGlyphs'>Voyant</text>
-<text x='299.68' y='190.56' text-anchor='middle' style='font-size: 24.50px; fill: #48186A; font-family: Helvetica Neue;' textLength='42.63px' lengthAdjust='spacingAndGlyphs'>GUI</text>
-<text x='68.57' y='401.26' text-anchor='middle' style='font-size: 24.50px; fill: #48186A; font-family: Helvetica Neue;' textLength='93.49px' lengthAdjust='spacingAndGlyphs'>MALLET</text>
-<text x='36.57' y='375.24' text-anchor='middle' style='font-size: 24.50px; fill: #48186A; font-family: Helvetica Neue;' textLength='29.50px' lengthAdjust='spacingAndGlyphs'>P5</text>
-<text x='562.73' y='368.26' text-anchor='middle' style='font-size: 23.19px; fill: #481668; font-family: Helvetica Neue;' textLength='83.29px' lengthAdjust='spacingAndGlyphs'>CLARIN</text>
-<text x='227.42' y='284.88' text-anchor='middle' style='font-size: 23.19px; fill: #481668; font-family: Helvetica Neue;' textLength='39.95px' lengthAdjust='spacingAndGlyphs'>DOI</text>
-<text x='77.36' y='348.53' text-anchor='middle' style='font-size: 23.19px; fill: #481668; font-family: Helvetica Neue;' textLength='107.78px' lengthAdjust='spacingAndGlyphs'>stylometry</text>
-<text x='94.65' y='124.31' text-anchor='middle' style='font-size: 21.04px; fill: #471164; font-family: Helvetica Neue;' textLength='70.14px' lengthAdjust='spacingAndGlyphs'>MySQL</text>
-<text x='58.19' y='442.52' text-anchor='middle' style='font-size: 20.26px; fill: #471063; font-family: Helvetica Neue;' textLength='72.74px' lengthAdjust='spacingAndGlyphs'>RESTful</text>
-<text x='162.44' y='122.96' text-anchor='middle' style='font-size: 20.26px; fill: #471063; font-family: Helvetica Neue;' textLength='39.37px' lengthAdjust='spacingAndGlyphs'>TCP</text>
-<text x='330.24' y='396.45' text-anchor='middle' style='font-size: 19.44px; fill: #470E61; font-family: Helvetica Neue;' textLength='33.83px' lengthAdjust='spacingAndGlyphs'>MEI</text>
-<text x='376.80' y='377.98' text-anchor='middle' style='font-size: 19.44px; fill: #470E61; font-family: Helvetica Neue;' textLength='75.23px' lengthAdjust='spacingAndGlyphs'>SPARQL</text>
-<text x='405.95' y='111.96' text-anchor='middle' style='font-size: 18.57px; fill: #470D60; font-family: Helvetica Neue;' textLength='41.61px' lengthAdjust='spacingAndGlyphs'>OWL</text>
-<text x='578.31' y='396.88' text-anchor='middle' style='font-size: 18.57px; fill: #470D60; font-family: Helvetica Neue;' textLength='65.98px' lengthAdjust='spacingAndGlyphs'>Palladio</text>
-<text x='193.07' y='461.06' text-anchor='middle' style='font-size: 17.65px; fill: #460B5E; font-family: Helvetica Neue;' textLength='65.98px' lengthAdjust='spacingAndGlyphs'>CollateX</text>
-<text x='223.60' y='323.38' text-anchor='middle' style='font-size: 17.65px; fill: #460B5E; font-family: Helvetica Neue;' textLength='51.30px' lengthAdjust='spacingAndGlyphs'>jQuery</text>
-<text x='420.66' y='406.04' text-anchor='middle' style='font-size: 17.65px; fill: #460B5E; font-family: Helvetica Neue;' textLength='51.62px' lengthAdjust='spacingAndGlyphs'>MARC</text>
-<text x='230.06' y='259.11' text-anchor='middle' style='font-size: 17.65px; fill: #460B5E; font-family: Helvetica Neue;' textLength='34.65px' lengthAdjust='spacingAndGlyphs'>SQL</text>
-<text x='426.36' y='495.64' text-anchor='middle' style='font-size: 17.65px; fill: #460B5E; font-family: Helvetica Neue;' textLength='39.85px' lengthAdjust='spacingAndGlyphs'>Stylo</text>
-<text x='135.53' y='420.70' text-anchor='middle' style='font-size: 17.65px; fill: #460B5E; font-family: Helvetica Neue;' textLength='77.09px' lengthAdjust='spacingAndGlyphs'>word2vec</text>
-<text x='332.39' y='427.81' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='40.72px' lengthAdjust='spacingAndGlyphs'>Juxta</text>
-<text x='130.44' y='440.45' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='45.35px' lengthAdjust='spacingAndGlyphs'>SKOS</text>
-<text x='421.90' y='256.19' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='33.61px' lengthAdjust='spacingAndGlyphs'>SVG</text>
-<text x='449.52' y='426.69' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='57.38px' lengthAdjust='spacingAndGlyphs'>Tableau</text>
-<text x='496.13' y='224.06' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='34.24px' lengthAdjust='spacingAndGlyphs'>TXM</text>
-<text x='602.44' y='424.38' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='137.59px' lengthAdjust='spacingAndGlyphs'>Word Embeddings</text>
-<text x='304.48' y='260.71' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='54.91px' lengthAdjust='spacingAndGlyphs'>XQuery</text>
-<text x='367.10' y='302.25' text-anchor='middle' style='font-size: 15.58px; fill: #46085C; font-family: Helvetica Neue;' textLength='14.13px' lengthAdjust='spacingAndGlyphs'>AI</text>
-<text x='446.67' y='225.04' text-anchor='middle' style='font-size: 15.58px; fill: #46085C; font-family: Helvetica Neue;' textLength='45.87px' lengthAdjust='spacingAndGlyphs'>Drupal</text>
-<text x='320.73' y='488.56' text-anchor='middle' style='font-size: 15.58px; fill: #46085C; font-family: Helvetica Neue;' textLength='39.23px' lengthAdjust='spacingAndGlyphs'>HTTP</text>
-<text x='183.35' y='516.48' text-anchor='middle' style='font-size: 15.58px; fill: #46085C; font-family: Helvetica Neue;' textLength='46.47px' lengthAdjust='spacingAndGlyphs'>MODS</text>
-<text x='475.43' y='245.26' text-anchor='middle' style='font-size: 15.58px; fill: #46085C; font-family: Helvetica Neue;' textLength='58.26px' lengthAdjust='spacingAndGlyphs'>TextGrid</text>
-<text x='176.16' y='302.99' text-anchor='middle' style='font-size: 14.38px; fill: #46075A; font-family: Helvetica Neue;' textLength='45.51px' lengthAdjust='spacingAndGlyphs'>ArcGIS</text>
-<text x='153.31' y='319.69' text-anchor='middle' style='font-size: 14.38px; fill: #46075A; font-family: Helvetica Neue;' textLength='64.96px' lengthAdjust='spacingAndGlyphs'>GeoJSON</text>
-<text x='484.30' y='403.88' text-anchor='middle' style='font-size: 14.38px; fill: #46075A; font-family: Helvetica Neue;' textLength='44.19px' lengthAdjust='spacingAndGlyphs'>TF-IDF</text>
-<text x='509.52' y='485.12' text-anchor='middle' style='font-size: 14.38px; fill: #46075A; font-family: Helvetica Neue;' textLength='38.34px' lengthAdjust='spacingAndGlyphs'>XPath</text>
-<text x='121.77' y='144.56' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='27.48px' lengthAdjust='spacingAndGlyphs'>FAIR</text>
-<text x='260.36' y='275.15' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='14.46px' lengthAdjust='spacingAndGlyphs'>git</text>
-<text x='394.14' y='429.74' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='32.78px' lengthAdjust='spacingAndGlyphs'>Jekyll</text>
-<text x='520.48' y='422.14' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='69.92px' lengthAdjust='spacingAndGlyphs'>Levenshtein</text>
-<text x='433.70' y='360.10' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='35.20px' lengthAdjust='spacingAndGlyphs'>METS</text>
-<text x='109.64' y='288.40' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='70.63px' lengthAdjust='spacingAndGlyphs'>PostgreSQL</text>
-<text x='352.94' y='469.54' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='22.41px' lengthAdjust='spacingAndGlyphs'>Salt</text>
-<text x='537.22' y='343.44' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='91.70px' lengthAdjust='spacingAndGlyphs'>Annotation Studio</text>
-<text x='522.56' y='383.81' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='28.30px' lengthAdjust='spacingAndGlyphs'>Carto</text>
-<text x='478.72' y='359.02' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='38.46px' lengthAdjust='spacingAndGlyphs'>CATMA</text>
-<text x='176.13' y='494.11' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='39.09px' lengthAdjust='spacingAndGlyphs'>Gensim</text>
-<text x='467.20' y='493.95' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='22.59px' lengthAdjust='spacingAndGlyphs'>HTR</text>
-<text x='456.53' y='268.50' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='10.35px' lengthAdjust='spacingAndGlyphs'>IP</text>
-<text x='46.42' y='488.77' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='27.67px' lengthAdjust='spacingAndGlyphs'>QGIS</text>
-<text x='385.01' y='272.84' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='20.71px' lengthAdjust='spacingAndGlyphs'>XSL</text>
-<text x='96.50' y='317.98' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='39.48px' lengthAdjust='spacingAndGlyphs'>CLARIAH</text>
-<text x='266.71' y='240.96' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='29.84px' lengthAdjust='spacingAndGlyphs'>Docker</text>
-<text x='166.60' y='238.79' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='42.26px' lengthAdjust='spacingAndGlyphs'>MongoDB</text>
-<text x='548.05' y='271.11' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='20.20px' lengthAdjust='spacingAndGlyphs'>ODD</text>
-<text x='195.67' y='260.47' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='20.00px' lengthAdjust='spacingAndGlyphs'>Pliny</text>
-<text x='491.14' y='272.25' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='32.59px' lengthAdjust='spacingAndGlyphs'>Protégé</text>
-<text x='205.47' y='535.04' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='24.13px' lengthAdjust='spacingAndGlyphs'>SPSS</text>
-<text x='393.36' y='231.10' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='47.79px' lengthAdjust='spacingAndGlyphs'>Transkribus</text>
-<text x='382.55' y='485.83' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='30.53px' lengthAdjust='spacingAndGlyphs'>Verovio</text>
-<text x='209.87' y='476.07' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='24.67px' lengthAdjust='spacingAndGlyphs'>YAML</text>
-<text x='466.92' y='465.99' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='16.67px' lengthAdjust='spacingAndGlyphs'>AntConc</text>
-<text x='369.24' y='407.85' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='16.51px' lengthAdjust='spacingAndGlyphs'>CATview</text>
-<text x='408.70' y='467.88' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='25.99px' lengthAdjust='spacingAndGlyphs'>CWRC-Writer</text>
-<text x='335.51' y='344.59' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='8.45px' lengthAdjust='spacingAndGlyphs'>DTD</text>
-<text x='342.96' y='272.85' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='16.98px' lengthAdjust='spacingAndGlyphs'>eHinman</text>
-<text x='480.26' y='443.48' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='10.67px' lengthAdjust='spacingAndGlyphs'>GATE</text>
-<text x='206.22' y='236.06' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='14.54px' lengthAdjust='spacingAndGlyphs'>ggplot2</text>
+<line x1='290.80' y1='208.20' x2='346.13' y2='349.96' style='stroke-width: 0.00; stroke: #FDE725;' />
+<line x1='572.93' y1='415.46' x2='347.68' y2='351.30' style='stroke-width: 0.00; stroke: #22A785;' />
+<line x1='372.39' y1='323.87' x2='347.31' y2='350.15' style='stroke-width: 0.00; stroke: #25848E;' />
+<line x1='142.84' y1='287.53' x2='345.38' y2='350.62' style='stroke-width: 0.00; stroke: #25838E;' />
+<line x1='194.09' y1='231.75' x2='345.62' y2='350.26' style='stroke-width: 0.00; stroke: #2C718E;' />
+<line x1='589.87' y1='366.82' x2='347.74' y2='351.05' style='stroke-width: 0.00; stroke: #31688E;' />
+<line x1='412.19' y1='209.59' x2='346.99' y2='349.98' style='stroke-width: 0.00; stroke: #365D8D;' />
+<line x1='397.09' y1='394.87' x2='347.40' y2='351.73' style='stroke-width: 0.00; stroke: #365C8D;' />
+<line x1='175.64' y1='468.76' x2='345.57' y2='351.63' style='stroke-width: 0.00; stroke: #39558C;' />
+<line x1='362.40' y1='361.91' x2='347.49' y2='351.63' style='stroke-width: 0.00; stroke: #3B528B;' />
+<line x1='261.53' y1='312.73' x2='345.44' y2='350.49' style='stroke-width: 0.00; stroke: #3B528B;' />
+<line x1='528.63' y1='292.82' x2='347.67' y2='350.61' style='stroke-width: 0.00; stroke: #3B528B;' />
+<line x1='396.54' y1='337.99' x2='347.69' y2='350.67' style='stroke-width: 0.00; stroke: #3C508B;' />
+<line x1='229.32' y1='532.15' x2='345.92' y2='351.91' style='stroke-width: 0.00; stroke: #3D4E8A;' />
+<line x1='372.24' y1='485.04' x2='346.73' y2='352.04' style='stroke-width: 0.00; stroke: #424086;' />
+<line x1='309.34' y1='402.63' x2='345.87' y2='351.88' style='stroke-width: 0.00; stroke: #424086;' />
+<line x1='493.57' y1='425.20' x2='347.58' y2='351.51' style='stroke-width: 0.00; stroke: #433E85;' />
+<line x1='498.26' y1='330.19' x2='347.73' y2='350.81' style='stroke-width: 0.00; stroke: #46317E;' />
+<line x1='201.78' y1='276.25' x2='345.48' y2='350.43' style='stroke-width: 0.00; stroke: #46307E;' />
+<line x1='582.96' y1='498.17' x2='347.52' y2='351.59' style='stroke-width: 0.00; stroke: #472C7A;' />
+<line x1='140.81' y1='434.19' x2='345.42' y2='351.42' style='stroke-width: 0.00; stroke: #472A7A;' />
+<line x1='119.67' y1='403.50' x2='345.35' y2='351.25' style='stroke-width: 0.00; stroke: #482475;' />
+<line x1='248.99' y1='367.34' x2='345.33' y2='351.17' style='stroke-width: 0.00; stroke: #482475;' />
+<line x1='81.16' y1='536.20' x2='345.57' y2='351.64' style='stroke-width: 0.00; stroke: #482374;' />
+<line x1='512.54' y1='518.47' x2='347.33' y2='351.78' style='stroke-width: 0.00; stroke: #482374;' />
+<line x1='296.44' y1='448.58' x2='346.02' y2='351.95' style='stroke-width: 0.00; stroke: #481F70;' />
+<line x1='469.41' y1='456.01' x2='347.40' y2='351.72' style='stroke-width: 0.00; stroke: #481D6F;' />
+<line x1='242.35' y1='410.76' x2='345.51' y2='351.56' style='stroke-width: 0.00; stroke: #481C6E;' />
+<line x1='430.94' y1='433.31' x2='347.35' y2='351.77' style='stroke-width: 0.00; stroke: #481B6D;' />
+<line x1='441.31' y1='268.86' x2='347.40' y2='350.22' style='stroke-width: 0.00; stroke: #481A6C;' />
+<line x1='337.21' y1='375.47' x2='346.14' y2='351.99' style='stroke-width: 0.00; stroke: #481A6C;' />
+<line x1='216.46' y1='434.74' x2='345.54' y2='351.61' style='stroke-width: 0.00; stroke: #481A6C;' />
+<line x1='286.89' y1='232.61' x2='346.03' y2='349.99' style='stroke-width: 0.00; stroke: #48186A;' />
+<line x1='124.36' y1='337.56' x2='345.32' y2='350.90' style='stroke-width: 0.00; stroke: #48186A;' />
+<line x1='306.51' y1='283.17' x2='345.96' y2='350.02' style='stroke-width: 0.00; stroke: #48186A;' />
+<line x1='392.12' y1='521.01' x2='346.81' y2='352.02' style='stroke-width: 0.00; stroke: #481769;' />
+<line x1='339.19' y1='317.08' x2='346.30' y2='349.92' style='stroke-width: 0.00; stroke: #481668;' />
+<line x1='452.91' y1='295.65' x2='347.58' y2='350.43' style='stroke-width: 0.00; stroke: #481668;' />
+<line x1='369.11' y1='504.25' x2='346.69' y2='352.04' style='stroke-width: 0.00; stroke: #481668;' />
+<line x1='328.43' y1='343.64' x2='345.42' y2='350.53' style='stroke-width: 0.00; stroke: #471164;' />
+<line x1='389.60' y1='233.34' x2='346.90' y2='349.95' style='stroke-width: 0.00; stroke: #471063;' />
+<line x1='186.76' y1='393.60' x2='345.36' y2='351.28' style='stroke-width: 0.00; stroke: #471063;' />
+<line x1='251.66' y1='189.08' x2='345.97' y2='350.02' style='stroke-width: 0.00; stroke: #470E61;' />
+<line x1='214.88' y1='248.91' x2='345.61' y2='350.26' style='stroke-width: 0.00; stroke: #470E61;' />
+<line x1='264.42' y1='255.31' x2='345.79' y2='350.12' style='stroke-width: 0.00; stroke: #470D60;' />
+<line x1='180.80' y1='361.46' x2='345.32' y2='351.05' style='stroke-width: 0.00; stroke: #470D60;' />
+<line x1='334.75' y1='438.22' x2='346.38' y2='352.04' style='stroke-width: 0.00; stroke: #460B5E;' />
+<line x1='472.91' y1='397.55' x2='347.65' y2='351.39' style='stroke-width: 0.00; stroke: #460B5E;' />
+<line x1='410.12' y1='458.42' x2='347.09' y2='351.93' style='stroke-width: 0.00; stroke: #460B5E;' />
+<line x1='358.92' y1='277.77' x2='346.71' y2='349.91' style='stroke-width: 0.00; stroke: #460B5E;' />
+<line x1='316.26' y1='514.16' x2='346.33' y2='352.04' style='stroke-width: 0.00; stroke: #460B5E;' />
+<line x1='455.11' y1='205.50' x2='347.20' y2='350.08' style='stroke-width: 0.00; stroke: #460A5D;' />
+<line x1='467.60' y1='244.80' x2='347.39' y2='350.22' style='stroke-width: 0.00; stroke: #460A5D;' />
+<line x1='257.31' y1='231.96' x2='345.85' y2='350.08' style='stroke-width: 0.00; stroke: #460A5D;' />
+<line x1='303.57' y1='478.89' x2='346.18' y2='352.01' style='stroke-width: 0.00; stroke: #460A5D;' />
+<line x1='346.49' y1='490.42' x2='346.53' y2='352.05' style='stroke-width: 0.00; stroke: #460A5D;' />
+<line x1='174.00' y1='498.88' x2='345.65' y2='351.72' style='stroke-width: 0.00; stroke: #460A5D;' />
+<line x1='237.96' y1='494.67' x2='345.85' y2='351.87' style='stroke-width: 0.00; stroke: #460A5D;' />
+<line x1='395.85' y1='366.04' x2='347.68' y2='351.32' style='stroke-width: 0.00; stroke: #46085C;' />
+<line x1='298.20' y1='391.34' x2='345.64' y2='351.71' style='stroke-width: 0.00; stroke: #46085C;' />
+<line x1='399.00' y1='474.27' x2='346.96' y2='351.98' style='stroke-width: 0.00; stroke: #46085C;' />
+<line x1='327.53' y1='254.32' x2='346.32' y2='349.91' style='stroke-width: 0.00; stroke: #46085C;' />
+<line x1='216.60' y1='342.05' x2='345.32' y2='350.89' style='stroke-width: 0.00; stroke: #46085C;' />
+<line x1='325.46' y1='362.54' x2='345.49' y2='351.54' style='stroke-width: 0.00; stroke: #46075A;' />
+<line x1='323.75' y1='496.84' x2='346.36' y2='352.04' style='stroke-width: 0.00; stroke: #46075A;' />
+<line x1='499.80' y1='281.74' x2='347.61' y2='350.48' style='stroke-width: 0.00; stroke: #46075A;' />
+<line x1='169.50' y1='320.34' x2='345.34' y2='350.77' style='stroke-width: 0.00; stroke: #46075A;' />
+<line x1='249.73' y1='340.64' x2='345.32' y2='350.84' style='stroke-width: 0.00; stroke: #450559;' />
+<line x1='325.82' y1='305.33' x2='346.07' y2='349.97' style='stroke-width: 0.00; stroke: #450559;' />
+<line x1='216.69' y1='469.63' x2='345.68' y2='351.75' style='stroke-width: 0.00; stroke: #450559;' />
+<line x1='376.34' y1='570.12' x2='346.67' y2='352.04' style='stroke-width: 0.00; stroke: #450559;' />
+<line x1='433.83' y1='225.55' x2='347.17' y2='350.06' style='stroke-width: 0.00; stroke: #450559;' />
+<line x1='189.95' y1='410.40' x2='345.41' y2='351.40' style='stroke-width: 0.00; stroke: #450559;' />
+<line x1='503.65' y1='223.82' x2='347.43' y2='350.25' style='stroke-width: 0.00; stroke: #450559;' />
+<line x1='135.88' y1='380.41' x2='345.33' y2='351.14' style='stroke-width: 0.00; stroke: #450457;' />
+<line x1='388.33' y1='455.02' x2='346.94' y2='351.99' style='stroke-width: 0.00; stroke: #450457;' />
+<line x1='328.70' y1='462.85' x2='346.36' y2='352.04' style='stroke-width: 0.00; stroke: #450457;' />
+<line x1='350.44' y1='553.59' x2='346.55' y2='352.05' style='stroke-width: 0.00; stroke: #450457;' />
+<line x1='501.12' y1='264.79' x2='347.56' y2='350.40' style='stroke-width: 0.00; stroke: #450457;' />
+<line x1='365.43' y1='362.37' x2='347.53' y2='351.58' style='stroke-width: 0.00; stroke: #450457;' />
+<line x1='538.28' y1='396.53' x2='347.70' y2='351.25' style='stroke-width: 0.00; stroke: #450457;' />
+<line x1='393.05' y1='544.55' x2='346.78' y2='352.03' style='stroke-width: 0.00; stroke: #450457;' />
+<line x1='387.96' y1='263.77' x2='347.00' y2='349.98' style='stroke-width: 0.00; stroke: #440256;' />
+<line x1='332.81' y1='227.38' x2='346.41' y2='349.90' style='stroke-width: 0.00; stroke: #440256;' />
+<line x1='357.07' y1='338.48' x2='347.26' y2='350.11' style='stroke-width: 0.00; stroke: #440256;' />
+<line x1='416.06' y1='246.32' x2='347.14' y2='350.05' style='stroke-width: 0.00; stroke: #440256;' />
+<line x1='64.12' y1='567.25' x2='345.61' y2='351.68' style='stroke-width: 0.00; stroke: #440256;' />
+<line x1='362.37' y1='400.36' x2='346.86' y2='352.01' style='stroke-width: 0.00; stroke: #440256;' />
+<line x1='495.83' y1='313.84' x2='347.70' y2='350.68' style='stroke-width: 0.00; stroke: #440256;' />
+<line x1='370.13' y1='426.76' x2='346.85' y2='352.01' style='stroke-width: 0.00; stroke: #440256;' />
+<line x1='504.65' y1='196.22' x2='347.34' y2='350.18' style='stroke-width: 0.00; stroke: #440256;' />
+<line x1='173.20' y1='200.41' x2='345.66' y2='350.22' style='stroke-width: 0.00; stroke: #440256;' />
+<line x1='261.16' y1='280.43' x2='345.64' y2='350.24' style='stroke-width: 0.00; stroke: #440154;' />
+<line x1='370.98' y1='382.02' x2='347.22' y2='351.86' style='stroke-width: 0.00; stroke: #440154;' />
+<line x1='299.67' y1='243.97' x2='346.09' y2='349.97' style='stroke-width: 0.00; stroke: #440154;' />
+<line x1='215.32' y1='207.21' x2='345.76' y2='350.14' style='stroke-width: 0.00; stroke: #440154;' />
+<line x1='364.69' y1='464.05' x2='346.70' y2='352.04' style='stroke-width: 0.00; stroke: #440154;' />
+<line x1='562.27' y1='505.41' x2='347.47' y2='351.65' style='stroke-width: 0.00; stroke: #440154;' />
+<line x1='143.00' y1='572.50' x2='345.76' y2='351.81' style='stroke-width: 0.00; stroke: #440154;' />
+<text x='289.39' y='206.40' text-anchor='middle' style='font-size: 85.36px; fill: #FDE725; font-family: Helvetica Neue;' textLength='58.46px' lengthAdjust='spacingAndGlyphs'>R</text>
+<text x='622.98' y='440.10' text-anchor='middle' style='font-size: 66.84px; fill: #22A785; font-family: Helvetica Neue;' textLength='96.50px' lengthAdjust='spacingAndGlyphs'>TEI</text>
+<text x='395.15' y='322.07' text-anchor='middle' style='font-size: 58.75px; fill: #25848E; font-family: Helvetica Neue;' textLength='113.13px' lengthAdjust='spacingAndGlyphs'>NLP</text>
+<text x='81.43' y='307.66' text-anchor='middle' style='font-size: 58.51px; fill: #25838E; font-family: Helvetica Neue;' textLength='119.22px' lengthAdjust='spacingAndGlyphs'>XML</text>
+<text x='107.06' y='249.43' text-anchor='middle' style='font-size: 53.83px; fill: #2C718E; font-family: Helvetica Neue;' textLength='170.47px' lengthAdjust='spacingAndGlyphs'>GitHub</text>
+<text x='631.45' y='385.13' text-anchor='middle' style='font-size: 51.18px; fill: #31688E; font-family: Helvetica Neue;' textLength='79.57px' lengthAdjust='spacingAndGlyphs'>API</text>
+<text x='414.38' y='207.79' text-anchor='middle' style='font-size: 48.07px; fill: #365D8D; font-family: Helvetica Neue;' textLength='67.67px' lengthAdjust='spacingAndGlyphs'>OA</text>
+<text x='432.97' y='415.41' text-anchor='middle' style='font-size: 47.78px; fill: #365C8D; font-family: Helvetica Neue;' textLength='68.16px' lengthAdjust='spacingAndGlyphs'>ML</text>
+<text x='135.55' y='486.18' text-anchor='middle' style='font-size: 45.98px; fill: #39558C; font-family: Helvetica Neue;' textLength='76.59px' lengthAdjust='spacingAndGlyphs'>GIS</text>
+<text x='517.72' y='384.42' text-anchor='middle' style='font-size: 45.05px; fill: #3B528B; font-family: Helvetica Neue;' textLength='307.04px' lengthAdjust='spacingAndGlyphs'>Topic Modeling</text>
+<text x='214.56' y='327.30' text-anchor='middle' style='font-size: 44.73px; fill: #3B528B; font-family: Helvetica Neue;' textLength='90.33px' lengthAdjust='spacingAndGlyphs'>LOD</text>
+<text x='600.83' y='308.25' text-anchor='middle' style='font-size: 44.73px; fill: #3B528B; font-family: Helvetica Neue;' textLength='140.81px' lengthAdjust='spacingAndGlyphs'>Python</text>
+<text x='446.12' y='353.14' text-anchor='middle' style='font-size: 44.10px; fill: #3C508B; font-family: Helvetica Neue;' textLength='95.55px' lengthAdjust='spacingAndGlyphs'>OCR</text>
+<text x='203.39' y='564.97' text-anchor='middle' style='font-size: 43.45px; fill: #3D4E8A; font-family: Helvetica Neue;' textLength='323.33px' lengthAdjust='spacingAndGlyphs'>network analysis</text>
+<text x='504.75' y='500.86' text-anchor='middle' style='font-size: 39.31px; fill: #424086; font-family: Helvetica Neue;' textLength='261.43px' lengthAdjust='spacingAndGlyphs'>distant reading</text>
+<text x='300.87' y='432.50' text-anchor='middle' style='font-size: 39.31px; fill: #424086; font-family: Helvetica Neue;' textLength='77.17px' lengthAdjust='spacingAndGlyphs'>RDF</text>
+<text x='534.28' y='439.71' text-anchor='middle' style='font-size: 38.57px; fill: #433E85; font-family: Helvetica Neue;' textLength='77.82px' lengthAdjust='spacingAndGlyphs'>NER</text>
+<text x='585.65' y='342.40' text-anchor='middle' style='font-size: 34.62px; fill: #46317E; font-family: Helvetica Neue;' textLength='171.17px' lengthAdjust='spacingAndGlyphs'>text mining</text>
+<text x='167.36' y='287.83' text-anchor='middle' style='font-size: 34.19px; fill: #46307E; font-family: Helvetica Neue;' textLength='65.23px' lengthAdjust='spacingAndGlyphs'>LDA</text>
+<text x='628.00' y='510.13' text-anchor='middle' style='font-size: 32.43px; fill: #472C7A; font-family: Helvetica Neue;' textLength='86.47px' lengthAdjust='spacingAndGlyphs'>Gephi</text>
+<text x='80.42' y='445.94' text-anchor='middle' style='font-size: 31.97px; fill: #472A7A; font-family: Helvetica Neue;' textLength='117.19px' lengthAdjust='spacingAndGlyphs'>DARIAH</text>
+<text x='70.50' y='414.22' text-anchor='middle' style='font-size: 29.56px; fill: #482475; font-family: Helvetica Neue;' textLength='94.73px' lengthAdjust='spacingAndGlyphs'>Omeka</text>
+<text x='217.38' y='378.09' text-anchor='middle' style='font-size: 29.56px; fill: #482475; font-family: Helvetica Neue;' textLength='59.62px' lengthAdjust='spacingAndGlyphs'>PCA</text>
+<text x='50.59' y='546.87' text-anchor='middle' style='font-size: 29.05px; fill: #482374; font-family: Helvetica Neue;' textLength='57.54px' lengthAdjust='spacingAndGlyphs'>CSV</text>
+<text x='531.29' y='529.33' text-anchor='middle' style='font-size: 29.05px; fill: #482374; font-family: Helvetica Neue;' textLength='33.90px' lengthAdjust='spacingAndGlyphs'>JS</text>
+<text x='258.30' y='459.49' text-anchor='middle' style='font-size: 27.45px; fill: #481F70; font-family: Helvetica Neue;' textLength='72.68px' lengthAdjust='spacingAndGlyphs'>JSON</text>
+<text x='571.22' y='466.18' text-anchor='middle' style='font-size: 26.89px; fill: #481D6F; font-family: Helvetica Neue;' textLength='200.02px' lengthAdjust='spacingAndGlyphs'>Neural Networks</text>
+<text x='222.77' y='420.73' text-anchor='middle' style='font-size: 26.32px; fill: #481C6E; font-family: Helvetica Neue;' textLength='35.56px' lengthAdjust='spacingAndGlyphs'>IIIF</text>
+<text x='462.28' y='443.26' text-anchor='middle' style='font-size: 25.73px; fill: #481B6D; font-family: Helvetica Neue;' textLength='59.08px' lengthAdjust='spacingAndGlyphs'>XSLT</text>
+<text x='468.45' y='277.16' text-anchor='middle' style='font-size: 25.12px; fill: #481A6C; font-family: Helvetica Neue;' textLength='50.67px' lengthAdjust='spacingAndGlyphs'>CSS</text>
+<text x='336.63' y='395.20' text-anchor='middle' style='font-size: 25.12px; fill: #481A6C; font-family: Helvetica Neue;' textLength='52.56px' lengthAdjust='spacingAndGlyphs'>Java</text>
+<text x='176.52' y='444.16' text-anchor='middle' style='font-size: 25.12px; fill: #481A6C; font-family: Helvetica Neue;' textLength='76.29px' lengthAdjust='spacingAndGlyphs'>Voyant</text>
+<text x='285.63' y='230.81' text-anchor='middle' style='font-size: 24.50px; fill: #48186A; font-family: Helvetica Neue;' textLength='42.63px' lengthAdjust='spacingAndGlyphs'>GUI</text>
+<text x='75.81' y='346.29' text-anchor='middle' style='font-size: 24.50px; fill: #48186A; font-family: Helvetica Neue;' textLength='93.49px' lengthAdjust='spacingAndGlyphs'>MALLET</text>
+<text x='305.27' y='281.37' text-anchor='middle' style='font-size: 24.50px; fill: #48186A; font-family: Helvetica Neue;' textLength='29.50px' lengthAdjust='spacingAndGlyphs'>P5</text>
+<text x='392.97' y='539.84' text-anchor='middle' style='font-size: 23.86px; fill: #481769; font-family: Helvetica Neue;' textLength='62.69px' lengthAdjust='spacingAndGlyphs'>stylo()</text>
+<text x='295.75' y='322.68' text-anchor='middle' style='font-size: 23.19px; fill: #481668; font-family: Helvetica Neue;' textLength='83.29px' lengthAdjust='spacingAndGlyphs'>CLARIN</text>
+<text x='474.68' y='303.49' text-anchor='middle' style='font-size: 23.19px; fill: #481668; font-family: Helvetica Neue;' textLength='39.95px' lengthAdjust='spacingAndGlyphs'>DOI</text>
+<text x='424.80' y='513.17' text-anchor='middle' style='font-size: 23.19px; fill: #481668; font-family: Helvetica Neue;' textLength='107.78px' lengthAdjust='spacingAndGlyphs'>stylometry</text>
+<text x='291.56' y='350.24' text-anchor='middle' style='font-size: 21.04px; fill: #471164; font-family: Helvetica Neue;' textLength='70.14px' lengthAdjust='spacingAndGlyphs'>MySQL</text>
+<text x='391.58' y='231.54' text-anchor='middle' style='font-size: 20.26px; fill: #471063; font-family: Helvetica Neue;' textLength='72.74px' lengthAdjust='spacingAndGlyphs'>RESTful</text>
+<text x='165.28' y='400.98' text-anchor='middle' style='font-size: 20.26px; fill: #471063; font-family: Helvetica Neue;' textLength='39.37px' lengthAdjust='spacingAndGlyphs'>TCP</text>
+<text x='232.94' y='195.66' text-anchor='middle' style='font-size: 19.44px; fill: #470E61; font-family: Helvetica Neue;' textLength='33.83px' lengthAdjust='spacingAndGlyphs'>MEI</text>
+<text x='175.46' y='255.54' text-anchor='middle' style='font-size: 19.44px; fill: #470E61; font-family: Helvetica Neue;' textLength='75.23px' lengthAdjust='spacingAndGlyphs'>SPARQL</text>
+<text x='241.81' y='261.48' text-anchor='middle' style='font-size: 18.57px; fill: #470D60; font-family: Helvetica Neue;' textLength='41.61px' lengthAdjust='spacingAndGlyphs'>OWL</text>
+<text x='146.01' y='368.11' text-anchor='middle' style='font-size: 18.57px; fill: #470D60; font-family: Helvetica Neue;' textLength='65.98px' lengthAdjust='spacingAndGlyphs'>Palladio</text>
+<text x='334.66' y='452.61' text-anchor='middle' style='font-size: 17.65px; fill: #460B5E; font-family: Helvetica Neue;' textLength='65.98px' lengthAdjust='spacingAndGlyphs'>CollateX</text>
+<text x='500.36' y='404.04' text-anchor='middle' style='font-size: 17.65px; fill: #460B5E; font-family: Helvetica Neue;' textLength='51.30px' lengthAdjust='spacingAndGlyphs'>jQuery</text>
+<text x='437.73' y='465.19' text-anchor='middle' style='font-size: 17.65px; fill: #460B5E; font-family: Helvetica Neue;' textLength='51.62px' lengthAdjust='spacingAndGlyphs'>MARC</text>
+<text x='359.06' y='275.97' text-anchor='middle' style='font-size: 17.65px; fill: #460B5E; font-family: Helvetica Neue;' textLength='34.65px' lengthAdjust='spacingAndGlyphs'>SQL</text>
+<text x='315.85' y='528.55' text-anchor='middle' style='font-size: 17.65px; fill: #460B5E; font-family: Helvetica Neue;' textLength='77.09px' lengthAdjust='spacingAndGlyphs'>word2vec</text>
+<text x='477.27' y='211.16' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='40.72px' lengthAdjust='spacingAndGlyphs'>Juxta</text>
+<text x='492.08' y='250.47' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='45.35px' lengthAdjust='spacingAndGlyphs'>SKOS</text>
+<text x='238.71' y='237.56' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='33.61px' lengthAdjust='spacingAndGlyphs'>SVG</text>
+<text x='273.08' y='485.26' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='57.38px' lengthAdjust='spacingAndGlyphs'>Tableau</text>
+<text x='346.49' y='504.12' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='34.24px' lengthAdjust='spacingAndGlyphs'>TXM</text>
+<text x='103.40' y='505.02' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='137.59px' lengthAdjust='spacingAndGlyphs'>Word Embeddings</text>
+<text x='208.71' y='500.90' text-anchor='middle' style='font-size: 16.66px; fill: #460A5D; font-family: Helvetica Neue;' textLength='54.91px' lengthAdjust='spacingAndGlyphs'>XQuery</text>
+<text x='404.72' y='371.91' text-anchor='middle' style='font-size: 15.58px; fill: #46085C; font-family: Helvetica Neue;' textLength='14.13px' lengthAdjust='spacingAndGlyphs'>AI</text>
+<text x='273.46' y='397.50' text-anchor='middle' style='font-size: 15.58px; fill: #46085C; font-family: Helvetica Neue;' textLength='45.87px' lengthAdjust='spacingAndGlyphs'>Drupal</text>
+<text x='399.91' y='487.19' text-anchor='middle' style='font-size: 15.58px; fill: #46085C; font-family: Helvetica Neue;' textLength='39.23px' lengthAdjust='spacingAndGlyphs'>HTTP</text>
+<text x='327.23' y='252.52' text-anchor='middle' style='font-size: 15.58px; fill: #46085C; font-family: Helvetica Neue;' textLength='46.47px' lengthAdjust='spacingAndGlyphs'>MODS</text>
+<text x='185.67' y='347.59' text-anchor='middle' style='font-size: 15.58px; fill: #46085C; font-family: Helvetica Neue;' textLength='58.26px' lengthAdjust='spacingAndGlyphs'>TextGrid</text>
+<text x='300.91' y='368.59' text-anchor='middle' style='font-size: 14.38px; fill: #46075A; font-family: Helvetica Neue;' textLength='45.51px' lengthAdjust='spacingAndGlyphs'>ArcGIS</text>
+<text x='289.47' y='502.29' text-anchor='middle' style='font-size: 14.38px; fill: #46075A; font-family: Helvetica Neue;' textLength='64.96px' lengthAdjust='spacingAndGlyphs'>GeoJSON</text>
+<text x='523.70' y='286.74' text-anchor='middle' style='font-size: 14.38px; fill: #46075A; font-family: Helvetica Neue;' textLength='44.19px' lengthAdjust='spacingAndGlyphs'>TF-IDF</text>
+<text x='148.53' y='325.42' text-anchor='middle' style='font-size: 14.38px; fill: #46075A; font-family: Helvetica Neue;' textLength='38.34px' lengthAdjust='spacingAndGlyphs'>XPath</text>
+<text x='234.19' y='345.25' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='27.48px' lengthAdjust='spacingAndGlyphs'>FAIR</text>
+<text x='325.37' y='303.53' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='14.46px' lengthAdjust='spacingAndGlyphs'>git</text>
+<text x='198.50' y='474.46' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='32.78px' lengthAdjust='spacingAndGlyphs'>Jekyll</text>
+<text x='413.10' y='574.95' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='69.92px' lengthAdjust='spacingAndGlyphs'>Levenshtein</text>
+<text x='453.23' y='229.96' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='35.20px' lengthAdjust='spacingAndGlyphs'>METS</text>
+<text x='152.83' y='415.15' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='70.63px' lengthAdjust='spacingAndGlyphs'>PostgreSQL</text>
+<text x='516.65' y='228.33' text-anchor='middle' style='font-size: 13.03px; fill: #450559; font-family: Helvetica Neue;' textLength='22.41px' lengthAdjust='spacingAndGlyphs'>Salt</text>
+<text x='88.23' y='384.50' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='91.70px' lengthAdjust='spacingAndGlyphs'>Annotation Studio</text>
+<text x='388.91' y='464.96' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='28.30px' lengthAdjust='spacingAndGlyphs'>Carto</text>
+<text x='328.52' y='472.79' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='38.46px' lengthAdjust='spacingAndGlyphs'>CATMA</text>
+<text x='350.44' y='563.53' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='39.09px' lengthAdjust='spacingAndGlyphs'>Gensim</text>
+<text x='514.22' y='268.75' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='22.59px' lengthAdjust='spacingAndGlyphs'>HTR</text>
+<text x='372.41' y='367.23' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='10.35px' lengthAdjust='spacingAndGlyphs'>IP</text>
+<text x='553.92' y='400.65' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='27.67px' lengthAdjust='spacingAndGlyphs'>QGIS</text>
+<text x='393.18' y='554.49' text-anchor='middle' style='font-size: 11.42px; fill: #450457; font-family: Helvetica Neue;' textLength='20.71px' lengthAdjust='spacingAndGlyphs'>XSL</text>
+<text x='409.50' y='266.84' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='39.48px' lengthAdjust='spacingAndGlyphs'>CLARIAH</text>
+<text x='332.75' y='225.58' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='29.84px' lengthAdjust='spacingAndGlyphs'>Docker</text>
+<text x='362.44' y='336.68' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='42.26px' lengthAdjust='spacingAndGlyphs'>MongoDB</text>
+<text x='427.96' y='249.46' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='20.20px' lengthAdjust='spacingAndGlyphs'>ODD</text>
+<text x='52.32' y='570.62' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='20.00px' lengthAdjust='spacingAndGlyphs'>Pliny</text>
+<text x='363.05' y='408.80' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='32.59px' lengthAdjust='spacingAndGlyphs'>Protégé</text>
+<text x='509.70' y='317.12' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='24.13px' lengthAdjust='spacingAndGlyphs'>SPSS</text>
+<text x='395.83' y='430.41' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='47.79px' lengthAdjust='spacingAndGlyphs'>Transkribus</text>
+<text x='521.71' y='199.45' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='30.53px' lengthAdjust='spacingAndGlyphs'>Verovio</text>
+<text x='159.07' y='203.65' text-anchor='middle' style='font-size: 9.33px; fill: #440256; font-family: Helvetica Neue;' textLength='24.67px' lengthAdjust='spacingAndGlyphs'>YAML</text>
+<text x='251.03' y='281.88' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='16.67px' lengthAdjust='spacingAndGlyphs'>AntConc</text>
+<text x='381.04' y='383.78' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='16.51px' lengthAdjust='spacingAndGlyphs'>CATview</text>
+<text x='284.88' y='245.40' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='25.99px' lengthAdjust='spacingAndGlyphs'>CWRC-Writer</text>
+<text x='338.18' y='349.76' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='8.45px' lengthAdjust='spacingAndGlyphs'>DTD</text>
+<text x='205.03' y='208.68' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='16.98px' lengthAdjust='spacingAndGlyphs'>eHinman</text>
+<text x='364.74' y='468.90' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='10.67px' lengthAdjust='spacingAndGlyphs'>GATE</text>
+<text x='571.26' y='506.96' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='14.37px' lengthAdjust='spacingAndGlyphs'>ggplot()</text>
+<text x='130.50' y='574.05' text-anchor='middle' style='font-size: 4.27px; fill: #440154; font-family: Helvetica Neue;' textLength='21.41px' lengthAdjust='spacingAndGlyphs'>HeidelTime</text>
 </g>
 <g clip-path='url(#cpMC4wMHw2ODAuMzF8MC4wMHw2ODAuMzE=)'>
 <rect x='6.10' y='605.75' width='155.56' height='30.74' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />

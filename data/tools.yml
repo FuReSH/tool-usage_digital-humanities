@@ -7,6 +7,8 @@
 - name: HTR
   expansion: Handwritten Text Recognition
   category: method
+- name: HyperImage
+  category: software
 - name: Jekyll
   category: software
 - name: JSON

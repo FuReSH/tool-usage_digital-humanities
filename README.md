@@ -2,25 +2,37 @@
 title: "Readme: User Stories"
 subtitle: ""
 author: 
-    Till Grallert
-    Sophie Eckenstaler
+    - Till Grallert
+    - Sophie Eckenstaler
+affiliation: Future e-Research Support in the Humanities, Humboldt-Universität zu Berlin
 date: 2022-03-23 
 lang: de
+bibliography: https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
+reference-section-title: "Literatur"
+suppress-bibliography: true
+licence: https://creativecommons.org/licenses/by/4.0/
+markdown: pandoc
 ---
 
-Dieser Ordner enthält Daten und Code zu User Stories und weitere Corpora, die wir für die Kuratierung der Werkzeugliste auswerten. 
+Dieses Repository enthält Daten und Code zu Tools, User Stories und weitere Corpora, die wir für die Kuratierung der Werkzeugliste auswerten. Die User Story für dieses Repo lautet:
+
+>Wir bauen einen *Scholarly Makerspace* auf und wollen eine **Liste von Werkzeugen** kuratieren, die auf der **Häufigkeit** ihrer **Benutzung in der Forschung** beruht.
+
+Dieses Repository und die Operationalisierung unseres Ansatzes enstand im Frühjahr 2022 aus den Bedürfnissen des Scholarly Makerspaces an der UB der HU und unabhängig von anderen Forschungsgruppen, wie um Ulrike Henny-Krahmer [@HennyJettka2021SoftwarezitationPaper], Frank Fischer [@AlirezaEtAl2022MeasuringUseTools; @BarbotEtAl2019ToolsMentioned; @BarbotEtAl2019WhichDHTools; @FischerMoranville2020ToolsMentioned], und Manuel Burghardt [@Cebral2022InteractiveExploratoryAnalysis; @GutierrezDeLaTorreEtAl2022ManyFacesTheory; @ManuelEtAl2022ToolsEpistemologiesDH], von denen wir im Lauf des Sommers erfahren haben. Einige arbeiten mit ähnlichen Subcorpora, vor allem DH conference abstracts und DHQ.
+
+# Ordnerstruktur
 
 Die Daten liegen in folgenden Unterordnern:
 
 - `code/`
 - `data/`
     + `dh-conferences/`: 
-        * `12987959/`: data on mainly English DH conferences from Weingart, Scott B., Eichmann-Kalwara, Nickoal, and Lincoln, Matthew. “The Index of Digital Humanities Conferences Data.” Carnegie Mellon University, September 22, 2020. <https://doi.org/10.1184/R1/12987959.v4>.
+        * `12987959/`: data on mainly English DH conferences from [LincolnEtAl2021IndexDigitalHumanities; @Weingart2020IndexDHData]
     * `DHd/`: data on DHd conferences from the [DHd GitHub](https://github.com/DHd-Verband) repositories
-        - `software-names-counts-total.csv`: Henny-Krahmer, Ulrike, and Daniel Jettka. *Softwarezitation in Den Digital Humanities*. Zenodo, 2021. <https://doi.org/10.5281/zenodo.5106391>.
+        - `software-names-counts-total.csv`: [@HennyJettka2021SoftwarezitationData]
     - `dhq/`: TEI XML files from "[Digital Humanities Quarterly](http://digitalhumanities.org/)". A corpus of 429 articles published until 2019 is available as zipped folder at <http://digitalhumanities.org/dhq/data/dhq-xml.zip>.
     - `nfdi4history`: a CSV/TSV dump of their user stories
-    - `txt/`: Plaintextdateien. Unterordner für Sprachen
+    - `txt/`: Plaintextdateien unserer eigenen User Stories. Unterordner für Sprachen
         - `de/`: deutsche Texte
         - `en/`: englische Texte
     - `csv/`
@@ -35,6 +47,9 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
     + `R` is strikingly prominent
         * [ ] add column with KWIC to the intermediate data output 
 - data
+    + [ ] add data from the undocumented (?) API of TAPoR at <https://tapor.ca/api/tools/by_analysis>, which returns JSON. We found the API through an analysis of [ToolXtractor](https://github.com/lehkost/ToolXtractor) by Barbot et al.
+        * [@BarbotEtAl2019ToolsMentioned]
+        * [@BarbotEtAl2019WhichDHTools]
     + [ ] add DHd abstracts from the GitHub repositories
     
 

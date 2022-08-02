@@ -55,11 +55,11 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
 
 ## done
 
-- case matching
+- [x] case matching
     + Currently we use lower-case string matching, which will produce false positives for some tools, whose name is a commonly used word and only distinguished by case, such as "MAX", "eLaborate"
     + The opposite will also cause false negatives as "Topic modelling" won't match "topic modelling"
     + Solution
-        * add second column to tools.csv with variant spelling
+        * [x] add second column to tools.csv with variant spelling
 - TEI processing
     + I exported all texts from the `dh-conferences` data to individual files. The result are three types of files (all with `.xml` file ending)
         1. plain text files: 
@@ -75,7 +75,7 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
                 + 6366, 6483: a lot of illformed endnote XML inserts
         3. full TEI XML files
             - to do: run some XSLT to convert to `.txt`
-- Add data from DFG's GEPRIS
+- [x] Add data from DFG's GEPRIS
     +  [x] add descriptions from DFG [GEPRIS - Geförderte Projekte der Deutschen Forschungsgemeinschaft](https://gepris.dfg.de/gepris/OCTOPUS) database on funded projects
     * Unfortunately, DFG does not provide an API or machine-actionable data for reuse
     * Scraping:

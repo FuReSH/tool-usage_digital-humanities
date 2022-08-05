@@ -1,0 +1,67 @@
+
+This paper sets up the groundwork for an authorship verification project dedicated to the German novelist B. Traven, author of novels such as The Death Ship (1926) and The Treasure of the Sierra Madre (1927), whose real identity is still a mystery. Among the different theories, the most established is the one that sees B. Traven as the pseudonym of Otto Feige, author of a series of political pamphlets for the metal workers' union in Gelsenkirchen, who then changed his name into Ret Marut (publisher of the anarchist periodical Der Ziegelbrenner), before moving to Mexico and acquiring his final, world-famous pseudonym (Goldwasser, 1993; Hauschild, 2012). 
+
+From the point of view of stylometry, that of Feige/Matut/Traven is a typical authorship verification problem, where the goal is not that of attributing an anonymous text to a candidate author, but that of verifying if two (or more) texts were written by the same author. Extensive research is currently dedicated to the subject (see e.g. Kestemont et al., 2020), while an established approach is that of the “impostors” (Koppel and Winter, 2014), recently included also in the stylo package (Eder et al., 2016). 
+
+The impostors are intended as a group of writers who cannot be the authors of the texts under examination, but who could function as “distractors” in their attribution. Impostors become useful in authorship verification studies, as they can put into question the attribution of two texts to the same author, even when an alternative candidate author is missing. Main limitation is in their being just surrogates of a possible author, thus never offering a conclusive answer, but only casting doubt on an attribution. The implementation in the stylo package (Eder, 2018) stresses this aspect even further, by providing as result a probability of confirmed attribution which varies slightly at each repetition (due to an element of randomness in the procedure). 
+
+To test the efficiency of the impostors in the Traven case study, a corpus was created by collecting essays and articles by Feige, Marut, and Traven, together with texts by Paul Ernst, Erich Mühsam, Robert Musil, and Ludwig Rubiner (see Table 1). This genre limitation was imposed by the fact that Feige wrote just political pamphlets. Ideally, the best impostors would have then been journalists and essayists active at the beginning of the XIX century, but no corpus provided access to this kind of material. The Mannheimer Korpus Historischer Zeitungen und Zeitschriften (Mannheim, 2013) was adopted with the (inevitably forceful) assumption that each journal issue corresponded to one impostor. The Kolimo corpus (Herrmann and Lauer, 2017) offered a more coherent distinction between impostors, but included just fictional and narrative texts (see Table 2). 
+
+
+
+Table 1. 
+
+
+Corpus overview 
+
+
+
+
+Table 2. 
+
+
+Imposters corpora 
+
+
+Main idea behind the whole procedure was that of verifying if the impostors could produce high scores when comparing texts written by the same author (e.g. Feige with Feige) and low scores when comparing texts written by different authors (e.g. Traven with Musil). Analyses were performed by combining the 11 distance measures available in the stylo package, 20 different selections of most frequent words (from 50 to 1,000 MFW), 5 culling percentages (0%, 25%, 50%, 75%, 100%), and 8 selections of the number of impostors (from 5 to 40). Computation was repeated 20 times in each condition with the two impostors corpora, thus resulting in a total of 352,000 analyses. 
+
+Figure 1 shows a first overview of the results, confirming how in most of the cases impostors work efficiently (with a relatively lower efficiency for Feige).  
+
+
+
+Figure 1. 
+
+
+Testing results 
+
+
+Table 3 confirms how high culling helps overcome the genre differences in Kolimo, while Figure 2 shows how efficiency increases with MFW selections, but soon reaches a plateau (even at 150 MFW for the Kolimo corpus, 100% culling). Finally, Figure 3 shows how a low number of imposters causes a substantial drop in efficiency (especially for high MFW selections), while more than 10 impostors do not improve the results. Full documentation can be found here: . 
+
+
+
+Table 3. 
+
+
+Culling results 
+
+
+
+
+Figure 2. 
+
+
+MFW/culling results 
+
+
+
+
+Figure 3. 
+
+
+MFW/impostors number results 
+
+
+The results of this paper will be used for setting up an analysis that needs extensive verification before being put into place, in order to at least minimize the dangers in the application of the impostors method to authorship verification cases like that of B. Traven. 
+
+
+# notes

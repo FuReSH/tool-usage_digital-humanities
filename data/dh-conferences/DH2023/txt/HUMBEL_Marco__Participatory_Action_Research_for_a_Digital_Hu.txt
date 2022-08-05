@@ -1,0 +1,66 @@
+
+
+# Brief abstract 
+
+
+This paper responses to the question: How can the methodology of Participatory Action Research (PAR) be used to investigate Open Access to digital collections in the context of the Marx Memorial Library London (MML)? 
+
+
+# Motivation 
+
+
+PAR is an established methodology in library-, archive-, and information studies for collaborating with practitioners, and members of the public in a research project (Pickard, 2013: 157–66). The potential of knowledge co-production through participatory frameworks receives also increasingly attention where DH research questions are investigated by means of qualitative data (Ortolja-Baird and Nyhan, 2021: 17–18). While PAR has been used for Digital Humanities (DH) projects (Pringle, 2020: 10–11; Ruge et al., 2016: 4–5), the methodology is however not present in recent DH method books (Levenberg et al., 2018; Schuster and Dunn, 2020). Through a case study of applying PAR in a PhD project, and a reflection on the research process with reference to the literature, this paper offers an introduction to the methodology and a set of transferable lessons-learned that could devise future PAR DH projects. 
+
+
+# Research context 
+
+
+Open Access to digitized collections, also known as Open GLAM (Galleries, Libraries, Archives, and Museums), “[…] refers to a policy or practice that allows reuse and redistribution of materials for any purpose, including commercial” (Wallace, 2020a). However, a lack of resources and expertise hamper especially smaller institutions to digitize and to release collections as Open Access (Wallace, 2020b: 2–3). This project has used PAR to investigate Open GLAM in the context of archives with few resources, but which understand archiving as a form of activism to collect the histories of those who are marginalized in the historical canon: Social Movement Archives (Flinn, 2011; Hoyer and Almeida, 2021). The archive I have collaborated with is the MML, where I have volunteered from 2018 to 2021. 
+
+
+# Applying PAR 
+
+
+PAR involves the stages of: identifying a desired change, planning an action, taking action, and evaluating on the action’s outcomes. Based on the evaluation and reflection on the action, a new action may be enacted, which gives PAR a cyclical nature (Kemmis and McTaggart, 2005: 563). 
+
+I have identified PAR as an appropriate methodology because it allowed me to: 
+
+
+- Reflect on my own position within the MML. 
+- Evaluate the changes made for enhancing access to the MML’s digital collection. 
+- Deduce from the experience of a practical project new theoretical knowledge about Open GLAM in Social Movement Archives. 
+- Share with the MML control over the research process. 
+
+
+In October 2018, at the beginning of my PhD, I approached the MML whether they would be interested in a research collaboration that would co-investigate means of providing online access to the MML’s collections. In the diagnosing phase I made myself familiar with the organizational culture, identified key players, and most importantly established trust. The diagnosing phase concluded with a focus group discussion about the MML’s digitization objectives. We found consensus that it was the MML’s priority to contribute with its digitized poster collection to the Social History Portal (SHP); a Europeana aggregator portal. In the planning stage I prepared the data for the upload and designed a series of 6 evaluative online workshops for MML team members. The objectives of the workshops were that the participants: 
+
+
+- Reflect on the implications when collections are made available online through the SHP or Europeana. 
+- Develop criteria why to make certain collections available online (or why not) and set priorities. 
+- Learn about heritage copyright and its impact on the MML’s digitization projects 
+- Understand how the SHP and Europeana are connected and their licensing conditions. 
+
+
+The action was completed with the successful poster upload to the SHP, and the workshops were conducted from September to October 2020. 
+
+
+# Contribution: Accounting on the limitations of the participatory approach and lessons-learned 
+
+
+Within heritage studies and DH, ‘participation’ has generally a positive connotation. However, the term’s exact meaning remains often unclear (Flinn and Sexton, 2018: 626; Kidd, 2018: 201). Because the extent of participation is also not narrowly defined within the PAR methodology, it is necessary to assess critically what form of participation the research involved (Townsend, 2013: 101–03). 
+
+The participatory mode that took place in this project can be described as ‘cooperative’, where “local people work together with outsiders to determine priorities, responsibility remains with outsiders for directing the process” (Cornwall, 1996: 96). In this paper I am going to reflect on the factors that have shaped the mode of participation in this research. Specifically, I will address the following challenges and limitations, and how these could be mitigated in future DH projects: 
+
+
+- The possible mismatch between an academic research interest and the immediate priorities of a partner organization. 
+- The challenge to keep-up momentum and participants engaged due to academic administrative procedures. 
+- Unforeseeable circumstances, like the COVID-19 pandemic. 
+- The limitations of a three-year funded project for prolonged engagement and establishing mutual beneficial relationships (Herr and Anderson, 2015: 48–49; 150–57). 
+
+
+
+# notes
+
+[^1]: 
+                            I would like to thank everyone from the MML who participated in my research, as well as the MML’s archivist and library manager Meirian Jump and my supervisors Professor Julianne Nyhan, Dr Antonis Bikakis and Dr Andrew Flinn for supporting me throughout the research process. The poster upload would not have been possible without Dr Donald Weber and the SHP team. Special thanks also to LaToyah Gill (Untamed Artists) and Matthew Lambert (British Library) for their guest workshop talks on copyright. Thank you to the anonymous reviewers of this conference paper for their feedback. This research was funded by a PhD studentship of the University College London.
+                        

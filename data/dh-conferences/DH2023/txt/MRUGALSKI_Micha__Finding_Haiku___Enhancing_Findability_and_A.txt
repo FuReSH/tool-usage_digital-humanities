@@ -1,0 +1,64 @@
+
+Abstract 
+
+The refinement of data curation and selection takes a fundamental part in Computational Literary Studies. Using the exemplary case of scanning European text collections for instances of the genre “haiku”, this short presentation will illustrate the need for the methods and tools being developed in the CLS INFRA project in order to enhance data findability and accessibility according to the FAIR framework (findable, accessible, interoperable, reusable; Wilkinson et al. 2016). Specifically, it will show which procedures and steps are necessary to optimally prepare and structure literary corpora for the CLS community. 
+
+Problem Statement 
+
+To all appearances, the haiku as a well-established and strictly prescribed short form should be easy to identify in multi-genre and multilingual collections. Yet, difficulties arise from both cultural (Hokenson 2007; Johnson 2011; Śniecikowska 2016) and infrastructural factors. Given the stringent rules of application for Japanese phonetics (mora , kireji ), syntax, and semantics ( kigo ), the genre of the haiku appears to be untranslatable into European literary systems. All European haikus are merely approximations of the precise form contingent on the specific structure of the Japanese language. This impossibility of identifying the canonical version of the haiku outside Japanese literature, paired with the heterogeneity of the existing infrastructure of text collections, makes the search for sustainable data extremely time and resource consuming. The following questions arise: 
+
+Which features of different European approaches to the strict Japanese genre should be given priority in identifying a poem as a haiku? 
+
+How can the evaluation and exploration of literary text collections be facilitated in regard to these features? 
+
+Adapted Approach 
+
+To answer these questions, a selection of corpora from a list of literary resources (collected and curated since the beginning of the CLS INFRA project as part of a deliverable) was selected for closer examination. 
+
+Relying on metadata- and data-derived information, the corpora were scanned for both “explicit” and “implicit” (“adaptations” according to Long and So 2016) realizations. 
+
+Explicit haikus are either translations of the Japanese models or original creations labeled as “haiku”. Their findability relies heavily on metadata provided by corpus compilers/distributors. Two telling cases are Wikisource and the Russian National Corpus, which recognize the haiku as a distinct form, but only in annotations to separate poems and not in the inventory of genres. 
+
+As for implicit haikus, their findability depends on the addressability of certain textual features (such as: verses, syllables, and topics) ensuing from the structure of a corpus. 
+
+Example: As a result of favoring the cultural universal of verse count over the relation to the number of syllables (absent in Japanese, instead divisible in mora), an algorithm was devised that extracts three-verse poems from the DLK (German Lyrik Corpus, cf. Haider 2021). In the DLK syllables are already marked-up, which makes counting syllables possible and thus provides an additional criterion to identify possible haikus. However, the ideal structure of 17 (5+7+5) syllables could not be identified. 
+
+Two problems arise: inconsistencies in the recording of metadata and discrepancies in the structural annotation of texts in literary corpora. 
+
+Proposed Solution 
+
+Based on implementation concepts being developed within the CLS INFRA project, the following solution is proposed for the aforementioned problems: on the one hand, a descriptive metamodel for poetry corpora will be introduced, which is derived from the “Metamodel for Corpus Metadata” [MCM; Odebrecht 2018], allowing a fine-grained genre-specific description of collections. On the other hand, a machine-readable archive will be provided, which contains the results of previous searches for particular poetry forms; it will contain explicit statements about various features of the corpus (e.g., whether a certain method yielded positive results). 
+
+The metamodel will be realized as an extension to CIDOC CRM, using other well-established ontologies, e.g., FRBRoo. The class “Annotation” of the MCM will be introduced to CIDOC CRM’s event-centered model to record various features of corpora including provenance information. This allows to express even conflicting statements about a resource, which can thereby be traced back and assessed individually. 
+
+In the haiku-example, this approach will be tested by attaching information to corpora such as tokenization rules, syllable structure, verse structure, etc. By linking concepts to external reference resources, e.g., Wikidata, it will be possible to search for literary studies’ notions used in the annotation of documents in the corpus. 
+
+
+# notes
+
+[^1]: Ingo Börner is with the Department of German Studies; University of Potsdam, email: ingo.boerner@uni-potsdam.deVera Maria Charvat is with the Austrian Centre for Digital Humanities and Cultural Heritage, Austrian Academy of Sciences, email: veramaria.charvat@oeaw.ac.atMichał Mrugalski is with the Institute of German Language and Linguistics, Humboldt University of Berlin, email: michal.mrugalski@hu-berlin.deCarolin Odebrecht is with the Institute of German Language and Linguistics, Humboldt University of Berlin, email: carolin.odebrecht@hu-berlin.de
+[^2]: “Computational Literary Studies Infrastructure” (CLS INFRA, No. 101004984) is a Integrating Activities for Starting Communities (IASC)-project, launched in March 2021 and funded by Horizon Europe 2020 (Call:  H2020-INFRAIA-2020-1) for the duration of 48 months. Its overall goal is to create uniform and easy access to the best European and national infrastructures for the CLS community. See also: 
+                            https://clsinfra.io/
+                        
+                        (last accessed: 2021-11-26)
+                    
+[^3]:  A unit of duration in Japanese used to measure the length of words and utterances; mora languages differ from syllable languages like English.
+[^4]: 
+                        Cutting syllable, separating the first verse from the others.
+                    
+[^5]: Codified signals of seasons: plus 1000 lexemes contained in the saijki, a prescriptive list of such words.
+[^6]: The history of our searches is provisionally stored in Gitlab (please note that the access at this time is limited to CLS INFRA project members): 
+                            https://gitlab.clsinfra.io:11435/cls-infra/haiku-challenge
+                        ; 
+                            https://gitlab.clsinfra.io:11435/cls-infra/haiku-challenge/-/issues
+                        
+[^7]: https://wikisource.org/wiki/Main_Page (last accessed: 2021-11-26).
+                    
+[^8]: https://ruscorpora.ru/new/search-poetic.html (last accessed: 2021-11-26).
+                    
+[^9]: https://cidoc-crm.org/ (last accessed: 2021-11-26).
+                    
+[^10]: https://cidoc-crm.org/frbroo/home-0 (last accessed: 2021-11-26).
+                    
+[^11]: https://www.wikidata.org/ (last accessed: 2021-11-26).
+                    

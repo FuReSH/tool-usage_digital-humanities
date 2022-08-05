@@ -1,0 +1,53 @@
+
+
+# The International Prosopography Interchange Format 
+
+
+This presentation intends to describe ongoing work at the Austrian Centre for Digital Humanities and Cultural Heritage (ACDH-CH) on the International Prosopographical Interchange Format (IPIF). It presents IPIF’s design, and explores various conceptual and technical challenges arising from its implementation. 
+
+IPIF is an API definition and data model enabling the sharing and querying of prosopographical data. The original IPIF paper (Vogeler et al. 2019) recognises the power of semantic web tools (RDF, OWL, SPARQL), but also highlights their shortcomings for an interoperable format, chiefly the absence of a standard data model and the complexity of SPARQL. (See Bradley 2020.) Such difficulties circumscribe uses such as ‘light-weight’ data access and querying (as opposed to complex data processing). Accordingly, IPIF opts for a simple RESTful API. 
+
+In addition to a reference implementation, Papilotte (Vasold 2019), IPIF is intended to be implemented on top of existing projects, allowing access to data in a standardised format and providing the facilities for federated queries and as a data discovery tool. (Vogeler et al. 2019) 
+
+
+# The Data Model and API 
+
+
+To achieve maximum interoperability, IPIF adopts a version of the ‘factoid model’ (Bradley 2005). This model separates statements made about a person from the abstract idea of a person , instead attributing statements to a researcher’s interpretation of a historical source (Figure 1). This enables contradictory statements, made by distinct sources, to be recorded. As Baillie (2021) argues, this is not always desirable, some historical sources being more trustworthy than others; nevertheless, it is a requirement for an open ecosystem without any single ‘guiding hand’ that contradiction be permitted. 
+
+
+
+# FIGURE 1: 
+
+
+THE IPIF DATA MODEL 
+
+
+The API — described in OpenAPI — is a RESTful interface, allowing direct access to the four IPIF entity types (Factoid, Source, Person, Statement), and querying of statements through graph-like traversals (Figure 2). It returns JSON-LD for each entity, comprising content and/or metadata, and embeds references to related entities. 
+
+The choice of Statement fields represents a highly pragmatic decision. These fields, allowing a label and a URI, were chosen to match the most obvious use-cases in prosopographical data; the statementType field allows arbitrary extension beyond these standard statement types. 
+
+
+
+# FIGURE 2: 
+
+
+API EXAMPLES 
+
+
+
+# Implementations, issues and works-in-progress 
+
+
+Since the original definition of the standard, IPIF endpoints have been implemented on top of several existing frameworks, including the ACDH-CH’s APIS platform (a Django- based platform for prosopographical projects) and as an eXist-DB module for serving TEI- XML personography data (typically from digital scholarly editions). IPIF client libraries for Python and JavaScript, allowing federated queries and data aggregation across several endpoints, have also been developed. Building these tools has afforded a wealth of practical experience, highlighting the strengths of the format and the difficulties involved in its implementation. This has led to several pragmatic decisions regarding the data model, API and the semantics of querying. 
+
+
+- A label field was introduced for Persons, allowing use cases such as autocompletes. The theoretically correct modelling — as a ‘naming statement’ — required too many additional requests to retrieve the appropriate information. 
+- Persons and Sources allow multiple URIs (interpreted as owl:sameAs). Strictly, these should be Statements (i.e. non-definitive assertion that one Person or Source is the same as another: see Zedlitz 2009); but reconciling data from multiple endpoints is considerably easier when this information is a ‘meta’ field of a Person entity. 
+- IPIF requires a Source for each Factoid. In many projects, data that would comprise an IPIF Statement is given with no source (e.g. name, death, profession of a person”). In this case, the source is taken to be the project itself. 
+- TEI-XML personographies can express a factoid model by applying the @source and @resp attributes to the sub-elements of a <person> entry (see Schwarz 2020),  but this is optional. Pragmatically, we suggest using the metadata of the TEI document as fallback (@source, @resp, ancestor::TEI/teiHeader/ titleStmt/editor etc.). 
+- To avoid ambiguity in combining statement filters in Person queries (does person/?place=Graz&role=professor mean “a professor in Graz” or “a professor, located in Graz for any reason”?), we defined a default behaviour (both conditions apply to the same Statement) and an optional parameter independentStatements=true to allow ‘or’ conditions.  In this presentation, we will argue that such decisions are justified by the requirements of interoperability; and that our experiences in developing IPIF thus far contribute usefully to debates surrounded data interoperability in the digital humanities. 
+
+
+
+# notes

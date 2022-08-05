@@ -1,0 +1,75 @@
+
+The aim of this panel is to debate the challenges and opportunities offered by online reviews for measuring the impact that books can have on readers (Boot and Koolen, 2020). The focus is specifically on culture- and language-specificity, thus we will compare insights from the analysis of Korean, English, Italian, German, and Dutch reviews. 
+
+Digital social reading platforms – like Goodreads, Lovelybooks, or Naver Books – host millions of reviews and, thus, offer unique possibilities for research into literature, reading, and reader response (Rebora et al., 2021; Walsh and Antoniak, 2021). Computational tools are especially relevant, given the large amount of available data, but finding associations between textual features, cultural conventions (e.g. genre), and cognitive, affective, and aesthetic responses is not a straightforward task (Koolen et al., 2020; Pianzola et al., 2020). 
+
+By comparing research done with different platforms, datasets, and languages, we aim at improving the methods that we employ, in a dialogue involving both data-driven insight and theoretical reflection on literature and readers. Questions that we will address are: what aspects of a book’s impact on readers can reviews help us to measure? What are the limitations of online book reviews for studying impact? How do we know to what extent these review texts reflect the actual reading experiences? What are unwanted, confounding influences (e.g. reviewers projecting a favourable self-image, socially desired responses, aspects of identity formation, fake reviews). How do online book reviews differ from experimentally controlled gathering of reader responses (lab studies, questionnaires, psychologically validated scales) (Lendvai et al., 2020)? How do platforms for reviewing and social interactions around books influence reviewers and their perceptions? How do reviewers compare to other readers? 
+
+To answer such questions, we will present four case studies dealing with different languages and cultures, followed by an open discussion of the results and methods, reflecting on their generalizability, efficacy, and limitations. 
+
+
+# Cross-cultural and Multilingual Book Reading and Reviewing: Building and Analyzing a Dataset for English, Italian, and Korean 
+
+
+Fossati, A., Pianzola, F., Viviani, M. 
+
+In this project, we analyze the differences between English, Italian, and Korean speaking readers in relation to the impact that a book has on them, namely in relation to the attitude that reviewers of different cultures have in providing their opinion about books on a digital platform. To this aim, we scraped reviews from the biggest reviewing platforms for each language: Amazon.com (270k reviews collected) and Goodreads (247k) for English (999 books collected), Amazon.it (93k) and Anobii (64k) for Italian (975 books), and Naver Books (40k) and Yes24 (67k) for Korean (900 books). We sampled one retail and one non-retail platform for each language because one of our goals was to reproduce the results by (Dimitrov et al., 2015; Newell et al., 2016) about the differences in readers’ behavior (Fig. 1). 
+
+
+# Average rating from 3,000 books in English, Italian, and Korean taken from retail (blue) and no-retail (yellow) platforms. Reproduction of the results obtained for English by (Newell et al. 2016). 
+
+
+We are providing an important cross-cultural and multilingual resource and analytical contribution to this kind of research. We present the process of construction and preliminary analyses of this multilingual corpus, which is aimed both at containing common books (about a thousand for each language, with their respective reviews) in all three languages, and at highlighting reading preferences in terms of genres (books from Children, Romance, Sci-fi, Thriller and Fantasy genres) and authors that are peculiar for each language/culture (Fig. 2). This kind of dataset is necessary – but so far unavailable – to implement analyses that could reliably explore the impact that books have on both Western and Asian readers. 
+
+
+# Average sentiment scores for books belonging to 5 different genres. Values are computed using a transformer-based multilingual model (XLM-R) specifically fine-tuned for sentiment analysis of book reviews. 
+
+
+
+# Reading Impact in Online Book Reviews: Challenges and Prospects 
+
+
+Boot, P., Fialho, O., Koolen, M., Neugarten, J., Van Hage, W.R. 
+
+What is the impact of fiction? In the Impact and Fiction project we investigate that question by measuring impact in a corpus of 500k+ online book reviews and relating this to high-level features (mood, topic, style, narrative) computationally extracted from a corpus of novels discussed in these reviews. In predicting the impact we also take reader features into account. We draw from a growing tradition of studies on the impact of reading fiction, including the phenomenological and experimental tradition (e.g. Miall and Kuiken, 1995; Kuijpers, 2014; Fialho, 2012, 2019), studies of literary evaluation (e.g., Von Heydebrand and Winko, 1996), of newspaper criticism (Linders, 2012), of online reviews, depending on site and book genre (Koolen et al., 2020; Newell et al., 2016), of the influence of reader gender on reviews (Thelwall and Boerrier, 2019), and of self-presentation in social media (e.g. Hollenbaugh, 2021). 
+
+Despite the wealth of research in these domains, there are many open questions on the impact of fiction in the context of book reviews. Are existing typologies of reading experiences applicable to the context of book reviews? Can impact be reliably measured from reviews? How do reviewer characteristics and textual features (e.g., genre, perspective) affect impact? Do genre effects influence review content? Are book reviews mostly about books, or do they primarily reflect the self-image readers want to present to the world? What forms of reflection occur in book reviews? In this presentation, we will offer a series of reflections on these issues. 
+
+
+# Dealing with messy data. A methodological solution for analysing unbalanced social media datasets 
+
+
+Rebora, S., Hermann, J. B., Messerli, T., Jorschick, A. 
+
+In the study of natural social media data standard solutions for dealing with “messy” and high frequency data in hypothesis-testing statistics are still missing. This paper contributes to a solution for the issues of hypothesis testing of (a) big-scale and (b) unbalanced datasets. Building on the development of deep learning classifiers for the recognition of evaluative language and sentiment (Rebora et al., 2022), we thus present a possible methodological groundwork for the study of book impact at a large scale. 
+
+Our project focuses on German book reviews published on the LovelyBooks platform (~1.3M reviews). Fig. 3 (evaluation) and 4 (sentiment) show the application of the two classifiers on the corpus. 
+
+
+# Proportion of evaluative language per review 
+
+
+
+# Proportion of sentiment per review (green = positive; red = negative) 
+
+
+In order to deal with the issue of a “messy” big-data corpus, we evaluated advanced statistical strategies. As Anova-style tests tend to increase type I errors, we applied Linear Mixed-Effects Models (Winter and Grice, 2019), using a subsection of our dataset (30,000 reviews, most popular genres). Book GENRE, RATING, and total Number of Reviews by User (NRU) were independent variables predicting the proportion of evaluative language. Table 1 shows significant main effects for NRU, RATING, GENRE , and a significant interaction effect for NRU and GENRE . Figure 6 shows an interaction effect of GENRE, RATING and USERTYPE (high vs. low NRU), with high NRU users deviating for the novel GENRE. As such dynamics might often be missed in data analysis, our case study shall advocate for the use of advanced statistical modeling. 
+
+
+# Anova type III table of main effects and interactions. Significant effects are bold. 
+
+
+
+# Rating vs. evaluative language 
+
+
+
+# A preregistered analysis investigating the relation between emotions in books and reviews 
+
+
+Sharma, S., Pianzola, F. 
+
+In this paper we look at the emotional impact a book can have, focusing on the relation between emotions in books and emotions in reviews. We test the psychological theory known as “framing effect” (Tversky and Kahneman, 1981) – which states that the response of the audience is influenced by the way in which the information is presented to them – and operationalize it as a task of computational text analysis. To do this, we use a dataset of 450 books, divided across 9 genres, and with more than 5 million English reviews. We conduct sentiment analysis of three different components: the average book sentiment, the average review sentiment of the corresponding book, and the emotional story arc of each book (Reagan et al., 2016; Jockers, 2017). We compare three different methods – distilBERT (Sanh et al., 2020), a dictionary-based model testing different lexica (Mohammad and Turney, 2013), and SentiArt, a vector space model (Jacobs and Kinder, 2019) – and reflect on their accuracy and interpretability in the context of a DH project, rather than as a general NLP task. This is among the first studies that quantitatively investigate relations between stories’ sentiment and reader response (Jacobs and Kinder, 2019; Pianzola et al., 2020), and it uses both state-of-the-art machine learning as well as hypothesis-testing statistics. 
+
+
+# notes

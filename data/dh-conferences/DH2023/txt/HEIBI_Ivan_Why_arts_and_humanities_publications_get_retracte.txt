@@ -1,0 +1,39 @@
+
+
+# Background 
+
+
+The retraction of a scholarly peer-reviewed publication means that its corresponding venue (e.g., journal) has decided to withdraw it due to some irregularities/errors. A retraction could be partial or full. In case of a partial retraction, articles have flawed data or content errors in small parts, and the correction of the erroneous article portions keeps the general information and the article’s stated conclusions uncompromised. On the other hand, a full retraction is “a mechanism for correcting the literature and alerting readers to articles that contain such seriously flawed or erroneous content or data that their findings and conclusions cannot be relied upon” (Barbour et al., 2009). Partial retractions are not helpful and cannot determine the status of a publication, therefore it is more reasonable to focus on definitive full retractions. 
+
+Most retractions occur in STEM (Science, technology, engineering, and mathematics), while social sciences and humanities relatively account for a small portion compared to these fields (Vuong et al., 2020). Reasons for retraction are mainly classified in two categories: (a) honest error and (b) misconduct. When a retraction is raised, the venue needs to formally accompany such decision with retraction notice – a document that provides sufficient information about the reason for retraction and why the findings are considered unreliable, in addition, should explicitly mention whether this was due to misconduct or an honest error. Retraction notices should be freely available and linked to the retracted article in both the PDF and online version (Barbour et al., 2009). 
+
+Several studies worked on studying the reasons for retraction. High attention has been given to STEM and mainly to health science (Li et al., 2018). Few past studies worked on the analysis of the arts and humanities domain (a rare example is the work of Halevi (2020) and our work (Heibi & Peroni, 2021). 
+
+
+# Aim 
+
+
+Considering the less attention that has been given in the study of the retraction phenomenon and in particular to the reasons of retraction in the arts and humanities domain, the aim of this work is to investigate the reasons of retraction in the arts and humanities through the automatic analysis of the retraction notices and a comparison of these results with the data provided by other services which have worked on labeling such reasons. 
+
+
+# Method 
+
+
+Our methodology is articulated in three main steps: 
+
+
+- Gathering the retraction notices of all the retracted articles in arts and humanities using the Retraction Watch Database ( http://retractiondatabase.org/ ) or by querying large bibliographic databases (e.g., ScienceDirect by Elsevier) searching for terms such as ‘‘RETRACTED’’ and subsequently getting the retraction notice. 
+- Building and running a topic modeling (TM) analysis using the Latent Dirichlet Allocation (LDA) model (Jelodar et al., 2019) giving by input a corpus containing the full text of all the retraction notices collected in step 1. This process is done using MITAO, a user-friendly interface to create a customizable visual workflow for text analysis (Ferri et al., 2020; Heibi et al., 2021). 
+- Analyzing the topic modeling outcomes using dynamic visualizations which help us observe and investigate the results as a function of other features and compare our findings with the data/annotations provided by Retraction Watch (Marcus & Oransky, 2014), a manual-curated database collecting retractions from several domains. 
+
+
+
+# Expected results 
+
+
+The study we have presented in this abstract is a work in progress analysis. The ambition is to uncover and infer new insights regarding the reasons of retraction in the arts and humanities domain which did not emerge in the past studies – e.g., the work of Halevi (2020) – or in the annotations of services such as Retraction Watch. We can hypothesis that is very plausible to find out that the outcomes of our analysis will be related to retraction reasons such as “plagiarism” and “content duplication”, which are the most recurring reasons following the annotations of Retraction Watch (also demonstrated by the work of Halevi (2020)). The fact that these reasons are the most popular ones for the humanities domain, is due to the fact that the detection of these forms of retraction are well defined and less prone to interpretation (Dhammi & Ul Haq, 2016), therefore easier to establish considering the different interpretable facets of the humanities arguments. 
+
+In addition, an aspect to investigate concerns the evaluation of the reliability of a TM analysis in the classification of misconduct and honest error reasons compared to the human annotations provided by Retraction Watch. This study might also evaluate the TM technique through the consideration of other text analysis methodologies, e.g., SBERT (Reimers & Gurevych, 2019). 
+
+
+# notes

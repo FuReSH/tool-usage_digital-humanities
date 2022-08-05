@@ -1,0 +1,25 @@
+
+This paper presents a bottom-up, person-centred paradigm for building and integrating Digital Humanities (DH) with Shanghai University (SHU).  Based on five years of Digital Humanities exchange between SHU and University College Cork (UCC) it considers the nuanced negotiations it takes in practice to build relationships and create mutual trust. It is a reflection on a serendipitous encounter that developed into a strategic approach to research dialogue, with inclusive, responsive co-design centred on the SHU Summer School. It has changed since its first iteration in 2013, from 3-5 people initially enrolled to 3,000 people watching live online via BiliBili, live broadcast has amplified the impact of the ‘Introduction to Digital Humanities’.  
+
+The ten-lesson course emerged as one offering in an international summer course program, delivered over one week. An introduction to the emergence of DH, some methods, and tools, and practicing HTML/XML for BA students. The content was accessible and encouraging for students - empowering them to code, to create, and present work in an engaging approach. In the face-to-face course the professor directly engages with and gauges students’ progress caring about students’ learning, live in class. The online course has more audience, recordings are stored and shared widely. Student feedback is positive, it is the beginning of their DH journeys. 
+
+Digital Humanities is happening on the Chinese mainland. Scholars are engaging with Digital Humanities at all levels, encouraging international staff and student exchange, and promoting Digital Humanities as a new way of engaging with arts and humanities contexts through summer schools, training courses and online pedagogies. There are structural signs within the Chinese Academy that  DH is gaining traction.  This paper is a lens through which to view a successful local integration that is surviving across continents through the pandemic. 
+
+Chinese debates in the Digital Humanities echo the concerns of those of us already doing DH for decades.  What does this tell us in terms of how we are growing as a field of scholarly endeavour? They are asking: 
+
+What is the relationship between public knowledge service institutions or GLAM sector, and academic research? 
+
+Is a system for evaluating Digital Humanities research and promotion possible? 
+
+What does Digital Humanities education look like, how do we start? 
+
+What is Digital Humanities pedagogy? 
+
+How does China grapple with a predominantly anglophone mainstream Digital Humanities? 
+
+These practical concerns are mirrored in philosophical questions of the nature of digital art and culture, and critical theory. Chinese Digital Humanities holds a mirror to Digital Humanities more broadly, have we answered these questions where Digital Humanities has been established for decades?  Do we have answers to these questions that will encourage early career researchers in China to undertake Digital Humanities work?  Can we provide them with a favourable development environment and a feasible development path? These questions are faced at SHU and UCC together.  We are all concerned with evaluation, with sustainability and with impact – what might Digital Humanities do for humanities researchers in China?  What does DH bring to the students? Culturally distinct in terms of pedagogy and the practice of research, this paper marks a way point for this encounter – it shares what we have learned from each other and valorises shared humanistic concerns and values.   It is not a digital method or tool.  It is doing Digital Humanities whilst semiotically unbound, responding to Asian diversity and a sharply focused exploration of how DH is developing in one major university SHU in conversation with UCC. 
+
+It differs from top-down approaches imposed by international deans and offers another perspective for growth, mutuality, and directions for Digital Humanities outside the anglophone world.   It is a work in progress. It initiates and invites further conversations about the dynamics of exchange.  
+
+
+# notes

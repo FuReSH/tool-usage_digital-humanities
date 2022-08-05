@@ -1,0 +1,113 @@
+
+
+# Abstract 
+
+
+This tutorial addresses one of the central challenges of the digital humanities: the operationalization of theoretical concepts from the humanities for computer-based research. 
+
+While humanities scholars primarily work with concepts that often encompass several textual phenomena and furthermore draw on contexts deemed relevant for their interpretation, computer-based work is bound to identifiable phenomena on the textual surface. The resulting discrepancy between theoretical expectations and concrete results needs to be bridged by an adequate operationalization. Thereby, the goal is to develop procedures to trace back theoretical concepts to text surface phenomena, potentially in several sub-steps. Or, in short: to detect and measure instantiations of theoretical concepts. 
+
+With our tutorial, we want to focus on this practice and its theoretical backgrounds: On the basis of selected use cases, we will show which challenges arise from the use of computational methods for questions in the humanities and how they can be dealt with. In a practical part, the participants will have the opportunity to work on the operationalization of relevant concepts for exemplary text analyses. For this purpose, we provide Jupyter notebooks for the prepared use cases. Programming skills are not required. 
+
+The aim of the tutorial is to raise awareness of the differences between established methods in the humanities and computer-based approaches, to address typical challenges, and to develop approaches for adequately operationalizing theoretical concepts from the humanities. We are convinced that reflecting the underlying assumptions of an operationalization is the only way to ensure that one can then handle the results appropriately. 
+
+
+# Target Audience 
+
+
+This tutorial targets all researchers with an interest in reflecting their understanding of operationalization theoretically and practically. Group size between 15 and 25 people would be preferable. 
+
+Schedule 
+
+(total 4 hours incl. 30 min. break) 
+
+
+- Introduction and procedure (10 min.) 
+- Theoretical part (40 minutes in total) 
+
+- Problem outline 
+- Introduction to the use cases 
+
+
+- Practical part 
+
+- Introduction to the primary texts and tools, distribution of the draft guidelines (10 min.) 
+- First practical round (small groups): manual annotation of a phenomenon, parallel extension/revision of the guidelines, iterative (40-50 min.) 
+- - Coffee break (30 min) - 
+- Collection of results and discussion of approaches (20 min.) 
+- Second practice round (small groups): work on operationalization toolbox, feedback on output file, iterative (40-50 min.) 
+
+
+- Final discussion: collecting results, discussion of experiences and learning objectives (40 min.) 
+
+
+
+# Tutorial Instructors 
+
+
+
+## Melanie Andresen 
+
+
+melanie.andresen@ims.uni-stuttgart.de 
+
+University of Stuttgart 
+
+Institut for Natural Language Processing 
+
+Pfaffenwaldring 5b 
+
+D-70569 Stuttgart 
+
+Melanie Andresen is a postdoc researcher at the Institute for Natural Language Processing at the University of Stuttgart. She studied German Linguistics at the University of Hamburg and received her PhD in corpus linguistics there in 2020. She can draw on a lot of experience with the operationalization of questions in the humanities and social sciences from the projects hermA (University of Hamburg) and Q:TRACK (University of Stuttgart, University of Cologne). 
+
+
+## Benjamin Krautter 
+
+
+Benjamin.Krautter@uni-koeln.de 
+
+University of Cologne 
+
+Department for Digital Humanities 
+
+Albertus-Magnus-Platz 
+
+D-50931 Cologne 
+
+Benjamin Krautter is a PhD student at the Department of German Studies at the University of Heidelberg and a member of the Q:TRACK project (Cologne). Among other things, he is working on the operationalization of literary concepts for quantitative drama analysis. In his research he focuses on how to meaningfully combine quantitative and qualitative methods for the analysis and interpretation of literary texts. 
+
+
+## Janis Pagel 
+
+
+janis.pagel@uni-koeln.de 
+
+University of Cologne 
+
+Department for Digital Humanities 
+
+Albertus-Magnus-Platz 
+
+D-50931 Cologne 
+
+Janis Pagel is a PhD student at the Institute for Natural Language Processing at the University of Stuttgart and research associate at the Department for Digital Humanities at the University of Cologne. He studied German studies and linguistics in Bochum, and computational linguistics in Stuttgart and Amsterdam. His research focuses on the application of computational linguistic methods to literary studies and coreference resolution on literary texts. 
+
+
+## Axel Pichler 
+
+
+axel.pichler@ts.uni-stuttgart.de 
+
+Universität Stuttgart 
+
+Institut für Maschinelle Sprachverarbeitung 
+
+Pfaffenwaldring 5b 
+
+D-70569 Stuttgart 
+
+Axel Pichler studied Philosophy and Literary Studies in Vienna and Graz (Austria). Currently, he is working as a postdoc on, among other things, the development and reflection of methods of computer-aided text analysis at the Institute for Machine Language Processing at the University of Stuttgart. 
+
+
+# notes

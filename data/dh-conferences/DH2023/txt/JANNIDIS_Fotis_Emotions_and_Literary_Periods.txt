@@ -1,0 +1,67 @@
+“Longing, resignation, derision, disillusionment,  weary smiles, these are the five basic tones  of the modern scale of emotions.” (Servaes 1896) 
+
+# Introduction 
+
+
+Periodization has been neglected in computational literary studies despite some early discussions (Underwood 2013). In literary studies the usual basis for the construction of periods are differences in the choice of topics or style or non-literary aspects, while differences in the representation of emotions are underresearched. This is the case even though recent approaches in literary studies ascribe epoch-specific relevance to the literary representation of emotions. How to use quantitative methods to study emotions in literary texts and use them to describe the differences between periods is the focus of our paper; our use case is the difference between realism and early modernism in German literary history and we are focusing on poetry. In a first step a group of domain experts manually annotated around 1.000 poems, highlighting phrases according to the emotions they represented. In the second step a machine learning model was trained and in a third step this model was used to annotate a collection of more than 6.000 poems, from anthologies representing either realism or early modernism. Lastly we analyzed the main differences of these periods based on the trends we found.   
+
+
+# Resources 
+
+
+Our corpus consists of 6249 poems from 20 anthologies. 12 anthologies, published between 1885 and 1911, are explicitly intended by the editors to contain ‘modern’ poetry. The other anthologies were published between 1859 and 1882 and represent the earlier poetry of realism. 
+
+We gathered emotion annotations for 1278 poems. The goal was not to annotate readers’ emotions, but rather the emotions represented in the text itself. The annotators used a list of 40 discrete emotions (see Table 1), the selection of which was based both on existing emotion models (e.g. Ekman 1992, 1999; Plutchik 1980a, 1980b, 2001) and on the emotions that were regularly represented in the poems of our corpus. We categorized the emotions into 6 groups, inspired by the emotion hierarchy in (Shaver et al. 1987). First, each poem was annotated independently by two annotators, then they merged annotations manually into a consensus annotation. Their agreement, measured with γ (Mahet et al. 2015), was 0.6445 for individual emotions and 0.7491 for the emotion groups. 
+
+
+# Figure 1: 
+
+
+Provided examples per grouped Emotion. 
+
+The emotions groups are not equally balanced (see Fig. 1). This distribution could be specific to our corpus and very probably will change with other genres. 
+
+
+# Emotion Classification 
+
+
+We model emotion classification as a series of binary classifications to avoid the complexity of a multi-labeling task. Basis of our classification experiment is the german BERT (Devlin et al. 2018) model gbert-large (Chan et al. 2020). Because gbert is trained on contemporary webtext, we continue its pre-training with poetry to adapt to our target domain. Subsequently we perform fine-tuning on the binary emotion classification tasks. To overcome the class imbalance we apply undersampling by randomly sampling examples from the majority class in every epoch. While the classification of single emotions leads to a large spread in predictive quality , the grouped emotions (Table 1) lead to more stable performance at an acceptable level of uncertainty (Table 2). 
+
+
+# Analysis 
+
+
+
+# Figure 2: 
+
+
+1000 Samples of 20 poems drawn out of the emotion predictions of each group. 
+
+Our results (Fig. 2) show that modernist poetry as a whole represents emotions slightly less frequently than realist poetry, but the effect sizes are small. 9% of realist poems and 12% of modernist poems do not represent any emotion. The probability that a verse contains an emotion is 47% in realism and 42% in modernism. The decrease in emotionality from realism to modernism is mainly due to the emotion group joy, i.e. positive emotions.  
+
+If only canonical modernist authors are considered, the tendency to represent fewer emotions is much stronger. The probability that a poem from a canonical author does not represent any emotion is 14%, and the probability that a verse from the canonical subcorpus contains an emotion is 39%. Not only joy, but also anger, sadness, and especially love become less frequent compared to the poetry of realism. Again, the decrease is most pronounced for positive emotions. 
+
+
+# Discussion 
+
+
+Some literary scholars claim that German modernist poetry, in contrast to the more traditional poetry of realism, tends toward a sober, matter-of-fact, and non-emotional mode of expression (cf. e.g. Andreotti 2014). Others argue that modernist poetry does indeed represent emotions frequently, albeit in a modified way (cf. e.g. Winko 2003). Our results support the view that modernist poetry as a whole continues to represent emotions frequently, that is, almost as frequently as the poetry of realism. There is a much more significant decrease in emotionality, however, when considering only canonical authors. This suggests that the contradicting views in literary studies regarding the emotionality or non-emotionality of modernist poetry could be explained, at least in part, by different objects of study. The scholars who support the non-emotionality thesis might have focused more than the others on canonical authors. These observations highlight the importance of selection processes and corpus formation in literary history. Future research could examine further selection criteria and categories, such as gender or class. 
+
+The trend to represent emotions less frequently applies especially to positive emotions. As a result, negative emotions make up a larger proportion of the remaining emotions and modernist poetry appears more negative overall. This is an interesting topic for further research. Moreover, it seems instructive to investigate later literary periods such as expressionism. In addition, it should be interesting to examine mixed emotions. Finally, it is desirable to not only analyze the frequency of emotions, but also the way of representation, e.g. explicit or implicit modes, which is especially important when dealing with literature. 
+
+
+# notes
+
+[^1]:  CRediT Roles: Leonard Konle: Inve
+                            stigation, Data Curation, Writing – original draft; Merten Kröncke: Data Curation, Writing – original draft; Fotis Jannidis: Conceptualization, Supervision, Writing – review & editing; Simone Winko: Conceptualization, Writing – review & editing.
+                        
+[^2]:  Code and data: 
+                            https://github.com/LeKonArD/Emotions-and-Literary-Periods 
+                        Corpus Release: 
+                            https://doi.org/10.5281/zenodo.6053952
+[^3]:  Given the publication dates, we are limited in our analysis to the poetry of 
+                            early modernism.
+                        
+[^4]:  Hyperparameter: 500 steps, batchsize 30, learningrate 2e-5 (see Konle and Jannidis 2020, Gururangan et al. 2020)
+[^5]:  Very frequent emotions like longing (f1: 0.73) or suffering (f1: 0.72) yield sufficient classifiers, but less frequent ones like calmness or desire lead to results similar to a random baseline.
+[^6]:  In our study, in accordance with German literary histories, Stefan George (22 poems), Rainer Maria Rilke (37 poems), Hugo von Hofmannsthal (31 poems), and Arno Holz (50 poems) represent canonical modernism.

@@ -1,0 +1,52 @@
+
+In this paper, I show how indicators for spatial aspects of narration can be annotated automatically by a German-language machine learning classifier trained on 18th–21st-century novels reaching an overall F1-Score of 0.75 (cf. Schumacher 2021). These indicators can be used as a means of quantification (cf. Bernhart et al. 2018, Kuhn 2018, Schruhl 2018) of narrative space in the form of a spatial index (SI). The formula used for this task sums up the number of annotations per category weighted by explicitness and sets them in relation to the length of the novel. Comparing the SI in a diachronic corpus of 100 German novels, one can detect that indicators for narrative space form a nearly constant part of novels taking up an average of 12% of the content. Compare texts in this way not only opens up a quantitative diachronic perspective on space in novels but also makes it possible to spot outliers that do not fit into this development. 
+
+
+# Classifying Space in Novels 
+
+
+Narrative space has been a frequent topic in literary studies (an overview is given by Ryan 2012). Yet it has often been considered less important for narratives than time, because the sequential organisation of events underlying the narrative structure heavily relies on this aspect of human experience (cf. Ryan 2012 §1). The approach presented in this paper takes a first step toward measuring how important the category of space is for narratives. The theoretical foundation used for operationalizing narrative space includes approaches to space from literary studies (e.g. Dennerlein 2009, Piatti 2008, Ryan et al. 2016), Digital Humanities (e.g. Viehauser 2020, Barth and Viehauser 2017, Bodenhammer et al. 2010) and phenomenological studies. The most basic is the distinction between place and space, going back to Descartes (2007;1644). Place is defined as a fixed point in space that can be mapped geographically. Space is understood as a multidimensional continuum whose premiere quality is to be extended. Different conceptions of space were considered when operationalizing narrative space, such as the container space going back to Aristotle (cf. 1995), the geometric euclidean space (Euklid 1971), relational space and space as a socio-cultural phenomenon . In narratives, space can be regarded as a semiotic system, a thematic aspect, or a structural phenomenon of texts (cf. Schumacher forthcoming). Taking operationalizable aspects from all of the above-mentioned approaches to space, I came up with a category system including six categories: place, relations, relational verbs, spatial descriptions, hints on space and topoi.  
+
+This category system is implemented in a machine learning process using StanfordNER (cf. Finkel et al. 2005), an implementation of Conditional Random Fields Algorithms (cf. Sutton and McCallum 2007). The machine learning training is organized as an iterative process, including the creation of extensive annotation guidelines (cf. Reiter 2020), manual annotation of training and test data, calculation of an inter-annotator agreement (cf. Artstein 2007, Artstein and Poesio 2008) and an incremental construction on observation of training and test data (cf. e.g. Jannidis et al. 2015, Schumacher and Flüh 2020). The (manually annotated) training corpus consists of 320.000 tokens taken from 80 novels from 18th–21st century. An opening passage of 4.000 tokens of each novel has been integrated. For testing and validating the classifier a leave-one-out-procedure was followed for which 10.000-token passages werde taken from eight novels (two per century) not integrated in the training corpus . 
+
+
+# A measurement for narrative space 
+
+
+To bring all spatial information into one measurement an index value is calculated, which considers that indicators for representations of space in narratives can be more or less explicit. The most explicit categories are place and relations which are therefore fully counted into the spatial index (SI). Relational verbs are less explicit. For example, when characters in a novel “dance”, it is implied that they move, but some other meanings also play an important role. Relational verbs are therefore multiplied by 0.8. The other categories are less and less explicitly referencing space and descend in order: topoi (0.7), spatial descriptions (0.6), hints on space (0.5). The SI is calculated as follows: 
+
+
+# Space as a categorical constant in novels 
+
+
+Calculating the SI for 100 novels taken from 4 centuries is a good starting point for a diachronic analysis of the representation of space in narratives. As can be seen from figure 1, the representation of space takes up a nearly constant portion of novels from the 18th–21st century with a very slight tendency to rise towards contemporary times.  
+
+
+# Figure 1: 
+
+
+Spatial indexes in 100 novels from 18th–21st century 
+
+What is also striking here is that there is not one single novel without representations of space – in all novels, at least 5% of words carry spatial information. On the other side, there is no novel showing an SI of more than 18. The novel showing the lowest SI (6.66) is Agathon by Wieland, the one with the highest (17.29) is Ahnung und Gegenwart by Eichendorff. Interestingly in both novels, the protagonists travel, but whereas Wieland’s Agathon is a Bildungsroman in which the psychological transformation is more important than physical movement, Eichendorff’s Ahnung und Gegenwart is about a character who severely suffers from war experiences (war being classified as one of the most frequent topoi in novels) and finds his peace in the heterotopic space of a monastery. 
+
+
+# Conclusion 
+
+
+Automatic recognition and classification of narrative space in novels can be fruitful for distant reading approaches and help to quantify this aspect of narratives. The calculation of the SI opens up the possibility to compare the representation of space in a diachronic view. From this perspective, we get first hints on the average representation of narrative space in novels and can spot outliers. Used in this way, the classification and calculation of indicators of narrative space can lead to interesting phenomena in specific texts. For future work it could be interesting to operationalise other basic narrative categories such as time in a similar way. By comparing two or more indexes of such categories would shed more light on the relative importance of space in novels. 
+
+
+# notes
+
+[^1]: 
+                            Subject-centered space (Leibniz 2014;1714), metaphysical space (Kant 2006;1768), perceptual space (Husserl 2007;1991)
+                        
+[^2]: 
+                            Aesthetic space (Cassirer 2006;1931), movement space (de Certeau 2006;1980), action space (Foucault 2008) and milieu (Bourdieu 2006;1989)
+                        
+[^3]: 
+                            Training data and test results can be found in the github-repository of the space-classifier
+                            https://github.com/M-K-Schumacher/Raum-Classifier
+[^4]: 
+                            Not all novels in the corpus are shown and abbreviations are used. For a full list see the github-repository complementing this work
+                            https://github.com/M-K-Schumacher/Forschungsdaten-Orte-und-Raeume-im-Roman/tree/main/Datenbasis_der_Analysen/Raum-Index-Werte

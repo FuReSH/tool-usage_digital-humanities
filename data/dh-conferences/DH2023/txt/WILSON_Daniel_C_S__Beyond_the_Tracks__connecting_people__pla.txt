@@ -1,0 +1,31 @@
+
+In historical research it is rare to have very detailed information that is: (a) about people in the places they lived (b) broad in its geographical and temporal scope and (c) pertains to complementary aspects of lived experience. Historians construct arguments about the past with far less, writing microhistories or grand narratives that are based on much smaller sets of collected evidence. Here, we introduce a method for creating and connecting high-resolution, geolocated historical information, and we outline an approach for the humanistic interpretation of this evidence. Historical studies using big datasets typically interrogate single source types. More rarely, researchers combine two source types to create new insights (e.g., Gregory and Martí-Henneberg, 2010). We combine three significant new, open datasets in a series of ‘convergence experiments’ which use place as a means of framing new historical questions. We discuss the challenges and opportunities of making different types of datasets interoperable. Like recent work that makes use of spatial information embedded in text, termed ‘geospatial semantics’ (Gidal and Gavin, 2019) or geographical text analysis (Taylor and Gregory, 2022), we seek to combine structured, spatial data of different forms. 
+
+Census 
+
+Most previous work with nineteenth-century British census data has aggregated individual-level data at the parish level to chart national occupational and demographic change over time (Shaw-Taylor and Wrigley, 2014). Our approach retains the national scale but vastly increases the resolution we work at by linking c.70% of individuals in 1881, 1891, and 1901 to the streets they lived on (using Ordnance Survey [OS] Open Roads and GB1900 data [Aucott and Southall, 2019]). Though sampling raises its own issues, there remain significant benefits to working at the more precise level of streets. 
+
+Maps 
+
+Unlike the census, historical series maps have received almost no attention at the collection, rather than individual sheet, level. We treat the rich details found in large-scale OS Maps as a ‘visual census’ to be examined computationally alongside the population census (Hosseini et al, 2021a). MapReader is a Computer Vision software library we have developed that creates open, reproducible labeled data based on queries of OS maps (Hosseini et al, 2021b). Producing data using our ‘patchwork method’ allows us to investigate thousands of maps and to predict the presence of buildings and rail infrastructure across Britain. Unlike other railway track datasets, our data is: (a) more complete and (b) richer (because it includes sheet-level metadata about survey and print dates) and so by its nature, this ‘railspace’ dataset offers a novel measure of how industrialisation impacted the physical and social landscape. 
+
+Stations 
+
+Although researchers know the location of Britain’s c.12,000 railway stations, this information has not previously been in a structured form with rich attributes like company names and opening and closing dates. Our StopsGB dataset can be linked to ‘railspace’ to distinguish distinctive aspects of the railway system: the total footprint of railspace v. its specifically passenger-facing structures (Coll Ardanuy et al, 2021). 
+
+Convergence 
+
+The power of our approach lies in combining the datasets through the prism of place, and being able to do so whilst varying the degrees of geographic precision. In this presentation, we use this approach to investigate not only the much-discussed network-amenity aspects of rail (Bogart et al, 2022), but also the locally negative impacts (‘disamenity’). We investigate this ambient or environmental effect in relation to a broader conception of railspace using MapReader patches which, uniquely, capture the wider footprint of the infrastructure beyond the railway track and stations typically vectorised into points and lines. 
+
+Triangulating three datasets allows us to investigate the social effects of rail as a key facet of industrialisation. We quantify the spatial relationships between railway infrastructure, street-level socio-demographic data (e.g. the percentage of residents working in particular economic sectors, or of households with servants), and proximity/access to railway stations (e.g. as a means of access to work). In addition, by calculating the density of ‘railspace’ per street, we categorise individuals based on their proximity to substantial railway infrastructure (see fig.1). These metrics suggest how rail could operate as an ‘amenity’ (e.g. a station with little accompanying rail infrastructure) and/or a ‘disamenity’ in different communities. For instance, we find contrasting proximities to stations among wealthy households (professional/finance workers; multiple servant-keeping; low room occupancy) depending on whether they were in urban or rural areas. 
+
+Structuring historically-rich digital sources so that they can be integrated in novel and flexible ways promises to open new perspectives on the social history of industrialization and urbanization. Our method allows scholars to shift easily between big-picture macro analysis, and the fine-grained, human-scale exploration of social context. 
+
+
+Fig. 1. 
+
+
+ Streets in Leeds in 1901 coloured according to their proximity to dense railspace (from yellow to dark red; MapReader railspace patch-centroids shaded grey). Map data courtesy of NLS. 
+
+
+# notes

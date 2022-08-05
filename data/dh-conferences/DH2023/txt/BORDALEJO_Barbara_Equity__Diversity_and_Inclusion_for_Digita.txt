@@ -1,0 +1,66 @@
+
+This workshop seeks to create awareness of equity, diversity, and cultural differences and present strategies for successful inclusion and the development of fairer environments. These factors are critical within the Digital Humanities because of its emphasis on collaborative work, bringing together different individuals. Moreover, our work has shown that in Digital Humanities, where there could be many different voices, most of the power and prestige remain centralized in the Global-North, in Anglophone countries ( Although the community has been making efforts to raise awareness via different statements on inclusion ( DHSI Statement on Ethics and Inclusion http://www.dhsi.org/events.php ; ADHO Code of Conduct http://adho.org/administration/conference-coordinating-program-committee/adho-conference-code-conduct ; EADH Diversity and Inclusivity http://eadh.org/about/diversity-and-inclusivity 
+
+ACH Statement after the 2016 election https://ach.org/activities/advocacy/ach-statement-in-the-aftermath-of-the-2016-election/ ; CSDH/SCHN  Inclusivity and Diversity Statement 
+
+https://csdh-schn.org/inclusivity-and-diversity-statement/ ), these efforts have become part of what we call “the diversity paradox” where success in recognizing there is a problem might often be construed as an achieved solution [See Ahmed 2017, 103]) . 
+
+This is not surprising considering the general state of academia as a mostly male, primarily white environment (Johnsrud and Des Jarlais 1994, Towsend 2013). For this reason, it’s essential to work with individuals to foster a richer environment, change behaviours, and challenge prejudices.  
+
+Reflecting on these matters also allows us to expand the horizons of our limited perspectives. An article published in the Scientific American, “How Diversity Makes Us Smarter,” states:  
+Decades of research by organizational scientists, psychologists, sociologists, economists and demographers show that socially diverse groups (that is, those with a diversity of race, ethnicity, gender and sexual orientation) are more innovative than homogeneous groups. (Phillips 2014) 
+In DH, creativity and innovation are essential for the development of new approaches or new applications of traditional methodologies. O’Donnell has argued that diversity is a core value in Digital Humanities:  
+“Diversity”—in the sense of access to as wide a possible range of experiences, contexts, and purposes in the computational context of or application of computation to the study of problems in the Humanities, particularly as this is represented by the lived experiences of different demographic groups —is, in fact, more important than “Quality,” especially if “Quality” is determined using methods that encourage the reinscription of already dominant forms of research and experience. (O’Donnell, 2019).  
+The first version of this workshop was commissioned by Karina Van Dalen-Oskam in 2016 to be delivered to ADHO’s steering committee members. This workshop has subsequently been delivered as part of the DH conference on four occasions: 
+
+Montreal 2017 
+
+Mexico City 2018 
+
+Utrecht 2019 
+
+Online 2020 
+
+We have also delivered versions of this workshop at the Winter Institute for Digital Humanities in India and developed a new intercultural communication section which was integrated as part of the 2020 version.  
+
+ Building off this development, in 2019, we unveiled a new game designed to promote the goals of this workshop. These experiences have shown the workshop topic is a moving target as community norms adjust and change (thus, for example, we have seen an increasing interest in the diversity of gender expression in our workshops even over the last six years). Our experience led us to modify and update the workshop’s content and activities. We have added a new section on technocolonialism,  epistemic alienation, and cognitive justice.  
+
+Contents:  
+
+
+- Diversity, Implicit Bias and Cultural Cloning   
+Different concepts of diversity, with particular emphasis on cultural and contextual differences. Notions of implicit bias (the unconscious and automatic reflex causing us to pass judgment on others) and Cultural Cloning (the tendency for replication of hiring committees where people of the same ethnicity, ability, gender, etc, hire people like themselves [Essed & Goldberg 2002, Essed 2004]).  
+
+The impact of Implicit Bias on teachers and educators, hiring committees and other bodies making decisions about others (journal editors, grant evaluators). We carry out exercises on implicit bias awareness, something which has been shown to have   
+
+- Privilege 
+To work on the concept of privilege, we have developed a game that we use to illustrate the many factors shaping our lives. Particularly in the case of privileged individuals, it is not easy to locate and categorize their instances of privilege. In collaboration with the Huygens Institute (The Netherlands), we have developed a digital version of the privilege game as a training tool during our workshops ( https://privilege.huc.knaw.nl ). The game can be played in group or solo modes, and the questions can be modified for particular sets of circumstances.   
+
+- COVID and Technocolonialism 
+In this section, we explore the impact of technocolonialism (Mboa Nkoudou 2020) during the times of COVID. This follows Mboa’s work on identifying epistemic alienation and seeking cognitive justice as proposed by Visvanathan (Visvanathan n.d.) and their application to DH.  
+
+- Intersectionality (in contraposition to the notion of kyriarchy) 
+When two or more oppressive systems overlap and negatively impact an individual, we discuss intersectionality (Crenshaw 1991, Essed 1994, Essed & Goldberg 2002 Risam 2005). This core concept allows us to explore how privilege or lack thereof impacts individuals directly. 
+
+- Intercultural Communication  
+A practical section on intercultural communication illustrates the many possible interpretations of specific situations and how these are shaped by individual experiences.  
+
+- Inclusion solutions 
+Through guided group activities, we facilitate the identification of “inclusion solutions” that participants can implement or propose in their institutions, projects, or other work environments.  
+
+
+
+At the end of this workshop, we aim to guide participants to reflect on the benefits of a more diverse collaborating and working environment by questioning our preconceived notions of sameness as an ideal.  
+
+The workshop is directed at anyone interested in understanding diversity in digital humanities and creating a welcoming and inclusive DH environment. Conference organizers, leaders in the field, and those who often form part of hiring committees are invited to participate. Everyone is welcome to attend, but we particularly encourage the participation of people who are in privileged positions in academia, GLAM, or similar environments. 
+
+The workshop is led by Barbara Bordalejo ( barbara.bordalejo@uleth.ca ) and Daniel Paul O’Donnell ( daniel.odonnell@uleth.ca ) with the assistance of Nathan Woods ( nathan.woods@uleth.ca ), Humanities Innovation Lab, University of Lethbridge, A840 University Hall, 4401 University Drive, Lethbridge, Alberta T1K 3M4, +1 403 3292377.  
+
+It requires a data projector with audio, as well as internet access.  
+
+The activities are self-financing; we do not require participants to pay registration and strongly believe they should not be charged for this particular workshop .  
+
+This workshop version will be delivered in four, with capacity for no more than sixty people. 
+
+
+# notes

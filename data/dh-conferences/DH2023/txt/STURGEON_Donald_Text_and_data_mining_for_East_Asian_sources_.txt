@@ -1,0 +1,68 @@
+
+
+# Brief description 
+
+
+Substantial volumes of primary sources important to the historical written record of China and other East Asian civilizations have been scanned and made available through online databases. Amongst these, the contents of many important sources have been transcribed into textual form, while many more remain available only as images with uncorrected OCR transcriptions. A small but growing number of texts have been semantically annotated, with named entities explicitly marked in the texts and linked to open knowledge bases. Using the Chinese Text Project ( https://ctext.org ) as a source, this interactive workshop introduces participants to ways of efficiently working with digitized and annotated historical texts, as well as demonstrating how to improve the state of digitization of such texts in a crowdsourced environment supporting manual correction of OCR, semantic annotation of named entities, and construction and use of a Linked Open Data knowledge graph. 
+
+This session will introduce participants to: 
+
+
+- Basic navigation of this large and moderately complex digital library – e.g. handling of multiple editions, complex metadata etc. 
+- Text mining using openly available browser-based tools that use interactive visualizations to allow user-driven exploration of the contents of both this digital library, and arbitrary user-supplied materials in any language. 
+- Hands-on introduction to crowdsourced editing to correct errors in textual transcriptions – such as errors introduced through OCR – and principles of versioned textual repositories. 
+- Semantic annotation and knowledge base construction. This will introduce the motivation of semantic annotation with concrete examples, and equip participants with the tools to contribute directly to the annotation of classical Chinese sources through crowdsourcing, as well as to the construction of a crowdsourced knowledge graph of data extracted from these same materials. 
+- Basic knowledge graph querying and data mining. The knowledge graph introduced supports online querying, the semantics and use of which will be explained in this section. 
+- Introduction to querying the knowledge graph with RDF and SPARQL. The knowledge graph introduced closely follows the design principles used in Wikidata, and as such has an RDF representation which can be queried in substantially the same way using SPARQL. This section will provide a brief introduction to this process. 
+
+
+Participants are encouraged to create a free account on ctext.org prior to the workshop by visiting this page: https://ctext.org/account.pl?if=en . 
+
+
+# Target audience 
+
+
+Scholars of East Asian history in fields where important source materials are written in classical Chinese (including in particular: China, Japan, Korea, and Vietnam), with interests in any period from around the first millennium BC to 1911 AD. Note that although the source materials used are in classical Chinese, all software used has complete English and Chinese interfaces, and the workshop content should be intelligible to anyone with a minimal degree of Chinese language ability, and/or familiarity with any language written using Sinitic characters (e.g. modern Japanese). Due to the regional importance of classical Chinese historically, sources written in the classical Chinese language remain important in many East Asian historical domains of study. 
+
+
+# Motivation 
+
+
+While many researchers working with these materials are likely to have used the Chinese Text Project before – it is accessed by over 30,000 unique users each day – most will not have experience of either the text mining or data mining extensions available, which require a greater investment of effort to meaningfully engage with. 
+
+
+# Outline 
+
+
+1. ~20 mins Introduction and overview 
+
+2. ~40 mins Interactive text mining using Text Tools (Sturgeon 2018a) and the ctext API (Sturgeon 2021a) 
+
+3. ~20 mins Collaborative editing and correcting errors 
+
+4. ~40 mins Semantic annotation and knowledge base construction 
+
+5. ~30 mins Basic knowledge graph querying and data mining 
+
+6. ~30 mins Brief introduction to querying the knowledge graph with RDF and SPARQL 
+
+A number of previous workshops run by the same instructor have variously covered many aspects of the material in parts 1 through 5 above, e.g.: 
+
+https://dsturgeon.net/aas2021/ 
+
+https://dsturgeon.net/maraas/ 
+
+Online written tutorials (created in part for use in previous workshops) exist for much of the content in parts 1, 2, and 3 (available in English, Japanese, and Chinese): https://dsturgeon.net/tutorials/ 
+
+Part 6 of the tutorial will be entirely new, as RDF serialization of the knowledge graph is a relatively new feature, and previous shorter workshops have lacked sufficient time to cover this aspect. 
+
+
+# Instructor 
+
+
+Donald Sturgeon is Assistant Professor of Computer Science at Durham University, and the creator of ctext.org. His research interests include digital libraries, text and data mining, natural language processing of premodern Chinese, and classical Chinese philosophy. 
+
+
+# notes
+
+[^1]: https://ctext.org/tools/linked-open-data

@@ -1,0 +1,37 @@
+
+
+# Motivation 
+
+
+In postwar Germany, the federal government is usually formed by several political parties (Schmidt, 2007, p. 97). Over the past 16 years, these government coalitions were led by the Christian Democratic parliamentary group (CDU/CSU), most recently in cooperation with the Social Democratic Party (SPD), which, following the federal election in 2021 was unwilling to negotiate with their former partner, calling for new alliances to achieve a majority in parliament. Finally, the leaders of the Free Democratic Party (FDP), the Greens and SPD, despite mixed support from the party bases, signed a coalition agreement. Some journalists even regarded the FDP, which gained access to two key ministries, the secret winner of the negotiations (Fürstenau, 2021), also because the Greens did not see some of their desired climate change policies implemented (Lauter, 2021), 
+
+In this research, we are interested in how the coalition agreement was assembled regarding the individual party contributions. To that end, we utilize methods from Natural Language Processing, which have seen widespread adoption in political science (Wilkerson and Casas, 2017; Merz et al., 2016; Rauh, 2015; Slapin and Proksch, 2008). Specifically, we carry out a text classification task with transformer models, based on paragraphs from the party manifestos, and use the resulting model to characterize the coalition deal. 
+
+
+# Data 
+
+
+Our data consist of the election manifestos from 2021 of the six parliamentary parties, namely Alternative for Germany (AfD), FDP, Greens (Grüne), Left (Linke), SPD, and CDU/CSU (Union), and also the final coalition deal. We converted the original PDFs to plaintext, removed the tables of contents, cleaned the texts from formatting artefacts, and segmented the documents into individual paragraphs. As seen in Table 1 and Figure 1, both document and paragraph length vary widely. The manifestos of AfD and SPD in particular are fairly short, when compared to the Greens and the Left. 
+
+
+# Experiments 
+
+
+To investigate the composition of the coalition deal, we trained German BERT (Devlin et al., 2019) models on a text classification task with the paragraphs of the party manifestos. We test two models: (1) A classification with all six parties, and (2) a classification with the three coalition partners. We examine the difficulty to classify individual parties, how they are misclassified for each other with confusion matrices, and how confident the classifier is w.r.t. certain paragraphs with a softmax layer (e.g., a paragraph could be assigned 50% SPD, 30% Greens and 20% FDP). Finally, we apply the three-party model to the coalition deal to analyze its composition. 
+
+
+# Results 
+
+
+We find that the six-class model has markedly more problems recognizing SPD and Union (see Table 2). Furthermore, SPD paragraphs are often misclassified as Union, while the inverse is not as frequent (see Figure 2). This might be because both are Germany’s largest catch-all-parties, with the other parties having a more distinct vocabulary. Altogether, much of the models’ confusion falls in line with overlapping political positions, e.g., paragraphs from FDP and AfD are misclassified as Union, while the Greens are never mistaken for the former two. On the other hand, Linke and AfD may be mistaken for each other due to their oppositional language. Thus, it is an open question to what extent the model makes decisions based on policy or language. 
+
+The three-class model achieves better classification results (see Table 3), which is not surprising, since the task is easier with less parties to choose from. However, SPD paragraphs are still harder to predict. 
+
+As can be seen in the confusion matrix (Figure 3), the model can reliably distinguish FDP and Greens, but both are harder to distinguish from SPD. This, again, might be explained by the SPD’s claim to being a catch-all party. 
+
+Lastly, we apply the three-class model to the coalition agreement. Figure 4 shows that the model attributes almost 80% of all paragraphs to the SPD. This could be interpreted such that the SPD emerged as the winner of the negotiations. However, this result also reflects the low recall of SPD (Table 3), where the model wrongly tends to classify a paragraph as SPD. Yet, close reading showed that the model’s certainty (softmax) was quite high (>99%) for numerous paragraphs, even if they could sensibly be attributed to multiple parties (e.g., in the case of minimum wage and unemployment benefits). Paragraphs with a low certainty were fairly infrequent, and mostly composed of language that is not policy critical. 
+
+Finally, keeping in mind the parties share of votes, we would have expected the Greens' proportion to be larger than that of the FDP. Instead, the latter slightly outnumbers the former. More research is needed to disseminate the roles of the smaller parties in the coalition agreement (e.g., binary classification), and also regarding an explanation of the model’s decisions. 
+
+
+# notes

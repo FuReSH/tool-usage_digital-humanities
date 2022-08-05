@@ -1,0 +1,45 @@
+
+Additional authors: Alex Hunt, National Trust; Valeria Vitale, Alan Turing institute; John Horgan, STRAT7 ResearchBods; Peter Strachan, STRAT7 ResearchBods. 
+
+This presentation explores the role of geography in public engagement with digital cultural heritage collections. It draws on audience research that examined public values and motivations alongside the use of location-based interfaces such as web maps. The research, conducted as part of the Locating a National Collection project (LaNC), is part of the Towards a National Collection programme and funded by the UK’s Arts and Humanities Research Council. The programme aims to ‘break down the barriers that exist between the UK’s outstanding cultural heritage collections, with the aim of opening them up to new research opportunities and encouraging the public to explore them in new ways.’ 
+
+Digital cultural heritage records are connected with geographical locations in diverse ways. Heritage sites are managed for the purposes of tourism, education and preservation by historic environment institutions (e.g. LaNC partners Historic England or Historic Environment Scotland). The objects, documents, and other records that constitute the collections of galleries, libraries, archives and museums (GLAMs) (e.g. LaNC partner British Library) are connected to the locations where they were made and used or those they depict and describe. Historic environment organisations use institutional systems such as Geographical Information Systems (GIS) that are based on coordinate data. Locations do not play this structuring role in the institutional systems of GLAMs where historical toponyms predominate. Digital humanities research has examined the implications of toponyms for visualisation (Gregory and Hardie, 2011). Our project seeks to derive value for a range of audiences by building bridges between GLAMs and Historic Environment collections using location. 
+
+
+# Audience research method 
+
+
+LaNC has used an innovative audience research methodology to understand how geography can help the public to engage with cultural heritage. Audience research was led by Alex Hunt at the National Trust working with Research Bods, a market research company and project researcher Valeria Vitale. The research examined three areas: 
+
+- Attitudes and behaviour around cultural heritage 
+
+- Values and their relations to place and geography 
+
+- Use of digital technologies in cultural heritage and beyond 
+
+It divided into two interlinked phases: a web survey followed by focus group interviews, both based on representative samples of UK public. This presentation focuses on the latter. After opening discussions, focus groups explored how location-based technologies might present heritage on the web drawing on simple ‘powerpoint-slide’ sketches of future interfaces, known as pretotypes (Savoia, 2011). 
+
+
+# Visitplus 
+
+
+The first pretotype, ‘VisitPlus’, presented an interactive web map designed to enhance heritage visits. The pretotype offered the example of Lindisfarne (castle managed by National Trust and priory managed by English Heritage). The user can access related resources including visitor information alongside GLAM objects including Lindisfarne Gospels served in iiif by the British Library, paintings and 3D models from British Museum. Underlying VisitPlus is a gazetteer of heritage visitor locations numbering in the low thousands and typically defined as nationally or internationally significant (Timothy, 2014). Each location acts as a nexus, an entry point to access many collection items. The pretotype was designed to probe audience attitudes to aligning GLAM records with visitor sites. For example, are Lindisfarne visitors interested in viewing the gospels when they return? Focus-group participants perceived strong benefits in using VisitPlus and valued access to diverse and high quality resources in a single location. Although many saw potential uses to enhance understanding before and after visits others were confused about whether the intended use was exclusively on-site. Differences in historical veracity between linked resources and guidebooks were especially concerning for participants with a high interest in heritage. The ‘VisitPlus’ branding was somewhat problematic: the name implied a particular usage obscuring broader uses and value. 
+
+Thanks to Valeria Vitale for image. 
+
+
+# Heritage for all 
+
+
+The ‘Heritage for All’ pretotype allowed users to explore the collections of GLAMs and historic environment organisations connected to the ‘place where they live now’. Addresses or coordinates referenced tens of thousands of precise locations like buildings or parks. Links to institutional web pages were accessed by clicking on locations. An example web map showed a London borough populated with text previews of content such as findspots of ancient coins, extant and disappeared historical buildings and literary references from famous novels, each with their own location. Much of this heritage has been typically defined as locally significant (Goodchild and Hill, 2008; Timothy, 2014, 34). Participants saw value in connections between varied collections such as literary references alongside the physical locations to which they refer. The visualisation of precise locations within a model akin to GIS connected cultural heritage to the extant physical environment, inspiring and informing in-person visits. For some, the diversity was confusing, with interactivity, curated themes or narratives favoured. Participants cited repeated usage as a limitation: why return after exploring the place where they live now and other familiar places? Yet the overriding response was that users found diverse collections connected to familiar locations hugely compelling. The passionate feedback ‘Heritage for All’ evoked was influenced by renewed interest in local exploration resulting from travel restrictions due to the Covid-19 pandemic. 
+
+Thanks to Valeria Vitale for image. 
+
+
+# Conclusion 
+
+
+Heritage significance has been understood at varied geographical scales such as the supra-national (e.g. UNESCO), national and sub-national, the latter encompassing regional or local scales (Ashworth and Larkham, 2013). Our audience research has shown that collections traditionally defined as locally significant often hold the most meaning for the public. Geography and community are intimately connected. Although outlining pathways to community impacts such as social cohesion is beyond the scope here, understanding how the public engage with geographical information is a critical step in this endeavour. A user-centred approach to web-map design that draws on digital-humanities visualisation research can help users to discover parts of collections that are significant to them (Roth, 2019). LaNC will go on to build a web map interface that tests these pretotype ideas seeking to understand how cultural heritage defined as locally significant might cohere as a national collection, as our relationships with geography are redefined in a post-covid world. 
+
+
+# notes

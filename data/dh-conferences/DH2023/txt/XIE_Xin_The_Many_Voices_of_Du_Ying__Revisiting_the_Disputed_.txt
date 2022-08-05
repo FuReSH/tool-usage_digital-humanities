@@ -1,0 +1,111 @@
+
+
+# Summary 
+
+
+We revisit essays by Lu Xun ( 鲁迅 ) and Zhou Zuoren ( 周作人 ) that were initially published pseudonymously. The authorship of several of these essays is disputed. Through a quantitative analysis of the author’s writing styles, we find evidence supporting the following: 
+
+1. Two pseudonyms, Du Ying ( 独应 ) and Du ( 独 ), are used by both authors, 
+
+2. The On the Difference Between the Russian Revolution and Nihilism ( 论俄国革命与虚无主义之别 ) and seven other essays are likely written by Lu Xun, 
+
+3. The People of Yue, Forget Not Your Ancestors’ Instructions ( 尔越人毋忘先民之训 ) and two additional essays are likely written by Zhou Zuoren, and 
+
+4. the authors may have written The Strings of Melancholy ( 哀弦篇 ) and another two essays collaboratively. 
+
+
+# Backgrounds 
+
+
+Lu Xun (1881–1936) is perhaps the best-known writer in modern China. His essays feature in textbooks used in secondary and tertiary education across East Asia. As a short story writer, essayist, and critic, Lu Xun’s work is known for its incisive social commentary as well as its use of irony and satire. 
+
+Although several compilations of Lu Xun’s writing exist, completing a comprehensive collection of his works is a challenge because so many of his works were written under a pseudonym. Over the course of his writing career, Lu Xun employed at least 150 pen names (Xu and Hong, 1988). Nobody—including Lu Xun himself—kept precise records of his publications. Lu Xun’s frequent use of pseudonyms primarily served to help him evade censorship from the government of the Republic of China. But he also used a pseudonym for other reasons, such as to express his dissatisfaction with society. Finally, some writings were forged for effect or for other reasons, e.g., Literary Chatters ( 艺文杂话 ) (Ding and Ding, 1989). Further complicating efforts to assemble a comprehensive collection of his works is the fact that the authorship of several of his essays is actively disputed: four articles signed with the pen name Du Ying are also claimed by Zhuo Zuoren (1885–1967). Zhou is a younger brother of Lu Xun. Both studied in Japan in their youth and later led the New Culture Movement advocating writing using vernacular Chinese. 
+
+Peng and Ma (1981) assign four essays signed by Du Ying to Lu Xun, but none of them can be found in the Complete Collection of Lu Xun ( 鲁迅全集 ), a compilation published in the same year (Lu Xun, 1981). Zhong Shuhe includes these essays in the Complete Prose Collection of Zhou Zuoren ( 周作人散文全集 ) (Zhou, 2009). Interestingly, the essays are not found in the collection that Zhou edited himself (the Self-edited Collection of Zhou Zuoren , 周作人自编文集 (Zhou, 2002)). 
+
+Other opinions about the identity of Du Ying exist. Chen (1980) concludes the pseudonym can be used by both authors. Chen grounds his conclusion by studying the development of each writer’s thinking over time. Collaboration between the two brothers is another possibility (Meng, 2017). 
+
+
+# Research Question 
+
+
+Who wrote under the pseudonym Du Ying? Is it Lu Xun or Zhou Zuoren—or has the pseudonym been used in a collaboratively written work? To begin to tackle this problem, we frame this research question as one of authorship attribution (Juola, 2006). Authorship attribution techniques infer the likely author of an unsigned or disputed text based on quantitative analysis of lexical and syntactic features found in the text. Standard authorship attribution assumes: 
+
+• The candidate set is known, e.g., two possible authors in our case. 
+
+• The unsigned text is singularly authored, i.e., no collaboration or substantial editorial moderation is present. 
+
+Authorship attribution has been applied in numerous cases. Notable examples include the Federalist papers (Mosteller and Wallace, 1963), disputed plays between Shakespeare and Fletcher (Matthews and Merriam, 1993), and the rabbinic responsa Torah Lishmah (Koppel et al., 2007), and disputed Latin Visons the Visio ad Guibertum missa and Visio de Sancto Martino (Kestemont et al., 2015) to name a few. 
+
+
+# Corpus 
+
+
+We begin by organizing a corpus suited to the problem. Instead of only looking at the four disputed essays, we retrieve all texts published under the pen names Du Ying and Du. These essays were published at roughly the same time and in similar publication venues. We are, in effect, expanding the range of texts we intend to consider using authorship attribution analysis. This is appropriate as we are dealing with texts whose authorship is at least somewhat uncertain. Twenty-one essays in total are recovered and comprise the “test set,” the essays whose authorship we intend to predict. Table 1 lists the texts. 
+
+| Author  || Purpose  || Title  || Topic  || Length  || Chunks  || Lu Xun  || Train  || Lessons from the History of Science ( 科学史教篇 )  || history & science  || 7,032  || 7  || Train  || On the Aberrant Development of Culture ( 文化偏至论 )  || culture & politics  || 8,556  || 7  || Validation  || On Radium ( 说镭 )  || science  || 3,094  || 4  || Validation  || On the Power of Mara Poetry ( 摩罗诗力说 )  || literary & politics  || 23,779  || 22  || Zhou Zuoren  || Train  || Preface to Midst the Wild Carpathians ( 《匈奴奇士录》序 )  || literary  || 627  || 1  || Train  || Preface to Charcoal Drawing ( 《炭画》序 )  || literary  || 258  || 1  || Train  || Preface to The Lost History of Red Star ( 《红星佚史》序 )  || literary & history  || 1,145  || 1  || Train  || Preface to The Yellow Rose ( 《黄蔷薇》序 )  || literary  || 786  || 1  || Train  || A Brief Discussion on Fairy Tales ( 童话略论 )  || literary & history  || 3,093  || 4  || Train  || A Study on Fairy Tales ( 童话研究 )  || literary & history  || 5,083  || 6  || Validation  || Preface to Qiucao Garden Diary ( 《秋草园日记》序 )  || history  || 178  || 0.7  || Validation  || An Addendum to Yisi Diary ( 乙巳日记附记一则 )  || culture & history  || 63  || 0.3  || Validation  || A Glimpse of Jiangnan Examinees ( 江南考先生之一斑 )  || history  || 147  || 0.5  || Validation  || Plight and Broil in a Steamboat ( 汽船之窘况及苦热 )  || history  || 144  || 0.5  || Du Ying  || Test  || The Issue of Women’s Suffrage ( 妇女选举权问题 )  || politics  || 1,068  || 2  || Test  || The Issue of Women's Suffrage, Continued ( 妇女选举权问题续 )  || politics  || 1,494  || 3  || Test  || George Eliot ( 乔治爱里阿德 )  || literary & history  || 618  || 1  || Test  || Prisoners of Siberia ( 西伯利亚之囚 )  || literary & history  || 893  || 1  || Test  || Eliza Orzeszko ( 爱理萨阿什斯珂 )  || literary & history  || 322  || 1  || Test  || Stepniak ( 斯谛勃咢克 )  || literary & history  || 459  || 1  || Test  || Petofi ( 斐彖飞 )  || literary & history  || 489  || 1  || Test  || The Power of Writing ( 文章之力 )  || literary  || 720  || 1  || Test  || An Extraordinary Stratagem to Prevent Illicit Sex ( 防淫奇策 )  || culture & politics  || 872  || 2  || Test  || The Chinese Patriotism ( 中国人之爱国 )  || history & politics  || 857  || 1  || Test  || Reaction to the Prison Book Sold at the Store ( 见店头监狱书所感 )  || history & politics  || 925  || 1  || Test  || On the Difference Between the Russian Revolution and Nihilism ( 论俄国革命与虚无主义之别 )  || history & politics  || 2,602  || 3  || Test  || Translator's Note to Silence ( 《寂漠》译记 )  || literary & history  || 348  || 1  || Test  || Translator's Note to At a Country House ( 《庄中》译记 )  || literary  || 192  || 1  || Test  || The Strings of Melancholy ( 哀弦篇 )  || literary & history  || 13,112  || 21  || Test  || Looking at the Land of Yue ( 望越篇 )  || history & politics  || 741  || 1  || Test  || Looking at the Country of China ( 望华国篇 )  || history & politics  || 749  || 1  || Du  || Test  || People of Yue, Forget Not Your Ancestors' Instructions ( 尔越人毋忘先民之训 )  || history & politics  || 317  || 1  || Test  || Where Has the Character of the Republic Gone? ( 民国之征何在 )  || history & politics  || 354  || 1  || Test  || The Ordinary Folks' Responsibility ( 庸众之责任 )  || history & politics  || 334  || 1  |
+
+# Table 1: Summary of the corpus containing works of Lu Xun, Zhou Zuoren, “Du Ying”, and “Du”. Four distinct validation samples of Zhou are combined to make two longer texts. 
+
+
+
+
+We then search for texts which we are certain give us information about the brothers’ classical writing styles. The texts gathered are written using classical non-fictional prose and were published roughly at the same time relative to the disputed works. With these controls in place, we mitigate concerns about the possible influence on writing style of time (Glover and Hirst,1996), genre (Kestemont et al., 2012), and register (Wang et al., 2021). With the exception of six essays reserved for validation, these texts are used for training. Validation texts are chosen such that they have somewhat different topics than the training samples. Classification accuracy on the validation texts should give us some rough sense of how well the classifier performs. The training and validating texts are from self-edited collections of the authors. Hence their authorship is not in question. 
+
+
+## Preprocessing 
+
+
+We carefully remove quotations, dialog, and known text reuse . The longer samples are split into chunks of ca. 800 characters (without breaking paragraphs). Chunking in this fashion does not affect any of the authorship attribution techniques we consider but does let us explore style variation within longer texts. Given that previous research has raised the question of collaborative authorship, this is useful (e.g., some essays published in Tianyi in 1907 may have been collaborations (Meng, 2017)). Analysis of chunks may capture clues of collaboration even the chunking procedure is somehow arbitrary. For example, if one isolated chunk within a test set essay has high probability of being written by Lu Xun and the other chunks have high probability of being written by Zhou, this essay may merit further investigation as potentially having been a collaboration. 
+
+
+# Model 
+
+
+We use a standard authorship attribution model. It uses function word frequencies as features. The particular set of function words is taken from (Wang et al., 2021). Wang et al. (2021) demonstrated that the function word set was useful in predicting authorship in Ming-Qing fiction written in classical Chinese. 
+
+Function word usage is telltale signs of writing style. Function words are mostly unrelated to topic (e.g., “the” and “on” in English; “ 和 ” and “ 况且 ” in Chinese) and have been successfully applied in extensive authorship attribution studies (Kestemont, 2014). Our function word list has 819 function characters/words in total (262 unigrams, 545 bigrams, ten trigrams, and two quadgrams). 
+
+The classification model uses standard logistic regression (ℓ 2 regularization, λ = 1.0). Logistic regression is chosen for its wide use and interpretability. We use the same preprocessing procedure found in the previous research (Wang et al., 2021): function word counts are normalized by document length in characters and scaled to have unit variance after deducting means. 
+
+
+## Decision Rule 
+
+
+For longer prose, a decision is made only when the predicted labels of all chunks agree. If an essay is short, the predictive probability of the author should be no less than 0.75. This decision rule counts as conservative, we think. Readers are welcome to use their thresholds. 
+
+
+# Results 
+
+
+The model shows 93% accuracy on the validation set. This gives us confidence that it should provide useful information when making predictions about disputed texts. 
+
+The summary of the results is shown in Table 2. Clearly the two pseudonyms are shared between by Lu Xun and Zhou Zuoren. The Power of Writing and seven other prose appear to be written by Lu Xun. The Prisoners of Siberia and another two essays appear to be written by Zhou Zuoren. We withhold judgement about the rest of our decisions. 
+
+| Pseudonym  || Publication Date  || Title  || Decision  || Note  || Du Ying  || 1907.07.25  || The Issue of Women’s Suffrage  || uncertain  || labels disagree  || 1907.09.15  || The Issue of Women’s Suffrage, Continued  || uncertain  || labels disagree  || 1907.09.15  || George Eliot  || uncertain  || low confidence  || 1907.09.15  || Prisoners of Siberia  || Zhou  || –  || 1907.09.15  || Eliza Orzeszko  || Zhou  || –  || 1907.10.30  || Stepniak  || uncertain  || low confidence  || 1907.10.30  || Petofi  || uncertain  || low confidence  || 1907.10.30  || The Power of Writing  || Lu Xun  || –  || 1907.11.30  || An Ex­traor­di­nary Stratagem to Prevent Illicit Sex  || Lu Xun  || –  || 1907.11.30  || The Chinese Patriotism  || Lu Xun  || –  || 1907.11.30  || Reaction to the Prison Book Sold at the Store  || Lu Xun  || –  || 1907.11.30  || On the Difference Between the Russian Revolution and Nihilism  || Lu Xu  || –  || 1908.12.05  || Translator’s Note to Silence  || Zhou  || -  || 1908.12.05  || Translator’s Note to At a Country House  || uncertain  || low confidence  || 1908.12.20  || The Strings of Melancholy  || uncertain  || labels disagree  || 1912.01.18  || Looking at the Land of Yue  || Lu Xun  || –  || 1912.01.22  || Looking at the Country of China  || Lu Xun  || –  || Du  || 1912.02.01  || People of Yue, Forget Not Your Ancestors’ Instructions  || Zhou  || –  || 1912.02.02  || Where Has the Character of the Republic Gone?  || Lu Xun  || –  || 1912.02.16  || The Ordinary Folks’ Re­spon­si­bil­i­ty  || uncertain  || low confidence  |
+
+# Table 2: Summary of the authorship attribution results. 
+
+
+
+
+
+# Discussion 
+
+
+We found predicted chunk labels disagree in The Strings of Melancholy and other two essays. For example, the fifth chunk of The Strings of Melancholy is predicted to be written by Zhou with 0.85 confidence. But the first and second chunks of the essay have over 0.94 probability of being written by Lu Xun. A similar phenomenon also happens in The Issue of Women’s Suffrage and The Issue of Women’s Suffrage, Continued . Evidence like this could be a hint of collaboration. As Meng (2017) suggested, the brothers read and wrote closely in 1907. 
+
+The impact of topics on the classifier deserves further investigation. (Some function words may be more (or less) likely to appear in certain topics.) We do, however, think this concern should not be overstated. For example, People of Yue, Forget Not Your Ancestors’ Instructions concerns political matters and is assigned to Zhou with high probability. Yet Zhou has few training examples that concern politics. We intend to further investigate the possibly interplay between subject matter and authorial style. 
+
+
+# notes
+
+[^1]: 6050256743232
+[^2]:  We drop the dispute essay, 
+                                On the Significances of Writing: The Origins of Its Mission and the Faults of Recent Literary Criticism in China, for now because it contains (unmarked) quotations from other texts. (Zhou, 1999)
+                            
+[^3]:  The implementation relies on 
+                            scikit-learn (v.1.0.1) and 
+                            functionwords (v.0.6) packages on PyPI.
+                        
+[^4]: 50702645070

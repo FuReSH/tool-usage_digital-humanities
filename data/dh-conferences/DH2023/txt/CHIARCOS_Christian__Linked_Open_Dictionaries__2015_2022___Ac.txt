@@ -1,0 +1,42 @@
+
+The project Linked Open Dictionaries (LiODi) was funded in the eHumanities programme of the German Federal Ministry for Education and Research (BMBF, 2015-2022) and conducted in collaboration between empirical linguistics and computational linguistics at the Goethe University Frankfurt, Germany. 
+
+Our goals were two-fold. In terms of humanities, it pursued the study of language contact in the Caucasus, especially on North-Eastern Caucasian and Armenian in their contact with Kartvelian (Georgian), Iranian and Turkic (Rind-Pawlowski 2017, Chiarcos et al. 2018, Bellamy and Schreur 2021). In terms of digital methodology, the project pioneered, explored and advocated the use of RDF and Linked Data formalisms for research questions in the philologies and linguistic typology. We summarize this aspect, our achievements, experiments, and challenges encountered, and we discuss implications for the future use of Linked Data and RDF technologies in linguistics and philologies. 
+
+While Semantic Web technology has been well established in Digital Humanities prior to the project, this was largely restricted to prosopography, entity linking and object metadata; the potential of Linked Data to achieve interoperability for dictionaries and digital editions still remained underexplored. This situation changed, and to some extent, our project laid the groundwork for subsequent DH projects that adopted technologies and formalisms developed by the project. 
+
+The project initiated and contributed to community standards for various language resources: 
+
+
+- OntoLex: OntoLex-Lemon is a community standard for lexical resources. Inspired by the application of Monnet-Lemon to the conjoint development of ontologies and dictionaries (Weingart and Giovannetti 2016), LiODi engaged with the W3C Community Group Ontology-Lexica for developing novel OntoLex modules for morphology (OntoLex-Morph; Klimek et al. 2019) and corpus information (OntoLex-FrAC, Chiarcos et al. 2020b) 
+- Ligt: We developed an RDF vocabulary for interlinear glossed text, in order to overcome technological barriers between conventionally used software used for glossing (Chiarcos et al. 2017, Ionov 2021). 
+- CoNLL-RDF: We developed an RDF vocabulary and a converter suite for annotations as used in NLP and corpus linguistics (Chiarcos & Fäth 2017). 
+- TEI+RDFa: Following a survey of the relation of TEI and RDF (Chiarcos and Ionov 2019), we proposed RDFa for an inline XML representation. Together with the Academy of Sciences in Heidelberg, Germany, and the POSTDATA project, we provided the first implementation of TEI+RDFa for a small-scale digital edition and demonstrated its benefits for linking and querying via open web services (Tittel et al. 2018). 
+
+
+All our code and all distributable data are available over our GitHub repository ( , ). Language resources produced on this basis include the single largest collection of machine-readable open source bi-dictionaries, the ACoLi Dictionary Graph, published in accordance with Linked Data principles and using OntoLex-Lemon (Chiarcos et al. 2020a, see Fig. 1). In terms of software, notable contributions include tools for the detection of cognates and loan words and for translation inference across dictionaries (Chiarcos et al. 2020c). 
+
+
+
+Fig. 1. 
+
+
+The ACoLi Dictionary graph: 3000+ bi-dictionaries (edges in the diagram) for more than 400 languages (nodes in the diagram) in machine-readable formats (OntoLex-Lemon) and published as open source, source: . Colors indicate language families or regions. 
+
+
+Furthermore, a main contribution of the project lay in documentation and dissemination of LOD technology in linguistics, language technology and philologies. On an international level, this includes the first text book on the topic (Cimiano et al. 2020), the organization of workshops and conferences, and four summer schools/datathons (SD-LLOD 2017, 2019, 2022; EUROLAN 2021). In particular, our datathons proved highly effective in disseminating LOD expertise into other LOD-affine projects and contributed to the conception of novel projects by third parties. This includes the use of LOD in academic publishing (Nordhoff 2020, Ligt), infrastructure projects and community portals (Page-Perron et al. 2017 for cuneiform: CoNLL-RDF; Mambrini and Passarotti 2018, Pellegrini et al. 2021 for Latin: OntoLex-Morph, CoNLL-RDF) and projects for digital edition and lexicography (Mondaca and Rau 2020: OntoLex and TEI+RDFa; Chiarcos et al., accepted: TEI+RDFa). 
+
+As for key experiences, there are three main conclusions we arrived at at the end of the project: 
+
+
+- LOD and RDF technologies are ideally suited as middle-ware for DH projects. They facilitate information integration between and linking from various resources. In particular, it is not required to abandon established workflows, but only an RDF wrapper for their components. 
+- Existing RDF technology is sufficiently versatile to provide such an additional layer of interoperability over existing solutions and workflows with moderate effort. W3C standards and RDF serializations provide interoperability with XML (RDFa), JSON (JSON-LD), tabular formats (RDB2RDF, CoNLL-RDF), etc. 
+- RDF technology is generic, that is, in many cases not sufficiently optimized for real-time performance. Although we provide technology running on RDF backends (e.g., CQP4RDF, Ionov et al. 2020), we see the main benefit of RDF technology at the moment in the backend and between existing tools rather than as their basis, mostly for reasons of backward-compatibility. In the end, we moved the focus of the project from providing a designated new toolbox into the development of a technology stack that allowed researchers to continue working with their existing tools, and then integrate and link the results. 
+
+
+Finally, we also conclude with a somewhat bitter note: The project produced considerable amounts of open source data, but we are now in a situation where we could not secure adequate long-term hosting. This is not so much because of the lack of hosting solutions, but that we found that none of the portals we explored would support depositing data dumps in a way that they provide resolvable URIs. So, we can (and do) make our open source RDF data available, but we cannot provide it as linked data, because academic solutions such as Zenodo and commercial providers such as GitHub do not allow to declare the data with the adequate mediatype but force data providers to resort to text/plain or application/octet-stream (Chiarcos 2021). 
+
+When trying to access and process this data, especially in federated search, tools and users may thus be confronted with their SPARQL engines producing unpredictable results, as the correct format needs to be guessed heuristically, and existing SPARQL engines differ in their behaviour. In our opinion, the lack of such hosting solutions (at least in Europe) contributes significantly to the perceived instability and unreliability of LOD-based technologies. This is, however, less a technical problem than a political or administrative one, and one we would like to discuss with the community. 
+
+
+# notes

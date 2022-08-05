@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="intro-004">
+
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="nodisplay">Credits Page</title>
+</titleStmt>
+<publicationStmt>
+<authority></authority>
+    <publisher>DH2022 Local Organizing Committee</publisher>
+    <distributor>
+        <name>DH2022 Local Organizing Committee</name>
+        <address>
+            <addrLine>7-3-1</addrLine>
+            <addrLine>Hongo, Bunkyo-ku</addrLine>
+            <addrLine>Tokyo, 113-0033</addrLine>
+            <addrLine>dh2022-local{at}l.u-tokyo.ac.jp</addrLine>
+        </address>
+    </distributor>
+    <pubPlace>Tokyo, Japan</pubPlace> 
+    <address>
+        <addrLine>The University of Tokyo</addrLine>
+        <addrLine>Tokyo, 113-0033</addrLine>
+    </address>
+    <availability>
+<p></p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<p>No source: created in electronic format.</p>
+</sourceDesc>
+</fileDesc>
+
+<profileDesc>
+<textClass>
+<keywords scheme="original" n="category">
+<term>Intro</term>
+</keywords>
+<keywords scheme="original" n="subcategory">
+<term>Short Paper</term>
+</keywords>
+<keywords scheme="original" n="topic">
+<term></term>
+</keywords>
+<keywords scheme="original" n="keywords">
+<term></term>
+</keywords>
+</textClass>
+</profileDesc>
+
+<revisionDesc>
+<change>
+<date/>
+<name/>
+<desc/>
+</change>
+</revisionDesc>
+</teiHeader>
+
+    <text type="paper" n="triple">
+<body>
+<div n="nobreak">
+    <head n="intro_head_small">International Program Committee</head>
+    <list n="intro">
+
+        <item>Co-chairs</item>
+        <item>Ikki Ohmukai <hi rend="Japanese">大向一輝</hi></item>
+        <item>Taizo Yamada <hi rend="Japanese">山田太造</hi></item>
+        
+    </list>
+    <list n="intro">
+       <item>Tully Barnett</item><item>
+        
+        Jen-Jou Hung <hi rend="TChinese">洪振洲</hi></item><item>
+        
+        Ian Milligan</item><item>
+        
+        Emmanuel Ngué Um</item><item>
+        
+        Thomas Padilla</item><item>
+        
+        Miriam Peña Pimentel</item><item>
+        
+        Petr Plecháč</item><item>
+        
+        Nadezhda Povroznik</item><item>
+        
+        Mmasibidi Setaka</item><item>
+        
+        Georg Vogeler</item>
+    
+</list>
+                
+</div>
+    
+    <div n="nobreak">
+        <head n="intro_head_small">Local Organizing Committee</head>
+        <list>
+            <item>Chair</item>
+            <item>Masahiro Shimoda <hi rend="Japanese">下田正弘</hi></item>
+              </list>
+        
+        <list n="intro">
+            <item>  Satoko Fujiwara <hi rend="Japanese">藤原聖子</hi></item><item>
+            
+            Kaori Karasawa <hi rend="Japanese">唐沢かおり</hi></item><item>
+            
+            Mari Kobayashi <hi rend="Japanese">小林真理</hi></item><item>
+            
+            Masato Kobayashi <hi rend="Japanese">小林正人</hi></item><item>
+            
+            Mareshi Saito <hi rend="Japanese">齋藤希史</hi></item><item>
+            
+            Kyoko Sengoku-Haga <hi rend="Japanese">芳賀京子</hi></item><item>
+          
+            
+            Akira Takagishi <hi rend="Japanese">高岸輝</hi></item></list>
+        
+        
+    </div>
+    <div n="nobreak">
+        <head n="intro_head_small">Secretariat</head>
+        <list n="intro">
+            <item>Head</item>
+            <item>
+                Kiyonori Nagasaki <hi rend="Japanese">永崎研宣</hi>
+            </item>
+        </list>
+        <list n="intro">
+            <item>  Michihiko Aono <hi rend="Japanese">青野道彦</hi>
+            </item><item>
+                Daigo Isshiki <hi rend="Japanese">一色大悟</hi>
+            </item><item>
+                Takahiro Kato <hi rend="Japanese">加藤隆宏</hi>
+            </item><item>
+                Koichi Takahashi <hi rend="Japanese">高橋晃一</hi>
+            </item><item>
+                Toru Tomabechi <hi rend="Japanese">苫米地等流</hi></item>
+        </list>
+        
+   <!--     <p n="text">Special thanks to ....
+        </p>-->
+    </div>
+    
+    <div n="nobreak">
+        <head n="intro_head_small">Conference Volunteers</head>
+        <list n="intro">
+            <item>Yuta Hashimoto <hi rend="Japanese">橋本雄太</hi></item>
+            <item>Akihiro Kameda <hi rend="Japanese">亀田尭宙</hi></item>
+            <item>Naoki Kokaze <hi rend="Japanese">小風尚樹</hi></item>
+            <item>Tomohiro Murase <hi rend="Japanese">村瀬友洋</hi></item>
+            <item>Satoru Nakamura <hi rend="Japanese">中村覚</hi></item>
+            <item>Jun Ogawa <hi rend="Japanese">小川潤</hi></item>
+            <item>Yoshihiro Sato <hi rend="Japanese">左藤仁宏</hi></item>
+            <item>Shintaro Seki <hi rend="Japanese">関慎太朗</hi></item>
+            <item>Ayako Shibutani <hi rend="Japanese">渋谷綾子</hi></item>
+            <item>Yifan Wang <hi rend="Chinese">王一凡</hi></item>
+            <item>Yoichiro Watanabe <hi rend="Japanese">渡邉要一郎</hi></item>
+            <item>Fumi Yao <hi rend="Japanese">八尾史</hi></item>
+        </list>
+    </div>
+    <div n="nobreak">
+        <head n="intro_head_small">SNS team</head>
+        <list n="intro">
+            <item>Setsuko Yokoyama <hi rend="Japanese">横山説子</hi></item>
+            <item>Yuan Li <hi rend="Chinese">李媛</hi></item><item>
+                Yifan Wang <hi rend="Chinese">王一凡</hi></item>
+        </list>
+    </div>
+    <div n="nobreak">
+        <head n="intro_head_small">CFP Translation</head>
+        <list n="intro">
+         <item>   Christoph Beutelspacher - Deutsch
+            </item><item>
+            Lidia Ponce de la Vega - Español
+            </item><item>
+            Paolo Saporito - Italiano
+            </item><item>
+            Marie Schvarzman - Français</item>
+        </list>
+    </div>  
+    
+    <div>
+        <head n="intro_head_small">Session chairs</head>
+        <list n="intro">
+            <item>Mari Agata <hi rend="Japanese">安形麻理</hi></item>
+            <item>Elisa Beshero-Bondar</item>
+<item>Fabio Ciotti</item><item>
+Gregory Crane</item><item>
+James Cummings</item><item>
+Thomas Dabbs</item><item>
+Maciej Eder</item><item>
+Emi Hamana <hi rend="Japanese">浜名恵美</hi></item><item>
+Yuta Hashimoto <hi rend="Japanese">橋本雄太</hi></item><item>
+Bor Hodošček</item><item>
+    Jen-Jou Hung <hi rend="TChinese">洪振洲</hi></item><item>
+Yuri Ishida <hi rend="Japanese">石田友梨</hi></item><item>
+    Yoichi Iwasaki <hi rend="Japanese">岩崎陽一</hi></item><item>
+Diane Jakacki</item>
+<item>Akihiro Kameda <hi rend="Japanese">亀田尭宙</hi></item>
+<item>
+    Nadia Kanawaga <hi rend="Japanese">金川ナディア</hi></item><item>
+Akihiro Kawase <hi rend="Japanese">河瀬彰宏</hi></item><item>
+Asanobu Kitamoto <hi rend="Japanese">北本朝展</hi></item><item>
+Naoki Kokaze <hi rend="Japanese">小風尚樹</hi></item><item>
+Ryuta Komaki <hi rend="Japanese">小牧龍太</hi></item><item>
+Wakako Kumakura <hi rend="Japanese">熊倉和歌子</hi></item><item>
+Glen Layne-Worthey</item><item>
+    Chao-Lin Liu <hi rend="TChinese">劉昭麟</hi></item><item>
+Luis Meneses</item><item>
+So Miyagawa <hi rend="Japanese">宮川創</hi></item><item>
+Hajime Murai <hi rend="Japanese">村井源</hi></item><item>
+Natsuko Nakagawa <hi rend="Japanese">中川奈津子</hi></item><item>
+Satoru Nakamura <hi rend="Japanese">中村覚</hi></item><item>
+Chifumi Nishioka <hi rend="Japanese">西岡千文</hi></item><item>
+Terhi Nurmikko-Fuller</item><item>
+Emily Ohman</item><item>
+Elena Pierazzo</item><item>
+Nadezhda Povroznik</item><item>
+Christof Schöch</item><item>
+Martina Scholger</item><item>
+Walter Scholger</item><item>
+Susan Schreibman</item><item>
+Michael Sinatra</item><item>
+Peter Stokes</item><item>
+Tomoji Tabata <hi rend="Japanese">田畑智司</hi></item><item>
+Koichi Takahashi <hi rend="Japanese">高橋晃一</hi></item><item>
+    Menno Van Zaanen</item><item>
+Christian Wittern</item><item>
+Taizo Yamada <hi rend="Japanese">山田太造</hi></item><item>
+Hilo Yamamoto <hi rend="Japanese">山元啓史</hi></item><item>
+Mishio Yamanaka <hi rend="Japanese">山中美潮</hi></item><item>
+    Keiji Yano <hi rend="Japanese">矢野桂司</hi></item><item>
+        Natsuko Yoshiga <hi rend="Japanese">吉賀夏子</hi>
+</item>
+
+
+        </list>
+    </div>  
+    
+    
+
+
+</body>
+
+
+</text>
+</TEI>

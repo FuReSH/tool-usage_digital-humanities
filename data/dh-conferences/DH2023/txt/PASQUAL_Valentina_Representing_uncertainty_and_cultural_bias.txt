@@ -1,0 +1,39 @@
+
+Disagreements on scholarly topics are often the result of different levels of expertise, cultural-dependent viewpoints and methodologies (Eco, 1976; Ginzburg, 1978), as well as geographical and temporal constraints, due e.g. to scholars’ provenance or temporal changes in interpreting reality. For example, classifying modern Chinese calligraphy (CMC) artworks is challenging (Iezzi, 2015). For instance, the series of paintings “Da wo miao mo” (1994-) by Zhang Dawo ( 张大我 ) (Iezzi, 2014) has been categorised by Gordon Barrass as “oriental abstract expressionism”. Wang Nanming categorised it as “abstract expressionism of calligraphic characteristics'', stressing on its calligraphic component - cfr. also (Iezzi, 2013-4; Xia Kejun, 2015). Despite not being alternative statements, these reflect differences rooted in scholars’ backgrounds - and the scholars’ identity is recognized as an important element to understand classifications of CMC (Iezzi, 2015). 
+
+Back in 1939, Erwin Panofsky argued that background and experience of the observer can affect even rather simple tasks such as the identification of objects and events represented in the painting (Panofsky, 1939). Panofsky mentions the baby depicted in van der Weyden’s Three Magi , who is modernly understood as fluctuating, since he presents attributes traditionally assigned to apparitions (such as being in perspective and in mid-air with no support). Instead, miniatures with Byzantine influences, such as the “Gospels of Otto III” present an irreal empty space around the city of Nain, which does not imply the use of perspective nor that the city is fluctuating - being only an abstraction for decorative purposes. Nowadays, Semantic Web technologies are widely used to formally represent interpretative complexities. However, it has been argued that ontologies carry cultural biases at the schema level (Janowicz, 2018), and hardly integrate different viewpoints in the ontological representation of reality. Thesauri like ICONCLASS (Couprie, 1978), or reference models like CIDOC-CRM (Doerr et al., 2007) do not allow to assign cultural constraints to concepts like the usage of perspective (Baroncini et al., 2021). 
+
+Moreover, the semantics associated with RDF and related representation strategies (e.g. n-ary relations, reifications, named graphs (Noy and Rector, 2006; Carroll et al., 2005)) is ambiguous. Statements with different degrees of certainty (whether these are undisputed, currently disputed or settled) are equally represented as assertions, despite their truth value with respect to the dataset is varying (Barabucci et al., 2021). Therefore, when describing the interpretations of Dawo’s work as being either connected with “expressionism” or “calligraphy” we are actually asserting both statements without being able to characterize their truth value. Even when specifying provenance and attributions, statements potentially biased by scholar’s background (e.g.: {:Da-wo-miao-mo :style :abstract-expressionism-calligraphic} and {:Da-wo-miao-mo :style :oriental-abstract-expressionism} ) are both asserted and coexist at the same time in the same knowledge space. 
+
+The unclear semantics associated with graph data has some impractical drawbacks. First, a reasoner may interpret competing statements as either being the same or concurring: human intervention would be needed to disambiguate statements as alternative and culturally-dependent interpretations that can only be accepted within a given context. A machine-understandable strategy is needed to express without asserting statements whose truth value depends on the context. 
+
+Second, ontologies are needed to annotate uncertainty and truth of statements. Since ontologies are representative of specific cultures, people with diverse backgrounds would struggle to reuse the same terminology, therefore abstaining from expressing diverging information (reticence) or flattening, reducing or coercing their interpretations in a way that conforms to the semantics of the given ontology. Moreover, several models to represent provenance, uncertainty, and truth exist (a recent survey is Sikos and Philp, 2020), making the extraction of information on contexts and uncertainty cumbersome and time-consuming. An ontology-independent solution to represent uncertainty is needed to prevent information loss and to simplify retrieval of data and context information. 
+
+While several ontology-independent solutions have been proposed, their efficacy in representing the truth value of statements is limited and unsatisfactory (Barabucci et al., 2021). For instance, named graphs (Carroll et al., 2005) have been widely used to separate assertions from provenance. However, there is no consensus on their semantics, and there are up to eight different model-theoretic semantics to choose from with extremely different takes on the assertiveness of their content (Arndt and Van Woensel, 2019). 
+
+In this work, we compare several strategies to represent uncertainty in the Semantic Web. We highlight limits of unclear semantics and demonstrate that common situations in humanistic discourse cannot be unambiguously represented by them. Then we propose an approach to express conjectural statements without asserting them. Conjectures are an extension to RDF 1.1 that by design represents named graphs whose truth value is unknown, regardless of which of the eight semantics for named graphs is chosen (Rolfini, 2021). Through conjectures it is possible to faithfully represent hypotheses, competing or contradictory claims, points of view we agree or disagree with, and even absurdities (Barabucci et al., 2021). 
+
+For example, statements on Dawo’s series would be represented as follows (in Trig syntax): 
+
+
+Listing 1. 
+
+
+Conjectures in Trig syntax 
+
+In the example, the addition of the prefix CONJECTURE to the graph definition allows one to express the statement without asserting it. When querying for meanings associated with Ce (in SPARQL, SELECT * WHERE { :Da-wo-miao-mo :style ?style }), results would include an empty set of assertions. Instead, when asking for uncertain meanings (in SPARQL, SELECT * WHERE {CONJECTURE ?c {:Da-wo-miao-mo :style ?style}}) the query would return the two conjectures. Data consumers would therefore understand that no final decision has been taken on the topic, and data can be deemed unbiased. Notice that, in the conjecture-based query, no explicit reference to ontology terms was made when looking for uncertain statements, since this approach is completely ontology-independent. We conclude stressing the importance, when expressing and querying culturally-biased data, to be able to represent not just provenance information on competing claims, but also their independent and possibly incompatible existence, and the need for an ontology-independent way to express their truth values, as made possible through conjectures. 
+
+Future developments include the application of Conjectures over a large knowledge base with the aim of testing the model feasibility on a large scale. At the moment, an online converter from Conjectures to plain RDF is available . 
+
+
+# notes
+
+[^1]:  See Zhang Dawo 
+                        张大我, The star of the city, a rock and roll singer, 2011, ink on paper 
+                        https://www.researchgate.net/profile/AdrianaIezzi/publication/283087106/figure/fig25/AS:668707621720069@1536443729391/ZHANG-Dawo-The-Star-of-the-City-a-Rock-and-Roll-Singer-2011-ink-on-paper-162-cm-x.ppm
+[^2]:  See 
+                        https://www.wga.hu/art/w/weyden/rogier/07bladel/3bladel.jpg
+[^3]:  See 
+                        https://www.digitale-sammlungen.de/en/view/bsb00096593?page=66
+[^4]:  See 
+                        http://conjectures.altervista.org/convert.html

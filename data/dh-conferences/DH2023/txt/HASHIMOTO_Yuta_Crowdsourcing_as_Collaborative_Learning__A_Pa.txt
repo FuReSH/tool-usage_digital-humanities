@@ -1,0 +1,116 @@
+
+
+# Introduction 
+
+
+Although crowdsourcing in the humanities has become common in the last decade (Hedges and Dunn, 2017; Terras, 2013) it is still challenging for most humanities scholars and academic institutions to conduct research successfully because they must draw public attention to their project, keep the participants engaged and motivated, and pay close attention to the quality of the outcome. 
+
+Nevertheless, the subjects of humanities crowdsourcing can also serve as educational resources for humanities studies. We hypothesize that this characteristic can be used to resolve crowdsourcing difficulties. In this study, we conducted a crowdsourcing project to test this hypothesis, which aims to annotate historical photographs related to Shibusawa Eiichi. 
+
+
+# Background and Aims of the Project 
+
+
+Shibusawa Eiichi (1840-1931, Fig. 1) was a leading figure in the development of modern Japan, who introduced many financial and economic reforms as a member of the Ministry of Finance in the fledgling Meiji government. After leaving the government in 1873, he ventured into the business world and established a wide variety of companies and economic organizations, including the First National Bank, the Tokyo Chamber of Commerce, and the Tokyo Stock Exchange. He was involved in the foundation of roughly 500 companies and 600 non-profit organizations in the fields of education, social welfare, and health. 
+
+The Shibusawa Eiichi Memorial Foundation compiled primary sources related to Shibusawa’s life and achievements, including his diaries, letters, and newspaper articles, and published them in 68 volumes as Shibusawa Eiichi Denki Shiryo (Shibusawa Eiichi Biographical Materials) . Among these volumes, supplementary volume 10 was devoted to photographic materials and contained over 700 photos of people, monuments, documents, buildings, and landscapes in which Shibusawa was involved (see Fig. 2). 
+
+Our project is part of the ongoing efforts of the Foundation to digitize Shibusawa Eiichi Denki Shiryo , which aims to enrich the metadata of the digitized photos in supplementary volume 10 through crowdsourcing. As Shibusawa had been involved with many important businesspersons and was related to a wide variety of economic organizations and legislation, digitizing these photographs in a structured way will make a considerable contribution to the field of modern Japanese history. 
+
+
+# Fig. 1 
+
+
+A portrait of Shibusawa Eiichi (1840-1931) 
+
+
+# Fig. 2 
+
+
+Photogpraphs in Supplementary Volume 10. 
+
+
+# Method 
+
+
+To resolve the difficulties of academic crowdsourcing, we designed our system based on the concept of “collaborative learning” in pedagogy. Collaborative learning refers to a situation or environment in which multiple people learn or attempt to learn something together (Dillenbourg, 1999). Unlike individual learning, in collaborative learning, people capitalize on one another's resources and skills. 
+
+Our fundamental idea is to brand our crowdsourcing system as a place for collaborative learning in which participants share their knowledge related to the historical photographs by performing annotation tasks. A similar attempt has already been made to the transcription of historical Japanese documents with considerable success (Hashimoto et al., 2018). However, it is unknown whether the same approach can be applied to photographic materials or not. 
+
+
+# Implementation 
+
+
+Our crowdsourcing system, Minna de Koshashin (let’s annotate historical photographs together; https://denkiphoto.shibusawa.or.jp/annotate/ ), is a single-page application (SPA) built with Vue.js and Firebase . The participants of Minna de Koshashin are invited to browse the photos of Shibusawa Eiichi and to conduct the following six tasks on each photo: 
+
+
+- Identifying a person 
+- Identifying a location 
+- Transcription of textual information 
+- Uploading a current photo of a place 
+- Registration of bibliographic information 
+- Writing a comment. 
+
+
+Since Tasks 4-6 are open-ended tasks that cannot be determined as completed, we use Tasks 1-3 to track the progress of our project; The annotation of a photo is considered completed when all of Tasks 1-3 are completed. Deciding which task to perform is up to each participant. 
+
+To ensure that collaborative learning is achieved through the above tasks, we implemented the following four features: 
+
+
+- Task history . When conducting a task, participants are required to write the reason for their decision, which will be recorded in the “history” tab (see Fig. 3) and can be referenced by others. This process makes the tacit knowledge of participants explicit, thus facilitating mutual learning among participants. 
+- Activity sharing . All the activities of participants are shared on the “timeline” view in a chronological order (see Fig. 4), promoting horizontal propagation of knowledge and providing social stimuli. 
+- Communication and feedback . Participants can seek advice and help from others in the “discussion” tab (see Fig. 5) or use the comment function. Anyone can correct the annotations of the other participants. Through communication and collaboration among participants, annotations undergo multiple checks, leading to improved output quality. 
+- Mutual evaluation . The system has a leaderboard to stimulate participants' competitive spirit, but the rank is determined not by the number of tasks but by the number of "likes" received from others, inducing altruistic behavior. 
+
+
+
+# Fig. 3 
+
+
+History tab 
+
+
+# Fig. 4 
+
+
+Timeline view 
+
+
+# Fig. 5 
+
+
+Discussion tab 
+
+
+# Results 
+
+
+Minna de Koshashin , as an outcome of our project, was launched in December 2021. As of April 2022, four months after the system launch, 59 people have created user accounts on our website. A total of 1,405 annotations have been created. The breakdown is described in Table 1. 159 photos out of 734 (22%) are marked as “completed”. Although we have not been able to recruit a large number of participants, a small number of dedicated participants have continually involved in performing annotations. 
+
+
+# Table 1 
+
+
+Breakdown of the annotations according to types 
+
+
+# Conclusion 
+
+
+Our project has just entered the operational phase. Still, our approach based on collaborative learning seems to be working to some extent. The majority of participants provide bibliographic information as the basis for their annotations, allowing others to learn about the information. On the other hand, communication and discussion among participants is not very active. This may change as the user base expands. 
+
+In any case, further research is needed to evaluate the effectiveness of our approach. We plan to conduct further investigations, such as assessment of annotation qualities and interviews with participants. 
+
+
+# notes
+
+[^1]:  Shibusawa is the surname.
+[^2]:  Available online at 
+                            https://www.shibusawa.or.jp/english/eiichi/denki_shiryo.html. 
+                        
+[^3]:  Vue.js. 
+                            https://vuejs.org/. 
+                        
+[^4]:  Firebase. 
+                            https://firebase.com/. 
+                        

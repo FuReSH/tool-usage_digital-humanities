@@ -1,0 +1,27 @@
+
+Culture has been variously conceptualised by the researchers be it as an onion (Hofstede et al. , 2010), an iceberg (Hall, Edward, T., 1976), a (Moran, Patrick, R., 2006), a set of binary categories (Hofstede, 2001), or a spectrum of language and culture (Risager, 2007). Thus, to study its foundations, we need to address values, and to do so, we have to resort to investigating cultural artefacts. One particularly telling example of an artifact of culture are language textbooks (Gray, 2010; Gray, 2000) 
+
+In my study, I adjust the method of textbook analysis proposed by, e.g., Karen Risager (2018) and Michael Hollenback’s adaptation of Byram’s Model of Intercultural Citizenship (MICC) (Hollenback; Hollenback, 2016; Byram, 1997) to the language of spatial analysis in Geographic Information Systems, GIS in short. As a case study, I use academic English textbook _ The World We Live In (2013) published for Japanese students in Japan by Japanese publishing house (reflecting the idea of taking into account the three parties involved in the creation of the textbooks: authors, teachers, and students). The textbooks are investigated from the perspective of space (understood as the space of the textbooks, which is the arrangement of the content on the pages of the book) and space depicted in the books (i.e., geographical space). The two levels of space will translate to two levels of analysis: the construction of the book in terms of e.g., its themes, types of tasks, and cognitive difficulty; 
+
+the role of words with spatial reference (e.gl, placenames, landmarks, people) 
+
+which will finally be combined and cross referenced, though heeding the differences in the types of the data acquired (c.f. similar approach to double levels of analysis of textual data in the project on mapping place names in historical court books by Polish Academy of Science https://atlasfontium.pl/?page_id=2303). 
+
+First, the books were scanned and entered into the GIS system. Then, the information in them was coded and marked using GIS, where it is stored in dedicated files, here: hapefiles (mostly polygon and point ones). The layers with shapefiles cover particular content type, for example: 
+
+
+- placenames, including names of the countries, regions, cities (coded according to GeoNames ontology ( www.geonames.org ), as well as words with other spatial reference, like landmarks or established products; 
+- thematic analysis of the units or sections of the textbooks (according to Common European Framework of Reference (Council of Europe, Language Policy Unit)); 
+- national and transnational institutions; 
+- cognitive level of tasks (Bloom’s (Anderson and Krathwohl, 2001) revised taxonomy); 
+- or language used to describe culture (by Patrick Moran (2006)). 
+
+
+Finally, the collected data are subject to spatial analysis using such tools as spatial join, kriging, buffers and distance analysis to investigate, spatial relationships of particular types of content of the textbooks. 
+
+The elaborated approach allows to pose new questions and collapse previously separate, often incomparable, discourses into one analysis, as proposed in Representations of the World in Language Textbooks: Languages for Intercultural Communication and Education (Risager, 2018) Mapping the content of the textbooks both onto each other and looking for the correlation between the linguistic component and geographical space presented in the books allows to offer a new voice in the discussion on the place of culture in language teaching, often labelled as opposition between English as a Foreign Language and English as a Lingua Franca (EFL/ELF). 
+
+We also sought an answer to the question on the impact of Globalization on English teaching by searching for the cultures of interest (understood as places mentioned in the textbooks) and assumed target culture(s) (the English-speaking countries) along with the context they appear in. It is operationalized as: mentions of places and cognitive levels, types of tasks and language used to describe them. 
+
+
+# notes

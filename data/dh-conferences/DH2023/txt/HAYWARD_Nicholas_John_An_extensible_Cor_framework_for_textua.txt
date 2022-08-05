@@ -1,0 +1,45 @@
+
+An extensible Cor framework provides a structure and core for the development, analysis, and textual publication of polyglot research and projects. Originally developed as the underlying structure of the Woolf Online (Caughie et al., 2013) project’s Mojulem framework, it has continued to evolve to support multiple project instances , each internally cross-referenced and networked to enable data and software analysis. 
+
+As a publication tool, the Cor framework builds on the concept of ‘knowledge sites’, suggested by Peter Shillingsburg (Shillingsburg, 2006), supplementing a core publication framework with modules such as OCR, editors, image viewers, data analysis, and software metrics. 
+
+Mojulem , for example, initially required four underlying core structures, which included CorCode , CorForm , CorPix , and CorTex.   
+
+ This development has continued with the Verne Digital Corpus (Hayward, 2017) and the NSF funded Metrics Dashboard project (Shilpika et al., 2015) to include the addition of CorAssess and associated software metrics to the underlying Cor framework. 
+
+
+# CorTex 
+
+
+The core structure of this framework is a CorTex , a stable resource containing merged or compacted plain text transcriptions of a work’s variant expressions. It stores all information about text and variations, ready to be extracted for display of variation amongst versions; it is not necessary to recompute them. CorTex is the entity all standoff properties (markup, annotations, links...) points, providing system stability, each version’s text, and variations from other texts. Stability and endurance of CorTex is protected by multiplying duplicate copies locked with a digital signature, which verifies for each user that a CorTex copy is viable. Analysis of CorTex variable forms provides statistical feedback to guide production of a conflated text, for example with the English language translations of a given author’s edition. Whilst these statistical results are no guarantee of an ultimately correct translation, in the example of multiple language editions, they do offer a conflated text with the highest viable agreement amongst collated texts. Textual disagreements are currently resolved by assigning probability values, a higher value defining a greater probability of accuracy and agreement amongst the collated texts. Probability results provide an initial filter of problematic passages in each translation to conflate a text with the highest probability of agreement amongst the translations per edition.  
+
+These results can then be provided for further research and assessment, and act as a suitable starting guide for further analysis of the conflated text and, where applicable, translation. 
+
+The CorTex provides an abstracted core for text management, processing, and modularised structure within a variety of aggregated projects.  
+
+An initial structure for a project framework, for example, may be considered as follows, 
+
+
+
+Such pathways correspond to common data patterns defined and observed for frameworks based upon a general CorTex . For example, we may clearly identify and define a separation of concerns for a user’s request for data, perhaps a chosen page for the current selected edition, from the act of reading the text, formatting it for rendering to the user, and the final act of publication. Each internal pipeline has a clear focus of purpose, thereby removing tightly coupled components, and enabling secure use of the underlying textual data. 
+
+
+# Text Engine 
+
+
+The abstracted text engine , for example, provides a kernel for supporting I/O (input/output) requests, secure access to write to datastore persistency, whilst enabling subsequent publication of queried or cached sync data.  
+
+The text engine supports plain text by default, abstracting support for multiple variant formats using parsers for text I/O. Such parsers may be integrated at a higher level in a chosen pipeline, thereby simplifying the process role of the text engine . All revisions to texts may be signed as updates by the text engine, enabling editorial actions to be easily recorded in a time-series, sequential manner. The text engine , therefore, creates a clear separation of concerns for textual markup styles, version history, authorial record, and associated metadata. Textual records maintain clear integrity from draft to proofs to publication, including separate options to redraft or revise a given data record, ensuring integrity for both the original draft and proofs copy of the textual data. 
+
+A notable benefit of this approach, in addition to clear data integrity and modularity of design, is the option to define an API (application programming interface) for each constituent component, from the text engine to the text reader . This abstraction of structure and design enables variant client options as well, from dynamic implementations of client rendered content to static, single query text publication. Publication channels are incorporated to enable a variety of secure queries from the client to the text engine .  
+
+
+# Summary 
+
+
+This paper will introduce the structure and development of the underlying Cor framework with specific focus on a CorTex , its development, and associated text engine use within a publication framework. 
+
+
+# notes
+
+[^1]: Current projects include Malory Project (www.maloryproject.com), Modernist Magazines (www.modernistmagazines.com), and Woolf Online (www.woolfonline.com).

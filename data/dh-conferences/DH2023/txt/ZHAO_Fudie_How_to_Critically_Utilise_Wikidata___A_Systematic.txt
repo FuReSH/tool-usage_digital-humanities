@@ -1,0 +1,64 @@
+
+Initiated in 2013, Wikidata is a free and open knowledge base that acts as central storage for the structured data of its Wikimedia sister projects. It has been adopted and systematically reviewed in Information Science/Computer Science (Mora-Cantallops et al., 2019) and the library domain (Tharani, 2021). Projects in the DH domain have also been embracing Wikidata in their data-related activities. For example, since 2016, 43 presentations at DH conferences held by ADHO have mentioned Wikidata in their abstracts, as shown in Fig.1 . However, except Stacey’s paper about Wikidata’s use in GLAMs and DH (Stacey, 2017), there still lacks a systematic review regarding Wikidata’s status quo, potential, and challenges in the field. 
+
+
+Fig.1: 
+
+
+Wikidata-related presentations at ADHO annual conferences 
+
+This short paper intends to fill this research gap by proposing four research questions: 
+
+Q1: How is Wikidata described in the current DH literature? 
+
+Q2: To what end is Wikidata being experimented within the DH domain? 
+
+Q3: What are the potentials of embracing Wikidata in data-related activities in DH projects? 
+
+Q4: What are the challenges and possible solutions associated with Wikidata in DH projects? 
+
+To answer the questions, a systematic literature review of DH projects that adopted Wikidata has been conducted based on the guidelines for Systematic Review proposed by Kitchenham (2004). Book of Abstracts from ADHO annual conferences, a compiled list of DH journals, and five online academic research databases (ACM Digital Library, Springer Link, and Web of Science, Science Direct) were searched and screened, guided by pre-determined search strategies and inclusion & exclusion criteria. 196 papers/presentations were identified in the sources, and after the screening, 58 were selected based on criteria (English only, no duplicates, only application studies, Wikidata implemented) for further analysis in Table 1 . 
+
+
+Table 1: 
+
+
+Total number of articles and presentations identified from each source 
+
+This paper finds that: 
+
+The descriptions of Wikidata in the current DH literature fall into three categories: a technology stack to access Linked Data, a platform for crowdsourcing, collaboration, dissemination, and linking datasets on the Semantic Web, and a content provider of open, free, generic, editable, heterogeneous, linked data, as shown in Fig.2 : 
+
+
+
+
+Fig. 2: 
+
+
+Wikidata Components 
+
+Wikidata has been included in data-related tasks such as annotation and enrichment, metadata curation, named entity recognition and disambiguation, knowledge representation and ontological engineering, data sourcing, aggregation of datasets, and the pursuit of open citation data and pedagogical practices (miscellaneous) as shown in Table 2 . 
+
+
+Table 2: 
+
+
+Wikidata application areas in the reviewed items 
+
+Projects in the DH domain can use Wikidata for data consumption and publication: 
+
+1) Data consumption – Wikidata is a data source for enrichment. 
+
+2) Data publication and exchange – Wikidata is an access point to disseminate data to the broader landscape of the Web for public engagement; a platform for crowdsourcing and collaborative production of linked data; a linked data approach towards the integration of data within a specific domain. 
+
+The use of Wikidata is accompanied by doubt about its data quality. Cook (Cook, 2017, 122) points out that Wikidata’s data is too generic and short of quality for DH scholars who tend to work in a specific area, while Wikimedians pay less attention to research-oriented DH projects and focus more on projects which gather data and edit pages. The DH community can learn from the technical community regarding the factors that influence its data quality, and possible solutions. Factors specified in the research include: user types and their editing activities, the effectiveness of systems and tools to facilitate detection and improvement of data quality, and the relevance and authoritativeness of its external references and sources. The solutions proposed by the technical community encompass 1) a better understanding of users and the editorial process via research, and 2) the development of systems, measures, and tools concerning the evaluation and improvement of different dimensions of data quality. The technical side, however, has its limitation. As pointed out by the IS systematic review (Mora-Cantallops et al., 2019, 262), such applications are mostly limited to Wikidata itself and are yet to be linked to disciplines outside information systems. The contribution of this paper is to address three factors and relevant solutions in the specific context of DH projects: the relevance and authoritativeness of other available domain sources, domain communities and their activities, and workflow designs that balance the automated and manual work by utilising the technical and labour resources of a project’s own and those offered by Wikidata. 
+
+This paper intends to invite discussion from participants at DH2022 about Wikidata’s possible use in the DH context and the challenges it may face. 
+
+
+# notes
+
+[^1]:  Data about the ADHO annual conferences is collected from 
+                        the Index of Digital Humanities Conferences site which aggregates and presents conference metadata: 
+                    https://dh-abstracts.library.cmu.edu/conferences
+[^2]:  Until December 31, 2021.

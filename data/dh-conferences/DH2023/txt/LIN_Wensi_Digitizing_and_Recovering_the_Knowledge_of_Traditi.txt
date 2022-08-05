@@ -1,0 +1,61 @@
+
+The Chinese handicraft, Nanjing Brocade, is a traditional luxury silk served for royal and noble family during the 13th to the 20th century. It was weaved from polychrome yarns and represented the topmost craftsmanship of natural dyeing and weaving in China (Huang et al., 2003). The ancients created hundreds of colours by over-dyeing, and used numerous terms to describe the varied colours, reflecting their perception and congnition towards colours. However, colour knowledge of Nanjing Brocade has not been systematically and precisely documented. Colour cognition or dyeing technique was mainly kept as tacit experience knowledge and passed on from master to apprentice privately. Hence, Chinese colour knowledge has been forgotten slowly. And with the ancient fabrics irreversibly fading, it’s difficult to tell what colours they once were, and how to reoccur them. Nowadays, there are projects trying to recover the ancient textiles colour, but most of the time remained in traditional way of literature interpretation and experience induction (Kim, 2006; Liu, et al., 2020). A comprehensive study using digital methodology on Nanjing Brocade colour is in lack. We can learn from researchers in other fields, such as Li (2019) who explored the colour of ancient Chinese buildings basing on the analyses of literature, cultural relics, and techniques, with the experiments of pigments remaking. 
+
+This research introduces a comprehensive research on the colour knowledge of Nanjing Brocade that leverages information from literature, artifacts, and expert experience. Based on the digital methodology of text mining, dyeing experiment, and perceptual evaluation, the research explores a way of knowledge production that produces systematic, accurate, and standard scientific knowledge. The research results demonstrate the colour range of Nanjing brocade from both conceptual and visual perspectives. The main process is shown in Fig. 1. 
+
+
+Fig. 1: 
+
+
+The knowledge production process of Nanjing brocade colour 
+
+Firstly, in order to solve the problem that traditional literature knowledge is scattered, we created a database for the relevant literature and collected information of colour terms through text mining (Tan, 1999). MARKUS, a text analysis and reading platform, was used to label the colour terms of Nanjing brocade and other entities such as its pattern, date and wearer’s identity. Then, with the help of a text database built on DocuSky collaboration platform, a list of colour terms were generated. Further statistics and analyses focused on the frequency and categories of colour terms, revealing the conceptual colour range of Nanjing brocade. We found 73 different colour terms in the entire corpus, occurring nearly 1000 times in total. Red and cyan are the dominant hues of Nanjing brocade, and the most commonly used colours were dahong (scarlet), minghuang (bright yellow), chenxiang (agilawood brown), shiqing (mineral blue), and so on (Fig. 2). The correlations between colour and hierarchy, gender, pattern, etc. were also explored through co-occurrence analysis. For example, the colour diversity of men’s clothing of Nanjing brocade was much lower than that of women’s clothing. 
+
+
+Fig. 2: 
+
+
+The distribution of Nanjing brocade colour terms: (a) Word cloud by the frequency of individual terms. (b) Hue categories proportion of all colour terms. (Colours in the chart are just indicative.) 
+
+Secondly, experiments were carried out in order to solve the problem of blurriness of dyeing knowledge. High performance liquid chromatography (HPLC) were used to detect the natural dyes in textile fragments (Pauk et al., 2014), basing on the chromatogram comparison between textile fragments and reference dyed samples (Fig. 3). Then, dyeing experiments were designed according to the information obtained from text mining, HPLC and the experience of professional dyers. Two experts participated in and conducted more than 35 experiments with 21 natural dyes. Although dealing with ancient techniques, the whole dyeing process followed the requirements of scientific experimentation. The weather, environment, materials, tools, procedures and results of the dyeing process were recorded in detail, as well as measurement data of time, amount, temperature, pH, and other dyeing conditions. Pictures and videos were also captured by digital cameras throughout the experiments. The experiment produced 434 dyed samples, all of which were measured the CIELCh value by a spectrophotometer, and each samples were drawn in the LCh colour space (Fig. 4). Comparing our natural dyeing results to synthetic dyeing swatches used nowadays, it’s clear that the colour saturation of traditional Nanjing brocade should be much lower than today’s products. 
+
+
+Fig. 3: 
+
+
+The HPLC chromatogram comparison of a yellow relic sample (red line) with reference sample dyed with pagoda bud (green line). 
+
+
+Fig. 4: 
+
+
+(a) The CIELCh colour space of natural dyed samples. (b) The CIELCh colour space of the Nanjing Brocade Silk Colour Swatches made with synthetic dyes. 
+
+Thirdly, the evaluation of colour perception by experts were conducted to change the subjective and blurry perception into quantitative data. Experts were asked to point out the ideal colour of each colour term in the LCh colour space. Although their perception differs a little, we could calculate the average LCh value of each colour and select a closest dyed sample. 
+
+With all the data and samples obtained, a colour specification of Nanjing brocade will be published, consisting of colour terms, colour samples (physical or digital), dyeing information and LCh values (Fig. 5). It will provide specific guidance for the heritage conservation and handicraft production of Nanjing brocade, with colour identification and communication being faster and more accurate. Besides, it is a dynamic, inclusive colour specification that will expand and update as research progresses. The methodology presented in this work, along with our literature database and natural dyes database, also provides a reference for other researchers of textile colour. 
+
+
+Fig. 5: 
+
+
+The specification of 10 typical colours of Nanjing brocade: (a) With natural dyeing silk samples. (b) With digital samples. 
+
+DocuSky Collaboration Platform. http://docusky.org.tw. 
+
+Huang, N., Wang, B., and Z. Xiao. (2003). Nanjing Brocade of China . Nanjing: Nanjing Press. 
+
+Kim, S. H . (2006). The classical colors of China. Yunnan, China: Yunnan People’s Publishing House. 
+
+Li, L. (2019). New attempt on the construction of Chinese traditional colour system: Quantitative analysis and colour range exploration based on literature, relics and techniques. The 2019 Annual Conference Proceedings on Chinese Traditional Colours. Beijing, China: Culture and Art Publishing House. 
+
+Liu, J., Wang, Y., et al. (2020). The Qianlong palette: The research on dyes in the 17th–19th century textiles and reconstitution of the Qing dynasty colors. Zhejiang, China: Zhejiang University Press. 
+
+MARKUS. Text Analysis and Reading Platform. https://dh.chinese-empires.eu/beta/. 
+
+Pauk, V., Barták, P., and Lemr, K. (2014). Characterization of natural organic colourants in historical and art objects by high-performance liquid chromatography. Journal of Separation Science, 37 (23): 3393-3410. 
+
+Tan, A. H. (1999). Text mining: The state of the art and the challenges. Proceedings of the pakdd 1999 workshop on knowledge discovery from advanced databases . Vol. 8, pp. 65-70. 
+
+
+# notes

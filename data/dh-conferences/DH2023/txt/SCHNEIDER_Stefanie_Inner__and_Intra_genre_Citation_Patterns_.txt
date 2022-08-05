@@ -1,0 +1,58 @@
+
+“[A]ny text is the absorption and transformation of another” (Kristeva, 1986) and thus part of a dynamically evolving network of influences. This also applies to film. However, quantitative efforts dissected influence phenomena in film so far only at the individual level (Sreenivasan, 2013; Wasserman et al., 2014; Bioglio and Pensa, 2018). To instead assess inner- and intra-genre citation patterns and thereby challenge hitherto valid genre attributions, we propose the exploitation of three group-dependent network. To this end, genres are considered as fluid, perpetually rearranging concepts (Bordwell, 1989). We leverage user-contributed data from the Internet Movie Database (IMDb). Four types of citations serve as proxies for influence: “edits,” “features,” “references,” and “spoofs”; whereby influence may be an expression of common narratives, settings, or techniques (Lakoff, 1987). 
+
+
+# Methods 
+
+
+We regard film citation networks as directed acyclic graphs G = ( V , E ) consisting of a set of | V | = N films and | E | = M citations. The directionality of G depends on the order of time: a film x can only cite another film y if y was sufficiently distributed before x . For reasons of simplicity, we assume that G is observed at discrete and equidistant time points t = 1 , … , T only, so that G ( t ) = ( V , E t ) indicates the state of G at time point t . Each state reflects the citations available up until t for films that were produced before t . Over the past decades, numerous metrics have been proposed to determine the influence of such multi-actor collectives in social networks (Silva et al., 2014; Rad and Benyoucef, 2011). We hereinafter focus on three metrics that are interpretable and adaptable, even to humanities-related contexts not directly concerned with citation structures. 
+
+
+## Group In-degree and Group Out-degree Centrality 
+
+
+Films are generally considered influential if they are cited by other media; the higher the number of citations received, the greater their perceived importance (Garfield, 1955). In network theory, this is known as in-degree centrality . Due to the simplicity of the metric, it is easily extendable to support the analysis of group-dependent citation patterns. As derived from Everett and Borgatti (1999), the group in-degree centrality of films associated with genre h can be expressed as the ratio of incoming citations at t from films of other genres, i.e., 
+
+Accordingly, the group out-degree centrality 
+
+denotes the ratio of outgoing citations at t to films of genres other than h . Both help to quantify the external and internal willingness of films to establish connections outside their genre, thereby enabling us to trace the genre’s historical “evolution” through genre mixing and hybridization. 
+
+
+## Group Triangle Participation Ratio 
+
+
+Genres are constructed by a syntax of recurring elements that develop with time (Altman, 1984). The more limited their syntax, the more likely it is that groups with self-referential structures emerge, composed of intra-genre citation triads. We conclude that a film u in such groups not only cites films v and w , but v also cites w . The group triangle participation ratio 
+
+thus is the ratio of citation triads at t of films associated with genre h (cf. Yang and Leskovec, 2012). 
+
+
+# Data 
+
+
+To assess genre citation patterns, we retrieve 40,621 feature-length films from the IMDb with a run time of more than 39 minutes that were produced before 2020 and are assigned to at least one of 22 genres. Like Bioglio and Pensa (2018), we observe a high number of films labeled as “drama” or “comedy,” with this categorization supported by other labels in 77.938 % and 75.656 % of cases, respectively (Fig. 1A). The IMDb defines eight types of citations that can be entered by users in the “connections” section of the website. We confine ourselves to presumably intentional allusions: of the 126,343 citations, references account for 67.778 % and features for 23.071 %, while spoofs and edits occur much less frequently, at 6.599 % and 2.552 %, respectively. Due to the American-centric bias of the IMDb (Wasserman et al., 2014; Bioglio and Pensa, 2018), we concentrate on films from Europe and North America; English-language films dominate our corpus with 70.978 %. Given that English films are seen more frequently worldwide than non-English ones, the fraction of both incoming and outgoing citations is also disproportionate, possibly underestimating the effect of non-English films and genre influences, like the Italian giallo . 
+
+
+# Fig. 1: 
+
+
+(A) Number of films by genre, subdivided by total number of genres stored for films of that genre. (B) Group-dependent metrics over time: group in-degree centrality (blue), out-degree centrality (orange), and triangle participation ratio (green); with Monte Carlo generated standard deviation bands in lighter colors. 
+
+
+# Results 
+
+
+In-degree and out-degree approximately follow power-law distributions, indicating that although most films are cited only few times, a highly influential minority is referenced by dozens (Wasserman et al., 2015; Bioglio and Pensa, 2018). Films that have decisively contributed to the formation or shift of genre identities are particularly important, as they are widely cited not only within but outside their genre (Tab. I). 
+
+We determine aforeintroduced metrics for each genre h at time point t . To assess distribution uncertainties, a Monte Carlo simulation with 400 iterations is conducted. At each iteration, genres are randomly redistributed from the underlying empirical frequency distribution. The genre distribution over time remains fixed while the genre distribution at t changes, allowing us to evaluate the approximately true impact of genre-communities. Genres that are predominantly characterized by formulaic narratives or stereotypical figures exhibit large discrepancies between simulated and observed values. For instance, the group triangle participation ratio of sci-fi and horror films nearly doubles between 1970 and 2000 with negligible mean simulated ratios (Fig. 1B). This effect is due to few significant genre films that have disrupted conventionalized schemes, triggering new recycling patterns. Standardization through intra-genre repetition seems to be virtually integral to the horror film, e.g., as the lower-than-expected group in-degree and out-degree centrality confirm. Three citation phases can be verified: gothic horror ( Frankenstein , 1931), superseded by psychological and occult topoi ( Rosemary’s Baby , 1968) that are increasingly accompanied by slasher films ( The Texas Chain Saw Massacre , 1974). 
+
+
+# Tab. 1: 
+
+
+Films by in-degree, with ratio of intra-genre citations in percent. 
+
+
+# notes
+
+[^1]: https://www.imdb.com/, accessed 16 March 2022.
+                    

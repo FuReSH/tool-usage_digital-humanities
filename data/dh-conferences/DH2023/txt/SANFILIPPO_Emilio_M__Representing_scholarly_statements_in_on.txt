@@ -1,0 +1,27 @@
+
+Music analysts need to document statements about subjects relevant in their area of expertise. And since researchers frequently assume different and even contradictory perspectives on the same subject, the representation of both the work and the intellectual responsibility for claims made about it is crucial. The use of Semantic Web (SW) technologies has made data more accessible and discoverable. But only recently has anyone attempted to model interpretive claims (Cristofaro et al., 2021). The Ontology for Analytic Claims in Music (OMAC) is a SW ontology (under development) to fill this gap, proposing innovative ways of modeling both musical works and the interpretive arguments about them. For space limits, we cannot document the entire ontology here. We will limit to the introduction of some aspects; readers can refer to the Web repository for more information ( https://github.com/emiliosanfilippo/OMAC ). 
+
+At the current state, OMAC consists of two modules, the Musical Work module for musical works, and the Analytic Claim module for scholarly arguments. The latter can take the form of assertions about, e.g., authorship , chronology , and similarity , all of which figure in qualitative arguments made by analysts and critics. OMAC can be extended with further elements relevant from a musical perspective, including performances. To maximize the reuse of SW resources, we adopted elements from DBpedia, Dublin Core, etc. We have not reused ontologies based on FRBR (Bekiari et al., 2017) like the Music Ontology (Raimond et al., 2007) because of the ambiguous manner in which FRBR treats works (Sanfilippo, 2021).  
+
+ The Musical Work module in OMAC models the authorial structure of works, namely, the division by the composer of a work into (sub-)sections (Fig. 1). A Renaissance Mass, for instance, consists of customary five sections ( Kyrie , Gloria , Credo , Sanctus , and Agnus Dei ), some of which are in turn divided into subsections. No claim about this subdivision is necessary, as they are dimensions of the authorial text. Once modeled in OMAC, it is possible to reason over data, e.g., automatically deducing the structure of a whole work. 
+
+
+Figure 1 
+
+
+Authorial structure of musical entities (partial view) 
+
+Analytic claims could relate to an entire work or some of its parts. Two different scholars, for instance, might each argue that a work was by a different composer or that it was created in one year or another. Scholars also might want to make a claim about a single pattern in a piece, fragments that could never be called authorial. For instance, participants in the research Citations: The Renaissance Imitation Mass ( http://crimproject.org/ ) are interested in identifying small passages in pairs of works, showing how one composer borrowed from (and transformed) the work of another. In the context of this analytic project, scholars make specific claims about the connections between what they call a model and its derivative .  But such assertions are in principle a claim about similarity , and as such should be made discoverable as instances of this more general musical principle. Indeed, scholars might want to make many different kinds of similarity claims, which might concern borrowing, or quotation, or simply shared style. In OMAC such claims can be modeled in a logical way that gives critical assertions a declared (and thus computable) structure, as shown in Figure 2. 
+
+
+Figure 2 
+
+
+Similarity claims in OMAC (partial view) 
+
+OMAC takes its place in the broader context of recent discussion of how best to model critical assertions (and not simply works) in a digital environment. A proposal by Masolo et al. (2018), for instance, argues that scholarly observations are epistemological states , i.e., the classification of an entity under a property as the result of an analytic process. For instance, the similarity relation between two musical entities is an observation made by an analyst but it does not represent something that is necessarily true. In addition, nothing prevents an analyst from reviewing or discarding their claim, or other analysts in formulating different and conflicting claims about the same phenomena. 
+
+Future research will enrich the structure of OMAC (including an explicit treatment of events) and contribute to the development of a digital space to share musicological data. In addition, as a lesson learnt from OMAC, the representation of claims can be generalized and tuned to other areas in the humanities in such a way to make the ontology broader and reusable across projects. 
+
+
+# notes

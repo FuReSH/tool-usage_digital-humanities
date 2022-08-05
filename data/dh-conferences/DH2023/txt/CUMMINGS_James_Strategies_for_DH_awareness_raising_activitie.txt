@@ -1,0 +1,55 @@
+
+
+## Introduction 
+
+
+This long paper explores the annual Digital Humanities Awards (DH Awards), run as an openly-nominated and openly-voted DH awareness-raising activity at http://dhawards.org/. Specifically, it looks at possible solutions to criticisms and concerns by foregrounding a number of problematic aspects of DH Awards in its history and future. Although many people praise these annual awards for raising awareness of DH outside the usual disciplinary bubble, there are significant criticisms of them, including being merely a popularity contest, horribly skewed to the western and anglo aspects of DH, more likely to highlight well-funded projects, and their over-estimated importance by those outside DH in tenure and promotion reviews. 
+
+This paper is presented by the founder and main instigator of DH Awards and seeks to build on discussions of these issues. This presentation benefits from a privileged position of having access to all of the anonymized nomination and voting data for the entire run of DH Awards (2012 to present), as well as informal feedback which it will use in an aggregated anonymized manner. This self-reflexive paper does not seek to dismiss criticisms, but to engage with them in good faith in order to understand DH Awards’ role in the community, and how best to ameliorate any issues raised. 
+
+
+## Background and History 
+
+
+The underlying conception for DH Awards was born during the Roberto Busa Prize lecture ‘Living with Google: Perspectives on Humanities Computing and Digital Libraries’ by Professor Susan Hockey at the ACH/ALLC 2004 conference in Gothenburg (Hockey, 2005). Professor Hockey was an excellent and deserving choice for that prize, which recognizes “outstanding lifetime achievements in the application of information and communications technologies to humanities research.” However, listening to the lecture prompted naive questions about the awarding of the Roberto Busa Prize: who made the decisions, who was allowed to nominate and, crucially, who else might have been nominated? While, in reality, it is likely only a small number of candidates were considered, the lack of transparency worried me and especially not hearing about others that may have been nominated. This sparked the idea for an openly nominated and openly voted grassroots approach to some DH awards which would act as a way to showcase DH resources. My ignorance of the process at that time meant that it felt far from the more transparent and representative protocols that are documented on the ADHO website today. DH Awards creation was also based in discussions at the time of the economics of academic career structures and how community-based catalysts could help support this. When this idea resurfaced in 2012, an international group was approached to act as a very light-touch nominations committee. The members of this group were specifically chosen in a laudable attempt to have a geographic and cultural spread but were also existing DH colleagues who were likely to agree to be on the committee. The creation of a website, nominations and voting forms, and the running of the nominations and voting followed swiftly without much reflection. The process evolves each year but the DH Awards follows a consistent, if haphazard, pattern each year. In autumn the committee is approached to see if they wish to continue and suggestions for modification of categories or other aspects, nominations open in December until late January, then the nominations committee checks them to see that they: 
+
+
+- Are vaguely ‘Digital Humanities’ in the loosest sense 
+- Had some update/change of any sort that year 
+- Are nominated in the right category 
+- Able to be reviewed by users (e.g. not behind a paywall) 
+
+
+Voting is then opened for a fortnight and advertised by social media. The ballots are then deduplicated (since some people accidentally vote more than once), results are tallied and released often with aggregate statistics shortly afterwards. 
+
+
+## Criticisms and Concerns 
+
+
+Feedback has raised various criticisms and concerns over the years. Sometimes these misunderstand the nature of the activity as awareness-raising, but others are worth exploring. The most important criticism relates to language and culture – i.e. that the majority of resources found in DH Awards are in English or created in a Western context. Although DH Awards tries to counteract this with an ever-increasing international nomination committee, this criticism is certainly accurate. Trying to combat this in 2013 it introduced a ‘Best DH contribution not in the English language’ to encourage non-English submissions, but even more complaints rightly pointed out this ghettoized contributions, so it was removed the following year. DH Awards nominations have never been specific as to geography, language, conference, organization or field of humanities, however, it proactively seeks to encourage nominations from less represented areas and languages. 
+
+Other important issues raised include: 
+
+
+- The lack of awareness of their nature as community awards, with undue significance being ascribed to them in CVs, tenure portfolios, job applications, and funding bids, even though winning provides no financial value or prestige. 
+- Well-funded projects with a broad appeal are more likely to win than excellent smaller projects with a more specific remit. 
+- The annual nature of the awards ruling out older historic projects. 
+- The use of the optional demographic statistics being gathered. 
+
+
+This bulk of the paper will propose possible solutions to these concerns. 
+
+
+# notes
+
+[^1]: See 
+                                    http://adho.org/awards/roberto-busa-prize
+                                
+                                for more information about the ADHO Roberto Busa Prize.
+                            
+[^2]: The protocols in 2004 weren’t openly or at least widely available.  At the time of writing, the protocol seems to have remained the same since 2008 and there are certainly some aspects that need updating. See 
+                                    http://adho.org/administration/awards/protocol-standing-committee-awards-alliance-digital-humanities-organizations
+                                 for the protocol of the ADHO SCA. If the representatives of the committee had been approached in 2004, it is likely they would have been happy to explain the process.
+[^3]: 
+                                See James F. English, The Economy of Prestige: prizes, awards, and the circulation of cultural value, (Harvard University Press: 2009) as well as many other discussions for more about the introduction of awards of various sorts as catalysts and awareness-raising into areas of cultural production. There is a strong influence on DH Awards’ creation from cognate award systems such as those in film and web-based awards.
+                            

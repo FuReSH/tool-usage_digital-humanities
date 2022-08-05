@@ -1,0 +1,33 @@
+
+The ancestral territory of the Indigenous nation of the Atikamekw is based in the current Canada. The nation claims its ancestral rights on the territory, but has been thwarted over the time by some historians doubting the Atikamekw being the descendants of the Attikamegues who were mentioned in historical reports of the first missionaries in New France (Dawson, 2003; Ratelle, 1987). The reason for the doubt is an ethnonymical change (ethnonym = name of a people) around the year 1700 - from “Attikamegues” to “Têtes-de-Boule”. The so-called Têtes-de-Boule indicate their presence on the territory for milleniums, which is why they rechanged their official name to Attikamegues, now in their own orthography “Atikamekw” ( ) . Some historians, above all Dawson, however, try to prove that the change around 1700 was not just an ethnonymical one, but an ethnical one, and that the Têtes-de-Boule are not the descendants of but a different people from the Attikamegues. 
+
+The humanist Nastasia Herold is currently writing her dissertation about the Atikamekw history. She involves the Atikamekw perspective in the scientific discussion and in addition to this, she includes data from the Eurocentric perspective that has not been considered yet. One of the Eurocentric data are English and French historical maps from much later than 1700 (until 1824 according to Hudson’s Bay Company Archives, G.3/135) that mention a people called Attikamegues. This contradicts the hypothesis that the Attikamegues disappeared around 1700 and that a new people moved to their territory, the Têtes-de-Boule. These maps also illustrate that historical reports from missionaries cannot be used as the single source for a discussion on the history of an Indigenous nation. 
+
+Nevertheless, the mere existence of these maps does not prove the continuing existence of the Attikamegues/Atikamekw Nation. The newer maps could be copies of older maps, and/or the sources for the newer maps could be old reports from before 1700. In order to examine this consideration, metadata needs to be collected and compared, and the very different orthographies for “Attikamegues” should be checked against orthographies in reports in order to find the potential source of the maps. 
+
+We developed a Web-based framework to support investigating the above described research interest with visual interfaces. In order to do so, the following tasks are supported: 
+
+
+- Collecting historical maps: The framework allows for uploading historical map images and entering descriptive metadata about a map like publication year, publisher, etc. This information is necessary for all frontend components of the tool. 
+- Annotating a contemporary map: When uploading a historical map, the humanities scholar has to annotate a contemporary map with the approximate location of the ethnonym on the historical map. The assignment of a location to a map is a human decision, and domain knowledge as well as a comparison of the historical and contemporary topologies of the maps are essential. Related map annotation projects are maphub ( ) and Map Warper ( ). 
+- Geospatial-temporal analysis: The core element of the frontend are two linked views (see Figure 1): (1) a timeline displaying the distribution of when historical maps have been published, and (2) a map that illustrates a contemporary approximation of the historical Atikamekw territory. The ethnonyms are visualized in both views to support generating hypotheses regarding space, resembling a tag map (Reckziegel et al., 2018), and time. When hovering a dot in one view, the other view is automatically navigated to the particular time period or geographical area. Clicking a dot shows all information on the chosen historical map. 
+
+
+Task-based filtering: The visual frontend is embedded in a faceted browser that allows for filtering particular sets of historical maps, for example by publication year to discover trends or by ethnonym type(s) for analyzing geospatial distributions. 
+
+
+
+Linked timeline and map to support explorative analysis of Atikamekw territory 
+
+
+
+The publication date in the timeline, the localization of the people corresponding to the historical map in the interactive map, and the original ethnonym both in timeline and interactive map give the researcher a better understanding of the relationship of these data, what makes it easier to evaluate if the historical map is a copy of an older map or not. The resulting hypothesis of copy “yes / no” can be saved in the metadata, and thereupon be filtered. The visualized result gives an overview of all maps that are potentially first editions. This is just one example besides many other hypotheses that can be developed using the interactive visualization. 
+
+The project was a perfect Digital Humanities collaboration: the research question, data collection, and desires of visualization and interactive tools were provided by a humanist, the design and implementation by computer scientists. The collaboration’s development was discussed and progressed in weekly video conferences to make sure that the tools were helpful and useful for the humanist researcher. Furthermore, the project was designed in a way that even after the collaboration, maps and metadata can be added and modified by the humanist researcher. The project is published at a website ( ) for the benefit of Atikamekw community members and of researchers. The audience can even contribute by sending relevant historical maps to Herold that have not been included yet. This possibility of ongoing work and collaboration is an example of sustainable research in the Digital Humanities. 
+
+The “Atikamekw Historical Maps” project can be applied to other minorities all over the world. Cartographers of the last centuries were ordered to design maps of Asian regions for example. Very often, the localization of the peoples on the Asian islands and mainland was included in the maps for reasons of trade, politics, or military. Indigenous peoples in the Asian regions can adopt the Digital Humanities project described here for their needs in order to prove their continuous existence in a specific area. 
+
+The presentation is aimed at humanists, computer scientists, community members, and anyone else with an interest in collaborative DH research projects, mapping, visualization, and sustainable research in minority studies. 
+
+
+# notes

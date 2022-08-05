@@ -1,0 +1,38 @@
+
+1. Introduction 
+
+To study storyworlds created in literary texts, the analysis of characters and their interaction is one of the most fundamental aspects. A character’s voice in a storyworld can be expressed by speech, thought or writing (STW), the representation of which can take on different forms depending on how truthful it is to the original utterance (Genette, 1983: 171-173). The following types can be differentiated: direct (most truthful), indirect, reported (least truthful) and free indirect (mixture of direct and indirect) STW. 
+
+A basis for the automatic processing of storyworlds is the identification of STW units and the attribution to their producers, i.e. the characters. While successful approaches for the recognition of STW units do exist, most speaker attribution systems are limited to direct or indirect speech. In this work, we develop rule-based speaker identification systems for the attribution of not only speech but also thought and writing, not limited to direct and indirect but also including reported and free indirect representations in German literary texts. 
+
+2. Related Work 
+
+The task of speaker attribution can be divided into two subtasks: the identification of speakers –finding the textual mention of a speaker– and the resolution of speakers –resolving the textual mention to a speaker entity. This work is concerned with speaker identification. Early approaches to speaker attribution mostly relied on pattern matching (e.g. Krestel et al., 2008). Elson and McKeown (2010) presented a first machine learning (ML) approach which formed the basis for follow-up work (direct: O’Keefe et al., 2012; He et al., 2013; Yeung and Lee, 2017; Ek et al., 2018; indirect: Pareti et al., 2013; Newell et al., 2018). Krug et al. (2016) experimented with a rule-based approach for the attribution of direct speech units in German literary texts which could outperform their ML approaches. Similarly, Muzny et al. (2017) built a state-of-the-art system for the domain of English literature which attributed speakers for direct speech in a rule-based way. 
+
+3. Approach 
+
+This work builds on the approaches of Krug et al. (2016) and Muzny et al. (2017) by adapting and extending the rules they presented. Additionally, we formulate new rules. All rules are compiled, manually evaluated and improved in an iterative way with the help of the Corpus Redewiedergabe (Brunner et al., 2020a). For each representation type (direct, indirect, reported and free indirect) we build one system with a different set and a different order of rules; a rule can only be applied once. Similar to related work, our systems rely heavily on linguistic annotations (see figure 01) and on predefined word lists (e.g. to identify animate nouns). A final evaluation was performed on a held-out test set extracted from the Corpus Redewiedergabe. The full pipeline of the systems, including the recognition of STW units (Brunner et al., 2020b), is shown in figure 01. The systems are publicly available alongside an extensive description of the rules. 
+
+
+Pipeline of the speaker identification systems for the annotation of raw text. 
+
+
+4. Results 
+
+| Author  || STW type  || Per­for­mance  Range  || STW  medium  || Domain  || Language  || Pareti et al. (2013)  || Direct  Indirect  Mixed  || 85 – 91  74 – 79  65 – 81  || Speech  || News  || English  || Krug et al. (2016)  || Direct  || 78.4  || Speech  || Literature  || German  || Muzny et al. (2017)  || Direct  || 76 – 85  || Speech  || Literature  || English  || This work  with gold  STW an­no­ta­tions  || Direct  Indirect  Reported  Free indirect  || 63.91  82.2  71.38  50.0  || Speech,  Thought,  Writing  || Literature  || German  |
+
+Comparison of the accuracies of speaker attribution systems that were used in setups comparable to this work. Accuracy ranges are indicated as some systems were applied to different data sets with varying success. Maximum values are marked in bold. 
+
+
+
+
+As shown in figure 02 our systems achieve the best performance for attributing indirect, reported and free indirect STW. The direct system could be improved, for example when handling conversational patterns. The full pipeline achieves a comparable performance. 
+
+5. Future Work 
+
+The pipeline itself could be improved (e.g. by extending the predefined word lists) and the systems could be tested on and eventually adapted to another domain. For comparative purposes, neural networks that use semantic word representations could be trained for the task of speaker identification. Finally, the systems could be extended to also resolve speakers. The systems can be used as is to perform analyses in the field of Computational Literary Studies e.g. to address gender related research questions (cf. Schumacher and Flüh, 2020). 
+
+
+# notes
+
+[^1]: 40.5513535.54040

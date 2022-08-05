@@ -1,0 +1,26 @@
+
+The relations between The United States, The Republic of China (ROC), and The People’s Republic of China (PRC), is a classic case of “there and back again” shifts in the international policy of the hegemon in the contemporary era. In this paper, I examine how the US addressed different Chinese entities at different times. Looking at a specially-curated corpus of U.S. congressional speeches regarding ROC and PRC and using a contextual language model, BERT (Devlin et al. 2018), to conduct sentiment analysis. And a word2vec to examine semantic shifts ( Hamilton et al. 2016) . I will trace the changes in US policy toward the “Two Chinas” and examine when those shifts started to happen. 
+
+Short background: After the Chinese Communist Party won the civil war, The Western world saw ROC as the rightful heir of China; thus, ROC was a member of the UN while, and PRC was left behind under the one-china policy (Spence 1990). Few decades later, PRC and the US have moved to close ties under Nixon, with Kissinger leading the path for a warm relationship between the CCP and the US leading to ROC getting ousted from its place in the UN being replaced with PRC by 1971. In 1979 the US officially switched its recognition from ROC to PRC (Westad 2012). In the 21st century, the US discourse shift back to supporting ROC, and in 2007 the congress declared they do not recognize PRC's sovereignty over Taiwan (Kan 2007). Meanwhile, PRC had been growing expeditiously its economic power, they joined the WTO in 2001, and became a main player in the world economy. This brought more fear into the US congress. Peaking when the Trump administration started the trade war with PRC and continues until this day (Kwan 2020). 
+
+In my research, I will measure the semantic shifts in US discourse and the changes in sentiment analysis using a BERT model. The US relations with PRC and ROC are complicated, with double-crossing from the US side regarding the one-China policy. Thus, semantic shifts research of crucial points during the modern history of the relations can help identify the concrete shifting process from ROC to PRC and back again. The proposed research is unique due to its methodological use of combining semantic shifts with sentiment analysis to expose the trends in the discourse itself (Azarbonyad et al. 2017). By using these computational tools, we can find the meaning between the lines of the US Congress members in the crucial years that led to the shifts in the US policy regarding the one-china policy. 
+
+Data: 
+
+For this research, I will use the corpus of U.S. Congress speeches from 1949 to 2011 (Gentzkow et al. 2018). 
+
+Methodology: 
+
+
+- Semantic Shifts: I compute the word similarities through time to detect the semantic shifts and the semantic surrounding of PRC and ROC in the discourse of the US congress in those critical years, trying to point out when exactly those shifts occurred to connect them with the relevant events. Applying computational methods to measure semantic shifts affects the way scholars can interpret and validate theories about changes in the way the wind blows in every text-based discipline. Semantic shifts analysis is the state-of-the-art method for understanding the transformation of terms meaning throughout time by the word context, thus, we can follow those shifts in meaning to find how does and how the discourse has shifted regarding the terms “China”, “Taiwan” and their equivalents (Kutuzov, et al. 2018; Zhang et al. 2016). 
+- Sentiment Analysis: A second step will measure the semantic sentiment toward these two entities over time to correlate with the shifts in the meaning of words. This is a powerful tool to assess and measure the opinions inside textual forms for comprehending the writer’s attitude towards the subject of the text (Feldman 2013). I will use aspect-based sentiment analysis on a BERT model (Xu et al. 2019) to quantify the attitude of the congress toward PRC and ROC over time, pointing to the shifts of the policy stance of the US towards those entities, using the terms terms “China”, “Taiwan” and their equivalents. 
+
+
+Using those NLP tools will give us a measurable context to understand when the US discourse shifted to enable those switches in US policy. This research can lead us to comprehend deeply the US changing policies in the Pan-Chinese era about those two Chinese entities, when they started, by who, and in what magnitude. 
+
+Preliminary results based on semantic change using word2vec show shifts in the conception of the PRC in the US congress discourse. First, since 1949 until the 1959, the PRC is seen as a communist and hostile. Then it changed to a more accepting approach, followed by a change to a warmer approach of the PRC in 1971. Then a decline in friendliness after the 1989 Tiananmen events. And finally, it becomes a major economic player in the conception of the US. Meanwhile, the discourse regarding Taiwan would moves in the opposite direction, starting as an ally in the 1950, but receiving a colder shoulder after 1971, and lastly returning to be a democratic ally after Tiananmen. 
+
+Example of the top 25 nonentity terms in plot of the word2vec models for the terms ‘China’ and ‘Taiwan’ based on the Congress speeches between 2001- 2011: 
+
+
+# notes

@@ -1,0 +1,48 @@
+
+
+# Introduction 
+
+
+Substantial records of East Asian history exist in sources written in the classical Chinese language, covering important aspects of both Chinese history as well as the histories of many historical states and dynasties throughout the region, including those overlapping with the modern regions of Korea, Japan, and Vietnam. To date, substantial amounts of relevant primary source material have been digitized and transcribed, while many more materials are in the process of digitization. While digital editions are already enormously valuable to researchers, their utility can be greatly improved by semantic contextualization of aspects of their content – for example, by connecting mentions of historical people, places, events, bureaucratic structures, time periods, and similar entities to concrete data about these entities as well as to other mentions of the same concept. This benefits human readers by enabling contextualized reading assistance and improved search functionality based on semantic data (mentions of an entity) rather than purely surface-level textual content (strings of words – in the Chinese case, strings of characters, as word boundaries are not recorded in either the premodern or modern writing system). It also facilitates quantitative analysis of important aspects of the historical record, and lays the groundwork for fully automated annotation of – and knowledge extraction from – vast corpora of premodern sources. 
+
+This paper introduces a scalable approach to the creation of a large dataset of such material, intended to provide a sustainable mechanism for annotation and knowledge base construction in a fully crowdsourced environment. While previous work (such as Simon et al 2015, and De Weerdt et al 2016) has generally used the approach of connecting mentions in a static text (which once annotated cannot easily be edited) to entities in a static knowledge base (which may occasionally be updated at intervals, but generally changes very infrequently), the work described in this paper aims to connect a dynamic text (which may require corrections at any point during or after the annotation process) to a dynamic knowledge base (which is expected to continually evolve and grow during – and as a consequence of – the process of annotation). 
+
+This work offers the following contributions: 1) the creation of a crowdsourced XML-based annotation framework building on and integrated with an existing digital library of over 5 billion characters of Chinese premodern text; 2) a linked open knowledge graph of knowledge extracted from annotated texts and serialized as RDF; 3) a semi-automatic approach for automatically extracting knowledge systematically from annotated texts; and 4) a fully machine-readable representation of East Asian dates which avoids the previously ubiquitous Eurocentric approach of representing dates only through their conversion to Gregorian or Julian calendars – leading to direct practical benefits through use of a data model more appropriate to the task. 
+
+
+# Annotation and knowledge extraction 
+
+
+In this implementation, annotations are used to supplement textual content with just two pieces of information: an entity identifier in the local knowledge base, and the type of the entity referenced; any further information known about the entity is encoded separately in the knowledge base itself. The only exception to this is for date references, which also encode data numerically representing literal information (often contextually provided) about the meaning of the date in its original expression – such as a year, month, and day (in the relevant historical calendar used in the text), corresponding to an offset within the specific time period represented by the linked entity, which itself refers to either a historical ruler or named era. This provides a straightforward method for encoding historical date references on their own terms, without requiring calendar conversion at the point of representation (Figure 1); instead, interpretation and calendar conversion operate as separate processes performed in real time using a comprehensive model of East Asian calendar dates, created in part using open data published in Bingenheimer et al (2016). 
+
+A purpose-designed annotation client (Figure 2) implements browser-based functionality to create and correct annotations both manually and automatically using a variety of approaches, including automatic suggestions using the current state of the knowledge base, and explicit tagging using flexible user-specified rules and lists of correspondences between patterns and entity identifiers. Annotation and knowledge graph state are updated by communication with the digital library via publicly documented APIs. 
+
+The annotation client also provides manual and semi-automatic functionality to directly augment the knowledge base itself during and after the annotation process (Figure 3). Knowledge is encoded in a structure closely following that of Wikidata, in which all information is stored as a series of claims, each representing a subject-verb-object sentence, each optionally associated with a series of qualifications (qualifier-object pairs) that qualify the claim. Initial work has created over 400,000 annotations of over 60,000 entities, with over 300,000 knowledge claims, covering a period of almost 3000 years of East Asian history. 
+
+
+# Figure 1: 
+
+
+Flow of contextual date information across a fragment of text. Indicated in blue boxes are explicit references to eras; pink boxes are references to dates. English text in green glosses show the literal content of the annotated text circled. The correct annotation for the last highlighted date reference (which in the text literally contains only numerical content meaning “1st in a cycle of 60”) supplements this with a reference to the era entity, a specific year and month, and indicates that the numerical content refers to a day (as opposed to a year). Note that the flow of information is non-trivial, because the reference to year 8 is parenthetical and does not alter the year of the subsequent date references, which still refer to year 9. 
+
+
+# Figure 2: 
+
+
+Entity annotation interface, showing linked data in the 15 th chapter of the History of the Song Dynasty ( 宋史 ). 
+
+
+# Figure 3: 
+
+
+Automatic suggestions during manual knowledge claim input. An entity representing the office of 樞密使 has been suggested as the object of the verb “held-office”; a machine-readable date incorporating textual context corresponding to “ 明道元年十二月壬寅 ” (Mingdao era, year 1, month 12, day 39 [sexagenary]), and resolving to 8 January 1033 AD (Julian) has been suggested as the value for the “from-date” qualifier for this claim based on existing annotations in the text. 
+
+
+# notes
+
+[^1]: https://ctext.org/instructions/annotation
+[^2]: https://ctext.org/tools/linked-open-data
+[^3]: https://ctext.org/instructions/annotation/client
+[^4]: https://ctext.org/instructions/annotation#conventions
+[^5]:  Of these, the type could in principle be omitted, as it can always be inferred from the entity record. However, its inclusion directly in the annotation is practically useful for performance reasons: some common actions, such as visually indicating the presence of annotations, rely only on the type of the annotation. Additionally, unlike many attributes, in the system described, entity type always has exactly one value for a given entity.
+[^6]: https://ctext.org/tools/linked-open-data

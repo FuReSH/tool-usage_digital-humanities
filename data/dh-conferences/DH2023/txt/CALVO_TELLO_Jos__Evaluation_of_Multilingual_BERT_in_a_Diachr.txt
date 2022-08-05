@@ -1,0 +1,68 @@
+
+
+# BERT and its Application to Digital Humanities 
+
+
+Transformers (GPT, BERT) have become a central piece in NLP (Vaswani et al., 2017; Alammar, 2018; Tunstall et al., preprint). These language models bring new possibilities for pre-training algorithms with no labelled data, which can then be fine-tuned to new tasks (transfer learning) with fewer labels (few-shot learning). Their linguistic prowess has spurred discussions about their limitations, biases and societal and environmental impact (Bender et al., 2021; Carlini et al., 2021; Underwood, 2021). 
+
+These algorithms have also sparked the interest of the DH community. Specifically, BERT models (Devlin et al., 2019) have been explored mainly for the study of English (Han and Eisenstein, 2019; Sims et al., 2019; Fonteyn, 2020; Underwood, 2021) and German literature (Jannidis and Konle, 2020; Pagel et al., 2021; Ehrmanntraut et al., 2021), or in multilingual settings (de la Rosa, et al., 2021). 
+
+However, its applicability to other Humanities domains remains questionable. Because of the vast amounts of data required for pre-training, these models are usually fed with contemporary text types (web, journalistic, or administrative documents) from resource-rich modern languages. In contrast, the Humanities deal with diverse and heterogeneous datasets, non-standard orthography, historical genres, multilingual datasets, and often from low-resource languages. To assess the performance of multilingual models in this context, we analyze the abilities of a multilingual BERT model (mBERT) pre-trained on Wikipedia for 102 languages (Devlin, 2018) on a multi-genre, diachronic Bible dataset. 
+
+
+# Corpus of Bible Translations 
+
+
+Building multilingual corpora usually involves collecting texts produced originally in each analyzed language and period (Odebrecht et al., 2019; Novakova and Siepmann, 2020; Burnard et al., 2021). However, cultural and historical differences hinder the comparability of the results (Schöch et al., preprint). To circumvent this limitation while accounting for low-resource languages, we choose a corpus of translations of Bibles. Bibles as research objects have a long tradition in Corpus Linguistics and Digital Humanities (Radday, 1973; Neumann, 1990; Holmes, 1991; Resnik et al., 1999; Christodouloupoulos and Steedman, 2015; Walczak, 2015; Lee and Yeung, 2016; Calvo Tello, 2020). 
+
+The corpus comes from Zefania-XML-bible and Bible Gateway. It contains 221 translations (11,455 books, e.g. Genesis and Psalms) in 54 languages from all continents, including historical ones such as Latin, Gothic and Syriac, and artificial languages (e.g., Esperanto). Figures 1a-b show the number of translations per language and the historical distribution for languages with translations before 1900. 
+
+
+
+
+# Methods 
+
+
+For the analysis, we apply five metrics on two fronts: 
+
+
+- Tokenization: We apply the default mBERT tokenizer and a simple typographic tokenizer to the Bible dataset. The tokens identified by the mBERT tokenizer can be characters, sub-word units (part-tokens), or whole-word units resembling typographic tokens. For languages using white-space delimited writing systems, the higher the number of whole-word units, the easier to interpret for humans, as the resulting tokenized text resembles quite closely the original one. To formalize this notion, we calculate the ratio of mBERT part-tokens by typographic-tokens (Figure 2). We also count the number of unknown tokens, i.e. tokens that are not part of the tokenizer vocabulary and cannot be split into its constituents. Low scores in these metrics represent better results. 
+- Classification tasks : We apply classification to three annotated categories for each book: genre (e.g., historical, law, letter, Zimmermann, 2010), historical group (e.g., Gospel, Pentateuch), and Testament (Old and New). We create balanced datasets and guarantee each language has at least the same number of Bibles per category. We then split in a training (80%), validation (10%), and test set (10%) and build models for each language as well as combined ones for each century (except for translations pre-1500). We assess the performance of each model using the F1-macro metric (the higher, the better). 
+
+
+
+
+
+# Hypothesis Testing 
+
+
+We use the five tokenization and classification metrics to test several hypotheses on the capabilities of mBERT. First, we hypothesize that languages in the mBERT pre-train dataset should obtain better results in the five metrics. Thus, we expect languages in the pre-train dataset to obtain low values in the tokenization metrics, and high F1 classification scores. To test this hypothesis, we group Bibles by whether their languages were part of the pre-training of mBERT and run Welch’s t-tests on the tokenization (Figures 3a-b) and classification (Figures 3c-e) metrics. This hypothesis is supported by three of the five criteria: the number of unknown-tokens (Figure 3a) and the classification results on genre and Testament (Figure 3c and 3e). 
+
+
+
+Second, we hypothesize that the Wikipedia sizes correlate with the metrics. While this is rejected for tokenization (Figures 4a-b), the classification results show statistical moderate correlations (Figures 4c-e). Despite having smaller or no Wikipedia, some languages obtain good overall results, such as Haitian, Jamaican, Gothic or Esperanto. 
+
+Consequently, in our third hypothesis, we expect texts in Romance and Germanic languages to score better than the rest of the languages. Figure 5 shows the classification results. 
+
+When compared in binary groups, Romance and Germanic languages do obtain better results than the rest for the five metrics (Figures 6a-e).  
+
+Fourth, based on Muller et al.(2021), we hypothesize that translations using Latin script will score better than translations in other scripts. Figure 7 shows the number of unknown-tokens, notably high for Coptic and Syriac scripts. 
+
+When compared in binary groups, the five criteria support this hypothesis (Figures 8a-e). This might explain the good overall results for some low-resource languages with small or no Wikipedia, but written in Latin script. 
+
+Fifth, we expect better results for contemporary translations (20th and 21st century), as that constitutes both the core of the pre-training and Bibles datasets. We obtained the year of publication for 68% of the corpus. Figure 9 shows a positive trend over time, reaching stability after the 18th century. 
+
+
+
+However, when compared in binary groups (20th-21st vs. rest), this is only supported by the unknown-tokens metric (Figures 10a). 
+
+
+
+
+# Conclusions 
+
+
+Our evaluation effectively exhibits biases in favor of some high-resource families of languages (Germanic, Romance), although other languages (Haitian, Jamaican, Esperanto) perform reasonably well. At the historical level, the scores are high and stable not only for the 20th and 21st century as hypothesized, but since the 18th century, probably due to a more consistent spelling since then. However, the strongest bias is not towards language or period, but toward (Latin) script. Therefore, transliteration into Latin script and modernization could be mandatory steps for many DH corpora interested in using mBERT. The DH community needs to discuss in which cases modernization and transliteration are acceptable and in which ways these limitations could be effectively mitigated. 
+
+
+# notes

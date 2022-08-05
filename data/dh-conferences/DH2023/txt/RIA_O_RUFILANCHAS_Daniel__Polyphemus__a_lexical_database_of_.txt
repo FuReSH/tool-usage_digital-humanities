@@ -1,0 +1,41 @@
+
+1. Polyphemus, a lexicographic database of Greek papyri 
+
+At present time, there is no way to search the corpus of Greek papyri for lemmata, or to search for specific grammatical forms of a word. Much less is there a way to search for examples of a grammatical category. Polyphemus comes to solve these shortcomings, and some more. 
+
+For this purpose we have processed all the papyrus texts from PapyInfo (<https://papyri.info/>). This processing is done at the same time as the processing that results in the Callimachus database, which we present at this Congress. I summarize below the procedure by which we obtain our database Polyphemus. 
+
+A) First we analyze each line of papyrus and differentiate the actual full words from the gaps or non-textual elements. 
+
+B) Then we identify the complete words and separate them from the fragments.. 
+
+C) We then proceed to lemmatize each of the words, and determine to which part of speech it corresponds, and what is its morphological analysis. All this is done with the help of the Madrid list, which I will discuss below. For text fragments (incomplete words), we try to see if they can be ascribed to a root. We also separate proper nouns from common nouns. 
+
+D) Lemma assignment and POS-tagging is performed in two phases. In a first pass we tag the forms with the highest frequency of occurrence. We then go on to label all the remaining forms using the Madrid Wordlist . 
+
+E) All this information is transferred to a SQL database, and put in relation with the data on the papyri that we have obtained when creating the Callimachus database. In this way, for each lexical form we obtain a lemma, a non-disambiguated morphological analysis, and a translation or gloss. Each of these parameters can be searched in combination with the more than fifty categories available to us thanks to Callimachus, such as date, origin, category, extension, subject, etc. 
+
+To date, we have been able to analyze 95% of the complete words, including proper names, which are very numerous. 
+
+2. The Madrid Ancient Greek Word List 
+
+The lemmatization and analysis in Parts Of Speech (POS tagging) is performed by comparing each record in our database with the records of a word list that we have created over the last 3 years, which we have called the Madrid Ancient Greek Wordlist. 
+
+Most of the Ancient Greek wordlists are evolutions, simplifications, or improvements from the Morpheus list, is a "rule-based morphological analyzer . Our list also starts with Morpheus, but has been enriched with our own treebank (cf. Riaño 2006); the digital version of the Greek-English Lexicon of Liddell-Scott-Jones, and Bailly; about 100,000 proper names from The Lexicon of Greek Personal Names and the Trismegistos repository of papyrological and epigraphic resources. All these data were processed to obtain morphological information: I have generated automatically the Attic and Ionic paradigm for each nominal entry in LSJ and Bailly. 
+
+The lemmas are assigned a translation, or rather a gloss, mainly from the Greek-English Lexicon of Liddell-Scott-Jones and S.C. Woodhouse "English-Greek dictionary". 
+
+3. Polyphemus interface 
+
+Polyphemus can be consulted online. It currently contains about 4,600,000 words from Ancient Greek papyri. POS tagging and lemmatization allow the user to query the database for any morphological feature, lemma, or translation. By being able to combine this data with that of the formal content of the papyri provided by the sister database Callimachus, it allows querying the database using more than 80 search criteria. 
+
+Since both the original readings and editorial regularizations are preserved, the researcher can use Polyphemus to search for phonetic or morphological features of the papyri. Some searches that can be performed using Polyphemus are the following: 
+
+a) Texts containing a Greek word that translates as “poison”, “medicine”, “ praetor ”, “water”, etc. 
+
+b) Texts in which any lemma (word) appears, in a specific grammatical form, from Elephantine between the 2nd century BC and 3rd AD. 
+
+c) All adjectives in accusative plural; or the optative of verbs in -μι, in all texts. 
+
+
+# notes

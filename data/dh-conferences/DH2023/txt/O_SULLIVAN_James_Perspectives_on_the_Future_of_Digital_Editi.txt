@@ -1,0 +1,21 @@
+
+ Acknowledgements:  Postdoctoral Research Fellow  Michael Kurzmeier  mkurzmeier@ucc.ie  University College Cork    
+
+The digital scholarly edition remains central to the intellectual practices of the arts and humanities, and yet, the fundamentals of their form and structure remain unchanged by the affordances of computers. The edition is often the version of the primary source that is most immediate, accessible, and informative to scholars and students alike, and so it is vital that we invest in further enhancing that dialogue and enable researchers to establish the methods and principles for developing the scholarly digital editions of the future. 
+
+C21 Editions [1] is a three-year international collaboration jointly funded by the Arts & Humanities Research Council (AH/W001489/1) and Irish Research Council (IRC/W001489/1). The aim of the project is to investigate and advance the practices of digital scholarly editing and publishing by researching and prototyping data standards that accommodate born-digital content such as social media, while also further integrating the “curatorial” and “statistical” aspects of DH [2] by examining how computer-assisted analytical methods can be embedded into edition making and publishing. 
+
+The first phase of C21 Editions project engaged in semi-structured interviews with an extensive group of 50 experts and stakeholders from a range of relevant disciplines, including digital scholarly editing, digital publishing, archiving and preservation, interface design, and creative practice. This paper present the results of a thematic analysis of those interviews, providing a comprehensive overview of how many of the field’s most prominent theorists and practitioners view the present state of digital scholarly editing and publishing, and how the technical systems and models which facilitate the making of digital editions and public resources might and should develop into the future. These findings will further serve as a vital compendium and roadmap for the future of digital scholarly editing, comprising perspectives by those positioned to realise any such future. 
+
+Overall, C21 Editions is intended to operate as a response to Joris van Zundert, who calls on theorists and practitioners to “intensify the methodological discourse” necessary to “implement a form of hypertext that truly represents textual fluidity and text relations in a scholarly viable and computational tractable manner” (2016, 106). “Without that dialogue,” he warns, “we relegate the raison d’être for the digital scholarly edition to that of a mere medium shift, we limit its expressiveness to that of print text, and we fail to explore the computational potential for digital text representation, analysis and interaction.” This dialogue has begun in earnest (Driscoll and Pierazzo 2016; Boot et al. 2017), but a previous survey on the expectations and use of digital editions found that user needs are seldom satisfied by such resources (Franzini, Terras, and Mahony 2019). Initial findings from the extensive qualitative data being analysed as part of C21 Editions suggests that this dissatisfaction persists, and despite the considerable amount of effort going into the development of digital editions, [3] there remains a disconnect between digital cultural resources and the needs for their users. The findings of this thematic analysis builds on existing research through providing extensive insight into how it is that those tools and methods that dominate digital scholarly editing and publishing have not advanced considerably since van Zundert’s statements in 2016. 
+
+Through the many expert perspectives that C21 Editions has gathered and analysed, this paper shows how key stakeholders believe digital editing and publishing have advanced pre-digital practices, where the digital has failed to realise its potential, and how we might envision future conditions. 
+
+[1] See c21editions.org. 
+
+[2] See Bode (2019). 
+
+[3] As evidenced by “A Catalogue of Digital Editions” (Franzini, Terras, and Mahony 2016) or dig-ed-cat.acdh.oeaw.ac.at/. 
+
+
+# notes

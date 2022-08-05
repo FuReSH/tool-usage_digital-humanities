@@ -1,0 +1,21 @@
+
+This poster presentation provides a portrait of the Humanities Data Inquiry (HDI), a new (2021) Social Sciences and Humanities Research Council (SSHRC)-funded project. The funding application for this project was entitled “Good things come in small packages: A grassroots Community of Practice for Open and FAIR humanities data practices.” HDI uses a research-informed Community of Practice (CoP) model to explore a diversity of issues involving the development, use and organization of humanities and cultural heritage (HCH) data, particularly when compared to ‘big data’ STEM and Open Science Frameworks. It outlines the basic problem associated with representational data in HCH and Open Science infrastructure frameworks and explains how HDI will address this through its CoP structure and research activities. Finally, the poster presents areas of future development and pathways for future involvement in the community of practice as well as the program’s expected outcomes. 
+
+The last decade has seen great advances in the development of infrastructure, tools, and principles for the collection, storage, discovery, and dissemination of research data (Borgman, 2015). Governments, funders, libraries and consortia, and private corporations have made large investments in what is rapidly becoming a robust Open and FAIR (Findable, Accessible, Interoperable, and Reusable) research data ecosystem. 
+
+This ecosystem, however, was built largely with the needs of "Big Data" Science, Technology, Engineering, and Mathematics (STEM) in mind. While Humanities and Cultural Heritage (HCH) researchers and projects are encouraged to engage with this evolving research data ecosystem, the fit is often poor. Where Big Data STEM typically involves large datasets produced through experiment, observation, or analysis, "Small Data" HCH research often involves deep analysis and intensive curation of relatively small data sets — perhaps particularly when it comes to datasets (and data points) focused on the representation of cultural texts and objects: i.e., editions and exhibits (Oldman, 2021; Franzini et al., 2019). 
+
+Addressing this disjunction requires community engagement and input: thoughtful and bidirectional communication amongst a diversity of practicing humanities researchers and between researchers and the organizations responsible for creating and supporting the Open and FAIR ecosystem. 
+
+The poster outlines HDI’s three main goals, designed to support this communication and community building: 
+
+
+- Discover: develop a forum for the development of best practice in the use of Open, FAIR, and CARE (Collective Benefit, Authority to Control, Responsibility, and Ethics)-compliant RDM practices among HCH researchers and projects; 
+- Demonstrate: Support the adaptation of Open, FAIR, and CARE RDM principles to Small Data HCH projects through the creation of a virtual “exolab” — a collaboration among leading data-centric research projects to share research problems in order to develop common approaches and practices at the level of the investigator; 
+- Mobilise: Promote the discovery, thoughtful adoption, and bidirectional development of Open, FAIR, and CARE RDM principles where appropriate by the broader HCH research community through peer-to-peer Workshops, Summer Schools, and training sessions. 
+
+
+While recent work has highlighted the importance of understanding scholarly information and work practices in the design of scholarly tools in the digital humanities (Antonijević and Stern-Cahoy, 2016; Lamb and Kling, 2003) in this work the goal is often framed as a question of how to include the voices of HCH researchers as user inputs, where problems are often scoped as questions of capacity and inclusion. By contrast, a unique feature of HDI is its use of ethnographic research (Borgman et al.; Koch, 2017; Ribes, 2014; Star, 1999; Wenger, 1999) and design (Poirier, 2017; Pyrko et al., 2017; Baker and Millerand, 2007; Ribes and Baker, 2007) to support community development, and enhance discovery and documentation through participatory agenda-setting activities. By bringing into conversation different sectors of the humanities and cultural heritage information ecosystems, the model will contribute to community-led design initiatives. 
+
+
+# notes

@@ -1,0 +1,65 @@
+
+
+# Abstract 
+
+
+In this paper, I introduce a very simple method of computing relative word frequencies for authorship attribution and similar stylometric applications. The proposed method outperforms classical most-frequent-word approaches by a few percentage points. 
+
+
+# Introduction 
+
+
+In a vast majority of stylometric studies, relative frequencies of the most frequent words (MFWs) are used as the language features to betray the authorial “fingerprint”. A vector of such relative word frequencies is then passed to one of the multidimensional machine-learning classification techniques, ranging from simple distance-based lazy learners, such as Delta (Burrows, 2002; Evert et al., 2017), to sophisticated neural network setups (Gómez-Adorno et al., 2018). 
+
+Even if alternative types of features have been introduced (Peng et al., 2003; Hirst and Feiguina, 2007; Lučić and Blake, 2013) and tested in controlled experiments (Eder, 2011), the standard approach relying of word frequencies continues to be predominant in the field (Grieve, 2007; Stamatatos, 2009). In this paper, I propose to count the relative frequencies in a slightly different way, in order to better capture the authorial choice of words. 
+
+
+# Words that (might) matter 
+
+
+The notion of relative word frequencies is fairly simple. We count all the tokens belonging to particular types (e.g. all the attestations of the word “the”, followed by the attestations of “in”, “for”, “of” etc.), and for each word, we divide the number of types by the total number of words in a document. Consequently, each word frequency is equal to its percentage within the document (e.g. “the” = 0.0382), and all the frequencies sum up to 1. The reason of converting occurrences to relative frequencies is obvious: by doing so, one is able to reliably compare texts that differ in length. 
+
+For the sake of this paper, it is important to note that such frequencies are relative to all the other words in a document in question. Convenient as they are, these values are at the same time very small and – importantly – can be affected by other word frequencies. Now, what if we disregard thousands of other words in a text, and compute the frequencies in relation to a small number of words that are relevant ? An obvious example is the mutual relation between the words “on” and “upon” in one document (Mosteller and Wallace, 1964); essentially, more attestations of “upon” comes at the cost of “on” being less frequent, and vice versa. While the classical relative frequency of the word “on” in Emily Bronte’s Wuthering Heights is 0.00687, the proportion of “on” relative exclusively to “upon” is 0.9762. It is assumed in this paper that the latter frequency can betray the authorial signal to a greater extent than the classical approach, because the myriads of other words are not blurring the final value. 
+
+Given the above assumption, it would be tempting to identify one synonym for each of the words, and to compute the relative proportions in each of the synonym pairs (Borski and Kokowski, 2021). Linguistically speaking, however, such an approach would hardly be feasible. Firstly, only a fraction of words have their synonyms. Secondly, some semantic fields are rather rich and cannot be reduced to a mere pair of synonyms. Thirdly, in the case of the most frequent words (articles, particles, prepositions) seeking their synonyms doesn’t make much sense, yet still, relevant counterparts for these frequent words obviously exist. Rather than identifying rigid lexical synonyms, then, I used a word embedding model (GloVe, 100 dimensions) to extract n semantic nearest neighbors for each of the words in question. Consequently, the neighbors for the word “person” were: “woman”, “gentleman”, “man”, “one”, “sort”, “whom”, “thing”, “young”, etc., whereas the neighbors for the word “the” were as follows: “of”, “this”, “in”, “there”, “on”, “one”, “which”, “its”, “was”, “a”, “and”, etc. For each target word, a relative frequency was calculated as the number of occurrences divided by the sum of occurrences of its n semantic neighbors ( n being the size of semantic space to be tested). 
+
+
+# Results 
+
+
+In order to corroborate the above intuitions, a controlled experiment was designed. A benchmark corpus of 100 English novels (33 authorial classes) was used, together with the package ‘stylo’ to perform the tests (Eder et al., 2016). Different classifiers, MFW vectors and, most importantly, different sizes of the semantic space were tested systematically, in a supervised setup with stratified cross-validation. On theoretical grounds, the size of the semantic space n = 37,000 (roughly the total number word types in the benchmark corpus) would be equivalent to classical relative frequencies, whereas the space of the size n = 1 means that the frequencies are relative to exactly one other word (e.g. the frequency of the word “the” would be the number of occurrences of “the” divided by the total number of “the” and “of”). 
+
+
+
+# Figure 1: 
+
+
+The performance (F1 scores) for a benchmark corpus of English novels and Cosine Delta as a classifier. The results depend on the MFW vector (y axis) and the size of the semantic space (x axis). Classifier used: Classic Delta. 
+
+
+The obtained results clearly suggest that the new method outperforms the classical relative frequencies solution. In agreement with several previous studies, longer MFW vectors worked better than, say, 100 MFWs. Less intuitive was the fact that the best performing word frequencies were the ones relative to ca. 50 neighboring words (Fig. 1). A recipe for a robust authorship attribution setup seems to be as follows: take 1,000 MFWs, and compute their frequencies using, for each word, the occurrences of their 50 semantic neighbors. 
+
+Since authorship attribution results are proven to be unevenly distributed across different MFW vectors, Fig. 2 shows the performance of the model as the gain (in percentage points) over the standard solution. While the overall best performance is obtained for 1,000 MFWs and the space of 50 words, the biggest gain over the baseline (more than 5 percentage points) is produced by the vector of 100 MFWs, each of them computed as a frequency relative to its 80 neighboring words. Interestingly, the new method proves to be worse than the baseline for long MFW vectors and tight semantic spaces of 1–10 neighboring words. 
+
+
+
+# Figure 2: 
+
+
+The gain (in percentage points) over the classical relative frequencies, for different MFW vectors (y axis) and the size of the semantic space (x axis). Classifier used: Classic Delta. 
+
+
+
+# Conclusion 
+
+
+The paper presented a simple method to improve the performance in different stylometric setups. The method is conceptually straightforward and does not require any NLP tooling. The only external piece of information that is required is a list of semantically related words for each of the most frequent words in the corpus. 
+
+
+# Acknowledgements 
+
+
+This research is part of the project 2017/26/E/HS2/01019, supported by Poland’s National Science Centre. 
+
+
+# notes

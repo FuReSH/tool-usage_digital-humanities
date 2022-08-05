@@ -1,0 +1,33 @@
+
+
+# Introduction 
+
+
+Online reviews have been analyzed for many traits that are linked to review quality: evidence of repetition, sarcasm, and of other markers of speech that may indicate the reviewer’s insincerity, the use of bots, or a low-quality review (Wu, Van der Heijden, & Korfiatis, 2011; Li & Shimizu 2018; Lin & Kalwani, 2018). Within DH, Amazon reviews have been studied for what they tell us about the products reviewed, particularly books and their reception (Finn, 2011). We are interested in what the reviews can tell us about the process and style of reviewing, particularly in non-English languages. In this short talk, we offer some preliminary conclusions from our analysis of language, topics, and sentiments in video reviews in the Japanese-language portion of the Multilingual Amazon Reviews Corpus (Keung et al., 2020). Large-scale analyses of Amazon reviews have previously shown that there are fewer Japanese-language reviews on Amazon than English-language reviews (Lin & Kalwani, 2018); otherwise, reviews share many traits across languages (Keung et al., 2020). 
+
+
+# Length of reviews 
+
+
+Figure 1 shows the average length of reviews, the max review length, the min review length, and the average number of characters in a review’s title by star level in the 2,600 Japanese-language video reviews. Two- and three-star reviews are longer; many one-star reviews are quite short, or even vulgarly dismissive of the work being reviewed, yet some authors of one-star reviews feel the need to go into great detail about the lack of merit of the work reviewed (see max). 
+
+
+# Topics of reviews 
+
+
+Figure 2 shows the distribution of main topics of Amazon video reviews. At all rating levels, there are diverse reasons for liking or disliking videos, as well as reviewers who failed to give any reason at all. The story was the most commonly referenced factor across all rating levels. Four-star and five-star reviews were more likely to reference acting or specific actors. One-star and two-star ratings more often referred to elements of production such as the adaptation, direction, editing, or cinematography, or problems with the audio or video quality. There were also many reviews referencing Amazon or the process of renting or buying the video in the mid-rated reviews. Five-star reviews often gave no reason for that rating or referenced themes. 
+
+
+# Sentiments in reviews 
+
+
+We see both surprising and unsurprising patterns in the distribution of the predominant sentiment associated with each review, which was detected using key words and confirmed by a human reader, and which varied considerably (see figure 3). Three-star and lower reviews are more likely to be highly critical or express disappointment, boredom, or a failure to finish watching. One-star reviews are the most likely to express confusion or uncertainty about the quality or purpose of the video. Five-star reviews were mostly enthusiastic. Yet there is much evidence that the text of reviews does not align with the numerical rating given. A number of five-star reviews contain text that is mostly critical of the film. Critical reviews are more likely to be two-star or three-star reviews than one-star. Nostalgia or familiarity was the predominant sentiment in many of the reviews associated with the highest ratings. 
+
+
+# Conclusions 
+
+
+While many reviewers’ ratings and sentiment aligned, there were other reviews that gave no reasons for their rating and lots that expressed boredom or judgment without referencing qualities of the video. In other words, many reviewers were happy to express their approval or judgment of a video without feeling the need to justify their criticism. Some others gave very high numerical ratings but remained critical in the text of the review. Likewise, the praise for themes and actors in positive reviews and the frequent criticism of the crew and production in negative reviews were also notable. The presence of numerical ratings in this dataset allows us to compare the rhetoric of reviewers and their ratings, as well as to locate reviews whose ratings do not align with the sentiment expressed in the review; such “misaligned” ratings can often tell us a lot about internet-based criticism of cultural works and which aspects of the work these critics target. Finally, we can compare these aligned and misaligned ratings across cultures to see whether critics in other cultures use the same rhetoric. 
+
+
+# notes

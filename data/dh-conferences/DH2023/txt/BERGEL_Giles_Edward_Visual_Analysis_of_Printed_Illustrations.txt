@@ -1,0 +1,40 @@
+
+This half-day tutorial will provide a practical and theoretical introduction to the computer vision applied to illustrations in various domains. Participants will learn how to make image collections searchable by means of free, open-source tools developed by Oxford's Visual Geometry Group for extracting, matching, comparing and classifying illustrations. 
+
+Participants will gain a practical and theoretical understanding of the state of the art in computer vision applied to illustrations. They will learn how to make image collections searchable by means of a modular image processing pipeline composed of free and open-source tools. Participants will learn how to apply, integrate and extend the software tools and processing pipeline to their own images; how visual search and analysis can scale to many millions of images; and will learn how computer vision can provide a deeper understanding of the visual content of image collections. Both the tools and the datasets are based on real-world research projects involving Oxford’s Visual Geometry Group and collaborators in the digital humanities and cultural heritage fields. 
+
+
+## Relevance to Digital Humanities Audiences 
+
+
+Researchers in many disciplines allied to the digital humanities are interested in the graphical content of books and such other forms of documents as periodicals, posters and pamphlets. While researchers already have many tools for extracting and processing text from documents, there are fewer options for the computational analysis of their visual elements – despite the fundamental importance of non-textual elements in printed communications. 
+
+This half-day tutorial is designed to address the needs of such researchers. The tutorial will present a processing pipeline for printed illustrations that are based on the following four open source software applications developed by the VGG based on over a decade of collaboration with different academic disciplines and industrial sectors: 
+
+
+- Illustration Detection using a pre-trained object detector model that has been retrained to automatically detect printed illustrations in early printed books. It has been successfully applied to detect a broad range of printed illustrations (e.g. Spanish Chapbooks). It will be taught in conjunction with the List Annotator (LISA) tool, which is used to review and refine the automatically detected illustrations. The tutorial will show how domain experts can readily use LISA to define regions of interest, and refine the detector by adding missed detections. 
+- Visual image search and grouping capability is provided by the VGG Image Search Engine (VISE) software which allows visual search of a large collection of images (e.g. a million image) using image (or image regions) as search queries within a graphical interface. VISE is based on features that are robust to different image transformations like rotation, scaling, translation, and shear. Furthermore, VISE uses features extracted from different regions of an illustration which enables search using a part of an illustration. This is useful for identifying damaged illustrations (e.g. due to torn book pages) or illustrations that have been modified in certain ways. 
+- Image Comparison software allows researchers to finely and forensically investigate the difference between two illustrations which appear similar, but on closer comparison can be seen to have fine differences. 
+- Visual classification using VGG Image Classifier (VIC) . This software incorporates an ImageNet trained model, which can be readily retrained using either local images or images retrieved with user-defined keywords (e.g. ship) via online image search engines (e.g. Google, Bing, etc.). VIC software uses this knowledge to classify and find images in a dataset with content that semantically matches the search keyword. 
+
+
+Participants in the tutorial will step through these applications using the case study data, which will demonstrate both the relevance of these methods for specific use-cases and their general applicability. While the focus of the tutorial is on technical methods in computer vision, it will also cover critical and operational issues such as data capture and cleanup; bias in training data; user experience; and good practice in research reproducibility, software citation and accreditation of invisible labour – issues that digital humanists have a strong interest in foregrounding. 
+
+
+## Target Audience 
+
+
+The target audience includes 
+
+
+- Early-career researchers in the humanities wishing to develop their skills. 
+- Established humanities academics with knowledge of computational methods, not necessarily including computer vision 
+- Research software engineers based in digital humanities centres or projects 
+- Academic support staff and research facilitators in digital humanities centres or projects. 
+- Museum, library and other cultural heritage professionals 
+
+
+The tutorial will be open to all-comers: no prior knowledge of computer vision or programming experience is assumed, but the tutorial will also support technically capable users. The hands-on portion can be followed either through Web demos hosted by VGG, or by user-installable software. 
+
+
+# notes

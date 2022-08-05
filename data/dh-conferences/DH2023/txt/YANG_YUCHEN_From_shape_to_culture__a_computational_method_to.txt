@@ -1,0 +1,99 @@
+
+
+# Introduction 
+
+
+In recent years, the idea that cultural change can be described as a process comparable to organic evolution has become increasingly popular (Mesoudi, 2001) . Like organic diversity, cultural diversity results from a modification-with-descent process, and some methods used to study organic diversity can be used to explore the culture. For example, the genealogical relationships among cultural artefacts (languages, folk tales, Iranian rugs) can be reconstructed using phylogenetic methods (Tehrani and Collard, 2009; Tehrani et al., 2010) and to study the evolution and ecology of cultures.   
+
+Shape, among other quantitative features, has shown great potential for such studies. Multiple works use shape to study cultural grammar and cultural diversity ( Liu and Ren, 2021 ; Di Angelo et al., 2018 ). However, these attempts either are qualitative or focus on potteries in the ancient Greek time and fail to capture the pan-Asian porcelain, which is arguably the most important artefacts that connect Asian countries and the rest of the world. 
+
+This study proposed 1) a quantitative method to study how MeiPing (a typical Chinese porcelain type ) has evolved in design through shape. The null hypothesis is that the more balanced shape of MeiPing would have been adopted more often in the course of cultural evolution; accordingly, the alternative hypothesis is that MeiPing would have become less balanced, turned into a delicate ornament rather than a practical vessel. 2) a workflow to automatically extract contours to bridge the gap between methods and data for such studies in the future. 
+
+
+# Methods 
+
+
+
+## Shape analysis 
+
+
+Since we are trying to capture the essence of MeiPing contour, but not the exact contour - that might be weird and complex due to the decorations on the vase - we performed manual landmarking on a total of 230 MeiPing to obtain their contours. Superimposition and normalization are performed using the momocs 1.3.0 (Bon homme et al, 2014) in R. 
+
+
+## Formula 1. 
+
+
+Balance coefficient definition 
+
+To understand how practical a vase is, we introduced two indicators. The first is the shape-dependent Balance coefficient (BC) using Formula 1 . Each parameter used for the calculation is defined and described in Fig. 1. The second is Degree of symmetry (DC), calculated using momocs. 
+
+
+## Figure 1. 
+
+
+Parameters definition and explanation for Balance coefficient 
+
+
+## Contour extraction 
+
+
+The traditional way of extracting contours is based on binarised images, which works fine for clean and consistent inputs. In reality, artefacts images are from multiple sources, and their standards and conditions vary. The constantly changing background, contrast, and brightness make the task difficult and require constant changes to the parameters for binarisation to work(Fig. 2).  
+
+
+## Figure 2. 
+
+
+(a) a good image for binarisation extraction, (b) a contour in green extracted in OpenCV, (c) a bad image for binarisation extraction, (d) a failed contour in green extracted in OpenCV 
+
+There is a rising attempt to use learning models for image segmentation that can detect and segment the objects of interest in given images. The perk of this is that it does not restrict image conditions, the segmentation can be done in much looser terms compared to binarisation. However, the go-to model Mask-RCNN ( He et al., 2017 ) is very good at getting a rough contour but not with precision. 
+
+In this research, we integrate Pointrend ( Kirillov et al., 2020 ), an improved model that treats segmentation as a rendering task for more precise contours, and compare it with the popular Mask-RCNN. The comparison is conducted using the strict metric Average Precision at IoU = 0.75 (AP75) in COCO detection evaluation. 
+
+
+## Data 
+
+
+We have collected 230 images of MeiPing from museum digital archives to imitate real-life situations - lack consistent sources and standards, and the quality varies. To perform the quantitative analysis and validate the automated contour extraction workflow, all images are manually annotated. A synthetic dataset of 1000 vases was created for the finetuning of the machine learning model. 
+
+
+# Results 
+
+
+
+## Shape analysis results on Meiping 
+
+
+The results of linear regressions of both parameters, BC and DC, with the production year have a P-value < 0.001. We can then conclude that MeiPing becomes more balance and symmetrical over time (Fig. 3), therefore the null hypothesis was accepted – – the shape of MeiPing evolves to become more and more practical. 
+
+
+## Figure 3. 
+
+
+(a) results of linear regression between manufacturing date and BC, (b) results of linear regression between manufacturing date and DC 
+
+
+## Contour extraction 
+
+
+
+## Figure 4. 
+
+
+(a) contour inferred by Pointrend, (b) contour inferred by Mask-RCNN 
+
+1000 synthetic images of vases against backgrounds were used to fine-tune the Mask-RCNN and Pointrend model. The inferences and evaluation were run on all manually annotated images . The Mask-RCNN achieved an AP75 of 91.10, while the Pointrend achieved an AP75 of 99.2. The differences in the AP75 value indicated the Pointrend model is better at getting the detailed mask of the object in question, hence can retrieve better contours. In future examinations of the result by eye, the Pointrend model predicted the mask area more tightly wrapping the vase, while the contour predicted by Mask-RCNN is less so (Fig. 4). Fig. 5 shows that the machine learning extracted contour reached comparable conclusions compared to the ones using manually annotated data . 
+
+
+## Figure 5. 
+
+
+comparison of results of manually annotated shape data and machine extracted contours, (a)linear regression between manufacturing date and BC, (b) linear regression between manufacturing date and DC 
+
+
+# Conclusion 
+
+
+This study proposed a practical and viable quantitative method to study the functional change of vases through shape, as well as a verified workflow to automatically extract contours out of images of vases regardless of image conditions to facilitate future studies on vase shapes. The result, combined with proper metadata, allows researchers to validate existing or create new theories of cultural evolution. 
+
+
+# notes

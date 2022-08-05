@@ -1,0 +1,67 @@
+
+
+# Introduction  
+
+
+We introduce a new dataset for the computational analysis of novels: the Project Dialogism Novel Corpus (PDNC). The PDNC currently consists of 22 novels in which all quotations are identified and annotated for speaker, addressee(s), and characters mentioned. PDNC is by an order of magnitude the largest corpus of its kind. Each novel is annotated manually by a pair of annotators using customized software we developed. In addition to releasing the dataset itself alongside this paper, we are also releasing the custom annotation software we developed (including the source code) along with our annotation guidelines. In the discussion section, we present two applications of the PDNC from our own research: quote attribution and emotion dynamics. We argue that the PDNC will promote a more nuanced and accurate view of novelistic discourse; whereas much research currently envisions the novel as expressing the voice of the author , the PDNC presents novels as a polyphonic fabric of characters’ voices. 
+
+  
+
+
+# Overview of the Project Dialogism Novel Corpus 
+
+
+The PDNC currently consists of 22 novels (see Table 1). In selecting novels, our aim has been to annotate texts in a variety of genres (literary fiction, children’s literature, detective fiction, and science fiction are represented); from the LitBank (REF #1) and QuoteLi (REF #15) corpora, to facilitate comparison and validation; of broad interest to a variety of scholars while still relevant to our group’s interest in stylistic diversity and dialogism. Further, we have chosen to annotate multiple novels by Jane Austen, in order to facilitate comparative analysis of a single author’s oeuvre (Austen was chosen because she is included in all existing corpora).  
+
+The annotation workflow proceeds as follows. First, the novel is pre-processed in GutenTag (Brooke et al. 2015); from this, a provisional character list is built and likely quotations are identified. Next, the novel is manually annotated in our customized software (see Figure 1). This is done separately by two annotators. Working from our guidelines (Hammond et al. 2021), annotators select each quotation, then identify the speaker, addressee, and anyone mentioned in the quotation (whether by name or pronoun). Annotators also identify the referring expression for each quotation, as well as the quotation type: explicit (quotations in which the referring expressions give the character’s name; for example, “said Emma”), pronominal (pronoun given; “she said”), or implicit (no referring expression). Once both annotators have completed their work, their annotations are compared for any discrepancies. The annotators then meet to resolve any disagreements, in what we call a “consensus exercise.” Once comparison shows no disagreement between annotations, the novel is considered annotated. 
+
+  The PDNC is by an order of magnitude the largest corpus of its kind (see Table 2). The largest previous corpus of novels annotated in this manner is the QuoteLi corpus, which contains only three novels ( Pride and Prejudice and Emma , both in PDNC; and Chekhov’s The Steppe , not in PDNC). The LitBank corpus includes annotations for 100 novels, but only for a very small fraction of each is annotated (on average, only 2,000 words). The Columbia Quoted Speech Attribution Corpus consists of six texts, two of which are compilations of short stories, but they are only partly annotated for quote attribution. 
+
+
+# Table 1. 
+
+
+PDNC: Tokens, quotations, speakers, total # of addressees recorded, total # of mentions 
+
+
+# Screen shot from our custom annotation software. 
+
+
+
+# Table 2. 
+
+
+Comparison of PDNC with previous quotation attribution corpora 
+
+
+# Research Applications 
+
+
+The research applications of the PDNC are multiple, extending well beyond the boundaries of our own research interests. Yet our own research serves to demonstrate some of its possible uses. 
+
+We began developing the PDNC primarily to test our quote attribution system (Hammond et al. 2020). The corpus has proven essential to this work, allowing us to compare our systems against state-of-the-art systems like QuoteLi and the BERT-based system in the latest release of BookNLP (see Table 3). 
+
+
+# Table 3. 
+
+
+A comparison of performance of our latest quote attribution system vs. QuoteLi vs. BookNLP. Numbers reported are accuracy scores; best scores are bolded. 
+
+Perhaps the largest aim of PDNC is to reorient computational work away from conceiving novels as undifferentiated lumps of text attributed solely to their authors — but rather as complex fabrics of differentiated voices speaking to and about one another, mediated by a narrator. In the paper introducing the tool GutenTag (Hammond and Brooke 2017), one of our authors used a rudimentary version of PDNC to rebut Matthew Jockers’s (2013) claim that female novelists generally write about stereotypically feminine themes. By looking at character voices within novels, however, rather than attributing all the novel’s text to its author, we demonstrated that it was female characters who discussed these themes — and that Jockers’s results were a secondary consequence of the fact that female authors tended to include far more female characters in their works. By allowing researchers to look within novels and analyze novels through the voices that make them up, PDNC will shift research away from mistaken assumptions and conclusions like Jockers’s. 
+
+  Our work on “emotion dynamics” — the study of change in emotional states over time — presents another example of new research enabled by the PDNC. Sentiment analysis is among the richest and most vital areas of computational literary research today. Yet major work seeking to plot novels’ sentiment trajectories remains limited by the necessity of assuming a single source for all words: the author (Elsner 2012, Mohammad 2011, Jockers 2014, Reagan 2016). In a pioneering essay on “emotion dynamics” in films, Hipson and Mohammad (2021) show the benefits of considering individual characters’ emotional trajectories. This approach enables researchers to determine each character’s “home base” (typical emotional range) as well as their emotional variability and the speed at which they regulate variations. We are currently working to apply this approach to the novels in PDNC (Figures 2–4 show the emotional trajectory of Jake Barnes in Ernest Hemingway’s The Sun Also Rises , revealing that this reputedly taciturn character in fact experiences one of the most extreme emotional troughs (in terms of valence) of any character in PDNC). We are using this approach to test whether characters’ emotion dynamics track with familiar literary-critical categories such as flat vs. round characters (Forster 1927). We are also investigating the extent to which emotional trajectories are gendered, and whether male or female authors are more likely to create characters that diverge from gender norms. 
+
+
+# Emotion dynamics trajectory, valence only, for characters in Ernest Hemingway’s The Sun Also Rises. Jake Barnes’s emotional trajectory is highlighted; the trough three-quarters of the way through the novel (~76%-87%) occurs during and after his fight with Robert Cohn at the Fiesta. 
+
+
+
+# Emotion dynamics, valence only, for all characters in PDNC. Jakes Barnes’s trajectory (highlighted) is extreme in the context of the characters in our corpus. 
+
+
+
+# Emotion words (with frequency count) used by Jake Barnes during trough (76%-87% portion of novel) 
+
+
+
+# notes

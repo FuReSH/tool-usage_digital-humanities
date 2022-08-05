@@ -1,0 +1,39 @@
+
+Studying large corpora in the literature domain, especially novels, mean that new tools are needed in order to address narratological questions at scale. A large body of research has specific developed techniques for the task, giving birth to the field known as distant reading (as opposed to close reading, by a human being), (Moretti, 2013). In this paper, we present a series of tools providing the basis for the large-scale and comprehensive annotation of French novels through the adaptation of the BookNLP project (Bamman et al. 2014) to French. We present the different kinds of annotation provided and then address specific issues concerning the annotation of events (Vauth et al. , 2021). 
+
+
+# Event annotation within the BookNLP project 
+
+
+The BookNLP framework (Bamman et al. 2014) is one of these software ensembles integrating various modules (entity recognition , coreference , event and quotation analysis ) that can be applied to large collections of text. The initial BookNLP contained tools for English only, and a new project is now extending the range of languages covered. We are on our side developing the same kind of modules for French. 
+
+Natural language processing is now almost exclusively based on machine learning techniques, which means most of the effort required to develop this kind of tools lies in text annotation. For French, we have annotated 20 extracts of French novels from the 19 th and 20 th century. We build on the Democrat project , whose aim was to annotate a large corpus of French texts (from different historical periods and different genres) with coreference information. We selected the texts corresponding to our criteria (copyright free texts from novels from the 19 and early 20 th century), hence our 20 extracts (for a total of 184.000 words). 
+
+The task first consisted in annotating entities following the BookNLP guidelines and mapping the initial Democrat coreference annotations to BookNLP. We then focused on event annotation, as this is one of the key features for distinguishing between author styles, but also for identifying specific episodes in a story, such as the fortune changes of the main characters, or the climax of a story arc. 
+
+However, we discovered that annotating events is slightly more difficult than annotating entities. In BookNLP (Sims et al., 2019, Bamman et al., 2019 and 2020), the definition of the notion of event is as follows: “The event layer identifies events with asserted realis (depicted as actually taking place, with specific participants at a specific time) – as opposed to events with other epistemic modalities (hypotheticals, future events, extradiegetic summaries by the narrator)”. The definition entails that verbs with a negation or with a modal are not annotated, for example, and only conjugated form of the verbs are annotated. 
+
+
+# The necessity to integrate modals and negation in the annotation scheme 
+
+
+We chose to annotate all kinds of events, without the initial limitations imposed in BookNLP. The first example presents three sentences with approximately the same meaning. If we leave apart the conjugated verb in the main clause, all the sentences include another clause, with a conjugated verb in the first sentence (1a), with an infinitive in the second (1b), and with a participle in the third one (1c). 
+1a. Après qu’il a mangé, il s’en est allé. 1b. Après avoir mangé, il s’en est allé. 1c. Ayant mangé, il s’en est allé. 1d. After he had eaten, he left. 
+1a – 1c have roughly the same meaning and should thus be annotated with two events, independently of the form of the verb in the subordinate clause. 
+
+Negation is more complex, as generally a negation means that no event has occurred. But this is not always the case and examples like 2a can be found: 
+2a. Il ne put retenir ses larmes. 2b. He could not hold back his tears. 
+which roughly means that the character cried. In an example like this one, there is definitely an action so in our opinion it should be annotated as such. Here our choices differ slightly from the ones in the original BookNLP project. 
+
+All annotations were carried out after multiple rounds of discussions and the creation of a set of annotation guidelines heavily dependent on the initial BookNLP annotation scheme for events (but including the differences highlighted in this section). The total dataset comprises 14,305 events among 184,000 tokens in the 20 books in our corpus. 
+
+The annotated corpus as well as our guidelines are freely available on GitHub. A collection of computer programs makes it possible to go from our annotation to something close to the original BookNLP scheme by excluding from the corpus examples with a negation or a modal. The next steps will consist in evaluating the robustness of the developed solution and its ability to provide useful information for actual literary studies. 
+
+
+# notes
+
+[^1]:  Person names, location names, etc. 
+[^2]:  A coreference occurs when 
+                            two or more expressions refer to the same person or thing, like in Joe Bideni said… Hei was… The presidenti appeared to be…
+[^3]:  Roughly, who (the source) said what (the quotation). 
+[^4]:  https://www.ortolang.fr/market/corpora/democrat/3

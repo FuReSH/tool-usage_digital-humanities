@@ -1,0 +1,71 @@
+
+
+# Panel Description 
+
+
+(Oliver Streiter and Tyng-Ruey Chuang) 
+
+We define cultural landscapes as landscapes created or modified by human societies, as landscapes of historical or archaeological importance, or as landscapes chosen for an economic, spiritual, sanctuary, commemorative or other cultural function . These landscapes are, due to their size, their internal and external heterogenity, and the process of continuous transformation, a research area that has been under-investigated in digital humanities. 
+
+In this panel we thus ask three fundamental questions. First, how can cultural landscapes be described, documented, analyzed, managed and preserved, either digitally, or through digital technologies in situ, cf. Chen and Feng (2020). Second, how can individual research or documentation efforts, conceptually or computationally, be connected to gain more holistic views of the landscape? Finally, how GIS-inspired horizontal layers can be vertically connected through linguistic or cultural descriptors? 
+
+Many aspects of cultural landscapes are complex and thus difficult to capture, e.g. in GIS-like models. These are, among others, calendric, geomantic, spiritual, and commemorative meanings of landscapes. These meanings may reside in specific geographic relations, e.g. the fengshui of a house, or outside the landscape, e.g. in the collective memory of a community. Where cultural practices, such as daily routines, evolve in a landscape, the calendar, the timing, and the pattern of recurrence of the practices are constitutional to practices and landscapes. Visual, olfactory, acoustic (Kopij and Pilch 2019, Manzetti 2019, Đorđević and Novković 2019), geomantic and climatic features of a landscape, in addition, require the adoption of multiple points of view for their spatial representation, e.g. wind strength as a function of time and place. A layered representation thus seems like a simplified surrogate, where e.g. a climatic function with parameters derived from multiple layers would be more adequate. 
+
+Cultural landscapes evolve in time. They can’t be frozen, archived or stored in a museum and are vulnerable to disturbance and even destruction. In addition, cultural landscapes are experienced through time by a multiple of peoples in different dimensions and different research traditions with different expertise. The repeated efforts in producing documentation and data about them can span centuries, cf. Posluschny and Beusing (2019), and thus pose a real challenge in creating unified views. After all, each linking of independently produced layers relies on subjective interpretation and should not be hard-coded in the data. 
+
+A necessary but not sufficient condition for the success of the layered approach is thus the availability of shared indices and descriptors. But even if found and formulated, they can at best demonstrate spatial correlations, but not causal or cultural relations, which cannot be induced from correlations alone. Modular layers and their horizontal projections alone might thus produce only surface forms of holistic views. Yet, there are few alternatives in theory and practice as of now to represent deep structures and meanings. This panel thus proposes to bring forward ongoing works in documenting and researching cultural landscapes in East Asia by a diverse group of researchers, so as to present different approaches to cultural landscapes in digital scholarship. 
+
+
+# The Role of Cognitive Grammars in Documenting Cultural Landscapes: Linking, mapping and interpretation 
+
+
+(Oliver Streiter) 
+
+In this paper we elaborate the notion of a cognitive grammar of culture as a systematic collection of cultural and spatial relations. Cognitive grammars might enrich or link data layers describing cultural landscapes. A grammar rule consists of a) contextual features, b) cultural entities, c) the placement of entities in context, d) a natural language description of the rule, e) motivations for the rule and f) a significance test. 
+
+In Fig. 1 a rule describes the orientation of walled gardens on the Penghu archipelago. This rule can link two layers: i) a geographic map and ii) a data set of gardens with their geo-references and orientations. By mapping areas according to rule adherence, a cultural grid is created that reflects specific gardening practices. 
+
+Alternatively, if a rule, as in Fig. 2, resembles a map, one can re-project the geographic map into the schematic map of the rule to represent the landscape from a cultural perspective. Fig. 3 shows how data layers can map geo-tagged media files to rules, triggering a cultural interpretation of the represented constellation. This can be useful in multimedia applications for educational purposes. Finally, graphical representations of rule can be manipulated in psychological experiments or interviews when investigating the notions within a community. 
+
+Cognitive grammar rules thus are a versatile representational format which through the vertical co-ocurrences of terms and indices can link various resources to analyze, interpret or visualize aspects of cultural landscapes. 
+
+
+# Beyond GIS: Trying to make sense of Penghu cultural landscapes 
+
+
+(Hanna Yaqing Zhan) 
+
+Cultural landscapes are shaped by the interaction of humans with nature. This paper attempts to outline the types of cultural landscapes on the Penghu archipelago and the role that time plays for their understanding. First, we define cultural landscapes. Second, we introduce and discuss the types of cultural landscapes on Penghu. These landscapes can be religious or spiritual in nature, e.g. temples, five generals ( 五營 ) and Shigandang ( 石敢當 ) and their controlled and protected domains, or of economic interests, such as stone weirs, intertidal zones for fishing or gardens. Then we discuss the temporal aspects that are necessary for the understanding of these landscapes in their cultural context, e.g. season, monsoon, tide. Fourth, we will tackle the question, how to enrich and link documentations of cultural landscapes with these temporal data. We propose to represent a) a linear reference timeline with historic events, b) representations of generalized cyclic events, e.g. tides, monsoon, lunar circle, c) emic cyclic representations such as temple calendars, and d) generalized human activities. Activities and events are linked to landscapes and temporal representations, while all temporal representations can be linked among each other. Data on generalized human activities and emic calendars are obtained through interviews, inscriptions and, where accessible, historical resources. 
+
+
+# Historical Landscape In the Context of Ancient Shrines 
+
+
+(Shoichiro HARA) 
+
+Japan is an island and mountainous country, and this topography influences the landscape and even the mentality of the Japanese people. Thus landscape is one of the critical elements to understanding the culture. As an application of GIS to humanities informatics, this paper examines the landscape of sacred sites in Japan, focusing on Shikinai-sha ( 式内社 ) in Nara Basin ( 奈良盆地 ). Nara Basin had been the seat of ancient Japanese capitols. Shikinai-sha are Japanese deity shrines recorded on Engishiki ( 延喜式 ). Engishiki was initially compiled from 907 to 915 to codify detailed rules for court ceremonies and protocols and is considered a precious source of historical materials. A part of Engishiki called Engishiki-Jimmeicho ( 延喜式神名帳 ) lists Shikinai-sha as Japanese official deities in the 10th century, which means the locations of Shikinai-sha in Nara Basin indicate sacred places in ancient times ( 式内社研究会 , 1979). This paper first extracted geographical features around Shikinai-sha from maps (e.g. altitude and topography—flat area, foothill area, or mountain area—and numbers of mountain peaks, rivers, and slopes around a shrine), then converted these features into quantitative data, finally identify the spatial constituent elements that explain the location of shrines using some statistical analyses. 
+
+
+# Digital Linkage of Local Knowledge: The Implementation of and Some Thoughts about the Taiwanese Religion and Folk Culture Platform (TRFC) 
+
+
+(Ying-Fa Hung and Jr-Jie Jang) 
+
+Taiwan is religiously one of the world’s most diverse countries. This is reflected in its large number of religious buildings, networks and landscapes, as well as a large number of local records and research publications about them. However, these records and publications are notoriously difficult to use, as it is often necessary to derive basic information from the presented data. The Platform for Taiwanese Religion and Folk Culture (TRFC, website: trfc.tw ) is an attempt to alleviate the problem, collating research publications and folk records on religious sites and landscapes into digital data resources. The platform is mainly based on the Taiwanese Religious Database pioneered at the Center for GIS, Academia Sinica, Taiwan, yet gradually incorporating various religious materials, routes, landscapes from related databases with the aim to establish manually or algorithmically links between them, gradually forming a local knowledge system centred on Taiwan's religious practices. An important part of the platform maps Taiwan's folk belief sites and practices, with a focus on their dynamic ritual routes, such as pilgrimages and processions. The comparative analysis, through time and regions, of data on annually recurrent events, accumulated over many years, allows researchers to understand how religious practices evolve within a religious landscape and transform over the short or long term the cultural landscape.  
+
+
+# Documenting Cultural Landscapes: Tools and Issues for Collaboration Across Boundaries 
+
+
+(Tyng-Ruey Chuang, Cheng-Jen Lee, Yu-Chia Monica Mu, Chia-Hsun Ally Wang, and Yu-Huang Wang) 
+
+Cultural landscapes are formed over time and shaped by people. The terrain of landscapes can be unwinding and embedded with artifacts of various scales. Old gravesites, abandoned factories, and seashores piled with debris, simultaneously present us with the remains of former human activity and bear witness to global changes. How to effectively document them while ensuring the documentations remain accessible to diverse communities and reusable for multiple purposes, poses many challenges. 
+
+Audiovisual and survey materials about landscapes often are coded and indexed by the time and location when they are documented. As various encodings and vocabularies are in use, reconciling documentations from multiple sources can be difficult. This problem is further compounded by the larger cultural, historical, and socioeconomic contexts inherited in the landscapes. Multiple documentations may exist yet dispersed in different collections. The annotation schemes, descriptive texts and/or semantic labels used by these collections can be heterogeneous, hence not aligned for reuse. 
+
+We view documentation materials on cultural landscapes as research datasets about which the FAIR (Findable, Accessible, Interoperable, and Reusable) data principles apply. We propose that, with current tools and services, already landscape documentations can be made more findable, accessible and reusable, hence facilitating research collaboration. Open repositories (e.g. data.depositar.io ), persistent identifiers and naming schemes (e.g. wikidata.org ), data catalogue schema (e.g. DCAT), and common participatory practices (cf. citizen science) are all helpful to collection development, enrichment, and sharing.  
+
+We will show case several projects in Taiwan in documenting cultural landscapes, ranging from drone imaging for changing landscapes to preserving ephemeral street arts in a civil movement, and to folk pictures and stories about the current COVID-19 landscapes.  
+
+
+# notes

@@ -1,0 +1,21 @@
+
+Documenting the digital literature represents a research challenge (Vitali-Rosati, 2017) because it requests the institution of modularity in digital taxonomies, on a field in constant evolution (Hayles, 2007). The fast evolution of media and their global diffusion give access to many technologies and tools. The latter brings vast diversity as much on the practices of reading as on physical manipulations: the digital literature covers at the same time network literature, interactive fictions, digital books, virtual reality experiments or notifictions (Bouchardon, 2009 and 2012; Lescouet, 2021). 
+
+The very existence and dissemination of literature build a trans-platform, inclusive and plastic culture (Ryan, 2015). It challenges researchers to find and identify artworks. These reading’s materialities are evolving beyond the fictional ‘magic circle’ often took in consideration in reading theories (Huizinga 1938; Picard 1986; Mace, 2011). Hyperconnection overlaps with contemporary tools and creates geographical and geolocalized fragmentation, as well as temporal fragmentation. This allows a unique user immersion, that is up to us to document in its current and permanent developments. 
+
+These creations find their audience in particular online communities. For this reason, they could be difficult to find and to present to a larger public, academic or not. However, the institutionalization of these artworks and their qualification allow us to study them: they become analyzable because they belong to an academic environment. Therefore, we must provide new ways to talk about them. It is imperative to establish a common vocabulary (see the early 2000s CELL Project research on this issue), a common language, to unify an approach and a documentation between the existing databases. It is at the same time a necessity and an obstacle in the conservation of the particularities of each project. 
+
+Nonetheless, we observe common trends as well as common descriptors. This recognition has led us to build a thesaurus within the inter-university partnership   Littérature Québécoise Mobile . Starting from there, we have then established collaborative vocabularies in OpenTheso. The urgency of working together to establish definitions and hierarchies of vocabularies requires the institution of equitable governance and a tool to allow discussions and linkage between artworks. 
+
+Building a thesaurus was therefore imperative. We must build an ontology in the technical sense of the term, which was structured and shareable. The descriptors had to be included, structured, editable and manipulable, but above all they had to be linkable to the descriptive files of the artworks studied. The choice of SKOS appeared obvious. Moreover, it was necessary to choose a tool that would allow to manage and store the permanent id of the terms to stabilize the descriptors. Opentheso allows this. Created in 2005 by the Federation and Resources on Antiquity, it is now part of the tools hosted by Huma-Num. 
+
+This proposal, without being exhaustive, focuses on three main aspects of this documentation: 
+
+The technical aspects and reading supports of the artworks in the corpus; The possible interactions between the reader and the artwork established through the gestures of readings or through the experimentation implemented, in duo with the principles of the artwork’s internal organization; The genres and literary forms convened, in the diversity and the flexibility that such a position implies. 
+
+The aim of this documentation for digital artworks is to understand the close interaction between them and their influence on the reception of the artworks. The influence of the techniques concerning the presence and the incorporation of the body-reader in the propositions allow us to study the immersion and the temporalized lectorial propositions or the disciplinary borders between the different digital artistic disciplines, notably between video game and literature. 
+
+To do so, we will study in detail how such taxonomies could be set up and how the collaborative work around them is organized. We will then confront the studied fields with the real corpus (on the questions of ‘corpus place’, see Emerit, 2016) in order to consider the limitations and constraints encountered. 
+
+
+# notes

@@ -1,0 +1,25 @@
+
+
+# Motivation 
+
+
+Approaches to the study of reading literature are increasingly attracting attention in the Digital Humanities (Lavin, 2020; Mavrody et al. 2021; Pianzola et al., 2020; Rebora et al., 2021). However, the historical change of literary practices has rarely been investigated on a quantitative basis, although social practices, and thus also literary practices, produce certain regularities of behavior, making them ideal for empirical study (Tuomela, 2002). Since the rules of literary practices are closely connected to literary concepts, we consider studying semantic change of concepts as a promising route to shed light on the change of literary practices over a long period of time. 
+
+In our contribution we investigate how the meaning of central concepts of literary criticism changed over the course of the long 19th century in the discourse of literary critics. Such concepts include ”author”, “character” (ger. Figur/Charakter), “literature”, “narrator” (Erzähler), “plot” (Fabel), “poetry” (Dichtung) or “story” (Geschichte). The central idea is that the semantic change of these concepts reflects fundamental change in literary practices, i.e., the practices of dealing with literary texts. The change in meaning of literary concepts particularly concerns (a) the reception of fictional texts and the so-called “fictive stance” (Lamarque and Olsen, 1994), (b) the categorization and interpretation of literary texts (Gittel, 2021), and (c) their evaluation (Friend, 2020). 
+
+Identifying a text as ”work of literature” or as ”poetry”, for example, evokes certain expectations and textual approaches on the part of literary critics, which are historically variable and in turn are reflected in changing word meanings (Rosenberg, 2017). Our working hypothesis is that by looking at longer periods of time, clusters of such word meanings are identifiable, which can then be interpreted qualitatively in terms of literary criticism’s history (Anz and Baasner, 2004; Habib, 2013; Hohendahl, 1985; Magerski, 2013) and further explored through quantitative analysis. 
+
+
+# Approach 
+
+
+We employ methods from Natural Language Processing, specifically Lexical Semantic Change, to approach the diachronic change in meaning of literary concepts in an empirical manner. Our computational methodology is based on the task of diachronic word sense disambiguation and semantic change more generally (Schlechtweg et al., 2018; Schlechtweg et al., 2019; Schlechtweg et al., 2020; Rother et al., 2020), encompassing both manual annotation and unsupervised methods from Distributional Semantics. We focus on diachronic contextualized embeddings (e.g., via BERT, see Laicher et al. (2021)), which we adapt to the historical literary domain. 
+
+As a basis for our analysis we collected a corpus of professional literary reviews from the popular German periodical “Die Grenzboten”, which covers the years 1840–1921, a central period for the emergence of modern literary practices. In this corpus (30k texts), we manually annotated texts on whether they are reviews or not and implemented a heuristic to identify recurring journal sections which contain reviews, to build a high performing automatic classifier that identifies this type of text, which is crucial for a study of literary critics’ practices. Furthermore, we acquire a second corpus of literary reviews that spans a wider time span (1750-1880), provided by the Austrian National Library. 
+
+Our analysis will focus on the change in meaning of the literary terms mentioned in the beginning. First of all, with a change point analysis, we aim to find changes in the similarity of concepts to themselves and each other over time, i.e., at which point a word becomes dissimilar to itself, or through which semantic fields selected concepts moved (Hamilton et al., 2016). Second, we aim to identify clusters of word meanings to disambiguate specific word senses and how the composition of clusters changed over time, i.e., whether certain senses emerge or vanish over time. To evaluate our (clustering) models, we carry out two main strategies, which are also suggested in the literature (Wevers and Koolen, 2020): (a) hypothesis testing, and (b) cluster coherence. 
+
+Regarding (a), we manually annotate categorical word senses (in context) for concepts like ”Erzähler”, for which we already know that it changed from meaning predominantly ”author” to ”fictive narrator”. Regarding (b), we manually annotate via pairwise judgements, such that annotators are asked whether two instances of the same token in different contexts carry a similar or dissimilar meaning (whether they belong to the same cluster or not), and more generally, how similar two instances are on a continuous scale. 
+
+
+# notes

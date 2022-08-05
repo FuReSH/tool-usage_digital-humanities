@@ -1,0 +1,31 @@
+
+We will focus on the difference in the contexts in which the artworks are placed in multiple exhibitions dealing with similar themes. This study targets the composition of special exhibitions in Japan and reveals that it is possible to clarify the difference in intentions of each work (Persohn, 2021) through visualization and comparison using a text-mining method called co-occurrence network analysis. An exhibition consists of some chapters, and elements that cross multiple chapters are important in understanding the intent of the whole exhibition. The subject of the analysis is the exhibitions on the theme of "Kyosai Kawanabe" held at three museums in central Tokyo in 2015, 2017, and 2019. Kyosai Kawanabe (1831-1889) was an ukiyo-e artist and Japanese-style painter active from the end of the Edo period to the beginning of the Meiji period. 
+
+The procedure for the analysis is as follows. First, the elements depicted in the work are extracted from the title of the works. They are all in Japanese and describe the motifs depicted. In them, the motifs are usually expressed as nouns or proper nouns, such as "a raven on a dead tree. Therefore, we used KH Coder (Higuchi, 2017), a kind of text mining tool, to extract specific parts of speech from the titles in each exhibition. In the above case, "raven" and "dead tree" are extracted, while "a" and "on" are eliminated. Next, we create a co-occurrence network diagram of chapter numbers and extracted words that appear two or more times for each exhibition. For each co-occurrence network, the number of occurrences of the extracted word is represented by the size of the circle, and the stronger the co-occurrence relationship, the darker the line. The numbers in the squares indicate the chapter numbers. In addition, the Jaccard coefficient, an indicator of the strength of the co-occurrence relationship between words, is also included for your information. The higher the coefficient, the more the motif is included in the chapter. 
+
+One of the features of this study is that we can see the range of interpretations that co-occurring words have, i.e., the many combinations of elements that are likely to be depicted in works placed in the same chapter. Although the outline of the exhibition can be obtained from the chapter titles, the co-occurrence network with the chapter number is the most effective visualization method to grasp the outline of the works placed in each chapter. When the co-occurrence of chapter and extracted words is known, it is easy to visually compare the exhibitions. It is also possible to compare the diversity of interpretations of the same word in different exhibitions. 
+
+
+Figure1: 
+
+
+Exhibition in 2015. 
+
+
+Figure2: 
+
+
+Exhibition in 2017. 
+
+
+Figure3: 
+
+
+Exhibition in 2019. 
+
+As a result of our analysis, we have learned the following about each exhibition. For example, in the 2015 exhibition (Figure1), the most frequent occurrences "frog" and "beauty" are in co-occurrence relationship with chapter "4" or another number bigger than "5", i.e., works featuring frogs and beauties, which are prominent in number in the overall lineup, are placed in the latter half of the exhibition. In the 2017 exhibition (Figure2), the fox is described as an animal in the beginning, as a demon in the end, and as something that brings laughter in another chapter. The three exhibitions all share the fact that many of the works are related to animals and monsters, but the difference in the arrangement of the works lies in the intentions of the planners. The 2019 exhibition (Figure3) is the only one that begins and ends with “beauty”. It could be suggested that displaying artworks on a co-occurrence network makes it easier to grasp the content of an exhibition that is trying to capture artworks in terms of their techniques and styles. 
+
+This study has both academic and social significance in that it demonstrates the effectiveness of using the subject of exhibitions, which is difficult to analyze from a quantitative perspective, as a subject for mechanical analysis. Using this method and having the perspective of recognizing artworks from the perspective of chapter headings will make the experience of viewing artworks even more rewarding for individuals (Marty, 2011). 
+
+
+# notes

@@ -1,0 +1,90 @@
+
+
+# Introduction 
+
+
+Fanfictions are fan-created written works using already existing characters and plot elements of existing famous media to write new stories based on those characters (Dym et al. 2018). This genre of online literature has gained a lot of interest in literary studies and the humanities (cf. Hellekson and Busse, 2006; Thomas, 2011; Van Steenhuyse, 2011; Jamison, 2013) but also in digital humanities (DH) in recent years (Milli & Bamman, 2016; Fast et al. 2016; Yin et al. 2017; Frens et al. 2018; Rebora and Pianzola, 2018; Pianzola et al. 2020; Schmidt et al. 2021d). 
+
+We present first results of the analysis of around 15 years of fanfiction production for the fandom Supernatural and fanfictions from the platform Archive of Our Own (AO3) . Supernatural is a popular mystery-fantasy American TV show running from 2005 to 2020 and the fan fiction community is regarded as one of the most productive which has led to research in DH (Kleindienst and Schmidt, 2020). AO3 is one of the most popular fan fiction websites and hosts, to our knowledge, the largest number of Supernatural fan fictions compared to other platforms. 
+
+
+# Corpus 
+
+
+We developed a script to scrape all Supernatural fanfictions from AO3 which we used in January 2021 to gather all fan fictions available at that moment. We scraped the entire HTML page and transformed the content into structured JSON including the text of the stories and metadata. The general corpus analysis was performed similar to research on social media (e.g. Moßburger et al., 2020) Overall, the corpus consists of 170,436 unique fan fictions and over 1 billion tokens. On average a fanfiction has a length of around 6,000 tokens but this length varies between 100 to 2 million tokens (table 1). 
+
+
+# Table 1. 
+
+
+General corpus statistics. 
+
+
+# Results 
+
+
+In the following section, we present a small subset of first corpus and metadata results. We focus on diachronic analysis across the respective time spans of the seasons of the show from 2005-2020. Each season basically represents one year. We regard fanfictions as part of a season if the publication date is during the airing of this seasons or before the airing of the next season. 
+
+As figure 1 shows, the most significant increase in production begins in season 4 and peaks in season 10. Indeed, season 4 sees the appearance of the character “Castiel” which is of great importance for the community. 
+
+
+# Figure 1. 
+
+
+Fanfiction production across seasons. 
+
+We also compared the production of the airing time of a season to the in-between time. As figure 2 shows, the production takes a significant decrease in between seasons. This is in line with research by De Kosnik et al. (2015) who have found that fanfiction production tends to happen immediately after release. 
+
+
+# Figure 2. 
+
+
+Fanfiction production across and in-between seasons. 
+
+The average length of the individual fanfiction increases throughout the airing of the show peaking with almost 8,000 tokens in the more recent seasons (figure 3). 
+
+
+# Figure 3. 
+
+
+Average number of tokens per fanfiction. 
+
+Considering the number of different authors, we found that up until season 6 this number stays rather small below a limited core of 1,000 authors but increases drastically, again, in season 4 and season 7 (figure 4). 
+
+
+# Figure 4. 
+
+
+Number of authors per season. 
+
+One important factor of fanfictions is the relationship type of the characters the fanfiction depicts. Indeed, as the overall distribution of this AO3 metadata shows, the majority (55.4%) of all fanfictions of this corpus deals with male-male homo-erotic and romantic content (slash). This is a well-known phenomenon of fanfictions (cf. Hellekson & Busse, 2006) and an important part of Supernatural fanfictions. 
+
+
+# Table 2. 
+
+
+Distribution of relationship type tags for the entire corpus. 
+
+Again, the dominance of this slash fanfictions (M/M) becomes striking over time beginning in season 4 as figure 5 shows. 
+
+
+# Figure 5. 
+
+
+Proportion of relationship type tags across seasons. 
+
+Fanfiction authors can explicitly add the specific character relationship as metadata which is also curated by AO3. Looking at the proportion of the three most popular relationships (figure 6), we identified that (1) all of them are of M/M-nature and (2) the rise in popularity of the show and the fanfictions goes hand in hand with the introduction of the character Castiel and the imaginations about the relationship with the main character Dean Winchester. This is especially striking since Castiel is a mere side character in season 4 that became part of the main cast due to his popularity that can also be seen in our data. 
+
+
+# Figure 6. 
+
+
+Proportion of the three most popular relationships across seasons. 
+
+Please note, that we only presented a subset of the results this corpus has to offer. Furthermore, we also see great potential form more advanced methods that have gained popularity in recent years in DH like sentiment analysis (Schmidt and Burghardt, 2018; Schmidt et al., 2021a; Schmidt et al., 2021b) or even multimodal approaches including the video channel of the TV show in further studies (similar to Schmidt et al., 2019; Schmidt et al., 2020a; Schmidt et al., 2020b; Schmidt et al., 2021c; Schmidt and Wolff, 2021). 
+
+
+# notes
+
+[^1]: https://archiveofourown.org/
+[^2]:  Due to legal constraints, the data is only available via request (thomas.schmidt@ur.de).

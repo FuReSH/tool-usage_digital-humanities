@@ -1,0 +1,41 @@
+
+Intertextuality has been a significant concern of scholarly communities around the world for centuries; fields like Redaktionsgeschichte in Germany and jiaokanxue 校勘學 in China have long provided evidence-based foundations for debates on the relationships between works, editions and authors. With the advent of digital texts and computational tools, new avenues for research into intertextuality have recently emerged. In this presentation, we will discuss our initial results from the TextPAIR framework, a language-agnostic open-source unsupervised approach to detecting “text reuse” in any language or script, and discuss future avenues for algorithmically-based research into relationships between textual communities, traditions and sources. 
+
+Like the vast majority of data-mining or machine-learning tools, the results provided by TextPAIR are heavily impacted by the input data. We show that TextPAIR's multilingual capabilities are made possible first by the flexible approach to text representation, that is how texts are preprocessed and transformed prior to being handed over to the matching algorithm.  Because each language is different, be it structurally or culturally, different aspects of language may be retained from one language to the other. In other words, the goal of the preprocessing stage is to bring forward the ideal features needed for maximizing the quality and yield of the text-reuse detection algorithm. We will thus describe this process of parameterizing the preprocessing steps in order to obtain a text representation that is appropriate for the language of text collections(s) being analyzed.  
+
+Through the analysis of text reuses found within large-scale corpora in different languages, with a focus on Chinese, Japanese, French and English, we highlight how the nature of the reuses reflect particular linguistic and cultural traditions, especially in the vast number of cases where the reuse is not identical to the source. For example, the preliminary results of our research indicates that reuses detected in European languages tend to highlight orthographic variations, while reuses in Chinese (as the language employs a logographic script) evidence replacement and editorial decision-making at the level of the individual character, and reuses in our Japanese Aozora Bunko 青空文庫 corpus demonstrate how authors (and/or editors) chose to employ hiragana versus kanji when citing the “same” source. As we continue developing the toolkit we are looking to incorporate new large-scale corpora in Russian, German, Spanish, Arabic, Hindi and Urdu, with the goal of determining if the reuses in those datasets hew more towards what we have found in European contexts or are more similar to the types of reuses in our East Asian corpora. 
+
+We then move on to describing how our approach to intertextuality builds upon previous efforts such as networks of identifiable citations (Long and So, 2013) or general correspondences between intellectual traditions (Kristieva, 1980) by providing an end-to-end system for the unsupervised detection and elucidation of text reuse in all its forms, from “identical” (and lightly modified) passages to various types of allusions to conceptual parallels between and among works. Thanks to the scalability of TextPAIR, we are able to combine the raw output of many thousands of text reuses with network-based visualization techniques in order to discern previously unseen patterns within particular intertextual traditions, such as communities of works and authors that tend to rely on similar sources even though they may not borrow directly from one another. This can take many forms; for example: a group of authors who reuse the same texts to strengthen their arguments, as in a study we conducted on the uses of Lucretius in 18 th century England (Cooney and Gladstone, 2020), or which original sources are unique to versus shared between the twenty-four Chinese official histories (Tharsen and Gladstone, 2020). 
+
+Finally, we explore the wealth of new approaches these methods make possible: detection of correspondences across multiple languages and through various intellectual traditions by leveraging advances in automatic translations made possible by deep learning methods, new ways to map the development of ideas and concepts over the longue durée provided by new matching methods within the TextPAIR framework, and insights into the sources of many of our most classic works, long obscured by time, space and/or lack of prestige. 
+
+ Screenshots and Links: 
+
+The 二十四史 “Twenty-four Chinese Histories” (322,000 text reuses; 90 BCE to 1927) 
+
+TextPair UI: https://anomander.uchicago.edu/text-pair/histories/   
+
+TextPair Viewer: https://users.rcc.uchicago.edu/~jcarlsen/TPV/TPV_histories/   
+
+ The 二十四史 “Twenty-four Chinese Histories” divided by chapter/ juan 卷 
+
+TextPair UI: https://anomander.uchicago.edu/text-pair/histories_juan_flex/   
+
+TextPair Viewer: https://users.rcc.uchicago.edu/~jcarlsen/TPV/TPV_histories_juan_flex/   
+
+ Text reuses in the Aozora Bunko 青空文庫 (over 15,000 works; 1,219 text reuses) 
+
+TextPair UI: https://anomander.uchicago.edu/text-pair/aozora/   
+
+TextPair Viewer: https://users.rcc.uchicago.edu/~jcarlsen/TPV/TPV_aozora/   
+
+ Diderot’s Encyclopédie and 18 th -century French literature (over 7,000 text reuses) 
+
+TextPair UI: https://anomander.uchicago.edu/text-pair/encyc/   
+
+TextPair Viewer: https://users.rcc.uchicago.edu/~jcarlsen/TPV/TPV_frantext_encyc/   
+
+French Literature & Diderot’s Encyclopédie : Closeup of one cluster 
+
+
+# notes

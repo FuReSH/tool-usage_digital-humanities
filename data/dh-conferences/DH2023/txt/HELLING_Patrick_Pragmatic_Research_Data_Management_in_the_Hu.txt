@@ -1,0 +1,58 @@
+
+
+# Introduction 
+
+
+Centers for Research Data Management (RDM) rightly focus on making research data findable, accessible, interoperable, and reusable in the sense of the FAIR Principles (Wilkinson et al. 2016). Repositories for storing research data in a FAIR way are of fundamental importance (Mathiak et al. 2019). 
+
+However, data protection or copyright can impose restrictions on making data FAIR. The software and workflows commonly used by RDM centers are often unable to accommodate such particular needs, or, when they do, require expensive manual interventions. 
+
+There is thus the need to find pragmatic solutions to provide safe, state-of-art archival workflows for data that follows good scientific practice (DFG 2019) but is currently unable to comply with all mandates of the FAIR principles 
+
+This poster introduces the archiving workflow established at the Data Center for the Humanities (DCH) at the University of Cologne for those cases where accessibility is not desired, and findability is optional. This workflow allows us to archive research data in a structured, automated way on tape-storage from infrastructure providers at the University. The research data is thus sustainably stored but not findable and accessible (dark archiving) or, optionally, its metadata is published and findable (cold archiving). 
+
+
+# Background 
+
+
+The DCH is a central institution at the Faculty of Arts and Humanities of the University of Cologne. DCH supports and advises researchers within the Humanities in RDM questions over the entire research data life cycle (Blumtritt et al. 2018, Helling et al. 2018). While the DCH is responsible for domain-specific RDM in the Humanities, central institutions of the university offer basic IT services for RDM, which are used by the DCH. 
+
+
+# Implementation of the archiving workflow 
+
+
+The University of Cologne does not provide an institutional archive and there are no regional, national, or supranational cold and/or dark archiving solutions available to the researchers of the Faculty of Arts and Humanities. 
+
+To meet the demand articulated by the faculty’s researchers, we implemented a dark archiving service. In designing the service, we focused on sustainability, in particular in making it maintainable with a minimal amount of person hours. To achieve this, we developed an archival workflow around standards and technologies that could easily be implemented using software and hardware that is already available at the University and maintained by the IT department. 
+
+All the software code that supports the workflow is written in the form of short Bash scripts. Bash was chosen for its ubiquity, stability, and for being a well understood technology (many experienced users and a wealth of published information). 
+
+The archiving service comprises four key steps: 1) preparation of archival packages, 2) ingestion via university’s long-term tape archive, 3) creation of human-readable descriptive metadata, and 4) optionally, publication of metadata. Mirroring this workflow, we also implemented a retrieval workflow. 
+
+The archival packages are prepared by our software by laying out the received research data according to the BagIt conventions and adding BagIt metadata. BagIt (Kunze et al. 2018) defines a simple way of packaging digital content with data integrity checks and metadata. The bag also contains a structured readme file with basic information provided by the researcher. 
+
+The BagIt-compliant archival packages are ingested into the IBM Tivoli Storage Manager robotic tape library maintained by the IT department. The archival workflow guidelines describe how to map the research data files to the structure required by Tivoli. This mapping is implemented in code and is performed automatically. 
+
+Once the data is archived, descriptive metadata with core information about the data and how to access it is generated and made available for internal use. 
+
+Regarding the requirements of the researchers, we later extended the service with a cold archiving process with published and findable metadata. When that is desired, the core information is published as a webpage via the university’s Typo3 CMS. Structured dataset metadata is embedded as Schema.org/JSON-LD. Additionally, a DataCite metadata file is created from the readme file and is used to register a digital object identifier (DOI) via the DOI service of the university library. 
+
+
+# Conclusion 
+
+
+Our archiving service provides state-of-the-art dark and cold archiving for research data that cannot be published as FAIR data. It achieves its goals in pragmatic ways: it saves manual labor by being fully automated, and it ensures the sustainability of the process by making use of existing, widely available and well maintained technologies. 
+
+
+# notes
+
+[^1]: https://dch.phil-fak.uni-koeln.de/ [last request: 26th of November 2021]. 
+                        
+[^2]: https://dch.phil-fak.uni-koeln.de/fdm-services [last request: 26th of November 2021]. 
+                        
+[^3]: https://rrzk.uni-koeln.de/en/ [last request: 08th of December 2021].
+                        
+[^4]: https://rrzk.uni-koeln.de/en/data-storage-and-share/backup-system-tsm [last request: 08th of December 2021].
+                        
+[^5]: https://schema.datacite.org/ [last request: 08th of December 2021].
+                        

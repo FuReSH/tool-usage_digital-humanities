@@ -1,0 +1,31 @@
+
+This presentation will demo and discuss the production of The Interpretation of Dreams, a four-part virtual reality episodic series that immerses users in visually rich and psychologically complex dreamscapes adapted from Freud’s original psychoanalytical case studies, including “The Ratman,” “Anna O.,” “Dora,” and “Irma’s Injection.” The series, released in 2018 during Tribeca Film Festival’s Immersive program and subsequently screened at Vancouver International Film Festival and VR Para Llevar, was supported and distributed by Samsung through an experimental grant-making program entitled “VR Pilot Season,” the goal of which was to incubate and test the viability of complex, multi-episode, serialized narrative in virtual reality. 
+
+The narrative language of two-dimensional cinema co-evolved with the psychoanalytic language of dreams and the unconscious beginning in the early 20th century. Federico Fellini famously called film “a dream we dream with our eyes open,” while filmmakers from Méliés to Tarkovsky to Lynch to Nolan have utilized cinema to directly represent dream-states. Dreams inform both the form of these films—their so-called “oneiric” quality, evoking a free-floating, disembodied experience, like drifting through a dream—and their content, which explicitly depicts dreamscapes and the structure of the unconscious. 
+
+In many ways, virtual reality as a medium is better adapted to the representation of dream-states and the unconscious than traditional two-dimensional cinema. Most of us do not dream within a frame, after all—we dream immersively. Virtual reality provides a vast new vocabulary for the exploration and visualization of the unconscious, from the construction of surreal landscapes; to the distortion of time, space, perception, and physical law; to user interaction with objects that reveal layers of hidden meaning. Moreover, the language of virtual reality storytelling is still in its infancy, much the way two-dimensional cinema was in the early 20th century. This project therefore began with the question: “Can the psychoanalytic language of dreams provide guidance and inspiration to immersive filmmakers today, as it did for their predecessors a century ago?” 
+
+With this motivating question in mind, the project took as its subject matter the West’s most canonized source—Sigmund Freud’s The Interpretation of Dreams (1900) and the case studies he composed over the successive decade applying his theory. Each episode reimagines one case study as a visually rich, psychologically complex, and emotionally haunting immersive dreamscape. 
+
+Episode 1, “The Ratman”: A polite but troubled law student arrives at Freud’s office complaining of the first recorded symptoms of obsessive-compulsive disorder. As Freud places the patient under hypnosis, the viewer enters a Kafka-esque dreamscape centered around his phobias and sense of criminality. 
+
+Episode 2, “Anna O.”: The first patient in history to undergo psychoanalysis. Freud described Anna as “the actual founder of the psychoanalytic approach.” A 21-year-old paralytic with a rich imagination, Anna expressed her inner world through poetic but melancholy fairy tales inspired by Hans Christian Anderson. 
+
+Episode 3, “Dora”: Freud’s most famous patient, “Dora” was the first test case for the theory of dream interpretation. Arriving at Freud’s office suffering from aphonia (the inability to speak), Dora’s dreams centered around recurring images of fire, the incineration of her childhood home, and the sinister arrival of “Herr and Frau K.” 
+
+Episode 4 , “Irma’s Injection”: In this case, Freud turned his interpretative method back on himself, dissecting the symbolic structure of his own dreams. This episode depicts Freud’s own unconscious fears and his lurking sense that the psychoanalytic enterprise may be built on misguided assumptions about the relationship between mind and body. 
+
+Each episode was deeply grounded in the source material, but took creative license to render the case in a visually immersive form. One of the central challenges of remediating the psychoanalytic materials arose from the fact that Freud’s talking method relied on verbal expression and linguistic association. Virtual reality, even more than traditional cinema, is, however, a visual and sensory medium. It was therefore necessary to find ways to represent the symbolic structure of the cases through visual effects, raising both practical and theoretical questions regarding adaptation, digital remediation, and the narratology of immersive experiences. 
+
+The four episodes can be accessed at the following links and either viewed in equirectangular format or side-loaded into a compatible virtual reality headset: 
+
+https://www.dropbox.com/s/7catl5l4lx8snrx/dreams_ep1_ratman_mod_fix_mux_360.mp4?dl=0 
+
+https://www.dropbox.com/s/9hgsq7rvxdm4x4h/dreams_ep2_anna_mux_360.mp4?dl=0 
+
+https://www.dropbox.com/s/irteseie52edlqk/dreams_ep3_dora_mux_360.mp4?dl=0 
+
+https://www.dropbox.com/s/f6it65asf5k9syr/dreams_ep4_the_doctor_mux_360.mp4?dl=0 
+
+
+# notes

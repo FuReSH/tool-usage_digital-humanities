@@ -1,0 +1,49 @@
+
+Introduction 
+
+The use of images, texts and objects is an essential foundation of history studies. This project funded by the German Ministry of Education and Research (BMBF), seeks to establish an AI-based approach towards modelling image sources and their multimodal contexts as a new technique for researchers in architectural history studies. Related questions are: How do architectural historians discover and evaluate sources? How can AI best be of service to this end? 
+
+State of the Art 
+
+The point of departure for this project is the use of sources and source criticism in history studies. This is usually led by a constructive problem-oriented approach, featuring a critical analysis of the topics and methodologies in question (Reich, 2006) and is highly experience and tacit knowledge based (Polanyi, 1966). 
+
+Language & Vision : Deep Learning (DL) prove themselves ideal for transfer learning at the intersection of image and language processing. For example, semantic representations such as word or sentence embeddings , which the computer learns from texts, are enriched by multimodal data such as image descriptions paired with actual visual representations (Hessel et al., 2019). However, for the extraction of multimodal information from scientific texts, it is still necessary to refine the referential connections between text and image components (Utescher and Zarrieß, 2021). 
+
+Segmentation and Object Recognition : Photogrammetric processes deliver spatial relations between the photographs and the 3D geometries. The datasets that are developed in this method allow for the automatic segmentation (Martinovic et al., 2015, Hackel et al., 2016) of simple structures (Vosselman et al., 2004), as well as a complex objects such as buildings (Li et al., 2016, Agarwal et al., 2011). 
+
+Machine Learning (ML) is playing an ever increasing role in the segmentation of images and object recognition (Minaee et al., 2021, Jiao et al., 2019). 
+
+Research Outline 
+
+The following will provide a brief overview of the first steps in the research. 
+
+
+- Identifying Research Scenarios 
+A series of generic scenarios were identified with the assistance of expert consultation and workshops during the preliminary investigations (Kröber, 2021, Dewitz et al., 2019), and consequently ordered by relevance and priority. Of the 20 described scenarios, the cross-media identification of object descriptions (“Which images, texts, and 3D data describe the same object?”), and the analysis of such descriptions (“How can the dating of historical image and text depictions be supported by multimodal validation using media whose dating has already been established?”), were chosen as the focal points of the research. 
+
+- Cross-Media Classification 
+
+Figure 1: 
+
+
+Identified architectural elements using the Kronentor of the Zwinger in Dresden in the photograph (left), in text (middle), and in the 3D model (right). 
+
+A key requirement to this end, is to identify and name such cross-media elements (Fig. 1). The framework for the description of architectural elements in our project is provided by the Getty Art and Architectural Thesaurus (AAT). In our project the subgroup architectural elements is being used. The identified elements from texts (single words or word groups), images (polygonal image details), and 3D models (individual subgroup objects) are assigned to the concept from the AAT. Different processes are necessary depending upon the source type, e.g. semantic segmentation, Named Entity Recognition (NER), and discourse parsing, in addition to what concerns the identification of the concepts and semantic accumulation. 
+
+- Multimodal Data Accumulation 
+In a further step, various approaches are used for the accumulation and validation of multimodal data. In this way, within the 3D realm for example, 2D images can be used in relation to the 3D model in order to transfer them to the structure at hand provided by the 3D model (Niebling et al., 2018). 
+
+- Automated classification 
+A current step is to investigate approaches towards automating the identification and annotation of objects. For this purpose, AI-based models will be used that are specialized on the respective modalities (3D models, images, and texts). Based on the pipeline described in (Wu et al., 2021) we currently test to enhance quality by better text identification as well as modular object retrieval for the identification of architectural structures in images (Münster et al., in print), and the transfer of this segmentation to 3D models. 
+
+
+
+Next steps 
+
+Based upon the developed demonstrator, next steps will be to cross-validate and multimodal enrich content and test those results with historians in step 1 the research scenario. It is within this area to examine the discrepancy between the requirement of large data amounts for AI models and the complexity of historical expertise can be investigated and evaluate, how existing AI models can be employed within the field of architectural history research and criticism. 
+
+
+# notes
+
+[^1]: http://vocab.getty.edu/aat/300000885, 15.07.2021.
+                        

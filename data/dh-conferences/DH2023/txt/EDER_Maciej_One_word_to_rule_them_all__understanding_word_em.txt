@@ -1,0 +1,97 @@
+
+
+# Introduction 
+
+
+With an advent of deep learning in natural language processing, the ways in which a text could be represented became much more complex and much less transparent. From simple estimations of word frequency distributions, methods shifted to context-aware embeddings and neural network generalizations. These opaque representations made their way to the authorship attribution with obvious improvements across different tasks (Benzebouchi et al. 2018; Gómez-Adorno et al. 2018; Kiros et al. 2014; Posadas-Durán et al. 2017). Yet, this improvement did not bring us closer to understanding of authorial style. Rather the opposite happened, and we have obscured the reasons for feature effectiveness in attribution tasks. 
+
+In this study we want to ask how much of the contextual information matters for authorship attribution in a conservative setting (authors represented by a few large fictional texts). We propose a simple experimental setup with a basic word embedding model that represents words by their contexts (or co-occurrence with other words in immediate proximity); in such a setup, each word is represented by a vector of coordinates in a semantic space, instead of using traditional word frequencies. In order to get to a text-wide vector representation, we use several tactics, derived from sentence/paragraph embedding approach (Le & Mikolov 2014) and is similar to “timestamping” tokens (Dubossarsky et al. 2019). Our approach mostly boils down to adding quasi-tokens that are tied to each specific text in the corpus: they act as sponges, soaking word occurrences from their immediate context. We use this sponges as “text embeddings” that share the same vector space with actual words from the corpus. Having control on text and context representation, we manipulate the underlying words (by randomly shuffling them or changing the principles of quasi-tokens distributions). 
+
+
+|  || D 1  || D 2  || D 3  || D 4  || D 5  || …  |
+|-||-||-||-||-||-||-|| morning  || 0.402  || 0.716  || –0.930  || –0.264  || –0.046  || …  || the_Barclay_1  || 0.469  || 0.351  || 0.054  || –0.979  || 0.171  || …  || table  || –0.810  || 0.255  || –0.675  || 0.227  || 1.059  || …  || breakfast  || –1.010  || 0.485  || -0.542  || 0.462  || 0.500  || …  || the_Bennet_2  || –0.072  || 0.295  || -0.212  || –0.640  || 1.020  || …  || …  || …  || …  || …  || …  || …  || …  |
+
+
+What we learn, is that accurate contextual representation does not matter for attribution task: text embeddings of randomized novels work similarly to embeddings that preserve original word order and learn context-aware semantic representations. In other words, we can have accurate authorship classification even if individual word vectors and their contextual neighborhoods contain but noise. This suggests that the authorship signal continues to be largely driven by underlying document-specific distributions of word frequencies. 
+
+What we learn, is that accurate contextual representation does not matter for attribution task: text embeddings of randomized novels work similarly to embeddings that preserve original word order and learn context-aware semantic representations. In other words, we can have accurate authorship classification even if individual word vectors and their contextual neighborhoods contain but noise. This suggests that the authorship signal continues to be largely driven by underlying document-specific distributions of word frequencies. 
+
+
+# Data and methods 
+
+
+We use “100 English novels” as our test corpus, which was employed in other benchmarking experiments (Rybicki & Eder 2011; Eder 2013). It has 33 authors represented by 3 novels each. On the one hand, the authorship recognition is a rather trivial task in this case, since chronological distribution of authors is wide (from Bronte sisters to Virginia Woolf). On the other hand, the attribution scenario is not that trivial, since the classifier has to search through 33 candidate classes for the correct answer. Despite possible limitations of our benchmark dataset, however, we consider it to be suitable for experimental setups that do not try to “stress-test” methods or claim improvements over state-of-the-art. 
+
+Over the course of experiments we use GloVe algorithm for learning word association using matrix decomposition, without any shallow or deep neural networks. We prepare text representation within a word-based model in following ways: 
+
+
+- MFW-sponge. Given a word X from the list of 200 most frequent words, we transform all X tokens by adding to them their corresponding text IDs. E.g.: “the_Doyle_1”. We assume that tying identity tokens to frequent words gives a natural access to wide contexts in which these function words occur. 
+- Dummy-sponge. Instead of learning existing tokens, we add non-existent identity tokens randomly to each text. E.g.: “Mr. DUMMY_Doyle_1 Sherlock Holmes, who DUMMY_Doyle_1 was”. 
+
+
+The frequency of dummy sponges is also determined by several approaches 
+
+
+- Dummy-token frequency (DTF) is tied to frequency of “the” in a given text; 
+- DTFis taken randomly from normal distribution with μ equal to the mean relative frequency of the word “the” across the corpus, and σ equal to the standard deviation of “the”; 
+- DTF is constant, based on max relative frequency of “the” in the corpus; 
+- DTF is an arbitrary constant, larger than the most frequent word (we have picked the value of 0.08); 
+- DTF is inferred through a word-rank ~ frequency model (what would be a frequency of a word more frequent than most frequent word in a natural language?). 
+
+
+We apply this text-embedding logic to 1) original text; 2) randomly shuffled text; 3) text where all words under a certain frequency threshold were replaced. We train small-scale GloVe models for each variation in the textual setup (100 novels are the only source of learning the contexts). 
+
+For authorship attribution, we use SVM classification with linear kernel, using “identity vectors” or sponges as text representation. Each quasi-token has the same dimensionality as the original GloVe model (300 in our case). Importantly, we test one sponge at a time, using its 300 dimensions as features for SVM. We cross-validate each model randomly placing 2 novels for each author to represent test set and leaving 1 (33 novels altogether) for the training set. 
+
+
+# Results 
+
+
+First and foremost, the identity vector approach works at a competitive level. The inter-textual relationships could be roughly represented via UMAP (Fig. 1) that projects all text-vectors alongside with the subset of the most similar words (cosine similarity). We achieve 0.93 median accuracy, which is slightly better than the methodological baseline that uses simple MFW approach. 
+
+
+
+# Fig. 1: 
+
+
+UMAP projection of the sponge-vectors “the” with their 20 immediate contextual neighbors (cosine similarity, repeated neighbors were represented only once). 
+
+
+Secondly, we notice that performance is strongly related to the frequencies of quasi-tokens (Fig. 2), suggesting that the more access to parts of target text we have, the better. However, the position of the tokens themselves did not matter: best dummy-sponge performance was at the level of best MFW-sponges performance. 
+
+
+
+# Fig. 2: 
+
+
+Linear model that predicts decrease in accuracy with increase in log-frequency rank. Increase in each log-unit in quasi-token frequency rank results in ~18% accuracy drop. Points are showing original accuracy scores from cross-validation 
+
+
+Thirdly, it turned out that the position of tokens didn’t affect the classification results, and the same could be said about the original structure of the text, suggesting that the word order (and thus the context) is neglectable for attribution. If all the words across all the novels were randomly shuffled, the performance of dummy-sponges stayed at the same level. Representation of word semantics became meaningless, but the attribution task was still brute-forced by the information retained by the sponges. 
+
+
+
+# Fig. 3: 
+
+
+Results for dummy-sponges in original texts (left). Results for dummy sponges that “soak context” in randomly shuffled pools of words (right). 
+
+
+Furthermore, in a scenario when only 500 most frequent words were left in the original texts, while the remaining words were replaced by flat fillers (e.g. “DUMMY DUMMY DUMMY was DUMMY in the DUMMY DUMMY”), our sponge approach was still able to produce accurate attributions (albeit worse, with median accuracy at 0.81). 
+
+
+# Discussion 
+
+
+Our results show that it is possible to completely remove context-dependent semantics from texts, yet embedded text-wide vectors will still perform well for authorship attribution tasks. This strongly suggests that contextual representation in authorship attribution remains driven by the sheer frequency of the most frequent units of language, and the chance for identity tokens to be exposed to text-specific surroundings. This not only highlights that complex and simple text representations draw from the same source of word frequency distributions (cf. Dębowski 2021), but also suggests the path to formal independent modeling of style and meaning, allowing for complex style transfers and adversarial stylometry (Brennan et al. 2012), where the task is to mask the style of a writing, but preserve the message for maintaining anonymity. 
+
+
+# Acknowledgements 
+
+
+This research is part of the project 2017/26/E/HS2/01019, supported by Poland’s National Science Centre. 
+
+
+# notes
+
+[^1]: 58343434343415

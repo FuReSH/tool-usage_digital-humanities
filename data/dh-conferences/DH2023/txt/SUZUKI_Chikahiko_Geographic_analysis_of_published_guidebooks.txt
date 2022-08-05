@@ -1,0 +1,43 @@
+
+Introduction 
+
+In Japan, guidebooks became popular during the Edo period (17th to 19th century). The contents of the guidebooks were cited in various genres, such as literature, leading to the spread of a general Edo ( 江戸 present-day Tokyo) city image [1]. Even today, the public perception of Edo is based on these images. Many travel diaries written in the Edo period are preserved today, shedding light on personal activities in Edo city. Akio Suzuki enriched the image of Edo by comparing the general image in the guidebooks with the descriptions in some travel diaries [2]. An even broader image of Edo can be reproduced by quantitatively expanding Suzuki’s method. Such an expanded method would be comparable to tourist information from today’s online reviews. 
+
+For the aforementioned purpose, apart from increasing the amount of information from publications that form the basis of the city image, we organized and considered various individual activities written in diaries as historical activity records. We integrated the findings of the previous studies that compared some of these recorded activities. Therefore, we proposed a method for structuring the description of the diaries and guidebooks using identifiers. These identifiers helped connect place names that appeared in documents with modern-day geographic information. 
+
+Materials and Tools 
+
+As a record of individuals that corresponds to “online reviews,” we selected the diary of three people with different attributes who visited the city of Edo during end of the Edo period [3]: Hachiro Kiyokawa ( 清河八郎 ), a bushi ( 武士 , literally warrior or samurai ); Senkou-In ( 泉光院 ), a priest of Shugen-do ( 修験道 ); and Heinrich Schliemann, a German archaeologist who visited Edo after the shogunate opened the country. First, we extracted the date (original Japanese calendar notation), converted Christian era data using HuTime [4], place names, and actions from the diaries of these three people. Second, we linked GeoLOD [5] identifiers to the extracted place names. For the comparison with the extracted description, we used a database of illustrations of guidebooks in the Edo period [6]. 
+
+GeoLOD is a web service for the registration, management, display, and sharing of geographic information by assigning identifiers (GeoLOD ID) to place names. With GeoLOD, we linked place names appearing in multiple sources with their GeoLOD ID’s latitude and longitude. GeoLOD enables the integration of not only the place names but also various information contained in the original material into the “geospace”, or information space based on geographic information. We then analyze this information on the geospace. 
+
+Results and Discussion 
+
+Figure 1 visualizes the activities of Hachiro Kiyokawa in Edo, achieved by linking geographic information with his narrated activities [7]. Furthermore, GeoLOD allowed us to not only link activities and geographic information but also to integrate and compare diary descriptions and information in publications. 
+
+
+Fig.1 
+
+
+Linking Hachiro Kiyokawa ’s movement with a modern-day map 
+
+By comparing descriptions, we found that all three people with different attributes visited the most famous places of the time, such as Atagoyama ( 愛宕山 ) and Sensoji Temple ( 浅草寺 ). Furthermore, by linking materials using GeoLOD, we could compare the diary descriptions with the illustrations of famous places in guidebooks. Thus, we could clarify the difference between the situation of the famous places that each traveler paid attention to and the general image depicted in the publication. We noted various situations in Edo by finding the differences between the basic stereotyped images and individual observations (Fig. 2). Furthermore, by using identifiers, we could easily add and compare information. 
+
+
+Fig. 2 
+
+
+Schliemann’s description of Sensoji Temple in an original French version (above) and the illustration of a Japanese guidebook of the same period (bottom). The products of the stalls are described in detail, reinforcing the general image. Meanwhile, no description is given of the large lantern that represents Sensoji Temple. 
+
+By developing connections with geographic information, we could collect data on the movements and behaviors of people described in historical materials as historical activity records. Future work may link various data extracted from historical materials, such as historical activity records, with spatiotemporal information. 
+
+We further utilized GeoLOD to publish “edomi” [8] by linking the databases with geographic information. “edomi” is a data portal site that offers a panoramic view of the city of Edo and various information on the Edo period. Users can search and utilize historical information across categories based on the current perspective (Fig. 3). By linking the movement of the three people with edomi, we plan, in a future work, to not only present geographic information but also clarify the relation between tourists and famous places in Edo. 
+
+
+Fig. 3 
+
+
+Category list of content available on edomi: travel, shopping, map, gourmet, politics, economy, disaster, and learning (Japanese only as of November 2021) 
+
+
+# notes

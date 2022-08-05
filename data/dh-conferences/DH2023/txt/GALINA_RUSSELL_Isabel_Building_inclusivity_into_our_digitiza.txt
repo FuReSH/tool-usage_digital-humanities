@@ -1,0 +1,31 @@
+
+
+# Introduction 
+
+
+For several decades now there has been an emphasis on the importance of digitizing library collections, in particular bibliographic heritage materials. Although they are considered fundamentally useful and good for society in general, digitization projects are not neutral and they create new digital paradigms of our cultural memory (Thylstrup 2018) . 
+
+As part of our work for Oceanic Exchanges , we documented the creation of the HNDM, Mexico’s national digital newspaper library. Using document analysis and interviews, we studied the complex interplay of technical, political and administrative decisions and the effect these have had on the resulting digital collection, its scope and usefulness (Galina Russell y Priani Saisó 2021; Galina Russell et al. 2020) . In particular, we noted that decisions regarding what should be digitized, and how it should be digitized (and then processed and presented), were not properly documented. This lack of context hampered our ability as researchers to properly interpret the results we were obtaining from text mining techniques. We found evidence that suggests that decisions regarding what was being digitized and how it would be presented were based mainly on previous decisions and were practical in nature, such as digitizing the microfilmed collection, rather than a critical inquiry of what this new digital collection would represent. 
+
+It was this that led us to develop a new research project which seeks to critically analyze digitization projects in Mexico, as we think that many of them have not conscientiously questioned broader aspects beyond digitization, such as the origins of the collections themselves, the selection process for digitizing and how to (re)present the object digitally. In doing so, they simply transfer the existing biases and under and over representations of particular materials, to the new digital collections. Additionally, the physical artefact is simply reproduced in a digital format without providing access to the digital object as such, which in the case of textual collections, like the HNDM, would be the OCR text files. 
+
+The aim of this project is to critically examine how digitization projects have contemplated (if at all) these issues, and to propose new angles to thinking about digitization projects that can be more inclusive in representing traditionally marginalized populations, with a vision that goes beyond just visually representing the physical artefact and includes a digital representation that can be examined and used by computational methods. 
+
+
+# Initial findings 
+
+
+Approaching digitization projects from this perspective is relatively new, and as such, we have worked on identifying relevant studies. There has been work done using critical race theory, feminist studies and postcolonial approximations to cultural digital collections in general, but we have found less work related to libraries and in particular digitization projects. Honma (2005) addresses issues related to race and LIS from a US perspective. Work has been done on post-colonial archives (Gauthereau 2018; Becerra-Liche 2017) , but we are particularly interested in digitization of library collections. There is also important work regarding libraries lack of neutrality (Galván 2015; Matienzo 2015; De Jesus 2014; Beatty 2014; Bourg 2015) . This work is relevant for our analysis but it is based in a different national context from ours in Mexico. 
+
+Latin America has a strong background in fields such as anthropology, sociology and political science, that examine the inequalities and exclusion which result from colonialism and post-colonialism, in particular related to the indigenous populations. Feminist studies have also addressed this in relation to the patriarchal system, gender violence and discrimination. In relation to LIS there is some work, in particular related to Open Access movement (Alperin, Fischman, y Marin 2015) and work related to information and indigenous populations in Mexico (Ramírez Velázquez y Figueroa Alcántara 2021) so far we have not identified work regarding digitization and libraries within this framework. 
+
+
+# Future steps 
+
+
+This research project is currently in development. So far, we have established that there is indeed little work in this area, and we are proposing a particular framework from which to approach the next part of our work. We are now working on compiling a list of digitization projects in Mexico that have worked with cultural heritage textual materials. From here we shall select four case studies for in-depth work related to how the digitizing project was undertaken. We are also planning a workshop to receive further input from practitioners regarding these issues. Our final aim is to contribute towards creating more inclusive digitization projects. 
+
+
+# notes
+
+[^1]:  See Oceanic Exchanges- Tracing Global Information Networks in Historical Newspaper Repositories, 1840-1914: https://oceanicexchanges.org/

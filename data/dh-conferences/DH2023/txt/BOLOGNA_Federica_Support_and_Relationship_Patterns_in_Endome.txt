@@ -1,0 +1,48 @@
+
+
+# Introduction 
+
+
+In online support communities, people with endometriosis share experiences of navigating interpersonal relationships while living with a chronic illness. These stories suggest patterns in illness narratives that are unique to relationships with doctors, friends, and family and the kind of support patients receive. Scholarship and literature in the medical humanities have emphasized the importance of understanding relationships in the experience of pain. Therefore, we study the framing of relationships in online endometriosis medical narratives, by designing a classifier to identify the connections between characters, subject matter, and intent in patients’ stories. Resulting predictions suggest narrative arcs in the interpersonal endometriosis experience, both in and across posts, as well as societal changes in the awareness of endometriosis. We hope our methodology will be implemented in future research on illness narratives and contribute to the advancement of medical humanities. 
+
+
+# Related Literature 
+
+
+Language is the main tool available to the sick to make their pain visible to others, receive care, as well as spark collective action (Scarry, 1987). Studying illness narratives is thus essential to improve medical care, especially for marginalized communities whose experiences of pain may not be adequately acknowledged. Contemporary medical knowledge and practices are tied to the disenfranchisement of certain peoples, as they are informed with Enlightment androcentric and heteronormative notions (Lupton, 2012; Ussher, 2003; Laqueur, 2003). 
+
+Women’s health, and endometriosis specifically, are complex subjects to consider in the study of illness narratives. Female pain is often dismissed, as the female body’s distinctive qualities are considered deviations, and hysteria discourse continues to characterize contemporary medical literature (Young et al., 2019). When treating genital conditions, women’s ability to fulfill their reproductive duties is given priority over their need for relief or pleasure (Farrell and Cacchioni, 2012; Scully and Bart, 1973; Ussher, 2003; Lupton, 2012). Consequently, women who suffer from sexual pain are faced with disbelief from their physicians, who perceive them as “difficult” for not accepting the medical system’s failure at treating them (Feldhaus-Dahir, 2011; Jones, 2015). 
+
+In addition, relationships hold a special role in how the marginalized experience illness. Female lung-cancer patients are faced with pity, fear, or judgment by friends and family, who either give the patient up for dead, worry about being contaminated, or blame them for their condition (Sontag, 1978; Tomalia, 2014). The fear of contagion is a recurring element of AIDS narratives as well. Here, however, managing the disease and spreading awareness becomes a collective effort in which friends and partners take action. Indeed, many AIDS stories are recounted by people close to the patient (Wojnarowicz, 1991; Guibert et al., 2020). Lastly, for some patients, relationships are their only chance to be heard and to receive proper care, and thus have the power to free or imprison them (Keller, 2010; Gilman, 2018) 
+
+
+# Data 
+
+
+Online endometriosis support communities exist on many platforms and in many forms. We focus on Reddit because it has two thriving endometriosis support communities, the subreddits r/Endo and r/endometriosis. Posts from r/Endo span from January 23rd 2012 to September 30th 2021, and r/endometriosis from November 23rd 2014 to September 30th 2021. 
+
+|  || r/Endo  || r/endometriosis  || Total number of posts  || 20,479  || 10,793  || Median number of tokens per post  || 135  || 132  || Unique authors  || 9,074  || 6,475  |
+
+
+We merge the data from r/endometriosis and r/Endo based on substantial similarities in post content and comparable statistics of the subreddits (table 1). 
+
+
+# Supervised Classification 
+
+
+To study the framing of common roles in endometriosis narratives, we design a supervised classification task to identify character tropes, and the post’s expressed intent. Character tropes are a set of likely relationship types that often occur in an endometriosis narrative, including family, partner, doctor, and endometriosis support community. 
+
+We then look at the different roles a person tends to assume in online health communities, like seeking or providing support (Yang et al., 2019). We use McDowell and Antoniak’s (2020) labels for intent, including providing emotional support, seeking emotional support, providing informational support, seeking informational support, providing experiences, seeking experiences, plus an additional label, venting. This intent category turns the focus onto the post’s author, to find the role they assume as a member of the community. After labeling posts from the combined r/Endo and r/endometriosis datasets, we train and test a series of binary DistilBERT classification models for both labels. 
+
+To explore themes in endometriosis illness narratives, we perform topic modeling at the level of the paragraph. After experimenting with LDA parameters and manually validating several different runnings of the algorithm, we find that the most suited model for our purposes is obtained when setting the number of topics to 25 and removing the 10 most frequent words in the collection. Among the identified topics, a few are dedicated to expressing empathy and gratitude confirming the importance of the patients’ relationship to the community for their well-being. 
+
+By comparing topic model distributions with predictions about character tropes and expressed intent, we identify how community members narrativize their personal relationships by considering patterns in predicted labels. Changes in the framing of these relationships demonstrate changes in individual and societal experiences of living with endometriosis. We hope that our relationship models can be used in future humanities research on support communities and illness narratives. 
+
+
+# Conclusion 
+
+
+By studying the framing of relationships in endometriosis support communities, we draw attention to the myriad ways endometriosis patients find support through their doctors, partners and family, and online community. We consider how such support might also be lacking, resulting in the patient relying on another relationship for emotional, experiential, and informational support. Highlighting stories about relationships in the endometriosis support community demonstrates the significance of shared experience and community when living with chronic illness. 
+
+
+# notes

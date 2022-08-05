@@ -1,0 +1,69 @@
+
+Over the last decades, several breakthroughs have made the dream to automatically transcribe thousands of handwritten documents a reality (Causer et al., 2018; Sánchez et al., 2017; Seaward, 2017; Yin et al., 2013). For example, software like Transkribus (Kahle et al., 2017) and eScriptorium (Stokes et al., 2021) provide non-specialist users with simple environments to conduct transcription campaigns relying on efficient HTR engines. While transposing scriptures from a piece of paper onto a text editor used to require effort and concentration, it is now possible to imagine simply pressing a button and letting your computer work while you start preparing your next cup of tea. A few minutes later, your drink is ready, and so is the transcription of the two thousand pages you needed. As automatic transcription software is about to produce huge volumes of data (Clanuwat et al., 2019; Camps, 2021. See also the Vietnamica project .), it seems crucial to think about how we can interact with the resulting files with maximum efficiency. 
+
+In response to previous similar initiatives (Carius, 2020), we would like to present an end-to-end workflow revolving around the use of various automatic techniques to go from a set of digital images to the actual publication of a text edition. Such techniques include, on top of HTR, information extraction tools and an open source and ready-to-use environment for publication. Moreover, we aim to make this framework as simple and generic as possible: it is independent from the transcription engine, and potentially compatible with any language, writing system, and any type of document (Balogh and Griffiths, 2020. See also the TEI Special Interest Group for East Asian/Japanese ). 
+
+Several key principles ensure the coherence of the workflow: transparency and availability of the data at each step and the use of a fully standardized format like TEI XML as the cornerstone to store all the available information. Other XML standards like ALTO or PAGE (Pletschacher & Antonacopoulos, 2010) are commonly used by transcription software to export the output, but we advocate for a change of paradigm in order to give more importance to TEI earlier in the workflow (Scheithauer et al., 2020). The TEI guidelines define a set of elements to document this type of data, namely “sourceDoc” and its children . Leveraging TEI from the start is essential to connect the metadata of the images and documents, the text and layout information generated during the transcription, and any further editorial layer added to the raw transcription. 
+
+
+Fig. 1: 
+
+
+TEI as a threefold structure. 
+
+We imagine a configuration capable of processing a large family of TEI customizations as long as the file follows a structure (Fig. 1) in which: 
+
+
+- “teiHeader” stores the metadata, 
+- “sourceDoc” the raw transcription, and 
+- “body” the interpreted logical structure along with the editorial layers . 
+
+
+We thus aggregate two phases in the digitization lifecycle which are often disconnected. 
+
+Editorial operations can include preprocessing tasks such as post-HTR corrections (spell-checking) and text normalization, as well as information extraction (text mining). When the volume of data increases, extracting and linking named entities with indexes quickly risks becoming a laborious task. Instead, natural language processing tools can automate the process (Ehrmann et al., 2020; Frontini et al., 2015) all the while relying on the analysis of the sentences and words within their context. We developed Semantic@ , a proof of concept utilizing deep learning models, to extract named entities which are then cycled back into the TEI tree (Fig. 2). The extraction of named entities (i.e. names of people, places, or dates, etc.) is a crucial step before disambiguation which further permits to build links with open general or domain-specific knowledge bases. These steps allow for later explorations of the text with data mining technologies. 
+
+
+Fig. 2: 
+
+
+Virtuous circle for the enriched TEI document. 
+
+Once all the layers of an edition are connected into the same TEI file, edited documents can be posted online with softwares like TEI Publisher (Turska et al., 2016; Chiffoleau et al., 2021). It provides a fully customizable environment where templates generate “views” based on the content of the XML files. With the aforementioned TEI structure, we propose an edition template containing: 
+
+
+- a flat representation of the transcription, 
+- an imitative representation of the transcription based on SVG integrating the layout of the pages, 
+- a diplomatic edition of the source document, based on the content of the body element, and 
+- a facsimile, using the IIIF protocol (Fig. 3). 
+
+
+
+Fig. 3: 
+
+
+A mock-up showing the four different views potentially available in an application like TEI-Publisher. 
+
+We would like to take the opportunity of presenting a short paper during the DH2022 international conference to subject our framework (Fig. 4) -and its robustness to different writing systems- to the scrutiny of the DH community. In particular, we believe that our proposition addresses challenges raised by Open Science, primarily the necessity to gain better control over every step within complex pipelines that involve various tools, thus facilitating reproducibility. A paradigm revolving around a pivotal element, like a TEI file grouping the different results, frees us from the constraint of a linear progression by maintaining multiple entry points in the workflow. 
+
+
+Fig. 4: 
+
+
+Simplifying the workflow by using TEI from the beginning. 
+
+
+# notes
+
+[^1]:  HTR stands for Handwritten Text Recognition.
+[^2]: Vietnamica is a research project undertaken jointly by the École Pratique des Hautes Études, the Institute of Hán-Nôm Studies, the Social Sciences Academy of Viêt Nam and the National University of Viêt Nam (Faculty of Humanities and Social Sciences). See https://vietnamica.online/
+[^3]:  Rosa Stern defined information extraction as a task consisting of extracting and structuring, in semantic classes, the specific information elements contained in non-structured data for automatic processing, such as coreference resolution, relationship extraction, and named entity recognition (Stern, 2013, p. 59).
+[^4]:  See https://tei-c.org/Activities/SIG/EastAsian/ and https://wiki.tei-c.org/index.php/SIG:East_Asian
+[^5]:  See the Analyzed Layout and Text Object (ALTO) 4.2 schema specifications at https://www.loc.gov/standards/alto/news.html#4-2-released
+[^6]:  See https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDoc.html
+[^7]: 
+                        Including when the images are distributed within the IIIF framework .
+                    
+[^8]:  Logical structure reconstruction can be performed semi-automatically (see the pipeline built for the LECTAUREP project called “LEPIDEMO”, https://github.com/lectaurep/lepidemo), or automatically with tools such as GROBID (https://github.com/kermitt2/grobid).
+                        
+[^9]:  An XML-based markup language, see the Scalable Vector Graphics (SVG) 2 recommandations at https://www.w3.org/TR/SVG2/ ; we wish to point at the fact that working with SVG when displaying transcriptions allows us to deal with different writing systems and languages.

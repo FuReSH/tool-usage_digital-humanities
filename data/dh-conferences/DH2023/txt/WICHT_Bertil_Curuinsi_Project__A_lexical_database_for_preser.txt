@@ -1,0 +1,83 @@
+
+
+# Introduction 
+
+
+In the field of Natural Language Processing, the concentration of technological efforts focuses on widely spoken languages. In this regard, the vast majority of spoken languages can be characterized as under-resourced languages (Thai et al., 2019).This lack of digital resources and projects is particularly challenging for indigenous languages that are facing the threat of extinction. In order to address such a compelling issue, we spent one month doing fieldwork with native speakers, thanks to which some shortcomings emerged. In particular, the lack of technological support to help the preservation of this language. 
+
+
+# Context 
+
+
+Tikuna is spoken by a relatively small group of people of roughly 20,000 people living in the Amazon. The language is slowly dying, replaced by Spanish. Despite the continuous efforts of linguists and anthropologists whose studies keep the language alive and the interest in maintaining it, at present there are no persistent and ongoing digital projects that disseminate and preserve this linguistic culture. 
+
+Despite such an observation, this work was possible thanks to some very rare resources found on the web which are: 
+
+
+- a word list compiled from documents translated in Tikuna (Scanell, 2007) 
+- a hunter-gatherer word database containing 647 entries 
+- a PDF bilingual dictionary in Spanish-Tikuna (Anderson and Anderson, 2017) 
+
+
+Similar to our colleagues in the Kamusi project (Martin and Radtezky, 2014), creating digital resources from digitized paper documents presents methodological challenges that cannot be neglected. As in our case, the quality of digital capture is often not the best. Therefore, for this project, we focused on the best quality document, the bilingual dictionary, to create a fully digitized resource such as an interactive database. 
+
+
+# Methodology 
+
+
+The overall pipeline as depicted in Illustration 1 for the project consists in 4 main steps : 
+
+
+- conversion of the PDF dictionary in an editable text format 
+- correction and restructuring of text 
+- annotation and extension of the database 
+- assessment and analysis of the data 
+
+
+
+# Illustration 1: 
+
+
+The 4 sequential steps of the text processing 
+
+For the conversion of the PDF file we employed the Adobe Acrobat OCR converter . Due to the weak PDF structure and the complexity of the diacritics, the OCR output required substantial manual cleanup work during phase 2 to ensure automatic segmentation. The text file contained 5828 lines, each providing synsets for a Tikuna word or expression. Illustration 2 shows the way the original scanned document content was segmented in order to capture each distinct element. Examples were not captured due to limitations concerning regexes and lookarounds in this particular context with complex diacritics. Element referring to another Tikuna word were not kept, as the semantic relation between the terms were unclear. For those synsets lacking POS tags, we used the spacy tagger to annotate them. Instead those synsets for which the dictionary provided the POS, we just standardized the tag so that it was uniform with the tagset provided by spacy. Finally, in step 4, we ran some analysis to validate the data structure and provide insights on the overall performance of the procedure. 
+
+
+# Illustration 2: 
+
+
+Vizualisation of the text segmentation and labelling 
+
+After the above mentioned segmentation process, we classified the synsets in four categories based on the number of synsets provided per Tikuna tokens and the number of POS tags per synsets as shown in Table 1. 
+
+| Monosemic with POS tag  || 4094  || Monosemic without POS tag  || 1258  || Polysemic with single POS tag  || 544  || Polysemic with multiple POS tag  || 42  |
+
+# Table 1: Overview of classified entries from the initial document 
+
+
+
+
+Lastly, as shown in Table 2, we assessed the data loss during the process and the missing data from the database. The only missing data regards translations and encompass all entries that did not have a word for translation but rather an explanation of the word. 
+
+| Tikuna  || 0  || Prononciation  || 0  || Gram. Type  || 0  || Translation  || 26  |
+
+# Table 2: Data quality assessment 
+
+
+
+
+The database is freely exploitable through an interactive web application, user-friendly and ready-to-use . 
+
+
+# Conclusion 
+
+
+In a future phase of the project, we intend to extend the database and not only to transcribed entries but each entry could have all oral variants incorporated, since Tikuna is a primarily oral language and therefore many words have multiple phonetic forms. Also, since the initial document was created to facilitate indigenous reading of the Bible, most of the content is geared toward this use. Therefore, the actual content of the corpus is not representative of the language or culture of the Tikuna speakers. However, some complex cultural meaning as explained by Santos (Santos, 2013) are lacking. Better integration of indigenous ontologies is needed to ensure inclusivity and representativeness. By doing so, we can build cultural data models with other ontologies that are more inclusive and representative of cultures. For this task and for the next steps of the project, collaboration with native speakers would be necessary, which we are already working for. 
+
+
+# notes
+
+[^1]:  The Hunter – Gatherer database can be found at : https://huntergatherer.la.utexas.edu/languages/language/110
+[^2]:  The Adobe OCR can be obtained at : https://www.adobe.com/acrobat/how-to/ocr-software-convert-pdf-to-text.html
+[^3]:  spacy is freely available at : hhtps://spacy.io
+[^4]:  The application is available upon request contacting the first author

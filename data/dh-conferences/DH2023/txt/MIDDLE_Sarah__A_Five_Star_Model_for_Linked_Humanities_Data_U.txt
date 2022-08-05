@@ -1,0 +1,49 @@
+
+
+# Introduction 
+
+
+Of the various approaches to modelling Humanities data, Linked Data is particularly effective for representing complexity and nuance, while facilitating implementation of the FAIR data principles (Findable, Accessible, Interoperable, Reusable) (Wilkinson et al., 2016). However, despite a recent increase in Linked Humanities Data production, uptake remains low, partly due to usability issues. This paper presents key findings from a study that investigated these issues by focusing on the Ancient World, a subject domain where Linked Data implementation is relatively mature and which, due to its multi-faceted nature, could be considered a microcosm of Humanities research. My study sought to establish user and producer needs through a survey of the research community and detailed interviews with selected participants. Responses informed a series of recommendations, presented as a Five-Star Model for Linked Humanities Data usability. 
+
+
+# Background 
+
+
+The term ‘Linked Data’ refers to a set of technologies to describe entities, such as places, people, or objects, and connect them based on features they have in common. A Linked Data approach can provide significant benefits for Humanities research: its rich semantic descriptions, disambiguation capabilities, and interoperability can unlock opportunities to address new research questions and reveal previously undiscovered relationships. However, previous research has identified barriers to producing Linked Humanities Data, including unfamiliarity with a graph data model (Barbera, 2013: 96; Ross et al., 2015: 118), the significant time investment required for training, and difficulties in securing support (Isaksen, 2011: 153–54; Geser, 2016: 12, 56; Granados-García, 2020: 261–64). Where time is short and training/support are limited, Linked Data producers naturally prioritise immediate project goals over long-term usability. 
+
+Recommendations to assist the production of usable Linked Humanities Data tools and resources are therefore required. Progress has been made by the ‘Linked Open Usable Data’ (LOUD) initiative, resulting in the definition of five ‘Design Principles’(Linked Art Contributors, no date); however, their primary aim is usability by developers, rather than end users. Elsewhere, user consultations have been conducted in relation to specific tools and resources, such as Europeana (Angelis et al., 2015) and Recogito (Simon et al., 2015). My study differed from these in investigating the usability of multiple tools and resources across the wider digital ecosystem. 
+
+
+# Methodology 
+
+
+The first phase of my study comprised a survey of Ancient World researchers. Assuming Linked Data use among this audience would be relatively low and intending to gain broader insights, I aimed the survey at all Ancient World researchers who use digital tools or resources, with specific questions about Linked Data use and production. The survey ran during spring 2018 and received 212 responses. The second phase involved interviews with 16 survey participants to explore their experiences in more depth (between autumn 2018 and spring 2019 ). Interview participants had differing levels of technical experience, while being broadly representative of the survey demographics. 
+
+
+# Findings 
+
+
+From analysing participant responses, I found that usability can be facilitated by considering six key factors when planning a Linked Humanities Data project: training, collaboration, user-centred design, documentation, access, and sustainability. Based on these factors, and inspired by Berners-Lee’s (2010) five-star model for Linked Open Data, I propose the following Five-Star Model for Linked Humanities Data Usability , aimed at project leaders: 
+
+★ Transparency: provide clear documentation about the tool/resource, its data structures, and functionality; 
+
+★★ Extensibility: build upon existing systems or facilitate future extension; encourage integration of new data; 
+
+★★★ Intuitiveness: develop clear user journeys to facilitate completion of intended tasks; 
+
+★★★★ Reliability: ensure consistent functionality, while minimising downtime; 
+
+★★★★★ Sustainability: support continued functionality for (at least) a fixed period. 
+
+The above components appear in the order in which they might be considered when planning production of a Linked Humanities Data tool or resource; however, during development they are likely to be addressed simultaneously. Throughout the development process, it is crucial for people with requisite skills and knowledge (or sufficient interest to acquire them through training) to work collaboratively. Eventually, these collaborations can form communities of practice, e.g., those that support Pelagios and Papyri.info . Such communities can assist in maintaining tools or resources in the long term, facilitating development, managing new contributions, and sharing knowledge. 
+
+
+# Conclusions 
+
+
+Linked Humanities Data usability is affected by decisions made during the planning stages of tool or resource development; key factors that facilitate this usability, as demonstrated through my Five-Star Model , could equally apply to other technological approaches. However, because Linked Data production is relatively complex and because the potential for reuse is so great, particular care must be taken in ensuring its usability by the research community. This framework of key factors to consider early in the development process should help encourage future Linked Humanities Data producers to prioritise usability and identify areas requiring support or training. As a result, a wider audience will be better able to benefit from the advantages of Linked Data technologies. 
+
+
+# notes
+
+[^1]:  Although usage of digital tools and resources has likely since increased due to the COVID-19 pandemic, the majority of those discussed by participants have not subsequently undergone significant developments. My findings and recommendations should therefore still be applicable.

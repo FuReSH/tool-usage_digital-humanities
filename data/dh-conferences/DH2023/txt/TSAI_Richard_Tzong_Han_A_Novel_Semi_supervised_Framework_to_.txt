@@ -1,0 +1,85 @@
+
+
+# Introduction 
+
+
+Faced with an extensive digitized corpus to analyze, a historian may find text analysis or concordance software such as Antconc, utilizing context-independent and word-count approach, desirable for identifying relevant sentences or documents in which words of interests located. However, a potential pitfall of such a methodology is that a particular keyword’s existence or absence does not necessarily entail discussing a subject (Bingham, 2010), especially for those exploring specific phenomena or broad social or cultural themes. 
+
+This work presents a semi-supervised deep neural framework, leveraging contextualized representation learning techniques, to automatically identify military documents in Ming Shi-Lu, without previously labeled data. We aim to expedite the onerous document compilation process of relevant and consistent information about the phenomenon to be investigated. In particular, we leverage a weakly supervised classification model (WSM) built upon the study by (Meng et al., 2020), which emulates how humans categorize documents into named categories to generate high-confidence labeled data. The quantitative results in our analysis, contributing another dimension toward studying the Ming military, lend credence to the effectiveness of our approach and shed light on the development and collapse of the Ming empire. 
+
+
+# Background 
+
+
+Ming Shi-Lu ( MSL ), composed of 208,522 records, is an official annalistic work centering on Ming emperors compiled by the officials in the Ming Dynasty (1368 A.D. to 1644 A.D.). Preserving enormous original documents of edicts, decree, and records of political, military, socio-economic, and other major events, MSL plays an essential role in the historical reconstruction of the diverse Eastern Asian societies and polities. Our study focuses on military records in MSL, aiming to unveil their underlying historical, academic, and documentary value by natural language processing techniques. 
+
+
+# Methodologies 
+
+
+Even though the emergence of pre-trained language model (LM) has drastically reduced the amount of training data needed for supervised methods, experiments show that the amount of training data still has to reach 4-5% of the entire dataset (Grießhaber et al., 2020), which in our case approximates to 5,400 - 6,900 labeled documents, to yield steady and satisfying accuracy. 
+
+The proposed framework overcomes the need for previously labeled data (Fig. 1). The included steps are: (1) select a small set of seed words describing the categories to be classified, (2) use a WSM to produce labeled data according to the selected words, (3) rearrange the resulting labeled data into a training set, and (4) use a supervised classification model (SCM) to categorize the entire dataset. 
+
+Our WSM is based on LOTClass (Meng et al., 2020), which leverages the BERT -base-chinese language model (Devlin et al., 2019) as the general knowledge base for category name understanding and feature representation learning model for classification. The BERT-based-chinese model is also the backbone for our SCM. 
+
+Fig. 1 The generic framework in this study . (1) The WSM will (i) learn a set of category indicative vocabulary from user-provided seed words of each class (Table 2 and 3), (ii) find the category-indicative words (w) in the text, and train the model via cross-entropy loss with a classifier on top of each w’s contextualized embedding to predict their implied categories, (iii) generalize through a self-training mechanism, and (iv) make predictions (Table 3). (2) The process of supervised document classification includes: (i) take a set of documents from the prediction results of WSM as ground truth labels (ii) fine-tune a pre-trained LM on a classification task with the labeled data, (iii) evaluate the model, and (iv) use the trained model to predict the remaining set of the documents 
+
+
+## Dataset and definition of military documents 
+
+
+We define the military documents as records containing offensive or defensive operations of both combat and non-combat nature and consider only documents involving human activities in MSL (Institute of History and Philology, Academia Sinica, 1984) , which is in full 136,427 documents . 
+
+
+## Weakly labeled data generation 
+
+
+We use trivial military action words such as attack and defense as seed words for military documents. To capture non-military documents, we also select 20 different classes of seed words (Table 1). The WSM will generate a set of category indicative vocabulary (Table 2) based on the input seed words for each class and leverage the contextualized category indicative words to classify the documents (Table 3). 
+
+Table 1 User-provided seed words of Category Lawbreaking, Repair, and Military in our study . We carefully choose and expand univocal characters as seed words by inspecting the classification results of WSM 
+
+Table 2 Category vocabulary of Category Lawbreaking, Repair, and Military in our study 
+
+Table 3 Examples of Category Lawbreaking, Repair, and Military prediction results by WSM. (1) Examples 1, 5, and 6 have no user-provided seed words or category indicative vocabulary. This implies that the model can identify a document’s category without trivial keywords, surmounting the limitation of the keyword search approach. (2) We take 4,000 documents from Category Military and 4,000 from the rest of the non-military categories for training data 
+
+
+## BERT-based supervised document classification 
+
+
+To initiate the supervised document classification task, we take 8,000 labeled documents generated by WSM. The examination result by manually examining 5% of the labeled documents shows that the WSM achieves around 87.3% accuracy. We then fine-tune the bert-base-chinese model for a binary classification task by randomly taking 80% of the labeled data for training and 20% for validation, and evaluating the model performance via precision, recall, and f1 scores (Table 4). Subsequently, we use the trained binary classifier to predict the rest of 128,427 documents. 
+
+Table 4 Precision, recall, and f1 scores of the BERT-based binary classification model 
+
+
+# Result and analysis 
+
+
+
+## Comparison with the distribution of war frequency in the Ming Dynasty 
+
+
+As armed forces are primarily intended for warfare, we compare the distribution of the number of military documents with the distribution of war frequency (W) (Editorial Committee of Chinese Military History, 1985) in the Ming Dynasty (Fig. 2). It can be seen that, up to the official compilation of MSL (1627 A.D.), the fluctuations of both trends match, evincing the robustness of our framework. 
+
+Fig. 2 Distributions of the Number of Military Documents in Ming Shi-Lu and Number of Wars in the Ming Dynasty . (1) The x-axis labels show the duration of reign for each Ming Emperor. (2) The divergence of the two trends after the 1630s may be explained by two factors: (i) The official MSL only covers reigns from the Hongwu Emperor (1368 A.D. - 1398 A.D.) to the Tianqi Emperor (1605 A.D. - 1627 A.D.). Records of the Chongzhen Emperor (1627 A.D. - 1644A.D.), the last Ming emperor, are from Chongzhen Shi-Lu and Chongzhen Chang-Bian placed in the appendix of MSL , even though providing an account of the reign, yet significantly fewer in numbers than records of other reigns. (ii)The last interval of the Chinese war data (W), which we have access to, ranges from 1640 to 1649, outrunning the rule of the Ming empire 
+
+
+## Evaluation of military document ratio distribution in Ming Shi-Lu 
+
+
+To identify high-density periods of military documents, we convert the absolute number of military documents into ratio distribution calculated on a 5-year interval (Fig. 3). 
+
+Fig. 3 Military Document Ratio Distribution in Ming Shi-Lu . We marked the peaks and listed the corresponding major military events below: (A) The founding of the Ming dynasty. (B) The Jignan campaign (1399-1402) and the Yongle Emperor’s campaigns against the Mongols (1410-1424). (C) The War of Lucha (1436-1449), Tumu Crisis (1449), and the Defense of Jingshi (1449). (D) Wokou raids and Mongols raids. (E) The Jiajing wokou raids and the War of Gengxu (1550). (F) The Bozhou campaign (1589-1600), the Ningxia campaign (1592), and the Imjin War (1592-1598). (G) The Battle of Sarhū and the collapse of the Ming dynasty. Fig. 2 (2) (i) can explain the anomalous decline in ratio during 1640-1644 
+
+The successive peaks (B - E) coincide with major military events of profound influence on the development of the Ming Dynasty. The Jignan campaign (B) attributed to a drastic change in the country’s military defense system. The incredible feats achieved by the Ming in the War of Luchuan (C) indirectly influenced the origin of civil officials’ exercising military power (Li, 2003). The War of Gengxu (E) occurred while Ming armies suffered repeated defeats in combating the Wokou and the Mongols raids on the Ming territory led to the abolishment of the Superintendent of the Integrated Division established for a century (Wu, 2021). 
+
+During the later reign of Wanli Emperor, the increased military expenditure and the exacerbation of the fiscal crisis resulting from the military campaigns (F) brought about the downfall of the Ming Dynasty (Zhao et al., 2016). Additionally, pleasantry uprisings instigated by severe droughts in 1627-1643 and the ensuing famine, and the southward migration of the Mongols caused by the effects of the Little Ice Age precipitated the collapse of the Ming Empire (Zheng et al., 2014; Sun and Zhang, 2018). 
+
+
+# Conclusion 
+
+
+This work introduces a semi-supervised framework identifying military documents without any labeled data, significantly reducing the manual labeling effort by domain experts. Empirical results in our analysis, aligning with the occurrence of major campaigns, demonstrate the robustness of our approach. For future work, we would like to continue exploring the potential of this framework and apply it to existing Asian corpora such as Veritable Records of the Joseon Dynasty , contributing to the reconstruction of diverse Asian history. Additionally, we plan to conduct an in-depth investigation on the military documents in MSL to substantiate perceived historical hypotheses with quantitative, temporal, or geographical evidence. 
+
+
+# notes

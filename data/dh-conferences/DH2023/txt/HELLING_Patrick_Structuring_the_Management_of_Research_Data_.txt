@@ -1,0 +1,136 @@
+
+
+# Introduction and Background 
+
+
+Research data is a key element of ongoing scientific progress (Bryant et al. 2017). Making research data findable, accessible, interoperable, and reusable in the sense of the FAIR Principles (Wilkinson et al. 2016) is a substantial aspect of good research practice (DFG 2019). Fulfilling this goal is a central task for both researchers and research data management (RDM) competence centers. 
+
+For defining service structures of these RDM competence centers, different guidelines and information bases are used (cf. HRK 2014 and 2015; Akers and Doty 2013; Mathiak et al. 2019; Vock 2019). In addition, formal models have been developed to describe RDM service structures (cf. Rans and Whyte 2017; Hiemenz and Kuberek 2019; Quin et al. 2017; Lemaire et al. 2020; Herterich et al. 2019). 
+
+Most of these guidelines, models and information are based on either top-down recommendations, quantitative surveys which are highly fault-prone or description models that focus on the perspective of service points and infrastructures. 
+
+However, RDM should be steered by the daily necessities of the researchers (e.g., table 1). A formal model that describes the structures, processes, and conditions at the core of RDM practice from both the perspectives of the researcher and the data manager does not seem to exist yet. Nonetheless, our knowledge of RDM needs to be structured to guarantee the quality of research. 
+
+In this paper, I will present a new approach to the definition of RDM requirements of researchers and service workflows within the Humanities by qualitatively analyzing RDM counseling protocols. These protocols were produced during RDM consultation sessions with researchers by an RDM competence center in Germany for documentation reasons. 
+
+
+# Identification and analysis of RDM-requirements and workflows 
+
+
+90 semi-structured and anonymized RDM counseling protocols were used for my study. With a qualitative analysis and an inductive definition of categories (Mayring 2015), I identified 48 categories of RDM requirements (see Table 1). The RDM counseling protocols were clustered according to these categories. 
+
+
+# Table 1: 
+
+
+Total number of identified RDM requirements. 
+
+Four main goals were pursued in the study of these clusters: 
+
+
+- Identification and formalization of relevant information describing the categories. 
+- Development of formal description models of the requirements. 
+- Identification and formalization of documented workflows. 
+- Mapping of the workflows to define comprehensive recommendations. 
+
+
+Two RDM requirements will serve as examples to illustrate my work. 
+
+
+## Requirement category “Proposal support” 
+
+
+In 27 documented counselling sessions researchers asked for support while writing a project proposal. This category was differentiated into two sub-requirements: (a) review of a chapter on RDM in a proposal (“Review section of text”) and (b) writing of a chapter on RDM for a proposal (“Write section of text”) by the center. 
+
+In the first case many different RDM aspects played a role in the reviewing process (see Figure 1), while in the second case fewer aspects were discussed during the consultation (see Figure 2). This might be due to the fact that writing a section of text on RDM by a competence center is a more targeted and structured process, while sections of text written by researchers not expert in RDM may be more uncertain and fault prone. 
+
+
+## Figure 1: 
+
+
+Topics and aspects while reviewing a section of text. 
+
+
+## Figure 2: 
+
+
+Topics and aspects while writing a section of text. 
+
+Nevertheless, in both cases the archiving of data was a main RDM aspect (see Figures 3 and 4). 
+
+
+## Figure 3: 
+
+
+Frequencies of topics and aspects while reviewing a section of text. 
+
+
+## Figure 4: 
+
+
+Frequencies of topics and aspects while writing a section of text. 
+
+
+## Prototypical RDM counselling workflow - “Proposal support” 
+
+
+Also, in the case of the cluster “Proposal support” I differentiated between prototypical workflows for the sub-requirements “Review section of text” and “Write section of text” (Figures 5 and 6). 
+
+
+## Figure 5: 
+
+
+Prototypical workflow “Review section of text”. 
+
+
+## Figure 6: 
+
+
+Prototypical workflow “Write section of text”. 
+
+For the review of a section of text, the competence center corrects and annotates the text sent by the researcher. In the case of the sub-requirement “Write section of text”, the researcher shares relevant parts of the proposal to allow the members of the center to draft a section of text. Clearly, the information on the project is immediately deleted after the conclusion of the workflow for data protection reasons. The workflows usually present more complexities, as I will show in my presentation. 
+
+
+## Requirement category “Archiving” 
+
+
+In the 25 cases belonging to the requirement of archiving research data, various information could be identified both describing the RDM requirement and influencing how it should be dealt with (see Figure 7). 
+
+
+## Figure 7: 
+
+
+Topics and aspects while supporting an archiving process. 
+
+Besides concrete information on the objects to be archived, the identification of conditions for the archiving process by the researchers revealed to be key in the process of archiving, showing RDM awareness among the researchers. 
+
+In addition, various types of recommendations by the RDM competence center as well as concrete tasks for both the center and the researchers could be identified. 
+
+
+## Prototypical RDM counselling workflow - “Archiving” 
+
+
+To support the researchers in the archiving process, the RDM competence center generally looks for a suitable repository to store the research data (see Figure 8). If there is no fitting domain- or data specific repository the center seeks a more generic solution. 
+
+
+## Figure 8: 
+
+
+Prototypical workflow “Archiving”. 
+
+If there is a suitable solution at the center, conditions for archiving are communicated to the researchers, who prepare their research data and submit it to the center for archiving. If an external solution is recommended, the RDM competence center transmits the necessary information to the researchers, who get in touch with the external repository, prepare and submit the data (or proceed with self-archiving). 
+
+
+# Conclusion 
+
+
+With the described approach, one gets closer to a description of the RDM requirement landscape based on the daily needs of researchers. The analysis allows for qualitative and quantitative descriptions of RDM requirements based on real counseling sessions. It gives a better understanding of the nature of specific RDM requirements, their conditions and influencing factors. Workflows to deal with specific RDM requirements are modeled prototypically RDM competence centers. Specific competences can be identified and integrated accordingly. 
+
+In my talk, I will present the descriptions of RDM requirements and corresponding workflows comprehensively. Specifically, I will show dependencies and mappings between different conditions and information within the RDM requirement clusters to concretely describe the RDM landscape. Finally, I will focus on the mapping between the RDM requirement models and their prototypical workflows. 
+
+
+# notes
+
+[^1]:  see for example: Listing of surveys on Research Data Management, Online: 
+                            https://www.forschungsdaten.org/index.php/Umfragen_​zum_​Umgang_​mit_​Forschungsdaten_​an_​wissenschaftlichen_​Institutionen (last request: 15th of November 2021).
+                        

@@ -40,6 +40,7 @@ df.dhconfs.abstracts <- df.dhconfs.abstracts %>%
   dplyr::select(id, text, year) %>% # this can include more columns if needed
   dplyr::arrange(year)
 save(df.dhconfs.abstracts, file = here("data", "dh-conferences", "dh-conferences_abstracts.rda"))
+load(file = here("data", "dh-conferences", "dh-conferences_abstracts.rda"))
 
 # 2. FuReSH tool list
 df.tools <- read_csv(here("data","tools.csv")) %>%

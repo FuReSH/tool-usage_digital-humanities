@@ -1,0 +1,46 @@
+
+1. Introduction 
+
+Digitization of cultural information by GLAM (Galleries, Libraries, Archives and Museums) institutions opens new opportunities for dissemination of cultural data to heterogenous audiences. However, selective information dissemination related to biases in physical collections, policies or difficulties of digitization and aggregation (Mak 2014; Bode 2020; Zhitomirsky-Geffet and Hajibayova 2020; Kizhner et al 2021; Ortolja-Baird and Nyhan 2021) may lead to the creation of a global cultural “filter bubble” where much of the world cultural heritage remains concealed from the public view, thus missing the opportunity to correct the historical injustices and bias in cultural knowledge representation. A filter bubble is a situation when users are only exposed to homogenous information that conforms with their views and prejudices (Pariser 2011). We can say that a cultural “filter bubble” created by culturally and geographically homogenous artwork collections published online encircles users within the information from the dominant culture, thus narrowing their intellectual and cultural horizons (Zhitomirsky-Geffet 2019). 
+
+In this study, we aim to investigate and quantitatively measure the cultural “filter bubble” by comparing data publishing and dissemination practices of two famous national museums of fine arts, the Metropolitan Museum of Art, New York, and the Rijksmuseum, Amsterdam. Both museums present artworks to ‘contemporary national and international audiences ’ and appear in a study of the most influential museums published in 2017 (Van Riel and Heijndijk 2017). The study’s contribution to bias or “filter bubble” detection in large cultural heritage databases is crucial to many research projects in digital humanities that are based on the analysis of such databases and large amounts of cultural heritage data. 
+
+2. Research methodology 
+
+The study examined three dissemination channels used by the two museums: 1) data extracted from searchable online collections , 2) data extracted from the museum datasets available for the general use via open APIs of both museums as CSV files for the Metropolitan Museum and an XML file for the Rijksmuseum , and 3) items with a Collection Property (P195) retrieved from Wikidata using SPARQL query language. As a result, we obtained six databases (three databases for each of the two museums under study, as shown in Table 1). To measure the geographical and cultural diversity of the databases as conveyed by the five criteria of the ethical evaluation framework (Zhitomirsky-Geffet and Hajibayova 2020) adopted in this study, we ran queries in the six databases that computed the distribution of artworks according to the following variables: artworks’ continent, country of origin, artist’s nationality, and culture. 
+
+3. Results 
+
+Our results demonstrate that all six databases from both museums focus on the Western culture (Western and Central Europe and North America), although the Metropolitan Museum of Art shows higher cultural diversity scores compared to Rijksmuseum as it also covers ancient cultures, such as Egypt or Mesopotamia (in line with an art historical canon), in its API dataset (Figure 1). Surprisingly, Metropolitan Museum’s Wikidata collection focuses on the United States with 90% of all artworks, while almost all the items in the Rijksmuseum Wikidata collection were created in Europe. 
+
+We found that Asian cultures are weakly pronounced in all six datasets (16-18% in Metropolitan’s API dataset and online search system, less than 5% for all Rijksmuseum’s databases, and almost none in both museums’ Wikidata collections) compared to Western and Central European cultures (with over 50% for Rijksmuseum’s databases and Metropolitan’s online database) and North American cultures (with over 20% in all Metropolitan’s databases). Japanese culture, with the highest amount of records from Asia, accounts for 4.7% of the records published online by Metropolitan and 2.3% of records accessed via the Rijksmuseum API, with other Asian countries presented to a much lesser extent. In addition, we found that the representation of the native peoples’ artworks (mostly from Asia) that the Netherlands conquered in early modern history, such as Dutch East Indies, Java, Batavia or Indonesia, ranges between 0.6% to 2.8% in the three Rijksmuseum databases. Similarly, the artworks of Native Americans constituted only less than 1% of the three Metropolitan’s databases. Although our findings may reflect the rates of physical collections of these museums, they do not comply with the ethical evaluation criteria, nor do they reflect the museums’ mission statements, e.g. “Metropolitan collects, studies, conserves, and presents significant works of art across all times and cultures ”, “Rijskmuseum offers a representative overview of Dutch art and history … as well as major aspects of European and Asian art ”. 
+
+
+Figure 1 
+
+
+Percentage of items for each continent in all the databases. 
+
+Interestingly, the dominance of the Western culture in Wikidata is also reflected by geographic distribution of contributing institutions. Thus, out of the 5,040 (as of June 2021) museums and galleries from around the globe that published their artwork data in Wikidata, 42.25% are located in Western and Central Europe and 17.92% are in North America, while leaving less than 40% to the rest of the world. Only 19.07% of Wikidata museums are located in Asia and 11.93% are in Eastern Europe. 
+
+| Database name  || Online system  || API Dataset  || Wikidata  || Metropolitan  || 516,458  || 474,383  || 22,586  || Rijksmuseum  || 716,308  || 656,665  || 6,009  |
+
+Table 1 - Amounts of museum items in each database. 
+
+
+
+
+4. Conclusion 
+
+We provide evidence to the existence of a cultural “filter bubble” (namely, bias towards Western cultures) in the online databases of the two influential museums, accessed via website search, APIs or queried from Wikidata. All databases appear to have significant constraints and biases in terms of presenting the diversity of cultures, especially in the data submitted to Wikidata, a channel that is important for the dissemination of cultural content among those users who rarely visit institutional websites and museums (Navarrete and Villaespesa 2020). Further investigation into the reasons for the obtained results is needed that could include underrepresentation of various cultures in physical museum collections, curatorial decisions on selective digitization and publishing policies influenced by art history canons or previous institutional policies. 
+
+
+# notes
+
+[^1]:  https://www.rijksmuseum.nl/en/about-us/what-we-do/vision-and-mission
+[^2]: https://www.metmuseum.org/art/collection, 
+                        https://www.rijksmuseum.nl/en/search
+[^3]: https://github.com/metmuseum/openaccess/commit/420254f751b4c9d55a3ea7d1dab2d5d1e74e5255#​diff-9f9583202c5d326e17789ac08f06b9ec913a7c54​6a4ab5f68dc32fa9f3732d66
+[^4]: https://old.datahub.io/dataset/rijksmuseum-api
+[^5]:  https://www.metmuseum.org/about-the-met
+[^6]:  https://www.rijksmuseum.nl/en/about-us/what-we-do/vision-and-mission

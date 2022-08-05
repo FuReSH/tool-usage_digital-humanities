@@ -1,0 +1,37 @@
+
+DiGA, short for “Digitization of Gandharan Artefacts. A project for the preservation and the study of the Buddhist art of Pakistan”, is a project that aims to digitize and catalogue a corpus of just under 2,000 Buddhist sculptures from ancient Gandhāra (Elwert and Pons 2020). Gandhāra is a historical region which covers present-day North-western Pakistan and Eastern Afghanistan and which was a pivot between South and Central Asia. Produced during the first centuries of the Common Era, the objects which the project will digitize bear testimony to the rich cultural and religious heritage of this region that was once considered a Buddhist Holy Land. 
+
+Relying on a solid digital concept that complies with current standards in the field of cultural heritage, DiGA will produce a database of objects available on OpenAccess that will lend itself to exciting new research questions and will establish best practices in the field. 
+
+The DiGA Project started in February 2021 and among its very first tasks figures the development of a Thesaurus for the description of Gandharan art and – more in general – Buddhist art. Our core vocabulary has been built starting from a limited selection of sources, a prominent one being the Repertorio Terminologico per la schedatura delle sculture dell’arte gandharica (indicated below as ‘Repertorio’), a bilingual resource in Italian and English (Faccenna and Filigenzi 2007). 
+
+In the hagiography of the Buddha we read that, right after his miraculous birth emerging from the side of his mother Maya Devi, he immediately stood up and took seven steps. At this point the intended pun in the title of this presentation should be clear also to those reader not familiar with Buddhist studies. Building up the DiGA Thesaurus is part of the early life of our project, and, therefore, the coincidence of including seven steps, as shown below, appears as an auspicious sign. 
+
+Constructing the Thesaurus starting from a printed source as the Repertorio poses many challenges, it is not a simple translation from a language (analogue) to another (digital), but it is about interpreting what a language wants to convey into a completely different system. 
+
+As for the core of this presentation, the Seven Steps leading to the Thesaurus include: 
+
+
+- Collecting and building upon existing sources both digital and printed. 
+- Building the core of the Thesaurus starting from OCRing the Repertorio. 
+- Restructure, edit and enrich the Repertorio in RDF/SKOS. 
+- Add a concept hierarchy for narratives that can univocally identify scenes, episodes, actions. 
+- Add a concept hierarchy for Figures including the actors involved in Gandharan narratives. 
+- Reconcile the Concepts with existing entries in Getty AAT and Iconclass. 
+- Work with other projects and institutions to make the DiGA Thesaurus useful beyond the project itself. 
+
+
+These Seven Steps summarize the work done to set up what we consider an initial core to a growing tool. With the progress of digitization of unpublished material is foreseeable that it will be necessary to add more concepts; the DiGA Thesaurus is indeed a compiled resource, bound to grow with the growth of digitization of Buddhist art. 
+
+Once the Seven Steps are completed, the DiGA Thesaurus is ready to fulfil its purposes of cataloguing and research. Its use is threefold: first, it serves as a controlled vocabulary for cataloguing in the DiGA project. The hierarchical organization of the concepts improves documentation and allows to set into relation objects apparently unrelated (mostly for geographical dispersion of the collections). Second, by its open access publication as a SKOS resource, the DiGA Thesaurus serves as a best practice example in the field of Buddhist art through the introduction of controlled vocabularies for figures, monuments, objects, elements, components, etc. Finally, the DiGA Thesaurus aims to contribute to the growing use of Linked Open Data (LOD) in order to bridge different collections of Gandharan Buddhist resources, also in different media (i.e., text and visual art), and to link generic art historical resources (Getty AAT, Iconoclass, etc.) with those specific to Buddhist studies. 
+
+We are confident that with the first release of the DiGA Thesaurus we accomplished the first (seven) steps to achieve an important goal and vision for a future of Gandharan studies where the availability of digital collections will actually lead to new insights. Already during the implementation of the Thesaurus we envisioned interesting avenues for future research both on the side of Gandharan studies and on that of Digital Humanities. 
+
+
+# notes
+
+[^1]: 
+                        For an introduction to the study of Gandharan art refer to
+                        Drachenfels and Luczanits 2008.
+[^2]:  For an overview on the hagiography of the historical Buddha with references to the primary sources see Strong 2001.
+[^3]:  Much of the reflection around the thesaurus stems from the Pelagios Working group involving partners from the Gandhara Project, Gandhari.org, and the Italian Archaeological Mission to Pakistan.

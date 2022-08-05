@@ -1,0 +1,30 @@
+
+ 1. Introduction 
+
+Rabbinical literature is characterized by a multiplicity of viewpoints and diverse and contesting opinions rooted in earlier sources whose influence persists in subsequent essays. One of the challenges in studying literature of this kind is to identify and organize the many controversies and views and to examine their influences and development over the generations. This paper offers a new paradigm and conceptual framework for the study of viewpoint plurality in historical literature through the prism of citation networks that are embedded in it, as well as a computational methodology based on advanced machine learning algorithms for automatic citation extraction from historical texts. 
+
+The proposed methodology was applied to Responsa literature, a subfield of Rabbinical literature, as a case study. Responsa literature is a vast collection of questions and answers that discuss concrete events, in which the questioners seek the appropriate guidance from the recognized Rabbinic authorities at the given period of time. The Responsa corpus began in Iraq (central Asia) and spans over 1,300 years. In particular, we investigated to which extent the Responsa Rabbis use (and thus are influenced by) early sources from the late classical period (Talmud) and early Middle Ages (Geonim) from West and Central Asia (Iraq and the land of the Israel). 
+
+The main challenge that the system has to overcome is the variety of formats of references, that are incomplete and include numerous abbreviations. Sometimes a reference only includes the name of the author, or only the name of the book, or only a piece of text from the book appears in the citation. The problem is even more complex for historical Hebrew-Aramaic texts, such as the one in the Responsa corpus and other Rabbinic texts. Therefore, applying a rule-based approach or classic machine learning techniques as in Romanello (2016) with manually predefined features can only achieve limited recall and accuracy for this corpus, or be useful for a limited scope, period, writing style and genre, such as, the Mishnah, or 20,000 responses from the last 130 years (HaCohen-Kerner et al., 2011; Zhitomirsky-Geffet and Prebor, 2019; Waxman, 2021 ). 
+
+2. Research Methodology 
+
+To build an effective reference extractor for broader and heterogeneous Rabbinic corpus, this research adapts more advanced machine learning algorithms, based on Conditional Random Fields (CRF) (using MALLET library http://mallet.cs.umass.edu/ , McCallum, 2002). The system is composed from a set of five layers as follows: 
+
+
+- The initial layer identifies references within the given Responsa text including concatenated references or recursive references and breaks them down to a set of discrete references. 
+- The second layer performs part-of-reference tagging, e.g. classifies the reference words to: book name, author name, author title, or general reference words. 
+- The 3 rd layer handles the various nicknames, abbreviations and acronyms of an author or a book that may be used in a reference, and maps between the name found in the text and the standard name of the author/book. 
+- The 4 th layer resolves ambiguity of the found names by using author and book metadata (e.g. birth/death dates and places) from the existing resources of Talmudic research. 
+- The last layer builds the author and book citation networks of the extracted references. 
+- Finally, traditional Rabbinical literature research is consulted to investigate whether, how and to what extent the viewpoints and influences of the authors are reflected in the obtained networks. 
+
+
+3. Results 
+
+This study’s corpus comprised 5504 Responsa files from about 40 literary sources from the Rishonim (“the first ones”) period dated between 11 and 15 centuries. As a result, 557 full references (including author/s, a book title and a section/page) were identified with a precision rate of 87%. Figure 1 presents a fragment of the resulting network. As shown in Figure 2, the influence of the Babylon Talmud (and thus its approach and worldview) on the Rabbinic literature of the period of the Rishonim (1 st half of the 2 nd millennium) is significantly higher than that of the Yerushalmi Talmud (written in the land of Israel). These findings provide preliminary reflections of the diverse viewpoints of the different groups of authors (schools), as determined by the early Asian literature influence. 
+
+Although the study examined the proposed paradigm in the Responsa corpus, the proposed methodological framework can be applied to other multi-viewpoint corpora of literature in other languages, such as the Decretum, one of the essential Latin texts of Canon law, and the Digest database of Roman law. 
+
+
+# notes

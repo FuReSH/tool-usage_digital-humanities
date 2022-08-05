@@ -1,0 +1,37 @@
+
+
+## Introduction 
+
+
+It has been long established by several studies that it is possible to extract the common plot structure of specific genre stories when many such stories are collected (Barthes 1968, Propp 1968, Campbell 1949). Based on these old humanistic studies, recent research focusing on several specific genre stories has clarified that the quantitative and objective extraction of common plot structures can be executed using computational methods (Murai 2014, 2020). In these recent studies, the plot structures were described as sequences of symbolized scenes or functions. The common plot structures of specific genres were extracted using quantitative methods for the symbolized sequences. 
+
+However, these past studies focused only on the plot structures and therefore, the quantitative features of the characters in the stories have not been focused. The present study is the first to develop a common symbol set to describe the character’s attributes as well as the plot structures of several different genres. The identification of symbols that are common between different story genres enables a comparison of the characteristics of each story genre. These symbol sets can be used to extract the common patterns of general stories. Moreover, the extracted common patterns could become the foundation for automatic story generation systems. 
+
+Target contents 
+
+To compare different story genres, several popular genres in modern Japanese entertainment culture were selected based on the several famous comic and game sales rankings (Murai 2021). The selected genres were “Adventure,” “Battle,” “Love,” “Detective,” and “Horror.”To extract typical plot structures for each genre, works of combined genres (such as “love comedy”) were eliminated, and popular short stories were selected based on sales rankings. If there were too few popular short stories, popular long stories were divided into short stories based on changes in the purpose of the stories’ protagonists (Nakamura 2020). Subsequently, the selected stories were divided into plot elements (scenes) which were categorized based on a common hierarchical category (Murai 2021). 
+
+Development of automatic character generation program 
+
+
+## Table 1. 
+
+
+Stories and characters for each genre 
+
+Approximately 5,500 characters were extracted from about 900 stories in five genres. These characters were digitized based on the character attribute category that included six areas: gender, age, blood relationship, role in the story, social position, and species. Each area included several attributes and the total number of attributes was 43. The characters’ features were investigated and appropriate attributes were assigned. This process was based on discussions among several analysts of narratology. 
+
+One character was often assigned several attributes, for instance, “male,” “young,” “elder brother,” “enemy,” and “soldier.” 
+
+In the next step, a chi square test was performed for the assigned attributes of the extracted characters, and frequently and rarely appearing attributes for each genre were identified. Moreover, a co-occurrence analysis was performed, and frequently co-occurring pairs of attributes were extracted. 
+
+Based on the analyzed statistical features, an automatic story character generation program was developed, which output an appropriate number of characters and a combination of attributes for each character when a genre was input. These outputs were based on frequently appearing attributes and frequently co-occurring pairs of attributes in each genre. 
+
+In the automatic story character generation program, a typical pattern of characters in existing stories could be generated. In addition, by adjusting the parameters of the probability of appearance, rare patterns that seldom occurred in existing stories could also be generated. Therefore, this program can be applied not only for genre-dependent typical works, but also for works with high novelty. 
+
+Conclusion 
+
+A data set of attributes for story characters was developed by utilizing a cross-genre story data set. In addition, based on a statistical analysis of genre-dependent attributes of story characters, an automatic story character generation program was developed. This program will be applied in an automatic story generation system along with an automatic plot generation program (Murai 2021). In future, the complete automatic story generation system will output stories according to the user-selected genre. 
+
+
+# notes

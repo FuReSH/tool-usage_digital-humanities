@@ -28,6 +28,7 @@ Die Daten liegen in folgenden Unterordnern:
 - `data/`
     + `dh-conferences/`: 
         * `12987959/`: data on mainly English DH conferences from [LincolnEtAl2021IndexDigitalHumanities; @Weingart2020IndexDHData]
+        * `DH2023`: abstracts from the DH2022 conference in Tokyo available on [GitHub](https://github.com/747/tei-to-pdf-dh2022)
     * `DHd/`: data on DHd conferences from the [DHd GitHub](https://github.com/DHd-Verband) repositories
         - `software-names-counts-total.csv`: [@HennyJettka2021SoftwarezitationData]
     - `dhq/`: TEI XML files from "[Digital Humanities Quarterly](http://digitalhumanities.org/)". A corpus of 429 articles published until 2019 is available as zipped folder at <http://digitalhumanities.org/dhq/data/dhq-xml.zip>.
@@ -74,7 +75,7 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
             - problems
                 + 6366, 6483: a lot of illformed endnote XML inserts
         3. full TEI XML files
-            - to do: run some XSLT to convert to `.txt`
+            - [x] convert TEI XML to `.txt` using XSLT from [convert_tei-to-markdown](https://github.com/OpenArabicPE/convert_tei-to-markdown)
 - [x] Add data from DFG's GEPRIS
     +  [x] add descriptions from DFG [GEPRIS - Geförderte Projekte der Deutschen Forschungsgemeinschaft](https://gepris.dfg.de/gepris/OCTOPUS) database on funded projects
     * Unfortunately, DFG does not provide an API or machine-actionable data for reuse

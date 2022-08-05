@@ -1,0 +1,57 @@
+
+
+# Presentation of the Stylo-sophy 
+
+
+
+# Figure 1. 
+
+
+Login page of Stylo 
+
+Stylo is a tool designed to transform the digital workflow of scholarly journals in the humanities and social sciences. As a WYSIWYM (What You See Is What You Mean ) semantic text editor for the humanities, it aims to improve the academic publishing chain. 
+
+In order to put authors back in control of the text (Vitali-Rosati et al, 2020), text structuring is placed at the very beginning of the knowledge production process through the use of semantic tags. Unlike word processing tools such as Microsoft Word, Stylo aims to promote and encourage the use of open standards (notably HTML, Markdown, XML). This is achieved through the implementation of open protocols. 
+
+
+# Tool principles 
+
+
+
+# Figure 2. 
+
+
+Stylo editing organisation 
+
+Built on modular, low-tech and standard editing tools and formats, such as Markdown, BibTeX, Pandoc, Hypothes.is and Latex, Stylo integrates best practices in writing and publishing on the web into a single interface. Through the implementation of the formats and the conversion technologies already used by the community, it allows the free flow of documents that are not locked into a particular format. Stylo includes features such as sharing, versioning, change tracking, bibliographic reference management, annotation for revisions, multi-format export, metadata aligned with authorities (LOC, Wikidata, ORCID, ...) and online semantic tagging. 
+
+
+# Workshop structure 
+
+
+In this workshop, we will present how Stylo is used daily as a writing and editing tool for a scientific journal, and how it can be used by researchers and students, individually or collectively. The demonstration will include 
+
+
+- an introduction to the theoretical basis of the tool 
+- a presentation of the main editing features (editing the text body, structuring the bibliography, defining the metadata) 
+- a presentation of the export options available 
+- a presentation of the specific use of Stylo in the context of scholarly journals in the humanities 
+- a presentation of current and future developments and implementations of the tool. 
+
+
+Participants will have the opportunity to test and edit their own text in Stylo. The workshop will use existing Stylo documentation: the documentation site and the video tutorial . 
+
+Stylo is currently used by a small and growing community, and has been available since 2020 as one of the services offered by the TGIR Huma-Num. 
+
+During the workshop, we want to collect feedback on the tool's interface, ergonomics and usability, but also on the scientific writing practices that Stylo could integrate. 
+
+Duration: two hours. 
+
+Persons in charge of the workshop: 
+
+Antoine Fauchié, PHD candidate in the Department World Literature and Languages at the University of Montreal and project manager of the Canada Research Chair on Digital textualities. 
+
+Roch Delannay, PHD candidate in the Department World Literature and Languages at the University of Montreal and project assistant of the Canada Research Chair on Digital textualities 
+
+
+# notes

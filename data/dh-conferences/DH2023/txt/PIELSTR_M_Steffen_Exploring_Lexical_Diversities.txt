@@ -1,0 +1,111 @@
+
+
+# Introduction 
+
+
+The assumption that literary texts are particularly complex is one of the most important premises of work in literary studies (for example Koschorke 2016, Nan Da 2019). This complexity can be perceived on many different levels, with lexical diversity being one of many determining factors. Different disciplines have proposed different measures over time, but only recently some attempts have been made to consolidate research findings into a comprehensive overview (for example Jarvis 2013; Tweedie/Baayen 1998). Here, we propose a multi-dimensional model of lexical complexity. We provide a definition for each dimension and suggest a best-practice operationalization for most. These operationalizations are validated by comparing a collection of texts for adult readers with a collection of comparable texts aimed at children. Finally, we illustrate the usefulness of our approach in application to literary texts. Though we work with German texts, previous work on variability with different languages including Chinese and Japanese has shown that these measures are not language specific (Pielström et al. in preparation). 
+
+
+# Corpora 
+
+
+The validation corpora (Weiß & Meurers 2018) contain German non-fiction text from the educational magazine “Geo” ( www.geo.de ), a publication conceptually comparable to the “National Geographic”, and its offshoot for children called “Geolino”. For literary texts, we compare highbrow novels (161 works, approx. 17 mio. tokens) with “dime novels” (1167 works in six different genres, approx. 40 mio. tokens), both under copyright. Dime novels are a type of fiction mass-produced in long-lasting series and sold in kiosks rather than book stores. 
+
+
+# Aspects of complexity and measurement 
+
+
+Quantifying diversity is no trivial task. As Jarvis (2013b) points out, existing measures of lexical diversity often lack an underlying construct definition and intuitive concepts of diversity vary. Jarvis proposes six dimensions to properly define the construct: variability, volume (which we do not consider separately), evenness, rarity, dispersion, and disparity. Additionally, we look at innovation, surprise, and density. 
+
+
+## Variability 
+
+
+The most intuitive indicator of lexical diversity is the variability of the words used in a text. The most widely known measure is the type-token ratio (TTR). 
+
+TTR depends systematically on sample size. Among the solutions proposed for this problem, standardized TTRs (STTR) calculated from fixed-length text chunks provide a practical and intuitive solution (Fig. 1). 
+
+
+## Figure 1: 
+
+
+STTR in GEO and GEOlino 
+
+
+## Rarity 
+
+
+A text containing many rare words will generally be perceived as more difficult and more complex than a text with a higher proportion of very common words. We use a simple approach to model rarity. For each text, we compute the proportion of content words not included in the 5,000 most frequent content words from a large web corpus that covers many different registers, the DECOW16BX (Fig. 2, Schäfer and Bildhauer 2012, Schäfer 2015).  
+
+
+## Figure 2: 
+
+
+Rarity in GEO and GEOlino 
+
+
+## Dispersion 
+
+
+According to Jarvis (2013b), the perceived lexical diversity is higher if the occurrences of a particular type are more dispersed, whereas a more clustered pattern produces an impression of redundancy. To measure this effect, we again use a window-based approach (Fig. 3). Inside a window, we calculate a dispersion score based on the Gini coefficient (Gini 1912) for each type and use the arithmetic mean of this score over all types with a frequency greater than one as dispersion measure for the whole text (see Blombach et al. in preparation for a detailed description). 
+
+
+## Figure 3: 
+
+
+Dispersion in GEO and GEOlino 
+
+
+## Disparity 
+
+
+Lexical disparity follows the intuition that repetition also shows in the occurrence of similar words on a semantic level. To measure global disparity, a document is segmented and a vector is then generated for each segment by averaging over the vectors of the content words. The disparity of a segment is then calculated from the pairwise euclidean distance of all its segments. The document's disparity is the mean over all its segment disparities (Fig. 4). 
+
+
+## Figure 4: 
+
+
+Disparity in GEO and GEOlino 
+
+
+## Density 
+
+
+A text containing a higher proportion of content words can be considered denser and therefore more complex (Fig. 5). 
+
+
+## Figure 5: 
+
+
+Density in GEO and GEOlino 
+
+
+## Tools 
+
+
+Most of the measures suggested here (variability, rarity, dispersion, and density) are implemented in our textcomplexity toolbox that contains additional complexity measures as well. 
+
+We have also created an interactive “ Shiny” app which allows users to visually explore our data, including correlations between different measures and the influence of parameters such as window size, case sensitivity and the inclusion or exclusion of punctuation. 
+
+
+# Application to Literature 
+
+
+Fig. 6 shows the measures of lexical complexity applied to six genres of dime novels and a set of highbrow novels. Counter to our expectations, science fiction and fantasy equal or even surpass the highbrow novels in some respects (disparity, density, dispersion and rarity). We assume that we have different forms of lexical complexity at work here: In science fiction and fantasy, a noun-heavy prose is depicting new worlds with new words. In high literature on the other hand, high variability shows the influence of a stylistic ideal which aims to avoid repetition and show elegance. There might be a difference in the scope which authors control for complexity, for example variability. We found less repetition in small windows in genre texts, whereas variability in highbrow literature increases with window size.  
+
+Fig. 7 shows that genre similarities can be perceived immediately using this kind of representation. A multi-dimensional model of lexical complexity allows a clearer understanding of genre differences. 
+
+
+# Figure 6: 
+
+
+Diversity per aspect. All dimensions have been scaled to values between 0 and 1 
+
+
+# Figure 7: 
+
+
+Radarplots, highlighting the similarities between genres 
+
+
+# notes

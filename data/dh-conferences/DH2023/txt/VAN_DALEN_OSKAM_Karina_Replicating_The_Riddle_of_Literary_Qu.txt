@@ -1,0 +1,24 @@
+
+Our poster introduces an R package with a varied set of data and a companion website to enable replication of data analyses and findings from the project The Riddle of Literary Quality (2012-2019). The project searched for linguistic and stylistic patterns in modern Dutch novels and novels recently translated into Dutch that may help explain the literary value readers do or do not attribute to these novels. Are novels that readers consider to be highly literary measurably different from those that receive low scores for literary quality?  
+
+To answer this question, the project team built a corpus of 401 novels published for the first time in Dutch from 2007 to 2012 and most sold or most borrowed from public libraries in the period 2010-2012. Readers’ opinions about these novels were gathered in 2013 in The National Reader Survey that drew 13,784 respondents. Correlating measurements of the digital texts with the opinions of the readers resulted in important knowledge about the perceptions of literariness in the Netherlands in 2013.  
+
+The survey showed how readers are biased in several ways in their attribution of literary value to contemporary novels. Books presented as genre fiction are implicitly denied their chances of literary fame. Novels labelled as literary fiction by the publisher have a far better chance of being regarded as having high literary quality. But also in this category biases apply. Female authors, for instance, have less prestige than their male colleagues, even when the linguistic features of their writing do not significantly differ. The results also showed that the level of linguistic and topic complexity correlates strongly with literary quality scores. The higher the scores for literary quality, the more difficult the books are. The project yielded two PhD-theses in English, by Andreas van Cranenburgh (2016) and Corina Koolen (2018). 
+
+We created an R package named “litRiddle” that is available through CRAN. It contains four data tables with a number of functions to access them: 
+
+
+- The table Books contains the names of the authors and the titles of the 401 novels in the corpus, including metadata indicating the genre label, if the book is translated or not, the gender of the author, the country of origin of the author, the original language of the book, and more. The table includes a set of linguistic measurements for each of the books.  
+- The table Frequencies lists the word frequencies of the 5,000 most frequent words across 401 novels. Due to copyright restrictions the litRiddle R-package cannot include the full texts of the novels. It provides relative word frequencies lists per novel that allow to replicate many of the measurements done by the research team and that will help to explore other perspectives based on bag-of-words approaches. 
+- The table Respondents consists of metadata for the 13,784 respondents who took part in The National Reader Survey and includes information about, for example, their age, gender, and level of education. It also includes their answer to a number of questions going into their reading habits and how they value reading. 
+- The table Reviews captures how respondents scored the books they had read and how they scored books that they had not read but had an opinion about. Respondents scored books for their general quality (i.e. how good the respondent judge the book to be) and their literary quality (i.e. how literary the respondent thought the book was). The table also includes the optional motivation for one of their scores if the respondent provided one. The motivations are added for 12,367 out of the total number of 448,055 individual reviews; their length ranges from one word (e.g. ‘no’) to one paragraph. 
+
+
+The litRiddle package includes information on how to use the data, combine the different tables, and produce graphs from query results. 
+
+Project leader Karina van Dalen-Oskam published a Dutch-language synthesis of the results from The Riddle of Literary Quality in 2021 and is currently working on a shorter English version that hopefully will be available through open access by the end of 2022. Both books are accompanied by a website in github with colour versions of all graphs from the books, with added interactive features, and suggestions and R-scripts to replicate the measurements using the litRiddle R package. 
+
+The project was funded by the Computational Humanities Programme of the Royal Netherlands Academy of Arts and Sciences. It is currently being replicated in the United Kingdom. A follow-up project, The Riddle of the Literary Canon led by Karina van Dalen-Oskam, will analyse the style of older Dutch novels. 
+
+
+# notes

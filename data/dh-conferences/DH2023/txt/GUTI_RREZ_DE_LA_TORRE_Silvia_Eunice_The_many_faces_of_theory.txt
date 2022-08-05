@@ -1,0 +1,82 @@
+
+
+# Introduction 
+
+
+Theory in the Digital Humanities (DH) has been the subject of much debate. While the narrative of an “end of theory” (Anderson, 2008) is still being used, new discourses have found their way into DH scholarship. On the one hand, we observe a laboratory turn in DH that focuses on theory in practice (see Saklofske, 2016; Pawlicka-Deger, 2020). On the other hand, theoretical endeavors are regarded as much needed forms of criticism (see Alvarado, 2019; Drucker, 2021). Despite the relevance of these strands, a systematic investigation has yet to be conducted. In our paper, we want to add to these ongoing debates by laying the foundation for further empirical approaches 1 that investigate the occurrences of theory references in scholarly written communication, i.e. DH journals, abstracts, and even forums such as the Humanist discussion group 2 . To provide an example study, we examined a corpus of 3,737 articles from three well-known DH journals: “Computers and the Humanities (CHum)”, “Literary and Linguistic Computing/Digital scholarship in the Humanities (LLC)”, “Digital Humanities Quarterly (DHQ)”. Two of these “foundational journals” (Sula & Hill, 2019) have a fairly long history: CHum was established in 1966, and LLC in 1986; while the third, DHQ, is one of the largest journals aimed specifically at DH research and has been used before as the basis of “digital humanities” research (see Gao et al., 2018; Luhmann & Burghardt, 2021). However, we are well aware that using the English buzzword “digital humanities” implies a self-fulfilled prophecy of anglocentric bias, since it leaves out the history of parallel DH histories in other languages and geographies (Gutiérrez De la Torre, 2020). In sum, our corpus covers a time span from 1966-2020 and has a total size of approx. 19 million tokens. 
+
+A keyword lookup shows that 1,268 articles (33.9 %) contain an instance of the search strings: theory / theories . To expand the semantic field of these strings, we have built a set of dictionaries with semantically related words (see Heuser & Le-Khac, 2012). In this article, we present work in progress for the creation of a dictionary of theoreticians that are mentioned in DH, which we consider an important prerequisite for any empirical study of the function and development of theory in DH. 
+
+
+# Building a corpus of theoreticians mentioned in DH papers 
+
+
+As part of an ongoing publication (Kleymann et al., under review) on a corpus-based study of “theorytellings” in DH, we handcrafted a dictionary for the sub-field of literary theory which we based on three widely-used introductory works on the topic (Selden et al., 2006; Rivkin & Ryan, 2007; Castle, 2008). The dictionary is available via GitHub 3 and covers 13 theoretical frameworks and typical representatives of both authors and related theory strands. A look-up of all these items in the corpus of DH journals yields 1,507 occurrences in 793 out of 3,737 articles. Following these promising results, our next step was to enhance the dictionary in a systematic way. 
+
+Many of the literary theory frameworks from our handcrafted dictionary can also be found in the form of categories on Wikipedia. Categories are collections of pages to a larger theme, for instance “hermeneutics” 4 or “new criticism” 5 . They contain pages with related concepts and also persons that are commonly associated with the topic. Our assumption is that theories tend to be presented by quoting their representative authors, thus we were particularly interested in retrieving persons inside each category. Creating a dictionary of persons also has the advantage that we can further enhance it with additional information from Wikidata (name, country, occupation, gender, etc.). 
+
+First, we generated a list of theory “seeds” from our corpus which were identified by simple heuristics such as “theor* of _” (e.g. theory of information) , “noun + theory” (e.g. systems theory) “adjective + theory” (e.g. economic theory). Using these heuristics, we were able to collect a total of 3,323 theory strings from our corpus. 6 These strings were used to query Wikipedia categories via the MediaWiki API 7 which looks for the given string both in the title as well as in the description snippets of all categories 8 : 1,529 different query strings were matched against 1,266 different categories, however since many strings matched to more than one category the API returned a total of 9,772 categories. 9 To reduce the fuzziness induced by the category snippets matches, we calculated the Jaccard distance and only kept category names that had a distance score lesser than 0.6 . 10 This left us with 2,411 person entries 11 and 92 categories, most of which look promising in terms of matching actual theory-frameworks (i.e. actor-network theory, chaos theory, critical theory, deconstruction, film theory, etc.). In order to check how many of the newly added theory-related persons actually appear in our corpus, we did a lookup of all the names. In order to compensate for the ambiguity of some last names (e.g. Field ) we searched only upper-case instances. 
+
+We were able to find 217 persons (11.6% of the retrieved dictionary) cited with their full names in our corpus 12 (see Table 1). Moreover, via the Wikidata reconciliation we know 187 of them are male (86.5%), 28 female (12.9%) and one, non-binary, providing extended possibilities for diversity studies (see González et al., 2021) 
+
+| position  || keyword  || tf  || df  || 1  || Lev Manovich  || 34  || 30  || 2  || Christopher Marlowe  || 44  || 25  || 3  || Jay David Bolter  || 30  || 24  || 4  || Marshall McLuhan  || 32  || 24  || 5  || Allen Forte  || 29  || 23  || 6  || Seneca  || 43  || 22  || 7  || Michael Joyce  || 40  || 20  || 8  || Michel Foucault  || 22  || 20  || 9  || Ezra Pound  || 27  || 19  || 10  || George Landow  || 28  || 19  || 11  || Bruno Latour  || 21  || 17  || 12  || Francis Bacon  || 41  || 15  || 13  || Walter Benjamin  || 18  || 15  || 14  || Alan Turing  || 17  || 14  || 15  || Jacques Derrida  || 17  || 14  || 16  || Noam Chomsky  || 15  || 14  || 17  || Roman Jakobson  || 15  || 14  || 18  || Boethius  || 27  || 12  || 19  || Northrop Frye  || 13  || 12  || 20  || Terry Winograd  || 13  || 12  |
+
+# Table 1 : Term and document frequency of the 20 most frequent persons with a full name match in our corpus. 
+
+
+
+
+By looking to every possible n-gram representation of the reference name (i.e. “Schulz von Thun”, “von Thun”, “Thun”) we got 1,216 matches that correspond to 53.5 % of humans in the dictionary. 13 However, many of the frequent last names here are highly ambiguous, either because they can be confused with common first names (Thomas, James, Paul, etc.) or because they are widely used last names (Smith, Brown, West, etc.). To make use of these last name matches, we aim to adopt an advanced disambiguation approach that is based on word embeddings (Müller, 2017) in follow-up studies. 
+
+
+# Conclusions 
+
+
+This first experiment for creating theory-related dictionaries by using seed terms from a corpus of three DH journals and looking them up via the MediaWiki API delivered very promising results. Not only were we able to gather a vast number of person names that are somehow related to theory-frameworks, but we were also able to show that these person names in turn can also be found in the actual DH articles. Two main limitations must be taken into account: 1) our “seed” terms are limited by literality (“theory of” statements) and do not encompass all possible theories. 2) API results depend on the robustness of Wikipedia categories and Wikidata information. So for instance, if a female Latin American theorist was not listed within a Wikipedia category, her name will not be retrieved. Conversely, if a theorist has not been labeled as “human” in Wikidata -i.e. if the property “instance of” (P31) is not filled with the entity “human” (Q5)- this theorist will not be retrieved. 
+
+Thus, we will have to come up with some routines of manually cleaning these automatically generated dictionaries. Therefore, we would be happy to get the chance to discuss our approach with the DH community as part of DH 2022 before we dive deeper into follow-up studies. In sum, we would like to share our method and reflect together on expanding this research to other DH communities of practices across other languages and geographies. 
+
+
+# Notes 
+
+
+1. Alex H. Poole (2017) observes that DH tends to discuss their identity – which we believe also includes their relation to theory – on a mostly anecdotal basis. Poole suggests that “the field would benefit from exploring itself more empirically” (p. 107). One can find an antecedent of an empirical approach in Mark Hall’s DHd 2019 contribution “DH is the Study of dead Dudes”, in which persons mentioned in DHd conferences (2016, 2017, and 2018) were manually identified from the abstracts, according to the following criteria: names are only counted if their work is the primary subject of investigation (#1), if they are presented as an exemplary example of a topic (#2) or as a sample of a dataset (#3). Our article can be seen as being complementary to Hall’s work since one limitation was precisely to exclude names that are part of the methodological approach (Hall, 2019). 
+
+2. Humanist mailing list: 
+
+3. Literary theory dictionary: 
+
+4. Hermeneutics: 
+
+5. New Criticism: 
+
+6. F or a list of all queries see: 
+
+
+
+7. Mediawiki API: 
+
+8. For an example of the results for the query “theory of language” see: 
+
+9. See the complete database here : 
+
+
+
+10. The filtered database can be found here: 
+
+
+
+11. A complete list of the persons with additional metadata such as gender, country, etc. is available on GitHub: 
+
+
+
+12. For the full list of person names see: 
+
+
+
+13. For a full list of all person last names see: 
+
+
+
+
+# notes

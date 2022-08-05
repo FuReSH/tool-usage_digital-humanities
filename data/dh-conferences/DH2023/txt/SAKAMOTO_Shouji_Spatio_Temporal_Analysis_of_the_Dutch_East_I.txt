@@ -1,0 +1,37 @@
+
+1. Introduction 
+
+Digital archives of paper-based cultural properties, such as documents, printings, provide digital images and bibliographic data, but they do not usually provide material data such as paper, ink. Various paper features, such as paper fiber and watermark, which are useful data in the study of paper-based cultural properties, are recently being extracted from paper (Sakamoto et al., 2013, 2016; Sakamoto, 2020; Johnson, 2018; Johnson et al., 2021;). 
+
+The Dutch East India Company (VOC) archives, consisting of around 20,000 items (or books), are held by the Nationaal Archief, Den Haag. In particular, the archive concerning the VOC Japan factory consists of 1,952 items (Roessingh, 1964). In this study, 220 items on VOC Japan factory from 1614 to 1831 are investigated. Paper diversity as well as change of paper are studied, depending on periods, through spatiotemporal analysis. The reasons for the change in paper are also discussed. 
+
+2. Methodology 
+
+Beta radiography is useful in the making of a watermark and a laid pattern (Ash, 1998); however, it is not easy to prepare the equipment, and the exposure times are longer than several hours (Rakvin et al., 2014; Boyle et al., 2009). Therefore, white LEDs were adopted as a light source along with a digital camera to take digital images of the paper under transmitting light. 
+
+3. Results and Discussions 
+
+Among the 220 items, over 20 watermarks, such as Strasburg Fleur de Lis, Pro Patria, Arms of Amsterdam were found, and there were at least 49 countermarks, such as the papermaker’s initial, company name, and so forth. Such watermarks provide information on the location of the production, paper mill, and papermaker’s name (Nicolaï, 2005; Heawood, 2003; Churchill, 1965). As the VOC archive usually has date information (year, month, day), spatiotemporal analysis is possible. 
+
+Result 1: In the period between 1610 and 1663, Japanese torinoko paper (high-quality gampi paper) was used for archival purposes (Yasuda, 2016; Sakamoto et al., 2022). 
+
+According to VOC records around 1660, VOC spent too much (40,000-50,000 gulden/year) for archival paper and decided to establish the paper mill in Batavia (Landwehr, 1994) to cut the cost of paper. At that time, torinoko paper was more expensive than western paper, which may have been the reason for not adopting torinoko paper for the VOC archival. 
+
+Result 2: In the period between the 1640s and 1710s, mainly French paper, which was made in the Angoumois region, was used, except for the Japanese torinoko paper mentioned above. 
+
+Initials AJ and GVH stand for the Dutch factories Abraham Janssen and Gills van Hoven, respectively. Abraham Janssen managed several paper mills in Angoumois in the period between 1635 and 1710, and the paper produced was exported to neighboring countries, such as England and Holland (Churchill, 1965). 
+
+Result 3: In the period between the 1730s and 1790s, mainly Dutch paper, which was made in the Zaan region, was used. 
+
+The change from French paper to Dutch paper is attributed to the religious war in France (Edict of Fontainebleau etc.) and the invention of Hollander beater in Holland. Many Huguenots (French protestant) craftsmen, including papermakers, moved to other countries such as England and Holland [the decline of French paper] (Scoville, 1967; Rosenband, 2000). On the other hand, Holland accepted many immigrants, including the Huguenots, and grew to be an industrial country. Especially, in the Zaan region located north of Amsterdam, paper mills were established by Pieter Van der Ley, Jan Honig, and so on. Zaan paper was exported to neighboring countries [the rise of Holland paper]. 
+
+Result 4: In the period between the 1800s and 1820s, types of Dutch (Zaan and Veluwe), French, American, English, Japanese kozo paper were uncovered, and probably Batavian paper, as well. 
+
+After the French Revolution, Holland was controlled by France, and VOC ceased to exist after 1799. At that time, no ship from Holland visited Batavia; therefore, the VOC Batavia factory hired mainly American ships to continue trading (1798-1809) in Asia (Kanai, 1966). Subsequently, Batavia was occupied by England (1811-1816). This chaotic situation broke the stable supply of paper from Holland. As a result, different types of paper from various countries exist in that period. 
+
+4. Concluding Remarks 
+
+The results obtained from paper feature analysis are completely new knowledge, which is impossible to derive from usual digital archive data. However, the results are based only on 220 items, and thus more accurate results are likely to be uncovered by the investigation of additional items. Consequently, paper analysis data are useful in the study of paper-based cultural properties in digital archives. 
+
+
+# notes

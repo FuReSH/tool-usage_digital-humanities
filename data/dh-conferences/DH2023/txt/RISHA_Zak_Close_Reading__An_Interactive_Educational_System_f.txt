@@ -1,0 +1,48 @@
+
+
+# Introduction 
+
+
+While educational technology research has evolved substantially in the past few decades, there’s evidence that more attention and research has focused on STEM subject areas rather than the humanities (Roll and Wylie, 2016). Additionally, many novel technologies developed by digital humanists have prioritized augmenting research instead of teaching and pedagogy (Fletcher, 2019). Our work seeks to specifically focus on novel educational technology in the humanities by introducing Close Reading , a web application for teaching users how to read English poetry. Reading poetry involves additional processes such as identifying and interpreting figurative language and paying close attention to the syntax, sequence of ideas, as well as the structure of the text. Close Reading uses a series of interactive pedagogical strategies to cultivate such reading practices in novice readers. Our presentation describes the system interface, activities, and strategies in detail as well as shares current progress and future work for evaluating and piloting the software. 
+
+
+# Literature review 
+
+
+Scholars have previously developed related platforms for poetry aimed to augment research and teaching. The Chinese Text Project (Sturgeon, 2021) is a dynamic digital library of pre-modern Chinese writing, such as poetry, that builds on the design of crowdsourced collaboration platforms like Wikipedia by adding additional integration with text mining tools to augment research. Using a more interactive approach to engage users, Jiuge (Zhipeng et al., 2019) facilitates human machine collaborative generation of Chinese classical poetry that can provide scaffolding to aid beginners in understanding the process of creating poetry. Other systems have more explicitly emphasized the teaching capabilities for poetry, such as For Better for Verse (Tucker, 2011) which is a learning system that uses interactive techniques to teach meter (the rhythmic structure of a poem) of English Victorian poems. Likewise, Chen & Lin (2016) designed an educational game for Chinese language poetry education that attempted to provide additional context to poems by simulating aspects of the poets' lives. 
+
+In contrast, our system focuses on teaching close reading, a method that emerged from the movement of New Criticism during the 20th century and promotes close and detailed examination of literary texts. It is also a popular pedagogical technique to teach subjects in English literature, and more specifically, poetry (Brooks, 1947; Macey, 2000). Technologies related to the close reading of poetry have sought to support and augment the process for users. Poemage (McCurdy et al., 2016) is a visualization tool that allows users to interactively explore the sonic topology of a poem. Metatation (Mehta et al., 2017) is a system that augments critic’s annotations as they close read by automatically providing additional information by searching external resources. Our approach focuses more on teaching close reading rather than augmenting it. 
+
+
+# System summary 
+
+
+
+# An example of the Close Reading system interface 
+
+
+The Close Reading system consists of an interactive interface (Figure 1) where learners advance through four to five activities (Figure 2) relating to a specific poem. These activities are progressive, building on one another in complexity and difficulty. 
+
+
+## Pedagogical activities 
+
+
+
+- Blocking: Learners use an interface to block a poem without stanzas into meaningful sections, helping them chunk the text, make note of changes, and summarize the more literal aspects of the poem. 
+- Think Aloud: This activity uses interactive animations to share a mental model of an expert reading and interpreting a poem. 
+- Pressure Points: This activity targets specific parts of the poem relating to the problem/s of the poem, asking the user to respond to a related prompt. 
+- Reflection: Users are asked to apply aspects of the poem to life experiences, reflecting on how the themes and issues of the poem might apply to their own life. 
+
+
+
+## The four activities of Close Reading : blocking (top left), think aloud (top right), pressure point (bottom left), and reflection (bottom right). 
+
+
+
+# Current progress and future work 
+
+
+After a prototype was built, we introduced the system to 20 students enrolled in an undergraduate reading poetry course at a university in the Northeastern United States. Our goals were to evaluate these interactive activities and overall usability of the platform. Our preliminary results helped illustrate how the platform could potentially increase students’ ability and confidence in interpreting poetry. We report on impressions from students and the challenges of evaluating Close Reading ’s effectiveness. In the future, we plan to continue refining our evaluation and design methods to better understand how technologies can support the teaching of close reading. While a pedagogically focused project, we believe valuable data will be generated from future user studies and system use for further research in this area. 
+
+
+# notes

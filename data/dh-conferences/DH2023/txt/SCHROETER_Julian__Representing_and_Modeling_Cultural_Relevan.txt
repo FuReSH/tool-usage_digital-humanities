@@ -1,0 +1,55 @@
+
+Working with large corpora is one of the strengths of computational literary studies (CLS) . Collecting metadata is the essential step for interpreting analytical results. So far, large corpora focus on non-historical metadata such as gender or general genres (Piper 2018, Jockers 2013). Historical metadata, if any, are collected as epoch or periods of publication, and with a growing interest also in the historicity of genres (cf. Underwood 2019, Schröter 2019). In CLS , there is, however, a growing interest in more specific socio-historical changes. Pursuing this interest necessitates collecting contextual metadata (cf. Riddell/Bassett 2020). One of the most important dimensions of a social history of literature is that of cultural relevance. So far, corpora tend to have several methodological weaknesses: Firstly, as most studies do not pay attention to the aspect of relevance, most corpora give all texts the same weight. In studies that have an interest in prestige, it is common practice to model these categories in a non-historical fashion (Algee-Hewitt/McGurl 2015) or from the perspective of present readers (Koolen et al. 2020). Secondly, most corpora have a bias towards highly canonical texts because canonical texts are already digitized whereas the ›big unread‹ awaits to be exploited. To investigate the historical change of cultural relevance, both weaknesses have to be overcome. 
+
+The central assumption behind the poster that shall be presented is that the forms of cultural relevance are much more diverse and that significant new historical insights can be gained by representing this diversity depending on specific research interests. Hence, the poster will have three areas that correspond to methodological steps, respectively: 
+
+
+- It shows in a spreadsheet the current state of research. 
+- It discusses the advantages and shortcomings of possible models of prestige based on visualizations starting from a specific interest in the dependency between media formats and genre semantics. 
+- Using different forms of visualization, the poster demonstrates the impact of cultural relevance beyond prestige based on a genuine new corpus. 
+
+
+As this corpus includes more than 700 mostly forgotten novellas that were relevant in their contemporary contexts with a wide variety of historical metadata, it overcomes both weaknesses mentioned above. 
+
+On the first issue (I), two aspects can be distinguished, the epistemic aspect of criteria for detecting prestige and different concepts of prestige. Table 1 outlines both aspects as two dimensions and provides a new view on prestige. On the poster, this table will be extended to the whole field of relevant research. 
+
+| concept of relevance  || epistemic dimension  || form  || source  || ›success‹ or ›popularity‹  || sales  || binary: Bestseller/no bestseller  || Algee-Hewitt/McGurl (2015)  || ›literary esteem‹  || established lists of canonical works (»found lists«)  || binary: in/not in corpus  || Algee-Hewitt/McGurl (2015)  || ›elitist prestige‹  || being reviewed at least once  || binary  || Underwood/Sellars (2016)  || ›elitist prestige‹  || interviewing experts (»made lists«)  || ranked positions  || Algee-Hewitt et al. (2015)  || Literary canon  || Expert decision  || ordinal scale of canon status: low, medium, high  || ELTeC-Korpus  |
+
+Table 1: Conceptual and epistemic dimensions of modeling prestige 
+
+
+
+
+On the second issue (II), models for representing prestige are presented based on two conceptual dimensions: On the first dimension of context-sensitivity, there are two types of models: The context-insensitive model directly links a specific aspect of prestige to each literary work. The context-sensitive type of model, in contrast, links a specific aspect of prestige relative to a historical situation where the respective aspect of prestige was assigned to the work. The latter model carries the advantage that it facilitates investigating the assignment of prestige as a contingent social practice rather than interpreting prestige as eternal literary value. 
+
+The second dimension is that of a diversity of prestige. Three options are relevant: It is common practice to use only one concept and one epistemic aspect from table 1 as the ›best‹ proxy to cultural relevance. Another practice would be that of merging different epistemic dimensions into one encompassing idea of relevance. This strategy has the advantage that it takes into account different dimensions and provides only one resulting ratio that can be used in downstream tasks as one singular feature. Several shortcomings have to be considered, such as the issue of scaling different epistemic aspects. Finally, there is an option of modeling a multi-dimensional space of relevance that preserves all different aspects. 
+
+On the third issue (III), the historical situation becomes more complex by the fact that historical relevance is not only a matter of prestige but also a matter of circulation. Three more dimensions have to be taken into account: 
+
+
+- The degree of circulation in public libraries and reader circles. 
+- The degree of supra-regional circulation 
+- The average circulation volume of media types. 
+
+
+The poster will visualize the available data for the three types of circulation and dominance. Figure 1 provides a visualization of average circulation volume. 
+
+
+
+Figure 1: 
+
+
+Circulation volumes for different media 
+
+
+The poster is intended to encourage scholars who are interested in historical insights into literary cultures to discuss the ›next generation‹ of context-sensitive metadata acquisition and representation. Based on a specific historiographical interest in the dependency between media and genre, it aims to provide data-driven ground and methodological reasoning for discussing different options of generating context-sensitive corpora and to provide an argument for the desirability of such corpora in literary studies. 
+
+
+# notes
+
+[^1]:  The corpus is described and can be explored in 
+                    . 
+                
+[^2]: Cf. the cost-action project, URL: 
+                            https://www.distant-reading.net/(accessed December 8, 2022).
+                        

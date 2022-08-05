@@ -1,0 +1,28 @@
+
+Vision for a Paradigm Change 
+
+This paper presents the vision of publishing and using parliamentary data on the Semantic Web for Digital Humanities (DH) research, with a focus on studying parliamentary culture, language used, and networks of politicians (Hyvönen et al., 2021, 2022). First results of the Semantic Parliament project (ParliamentSampo, 2021) are presented: 
+
+
+- Finnish parliamentary debates, totalling over 950 000 speeches and covering the whole history of the Parliament of Finland (PofF) 1907–2021, have been transformed into a 1) Speech Knowledge Graph (S-KG) and 2) into XML form using the new emerging Parla-CLARIN format (Parla-CLARIN, 2021) for international interoperability (Sinikallio et al., 2021). 
+- A Prosopographical Knowledge Graph (P-KG) representing biographical data about the politicians during the same time span, using the event-based CIDOC CRM (CIDOC CRM, 2021) ontology, has been created and interlinked with the S-KG (Leskinen et al., 2021). 
+- The datasets S-KG and P-KG were published as a Linked Open Data (LOD) service with a SPARQL endpoint and are used to study Finnish political culture and language, based on the speeches and networks of politicians (Hyvönen et al., 2021, 2022). 
+- To demonstrate the usability of the new data infrastructure, a semantic portal ParliamentSampo – Parliament of Finland on the Semantic Web, targeted for researchers and the public is presented. The portal is based on the LOD service (3). The portal and LOD service will be opened for public use by the end of 2022. 
+
+
+Related Work 
+
+Parliamentary data are widely available for making political decision making transparent, and the data is used for linguistic and DH research. The paper first explains why publishing parliamentary data as LD makes sense, and discusses related projects in different countries (ParlaMint, 2021), including Canada, Italy, Latvia, Slovenia, UK, and the LinkedEP system (Van Aggelen et al., 2017) of the European Parliament. After this, the knowledge graphs (KG) of the ParliamentSampo system and their creation processes are presented and the benefits and challenges of the LOD approach are discussed, suggesting a paradigm shift in publishing and studying parliamentary data using semantic web technologies. 
+
+The Model and Implementation 
+
+Based on the Sampo-model (Hyvönen, 2021) and Sampo-UI framework (Ikkala et al., 2021), ParliamentSampo aggregates and enriches data from multiple data providers in addition to the PofF, and publishes the result in a LOD service, based on best practices of W3C (Heath & Bizer, 2011), including a SPARQL endpoint and additional LOD services, such as content negotiation. In addition, the 7-star LOD model (Hyvönen et al., 2014) extending the traditional 5-star model of Tim Berners-Lee with schema documentation and data validation is used. The LOD service can be used for direct DH analyses using its APIs and for creating ready-to-use applications for research. Data and application dissemination is supported using Docker containers. 
+
+Results and Evaluation 
+
+Feasibility of the ParliamentSampo approach is evaluated by showing how the SPARQL endpoint together with tools, such as YASGUI (Rietveld & Hoekstra, 2017) and Google Colab with Jupyter Notebooks, can be used for novel DH analyses and visualizations on parliamentary speeches and networks of politicians. This is the first time that all speeches of the PofF since it was established in 1907 are available as uniform data for DH research. We also introduce the new semantic portal “ParliamentSampo – Parliament of Finland on the Semantic Web” implemented on top of the LOD service. It is demonstrated how the portal can be used for analyzing political language in use in different times, their semantic content, and differences between prosopographical groups, such as female and male Members of the Parliament and different political parties. For this purpose, the speech texts have been enriched semantically with Named Entity Linking using FinBERT (2021), a Finnish language model based on Google BERT, by ontology-based keyword indexing using the automatic annotation tool Annif (Suominen, 2019), and by topic detection. Furthermore, network analyses of political networks using P-KG are presented using the Sparql2GraphServer tool (Leskinen et al., 2021). When using the portal, programming skills are not needed but data literacy. Finally, new possibilities and challenges of using linked data and ParliamentSampo in parliamentary studies are discussed and directions for further research are suggested. 
+
+The multidisciplinary work on ParliamentSampo has involved researchers in computer science, parliamentary studies, and linguistics at the University of Helsinki (HELDIG centre), Aalto University, and University of Turku, and is funded mostly by the Academy of Finland and EU project In/Tangible European Heritage. CSC – IT Center for Science, Finland, provided computational resources. 
+
+
+# notes

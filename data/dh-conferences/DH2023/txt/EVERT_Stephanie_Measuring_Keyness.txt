@@ -1,0 +1,69 @@
+
+
+# Keywords in corpus linguistics and DH 
+
+
+In corpus linguistics, the notion of keywords refers to words (and sometimes also multiword units, semantic categories or lexico-grammatical constructions) that “occur with unusual frequency in a given text” (Scott, 1997: 236) or a text collection, i.e. a corpus. Keywords are deemed to represent the characteristic vocabulary of the target text or corpus and thus have many applications in corpus linguistics, digital humanities and computational social science. They can capture the aboutness of a text (Scott, 1997), the terminology of a text genre or technical domain (Paquot and Bestgen, 2009), important aspects of literary style (Culpeper, 2009), linguistic and cultural differences (Oakes and Farrow, 2006), etc.; they give insight into historical perspectives (Fidler and Cvrček, 2015) and provide a basis for measuring the similarity of text collections (Rayson and Garside, 2000). Keywords are also an important starting point for corpus-based discourse analysis (Baker, 2006), where manually formed clusters of keywords represent central topics, actors, metaphors, and framings (e.g. McEnery et al., 2015). Since this process is guided from the outset by human understanding, it provides a more interpretable alternative to topic models in hermeneutic text analysis. 
+
+Keywords are usually operationalised in terms of a statistical frequency comparison between the target corpus and a reference corpus . Different research questions can be addressed depending on the particular constellation of target T and reference R , e.g. (i) T = a single text vs. R = a text collection ( ➞ aboutness), (ii) T and R = collections of articles on the same topic in left-leaning and right-leaning newspapers ( ➞ contrastive framings), or (iii) T = texts from a given domain or genre vs. R = a large general-language reference corpus ( ➞ terminology). 
+
+Although keyword analysis is a well-established approach and has been implemented in many standard corpus-linguistic software tools such as WordSmith , AntConc , SketchEngine , and CQPweb (Hardie, 2012), it is still unclear what the “right” way of measuring keyness is (see overview in Hardie, 2014). In this paper, I propose (i) a mathematically well-founded best-practice technique and (ii) introduce a visual approach for exploring the empirical properties of different keyness measures. 
+
+
+# Keyness measures 
+
+
+Keyword analysis is operationalised as a comparison of relative frequencies: For each candidate word, its frequency f 1 in a target corpus T of n 1 tokens is compared to its frequency f 2 in a reference corpus R of n 2 tokens. The candidate set of m items typically includes words that only occur in the target corpus ( f 2 = 0). 
+
+A candidate is considered a (“positive”) keyword if its relative frequency p 1 = f 1 / n 1 in T is substantially higher than its relative frequency p 2 = f 2 / n 2 in R . A large number of keyness measures have been proposed to quantify the comparison and thus provide a basis for a ranking of the candidates and/or cut-off thresholds. Three main groups of measures can be distinguished: 
+
+
+- Measures based on hypothesis tests put the focus on establishing a statistically significant difference between p 1 and p 2 . The most widely-used measures are chi-squared X 2 and log-likelihood G 2 (Dunning, 1993). These measures are biased towards high-frequency keywords, often including function words and other non-specific words. 
+- Effect size measures instead focus on how many times more frequent a candidate is in T than in R . The most intuitive measure is relative risk r = p 1 / p 2 , also known as LogRatio = log 2 r (Hardie, 2014). Some other effect-size measures are equivalent (%DIFF, Gabrielatos and Marchi, 2012) or closely related (odds ratio, Pojanapunya and Watson Todd, 2018) to LogRatio. These measures are biased towards very low-frequency keywords and are often combined with an additional significance filter (typically based on G 2 ). 
+- Various heuristic measures lack any statistical foundation. They are often particularly easy to compute such as SketchEngine's SimpleMaths (Kilgarriff, 2009), which also offers a user parameter to adjust its bias towards high-frequency or low-frequency keywords. 
+
+
+
+# Mathematical discussion and visualisation 
+
+
+Hypothesis-test measures are subject to the criticism raised more generally against p-value testing in corpus linguistics and other fields (e.g. Gries, 2005). In particular, they are biased towards high-frequency keywords irrespective of effect size, selecting candidates that are not very salient for the target corpus. When they are applied more reasonably as a significance filter, the problem of multiple testing is often ignored: a single analysis may carry out frequency comparisons for hundreds of thousands of candidates, resulting in large numbers of false positives at customary significance levels such as p < .001 (Gries, 2005; Hardie, 2014). 
+
+By contrast, effect-size measures such as LogRatio are biased towards low-frequency keywords because they completely ignore the statistical significance of the observed difference in relative frequency. Moreover, many of these measures are undefined for f 2 = 0 and need special heuristics for this case; e.g. Hardie (2014) simply substitutes f 2 = 0.5 without mathematical justification. 
+
+Traditionally, keyness measures are computed from cumulative token frequency counts for T and R . However, two recent studies have independently concluded that keywords based on document counts are more robust (Evert et al., 2018; Egbert and Biber, 2019). 
+
+Keyness measures can also be understood from a more intuitive angle by visualising them as topographic maps , which show the scores assigned to all possible combinations of frequencies f 1 in T and f 2 in R on a logarithmic scale (similar to the visualisation of collocations in Evert, 2004: sec. 3.3). The examples in Fig. 1 reveal the respective frequency biases of G 2 and LogRatio – which is hardly mitigated by an additional significance filter – in the top row (dark red colours indicate frequency profiles of highly-ranked keywords). 
+
+
+# Visualisation of keyness measures as topographic maps for n 1 = n 2 = 100 M words. The bottom right panel highlights problems of an earlier version of LRC currently used by CQPweb. 
+
+
+
+# Best-practice recommendation 
+
+
+Conservative estimates based on statistical confidence intervals combine the advantages of hypothesis tests and effect-size measures into a single score. I therefore propose LRC , a conservative estimate of LogRatio, as a best-practice keyness measure. LRC uses an exact conditional Poisson test (Fay, 2010: 55) to obtain reliable confidence intervals corrected for multiple testing. The full procedure for computing LRC scores is as follows: 
+
+
+- Collect the frequency data f 1 , f 2 for each candidate and the sample sizes n 1 , n 2 of T and R . Wherever suitable, document frequencies should be preferred. 
+- Compute a two-sided Pearson-Clopper binomial confidence interval [π – , π + ] for f 1 successes out of f 1 + f 2 trials, with Bonferroni-adjusted significance level α = 0.05 / m . 
+- Convert the binomial proportions to [LRC – , LRC + ] = [log 2 ( n 2 π – / n 1 (1 – π – )), log 2 ( n 2 π + / n 1 (1 – π + ))]. 
+- If the test is not significant (LRC – ≤ 0 ≤ LRC + ), set LRC = 0. Otherwise, set LRC = LRC – if p 1 > p 2 and LRC = LRC + if p 1 < p 2 . 
+
+
+LRC has several advantages over other keyness measures: (i) it balances out the high-frequency bias of hypothesis tests and the low-frequency bias of effect-size measures (cf. right panel of Fig. 2); (ii) unlike heuristics such as SimpleMaths it does this in a mathematically well-justified way; (iii) it can be applied to candidates with f 2 = 0 without special precautions; (iv) it detects both positive ( p 1 > p 2 ) and negative ( p 1 < p 2 ) keywords; (v) it includes a reliable significance filter (LRC = 0) and does not require arbitrary frequency thresholds; (vi) robust and efficient implementations of the underlying binomial confidence intervals are available in standard statistical software packages, so very large candidate sets can easily be processed. The left panel of Fig. 2 shows that LRC overlaps well with established keyness measures, again indicating that it provides an excellent compromise. 
+
+A reference implementation of LRC is available at https://osf.io/cy6mw/ together with a more detailed analysis. It is also included in version 0.6 of the corpora package for R. 
+
+
+# Quantitative analysis of top-250 keyword lists for the data of Evert et al. (2018): overlap between four measures (left panel) and frequency distribution in the target corpus (right panel). 
+
+
+
+# notes
+
+[^1]: https://www.lexically.net/wordsmith/
+[^2]: https://www.laurenceanthony.net/software/antconc/
+[^3]: https://www.sketchengine.eu/
+[^4]: https://cran.r-project.org/web/packages/corpora/

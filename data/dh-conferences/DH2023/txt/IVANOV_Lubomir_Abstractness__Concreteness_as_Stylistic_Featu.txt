@@ -1,0 +1,44 @@
+
+
+# Introduction 
+
+
+We present early results from a broad project investigating the usefulness of abstractness/concreteness as stylistic features for authorship attribution. The concreteness of a word/phrase refers to our sensory ability to perceive or experience the object/phenomenon described by that word/phrase. Abstractness is the opposite of concreteness. Abstractness and concreteness have been studied from a philosophical, psychological, neuro-physiological, linguistic, and literary perspectives. A significant amount of work has been performed on the computational aspects of concreteness/abstractness recognition and classification, including metaphor-, hyperbole- and idiom detection, rating, and processing (Spreen and Schulz, 1966; Paivio et al, 1968; Coltheart, 1981, Birke and Sarkar, 2006 & 2007; Li and Sporleder, 2009; Sporleder and Li, 2009; Turney et al, 2011; Kwong, 2011, Assaf et al, 2013; Neuman et al, 2013; Shutova et al, 2013; Brysbaert et al, 2014; Tsvetkov et al., 2014; Klebanov et al, 2015; Rei et al, 2017; Wu et al, 2018, Gao et al, 2018; Reif et al, 2019 ). There have been attempts to quantify the notions of concreteness and abstractness (Spreen and Schulz, 1966; Paivio et al, 1968, Brysbaert et al, 2014 ). In ( Brysbaert et al, 2014), a collection of 37058 words and 2896 two-word phrases was rated for concreteness by 4000 evaluators (approximately 25 evaluators per word). The rating uses a 5-point scale, where lower values indicate abstractness and higher values - concreteness. For each word/phrase, the mean rating and the standard deviation (i.e. evaluator agreement) were recorded. The Brysbaert dictionary has become a standard in many studies and has been used to train machine learning models to automatically rate word/phrase abstractness (Köper and Schulte Im Walde, 2016, Maudslay et al, 2020). 
+
+We are interested in the usefulness of abstractness/concreteness as stylistic features for authorship attribution. We present a new attribution methodology based on the Brysbaert dictionary. We employed the methodology to perform attribution experiments using the Reuters-RCV1 dataset (Lewis et all, 2014, NIST). The results show promise and warrant further studies. 
+
+
+# Attribution Methodology 
+
+
+Our strategy is to distribute the words (and word-pairs) from each document into categories based on the part of speech (PoS) roles of the words and the agreement of the evaluators as to the word’s abstractness. PoS information is important because words carry different levels of abstractness based on the context. For example, “toy” is concrete as a noun (mean 4.93, standard deviation 0.38 in the Brysbaert dictionary) but less concrete as a verb (mean 2.3, standard deviation 1.17). Similarly, “chestnut”, as a noun, is very concrete, but as a color adjective – quite abstract. We use the following PoS categories: jj, jjr, jjs, nn, nnp, nns, rb, rbr, rbs, vb, vbd, vbg, vbn, vbp, vbz. These are based on the standard Penn Treebank tags (Santorini, 1990, Penn Treebank Tags). We also have a category “wp” for word pairs. 
+
+The standard deviation (SD) of the evaluators’ ratings in the Brysbaert dictionary is another indicator of abstractness. A scan through the dictionary reveals that SD is smaller for nouns (average 1.10), larger for adjectives (average 1.218), and even larger for verbs (average 1.253). In general, SD is larger for abstract words. We define four SD classes: “very narrow” (SD<0.5), “narrow” (0.5≤SD<1.0), “wide” (1.0≤SD<1.5) and “very wide” (SD≥1.5). 
+
+Finally, we combine the PoS and SD classes above to obtain 64 abstractness classes (e.g. “jj_narrow”, “vb_wide”, etc.). Our algorithm constructs a 64-dimensional vector for each text in the corpus by mapping each word in the text to one of the 64 classes above and averaging the mean abstractness ratings of all words mapped to the same category. We exclude the most (universally) common 25 nouns, 50 verbs and their tenses, 50 adjectives, and 35 adverbs to avoid skewing the results by frequently used words. The generated vectors are stored as WEKA (Hall et al, 2009) files and used for training WEKA classifiers. 
+
+
+# Experiments and Results 
+
+
+Our experiments were based on randomly selected 20-, 15-, and 10-author subsets of the Reuters-RCV1 corpus. We PoS-tagged all words in each text in the corpus using the Stanford PoS tagger. Next, we generated an abstractness vector for each file and trained three WEKA classifiers - a support vector machine with sequential minimal optimization (SMO), a multilayer perceptron (MP), and a random forest classifier (RF). We used leave-one-out cross-validation. Table 1 shows the averages of the results from all three classifiers for abstractness as well as for a set of traditional stylistic features. 
+
+While not the top performing stylistic feature, abstractness outperforms most standard features including function words. The confusion matrix in Table 2 – typical across all abstractness experiments - demonstrates that precision, recall, and F-measure are high for most authors. Some authors exhibit particularly high precision and recall (e.g. Lydia Zajc: 0.936/0.880, Fumiko Fujisaki: 0.800/0.960, etc.). This indicates that some authors use abstraction/concreteness in unique ways, but more work is needed to determine the patterns of abstractness that set these authors apart. 
+
+
+# Conclusion and Future Work 
+
+
+We presented an authorship attribution methodology based on the use of abstractness/concreteness ratings. The early results show promise but further research is needed: 
+
+
+- Perform further experiments with different datasets: We have several datasets available – a Victorian authors dataset, a poetry dataset based on Project Guttenberg, an 18 th century American/British documents dataset, and a 19 th century American literary dataset. 
+- Explore automatic methods for rating abstractness/concreteness. 
+- Investigate the issue of abstractness/concreteness complementarity and its impact on authorship attribution. 
+- Consider the abstractness of longer multiword phrases in authorship attribution. 
+- Explore the use of metaphors in attribution. 
+- Study abstractness patterns in literary works and their impact on the attribution accuracy. 
+
+
+
+# notes

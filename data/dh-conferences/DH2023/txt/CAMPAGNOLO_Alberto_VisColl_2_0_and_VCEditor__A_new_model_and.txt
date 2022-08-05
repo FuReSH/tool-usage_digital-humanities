@@ -1,0 +1,35 @@
+
+
+# Introduction 
+
+
+Today’s quintessential book form is the codex, i.e., collections of sheets folded double and fastened at the spine, usually protected by covers (Roberts and Skeat, 1983: 1; Ligatus, 2015a; Harnett, 2017: 184). Historically this has been true for most of the book production in the Middle East and the West since the appearance of codex books around the third century CE. The ultimate working unit of books in codex format is the gathering (or quire): a group of folded (or single) leaves bound together with other gatherings to form the textblock (Andrist et al., 2013: 50; Ligatus, 2015b). 
+
+The gathering structure represents the first key to studying the genesis and history of codices and their content (Andrist et al., 2010). This structure is fundamental to studying the codex format for manuscripts and early printed books. The study of gathering structures helps assess provenance and dating or illustrate—highlighting irregularities and discontinuities—complex histories. 
+
+Traditionally, gathering structures are described in highly formalized alphanumerical formulaic representations—collation formulas—whose information density hinders the immediacy of their interpretation. To tackle this problem and provide a richer and more flexible information model, Porter and Campagnolo have devised VisColl (Collation Visualization), a system for modelling and visualizing the physical collation of books in codex format (Porter et al., 2017a; Porter et al., 2017b). When gathering assemblies are captured through VisColl, taking advantage of the flexibility of the digital medium, they can, in turn, be readily visualized, thus allowing their study and that of related features, fostering a more immediate understanding and interpretation of the data. 
+
+
+# VisColl and VCEditor 
+
+
+VisColl’s development team is centred at the Schoenberg Institute for Manuscript Studies (SIMS) at the University of Pennsylvania Libraries. Conceived around 2013, VisColl’s model and project have gone through a series of ameliorations that resulted in the publishing of version 2.0 and a new graphical interface, VCEditor in October 2021 (Porter et al., 2021; Perkins and Emery, 2021). VCEditor is based on the VisCodex web application, developed by the Old Books New Science Lab at the University of Toronto, under the direction of Professor Alexandra Gillespie (Ung et al., 2021). 
+
+The XML model behind VisColl permits users to collect structured data to describe gathering assemblies. From that one can generate diagrammatic representations and digital facsimiles that re-join into virtual bifolia the photographs of the leaves of books, making overt their physical makeup. To allow for maximum flexibility and to represent complex structures, version 2.0 changes the approach and its data elements radically, switching from the quire and the bifolium as its base units (as it is customary in collation formulas) to the single leaf; each leaf can then be conjoined to form a bifolium within a gathering. Users can then collect richer data than what is traditionally captured in collation formulas—e.g., each leaf’s attachment method, the hair and flesh side of parchment leaves, animal species, and so on. The data collected can then be used to automatically generate detailed diagrammatic visualizations, recording and describing complex structures with ad hoc annotations and taxonomies. This alone represents a substantial improvement over traditional methods based on collation formulas and descriptions, or diagrams painstakingly produced for a specific volume. 
+
+VCEditor, based on UToronto’s VisCodex (Ung et al., 2021), allows users to model gathering structures through a simple graphic interface without considering or understanding VisColl’s model, thus widening the user base of the model beyond the digital humanities. Data on the structure is collected and mapped onto VisColl’s schema to generate compliant XML records. The XML record can then be downloaded or used to generate, directly in VCEditor, a series of visualizations through Idrovora, an HTTP Xproc service developed by Gregor Middell (Figure 1)(Middell, 2021). Idrovora runs XSLT scripts in the backend and generates SVG visualizations of the gatherings, HTML rendering of the reconstructed conjoined bifolia, and collation formulas. The system is very flexible, and additional visualizations or other forms of data reuse can be added through new XLST pipelines or parametrical input. 
+
+
+# Figure 1. 
+
+
+VCEditor’s infrastructure. 
+
+Since VCEditor’s beta release in early October 2021 to the time of writing, more than 250 people have registered for the service. The users vary from scholars to book conservators and students working on more than 170 individual projects. A testimony to the need and popularity of the tool. 
+
+While working on improving the tool and the user experience, we are also actively putting together new scripts for a variety of different visualizations and modelling requirements, such as imposition for printed books and manuscripts penned before folding and cutting the gatherings, watermark positioning, improved biocodicology data visualizations, engaging with users and specific communities of interest. 
+
+This presentation will showcase VCEditor’s features and the modelling capabilities of VisColl’s 2.0. 
+
+
+# notes

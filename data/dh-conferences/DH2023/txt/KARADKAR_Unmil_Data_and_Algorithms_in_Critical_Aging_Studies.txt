@@ -1,0 +1,123 @@
+
+
+# Introduction 
+
+
+This workshop will invite participation from scholars who are studying the interplay between aging and digital technologies. Ever-increasing data collection through mobile services, online communications, embedded and worn sensors, social media platforms, and digitization is affecting several aspects of our lives, including aging. The data generated is algorithmically processed by corporate, governmental, individual, and non-governmental actors to shape the experiences, services, and opportunities available to an increasingly aging population. Recognizing that neither data nor algorithms are neutral, their detrimental effects on disadvantaged demographics have been widely studied in humanistic contexts, most famously in “Algorithms of Oppression” (Noble, 2018), which articulates the racial biases in google’s search algorithms. 
+
+Organized by leading scholars from aging studies (Katz, 2014), communication studies, information sciences, and social sciences, we will engage scholars who use humanistic approaches to research the impact of data and algorithms on the aging population. The significance of aging as an issue is recognized by the World Health Organization, which has formed a global collaboration around this issue titled “the UN Decade of Healthy Aging” (World Health Organization, 2021). 
+
+A non-exhaustive list of topics of interest includes: 
+
+
+- impact of digitization, data, and algorithms on the processes and practices of aging 
+- aging, statistics, and public policies 
+- data ageism - ethics, harms, and justice 
+- policies and infrastructure for responsible international and interdisciplinary data sharing 
+- new methods in interdisciplinary, intersectional scholarship 
+- representations of ageing and data in literature and media 
+- humanistic studies of datafication of aging 
+- agency and autonomy in sensor-enhanced ageing 
+- digital technology practices, impositions, and appropriation 
+- community-driven data 
+- development of datasets to document the changing reality of aging adults 
+- innovative qualitative, quantitative, and ethnographic approaches to critique data 
+- theorization of datafication through the lens of aging 
+
+
+
+# Workshop organizers 
+
+
+This workshop is proposed by the PI and some co-applicants of Aging in Data, a Canadian SSHRC funded (number: 895-2021-1020) partnership project consisting of 19 partner organizations and 34 co-applicants and collaborators from 10 countries in Europe, North America, and Australia (Concordia press release, 2021). 
+
+Unmil P. Karadkar (unmil.karadkar@uni-graz.at) works as a Scientist in the Center for Interdisciplinary Research on Aging & Care (CIRAC) at the University of Graz, Austria. He situates his work at the intersection of aging studies and research data management, sharing, and reuse. His research contributes to areas such as the design of digital collection interfaces and digital humanities. Unmil also holds a research appointment at the University of Texas at Austin, USA. His research has been funded by the National Science Foundation, Texas General Land Office, USAA, and Andrew W. Mellon Foundation. 
+
+Ulla Kriebernegg (ulla.kriebernegg) directs the Center for Interdisciplinary Research on Aging and Care (CIRAC) and is Associate Professor of American Studies at the University of Graz, Austria. Her research focuses on North American literary and cultural studies, Aging and Care Studies, and Medical Humanities. Her latest book, Putting Age in its Place (forthcoming) deals with the spatiality of care in cultural representations of care homes. Ulla is chair of the Age and Care Research Group Graz and deputy chair of the European Network of Aging Studies (ENAS). She co-edits the Aging Studies book series (Transcript), is Associate Editor of The Gerontologist and member of the GSA’s Humanities, Arts, & Cultural Gerontology Panel. She directs the Graz part of SSHRC's "Aging in Data" project. 
+
+Kim Sawchuk (kim.sawchuk@concordia.ca) is a Professor in the Department of Communication Studies, holds the Concordia University Research Chair in Mobile Media Studies, and is the Associate Dean of Research and Graduate Studies for the Faculty of Arts and Science at Concordia University, Montreal, Canada. Her research at the intersection between aging and communication technologies challenges lingering ageist assumptions within media studies, where old age and new media are often positioned as incommensurable topics. Kim is a co-founder of the Critical Disability Studies Working Group and has led Ageing, Communication, Technologies (http://www.actproject.ca), a Canadian SSHRC-funded interdisciplinary, international, multi-methodological project that investigates the transformation of experiences ageing with the proliferation of new forms of mediated communications. She is also the PI of the SSHRC-funded Aging in Data partnership project (2021-2028). 
+
+Sakari Taipale (sakari.taipale@jyu.fi) is Associate Professor of Social and Public Policy at the Department of Social Sciences and Philosophy, University of Jyväskylä, Finland, and a part-time Senior Research Associate at the Faculty of Social Science, University of Ljubljana, Slovenia. In Jyväskylä, he leads the ‘New Technologies, Ageing and Care’ research group of the Centre of Excellence in Research on Ageing and Care (CoE AgeCare). Dr Taipale has participated in many European research networks and he has made research and teaching visits to universities in countries such as Italy, Lithuania, Slovenia and Spain. 
+
+Loredana Ivan (loredana.ivan@comunicare.ro) is associate professor PhD, at the National University of Political Studies and Public Administration (SNSPA), Bucharest, Romania. She studies technology-mediated interpersonal communication, combining sociological and social psychological approaches. With a background in Sociology, she holds a PhD from the University of Bucharest. She has been Marie Curie Scholar at the University of Groningen, Interuniversity Center for Methodology (ICS), in The Netherlands and visiting researcher at Humboldt University, Berlin, Department of Social and Organizational Psychology. She is also a co-founder of the Research Group in Social Psychology at the Society of Romanian Sociologists (SSR) and the current chair of the European Network on Ageing Studies (ENAS) 
+
+
+# Diversity and Inclusion 
+
+
+The organizers come from Europe and North America, are gender-balanced as well as diverse in academic disciplines and career stages. We will strive to achieve similar balance in our presenter pool to the extent possible. 
+
+Similar to Europe and North America, digital technology is affecting the experience of aging in countries such as Japan, China, India, and South Korea. We seek to engage the Asian Aging Studies scholarly community in aligning with the theme of the conference as well as to broaden our professional network. 
+
+
+# Target audience and expected number of participants 
+
+
+This is our first workshop on this topic and we are unsure what the interest will be. In this light, we have tried to make the topic as broad as possible, while retaining the focus on our core interests. Given the increase in issues related to socio-humanistic studies of aging and the increasing focus on critical studies of computing and data, we anticipate receiving 10 to 20 submissions and accepting 8 to 10 for presentation at the workshop. We are unable to gauge the level of interest in the DH community in attending the workshop without presenting. 
+
+
+# Technical requirements - Projection, Internet access 
+
+
+The workshop will not require special technical support. A projector for presentations and an internet connection for participants to showcase web-based materials as well as for remote participation will suffice. 
+
+
+# Length and format - Half day 
+
+
+This time frame will allow for adequate exploration for a newly forming community. We are open to conducting a full-day workshop if the reviewers believe that there will be a larger interest than we anticipate. 
+
+The workshop will be held in a seminar style, with a keynote, followed by short and long presentations. Individuals may participate in the workshop without presenting. In order to facilitate community-building, the organizers will include an open discussion time or breakout sessions depending upon the audience size and time limitations. 
+
+
+# Budget - None 
+
+
+The workshop will have no budgetary requirements. All participants will pay for their attendance. The workshop will not require supplies or other resources that will result in costs. 
+
+
+# Covid19 accommodations 
+
+
+While we encourage in-person participation, we recognize that regional Covid19 travel or health conditions may make it difficult for presenters to attend in person. Presenters may present in person or remotely. We will accommodate last minute changes. 
+
+
+# Code of conduct 
+
+
+In order to ensure a safe, respectful, and collegial environment at the workshop, the organizers will adopt the ADHO DH conference code of conduct, available at: 
+
+https://adho.org/administration/conference-coordinating-program-committee/adho-co nference-code-conduct. 
+
+
+# Solicitation of proposals 
+
+
+We will invite proposals for long (up to 750-1,000 words, 20 min) and short (up to 300 words, 10 min) presentations. Long presentations will report on mature work in the area or stake out a position in an area while short presentations will present early results or nascent work. 
+
+
+# Program Committee 
+
+
+Submissions will be vetted by a small program committee, which currently consists of the organizers. If necessary, we may include other colleagues to review proposals. 
+
+
+# Calls for Proposals 
+
+
+We will advertise the workshop CfP through various DH as well as Aging Studies networks (NANAS - North American Network in Aging Studies, ENAS - European Network in Aging Studies, Socio-GeronTechnology Network). We are not aware of similar aging networks in the Asia-Pacific and welcome pointers from the DH2022 program committee. 
+
+
+# Timeline 
+
+
+February 16: Announcement and release of CfP 
+
+May 15: Long and short presentation proposals due 
+
+May 25: Proposal decision notification 
+
+July 25: Workshop at DH 2022 
+
+
+# notes

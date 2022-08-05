@@ -1,0 +1,45 @@
+
+
+# Introduction 
+
+
+When it comes to creating new music, the composer as creative and well educated human being is undoubtedly the best source of interesting, well sounding and touching music, as perceiving sounds as music is very natural and subjective for humans. Consequently the definition and judgment of the aforementioned attributes is typically subjective and thus hard to formalize as required to formulate the question in a Digital Humanities driven approach. Nevertheless have people encountered the art of composing music from an algorithmic view very early as for example musical dice games which were invented by Mozart and contemporaries, which combines previously composed phrases to random patterns (Ruttkay 1997) and rules for example for harmonizing chorales in the style of J.S. Bach have been formalized (Ebcioğlu 1990). From a more general perspective however, the formalization of rules or knowledge is a difficult and tedious task and resulting compositions are limited by the knowledge or rules and surprising or genre breaking compositions are not to be expected (Papadopoulos & Wiggins 1999). Besides several other approaches to algorithmic composition, the family of Artificial Neural Networks (NN) have been well studied (Ji et al. 2020) and with the availability of high performance computing hardware, larger model architectures such as Transformers, which have shown for text-generation tasks near-human performance (Radford et al. 2020) and learn from examples, have been recently introduced to generate polyphonic music (Huang et al. 2018, Wu & Yang 2020). 
+
+These models are computationally complex and have tight hardware requirements, which hinder potential applications as supporting composition tool as well as playful interaction to explorethe cognitive creative process of composition (Gardner 1982) and the limitations of AI in this context. 
+
+We therefore introduce a web based tool available at , to make complex transformer based models more accessible to the general public by providing a simple web-interface to query the models. With the opportunity to rate individual pieces, we include a feedback mechanism to collect large-scale annotations and metadata, which we want to use to evaluate, which characteristics potentially pleasing synthetically generated music share and refine our models according to these characteristics. 
+
+
+# Corpus 
+
+
+We restricted our corpus to piano pieces by classical composers which are included in the large collection of MIDI files curated by kunstderfuge.com and the maestro data set (Hawthorne et al. 2019). 
+
+
+# Approach 
+
+
+Our NN model uses the Transformer architecture (Vaswani et al., 2017) including relative positional self attention as proposed by (Shaw et al. 2018) which has proven to yield promising results for polyphonic music generation with long-term structure (Huang et al. 2018). The MIDI files are encoded with note-on, note-off, time-shift and velocity events following (Oore et al. 2020). 
+
+
+
+# Figure 1: 
+
+
+Screenshot of our CanAICompose tool 
+
+
+
+# The Tool 
+
+
+Our tool is divided in two parts, a back-end serving the machine learning models and a front-end serving a web-interface (see Figure 1) to interact with the NN models. The back-end currently allows the querying of two different models, one model trained on compositions of all composers and one model which was additionally fine-tuned on compositions by Mozart, to allow an evaluation, to which extend a well performing model can be constrained to generating music similar to a certain style which for example a composer using this tool might aspire. 
+
+The back-end has the functionality to generate a new piece from scratch or to be primed by a user-predefined snippet, which the model is meant to continue and can be queried by API commands to be adaptable for a seamless integration in sheet music notation or composition tools. 
+
+The front-end was built upon the streamlit.io library for easy integration of NN models in a web-interface and was constructed with the general public as user in mind exploring the possibilities of NN generated music and rating the pieces subjectively. It therefore refrains from displaying symbolic notation such as sheet music but allows to play, rate and download the generated material. The code for this project is available here . 
+
+As consequent work, we want to fine-tune different NN models on various epochs of classical music and incorporate a classification model to predict the most promising model for a given preconditioning snippet. Based on the subjective ratings collected with this web-app, we want to incorporate a filtering algorithm to evaluate rejected or preferred music which allows musicologists to analyze the quality of deep generated music with respect to musical factors such as tension (Lerdahl, 1996), or melodic complexity (Narmour, 1992). 
+
+
+# notes

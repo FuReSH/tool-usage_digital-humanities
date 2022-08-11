@@ -58,10 +58,17 @@ f.read.yaml.furesh <- function(filename) {
 }
 # build data frame from  list of file names
 f.read.txt.files <- function(filenames) {
-  df.output <- map_df(filenames, ~ tibble(
-    text = read_file(.x)) %>%
-      mutate(filename = basename(.x))
+  df.output <- purrr::map_df(filenames, ~ tibble(
+    text = readr::read_file(.x)) %>%
+      dplyr::mutate(filename = basename(.x))
   )
+  df.output %>%
+    dplyr::mutate(id = str_replace(filename, '^(.+)\\.txt', '\\1'))
+}
+
+f.read.txt.files.from.folder <- function(path) {
+  v.filenames <- list.files(path = path, pattern = "*.txt",  ignore.case = T, full.names = T)
+  f.read.txt.files(v.filenames)
 }
 # Wordcloud with ggplot2
 # the input requires a column named "term"

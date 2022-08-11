@@ -28,8 +28,7 @@ df.dhconfs.titles <- df.dhconfs.works %>%
 # there is a problem with the abstracts: they are mostly full TEI XML files. I therefore load a folder of text files
 setwd(here("data/dh-conferences/12987959/"))
 v.files.abstracts <- list.files(path = "txt", pattern = "*.txt",  ignore.case = T, full.names = T)
-df.dhconfs.abstracts <- f.read.txt.files(v.files.abstracts) %>%
-  dplyr::mutate(id = str_replace(filename, '^(.+)\\.txt', '\\1'))
+df.dhconfs.abstracts <- f.read.txt.files(v.files.abstracts)
 
 # some join to get years
 # fix data type of ID

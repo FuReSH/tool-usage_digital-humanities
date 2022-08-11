@@ -2,6 +2,7 @@
 library(tidyverse)
 library(here)
 library(DataExplorer) # for quick exploration
+library(lubridate)
 # enable unicode
 Sys.setlocale("LC_ALL", "en_US.UTF-8")
 
@@ -11,13 +12,13 @@ source(here("code", "functions.r"))
 # load data
 # 1. DH conferences
 setwd(here("data", "dh-conferences"))
-load("dh_conferences_works.rda")
+load("dh-conferences_works.rda")
 
 # titles
 df.dhconfs.titles <- df.dhconfs.works %>%
   dplyr::select(id, title, year) %>%
   dplyr::rename(text = title) %>%
-  tidyr::drop_na(text) %>%
+  tidyr::drop_na(text) %>% 
   dplyr::arrange(year)
 # abstracts
 #df.dhconfs.abstracts <- df.dhconfs.works %>%
@@ -26,20 +27,23 @@ df.dhconfs.titles <- df.dhconfs.works %>%
 #  dplyr::arrange(year)
 
 # there is a problem with the abstracts: they are mostly full TEI XML files. I therefore load a folder of text files
-setwd(here("data/dh-conferences/12987959/"))
-v.files.abstracts <- list.files(path = "txt", pattern = "*.txt",  ignore.case = T, full.names = T)
-df.dhconfs.abstracts <- f.read.txt.files(v.files.abstracts)
+df.dhconfs.abstracts <- f.read.txt.files.from.folder(here("data/dh-conferences/12987959/txt")) 
 
 # some join to get years
-# fix data type of ID
-df.dhconfs.works$id <- as.character(df.dhconfs.works$id)
 df.dhconfs.abstracts <- df.dhconfs.abstracts %>%
   dplyr::left_join(df.dhconfs.works, by = c('id' = 'id')) %>%
   dplyr::rename(text = text.x) %>%
   dplyr::select(id, text, year) %>% # this can include more columns if needed
   dplyr::arrange(year)
+
+df.dh2022.abstracts <- f.read.txt.files.from.folder(here("data/dh-conferences/DH2022/txt")) %>% 
+  dplyr::mutate(year = parse_date_time("2022", orders = "Y")) %>%
+  dplyr::select(id, text, year)
+df.dhconfs.abstracts <- df.dhconfs.abstracts %>%
+  add_row(df.dh2022.abstracts)
 save(df.dhconfs.abstracts, file = here("data", "dh-conferences", "dh-conferences_abstracts.rda"))
-load(file = here("data", "dh-conferences", "dh-conferences_abstracts.rda"))
+#load(file = here("data", "dh-conferences", "dh-conferences_abstracts.rda"))
+
 
 # 2. FuReSH tool list
 df.tools <- read_csv(here("data","tools.csv")) %>%

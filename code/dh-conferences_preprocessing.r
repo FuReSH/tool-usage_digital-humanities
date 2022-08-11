@@ -18,7 +18,9 @@ df.dhconfs.works <- df.dhconfs %>%
                 title = work_title,
                 text = full_text,
                 authors = work_authors,
-                year = conference_year)
+                year = conference_year) %>%
+  dplyr::mutate(year = parse_date_time(year, orders = "Y"),
+                id = as.character(df.dhconfs.works$id))
 rm(df.dhconfs)
 
 # processing cleaning
@@ -31,7 +33,7 @@ df.dhconfs.works <- df.dhconfs.works %>%
 
 # save data
 setwd(here("data/dh-conferences/"))
-save(df.dhconfs.works, file = "dh_conferences_works.rda")
+save(df.dhconfs.works, file = "dh-conferences_works.rda")
 
 # there is a problem with the abstracts: they are mostly full TEI XML files, which need to be parsed
 # small tibble with abstracts only

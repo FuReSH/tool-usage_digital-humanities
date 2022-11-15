@@ -170,5 +170,12 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
          path = here("visualization"), device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
 }
 
+f.prettify.df <- function(data.input, file.name){
+  data.input %>%
+    dplyr::select(term, freq, freq.rel) %>%
+    dplyr::mutate(freq.rel = round(freq.rel, 2)) %>%
+    write.table(file = paste(file.name, 'print.csv', sep = '_'), row.names = F, quote = F, sep = ',')
+}
+
 # load parameters
 source(here("code", "parameters.r"))

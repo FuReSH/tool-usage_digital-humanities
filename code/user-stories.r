@@ -47,13 +47,18 @@ df.4memory.tools <- f.stringmatch.frequency(df.4memory, df.tools$variant)
 df.4memory.tools <- f.clean.variants(df.4memory.tools, nrow(df.4memory))
 write.table(df.4memory.tools, file = here("data/nfdi4memory/4memory-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
 
+
 df.dhq.tools <- f.stringmatch.frequency(df.dhq, df.tools$variant)
 df.dhq.tools <- f.clean.variants(df.dhq.tools, nrow(df.dhq))
 write.table(df.dhq.tools, file = here("data/dhq/dhq-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
+#df.dhq.tools <- read.csv(file = here("data/dhq/dhq-frequencies_tools.csv"), sep = ",")
+f.prettify.df(df.dhq.tools, 'dhq-frequencies_tools')
 
 df.dfg.tools <- f.stringmatch.frequency(df.dfg, df.tools$variant)
 df.dfg.tools <- f.clean.variants(df.dfg.tools, nrow(df.dfg))
 write.table(df.dfg.tools, file = here("data/dfg/dfg-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
+#df.dfg.tools <- read.csv(file = here("data/dfg/dfg-frequencies_tools.csv"), sep = ",")
+f.prettify.df(df.dfg.tools, 'dfg-frequencies_tools')
 
 # wordcloud
 v.label.source = "Data: NFDI4Memory"

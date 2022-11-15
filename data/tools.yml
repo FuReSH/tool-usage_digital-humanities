@@ -1,4 +1,5 @@
 ---
+# yaml-language-server: $schema=../schemas/tool.schema.json
 - name: AI
   expansion: artificial intelligence
 - name: distant reading
@@ -22,8 +23,11 @@
   expansion: machine learning
 - name: NER
   expansion: Named Entity Recognition
-- name: network analysis
+- name:
+    - network analysis
+    - social network analysis
   category: method
+  wikidataId: Q7551269
 - name: neural networks
 - name: NLP
   expansion: Natural Language Processing
@@ -35,7 +39,7 @@
   category: software
 - name: Python
   category: language
-  wikidata: https://www.wikidata.org/wiki/Q28865
+  wikidataId: Q28865
 - name: R
   category: language
 - name: RStudio
@@ -49,7 +53,7 @@
   category: software
 - name: Tidyverse
   category: software
-  wikidata: https://www.wikidata.org/wiki/Q60755534
+  wikidataId: Q60755534
 - name: Voyant Tools
   category: software
 - name: Wax
@@ -62,10 +66,10 @@
 - name: YAML
   expansion: YAML Ain’t Markup Language
   category: serialization
-  wikidata: https://www.wikidata.org/wiki/Q281876
+  wikidataId: Q281876
 - name: Edition
   category: concept
-  wikidata: https://www.wikidata.org/wiki/Q3331189
+  wikidataId: Q3331189
 - name: Datensatz
   category: concept
-  wikidata: https://www.wikidata.org/wiki/Q1172284
+  wikidataId: Q1172284

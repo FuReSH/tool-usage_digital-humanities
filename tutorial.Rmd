@@ -56,8 +56,9 @@ f.read.txt.files.from.folder <- function(path) {
 ```
 ## load tool list
 
-```{r}
-df.tools <- read_csv(here("data","tools.csv"))
+```{r, results="hide"}
+df.tools <- read_csv(here("data","tools.csv")) %>%
+  dplyr::filter(term != 'Internet') # it makes sense to remove this term from the tool list as it heavily skews the resulting frequencies
 ```
 
 ## load copora
@@ -145,14 +146,23 @@ f.relative.frequencies <- function(df.input, number.of.texts) {
 }
 ```
 
+### combine all functions
+
+```{r}
+f.compute.frequencies <- function(df.input, df.tools){
+  df.output <- f.stringmatch.frequency(df.input, df.tools$variant) %>%
+    f.clean.variants(df.tools) %>%
+    f.relative.frequencies(nrow(df.input))
+  df.output
+}
+```
+
 ## Analyse our corpora
 
 The actual analysis is done by running all three functions in succession on any of our corpora. Note that this might take a while for large corpora.
 
 ```{r}
-df.dhq.tools <- f.stringmatch.frequency(df.dhq, df.tools$variant) %>%
-  f.clean.variants(df.tools) %>%
-  f.relative.frequencies(nrow(df.dhq))
+df.dhq.tools <- f.compute.frequencies(df.dhq, df.tools)
 ```
 
 Let's again have a brief look at the results

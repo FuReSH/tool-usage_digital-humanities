@@ -1,0 +1,175 @@
+---
+title: "R Notebook"
+author: Till Grallert
+date: "`r Sys.Date()`"
+output: html_notebook
+---
+
+This [R Markdown](http://rmarkdown.rstudio.com) Notebook presents our approach to answering the following the question:
+
+>We are a *[Scholarly Makerspace](https://makerspace.hypotheses.org)* and want to curate a **list of tools** for DH work based on their **importance** in the **field**.
+
+The question contains a number of terms (highlighted above) that need further elaboration, if we want to operationalise the question for computational (or any) analysis:
+
+- The **field** of DH is represented by its written output, through conference abstracts, journal articles etc. This means that we need to find or build a **corpus** of openly available material to run any analysis on.
+- There are, of course, multiple approaches to measuring the relative **importance** of anything. For the sake of our analysis, we will opt for the number of mentions of a specific tool within a corpus as a measure of its importance to the field.
+- As we do not, currently, have a sophisticated way of extracting tools through *natural language processing* (NLP), we will need to find or produce a **list of tools** known to be relevant to the field. As tool registries have some importance in DH, we assume to be able to compile such a list with relative ease. Each entry in the list will then be assigned numerical values correlating to their relative frequency within our corpus.
+
+# Prepare the environment
+
+As is good practice, we load all necessary packages/libraries at the beginning of our R script. We also make sure that everything is set to use unicode encodings (might be necessary for some Apple systems).
+
+```{r prepare environment,  results="hide"}
+# load libraries
+library(tidyverse)   # load the core of the tidyverse packages, including ggplot
+library(ggrepel)     # repel labels in ggplot
+library(ggwordcloud) # wordclouds with ggplot
+library(paletteer)   # for better colour palettes
+library(here)        # for easy navigation within an R project
+# enable unicode
+Sys.setlocale("LC_ALL", "en_US.UTF-8")
+```
+
+
+
+# corpus building
+
+## functions
+
+To re-use this code, we have wrapped it in functions
+
+```{r}
+# build data frame from  list of file names
+f.read.txt.files <- function(filenames) {
+  df.output <- purrr::map_df(filenames, ~ tibble(
+    text = readr::read_file(.x)) %>%
+      dplyr::mutate(filename = basename(.x))
+  )
+  df.output %>%
+    dplyr::mutate(id = stringr::str_replace(filename, '^(.+)\\.txt', '\\1'))
+}
+
+f.read.txt.files.from.folder <- function(path) {
+  v.filenames <- list.files(path = path, pattern = "*.txt",  ignore.case = T, full.names = T)
+  f.read.txt.files(v.filenames)
+}
+```
+## load tool list
+
+```{r}
+df.tools <- read_csv(here("data","tools.csv"))
+```
+
+## load copora
+
+```{r load-dhq, results="hide"}
+# DHQ articles
+setwd(here("data/dhq"))
+df.dhq <- f.read.txt.files.from.folder("txt")
+```
+Lets have a quick view on the results
+
+```{r, echo=FALSE}
+# Quick look at the available variables
+df.dhq %>% 
+  glimpse(width = 80) # width is measured in characters
+```
+
+# analysis
+
+To re-use this code, we have wrapped it in functions that usually take a dataframe/tibble as input. Note that the input tibble must contain a column named "text". Note also that we prefixed functions with a namespace identifying the package they come from.
+
+## functions
+### frequency count
+
+The core of our analysis is a relatively blunt string match. We iterate over every term in our tool list, search all texts in our corpus for matches, and count the number of texts that return at least one hit. This aggregation by text acts as a weight against inflation of frequencies, if a specific tool is mentioned repeatedly throughout a given text.
+
+```{r}
+f.stringmatch.frequency <- function(df.input, list.strings) {
+  df.output <- df.input %>%
+    dplyr::mutate(
+      term = stringr::str_extract_all(text, 
+         regex(paste0("\\b", list.strings, "\\b", collapse = '|'),
+               ignore_case = FALSE)) # it might make sense to add an input variable for this choice
+    ) %>%
+    tidyr::unnest(term) %>%
+    # step 1: group by text and term: get frequency of number of hits per term per text
+    dplyr::group_by(text, term) %>%
+    dplyr::summarise(freq = n()) %>%
+    # step 2: group by term: get frequency of number of texts per term
+    dplyr::group_by(term) %>%
+    dplyr::summarise(freq = n()) %>%
+    # sort by frequency
+    dplyr::arrange(desc(freq))
+  df.output
+}
+```
+
+### clean spelling variants
+
+Our tool list contains spelling variants such as acronyms and their expansions, for which we want to aggregate the resulting frequencies.
+
+```{r}
+# note that the input needs columns named "term" and "freq"
+# control for correct case of matches
+# match all the variants and then group by term
+f.clean.variants <- function(df.input, df.tools) {
+  df.grouped <- dplyr::left_join(df.tools, df.input, by = c("variant" = "term")) %>%
+    tidyr::drop_na()%>%
+    dplyr::group_by(term) %>%
+    dplyr::summarise(freq = sum(freq))
+  df.grouped
+}
+```
+
+### calculate relative frequencies
+
+In order to compare corpora, we are interested in relative frequencies. We compute two such relative frequencies
+
+1. Ratio of frequencies with the highest frequency set to 1. We also provide this relative frequency for a basis of 100 (i.e. as percentage)
+2. Ratio of frequencies to the number of texts in our corpus with a basis of 100 (i.e. percentage)
+
+```{r}
+# note that the input needs a column named "freq"
+f.relative.frequencies <- function(df.input, number.of.texts) {
+  df.normalised <- df.input %>%
+    # normalise frequencies: 
+    dplyr::mutate(
+    # 1. relative to each other
+      freq.rel = freq / max(df.input$freq),
+      freq.rel.100 = freq.rel * 100,
+    # 2. as percentage of total number of input texts
+      freq.text.100 = freq / number.of.texts * 100) %>%
+    dplyr::arrange(desc(freq))
+  df.normalised
+}
+```
+
+## Analyse our corpora
+
+The actual analysis is done by running all three functions in succession on any of our corpora. Note that this might take a while for large corpora.
+
+```{r}
+df.dhq.tools <- f.stringmatch.frequency(df.dhq, df.tools$variant) %>%
+  f.clean.variants(df.tools) %>%
+  f.relative.frequencies(nrow(df.dhq))
+```
+
+Let's again have a brief look at the results
+
+```{r}
+head(df.dhq.tools)
+```
+
+# Notes
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+    The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+

@@ -165,12 +165,136 @@ Upon closer inspection, it turns out that not all abstracts are complete TEI XML
 2. Complete TEI XML files were converted to plain-text using the above-mentioned XSLT.
 2. TEI XML fragments were converted to full TEI XML files adding the necessary `<teiHeader>` using regular expressions. The complete TEI files were then again converted to plain-text.
 
+## scrape DFG GEPRIS
 
-## load tool list
+Initially it seemed simple to scrape all entries from the database as the URLs follow the pattern `https://gepris.dfg.de/gepris/projekt/{ID}` with nummerical IDs. However, as examples showed that these can have at least 9 digits, a simple incrementing function would take more than 25 years with a one second delay between each call to the server in order the 135273 actual projects listed in GEPRIS (because IDs do not form an uninterupted sequence of numbers this attempt would make many unnecessary calls).
 
-```{r, results="hide"}
-df.tools <- read_csv(here("data","tools.csv")) %>%
-  dplyr::filter(term != 'Internet') # it makes sense to remove this term from the tool list as it heavily skews the resulting frequencies
+The first step, therefore, was to scrape the existant project IDs from the catalogue pages. In total this would require to iterate over 2706 catalogue pages with 50 projects IDs each but could be further decreased by limiting our call to a specific subfield, namely the humanities, encoded in the catalogue URLs as `&fachgebiet=11`. This would reduce the number of catalogue pages to 319.
+
+### prepare the environment
+
+In order to scrape websites and extract information based on their position within the parsed HTML5 / XML, we need to load the `rvest()` library.
+
+```{r}
+library(rvest)
+```
+
+We also need a small helper function to extract the textual content of any element or attribute within a given HTML stream.
+
+```{r}
+# input for the xpath parameter is a string
+f.get.text <- function(html, xpath) {
+  rvest::html_element(html, xpath = xpath) %>% 
+    rvest::html_text2()
+}
+```
+
+### Scrape the relevant project IDs from the catalogue
+
+The following function scrapes all project IDs from a GEPRIS catalogue page.
+
+```{r}
+f.scrape.gepris.ids <- function(url) {
+  v.page = rvest::read_html(url)
+  v.xpath.item = "/html/body//div[@class = 'listbox2']/div[@id = 'liste']/div"
+  v.urls.projects <- ''
+  for (item in html_elements(v.page, xpath = v.xpath.item)) {
+    v.urls.projects <- append(v.urls.projects,
+                            f.get.text(item, "div[@class = 'results']/h2[1]/a/@href"),
+                            after = 1)
+  }
+  str_replace(v.urls.projects, '^.*?(\\d+)$', '\\1')
+}
+```
+
+We can now use this function iterate over the catalogue pages using our knowledge of the URL patterns:
+
+- '&index=0' needs to be incremented by 50
+- '&fachgebiet=11' indicates humanities
+
+
+```{r}
+## parts of the URL as variables. 
+v.url.part.1 = "https://gepris.dfg.de/gepris/OCTOPUS?beginOfFunding=&bewilligungsStatus=&bundesland=DEU%23&context=projekt&einrichtungsart=-1&fachgebiet=11&fachkollegium=%23&findButton=historyCall&gefoerdertIn=&ggsHunderter=0&hitsPerPage=50&index="
+v.url.part.2 = "&nurProjekteMitAB=false&oldGgsHunderter=0&oldfachgebiet=11&pemu=%23&task=doKatalog&teilprojekte=true&zk_transferprojekt=false"
+```
+
+We also ought to be kind to the server and add some delay (unfortunately their really rudimentary robots.txt did not provide any guidance for crawlers).
+
+```{r}
+# set delay in seconds
+v.delay = 2
+
+# iterate over catalogue pages with 50 results each to scrape all project IDs
+v.ids.project = c('')
+for (i in 0:319) {
+  v.url = paste0(v.url.part.1, i * 50, v.url.part.2)
+  v.ids.project <- append(v.ids.project, f.scrape.gepris.ids(v.url), after = 1)
+  # delay
+  Sys.sleep(v.delay)
+}
+
+# convert to tibble
+df.ids.project <- tibble(id = v.ids.project) %>%
+  dplyr::mutate(id = na_if(id, '')) %>%
+  tidyr::drop_na() %>%
+  dplyr::arrange(id)
+
+# save to disk
+write.table(df.ids.project, file = "dfg_project-ids-humanities.csv", row.names = F, sep = ",")
+```
+
+### get individual project details
+
+```{r}
+f.scrape.gepris.entry <- function(project.id) {
+  v.url.base = "https://gepris.dfg.de/gepris/projekt/"
+  v.url = paste0(v.url.base, project.id)
+  v.page = rvest::read_html(v.url)
+  v.xpath.details = "/html/body//div[@class = 'details']"
+  v.xpath.description = "/html/body//div[@id = 'projektbeschreibung']"
+  # problem: the number of divs changes, depending on presence of data. Selection by index will therefore be errorprone
+  df.gepris <- dplyr::tibble(
+    id = as.double(project.id),
+    #html.details = rvest::html_element(v.page, xpath = v.xpath.details),
+    title = f.get.text(v.page, paste(v.xpath.details, "h1[1]", sep = "/")),
+    antragsteller = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'value'][starts-with(a/@href, '/gepris/person')]", sep = "//")),
+    antragstellerId = str_replace(f.get.text(v.page, paste(v.xpath.details, "span[@class = 'value']/a[starts-with(@href, '/gepris/person')]/@href", sep = "//")),
+                                  '^.*?(\\d+)$', '\\1'),
+    fachlicheZuordnung = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'name'][text() = 'Fachliche Zuordnung']/following-sibling::span[@class = 'value']", sep = "//")),
+    dates = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'name'][text() = 'Förderung']/following-sibling::span[@class = 'value']", sep = "//")),
+    projektText = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']", sep = "/")),
+    dfgVerfahren = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[1]/span[@class = 'value']", sep = "/"))
+  )
+  df.gepris
+}
+```
+
+Test this scraping function
+
+```{r}
+f.scrape.gepris.entry(445975300)
+```
+
+
+```{r}
+# iterate through a range of project IDs
+df.dfg.projects = f.scrape.gepris.entry(df.ids.project[1, "id"])
+for(id in df.ids.project[10001:15873, ]$id) {
+  print(paste("Scraping DFG project no.", id, "from GEPRIS", sep = " "))
+  df.dfg.projects <- df.dfg.projects %>%
+    add_row(f.scrape.gepris.entry(id))
+  Sys.sleep(0.5)
+}
+
+# postprocessing
+df.dfg.projects <- df.dfg.projects %>%
+  mutate(onset = as.double(str_replace(dates, '^.*?(\\d{4}).*$', '\\1')),
+         terminus = as.double(str_replace(dates, '^.*(\\d{4})*.*(\\d{4}).*?$', '\\2')))
+
+# save output
+save(df.dfg.projects, file = "dfg_projects.rda")
+write.table(df.dfg.projects, file = "dfg_projects.csv", row.names = F, sep = ",")
 ```
 
 ## load copora
@@ -212,6 +336,13 @@ df.dhq <- f.read.txt.files.from.folder("data/dhq/txt")
 # Quick look at the available variables
 df.dhq %>% 
   glimpse(width = 80) # width is measured in characters
+```
+
+## load tool list
+
+```{r, results="hide"}
+df.tools <- read_csv(here("data","tools.csv")) %>%
+  dplyr::filter(term != 'Internet') # it makes sense to remove this term from the tool list as it heavily skews the resulting frequencies
 ```
 
 # analysis

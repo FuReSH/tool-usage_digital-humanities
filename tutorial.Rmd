@@ -1,8 +1,10 @@
 ---
 title: "R Notebook"
-author: Till Grallert
+author: "Till Grallert"
 date: "`r Sys.Date()`"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 This [R Markdown](http://rmarkdown.rstudio.com) Notebook presents our approach to answering the following the question:
@@ -15,6 +17,8 @@ The question contains a number of terms (highlighted above) that need further el
 - There are, of course, multiple approaches to measuring the relative **importance** of anything. For the sake of our analysis, we will opt for the number of mentions of a specific tool within a corpus as a measure of its importance to the field.
 - As we do not, currently, have a sophisticated way of extracting tools through *natural language processing* (NLP), we will need to find or produce a **list of tools** known to be relevant to the field. As tool registries have some importance in DH, we assume to be able to compile such a list with relative ease. Each entry in the list will then be assigned numerical values correlating to their relative frequency within our corpus.
 
+Even though our approach was developped independently in spring 2022, it appeared that other scholars were posing similar questions, following comparable approaches. Thus, we have benefitted from Ulrike Henny-Kramer [@HennyJettka2021SoftwarezitationPaper] and Frank Fischer's earlier work [@BarbotEtAl2019ToolsMentioned; @BarbotEtAl2019WhichDHTools; @FischerMoranville2020ToolsMentioned]. We also look foward to the results of Manuel Burghardt's ventures into the more general question of scholarly applications of methods and tools, which he and his team investigate with machine-learning approaches to natural language processing [@Cebral2022InteractiveExploratoryAnalysis; @GutierrezDeLaTorreEtAl2022ManyFacesTheory; @ManuelEtAl2022ToolsEpistemologiesDH]. 
+
 # Prepare the environment
 
 As is good practice, we load all necessary packages/libraries at the beginning of our R script. We also make sure that everything is set to use unicode encodings (might be necessary for some Apple systems).
@@ -26,6 +30,7 @@ library(ggrepel)     # repel labels in ggplot
 library(ggwordcloud) # wordclouds with ggplot
 library(paletteer)   # for better colour palettes
 library(here)        # for easy navigation within an R project
+library(lubridate)   # for working with dates
 # set a general theme for all ggplots
 theme_set(theme_bw())
 # enable unicode
@@ -35,10 +40,142 @@ Sys.setlocale("LC_ALL", "en_US.UTF-8")
 
 
 # corpus building
+## Corpora
 
-## functions
+We use a number of openly available corpora for our investigation. 
 
-To re-use this code, we have wrapped it in functions
+1. **DH conferences**. Full-text abstracts for some of ADHO's DH conferences are available as part of [LincolnEtAl2021IndexDigitalHumanities; @Weingart2020IndexDHData]. The abstracts for the DH2023 conference in Tokyo are available on [GitHub](https://github.com/747/tei-to-pdf-dh2022).
+2. **DHd conferences**. Abstracts for the annual DHd conferences is available from the [DHd GitHub](https://github.com/DHd-Verband) repositories.
+3. **Digital Humanities Quarterly**. Articles from DHQ are openly published with CC licences and are generally available for computational analysis. A corpus of 429 articles published until 2019 is available as zipped folder at <http://digitalhumanities.org/dhq/data/dhq-xml.zip>.
+4. **DFG**. The [GEPRIS - Geförderte Projekte der Deutschen Forschungsgemeinschaft](https://gepris.dfg.de/gepris/OCTOPUS) database provides data on all funded projects. Unfortunately, and despite its commitment to Open Access and Open Science, DFG does not provide an API or machine-actionable data for reuse. 
+
+## Preprocessing
+
+For our analysis we need plain-text files of conference abstracts and journal articles. The pre-processing steps for our copora, therefore, involve two distinct approaches: 1) converting TEI XML to plain-text and 2) scraping structured data from websites, which we save as `.csv`.
+
+### TEI XML
+
+ADHO, DHd, and DHQ all provide TEI XML files, which we can convert to plain-text using XSLT transformations, such as the one provided by my [GitHub repository to convert TEI to Markdown](https://github.com/OpenArabicPE/convert_tei-to-markdown). Note that one could have parsed the XML with R and then extracted the necessary nodes for analysis, but re-using available XSLT was the much quicker solution.
+
+
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Establishing parameters for stylometric authorship attribution of 19th-century Arabic books and periodicals</title>
+                <author>
+                    <persName>
+                        <surname>Romanov</surname>
+                        <forename>Maxim</forename>
+                    </persName>
+                    <affiliation>Universität Hamburg, Germany</affiliation>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Grallert</surname>
+                        <forename>Till</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin, Germany</affiliation>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-27T10:36:00Z</date>
+                </edition>
+            </editionStmt>
+        </fileDesc>
+        <!-- ... -->
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">The vast majority of articles in Arabic periodicals from the late Ottoman Eastern Mediterranean (c.1850–1918) carried no explicit authorship information (Grallert 2021, Khayat 2019). Yet, the question of authorship has not received much attention in existing scholarship and is strikingly absent from Ayalon (1995), the standard work in the field. The common implicit hypothesis considers editors-cum-owners listed in mastheads and imprints as the sole authors of all the anonymous texts. This results in the conflation of periodicals with the intellectual output of a single person. Such a synonymous use of, for example, “Muḥammad Kurd ʿAlī” (1876–1953) and the monthly “<hi rend="italic">al-Muqtabas</hi>” (published in Cairo and Damascus, 1906–1918) can be observed across the board (e.g. Seikaly 1981, Ezzerelli 2017). However, the hypothesis a) remains empirically untested, b) negates the known realities of periodical production and individual biographies, and c) ignores specific contexts of individual periodicals.
+            </p>
+            <!-- ... -->
+        </body>
+    </text>
+</TEI>
+```
+
+```txt
+The vast majority of articles in Arabic periodicals from the late Ottoman Eastern Mediterranean (c.1850–1918) carried no explicit authorship information (Grallert 2021, Khayat 2019). Yet, the question of authorship has not received much attention in existing scholarship and is strikingly absent from Ayalon (1995), the standard work in the field. The common implicit hypothesis considers editors-cum-owners listed in mastheads and imprints as the sole authors of all the anonymous texts. This results in the conflation of periodicals with the intellectual output of a single person. Such a synonymous use of, for example, “Muḥammad Kurd ʿAlī” (1876–1953) and the monthly “ al-Muqtabas ” (published in Cairo and Damascus, 1906–1918) can be observed across the board (e.g. Seikaly 1981, Ezzerelli 2017). However, the hypothesis a) remains empirically untested, b) negates the known realities of periodical production and individual biographies, and c) ignores specific contexts of individual periodicals. 
+```
+
+It would also make sense to extract structured metadata from the TEI files but this step has been left to a later step. 
+
+#### DH conferences
+
+One thing to note, however, is that the TEI XML of the ADHO abstracts from the [LincolnEtAl2021IndexDigitalHumanities; @Weingart2020IndexDHData] dataset is wrapped inside `.csv` files. In addition, some of the abstracts are TEI XML fragments while others are complete TEI XML files. We have, therefore, extracted the abstracts with the following code.
+
+```{r}
+# 1. read the original CSV
+setwd(here("data/dh-conferences/12987959"))
+df.dhconfs <- readr::read_csv("dh-conferences_works.csv")
+
+# 2. select only some columns and rename them
+df.dhconfs.works <- df.dhconfs %>%
+  dplyr::select(work_id, work_title, work_authors, full_text, conference_year, conference_label, conference_organizers, keywords, topics, languages) %>%
+  dplyr::rename(id = work_id,
+                title = work_title,
+                text = full_text,
+                authors = work_authors,
+                year = conference_year,
+                conference = conference_label,
+                organizers = conference_organizers) %>%
+  dplyr::mutate(year = parse_date_time(year, orders = "Y"),
+                id = as.character(df.dhconfs.works$id))
+```
+
+The dataset contains `nrow(df.dhconfs.works)` presentations at `unique(df.dhconfs.works$conference)` between `min(df.dhconfs.works$year)` and `max(df.dhconfs.works$year)`.
+
+```{r}
+# save data to file
+setwd(here("data/dh-conferences/"))
+save(df.dhconfs.works, file = "dh-conferences_works.rda")
+save(df.dhconfs, file ="dh-conferences.rda")
+# remove the original, rather large dataframe
+rm(df.dhconfs)
+
+# there is a problem with the abstracts: they are mostly full TEI XML files, which need to be parsed
+# small tibble with abstracts only
+df.dhconfs.abstracts <- df.dhconfs.works %>%
+  dplyr::select(id, text, year) %>%
+  # drop all lines that do not provide the full text of the abstract
+  tidyr::drop_na(text)
+``` 
+
+The dataset provides only `nrow(df.dhconfs.abstracts)` full text abstracts for the `nrow(df.dhconfs.works)` presentations
+We can now save these abstracts in order to process them further with XSLT etc.
+
+Note that running the next code block results in files being overwritten. 
+
+```r
+# write each abstract to a file for further processing with XSLT
+setwd(here("data/dh-conferences/12987959/tei/"))
+lapply(seq_len(nrow(df.dhconfs.abstracts)), function(i) 
+  write.table(df.dhconfs.abstracts$text[i], file = paste0(df.dhconfs.abstracts$id[i], '.xml'), 
+            row.names = FALSE, col.names = F, quote=FALSE))
+```
+
+Upon closer inspection, it turns out that not all abstracts are complete TEI XML files. There are hundreds of TEI XML fragments and quite a few plain-text files without any markup. 
+
+1. The plain-text files were renamed to `.txt`
+2. Complete TEI XML files were converted to plain-text using the above-mentioned XSLT.
+2. TEI XML fragments were converted to full TEI XML files adding the necessary `<teiHeader>` using regular expressions. The complete TEI files were then again converted to plain-text.
+
+
+## load tool list
+
+```{r, results="hide"}
+df.tools <- read_csv(here("data","tools.csv")) %>%
+  dplyr::filter(term != 'Internet') # it makes sense to remove this term from the tool list as it heavily skews the resulting frequencies
+```
+
+## load copora
+
+Now we want to load all the pre-processed plain-text files. To re-use this code, we have wrapped it in functions.
 
 ```{r}
 # build data frame from  list of file names
@@ -56,23 +193,22 @@ f.read.txt.files.from.folder <- function(path) {
   f.read.txt.files(v.filenames)
 }
 ```
-## load tool list
 
-```{r, results="hide"}
-df.tools <- read_csv(here("data","tools.csv")) %>%
-  dplyr::filter(term != 'Internet') # it makes sense to remove this term from the tool list as it heavily skews the resulting frequencies
+### 1. DH conferences
+
+```{r load-dh-conferences, results="hide"}
+df.dhconfs.abstracts <- f.read.txt.files.from.folder(here("data/dh-conferences/12987959/txt")) 
+# Quick look at the available variables
+df.dhconfs.abstracts %>% 
+  glimpse(width = 80) # width is measured in characters
 ```
 
-## load copora
+### 2. DHd
+
+### 3. DHQ articles
 
 ```{r load-dhq, results="hide"}
-# DHQ articles
-setwd(here("data/dhq"))
-df.dhq <- f.read.txt.files.from.folder("txt")
-```
-Lets have a quick view on the results
-
-```{r, echo=FALSE}
+df.dhq <- f.read.txt.files.from.folder("data/dhq/txt")
 # Quick look at the available variables
 df.dhq %>% 
   glimpse(width = 80) # width is measured in characters
@@ -164,13 +300,19 @@ f.compute.frequencies <- function(df.input, df.tools){
 The actual analysis is done by running all three functions in succession on any of our corpora. Note that this might take a while for large corpora.
 
 ```{r}
+df.dhconfs.abstracts.tools <- f.compute.frequencies(df.dhconfs.abstracts, df.tools)
+```
+```{r}
 df.dhq.tools <- f.compute.frequencies(df.dhq, df.tools)
 ```
 
 Let's again have a brief look at the results
 
 ```{r}
-head(df.dhq.tools)
+head(df.dhconfs.abstracts.tools, 10)
+```
+```{r}
+head(df.dhq.tools, 10)
 ```
 
 ## Visualise the results

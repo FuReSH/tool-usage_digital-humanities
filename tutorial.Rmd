@@ -338,6 +338,15 @@ df.dhq %>%
   glimpse(width = 80) # width is measured in characters
 ```
 
+### 4. DFG projects
+
+```{r}
+load(here("data/dfg/dfg_projects.rda"))
+df.dfg <- df.dfg.projects %>%
+  dplyr::rename(text = projektText) %>%
+  dplyr::select(id, text)
+```
+
 ## load tool list
 
 ```{r, results="hide"}

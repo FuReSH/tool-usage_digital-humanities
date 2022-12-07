@@ -5,19 +5,20 @@ date: "`r Sys.Date()`"
 output:
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 This [R Markdown](http://rmarkdown.rstudio.com) Notebook presents our approach to answering the following the question:
 
->We are a *[Scholarly Makerspace](https://makerspace.hypotheses.org)* and want to curate a **list of tools** for DH work based on their **importance** in the **field**.
+> We are a [*Scholarly Makerspace*](https://makerspace.hypotheses.org) and want to curate a **list of tools** for DH work based on their **importance** in the **field**.
 
 The question contains a number of terms (highlighted above) that need further elaboration, if we want to operationalise the question for computational (or any) analysis:
 
-- The **field** of DH is represented by its written output, through conference abstracts, journal articles etc. This means that we need to find or build a **corpus** of openly available material to run any analysis on.
-- There are, of course, multiple approaches to measuring the relative **importance** of anything. For the sake of our analysis, we will opt for the number of mentions of a specific tool within a corpus as a measure of its importance to the field.
-- As we do not, currently, have a sophisticated way of extracting tools through *natural language processing* (NLP), we will need to find or produce a **list of tools** known to be relevant to the field. As tool registries have some importance in DH, we assume to be able to compile such a list with relative ease. Each entry in the list will then be assigned numerical values correlating to their relative frequency within our corpus.
+-   The **field** of DH is represented by its written output, through conference abstracts, journal articles etc. This means that we need to find or build a **corpus** of openly available material to run any analysis on.
+-   There are, of course, multiple approaches to measuring the relative **importance** of anything. For the sake of our analysis, we will opt for the number of mentions of a specific tool within a corpus as a measure of its importance to the field.
+-   As we do not, currently, have a sophisticated way of extracting tools through *natural language processing* (NLP), we will need to find or produce a **list of tools** known to be relevant to the field. As tool registries have some importance in DH, we assume to be able to compile such a list with relative ease. Each entry in the list will then be assigned numerical values correlating to their relative frequency within our corpus.
 
-Even though our approach was developped independently in spring 2022, it appeared that other scholars were posing similar questions, following comparable approaches. Thus, we have benefitted from Ulrike Henny-Kramer [@HennyJettka2021SoftwarezitationPaper] and Frank Fischer's earlier work [@BarbotEtAl2019ToolsMentioned; @BarbotEtAl2019WhichDHTools; @FischerMoranville2020ToolsMentioned]. We also look foward to the results of Manuel Burghardt's ventures into the more general question of scholarly applications of methods and tools, which he and his team investigate with machine-learning approaches to natural language processing [@Cebral2022InteractiveExploratoryAnalysis; @GutierrezDeLaTorreEtAl2022ManyFacesTheory; @ManuelEtAl2022ToolsEpistemologiesDH]. 
+Even though our approach was developped independently in spring 2022, it appeared that other scholars were posing similar questions, following comparable approaches. Thus, we have benefitted from Ulrike Henny-Kramer [@HennyJettka2021SoftwarezitationPaper] and Frank Fischer's earlier work [@BarbotEtAl2019ToolsMentioned; @BarbotEtAl2019WhichDHTools; @FischerMoranville2020ToolsMentioned]. We also look foward to the results of Manuel Burghardt's ventures into the more general question of scholarly applications of methods and tools, which he and his team investigate with machine-learning approaches to natural language processing [@Cebral2022InteractiveExploratoryAnalysis; @GutierrezDeLaTorreEtAl2022ManyFacesTheory; @ManuelEtAl2022ToolsEpistemologiesDH].
 
 # Prepare the environment
 
@@ -37,17 +38,16 @@ theme_set(theme_bw())
 Sys.setlocale("LC_ALL", "en_US.UTF-8")
 ```
 
-
-
 # corpus building
+
 ## Corpora
 
-We use a number of openly available corpora for our investigation. 
+We use a number of openly available corpora for our investigation.
 
-1. **DH conferences**. Full-text abstracts for some of ADHO's DH conferences are available as part of [LincolnEtAl2021IndexDigitalHumanities; @Weingart2020IndexDHData]. The abstracts for the DH2023 conference in Tokyo are available on [GitHub](https://github.com/747/tei-to-pdf-dh2022).
-2. **DHd conferences**. Abstracts for the annual DHd conferences is available from the [DHd GitHub](https://github.com/DHd-Verband) repositories.
-3. **Digital Humanities Quarterly**. Articles from DHQ are openly published with CC licences and are generally available for computational analysis. A corpus of 429 articles published until 2019 is available as zipped folder at <http://digitalhumanities.org/dhq/data/dhq-xml.zip>.
-4. **DFG**. The [GEPRIS - Geförderte Projekte der Deutschen Forschungsgemeinschaft](https://gepris.dfg.de/gepris/OCTOPUS) database provides data on all funded projects. Unfortunately, and despite its commitment to Open Access and Open Science, DFG does not provide an API or machine-actionable data for reuse. 
+1.  **DH conferences**. Full-text abstracts for some of ADHO's DH conferences are available as part of [LincolnEtAl2021IndexDigitalHumanities; @Weingart2020IndexDHData]. The abstracts for the DH2023 conference in Tokyo are available on [GitHub](https://github.com/747/tei-to-pdf-dh2022).
+2.  **DHd conferences**. Abstracts for the annual DHd conferences is available from the [DHd GitHub](https://github.com/DHd-Verband) repositories.
+3.  **Digital Humanities Quarterly**. Articles from DHQ are openly published with CC licences and are generally available for computational analysis. A corpus of 429 articles published until 2019 is available as zipped folder at <http://digitalhumanities.org/dhq/data/dhq-xml.zip>.
+4.  **DFG**. The [GEPRIS - Geförderte Projekte der Deutschen Forschungsgemeinschaft](https://gepris.dfg.de/gepris/OCTOPUS) database provides data on all funded projects. Unfortunately, and despite its commitment to Open Access and Open Science, DFG does not provide an API or machine-actionable data for reuse.
 
 ## Preprocessing
 
@@ -57,9 +57,7 @@ For our analysis we need plain-text files of conference abstracts and journal ar
 
 ADHO, DHd, and DHQ all provide TEI XML files, which we can convert to plain-text using XSLT transformations, such as the one provided by my [GitHub repository to convert TEI to Markdown](https://github.com/OpenArabicPE/convert_tei-to-markdown). Note that one could have parsed the XML with R and then extracted the necessary nodes for analysis, but re-using available XSLT was the much quicker solution.
 
-
-
-```xml
+``` {.xml}
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -99,17 +97,19 @@ ADHO, DHd, and DHQ all provide TEI XML files, which we can convert to plain-text
 </TEI>
 ```
 
-```txt
+``` {.txt}
 The vast majority of articles in Arabic periodicals from the late Ottoman Eastern Mediterranean (c.1850–1918) carried no explicit authorship information (Grallert 2021, Khayat 2019). Yet, the question of authorship has not received much attention in existing scholarship and is strikingly absent from Ayalon (1995), the standard work in the field. The common implicit hypothesis considers editors-cum-owners listed in mastheads and imprints as the sole authors of all the anonymous texts. This results in the conflation of periodicals with the intellectual output of a single person. Such a synonymous use of, for example, “Muḥammad Kurd ʿAlī” (1876–1953) and the monthly “ al-Muqtabas ” (published in Cairo and Damascus, 1906–1918) can be observed across the board (e.g. Seikaly 1981, Ezzerelli 2017). However, the hypothesis a) remains empirically untested, b) negates the known realities of periodical production and individual biographies, and c) ignores specific contexts of individual periodicals. 
 ```
 
-It would also make sense to extract structured metadata from the TEI files but this step has been left to a later step. 
+It would also make sense to extract structured metadata from the TEI files but this step has been left to a later step.
 
 #### DH conferences
 
-One thing to note, however, is that the TEI XML of the ADHO abstracts from the [LincolnEtAl2021IndexDigitalHumanities; @Weingart2020IndexDHData] dataset is wrapped inside `.csv` files. In addition, some of the abstracts are TEI XML fragments while others are complete TEI XML files. We have, therefore, extracted the abstracts with the following code.
+One thing to note, however, is that the TEI XML of the ADHO abstracts from the [@LincolnEtAl2021IndexDigitalHumanities; @Weingart2020IndexDHData] dataset is wrapped inside `.csv` files. In addition, some of the abstracts are TEI XML fragments while others are complete TEI XML files. We have, therefore, extracted the abstracts with the following code.
 
-```{r}
+Note that we prefixed functions with a namespace identifying the package they come from.
+
+```{r load-data-dh-conferences}
 # 1. read the original CSV
 setwd(here("data/dh-conferences/12987959"))
 df.dhconfs <- readr::read_csv("dh-conferences_works.csv")
@@ -124,8 +124,8 @@ df.dhconfs.works <- df.dhconfs %>%
                 year = conference_year,
                 conference = conference_label,
                 organizers = conference_organizers) %>%
-  dplyr::mutate(year = parse_date_time(year, orders = "Y"),
-                id = as.character(df.dhconfs.works$id))
+  dplyr::mutate(year = lubridate::parse_date_time(year, orders = "Y"),
+                id = as.character(id))
 ```
 
 The dataset contains `nrow(df.dhconfs.works)` presentations at `unique(df.dhconfs.works$conference)` between `min(df.dhconfs.works$year)` and `max(df.dhconfs.works$year)`.
@@ -144,14 +144,13 @@ df.dhconfs.abstracts <- df.dhconfs.works %>%
   dplyr::select(id, text, year) %>%
   # drop all lines that do not provide the full text of the abstract
   tidyr::drop_na(text)
-``` 
+```
 
-The dataset provides only `nrow(df.dhconfs.abstracts)` full text abstracts for the `nrow(df.dhconfs.works)` presentations
-We can now save these abstracts in order to process them further with XSLT etc.
+The dataset provides only `nrow(df.dhconfs.abstracts)` full text abstracts for the `nrow(df.dhconfs.works)` presentations We can now save these abstracts in order to process them further with XSLT etc.
 
-Note that running the next code block results in files being overwritten. 
+Note that running the next code block results in files being overwritten.
 
-```r
+```{r write-abstracts-to-files, eval=FALSE, include=FALSE}
 # write each abstract to a file for further processing with XSLT
 setwd(here("data/dh-conferences/12987959/tei/"))
 lapply(seq_len(nrow(df.dhconfs.abstracts)), function(i) 
@@ -159,17 +158,17 @@ lapply(seq_len(nrow(df.dhconfs.abstracts)), function(i)
             row.names = FALSE, col.names = F, quote=FALSE))
 ```
 
-Upon closer inspection, it turns out that not all abstracts are complete TEI XML files. There are hundreds of TEI XML fragments and quite a few plain-text files without any markup. 
+Upon closer inspection, it turns out that not all abstracts are complete TEI XML files. There are hundreds of TEI XML fragments and quite a few plain-text files without any markup.
 
-1. The plain-text files were renamed to `.txt`
-2. Complete TEI XML files were converted to plain-text using the above-mentioned XSLT.
-2. TEI XML fragments were converted to full TEI XML files adding the necessary `<teiHeader>` using regular expressions. The complete TEI files were then again converted to plain-text.
+1.  The plain-text files were renamed to `.txt`
+2.  Complete TEI XML files were converted to plain-text using the above-mentioned XSLT.
+3.  TEI XML fragments were converted to full TEI XML files adding the necessary `<teiHeader>` using regular expressions. The complete TEI files were then again converted to plain-text.
 
 ## scrape DFG GEPRIS
 
-Initially it seemed simple to scrape all entries from the database as the URLs follow the pattern `https://gepris.dfg.de/gepris/projekt/{ID}` with nummerical IDs. However, as examples showed that these can have at least 9 digits, a simple incrementing function would take more than 25 years with a one second delay between each call to the server in order the 135273 actual projects listed in GEPRIS (because IDs do not form an uninterupted sequence of numbers this attempt would make many unnecessary calls).
+Initially it seemed simple to scrape all entries from the database as the URLs follow the pattern `https://gepris.dfg.de/gepris/projekt/{ID}` with numerical IDs. However, as examples showed that these can have at least 9 digits, a simple incrementing function would take more than 25 years with a one second delay between each call to the server in order the 135273 actual projects listed in GEPRIS (because IDs do not form an uninterrupted sequence of numbers this attempt would make many unnecessary calls).
 
-The first step, therefore, was to scrape the existant project IDs from the catalogue pages. In total this would require to iterate over 2706 catalogue pages with 50 projects IDs each but could be further decreased by limiting our call to a specific subfield, namely the humanities, encoded in the catalogue URLs as `&fachgebiet=11`. This would reduce the number of catalogue pages to 319.
+The first step, therefore, was to scrape the existent project IDs from the catalogue pages. In total this would require to iterate over 2706 catalogue pages with 50 projects IDs each but could be further decreased by limiting our call to a specific sub-field, namely the humanities, encoded in the catalogue URLs as `&fachgebiet=11`. This would reduce the number of catalogue pages to 319.
 
 ### prepare the environment
 
@@ -209,9 +208,8 @@ f.scrape.gepris.ids <- function(url) {
 
 We can now use this function iterate over the catalogue pages using our knowledge of the URL patterns:
 
-- '&index=0' needs to be incremented by 50
-- '&fachgebiet=11' indicates humanities
-
+-   '&index=0' needs to be incremented by 50
+-   '&fachgebiet=11' indicates humanities
 
 ```{r}
 ## parts of the URL as variables. 
@@ -221,7 +219,7 @@ v.url.part.2 = "&nurProjekteMitAB=false&oldGgsHunderter=0&oldfachgebiet=11&pemu=
 
 We also ought to be kind to the server and add some delay (unfortunately their really rudimentary robots.txt did not provide any guidance for crawlers).
 
-```{r}
+```{r scrape-gepris-ids, eval=FALSE, include=FALSE}
 # set delay in seconds
 v.delay = 2
 
@@ -241,7 +239,12 @@ df.ids.project <- tibble(id = v.ids.project) %>%
   dplyr::arrange(id)
 
 # save to disk
-write.table(df.ids.project, file = "dfg_project-ids-humanities.csv", row.names = F, sep = ",")
+write.table(df.ids.project, file = here("data/dfg/dfg_project-ids-humanities.csv"), row.names = F, sep = ",")
+```
+
+```{r load-grepris-ids, include=FALSE}
+# load DFG project IDs from file
+df.ids.project <- read_csv(here("data/dfg/dfg_project-ids-humanities.csv"))
 ```
 
 ### get individual project details
@@ -272,22 +275,26 @@ f.scrape.gepris.entry <- function(project.id) {
 
 Test this scraping function
 
-```{r}
+```{r test-scrape-gepris-project}
 f.scrape.gepris.entry(445975300)
 ```
 
+Iterate over a range of project IDs (or all of them) and scrape the details page for each.
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 # iterate through a range of project IDs
 df.dfg.projects = f.scrape.gepris.entry(df.ids.project[1, "id"])
-for(id in df.ids.project[10001:15873, ]$id) {
+v.onset = 2
+# set the terminus: for testing purposes this could be "v.onset + 10"
+v.terminus = nrow(df.ids.project)
+for(id in df.ids.project[v.onset:v.terminus, ]$id) {
   print(paste("Scraping DFG project no.", id, "from GEPRIS", sep = " "))
   df.dfg.projects <- df.dfg.projects %>%
     add_row(f.scrape.gepris.entry(id))
   Sys.sleep(0.5)
 }
 
-# postprocessing
+# post-processing
 df.dfg.projects <- df.dfg.projects %>%
   mutate(onset = as.double(str_replace(dates, '^.*?(\\d{4}).*$', '\\1')),
          terminus = as.double(str_replace(dates, '^.*(\\d{4})*.*(\\d{4}).*?$', '\\2')))
@@ -297,11 +304,11 @@ save(df.dfg.projects, file = "dfg_projects.rda")
 write.table(df.dfg.projects, file = "dfg_projects.csv", row.names = F, sep = ",")
 ```
 
-## load copora
+## load corpora
 
 Now we want to load all the pre-processed plain-text files. To re-use this code, we have wrapped it in functions.
 
-```{r}
+```{r functions-read-txt}
 # build data frame from  list of file names
 f.read.txt.files <- function(filenames) {
   df.output <- purrr::map_df(filenames, ~ tibble(
@@ -356,9 +363,10 @@ df.tools <- read_csv(here("data","tools.csv")) %>%
 
 # analysis
 
-To re-use this code, we have wrapped it in functions that usually take a dataframe/tibble as input. Note that the input tibble must contain a column named "text". Note also that we prefixed functions with a namespace identifying the package they come from.
+To re-use this code, we have wrapped it in functions that usually take a dataframe/tibble as input. Note that the input tibble must contain a column named "text".
 
 ## functions
+
 ### frequency count
 
 The core of our analysis is a relatively blunt string match. We iterate over every term in our tool list, search all texts in our corpus for matches, and count the number of texts that return at least one hit. This aggregation by text acts as a weight against inflation of frequencies, if a specific tool is mentioned repeatedly throughout a given text.
@@ -405,8 +413,8 @@ f.clean.variants <- function(df.input, df.tools) {
 
 In order to compare corpora, we are interested in relative frequencies. We compute two such relative frequencies
 
-1. Ratio of frequencies with the highest frequency set to 1. We also provide this relative frequency for a basis of 100 (i.e. as percentage)
-2. Ratio of frequencies to the number of texts in our corpus with a basis of 100 (i.e. percentage)
+1.  Ratio of frequencies with the highest frequency set to 1. We also provide this relative frequency for a basis of 100 (i.e. as percentage)
+2.  Ratio of frequencies to the number of texts in our corpus with a basis of 100 (i.e. percentage)
 
 ```{r}
 # note that the input needs a column named "freq"
@@ -442,6 +450,7 @@ The actual analysis is done by running all three functions in succession on any 
 ```{r}
 df.dhconfs.abstracts.tools <- f.compute.frequencies(df.dhconfs.abstracts, df.tools)
 ```
+
 ```{r}
 df.dhq.tools <- f.compute.frequencies(df.dhq, df.tools)
 ```
@@ -451,6 +460,7 @@ Let's again have a brief look at the results
 ```{r}
 head(df.dhconfs.abstracts.tools, 10)
 ```
+
 ```{r}
 head(df.dhq.tools, 10)
 ```
@@ -459,21 +469,27 @@ head(df.dhq.tools, 10)
 
 A popular albeit controversial method to visualise such frequencies is a word cloud and as always there are multiple ways for doing so in R. For aesthetically more pleasing results, we use the popular ggplot2 library, which operationalises "A Grammar for Graphics".
 
-The following function does multiple things 
+The following function does multiple things
 
-- it takes a data frame with a frequency list as input
-- slices the x most frequent terms based on an input parameter x
-- builds two visualisations each based on the different relativ frequencies
-  - circular wordcloud
-  - a more "cloudy" approximation of a word cloud
-- adds labels, etc. based on the input
-- saves the plots in a specified output format (png or svg) to file
+-   it takes a data frame with a frequency list as input
 
+-   slices the x most frequent terms based on an input parameter x
+
+-   builds two visualisations each based on the different relativ frequencies
+
+    -   circular wordcloud
+    -   a more "cloudy" approximation of a word cloud
+
+-   adds labels, etc. based on the input
+
+-   saves the plots in a specified output format (png or svg) to file
+
+As we aim generating and saving multiple plots with a single function, it makes a lot of sense to modularise the layers in this ggplot. The plot is then composed from various layers in multiple steps, each creating plots or layers for re-use.
 
 ```{r}
 # Wordcloud with ggplot2
 # the input requires a column named "term"
-f.wordcloud.frequency <- function(input, max.values, label.text, output.device) {
+f.wordcloud.frequency <- function(input, max.values, label.text, label.source, output.device) {
   # process data: frequency list
   data.frequency <- input %>%
     #dplyr::filter(freq > 1) %>% # remove unique terms: this needs to be commented out for relative frequencies
@@ -487,7 +503,8 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
   v.total.values = nrow(data.frequency)
   font = "Baskerville"
   v.title = paste("The", v.total.values, "most frequent", label.text, sep = " ")
-  v.caption = paste(v.label.source, ".\n", v.label.license, sep = "")
+  v.label.license = "Till Grallert, CC BY-SA 4.0"
+  v.caption = paste(label.source, ".\n", v.label.license, sep = "")
   # plot: use normalised relative frequencies
   plot.base <- ggplot(data.frequency, aes(x = 1, y = 1, label = term)) +
     scale_y_continuous(breaks = NULL) +
@@ -572,10 +589,18 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
 }
 ```
 
-We can now apply this visualisation to our data and plot the 50 most frequent tools like so:
+We can now apply this visualisation to our data and plot the 50 most frequent tools mentioned in DHQ articles like so:
 
 ```{r}
-f.wordcloud.frequency(df.dhq.tools, 50, paste("tools in", nrow(df.dhq),  "articles from Digital Humanities Quarterly"), "png")
+f.wordcloud.frequency(df.dhq.tools, 50, paste("tools in", nrow(df.dhq),  "articles from Digital Humanities Quarterly"), "Data: Digital Humanities Quarterly, http://digitalhumanities.org/dhq/", "png")
 ```
 
-![This is one of the saved visualisations](visualization/wordcloud-rel-100_tools in 429 articles from Digital Humanities Quarterly-w_50.png)
+![This is one of the saved visualisations](visualization/wordcloud-rel-100_tools%20in%20429%20articles%20from%20Digital%20Humanities%20Quarterly-w_50.png)
+
+Compare this cloud to the visualisation of the 50 most frequent tools mentioned in DH conference articles:
+
+```{r}
+f.wordcloud.frequency(df.dhconfs.abstracts.tools, 50, paste("tools in", nrow(df.dhconfs.abstracts.tools),  "abstracts from DH conferences"), "Data: Weingart et al., 'Index of Digital Humanities Conferences Data', https://doi.org/10.1184/R1/12987959.v4", "png")
+```
+
+![This is one of the saved visualisations](visualization/wordcloud-rel-100_tools%20in%20136%20abstracts%20from%20DH%20conferences-w_50.png)

@@ -505,7 +505,7 @@ f.wordcloud.frequency <- function(input, max.values, label.text, label.source, o
   v.title = paste("The", v.total.values, "most frequent", label.text, sep = " ")
   v.label.license = "Till Grallert, CC BY-SA 4.0"
   v.caption = paste(label.source, ".\n", v.label.license, sep = "")
-  # plot: use normalised relative frequencies
+  # basic plot
   plot.base <- ggplot(data.frequency, aes(x = 1, y = 1, label = term)) +
     scale_y_continuous(breaks = NULL) +
     scale_x_continuous(breaks = NULL)
@@ -521,29 +521,24 @@ f.wordcloud.frequency <- function(input, max.values, label.text, label.source, o
     scale_size(range = c(1.5, 30), guide = FALSE))
   layer.wordcloud.text.100 <- c(
     geom_text_wordcloud(aes(size = freq.text.100, colour = freq.text.100, angle = angle), # use the angle information
-                        family = font.words,
-                        # frequency = area or font size. If font.size, readers will get the wrong impression
-                        area_corr = TRUE, 
-                        eccentricity = 1, # to form a circle
-                        rm_outside = TRUE, # if there are too many terms, the smallest ones should be removed if they cannot fit onto the canvas
-                        grid_margin = 0.5, seed = 43,
-                        show.legend = T),
+        family = font.words,
+        # frequency = area or font size. If font.size, readers will get the wrong impression
+        area_corr = TRUE, eccentricity = 1, # to form a circle
+        rm_outside = TRUE, # if there are too many terms, the smallest ones should be removed if they cannot fit onto the canvas
+        grid_margin = 0.5, seed = 43, show.legend = T),
     scale_size_area(max_size = 50) #, scale_radius(range = c(0, 30), limits = c(0, NA))
+  )
+  layer.wordcloud.rel.100 <- c(
+    geom_text_wordcloud(aes(size = freq.rel.100, colour = freq.rel.100, angle = angle),
+      family = font.words, area_corr = TRUE, eccentricity = 1, # to form a circle
+      rm_outside = TRUE, grid_margin = 0.5, seed = 43, show.legend = T),
+    scale_size_area(max_size = 50)
   )
   layer.repel.rel.100 <- c(
     geom_text_repel(aes(size = freq.rel.100, colour = freq.rel.100),
         segment.size = 0, force = 20, max.overlaps = 500, family = font.words),
     scale_size(range = c(1.5, 30), guide = FALSE))
-  layer.wordcloud.rel.100 <- c(
-    geom_text_wordcloud(aes(size = freq.rel.100, colour = freq.rel.100, angle = angle), # use the angle information
-                        family = font.words,
-                        area_corr = TRUE, 
-                        eccentricity = 1, # to form a circle
-                        rm_outside = TRUE, # if there are too many terms, the smallest ones should be removed if they cannot fit onto the canvas
-                        grid_margin = 0.5, seed = 43,
-                        show.legend = T),
-    scale_size_area(max_size = 50) #, scale_radius(range = c(0, 30), limits = c(0, NA))
-  )
+  
   
   plot.base.final <- plot.base +
     layer.labs +

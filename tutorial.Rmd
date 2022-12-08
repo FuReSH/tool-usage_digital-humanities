@@ -1,7 +1,9 @@
 ---
-title: "R Notebook"
+title: "Tracking tools and methods across the field of DH"
+subtitle: "A brief tutorial for corpus building, data analysis, and visualisation"
 author: "Till Grallert"
 date: "`r Sys.Date()`"
+lang: en
 output:
   md_document:
   html_document:
@@ -10,17 +12,17 @@ editor_options:
   chunk_output_type: console
 ---
 
-This [R Markdown](http://rmarkdown.rstudio.com) Notebook presents our approach to answering the following the question:
+This [R Markdown](http://rmarkdown.rstudio.com) Notebook presents our approach to the following scenario:
 
 > We are a [*Scholarly Makerspace*](https://makerspace.hypotheses.org) and want to curate a **list of tools** for DH work based on their **importance** in the **field**.
 
-The question contains a number of terms (highlighted above) that need further elaboration, if we want to operationalise the question for computational (or any) analysis:
+The question contains a number of terms (highlighted above) that need further elaboration, if we want to operationalise this scenario for computational (or any) analysis (as we obviously do):
 
 -   The **field** of DH is represented by its written output, through conference abstracts, journal articles etc. This means that we need to find or build a **corpus** of openly available material to run any analysis on.
 -   There are, of course, multiple approaches to measuring the relative **importance** of anything. For the sake of our analysis, we will opt for the number of mentions of a specific tool within a corpus as a measure of its importance to the field.
 -   As we do not, currently, have a sophisticated way of extracting tools through *natural language processing* (NLP), we will need to find or produce a **list of tools** known to be relevant to the field. As tool registries have some importance in DH, we assume to be able to compile such a list with relative ease. Each entry in the list will then be assigned numerical values correlating to their relative frequency within our corpus.
 
-Even though our approach was developed independently in spring 2022, it appeared that other scholars were posing similar questions, following comparable approaches. Thus, we have benefited from Ulrike Henny-Kramer [@HennyJettka2021SoftwarezitationPaper] and Frank Fischer's earlier work [@BarbotEtAl2019ToolsMentioned; @BarbotEtAl2019WhichDHTools; @FischerMoranville2020ToolsMentioned]. We also look forward to the results of Manuel Burghardt's ventures into the more general question of scholarly applications of methods and tools, which he and his team investigate with machine-learning approaches to natural language processing [@Cebral2022InteractiveExploratoryAnalysis; @GutierrezDeLaTorreEtAl2022ManyFacesTheory; @ManuelEtAl2022ToolsEpistemologiesDH].
+Even though our approach was developed independently in spring 2022, it appeared that other scholars were posing similar questions, following comparable approaches. Thus, we have benefited from earlier work by Ulrike Henny-Kramer, Frank Fischer, and many others [@BarbotEtAl2019ToolsMentioned; @BarbotEtAl2019WhichDHTools; @FischerMoranville2020ToolsMentioned; \@HennyJettka2021SoftwarezitationPaper]. We also look forward to the results of Manuel Burghardt's ventures into the more general question of scholarly applications of methods and tools, which he and his team investigate with machine-learning approaches to natural language processing [@Cebral2022InteractiveExploratoryAnalysis; @GutierrezDeLaTorreEtAl2022ManyFacesTheory; @ManuelEtAl2022ToolsEpistemologiesDH].
 
 # Prepare the environment
 

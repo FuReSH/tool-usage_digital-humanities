@@ -109,7 +109,7 @@ It would also make sense to extract structured metadata from the TEI files but t
 
 #### DH conferences
 
-One thing to note, however, is that the TEI XML of the ADHO abstracts from the [@LincolnEtAl2021IndexDigitalHumanities; @Weingart2020IndexDHData] dataset is wrapped inside `.csv` files. In addition, some of the abstracts are TEI XML fragments while others are complete TEI XML files. We have, therefore, extracted the abstracts with the following code.
+One thing to note, however, is that the TEI XML of the DH conference abstracts from [@LincolnEtAl2021IndexDigitalHumanities; @Weingart2020IndexDHData] is wrapped inside `.csv` files. In addition, while the majority are complete TEI XML files, some of the abstracts are TEI XML fragments and even plain text without mark-up. We have, therefore, extracted the abstracts with the following code.
 
 Note that we prefixed functions with a namespace identifying the package they come from.
 

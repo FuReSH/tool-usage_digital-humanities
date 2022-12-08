@@ -3,9 +3,11 @@ title: "R Notebook"
 author: "Till Grallert"
 date: "`r Sys.Date()`"
 output:
+  md_document:
   html_document:
     df_print: paged
-  pdf_document: default
+editor_options: 
+  chunk_output_type: console
 ---
 
 This [R Markdown](http://rmarkdown.rstudio.com) Notebook presents our approach to answering the following the question:
@@ -18,7 +20,7 @@ The question contains a number of terms (highlighted above) that need further el
 -   There are, of course, multiple approaches to measuring the relative **importance** of anything. For the sake of our analysis, we will opt for the number of mentions of a specific tool within a corpus as a measure of its importance to the field.
 -   As we do not, currently, have a sophisticated way of extracting tools through *natural language processing* (NLP), we will need to find or produce a **list of tools** known to be relevant to the field. As tool registries have some importance in DH, we assume to be able to compile such a list with relative ease. Each entry in the list will then be assigned numerical values correlating to their relative frequency within our corpus.
 
-Even though our approach was developped independently in spring 2022, it appeared that other scholars were posing similar questions, following comparable approaches. Thus, we have benefitted from Ulrike Henny-Kramer [@HennyJettka2021SoftwarezitationPaper] and Frank Fischer's earlier work [@BarbotEtAl2019ToolsMentioned; @BarbotEtAl2019WhichDHTools; @FischerMoranville2020ToolsMentioned]. We also look foward to the results of Manuel Burghardt's ventures into the more general question of scholarly applications of methods and tools, which he and his team investigate with machine-learning approaches to natural language processing [@Cebral2022InteractiveExploratoryAnalysis; @GutierrezDeLaTorreEtAl2022ManyFacesTheory; @ManuelEtAl2022ToolsEpistemologiesDH].
+Even though our approach was developed independently in spring 2022, it appeared that other scholars were posing similar questions, following comparable approaches. Thus, we have benefited from Ulrike Henny-Kramer [@HennyJettka2021SoftwarezitationPaper] and Frank Fischer's earlier work [@BarbotEtAl2019ToolsMentioned; @BarbotEtAl2019WhichDHTools; @FischerMoranville2020ToolsMentioned]. We also look forward to the results of Manuel Burghardt's ventures into the more general question of scholarly applications of methods and tools, which he and his team investigate with machine-learning approaches to natural language processing [@Cebral2022InteractiveExploratoryAnalysis; @GutierrezDeLaTorreEtAl2022ManyFacesTheory; @ManuelEtAl2022ToolsEpistemologiesDH].
 
 # Prepare the environment
 
@@ -44,14 +46,14 @@ Sys.setlocale("LC_ALL", "en_US.UTF-8")
 
 We use a number of openly available corpora for our investigation.
 
-1.  **DH conferences**. Full-text abstracts for some of ADHO's DH conferences are available as part of [LincolnEtAl2021IndexDigitalHumanities; @Weingart2020IndexDHData]. The abstracts for the DH2023 conference in Tokyo are available on [GitHub](https://github.com/747/tei-to-pdf-dh2022).
+1.  **DH conferences**. Full-text abstracts for some of ADHO's DH conferences are available as part of [\@LincolnEtAl2021IndexDigitalHumanities; @Weingart2020IndexDHData]. The abstracts for the DH2023 conference in Tokyo are available on [GitHub](https://github.com/747/tei-to-pdf-dh2022).
 2.  **DHd conferences**. Abstracts for the annual DHd conferences is available from the [DHd GitHub](https://github.com/DHd-Verband) repositories.
 3.  **Digital Humanities Quarterly**. Articles from DHQ are openly published with CC licences and are generally available for computational analysis. A corpus of 429 articles published until 2019 is available as zipped folder at <http://digitalhumanities.org/dhq/data/dhq-xml.zip>.
 4.  **DFG**. The [GEPRIS - Geförderte Projekte der Deutschen Forschungsgemeinschaft](https://gepris.dfg.de/gepris/OCTOPUS) database provides data on all funded projects. Unfortunately, and despite its commitment to Open Access and Open Science, DFG does not provide an API or machine-actionable data for reuse.
 
 ## Preprocessing
 
-For our analysis we need plain-text files of conference abstracts and journal articles. The pre-processing steps for our copora, therefore, involve two distinct approaches: 1) converting TEI XML to plain-text and 2) scraping structured data from websites, which we save as `.csv`.
+For our analysis we need plain-text files of conference abstracts and journal articles. The pre-processing steps for our corpora, therefore, involve two distinct approaches: 1) converting TEI XML to plain-text and 2) scraping structured data from websites, which we save as `.csv`.
 
 ### TEI XML
 
@@ -237,7 +239,9 @@ df.ids.project <- tibble(id = v.ids.project) %>%
   dplyr::mutate(id = na_if(id, '')) %>%
   tidyr::drop_na() %>%
   dplyr::arrange(id)
+```
 
+```{r, eval=FALSE, include=FALSE}
 # save to disk
 write.table(df.ids.project, file = here("data/dfg/dfg_project-ids-humanities.csv"), row.names = F, sep = ",")
 ```
@@ -339,7 +343,7 @@ df.dhconfs.abstracts %>%
 ### 3. DHQ articles
 
 ```{r load-dhq, results="hide"}
-df.dhq <- f.read.txt.files.from.folder("data/dhq/txt")
+df.dhq <- f.read.txt.files.from.folder(here("data/dhq/txt"))
 # Quick look at the available variables
 df.dhq %>% 
   glimpse(width = 80) # width is measured in characters
@@ -455,6 +459,10 @@ df.dhconfs.abstracts.tools <- f.compute.frequencies(df.dhconfs.abstracts, df.too
 df.dhq.tools <- f.compute.frequencies(df.dhq, df.tools)
 ```
 
+```{r}
+df.dfq.tools <- f.compute.frequencies(df.dfg, df.tools)
+```
+
 Let's again have a brief look at the results
 
 ```{r}
@@ -463,6 +471,14 @@ head(df.dhconfs.abstracts.tools, 10)
 
 ```{r}
 head(df.dhq.tools, 10)
+```
+
+Save everything to file
+
+```{r}
+write.table(df.dhconfs.abstracts.tools, file = here("data", "dh-conferences", "dh-conferences-frequencies_tools-abstracts.csv"), row.names = F, quote = T, sep = ",")
+write.table(df.dhq.tools, file = here("data/dhq/dhq-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
+write.table(df.dfq.tools, file = here("data/dfg/dfg-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
 ```
 
 ## Visualise the results
@@ -495,15 +511,14 @@ f.wordcloud.frequency <- function(input, max.values, label.text, label.source, o
     #dplyr::filter(freq > 1) %>% # remove unique terms: this needs to be commented out for relative frequencies
     slice(1:max.values) %>% # limit the length of the data set
     # add some 90 degree angles to 20 % of all terms
-    dplyr::mutate(angle = 90 * sample(c(0, 1), n(), replace = TRUE, prob = c(80, 20))) #%>%
+    dplyr::mutate(angle = 90 * sample(c(0, 1), n(), replace = TRUE, prob = c(80, 20))) %>%
     # add some 45 degree angles: can be removed, I suppose
-    #dplyr::mutate(angle = 45 * sample(-2:2, n(), replace = TRUE, prob = c(1, 1, 4, 1, 1)))
+    dplyr::mutate(angle = -45 * sample(c(0, 1), n(), replace = TRUE, prob = c(90,10)))
   # labels, captions, other variables
   v.output.device = output.device
   v.total.values = nrow(data.frequency)
   font = "Baskerville"
   v.title = paste("The", v.total.values, "most frequent", label.text, sep = " ")
-  v.label.license = "Till Grallert, CC BY-SA 4.0"
   v.caption = paste(label.source, ".\n", v.label.license, sep = "")
   # basic plot
   plot.base <- ggplot(data.frequency, aes(x = 1, y = 1, label = term)) +
@@ -570,8 +585,6 @@ f.wordcloud.frequency <- function(input, max.values, label.text, label.source, o
   plot.wordcloud.rel.100 <- plot.base.final +
     layer.labs.rel.100 +
     layer.wordcloud.rel.100
-  # print output to console
-  # plot.repel.text.100
   # save output to file
   ggsave(plot = plot.wordcloud.text.100, filename = paste("wordcloud-text-100_", label.text, "-w_", v.total.values,".", v.output.device, sep = ""),
          path = here("visualization"), device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
@@ -582,6 +595,42 @@ f.wordcloud.frequency <- function(input, max.values, label.text, label.source, o
   ggsave(plot = plot.repel.rel.100, filename = paste("wordcloud-rel-100-repel_", label.text, "-w_", v.total.values,".", v.output.device, sep = ""),
          path = here("visualization"), device = v.output.device, units = "mm" , height = height.Plot, width = width.Plot, dpi = dpi.Plot)
 }
+```
+
+The above plotting function depends on a number of external parameters, which are not passed into it but need to be specified before calling the function. These set fonts, font-sizes, colours, output dimensions and resolution, etc.
+
+```{r}
+v.label.license = "Till Grallert, CC BY-SA 4.0"
+# fonts
+font.words = "Helvetica Neue"
+# sizes
+## in themes size is measured in px
+size.Base.Px = 9
+## font sizes are measured in mm
+size.Base.Mm = (5/14) * size.Base.Px
+# specify text sizes
+size.Title = 2
+size.Subtitle = 1.5
+size.Text = 0.8
+## transformation to MM and PX
+size.Title.Mm = size.Title * size.Base.Mm
+size.Subtitle.Mm = size.Subtitle * size.Base.Mm
+size.Text.Mm = size.Text * size.Base.Mm
+size.Title.Px = size.Title * size.Base.Px
+size.Subtitle.Px = size.Subtitle * size.Base.Px
+size.Text.Px = size.Text * size.Base.Px
+# variables for saving plots
+width.Plot <- 240
+height.Plot <- width.Plot
+dpi.Plot <- 600
+```
+
+Depending how much of the above analysis was run in the current notebook session, we will need to load our saved data from disk
+
+```{r}
+df.dhq.tools <- read.csv(file = here("data/dhq/dhq-frequencies_tools.csv"), sep = ",")
+df.dfg.tools <- read.csv(file = here("data/dfg/dfg-frequencies_tools.csv"), sep = ",")
+df.dhconfs.abstracts.tools <-read.csv(file = here("data/dh-conferences/dh-conferences-frequencies_tools-abstracts.csv"), sep = ",")
 ```
 
 We can now apply this visualisation to our data and plot the 50 most frequent tools mentioned in DHQ articles like so:
@@ -595,7 +644,7 @@ f.wordcloud.frequency(df.dhq.tools, 50, paste("tools in", nrow(df.dhq),  "articl
 Compare this cloud to the visualisation of the 50 most frequent tools mentioned in DH conference articles:
 
 ```{r}
-f.wordcloud.frequency(df.dhconfs.abstracts.tools, 50, paste("tools in", nrow(df.dhconfs.abstracts.tools),  "abstracts from DH conferences"), "Data: Weingart et al., 'Index of Digital Humanities Conferences Data', https://doi.org/10.1184/R1/12987959.v4", "png")
+f.wordcloud.frequency(df.dhconfs.abstracts.tools, 50, paste("tools in", nrow(df.dhconfs.abstracts),  "abstracts from DH conferences"), "Data: Weingart et al., 'Index of Digital Humanities Conferences Data', https://doi.org/10.1184/R1/12987959.v4", "png")
 ```
 
-![This is one of the saved visualisations](visualization/wordcloud-rel-100_tools%20in%20136%20abstracts%20from%20DH%20conferences-w_50.png)
+![This is one of the saved visualisations](visualization/wordcloud-rel-100_tools%20in%201036%20abstracts%20from%20DH%20conferences-w_50.png)

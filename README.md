@@ -41,6 +41,13 @@ Die Daten liegen in folgenden Unterordnern:
 
 Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen Userstories: `user-story_{lang}_\d.md` Dieser Name ist gleichzeitig die ID der Userstory in anderen Kontexten.
 
+## tool lists
+
+Wir haben Listen an Werkzeugen (mehrheitlich Software und Tutorials) von folgenden Quellen heruntergeladen
+
+- TaPOR: `data/tapor.json`
+- [U of Toronto](https://find.digital.utsc.utoronto.ca/search-results): `data/utoronto-tools.csv`
+
 
 # to do
 
@@ -48,10 +55,12 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
     + `R` is strikingly prominent
         * [ ] add column with KWIC to the intermediate data output 
 - data
-    + [ ] add data from the undocumented (?) API of TAPoR at <https://tapor.ca/api/tools/by_analysis>, which returns JSON. We found the API through an analysis of [ToolXtractor](https://github.com/lehkost/ToolXtractor) by Barbot et al.
+    + [x] add data from the undocumented (?) API of TAPoR at <https://tapor.ca/api/tools/by_analysis>, which returns JSON. We found the API through an analysis of [ToolXtractor](https://github.com/lehkost/ToolXtractor) by Barbot et al.
         * [@BarbotEtAl2019ToolsMentioned]
         * [@BarbotEtAl2019WhichDHTools]
     + [ ] add DHd abstracts from the GitHub repositories
+- R notebook
+    + [ ] explain the origin of and the rationale behind the tool list
     
 
 ## done
@@ -61,7 +70,7 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
     + The opposite will also cause false negatives as "Topic modelling" won't match "topic modelling"
     + Solution
         * [x] add second column to tools.csv with variant spelling
-- TEI processing
+- [x] TEI processing
     + I exported all texts from the `dh-conferences` data to individual files. The result are three types of files (all with `.xml` file ending)
         1. plain text files: 
             - all 5-digit file names

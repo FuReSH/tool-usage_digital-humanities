@@ -3,6 +3,7 @@ library(ggrepel)
 library(ggwordcloud)
 library(paletteer) # for better palettes
 library(yaml)
+library(DataExplorer) # for quick exploration
 # set a general theme for all ggplots
 theme_set(theme_bw())
 

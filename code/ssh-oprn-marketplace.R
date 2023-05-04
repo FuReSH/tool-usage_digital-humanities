@@ -28,46 +28,21 @@ data.ssh.tools <- data.ssh.json %>%
   as.tbl_json() %>%
   gather_object() %>% 
   filter(name == "tools") %>% 
-  gather_array() # tibble with one row per tool (which is yet another JSON object)
+  gather_array() %>% # tibble with one row per tool (which is yet another JSON object)
+  spread_all()
+
+data.ssh.contributors <- data.ssh.tools %>% 
+  group_by(informationContributor.id , informationContributor.username) %>%
+  summarise(no.tools = n()) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(no.tools))
+
+data.ssh.sources <- data.ssh.tools %>%
+  group_by(source.id, source.label) %>%
+  summarise(no.tools = n()) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(no.tools))
+
 
 # playground
 
-data.ssh <- data.ssh %>%
-  purrr::flatten() 
-data.ssh.tools <- dplyr::bind_rows(data.ssh)
-
-data.ssh.tools <- split(data.ssh, names(data.ssh)) %>% 
-  map(dplyr::bind_rows)
-
-data.ssh.tools <- tapply(data.ssh, 
-                         names(data.ssh), 
-                         dplyr::bind_rows)
-
-df <- sapply(data.ssh$tools, function(x){
-  dplyr::bind_rows(x)
-})
-
-df <- unlist(data.ssh$tools) %>%
-  as_tibble()
-df <- data.ssh
-data.ssh <- mapply(function(df, name) {
-  df$Name <- rep(name, nrow(df))
-  return(df)
-}, df = data.ssh, name = names(data.ssh),
-SIMPLIFY = FALSE)
-
-v.names <- names(data.ssh)
-df <- data.ssh %>%
-  purrr::flatten()
-  
-  test <-  tibble(
-    tools = purrr::map(data.ssh, "tools$id")
-  )
-  head(test)
-test <-  tibble(
-    id = purrr::map(data.ssh$tools, "id"),
-    expansion = purrr::map(list.input, "expansion"),
-    category = purrr::map(list.input, "category")
-  ) %>%
-    unnest(cols = c(name, expansion, category)) %>%
-    dplyr::na_if("NULL")

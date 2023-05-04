@@ -31,6 +31,7 @@ f.json.types <- function(tbl.json) {
     json_types() %>% count(name, type)
 }
 f.json.types(data.ssh.json)
+
 data.ssh.tools <- data.ssh.json %>%
   enter_object(tools) %>%
   gather_array() %>%
@@ -69,20 +70,47 @@ write.table(as_tibble(data.ssh.tools), file = "ssh_tools.csv", row.names = F, co
 # TaDiRAH classification
 load("ssh_tools.rda")
 f.json.types(data.ssh.tools)
-data.ssh.tools <- data.ssh.tools %>%
+data.ssh.tools %>%
   # TaDiRAH classification is part of the properties array
   enter_object(properties) %>%
   gather_array() %>%
-  spread_all()
-
-# 2. filter for TaDiRAH classifications
-data.ssh.tools.classification <- data.ssh.tools %>% 
+  spread_all() %>%
+  # filter for TaDiRAH classifications
   dplyr::filter(concept.vocabulary.code == "tadirah2") %>%
   dplyr::select(
     id, label, persistentId, source.label, sourceItemId, source.urlTemplate, concept.vocabulary.code, concept.code, concept.uri
   ) %>%
-  as_tibble()
+  as_tibble() -> 
+  data.ssh.tools.classification
 write.table(data.ssh.tools.classification, file = "ssh_tools-classification.csv", row.names = F, col.names = T, quote = T, sep = ",")
+
+data.ssh.classification <- data.ssh.tools.classification %>%
+  group_by(concept.code)  %>%
+  summarise(no.tools = n()) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(no.tools))
+write.table(data.ssh.classification, file = "ssh_classification.csv", row.names = F, col.names = T, quote = T, sep = ",")
+
+# external IDs 
+data.ssh.tools %>%
+  # TaDiRAH classification is part of the properties array
+  enter_object(externalIds) %>%
+  gather_array() %>%
+  spread_all() %>%
+  dplyr::select(
+    id, label, persistentId, identifierService.code, identifier, identifierService.urlTemplate
+  ) %>%
+  as_tibble() -> 
+  data.ssh.tools.externalIds
+write.table(data.ssh.tools.externalIds, file = "ssh_tools-authorities.csv", row.names = F, col.names = T, quote = T, sep = ",")
+
+data.ssh.tools.externalIds %>%
+  group_by(identifierService.code)  %>%
+  summarise(no.tools = n()) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(desc(no.tools)) -> 
+  data.ssh.externalIds
+write.table(data.ssh.externalIds, file = "ssh_authorities.csv", row.names = F, col.names = T, quote = T, sep = ",")
 
 # 2. make API calls to `https://marketplace-api.sshopencloud.eu/api/tools-services/{persistentId}`
 v.url.base = "https://marketplace-api.sshopencloud.eu/api/tools-services/"

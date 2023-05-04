@@ -30,6 +30,7 @@ data.ssh.tools <- data.ssh.json %>%
   filter(name == "tools") %>% 
   gather_array() %>% # tibble with one row per tool (which is yet another JSON object)
   spread_all()
+remove(data.ssh.json)
 
 data.ssh.contributors <- data.ssh.tools %>% 
   group_by(informationContributor.id , informationContributor.username) %>%
@@ -43,6 +44,9 @@ data.ssh.sources <- data.ssh.tools %>%
   dplyr::ungroup() %>%
   dplyr::arrange(desc(no.tools))
 
-
-# playground
-
+# save data
+write.table(data.ssh.contributors, file = "ssh_contributors.csv", row.names = F, col.names = T, quote = T, sep = ",")
+write.table(data.ssh.sources, file = "ssh_sources.csv", row.names = F, col.names = T, quote = T, sep = ",")
+save(data.ssh.tools, file = "ssh_tools.rda")
+  
+write.table(data.ssh.tools, file = "ssh_tools.csv", row.names = F, col.names = T, quote = T, sep = ",")

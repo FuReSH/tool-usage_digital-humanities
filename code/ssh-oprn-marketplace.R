@@ -44,9 +44,19 @@ data.ssh.sources <- data.ssh.tools %>%
   dplyr::ungroup() %>%
   dplyr::arrange(desc(no.tools))
 
+data.ssh.process <- data.ssh.tools %>%
+  #dplyr::select(id, lastInfoUpdate) %>%
+  dplyr::mutate(date = lubridate::as_date(lastInfoUpdate)) %>%
+  group_by(date, informationContributor.id, informationContributor.username,source.id, source.label) %>%
+  summarise(no.tools = n()) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(date)
+
 # save data
+save(data.ssh.tools, file = "ssh_tools.rda")
 write.table(data.ssh.contributors, file = "ssh_contributors.csv", row.names = F, col.names = T, quote = T, sep = ",")
 write.table(data.ssh.sources, file = "ssh_sources.csv", row.names = F, col.names = T, quote = T, sep = ",")
-save(data.ssh.tools, file = "ssh_tools.rda")
+write.table(data.ssh.process, file = "ssh_ingestion-process.csv", row.names = F, col.names = T, quote = T, sep = ",")
+
   
 write.table(data.ssh.tools, file = "ssh_tools.csv", row.names = F, col.names = T, quote = T, sep = ",")

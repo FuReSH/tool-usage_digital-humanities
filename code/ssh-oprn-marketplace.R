@@ -7,7 +7,7 @@ library(tidyjson)
 Sys.setlocale("LC_ALL", "en_US.UTF-8")
 
 # load functions and variables/parameters
-#source(here("code", "functions.r"))
+source(here("code", "functions.r"))
 
 setwd(here("data", "ssh-open-marketplace"))
 
@@ -91,9 +91,16 @@ data.ssh.classification <- data.ssh.tools.classification %>%
   dplyr::arrange(desc(no.tools))
 write.table(data.ssh.classification, file = "ssh_classification.csv", row.names = F, col.names = T, quote = T, sep = ",")
 
+# plot as word cloud
+v.label.source = "SSH Open Marketplace API"
+data.input <- data.ssh.classification %>%
+  rename(term = concept.code, freq = no.tools) %>%
+  mutate(freq.text.100 = freq / max(freq) * 100, freq.rel.100 = freq.text.100)
+f.wordcloud.frequency(data.input, 100, 'TaDiRAH concepts in SSH Open Marketplace', 'png')
+f.wordcloud.frequency(data.input, 50, 'TaDiRAH concepts in SSH Open Marketplace', 'png')
+
 # external IDs 
 data.ssh.tools %>%
-  # TaDiRAH classification is part of the properties array
   enter_object(externalIds) %>%
   gather_array() %>%
   spread_all() %>%

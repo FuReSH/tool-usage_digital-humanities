@@ -59,6 +59,14 @@ Wir haben Listen an Werkzeugen (mehrheitlich Software und Tutorials) von folgend
         * [@BarbotEtAl2019ToolsMentioned]
         * [@BarbotEtAl2019WhichDHTools]
     + [ ] add DHd abstracts from the GitHub repositories
+    + [ ] add metadata for all conference presentations and all journal articles in our corpus to Wikidata in order to link them to the mentioned tools
+- analysis
+    + [ ] use expanded TaPOR, SSH Open Marketplace tool list
+    + [x] write output in form of edges table, which can then be used to link certain papers to certain tools on Wikidata
+        * source: paper
+        * target: tool
+    - [ ] use TaDiRAH classification in SSH Open Marketplace to group tools into methodologic approaches
+        + TaDiRAH has 3 levels and each tool should get a level attribute as well as a parent attribute
 - R notebook
     + [ ] explain the origin of and the rationale behind the tool list
     

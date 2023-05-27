@@ -43,6 +43,7 @@ df.tools.yml <- f.read.yaml.furesh(here("data/tools.yml"))
 
 
 # run frequency analysis
+## save edges table of sources mentioning a specific tool
 df.4memory.tools <- f.stringmatch.frequency(df.4memory, df.tools$variant)
 df.4memory.tools <- f.clean.variants(df.4memory.tools, nrow(df.4memory))
 write.table(df.4memory.tools, file = here("data/nfdi4memory/4memory-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")

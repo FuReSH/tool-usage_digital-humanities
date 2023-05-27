@@ -9,22 +9,37 @@ theme_set(theme_bw())
 
 # use string matching to include multi-word terms: inspired by https://stackoverflow.com/questions/65182347
 # df.input must have a column "text"  
-f.stringmatch.frequency <- function(df.input, list.strings) {
+## this function returns the id of a text and all the terms it found therein with one row per term found and a frequency of how often this term was found in each text
+f.freq.term.per.text <- function(df.input, list.strings) {
   df.output <- df.input %>%
     dplyr::mutate(
       term = str_extract_all(text, 
-                             regex(paste0("\\b", list.strings, "\\b", collapse = '|'),
-                                   ignore_case = FALSE)) # it might make sense to add an input variable for this choice
+             regex(paste0("\\b", list.strings, "\\b", collapse = '|'),
+                   ignore_case = FALSE)) # it might make sense to add an input variable for this choice
     ) %>%
     unnest(term) %>%
+    dplyr::select(id, term) %>% 
+    # rename for clarity
+    dplyr::rename(source = id,
+                  target = term) %>%
     # step 1: group by text and term: get frequency of number of hits per term per text
-    group_by(text, term) %>%
-    summarise(freq = n()) %>%
-    # step 2: group by term: get frequency of number of texts per term
-    group_by(term) %>%
-    summarise(freq = n()) %>%
-    dplyr::arrange(desc(freq))
+    dplyr::group_by(source, target) %>%
+    dplyr::summarise(weight = n())
   df.output
+}
+## this function takes the output from the previous function and returns the number of texts, a given term occurs in
+f.freq.text.per.term <- function(df.input) {
+  df.input %>% 
+    # step 2: group by term: get frequency of number of texts per term
+    dplyr::group_by(target) %>%
+    dplyr::summarise(freq = n()) %>%
+    dplyr::arrange(desc(freq)) %>%
+    rename(term = target)
+}
+
+f.stringmatch.frequency <- function(df.input, list.strings) {
+  f.freq.term.per.text(df.input, list.strings) %>%
+    f.freq.text.per.term()
 }
 # control for correct case of matches
 # match all the variants and then group by term

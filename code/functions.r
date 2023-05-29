@@ -189,8 +189,24 @@ f.wordcloud.frequency <- function(input, max.values, label.text, output.device) 
 f.prettify.df <- function(data.input, file.name){
   data.input %>%
     dplyr::select(term, freq, freq.rel) %>%
-    dplyr::mutate(freq.rel = round(freq.rel, 2)) %>%
+    dplyr::mutate(freq.rel = round(freq.rel, 2)) %>% 
     write.table(file = paste(file.name, 'print.csv', sep = '_'), row.names = F, quote = F, sep = ',')
+}
+# read a folder of json files
+f.read.json <- function(folder) {
+  v.filenames <- list.files(pattern="*.json", full.names=TRUE)
+  df.json <- lapply(v.filenames, function(x) {
+    jsonlite::read_json(x, simplifyVector = F, flatten = F)
+  })
+  # output is a list of lists and data frames
+  df.json
+}
+# small helper to figure out a JSON structure
+f.json.types <- function(tbl.json) {
+  tbl.json %>%
+    as.tbl_json() %>%
+    gather_object() %>%
+    json_types() %>% count(name, type)
 }
 
 # load parameters

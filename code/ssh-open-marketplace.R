@@ -1,4 +1,3 @@
-
 library(tidyverse)
 library(here)
 library(jsonlite)
@@ -11,27 +10,10 @@ source(here("code", "functions.r"))
 
 setwd(here("data", "ssh-open-marketplace"))
 
-# read a folder of json files
-f.read.json <- function(folder) {
-  v.filenames <- list.files(pattern="*.json", full.names=TRUE)
-  df.json <- lapply(v.filenames, function(x) {
-      jsonlite::read_json(x, simplifyVector = F, flatten = F)
-    })
-  # output is a list of lists and data frames
-  df.json
-}
-
-# we end up with a large list of lists and data frames and I cannot figure out how to bind all the relevant data frames together
 data.ssh.json <- f.read.json(here("data", "ssh-open-marketplace"))
-
-f.json.types <- function(tbl.json) {
-  tbl.json %>%
-    as.tbl_json() %>%
-    gather_object() %>%
-    json_types() %>% count(name, type)
-}
+# we end up with a large list of lists and data frames and need the small helper to figure out its structure
 f.json.types(data.ssh.json)
-
+# we can now enter into the JSON
 data.ssh.tools <- data.ssh.json %>%
   enter_object(tools) %>%
   gather_array() %>%

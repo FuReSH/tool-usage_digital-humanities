@@ -1,0 +1,243 @@
+term,freq,freq.rel
+R,260,1
+Google,76,0.29
+Processing,65,0.25
+Python,58,0.22
+Twitter,52,0.2
+Overview,43,0.17
+Topic,42,0.16
+fixed,41,0.16
+Gephi,33,0.13
+Papers,29,0.11
+Omeka,27,0.1
+Github,26,0.1
+JavaScript,26,0.1
+Paper,26,0.1
+Projects,25,0.1
+Spatial,23,0.09
+YouTube,20,0.08
+Google Books,16,0.06
+Pattern,14,0.05
+Excel,13,0.05
+MySQL,13,0.05
+Unity,13,0.05
+Voyant Tools,13,0.05
+Annotations,11,0.04
+Django,10,0.04
+Palladio,10,0.04
+WordPress,10,0.04
+CollateX,9,0.03
+HathiTrust Digital Library,9,0.03
+Leaflet,9,0.03
+Solr,9,0.03
+word2vec,9,0.03
+Juxta,8,0.03
+Mallet,8,0.03
+TXM,8,0.03
+Tesseract,8,0.03
+Things,8,0.03
+TreeTagger,8,0.03
+Zotero,8,0.03
+stylo,8,0.03
+D3.js,7,0.03
+Drupal,7,0.03
+KWIC,7,0.03
+Natural Language Toolkit,7,0.03
+Origin,7,0.03
+Silk,7,0.03
+ArcGIS,6,0.02
+Bootstrap,6,0.02
+Concordance,6,0.02
+Cytoscape,6,0.02
+Fedora,6,0.02
+GeoNames,6,0.02
+Hypothes.is,6,0.02
+MediaWiki,6,0.02
+OpenRefine,6,0.02
+TF-IDF,6,0.02
+Jekyll,5,0.02
+Markdown,5,0.02
+Neatline,5,0.02
+Perl,5,0.02
+PostgreSQL,5,0.02
+Ruby,5,0.02
+SNAP,5,0.02
+WebGL,5,0.02
+Annotation Studio,4,0.02
+Bookworm,4,0.02
+Chrome,4,0.02
+Firefox,4,0.02
+Kindle,4,0.02
+Lexos,4,0.02
+QGIS,4,0.02
+Skype,4,0.02
+Tableau Public,4,0.02
+Tumblr,4,0.02
+eXist-db,4,0.02
+gensim,4,0.02
+Abbot,3,0.01
+CLARIN-PL,3,0.01
+Commons In A Box,3,0.01
+Ghost,3,0.01
+Historypin,3,0.01
+Hypothesis,3,0.01
+Manifold,3,0.01
+Photogrammar,3,0.01
+Pliny,3,0.01
+Prospect,3,0.01
+Protégé,3,0.01
+Ptolemaic,3,0.01
+Pundit,3,0.01
+Recogito,3,0.01
+Substance,3,0.01
+TEI Boilerplate,3,0.01
+Tesserae,3,0.01
+Transkribus,3,0.01
+nodegoat,3,0.01
+AntConc,2,0.01
+BabelNet,2,0.01
+Blacklight,2,0.01
+Blender,2,0.01
+DARIAH-DE Working Papers,2,0.01
+Dataverse,2,0.01
+Digital Humanities Course Registry,2,0.01
+Dropbox,2,0.01
+Freebase,2,0.01
+GIMP,2,0.01
+Google Analytics,2,0.01
+Google Drive,2,0.01
+Google My Maps,2,0.01
+Google Scholar,2,0.01
+ISIDORE,2,0.01
+Icon,2,0.01
+Intelligent Archive,2,0.01
+Jing,2,0.01
+Mural,2,0.01
+NodeXL,2,0.01
+Oral History Metadata Synchronizer,2,0.01
+Orange,2,0.01
+PeriodO,2,0.01
+PhiloLogic,2,0.01
+Protovis,2,0.01
+Slack,2,0.01
+TRACER,2,0.01
+Textual Communities,2,0.01
+Transcript,2,0.01
+Tropy,2,0.01
+TypeWright,2,0.01
+Typical,2,0.01
+VARD,2,0.01
+Wisdom,2,0.01
+WordSmith,2,0.01
+Wordle,2,0.01
+Zenodo,2,0.01
+igraph,2,0.01
+3DHOP,1,0
+ARTFL Encyclopédie Project,1,0
+ATLAS.ti,1,0
+Academia.edu,1,0
+Adobe InDesign,1,0
+Alveo,1,0
+Annotate,1,0
+Annotorious,1,0
+Anthologize,1,0
+Anvil,1,0
+Archive-It,1,0
+AustESE,1,0
+Basecamp,1,0
+Blogger,1,0
+BuddyPress,1,0
+CONTENTdm,1,0
+CQPweb,1,0
+Calenda,1,0
+CartoDB,1,0
+Chart.js,1,0
+Confluence,1,0
+DARIAH-DE Collection Registry,1,0
+DH Press,1,0
+DSpace,1,0
+Dashboard,1,0
+Dedoose,1,0
+ELAN,1,0
+EndNote,1,0
+Europeana Collections,1,0
+Exhibit 3.0,1,0
+Forte,1,0
+FromThePage,1,0
+GapVis,1,0
+Google Ngram Viewer,1,0
+Heurist,1,0
+InDesign,1,0
+IsaViz,1,0
+Islandora,1,0
+Jigsaw,1,0
+Joomla,1,0
+KORA,1,0
+Koha,1,0
+Lexomics,1,0
+Liner2,1,0
+LitViz,1,0
+LodLive,1,0
+Lucene,1,0
+MAXQDA,1,0
+Machine Translation,1,0
+Map Warper,1,0
+Matlab,1,0
+Mendeley,1,0
+MorphAdorner,1,0
+Mukurtu CMS,1,0
+NeOn Toolkit,1,0
+Old Maps Online,1,0
+OmniPage,1,0
+OntoViz,1,0
+Pocket,1,0
+Prefuse,1,0
+Prism,1,0
+ProcessingJS,1,0
+Prolog,1,0
+Quill,1,0
+RAW,1,0
+RDF Gravity,1,0
+RStudio,1,0
+Readability,1,0
+RelFinder,1,0
+RoSE,1,0
+SARIT,1,0
+SOAP,1,0
+Second Life,1,0
+SemLens,1,0
+Serendip,1,0
+Shadows,1,0
+Sketch Engine,1,0
+Sophie,1,0
+Språkbanken,1,0
+StoryMapJS,1,0
+Summarize,1,0
+T-PEN,1,0
+TRAViz,1,0
+TextBlob,1,0
+TextImager,1,0
+Textal,1,0
+Textexture,1,0
+The FOAF Project,1,0
+TileMill,1,0
+Trello,1,0
+VADER,1,0
+VSim,1,0
+Versioning Machine,1,0
+Virtual Language Observatory,1,0
+Visual Browser,1,0
+VisualEyes,1,0
+WCRFT2,1,0
+Wavesurfer,1,0
+WebLicht,1,0
+WebSty,1,0
+Weka,1,0
+Wiki Map Project,1,0
+WoSeDon,1,0
+WordHoard,1,0
+WorldCat,1,0
+eLaborate,1,0
+forTEXT,1,0
+gFacet,1,0
+tFacet,1,0

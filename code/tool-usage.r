@@ -61,7 +61,11 @@ df.tools.ssh %>%
 # run frequency analysis
 #df.dhconfs.ssh.tools.per.text <- f.freq.term.per.text(df.dhconfs.abstracts, df.tools.ssh$label.clean)
 df.dhconfs.ssh.tools <- f.freq.text.per.term(df.dhconfs.ssh.tools.per.text) %>%
-  f.clean.variants(number.of.texts = nrow(df.dhconfs.abstracts))
+  f.normalise.freqs(total = nrow(df.dhconfs.abstracts))
+write.table(df.dhconfs.ssh.tools.per.text, file = here("data/dh-conferences/dhconfs_tools-ssh.csv"), row.names = F, quote = T, sep = ",")
+write.table(df.dhconfs.ssh.tools, file = here("data/dh-conferences/dhconfs-frequencies_tools-ssh.csv"), row.names = F, quote = T, sep = ",")
+#df.dhq.tools <- read.csv(file = here("data/dhq/dhq-frequencies_tools.csv"), sep = ",")
+f.prettify.df(df.dhconfs.ssh.tools, 'dhconfs-frequencies_tools')
 
 
 # run frequency analysis

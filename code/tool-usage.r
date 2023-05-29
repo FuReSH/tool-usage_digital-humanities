@@ -40,6 +40,28 @@ df.tools <- read_csv(here("data","tools.csv"))
 df.tools <- df.tools %>%
   dplyr::filter(term != 'Internet')
 df.tools.yml <- f.read.yaml.furesh(here("data/tools.yml")) 
+# load the tools list from the SSH Open Marketplace
+# quite a few of the labels are common English words, which ought to be filtered out at some point
+df.tools.ssh <- read_csv(here("data", "ssh-open-marketplace", "ssh_tools.csv")) %>%
+  # select basic information, which can always be amended by joins
+  dplyr::select(id, persistentId, label, source.label, sourceItemId) %>%
+  unique()
+# labels need to be cleaned, as they contain symbols that screw with the regex approach
+# 1. there are some erroneous rows, which might have been caused by faulty JSON? They can be found by non-nummerical 'id'
+df.tools.ssh %>%
+  dplyr::filter(str_detect(id, '^\\d+$'),
+                str_detect(persistentId, '[A-Z]*[0-9]*[a-z]*'),
+                str_detect(persistentId, '\\s', negate = T)
+                ) -> df.tools.ssh
+  # 2. escape everything that is a special regex character: /()*+
+df.tools.ssh %>%
+  dplyr::mutate(label.clean = str_replace_all(label,"(\\/|\\(|\\)|\\&|\\|)", "\\\\\\1")) %>%
+  dplyr::arrange(label.clean) -> df.tools.ssh
+
+# run frequency analysis
+#df.dhconfs.ssh.tools.per.text <- f.freq.term.per.text(df.dhconfs.abstracts, df.tools.ssh$label.clean)
+df.dhconfs.ssh.tools <- f.freq.text.per.term(df.dhconfs.ssh.tools.per.text) %>%
+  f.clean.variants(number.of.texts = nrow(df.dhconfs.abstracts))
 
 
 # run frequency analysis
@@ -49,8 +71,10 @@ df.4memory.tools <- f.clean.variants(df.4memory.tools, nrow(df.4memory))
 write.table(df.4memory.tools, file = here("data/nfdi4memory/4memory-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
 
 
-df.dhq.tools <- f.stringmatch.frequency(df.dhq, df.tools$variant)
-df.dhq.tools <- f.clean.variants(df.dhq.tools, nrow(df.dhq))
+df.dhq.term.per.text <- f.freq.term.per.text(df.dhq, df.tools$variant)
+df.dhq.tools <- f.freq.text.per.term(df.dhq.term.per.text) %>%
+  f.clean.variants(number.of.texts = nrow(df.dhq))
+write.table(df.dhq.term.per.text, file = here("data/dhq/dhq_tools.csv"), row.names = F, quote = T, sep = ",")
 write.table(df.dhq.tools, file = here("data/dhq/dhq-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
 #df.dhq.tools <- read.csv(file = here("data/dhq/dhq-frequencies_tools.csv"), sep = ",")
 f.prettify.df(df.dhq.tools, 'dhq-frequencies_tools')
@@ -72,3 +96,9 @@ v.label.source = "Data: DFG GEPRIS"
 v.label.title = paste("tools in ", nrow(df.dfg),  " project descriptions from DFG GEPRIS (", min(df.dfg.projects$onset, na.rm = T), "-", max(df.dfg.projects$terminus, na.rm = T), ")", sep = '')
 f.wordcloud.frequency(df.dfg.tools, 100, v.label.title, "png")
 f.wordcloud.frequency(df.dfg.tools, 100, v.label.title, "svg")
+
+# playground
+
+
+test.1 <- f.freq.term.per.text(df.dhconfs.abstracts[1:50,], df.tools.ssh$label)
+test.2 <- f.stringmatch.frequency(df.dhconfs.abstracts[1:50,], df.tools$variant)

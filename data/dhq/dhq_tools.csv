@@ -1,0 +1,1421 @@
+"source","target","weight"
+"000002","R",1
+"000003","GIS",10
+"000003","MySQL",1
+"000003","TEI",1
+"000004","TEI",42
+"000004","Text Encoding Initiative",4
+"000004","XML",2
+"000007","XML",1
+"000009","AI",6
+"000009","GATE",4
+"000009","R",1
+"000010","AI",1
+"000010","Java",2
+"000011","R",1
+"000013","TEI",1
+"000015","machine learning",3
+"000016","TEI",1
+"000016","XML",1
+"000017","JavaScript",1
+"000018","R",3
+"000022","Open Access",3
+"000023","CTS",3
+"000023","OCR",7
+"000023","OCRopus",1
+"000023","TEI",8
+"000023","Text Encoding Initiative",1
+"000023","machine learning",1
+"000023","open access",2
+"000023","text mining",1
+"000024","CTS",2
+"000024","P3",1
+"000024","Text Encoding Initiative",1
+"000024","XML",4
+"000025","XML",1
+"000026","API",1
+"000026","GIS",1
+"000026","Java",1
+"000026","OWL",2
+"000026","P5",3
+"000026","Protégé",1
+"000026","RDF",39
+"000026","Resource Description Framework",2
+"000026","SPARQL",9
+"000026","SQL",1
+"000026","SVG",3
+"000026","TEI",2
+"000026","XML",26
+"000026","XQuery",1
+"000026","XSLT",5
+"000026","machine learning",1
+"000026","natural language processing",2
+"000027","DTD",1
+"000027","OCR",8
+"000027","P4",2
+"000027","P5",1
+"000027","Pliny",1
+"000027","TEI",5
+"000027","Text Encoding Initiative",1
+"000027","XML",6
+"000028","APIs",4
+"000028","CTS",17
+"000028","TEI",3
+"000028","Text Encoding Initiative",1
+"000028","XML",14
+"000029","TEI",1
+"000029","XML",1
+"000029","open access",7
+"000030","DTD",2
+"000030","SQL",1
+"000030","TEI",3
+"000030","Text Encoding Initiative",1
+"000030","XML",10
+"000030","XSLT",1
+"000031","CSV",2
+"000031","GIS",15
+"000031","Java",1
+"000031","PostgreSQL",2
+"000031","R",1
+"000031","RESTful",1
+"000031","TEI",2
+"000031","Text Encoding Initiative",1
+"000031","XML",3
+"000031","named entity recognition",3
+"000031","text mining",3
+"000032","Java",1
+"000033","XML",1
+"000033","machine learning",1
+"000033","natural language processing",3
+"000034","OCR",32
+"000034","R",1
+"000034","TEI",1
+"000034","Text Encoding Initiative",1
+"000034","XML",4
+"000034","machine learning",1
+"000034","open access",7
+"000034","text mining",6
+"000035","CTS",2
+"000035","GIS",1
+"000035","OCR",5
+"000035","R",1
+"000035","TEI",6
+"000035","Text Encoding Initiative",1
+"000035","XML",7
+"000035","natural language processing",1
+"000035","open access",8
+"000035","text mining",3
+"000038","GIS",13
+"000038","MySQL",3
+"000038","Python",2
+"000038","network analysis",1
+"000039","CSS",1
+"000039","GIS",1
+"000039","JavaScript",1
+"000039","MARC",1
+"000039","P4",1
+"000039","P5",1
+"000039","RDF",1
+"000039","TEI",6
+"000039","Text Encoding Initiative",1
+"000039","XML",16
+"000039","XQuery",1
+"000039","named entity recognition",1
+"000040","OCR",1
+"000040","TEI",2
+"000040","XML",6
+"000041","Machine Learning",1
+"000041","machine learning",13
+"000041","text mining",10
+"000042","Machine Learning",1
+"000042","machine learning",14
+"000042","text mining",1
+"000043","Machine Learning",1
+"000043","git",4
+"000043","machine learning",10
+"000043","text mining",7
+"000044","Machine Learning",1
+"000044","machine learning",4
+"000044","text mining",1
+"000045","machine learning",6
+"000045","text mining",3
+"000047","MODS",1
+"000047","open access",2
+"000050","XML",1
+"000050","open access",1
+"000051","TextGrid",2
+"000052","API",1
+"000052","Java",12
+"000052","MARC",1
+"000052","Text Encoding Initiative",1
+"000052","XML",2
+"000053","R",1
+"000053","TEI",1
+"000053","XML",5
+"000053","XSLT",2
+"000055","XML",3
+"000057","GIS",1
+"000057","TEI",1
+"000057","XML",1
+"000058","TEI",2
+"000059","RDF",1
+"000059","Resource Description Framework",1
+"000059","TEI",1
+"000064","MARC",3
+"000064","METS",54
+"000064","MODS",9
+"000064","RDF",1
+"000064","TEI",6
+"000064","Text Encoding Initiative",1
+"000064","XML",111
+"000064","XPath",1
+"000064","XSL",1
+"000064","XSLT",2
+"000065","GIS",1
+"000065","Natural Language Processing",1
+"000065","P4",1
+"000065","TEI",4
+"000065","Text Encoding Initiative",1
+"000065","XML",1
+"000065","stylometry",1
+"000068","AI",2
+"000068","OWL",22
+"000068","RDF",2
+"000068","Resource Description Framework",1
+"000068","XML",2
+"000068","machine learning",2
+"000069","AI",1
+"000069","Java",3
+"000069","Levenshtein",2
+"000069","R",1
+"000070","GIS",1
+"000070","IP",2
+"000070","OCR",1
+"000071","IP",2
+"000071","Java",5
+"000071","open access",2
+"000073","open access",1
+"000074","APIs",2
+"000075","P3",5
+"000075","P4",5
+"000075","P5",7
+"000075","open access",10
+"000076","API",1
+"000076","IP",1
+"000076","OWL",1
+"000076","RDF",4
+"000076","SPARQL",1
+"000077","GIS",1
+"000077","network analysis",1
+"000077","open access",3
+"000078","TEI",2
+"000078","TextGrid",1
+"000078","XML",2
+"000080","APIs",1
+"000080","Pliny",3
+"000080","Python",1
+"000080","XML",1
+"000080","open access",2
+"000082","P4",2
+"000082","P5",4
+"000082","TEI",17
+"000082","Text Encoding Initiative",1
+"000082","XML",14
+"000083","IP",1
+"000083","Image Markup Tool",1
+"000083","TEI",2
+"000083","Versioning Machine",5
+"000085","JavaScript",1
+"000086","R",2
+"000086","SPSS",1
+"000086","TEI",6
+"000086","Text Encoding Initiative",3
+"000086","WWW",5
+"000087","WWW",1
+"000088","TEI",5
+"000088","Text Encoding Initiative",1
+"000088","XML",3
+"000090","text mining",1
+"000091","GIS",3
+"000091","XML",1
+"000091","distant reading",1
+"000092","git",1
+"000094","R",3
+"000095","TEI",2
+"000095","Text Encoding Initiative",1
+"000099","R",1
+"000102","Text Encoding Initiative",1
+"000104","natural language processing",1
+"000105","network analysis",5
+"000105","neural networks",2
+"000106","TEI",1
+"000106","XML",1
+"000106","distant reading",2
+"000106","text mining",2
+"000107","DARIAH",2
+"000107","Drupal",1
+"000107","IP",3
+"000107","Java",1
+"000107","METS",1
+"000107","Omeka",1
+"000107","Open Access",1
+"000107","TCP",3
+"000107","TEI",1
+"000107","Text Encoding Initiative",1
+"000107","WWW",1
+"000107","open access",6
+"000108","MySQL",1
+"000111","OCR",2
+"000111","Open Access",1
+"000111","R",5
+"000111","XML",1
+"000112","TEI",1
+"000112","XML",1
+"000112","text encoding initiative",1
+"000113","R",1
+"000113","natural language processing",1
+"000114","SPSS",1
+"000114","TEI",2
+"000114","Text Encoding Initiative",8
+"000114","open access",3
+"000116","GIS",7
+"000116","GUI",1
+"000117","ODD",1
+"000117","P5",1
+"000117","R",1
+"000117","TEI",74
+"000117","Text Encoding Initiative",1
+"000117","XML",11
+"000117","distant reading",3
+"000119","GIS",1
+"000119","text mining",2
+"000121","API",2
+"000121","Image Markup Tool",1
+"000121","Java",5
+"000121","MySQL",3
+"000121","Pliny",118
+"000121","RDF",1
+"000121","WWW",21
+"000121","XSLT",1
+"000121","distant reading",1
+"000121","network analysis",2
+"000121","text mining",3
+"000122","AI",1
+"000122","GUI",2
+"000122","Pliny",5
+"000123","MySQL",1
+"000123","TEI",10
+"000123","XML",7
+"000123","XSLT",2
+"000125","OCR",3
+"000125","Open Access",1
+"000125","TEI",3
+"000125","Text Encoding Initiative",1
+"000125","XML",2
+"000125","Zooniverse",2
+"000126","AI",8
+"000126","IP",1
+"000126","open access",1
+"000128","AI",21
+"000128","APIs",1
+"000128","neural networks",2
+"000129","IP",1
+"000132","TEI",1
+"000132","Text Encoding Initiative",1
+"000132","open access",1
+"000132","text mining",1
+"000134","TEI",1
+"000135","API",1
+"000135","TUSTEP",3
+"000136","text mining",1
+"000137","Python",1
+"000137","XML",1
+"000139","RDF",1
+"000142","R",3
+"000143","APIs",1
+"000143","GUI",1
+"000144","ArcGIS",1
+"000144","GIS",2
+"000144","Juxta",12
+"000144","Natural Language Processing",1
+"000144","OCR",4
+"000144","R",1
+"000144","TEI",2
+"000144","Text Encoding Initiative",1
+"000144","distant reading",2
+"000145","Gephi",4
+"000145","network analysis",4
+"000146","AI",2
+"000146","NLP",2
+"000146","Natural Language Processing",1
+"000146","XML",4
+"000146","XSL",1
+"000146","machine learning",8
+"000146","network analysis",1
+"000146","topic modeling",1
+"000147","Open Access",1
+"000148","MySQL",1
+"000148","R",2
+"000148","XML",2
+"000148","distant reading",3
+"000148","network analysis",2
+"000149","JavaScript",3
+"000150","JavaScript",1
+"000151","GIS",1
+"000151","OWL",1
+"000151","XML",1
+"000152","distant reading",12
+"000153","XML",1
+"000154","distant reading",2
+"000155","P5",2
+"000155","TEI",30
+"000155","Text Encoding Initiative",4
+"000155","XML",4
+"000156","DTD",9
+"000156","XML",3
+"000156","open access",1
+"000157","API",2
+"000157","APIs",1
+"000157","Java",14
+"000157","XML",2
+"000162","WWW",4
+"000163","R",1
+"000163","open access",3
+"000164","R",2
+"000165","JavaScript",2
+"000167","R",4
+"000168","OCR",64
+"000168","OCRopus",1
+"000168","TEI",1
+"000168","machine learning",2
+"000168","text mining",16
+"000168","topic modelling",5
+"000169","API",2
+"000169","CSS",5
+"000169","RDF",2
+"000169","XML",19
+"000169","XSLT",2
+"000170","PCA",9
+"000170","Principal Component Analysis",1
+"000170","R",4
+"000170","machine learning",2
+"000170","natural language processing",1
+"000170","principal component analysis",1
+"000171","distant reading",9
+"000172","GIS",2
+"000172","Python",2
+"000172","R",1
+"000172","TEI",1
+"000172","open access",2
+"000172","python",4
+"000172","topic modeling",1
+"000173","API",3
+"000174","DTD",5
+"000174","GitHub",2
+"000174","R",1
+"000174","XML",15
+"000174","XQuery",1
+"000174","XSL",2
+"000174","github",1
+"000175","Java",1
+"000175","R",1
+"000175","open access",1
+"000176","CLARIN",1
+"000176","OCR",4
+"000176","XML",1
+"000176","machine learning",1
+"000177","GIS",2
+"000178","CSS",1
+"000178","JavaScript",4
+"000178","XML",13
+"000178","XSL",1
+"000178","XSLT",3
+"000178","distant reading",11
+"000178","text mining",1
+"000179","CSS",1
+"000179","DTD",1
+"000179","MySQL",1
+"000179","TEI",10
+"000179","Text Encoding Initiative",2
+"000179","XML",22
+"000179","XSL",2
+"000179","XSLT",1
+"000180","R",2
+"000181","CTS",32
+"000181","DARIAH",1
+"000181","HTTP",3
+"000181","JSON",2
+"000181","JavaScript",1
+"000181","MARC",1
+"000181","RDF",3
+"000181","SPARQL",3
+"000181","SVG",1
+"000181","TEI",7
+"000181","Text Encoding Initiative",1
+"000181","XML",2
+"000181","linked open data",2
+"000182","R",1
+"000183","MySQL",1
+"000183","TCP",4
+"000183","TEI",2
+"000183","XML",1
+"000183","distant reading",1
+"000183","open access",1
+"000184","DTD",1
+"000184","XML",2
+"000184","XSLT",1
+"000184","natural language processing",1
+"000185","bash",1
+"000186","Open Access",1
+"000186","P5",2
+"000186","TEI",8
+"000186","Text Encoding Initiative",1
+"000186","Versioning Machine",2
+"000186","XML",11
+"000186","open access",2
+"000187","open access",1
+"000188","Pliny",1
+"000188","stylometry",1
+"000189","distant reading",5
+"000190","CSV",7
+"000190","Gephi",1
+"000190","OCR",1
+"000190","R",1
+"000190","TEI",1
+"000190","XML",1
+"000190","distant reading",11
+"000190","topic modeling",1
+"000191","open access",2
+"000192","CSS",3
+"000192","JavaScript",6
+"000192","R",1
+"000192","WWW",1
+"000192","distant reading",1
+"000194","JavaScript",1
+"000194","R",1
+"000195","Java",1
+"000195","Python",1
+"000195","R",2
+"000195","network analysis",1
+"000195","text mining",1
+"000195","topic modeling",3
+"000196","AI",3
+"000196","APIs",1
+"000196","HTTP",1
+"000196","OWL",2
+"000196","RDF",38
+"000196","Resource Description Framework",4
+"000196","SPARQL",13
+"000196","SQL",8
+"000196","TEI",35
+"000196","Text Encoding Initiative",2
+"000196","XML",88
+"000196","XPath",4
+"000196","XQuery",19
+"000196","XSLT",1
+"000196","machine learning",1
+"000197","SALSAH",2
+"000197","distant reading",1
+"000199","CSS",12
+"000199","Drupal",2
+"000199","JavaScript",2
+"000199","Juxta",1
+"000199","MySQL",4
+"000199","Omeka",2
+"000199","TEI",40
+"000199","Text Encoding Initiative",3
+"000199","XML",26
+"000199","XSL",1
+"000199","XSLT",5
+"000201","DTD",1
+"000201","MARC",3
+"000201","R",3
+"000201","TEI",1
+"000201","Text Encoding Initiative",1
+"000201","open access",6
+"000202","Drupal",1
+"000202","IP",1
+"000202","P4",1
+"000202","P5",1
+"000202","R",1
+"000202","TEI",9
+"000202","Text Encoding Initiative",1
+"000202","XML",1
+"000202","XSLT",1
+"000202","open access",1
+"000203","github",1
+"000204","Scripto",1
+"000205","API",3
+"000205","JSON",1
+"000205","Java",1
+"000205","jQuery",1
+"000205","open access",1
+"000206","network analysis",1
+"000207","R",1
+"000208","R",1
+"000208","RDF",1
+"000208","machine learning",1
+"000208","text mining",1
+"000209","Voyant",2
+"000210","CSS",1
+"000210","R",1
+"000210","open access",2
+"000211","AI",1
+"000212","distant reading",1
+"000213","MARC",1
+"000213","TEI",1
+"000213","XML",1
+"000213","XSLT",1
+"000213","open access",1
+"000215","APIs",1
+"000215","text mining",1
+"000220","OCR",7
+"000220","TCP",4
+"000220","TEI",3
+"000220","Text Encoding Initiative",1
+"000220","Voyant",2
+"000220","XML",1
+"000220","text mining",2
+"000221","TEI",1
+"000221","open access",1
+"000221","text mining",1
+"000222","API",19
+"000222","Gephi",8
+"000222","TEI",1
+"000222","WWW",1
+"000222","distant reading",1
+"000222","github",3
+"000222","network analysis",5
+"000223","API",3
+"000223","GitHub",1
+"000223","Python",7
+"000223","R",14
+"000223","dplyr",3
+"000223","network analysis",1
+"000224","CSS",2
+"000224","JavaScript",4
+"000224","LDA",19
+"000224","MALLET",1
+"000224","Python",1
+"000224","RDF",1
+"000224","Topic Modeling",2
+"000224","XML",2
+"000224","git",1
+"000224","machine learning",1
+"000224","open access",1
+"000224","topic modeling",9
+"000227","APIs",1
+"000227","Java",1
+"000227","OCR",4
+"000227","Python",1
+"000227","XML",1
+"000227","machine learning",1
+"000228","distant reading",2
+"000228","open access",1
+"000229","R",1
+"000231","API",1
+"000231","HTTP",2
+"000231","Java",1
+"000231","LombardPress",12
+"000231","OCR",1
+"000231","Python",1
+"000231","RDF",11
+"000231","Resource Description Framework",1
+"000231","SPARQL",3
+"000231","TEI",11
+"000231","Text Encoding Initiative",1
+"000231","XML",8
+"000231","XPath",1
+"000231","XSLT",2
+"000231","github",2
+"000232","text mining",1
+"000232","topic modeling",1
+"000235","CLARIAH",1
+"000235","DARIAH",25
+"000235","Drupal",1
+"000235","GitHub",3
+"000235","OCR",1
+"000235","QGIS",1
+"000235","R",1
+"000235","SKOS",3
+"000235","SPARQL",1
+"000235","Topic Modeling",1
+"000235","github",1
+"000235","linked open data",2
+"000235","stylometry",1
+"000235","topic modeling",1
+"000237","PCA",1
+"000237","R",2
+"000237","principal component analysis",4
+"000238","GUI",17
+"000238","Toolbox",1
+"000239","R",1
+"000240","OCR",4
+"000240","R",1
+"000240","open access",1
+"000244","LDA",1
+"000244","NER",14
+"000244","NLP",1
+"000244","Natural Language Processing",1
+"000244","R",5
+"000244","github",3
+"000244","network analysis",1
+"000244","open access",1
+"000244","text mining",1
+"000244","topic modeling",3
+"000245","CTS",6
+"000245","GitHub",3
+"000245","Linked Open Data",1
+"000245","OA",1
+"000245","OCR",2
+"000245","RDF",2
+"000245","TEI",8
+"000245","Text Encoding Initiative",2
+"000245","XML",16
+"000245","git",1
+"000245","github",4
+"000246","text mining",1
+"000247","ANNIS",2
+"000247","New Testament Virtual Manuscript Room",1
+"000247","TEI",2
+"000247","Text Encoding Initiative",2
+"000247","XML",3
+"000247","distant reading",1
+"000247","linked open data",1
+"000247","natural language processing",1
+"000247","network analysis",1
+"000247","open access",1
+"000248","Drupal",32
+"000248","Gephi",2
+"000248","Omeka",14
+"000248","XML",5
+"000248","XSLT",1
+"000248","network analysis",1
+"000250","NER",4
+"000250","NLP",1
+"000250","Named Entity Recognition",1
+"000250","Natural Language Processing",1
+"000250","topic modeling",5
+"000251","NLP",2
+"000251","Natural Language Processing",1
+"000251","github",1
+"000252","ArcGIS",3
+"000252","GIS",50
+"000253","GIS",2
+"000253","Linked Open Data",2
+"000253","XML",1
+"000253","distant reading",1
+"000253","network analysis",1
+"000253","open access",1
+"000254","MARC",2
+"000254","P5",2
+"000254","R",1
+"000254","RDF",1
+"000254","Resource Description Framework",1
+"000254","TEI",20
+"000254","Text Encoding Initiative",1
+"000254","XML",3
+"000254","machine learning",3
+"000255","CTS",6
+"000255","NLP",2
+"000255","Named Entity Recognition",1
+"000255","Natural Language Processing",1
+"000255","Pliny",5
+"000255","machine learning",2
+"000255","network analysis",2
+"000256","GIS",1
+"000256","network analysis",1
+"000258","AI",1
+"000258","TEI",6
+"000258","Text Encoding Initiative",1
+"000258","XML",1
+"000258","distant reading",2
+"000259","GIS",2
+"000259","R",1
+"000259","TEI",1
+"000259","Voyant",1
+"000259","distant reading",1
+"000259","topic modeling",1
+"000261","TEI",1
+"000261","Text Encoding Initiative",1
+"000261","XML",1
+"000262","CATMA",4
+"000262","NER",3
+"000262","Named Entity Recognition",1
+"000263","GUI",3
+"000263","LDA",1
+"000263","OCR",9
+"000263","text mining",2
+"000263","topic modelling",13
+"000265","CLARIN",2
+"000267","CSS",1
+"000267","JavaScript",1
+"000268","Natural Language Processing",1
+"000268","OCR",57
+"000268","R",1
+"000268","machine learning",1
+"000268","natural language processing",1
+"000269","API",2
+"000269","APIs",2
+"000269","CSS",1
+"000269","JavaScript",1
+"000269","XML",2
+"000269","git",3
+"000270","Levenshtein",3
+"000270","MARC",2
+"000270","MODS",1
+"000270","Natural Language Processing",1
+"000270","OCR",9
+"000270","R",1
+"000270","XML",1
+"000270","named entity recognition",1
+"000270","open access",1
+"000271","API",10
+"000271","APIs",10
+"000271","R",1
+"000271","network analysis",2
+"000271","topic modeling",1
+"000272","GIS",1
+"000272","Linked Open Data",1
+"000272","RDF",1
+"000272","distant reading",1
+"000273","OCR",1
+"000273","R",1
+"000274","R",1
+"000275","Image Markup Tool",1
+"000275","XML",2
+"000275","open access",1
+"000276","PCA",1
+"000276","distant reading",1
+"000277","XML",1
+"000279","OA",5
+"000279","Pliny",217
+"000279","RDF",54
+"000279","SPARQL",2
+"000279","WWW",1
+"000279","XML",1
+"000279","distant reading",5
+"000279","network analysis",1
+"000279","text mining",6
+"000280","distant reading",10
+"000281","API",1
+"000281","APIs",1
+"000281","CSS",1
+"000281","Java",1
+"000281","JavaScript",1
+"000282","DOI",2
+"000282","TCP",30
+"000282","XML",2
+"000282","open access",2
+"000283","ArcGIS",2
+"000283","GIS",29
+"000283","LDA",3
+"000283","XML",1
+"000285","GIS",1
+"000285","JSON",6
+"000285","JavaScript",10
+"000285","Pliny",2
+"000285","SVG",5
+"000285","XML",4
+"000285","distant reading",1
+"000285","network analysis",1
+"000286","R",1
+"000286","Stylo",1
+"000287","ML",76
+"000288","ANNIS",1
+"000288","Levenshtein",1
+"000288","OCR",72
+"000288","OCRopus",11
+"000288","TEI",1
+"000288","XML",2
+"000288","neural networks",1
+"000289","Python",1
+"000289","network analysis",17
+"000290","CSV",1
+"000290","HTTP",2
+"000290","P3",1
+"000290","distant reading",1
+"000291","DOI",2
+"000291","GitHub",2
+"000291","Java",1
+"000291","LDA",7
+"000291","Latent Dirichlet Allocation",1
+"000291","MALLET",4
+"000291","P4",1
+"000291","PCA",14
+"000291","Principal Component Analysis",2
+"000291","Python",5
+"000291","R",1
+"000291","TEI",4
+"000291","Text Encoding Initiative",1
+"000291","Topic Modeling",33
+"000291","XML",3
+"000291","github",3
+"000291","machine learning",1
+"000291","stylometry",2
+"000291","topic modeling",2
+"000292","IP",1
+"000292","Intranet",1
+"000292","TCP",1
+"000292","WWW",4
+"000292","text mining",1
+"000293","API",2
+"000293","CTS",5
+"000293","CollateX",1
+"000293","JSON",5
+"000293","MongoDB",4
+"000293","P3",8
+"000293","P4",1
+"000293","P5",2
+"000293","RDF",7
+"000293","SPARQL",1
+"000293","T-Pen",1
+"000293","TEI",23
+"000293","Text Encoding Initiative",3
+"000293","TextGrid",1
+"000293","Textual Communities",35
+"000293","XML",19
+"000293","csv",1
+"000293","eLaborate",1
+"000293","github",2
+"000293","open access",1
+"000294","ArcGIS",4
+"000294","GIS",16
+"000294","SQL",1
+"000294","Salt",3
+"000294","geographic information system",1
+"000295","NLP",2
+"000295","PCA",4
+"000295","Principal Component Analysis",1
+"000295","R",3
+"000295","github",1
+"000295","stylo",1
+"000295","stylometry",3
+"000296","LDA",6
+"000296","Latent Dirichlet Allocation",1
+"000296","NER",1
+"000296","NLP",1
+"000296","Named Entity Recognition",1
+"000296","TCP",7
+"000296","topic modeling",5
+"000297","APIs",2
+"000297","GitHub",1
+"000297","Java",2
+"000297","NLP",1
+"000297","github",4
+"000298","API",1
+"000298","Gephi",6
+"000298","MALLET",2
+"000298","NER",4
+"000298","NLP",1
+"000298","Natural Language Processing",1
+"000298","TEI",1
+"000298","github",1
+"000298","network analysis",1
+"000298","topic modeling",1
+"000299","API",1
+"000299","GIS",1
+"000299","MARC",1
+"000299","OCR",1
+"000300","Gephi",1
+"000300","R",1
+"000300","network analysis",10
+"000302","GIS",1
+"000302","R",1
+"000302","TEI",1
+"000302","Text Encoding Initiative",1
+"000302","XML",2
+"000302","linked open data",1
+"000303","CSS",4
+"000303","CSV",1
+"000303","GIS",1
+"000303","GitHub",1
+"000303","Java",1
+"000303","R",2
+"000303","Voyant",1
+"000303","distant reading",1
+"000303","network analysis",2
+"000303","text mining",3
+"000303","topic modeling",1
+"000304","open access",1
+"000305","TEI",2
+"000305","oXygen",1
+"000306","CSS",4
+"000306","Drupal",1
+"000306","GIS",1
+"000306","GitHub",2
+"000306","network analysis",1
+"000307","CLI",1
+"000307","JavaScript",1
+"000307","MySQL",2
+"000307","R",3
+"000307","github",1
+"000308","R",1
+"000309","Java",1
+"000309","R",39
+"000310","GitHub",3
+"000310","JSON",2
+"000310","Jekyll",3
+"000310","Juxta",1
+"000310","Omeka",1
+"000310","Voyant",2
+"000310","open access",3
+"000311","Omeka",2
+"000313","API",3
+"000313","MARC",1
+"000313","Python",2
+"000313","R",2
+"000313","RDF",2
+"000313","TCP",69
+"000313","TEI",3
+"000313","Voyant",12
+"000313","XML",10
+"000313","distant reading",3
+"000313","github",1
+"000313","linked open data",1
+"000313","python",1
+"000314","ArcGIS",1
+"000314","JavaScript",1
+"000314","Python",1
+"000314","TEI",1
+"000314","distant reading",1
+"000315","JS",1
+"000315","Omeka",1
+"000315","TEI",4
+"000315","Text Encoding Initiative",1
+"000315","Voyant",1
+"000315","distant reading",2
+"000316","AI",1
+"000316","OWL",8
+"000316","Protégé",3
+"000316","RDF",10
+"000316","Resource Description Framework",1
+"000316","SKOS",1
+"000316","github",1
+"000317","distant reading",44
+"000317","machine learning",2
+"000318","API",20
+"000318","LOD",5
+"000318","Linked Open Data",1
+"000318","RDF",7
+"000318","Resource Description Framework",1
+"000318","open access",1
+"000319","ArcGIS",1
+"000319","GIS",1
+"000320","OCR",2
+"000321","JSON",2
+"000321","MariaDB",1
+"000321","MySQL",1
+"000321","OCR",4
+"000321","Python",1
+"000321","XML",2
+"000322","DARIAH",2
+"000322","GIS",2
+"000322","GitHub",1
+"000322","OCR",7
+"000322","Omeka",1
+"000322","Open Access",3
+"000322","R",1
+"000322","TEI",10
+"000322","Text Encoding Initiative",1
+"000322","XML",2
+"000322","github",2
+"000322","machine learning",1
+"000322","open access",1
+"000322","text mining",1
+"000323","TEI",1
+"000323","Voyant",2
+"000323","XML",1
+"000323","distant reading",2
+"000324","JS",1
+"000324","OCR",1
+"000324","TEI",4
+"000324","distant reading",1
+"000324","open access",1
+"000325","Natural Language Processing",1
+"000325","Python",10
+"000325","R",4
+"000325","distant reading",1
+"000325","github",1
+"000325","natural language processing",1
+"000326","AntConc",1
+"000326","Linked Open Data",2
+"000326","NER",1
+"000326","NLP",1
+"000326","Named Entity Recognition",1
+"000326","Natural Language Processing",1
+"000326","topic modelling",1
+"000327","JavaScript",2
+"000327","Omeka",4
+"000327","github",1
+"000328","API",3
+"000328","GitHub",1
+"000328","LOD",5
+"000328","Levenshtein",2
+"000328","Linked Open Data",3
+"000328","NER",13
+"000328","OCR",18
+"000328","Python",3
+"000328","RDF",2
+"000328","github",4
+"000328","natural language processing",1
+"000328","topic modelling",2
+"000329","R",1
+"000332","SPSS",2
+"000332","distant reading",1
+"000332","network analysis",1
+"000333","CLARIN",3
+"000333","GUI",2
+"000333","Levenshtein",1
+"000333","METS",1
+"000333","NER",77
+"000333","Named Entity Recognition",3
+"000333","OCR",20
+"000333","R",16
+"000333","SPARQL",1
+"000333","XML",1
+"000333","github",3
+"000333","machine learning",1
+"000333","named entity recognition",3
+"000334","R",1
+"000335","Pliny",1
+"000335","TEI",1
+"000335","XML",1
+"000336","API",3
+"000337","GIS",5
+"000337","Java",1
+"000337","Pliny",1
+"000337","TEI",2
+"000337","XML",3
+"000337","topic modeling",1
+"000338","AntConc",7
+"000338","OCR",4
+"000338","Python",1
+"000338","distant reading",4
+"000338","text mining",1
+"000339","Java",1
+"000339","R",1
+"000339","github",1
+"000340","OA",11
+"000340","Open Access",7
+"000340","R",1
+"000340","open access",102
+"000341","AntConc",3
+"000341","CATMA",1
+"000341","NLP",5
+"000341","Python",3
+"000341","R",4
+"000341","TextGrid",2
+"000341","Voyant",3
+"000341","distant reading",10
+"000341","machine learning",4
+"000341","natural language processing",3
+"000341","neural networks",1
+"000341","principal component analysis",2
+"000341","stylo",3
+"000341","stylometry",2
+"000342","LDA",16
+"000342","Latent Dirichlet Allocation",1
+"000342","git",2
+"000342","github",2
+"000342","machine learning",2
+"000342","topic modeling",4
+"000343","LIWC",132
+"000343","NLP",1
+"000343","TEI",2
+"000343","XML",1
+"000343","github",2
+"000343","machine learning",3
+"000343","open access",1
+"000343","text mining",1
+"000343","topic modeling",1
+"000344","Omeka",1
+"000344","R",1
+"000345","stylometry",1
+"000346","OCR",1
+"000346","R",2
+"000346","Stylo",1
+"000346","TEI",10
+"000346","TextGrid",1
+"000346","XML",11
+"000346","github",1
+"000346","stylo",1
+"000348","TEI",1
+"000349","XML",1
+"000350","API",10
+"000350","CTS",32
+"000350","DTD",1
+"000350","GitHub",9
+"000350","Java",1
+"000350","MySQL",2
+"000350","OCR",1
+"000350","P4",1
+"000350","P5",4
+"000350","Python",2
+"000350","TEI",17
+"000350","Text Encoding Initiative",1
+"000350","XML",16
+"000350","XPath",3
+"000350","XQuery",1
+"000350","open access",1
+"000350","python",1
+"000351","AI",1
+"000351","TEI",2
+"000351","Text Encoding Initiative",1
+"000351","machine learning",2
+"000353","IP",3
+"000353","Tableau",1
+"000354","RDF",10
+"000354","Resource Description Framework",1
+"000355","GIS",1
+"000355","MySQL",1
+"000357","R",2
+"000357","github",1
+"000358","Omeka",1
+"000358","TEI",1
+"000359","CSV",1
+"000359","MySQL",3
+"000359","SALSAH",4
+"000362","CSS",1
+"000362","OWL",1
+"000362","Open Access",1
+"000362","Resource Description Framework",1
+"000362","TEI",3
+"000362","Text Encoding Initiative",1
+"000362","XML",4
+"000363","AntConc",1
+"000363","R",1
+"000363","TEI",2
+"000363","XML",1
+"000363","distant reading",1
+"000363","text mining",1
+"000363","topic modeling",1
+"000364","CSV",1
+"000364","R",46
+"000364","TEI",1
+"000364","Tableau",3
+"000364","XML",8
+"000365","OCR",1
+"000365","Python",2
+"000365","R",2
+"000366","RDF",2
+"000367","GIS",1
+"000368","PCA",14
+"000368","Principal Component Analysis",1
+"000368","Python",1
+"000368","R",2
+"000368","ggplot",9
+"000368","ggplot2",1
+"000368","principal component analysis",14
+"000370","LOD",3
+"000370","Linked Open Data",2
+"000370","SPARQL",1
+"000371","Machine Learning",1
+"000371","PCA",1
+"000371","Principal Component Analysis",6
+"000371","R",2
+"000371","python",1
+"000371","stylo",7
+"000371","stylometry",5
+"000372","API",3
+"000372","GitHub",1
+"000372","JSON",2
+"000372","Java",1
+"000372","Juxta",4
+"000372","Linked Open Data",1
+"000372","PostgreSQL",5
+"000372","Python",1
+"000372","SQL",3
+"000372","XML",15
+"000372","XQuery",6
+"000372","github",1
+"000373","AI",1
+"000373","Bash",1
+"000373","IP",4
+"000373","Python",1
+"000373","VPN",6
+"000373","distant reading",1
+"000374","API",3
+"000374","APIs",2
+"000374","CSV",1
+"000374","Docker",1
+"000374","Drupal",11
+"000374","GitHub",2
+"000374","IIIF",16
+"000374","JSON",1
+"000374","Java",2
+"000374","JavaScript",3
+"000374","Kitodo",1
+"000374","MySQL",1
+"000374","New Testament Virtual Manuscript Room",1
+"000374","Omeka",13
+"000374","TEI",3
+"000374","Text Encoding Initiative",1
+"000374","Transkribus",1
+"000374","XML",4
+"000374","git",1
+"000374","oXygen",1
+"000374","open access",1
+"000375","CLARIAH",3
+"000376","R",1
+"000377","Python",4
+"000377","R",3
+"000377","distant reading",1
+"000377","machine learning",21
+"000377","neural networks",2
+"000377","python",1
+"000377","text mining",1
+"000377","topic modelling",1
+"000378","APIs",1
+"000378","distant reading",43
+"000378","machine learning",1
+"000378","network analysis",1
+"000378","topic modeling",2
+"000379","CSS",9
+"000379","Java",29
+"000379","JavaScript",20
+"000379","MySQL",4
+"000379","Python",2
+"000379","R",38
+"000379","SQL",1
+"000379","python",1
+"000380","GitHub",1
+"000380","Natural Language Processing",1
+"000381","MARC",1
+"000381","RDF",3
+"000381","TEI",1
+"000381","XML",1
+"000381","distant reading",1
+"000381","github",1
+"000382","TCP",5
+"000382","XML",2
+"000382","open access",1
+"000383","API",1
+"000383","GIS",2
+"000384","PCA",1
+"000384","SQL",1
+"000385","Java",2
+"000386","ArcGIS",1
+"000386","GIS",5
+"000387","Annotation Studio",2
+"000387","Drupal",9
+"000389","OCR",2
+"000389","distant reading",15
+"000389","open access",1
+"000390","distant reading",1
+"000391","R",1
+"000392","Java",1
+"000392","TEI",2
+"000392","XML",7
+"000392","XSLT",14
+"000393","GIS",1
+"000394","OCR",2
+"000394","Voyant",1
+"000397","JavaScript",1
+"000397","Poemage",2
+"000397","XML",1
+"000397","distant reading",3
+"000397","open access",1
+"000399","OCR",1
+"000399","github",1
+"000400","JavaScript",1
+"000400","github",1
+"000400","neural networks",1
+"000401","AntConc",2
+"000401","ArcGIS",7
+"000401","DARIAH",14
+"000401","GIS",1
+"000401","Gephi",2
+"000401","SPSS",2
+"000401","network analysis",2
+"000402","distant reading",1
+"000403","CSV",1
+"000403","Tableau",2
+"000403","distant reading",1
+"000403","machine learning",1
+"000403","text mining",1
+"000403","topic modeling",1
+"000404","JS",2
+"000404","Voyant",3
+"000405","CSS",1
+"000405","Omeka",1
+"000405","Tableau",3
+"000406","Tableau",3
+"000407","ML",1
+"000408","AI",1
+"000408","GIS",1
+"000409","R",2
+"000410","API",1
+"000410","Drupal",1
+"000410","GitHub",1
+"000410","Omeka",1
+"000410","Scripto",4
+"000410","TEI",1
+"000410","XML",1
+"000410","Zooniverse",13
+"000411","GitHub",1
+"000411","Java",1
+"000411","Omeka",1
+"000411","Python",2
+"000411","XML",1
+"000411","github",1
+"000412","AI",1
+"000412","HTR",11
+"000412","Neural Networks",1
+"000412","OCR",97
+"000412","OCRopus",23
+"000412","R",2
+"000412","github",1
+"000412","machine learning",2
+"000412","neural networks",9
+"000412","open access",3
+"000413","API",1
+"000413","GIS",1
+"000413","R",1
+"000413","linked open data",1
+"000413","network analysis",1
+"000414","CATMA",3
+"000414","distant reading",2
+"000414","natural language processing",1
+"000415","AI",3
+"000415","API",1
+"000415","GIS",1
+"000415","Java",1
+"000417","JavaScript",1
+"000417","MySQL",1
+"000417","Omeka",1
+"000419","GitHub",4
+"000419","Tableau",1
+"000419","XML",4
+"000419","network analysis",1
+"000420","GIS",5
+"000420","Voyant",1
+"000420","open access",2
+"000420","text mining",2
+"000421","API",1
+"000423","Java",2
+"000423","Pliny",2
+"000423","R",16
+"000423","distant reading",2
+"000423","machine learning",2
+"000426","API",5
+"000426","APIs",1
+"000426","NLP",2
+"000426","OCR",36
+"000426","Python",1
+"000426","XML",1
+"000426","distant reading",1
+"000426","machine learning",2
+"000426","named entity recognition",1
+"000426","natural language processing",2
+"000426","python",2
+"000428","MySQL",2
+"000430","TEI",1
+"000430","TUSTEP",1
+"000430","Text Encoding Initiative",2
+"000430","XML",1
+"000431","LDA",66
+"000431","Latent Dirichlet Allocation",1
+"000431","distant reading",51
+"000431","machine learning",1
+"000431","topic modeling",6

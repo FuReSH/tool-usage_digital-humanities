@@ -2,6 +2,7 @@
 # it is loaded by `functions.r`
 # some variables
 v.label.license = "Till Grallert, CC BY-SA 4.0"
+
 font.words = "Helvetica Neue"
 # sizes
 ## in themes size is measured in px

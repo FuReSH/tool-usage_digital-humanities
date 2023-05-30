@@ -14,12 +14,20 @@ data.tapor <- f.read.json()
 # we end up with a large list of lists and data frames and need the small helper to figure out its structure
 f.json.types(data.tapor)
 # we can now enter into the JSON
-data.tapor.tools <- data.tapor %>%
+data.tools.tapor <- data.tapor %>%
   enter_object(tools) %>%
   gather_array() %>%
-  spread_all()
+  spread_all() %>%
+  tibble::tibble() %>%  # remove all JSON artefacts
+  dplyr::rename(label = name,
+                description = detail,
+                id.tapor = tool_id) %>%
+  dplyr::select(id.tapor, label, description, image_url, star_average) %>%
+  dplyr::arrange(label) %>%
+  f.clean.labels()
 # save data
-save(data.tapor.tools, file = "tapor_tools.rda")
+save(data.tools.tapor, file = "tapor_tools.rda")
+write.table(data.tools.tapor, file = "tapor_tools.csv", row.names = F, col.names = T, quote = T, sep = ",")
 
 # load the same data as reconciled with Wikidata
 read

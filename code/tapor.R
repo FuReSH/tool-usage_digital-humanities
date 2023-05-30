@@ -30,7 +30,15 @@ save(data.tools.tapor, file = "tapor_tools.rda")
 write.table(data.tools.tapor, file = "tapor_tools.csv", row.names = F, col.names = T, quote = T, sep = ",")
 
 # load the same data as reconciled with Wikidata
-read
+data.tapor.wikidata <- readr::read_csv("TaPOR-Wikidata.csv") %>%
+  dplyr::rename(id.tapor = tool_id,
+                label = name,
+                description = detail,
+                id.wikidata = QId) %>%
+  dplyr::select(id.tapor, label, description, id.wikidata) %>%
+  tidyr::drop_na(id.tapor)
+save(data.tapor.wikidata, file = "tapor_tools-wikidata.rda")
+write.table(data.tapor.wikidata, file = "tapor_tools-wikidata.csv", row.names = F, col.names = T, quote = T, sep = ",")
 
 # TaDiRAH classification
 load("ssh_tools.rda")

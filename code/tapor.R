@@ -36,9 +36,13 @@ data.tapor.wikidata <- readr::read_csv("TaPOR-Wikidata.csv") %>%
                 description = detail,
                 id.wikidata = QId) %>%
   dplyr::select(id.tapor, label, description, id.wikidata) %>%
-  tidyr::drop_na(id.tapor)
+  tidyr::drop_na(id.tapor) %>%
+  f.clean.labels() %>%
+  dplyr::arrange(label.clean)
 save(data.tapor.wikidata, file = "tapor_tools-wikidata.rda")
 write.table(data.tapor.wikidata, file = "tapor_tools-wikidata.csv", row.names = F, col.names = T, quote = T, sep = ",")
+
+# query wikidata for labels
 
 # TaDiRAH classification
 load("ssh_tools.rda")

@@ -226,23 +226,38 @@ f.get.text <- function(html, xpath) {
 
 # query wikidata for labels: https://www.wikidata.org/w/rest.php/wikibase/v0/entities/items/Q448335/labels
 # short names: Property:P1813: https://www.wikidata.org/w/rest.php/wikibase/v0/entities/items/Q448335/statements?property=P1813
-
-f.query.wikidata <- function(wd.id, wd.prop) {
-  v.url.base = paste0("https://www.wikidata.org/w/rest.php/wikibase/v0/entities/items/", wd.id)
-  v.url.statements = paste0("statements?property=", wd.prop)
-  v.url = paste(v.url.base, v.url.statements, sep = "/")
+# output: list(s)
+f.wikidata.properties <- function(wd.id, wd.prop) {
+  v.url = paste0(wd.api.url.base, wd.id,"/", wd.api.url.statements, wd.prop)
   print(paste("Make API call to", v.url, sep = " "))
   json <- jsonlite::read_json(v.url, simplifyVector = T, flatten = F)
   # empty df
-  df.output <- tibble()
+  output <- list()
   # test if the API call returned JSON
   ifelse(rlang::is_empty(json), 
          # error message
          print("the call did not return any results"),
-         df.output <- json[[1]]$value$content %>%
-           tibble::tibble())
+         output <- json[[1]]$value$content %>%
+           as.list()
+        )
   # return solely the content of the API call
-  df.output
+  output
+  # rename the single unnamed column "."
+}
+
+f.wikidata.label <- function(wd.id, lang) {
+  v.url = paste0(wd.api.url.base, wd.id,"/labels")
+  print(paste("Make API call to", v.url, sep = " "))
+  v.json <- jsonlite::read_json(v.url, simplifyVector = T, flatten = F)
+  # create a tibble with lang-value pairs 
+  df.output <- v.json %>%
+    as_tibble() %>%
+    tidyr::pivot_longer(everything()) %>%
+    dplyr::rename(language = name)
+  # select specified language > add fallback
+  df.output <- df.output %>%
+    dplyr::filter(language == lang)
+  df.output$value
 }
 # load parameters
 source(here("code", "parameters.r"))

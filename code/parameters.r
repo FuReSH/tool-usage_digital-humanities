@@ -25,3 +25,8 @@ size.Text.Px = size.Text * size.Base.Px
 width.Plot <- 240
 height.Plot <- width.Plot
 dpi.Plot <- 600
+
+# APIs
+## Wikidata
+wd.api.url.base = "https://www.wikidata.org/w/rest.php/wikibase/v0/entities/items/"
+wd.api.url.statements = "statements?property="

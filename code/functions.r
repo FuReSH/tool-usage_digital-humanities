@@ -214,9 +214,35 @@ f.json.types <- function(tbl.json) {
 f.clean.labels <- function(df.input) {
   df.input %>%
     # escape all symbols that have special meaning in regex
-    dplyr::mutate(label.clean = str_replace_all(label,"(\\.\\*|\\+|\\/|\\(|\\)|\\&|\\|)", "\\\\\\1"),
+    dplyr::mutate(label.clean = str_replace_all(label,"(\\.|\\*|\\+|\\/|\\(|\\)|\\&|\\|)", "\\\\\\1"),
                   label.clean = str_replace(label.clean, "^\\s+", ""))
 }
 
+# short wrapper function to directly get the text content of an HTML element
+f.get.text <- function(html, xpath) {
+  rvest::html_element(html, xpath = xpath) %>% 
+    rvest::html_text2()
+}
+
+# query wikidata for labels: https://www.wikidata.org/w/rest.php/wikibase/v0/entities/items/Q448335/labels
+# short names: Property:P1813: https://www.wikidata.org/w/rest.php/wikibase/v0/entities/items/Q448335/statements?property=P1813
+
+f.query.wikidata <- function(wd.id, wd.prop) {
+  v.url.base = paste0("https://www.wikidata.org/w/rest.php/wikibase/v0/entities/items/", wd.id)
+  v.url.statements = paste0("statements?property=", wd.prop)
+  v.url = paste(v.url.base, v.url.statements, sep = "/")
+  print(paste("Make API call to", v.url, sep = " "))
+  json <- jsonlite::read_json(v.url, simplifyVector = T, flatten = F)
+  # empty df
+  df.output <- tibble()
+  # test if the API call returned JSON
+  ifelse(rlang::is_empty(json), 
+         # error message
+         print("the call did not return any results"),
+         df.output <- json[[1]]$value$content %>%
+           tibble::tibble())
+  # return solely the content of the API call
+  df.output
+}
 # load parameters
 source(here("code", "parameters.r"))

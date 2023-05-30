@@ -42,7 +42,10 @@ data.tapor.wikidata <- readr::read_csv("TaPOR-Wikidata.csv") %>%
 save(data.tapor.wikidata, file = "tapor_tools-wikidata.rda")
 write.table(data.tapor.wikidata, file = "tapor_tools-wikidata.csv", row.names = F, col.names = T, quote = T, sep = ",")
 
-# query wikidata for labels
+# short names
+f.query.wikidata("Q7184", "P1813")
+# programmed in 
+f.query.wikidata("Q106323236", "P277")
 
 # TaDiRAH classification
 load("ssh_tools.rda")

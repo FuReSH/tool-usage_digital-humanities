@@ -211,6 +211,11 @@ f.json.types <- function(tbl.json) {
     gather_object() %>%
     json_types() %>% count(name, type)
 }
+f.clean.labels <- function(df.input) {
+  df.input %>%
+    # escape all symbols that have special meaning in regex
+    dplyr::mutate(label.clean = str_replace_all(label,"(\\.\\*|\\+|\\/|\\(|\\)|\\&|\\|)", "\\\\\\1"))
+}
 
 # load parameters
 source(here("code", "parameters.r"))

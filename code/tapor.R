@@ -23,8 +23,8 @@ data.tools.tapor <- data.tapor %>%
                 description = detail,
                 id.tapor = tool_id) %>%
   dplyr::select(id.tapor, label, description, image_url, star_average) %>%
-  dplyr::arrange(label) %>%
-  f.clean.labels()
+  f.clean.labels() %>%
+  dplyr::arrange(label.clean)
 # save data
 save(data.tools.tapor, file = "tapor_tools.rda")
 write.table(data.tools.tapor, file = "tapor_tools.csv", row.names = F, col.names = T, quote = T, sep = ",")

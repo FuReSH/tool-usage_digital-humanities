@@ -60,13 +60,14 @@ data.ssh.process <- data.ssh %>%
 
 
 # save data
+setwd(here("data", "ssh-open-marketplace"))
 save(data.ssh, file = "ssh.rda")
+write.table(as_tibble(data.ssh), file = "ssh.csv", row.names = F, col.names = T, quote = T, sep = ",")
 save(data.tools.ssh, file = "ssh_tools.rda")
+write.table(data.tools.ssh, file = "ssh_tools.csv", row.names = F, col.names = T, quote = T, sep = ",")
 write.table(data.ssh.contributors, file = "ssh_contributors.csv", row.names = F, col.names = T, quote = T, sep = ",")
 write.table(data.ssh.sources, file = "ssh_sources.csv", row.names = F, col.names = T, quote = T, sep = ",")
 write.table(data.ssh.process, file = "ssh_ingestion-process.csv", row.names = F, col.names = T, quote = T, sep = ",")
-  
-write.table(as_tibble(data.ssh), file = "ssh.csv", row.names = F, col.names = T, quote = T, sep = ",")
 
 # TaDiRAH classification
 load("ssh_tools.rda")

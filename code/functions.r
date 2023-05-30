@@ -214,7 +214,8 @@ f.json.types <- function(tbl.json) {
 f.clean.labels <- function(df.input) {
   df.input %>%
     # escape all symbols that have special meaning in regex
-    dplyr::mutate(label.clean = str_replace_all(label,"(\\.\\*|\\+|\\/|\\(|\\)|\\&|\\|)", "\\\\\\1"))
+    dplyr::mutate(label.clean = str_replace_all(label,"(\\.\\*|\\+|\\/|\\(|\\)|\\&|\\|)", "\\\\\\1"),
+                  label.clean = str_replace(label.clean, "^\\s+", ""))
 }
 
 # load parameters

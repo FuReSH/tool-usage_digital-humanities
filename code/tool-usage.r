@@ -42,21 +42,8 @@ df.tools <- df.tools %>%
 df.tools.yml <- f.read.yaml.furesh(here("data/tools.yml")) 
 # load the tools list from the SSH Open Marketplace
 # quite a few of the labels are common English words, which ought to be filtered out at some point
-df.tools.ssh <- read_csv(here("data", "ssh-open-marketplace", "ssh_tools.csv")) %>%
-  # select basic information, which can always be amended by joins
-  dplyr::select(id, persistentId, label, source.label, sourceItemId) %>%
-  unique()
-# labels need to be cleaned, as they contain symbols that screw with the regex approach
-# 1. there are some erroneous rows, which might have been caused by faulty JSON? They can be found by non-nummerical 'id'
-df.tools.ssh %>%
-  dplyr::filter(str_detect(id, '^\\d+$'),
-                str_detect(persistentId, '[A-Z]*[0-9]*[a-z]*'),
-                str_detect(persistentId, '\\s', negate = T)
-                ) -> df.tools.ssh
-  # 2. escape everything that is a special regex character: /()*+
-df.tools.ssh %>%
-  dplyr::mutate(label.clean = str_replace_all(label,"(\\/|\\(|\\)|\\&|\\|)", "\\\\\\1")) %>%
-  dplyr::arrange(label.clean) -> df.tools.ssh
+load(here("data/ssh-open-marketplace/ssh_tools.rda"))
+load(here("data/tapor/tapor_tools.rda"))
 
 # run frequency analysis
 #df.dhconfs.ssh.tools.per.text <- f.freq.term.per.text(df.dhconfs.abstracts, df.tools.ssh$label.clean)

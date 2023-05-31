@@ -231,7 +231,7 @@ f.wikidata.properties <- function(wd.id, wd.prop) {
   v.url = paste0(wd.api.url.base, wd.id,"/", wd.api.url.statements, wd.prop)
   print(paste("Make API call to", v.url, sep = " "))
   json <- jsonlite::read_json(v.url, simplifyVector = T, flatten = F)
-  # empty df
+  # should the output be a list or tibble?
   output <- list()
   # test if the API call returned JSON
   ifelse(rlang::is_empty(json), 

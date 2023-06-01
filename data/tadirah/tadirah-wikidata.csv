@@ -1,169 +1,169 @@
-subject,label,wd.reconcile,wd.deleted,wd.item
-https://vocabs.dariah.eu/tadirah/contentAnalysis,contentAnalysis,,,
-https://vocabs.dariah.eu/tadirah/highlighting,highlighting,Q98847905,TRUE,Q98847905
-https://vocabs.dariah.eu/tadirah/principalComponentAnalysis,principalComponentAnalysis,principal component analysis,,Q2873
-https://vocabs.dariah.eu/tadirah/patternRecognition,patternRecognition,pattern recognition,,Q378859
-https://vocabs.dariah.eu/tadirah/enriching,enriching,,,
-https://vocabs.dariah.eu/tadirah/merging,merging,Q98848337,TRUE,Q98848337
-https://vocabs.dariah.eu/tadirah/audioAnnotation,audioAnnotation,Q98847703,TRUE,Q98847703
-https://vocabs.dariah.eu/tadirah/pseudoCoding,pseudoCoding,,,
-https://vocabs.dariah.eu/tadirah/mapping,mapping,mapping,,Q370502
-https://vocabs.dariah.eu/tadirah/expressingOpinion,expressingOpinion,,,
-https://vocabs.dariah.eu/tadirah/videoConference,videoConference,video conference,,Q238354
-https://vocabs.dariah.eu/tadirah/managing,managing,control,,Q29017603
-https://vocabs.dariah.eu/tadirah/removing,removing,removal,,Q23009442
-https://vocabs.dariah.eu/tadirah/defining,defining,definition,,Q101072
-https://vocabs.dariah.eu/tadirah/coOccurrence,coOccurrence,,,
-https://vocabs.dariah.eu/tadirah/crowdsourcing,crowdsourcing,,,
-https://vocabs.dariah.eu/tadirah/textMessaging,textMessaging,text messaging,,Q17166101
-https://vocabs.dariah.eu/tadirah/discourseAnalysis,discourseAnalysis,discourse analysis,,Q1129466
-https://vocabs.dariah.eu/tadirah/collating,collating,,,
-https://vocabs.dariah.eu/tadirah/browsing,browsing,browsing,,Q516508
-https://vocabs.dariah.eu/tadirah/plotting,plotting,Q98846923,TRUE,Q98846923
-https://vocabs.dariah.eu/tadirah/comparing,comparing,Q98845331,TRUE,Q98845331
-https://vocabs.dariah.eu/tadirah/structuralAnalysis,structuralAnalysis,,,
-https://vocabs.dariah.eu/tadirah/interpreting,interpreting,,,
-https://vocabs.dariah.eu/tadirah/gathering,gathering,,,
-https://vocabs.dariah.eu/tadirah/editing,editing,,,
-https://vocabs.dariah.eu/tadirah/programming,programming,,,
-https://vocabs.dariah.eu/tadirah/cataloging,cataloging,cataloging,,Q3535655
-https://vocabs.dariah.eu/tadirah/preprocessing,preprocessing,Preprocessing,,Q28838080
-https://vocabs.dariah.eu/tadirah/upload,upload,upload,,Q7126699
-https://vocabs.dariah.eu/tadirah/aggregating,aggregating,aggregation,,Q23007394
-https://vocabs.dariah.eu/tadirah/visualAnnotation,visualAnnotation,Q98847784,TRUE,Q98847784
-https://vocabs.dariah.eu/tadirah/dataIngestion,dataIngestion,Q98847455,TRUE,Q98847455
-https://vocabs.dariah.eu/tadirah/bitStreamPreservation,bitStreamPreservation,Q98847577,TRUE,Q98847577
-https://vocabs.dariah.eu/tadirah/segmenting,segmenting,,,
-https://vocabs.dariah.eu/tadirah/clusterAnalysis,clusterAnalysis,cluster analysis,,Q622825
-https://vocabs.dariah.eu/tadirah/modifying,modifying,Q98848358,TRUE,Q98848358
-https://vocabs.dariah.eu/tadirah/preservationMetadata,preservationMetadata,preservation metadata,,Q7241044
-https://vocabs.dariah.eu/tadirah/abstractThinking,abstractThinking,abstract thinking,,Q25501084
-https://vocabs.dariah.eu/tadirah/organizing,organizing,,,
-https://vocabs.dariah.eu/tadirah/tweet,tweet,tweet,,Q56119332
-https://vocabs.dariah.eu/tadirah/lemmatizing,lemmatizing,lemmatisation,,Q2554325
-https://vocabs.dariah.eu/tadirah/integrating,integrating,Q98847635,TRUE,Q98847635
-https://vocabs.dariah.eu/tadirah/subtracting,subtracting,Q98848418,TRUE,Q98848418
-https://vocabs.dariah.eu/tadirah/blogging,blogging,blogging,,Q21124681
-https://vocabs.dariah.eu/tadirah/recording,recording,,,
-https://vocabs.dariah.eu/tadirah/namedEntityRecognition,namedEntityRecognition,named-entity recognition,,Q403574
-https://vocabs.dariah.eu/tadirah/discovering,discovering,,,
-https://vocabs.dariah.eu/tadirah/linkedOpenData,linkedOpenData,linked open data,,Q18692990
-https://vocabs.dariah.eu/tadirah/versioning,versioning,,,
-https://vocabs.dariah.eu/tadirah/finding,finding,Finding,,Q28195064
-https://vocabs.dariah.eu/tadirah/userGeneratedContent,userGeneratedContent,user-generated content,,Q579716
-https://vocabs.dariah.eu/tadirah/naturalLanguageProcessing,naturalLanguageProcessing,natural language processing,,Q30642
-https://vocabs.dariah.eu/tadirah/theorizing,theorizing,,,
-https://vocabs.dariah.eu/tadirah/contextualizing,contextualizing,,,
-https://vocabs.dariah.eu/tadirah/tagging,tagging,tagging,,Q43401994
-https://vocabs.dariah.eu/tadirah/informationRetrieval,informationRetrieval,information retrieval,,Q816826
-https://vocabs.dariah.eu/tadirah/namingConvention,namingConvention,naming convention,,Q461984
-https://vocabs.dariah.eu/tadirah/dataRecognition,dataRecognition,,,
-https://vocabs.dariah.eu/tadirah/dataMining,dataMining,data mining,,Q172491
-https://vocabs.dariah.eu/tadirah/reasoning,reasoning,reasoning,,Q1156402
-https://vocabs.dariah.eu/tadirah/speechRecognizing,speechRecognizing,Q98846987,TRUE,Q98846987
-https://vocabs.dariah.eu/tadirah/discussing,discussing,Q98847226,TRUE,Q98847226
-https://vocabs.dariah.eu/tadirah/sharing,sharing,,,
-https://vocabs.dariah.eu/tadirah/authorshipAttribution,authorshipAttribution,,,
-https://vocabs.dariah.eu/tadirah/stylometry,stylometry,,,
-https://vocabs.dariah.eu/tadirah/communicating,communicating,,,
-https://vocabs.dariah.eu/tadirah/encoding,encoding,encoding,,Q5375490
-https://vocabs.dariah.eu/tadirah/spatialAnalysis,spatialAnalysis,,,
-https://vocabs.dariah.eu/tadirah/mindMapping,mindMapping,Q98846887,TRUE,Q98846887
-https://vocabs.dariah.eu/tadirah/visualAnalysis,visualAnalysis,,,
-https://vocabs.dariah.eu/tadirah/imaging,imaging,,,
-https://vocabs.dariah.eu/tadirah/videoCapture,videoCapture,video capture,,Q2778015
-https://vocabs.dariah.eu/tadirah/concordance,concordance,concordance,,Q839018
-https://vocabs.dariah.eu/tadirah/posting,posting,posting,,Q1453674
-https://vocabs.dariah.eu/tadirah/compiling,compiling,compilation,,Q56248166
-https://vocabs.dariah.eu/tadirah/searching,searching,search,,Q11540953
-https://vocabs.dariah.eu/tadirah/lettering,lettering,lettering,,Q5538738
-https://vocabs.dariah.eu/tadirah/microblogging,microblogging,microblogging,,Q92438
-https://vocabs.dariah.eu/tadirah/associating,associating,Q98847960,TRUE,Q98847960
-https://vocabs.dariah.eu/tadirah/extracting,extracting,,,
-https://vocabs.dariah.eu/tadirah/teaching,teaching,,,
-https://vocabs.dariah.eu/tadirah/relationalAnalysis,relationalAnalysis,,,
-https://vocabs.dariah.eu/tadirah/description,description,description,,Q1200750
-https://vocabs.dariah.eu/tadirah/distanceMeasures,distanceMeasures,distance measures,,Q1344778
-https://vocabs.dariah.eu/tadirah/photographing,photographing,photography,,Q11633
-https://vocabs.dariah.eu/tadirah/informationMining,informationMining,Q98847165,TRUE,Q98847165
-https://vocabs.dariah.eu/tadirah/parsing,parsing,parsing,,Q194152
-https://vocabs.dariah.eu/tadirah/writing,writing,writing,,Q110484020
-https://vocabs.dariah.eu/tadirah/opticalCharacterRecognition,opticalCharacterRecognition,optical character recognition,,Q167555
-https://vocabs.dariah.eu/tadirah/dataMapping,dataMapping,data mapping,,Q2330408
-https://vocabs.dariah.eu/tadirah/webDevelopment,webDevelopment,,,
-https://vocabs.dariah.eu/tadirah/rhetoricalAnalysis,rhetoricalAnalysis,Q98845926,TRUE,Q98845926
-https://vocabs.dariah.eu/tadirah/transcoding,transcoding,transcoding,,Q1888734
-https://vocabs.dariah.eu/tadirah/preserving,preserving,,,
-https://vocabs.dariah.eu/tadirah/conceptualizing,conceptualizing,,,
-https://vocabs.dariah.eu/tadirah/stylisticAnalysis,stylisticAnalysis,,,
-https://vocabs.dariah.eu/tadirah/videoEditing,videoEditing,video editing,,Q1154312
-https://vocabs.dariah.eu/tadirah/migration,migration,data migration,,Q1932543
-https://vocabs.dariah.eu/tadirah/gamification,gamification,gamification,,Q1067402
-https://vocabs.dariah.eu/tadirah/correcting,correcting,Q98848041,TRUE,Q98848041
-https://vocabs.dariah.eu/tadirah/sequenceAlignment,sequenceAlignment,sequence alignment,,Q827246
-https://vocabs.dariah.eu/tadirah/instantMessaging,instantMessaging,instant messaging,,Q58199
-https://vocabs.dariah.eu/tadirah/digitalObjectIdentifier,digitalObjectIdentifier,digital object identifier,,Q25670
-https://vocabs.dariah.eu/tadirah/opticalMusicRecognition,opticalMusicRecognition,Optical Music Recognition,,Q1243229
-https://vocabs.dariah.eu/tadirah/screencast,screencast,screencast,,Q1365447
-https://vocabs.dariah.eu/tadirah/collaborating,collaborating,,,
-https://vocabs.dariah.eu/tadirah/designing,designing,,,
-https://vocabs.dariah.eu/tadirah/exploration,exploration,exploration,,Q6502154
-https://vocabs.dariah.eu/tadirah/modeling,modeling,,,
-https://vocabs.dariah.eu/tadirah/transformation,transformation,transformation,,Q65757353
-https://vocabs.dariah.eu/tadirah/archiving,archiving,,,
-https://vocabs.dariah.eu/tadirah/machineLearning,machineLearning,machine learning,,Q2539
-https://vocabs.dariah.eu/tadirah/analyzing,analyzing,,,
-https://vocabs.dariah.eu/tadirah/commenting,commenting,,,
-https://vocabs.dariah.eu/tadirah/drawing,drawing,drawing,,Q93184
-https://vocabs.dariah.eu/tadirah/debugging,debugging,debugging,,Q845566
-https://vocabs.dariah.eu/tadirah/academicPublishing,academicPublishing,academic publishing,,Q5246046
-https://vocabs.dariah.eu/tadirah/translating,translating,,,
-https://vocabs.dariah.eu/tadirah/sentimentAnalysis,sentimentAnalysis,sentiment analysis,,Q2271421
-https://vocabs.dariah.eu/tadirah/genreRecognition,genreRecognition,,,
-https://vocabs.dariah.eu/tadirah/storing,storing,,,
-https://vocabs.dariah.eu/tadirah/supplementing,supplementing,Q98848097,TRUE,Q98848097
-https://vocabs.dariah.eu/tadirah/knowledgeDiscovery,knowledgeDiscovery,Q98847144,TRUE,Q98847144
-https://vocabs.dariah.eu/tadirah/semantification,semantification,,,
-https://vocabs.dariah.eu/tadirah/webScraping,webScraping,web scraping,,Q665452
-https://vocabs.dariah.eu/tadirah/treeTagging,treeTagging,Q98845582,TRUE,Q98845582
-https://vocabs.dariah.eu/tadirah/webCrawling,webCrawling,web crawling,,Q61466324
-https://vocabs.dariah.eu/tadirah/posTagging,posTagging,part-of-speech tagging,,Q1271424
-https://vocabs.dariah.eu/tadirah/formatting,formatting,Q98848248,TRUE,Q98848248
-https://vocabs.dariah.eu/tadirah/converting,converting,,,
-https://vocabs.dariah.eu/tadirah/contrastiveAnalysis,contrastiveAnalysis,contrastive analysis,,Q614959
-https://vocabs.dariah.eu/tadirah/associate,associate,associate,,Q2868277
-https://vocabs.dariah.eu/tadirah/georeferencing,georeferencing,georeferencing,,Q772007
-https://vocabs.dariah.eu/tadirah/audioConferencing,audioConferencing,instant messaging,,Q58199
-https://vocabs.dariah.eu/tadirah/wireframing,wireframing,Q98845203,TRUE,Q98845203
-https://vocabs.dariah.eu/tadirah/uniformResourceIdentifier,uniformResourceIdentifier,Uniform Resource Identifier,,Q61694
-https://vocabs.dariah.eu/tadirah/graphicsProgramming,graphicsProgramming,Q98845304,TRUE,Q98845304
-https://vocabs.dariah.eu/tadirah/capturing,capturing,,,
-https://vocabs.dariah.eu/tadirah/networkAnalysis,networkAnalysis,,,
-https://vocabs.dariah.eu/tadirah/publishing,publishing,,,
-https://vocabs.dariah.eu/tadirah/persistentIdentifier,persistentIdentifier,persistent identifier,,Q420330
-https://vocabs.dariah.eu/tadirah/cropping,cropping,cropping,,Q785116
-https://vocabs.dariah.eu/tadirah/dataCleansing,dataCleansing,,,
-https://vocabs.dariah.eu/tadirah/explanation,explanation,explanation,,Q7958
-https://vocabs.dariah.eu/tadirah/topicModeling,topicModeling,Topic modeling,,Q96468792
-https://vocabs.dariah.eu/tadirah/annotating,annotating,,,
-https://vocabs.dariah.eu/tadirah/dataVisualization,dataVisualization,data visualization,,Q6504956
-https://vocabs.dariah.eu/tadirah/querying,querying,Q98847088,TRUE,Q98847088
-https://vocabs.dariah.eu/tadirah/eMailing,eMailing,emailing,,Q386274
-https://vocabs.dariah.eu/tadirah/disseminating,disseminating,,,
-https://vocabs.dariah.eu/tadirah/emulation,emulation,emulator,,Q202871
-https://vocabs.dariah.eu/tadirah/knowledgeExtraction,knowledgeExtraction,knowledge extraction,,Q1582085
-https://vocabs.dariah.eu/tadirah/replication,replication,data replication,,Q1332873
-https://vocabs.dariah.eu/tadirah/collecting,collecting,collecting,,Q208165
-https://vocabs.dariah.eu/tadirah/identifier,identifier,identifier,,Q853614
-https://vocabs.dariah.eu/tadirah/textCategorization,textCategorization,text categorization,,Q102190629
-https://vocabs.dariah.eu/tadirah/diagramming,diagramming,Q98845265,TRUE,Q98845265
-https://vocabs.dariah.eu/tadirah/creating,creating,,,
-https://vocabs.dariah.eu/tadirah/improving,improving,improvement,,Q21255975
-https://vocabs.dariah.eu/tadirah/adding,adding,addition,,Q32043
-https://vocabs.dariah.eu/tadirah/scanning,scanning,Q59155052,,Q59155052
-https://vocabs.dariah.eu/tadirah/audioRecording,audioRecording,audio recording,,Q3302947
-https://vocabs.dariah.eu/tadirah/collocationAnalysis,collocationAnalysis,,,
-https://vocabs.dariah.eu/tadirah/identifying,identifying,,,
-https://vocabs.dariah.eu/tadirah/socialNetworking,socialNetworking,social networking,,Q19368491
-https://vocabs.dariah.eu/tadirah/transcribing,transcribing,,,
-https://vocabs.dariah.eu/tadirah/digitalPublishing,digitalPublishing,Digital publishing,,Q1224844
+"subject","label","wd.reconcile","wd.deleted","wd.item"
+"https://vocabs.dariah.eu/tadirah/contentAnalysis","contentAnalysis",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/highlighting","highlighting","Q98847905",TRUE,"Q98847905"
+"https://vocabs.dariah.eu/tadirah/principalComponentAnalysis","principalComponentAnalysis","principal component analysis",FALSE,"Q2873"
+"https://vocabs.dariah.eu/tadirah/patternRecognition","patternRecognition","pattern recognition",FALSE,"Q378859"
+"https://vocabs.dariah.eu/tadirah/enriching","enriching",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/merging","merging","Q98848337",TRUE,"Q98848337"
+"https://vocabs.dariah.eu/tadirah/audioAnnotation","audioAnnotation","Q98847703",TRUE,"Q98847703"
+"https://vocabs.dariah.eu/tadirah/pseudoCoding","pseudoCoding",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/mapping","mapping","mapping",FALSE,"Q370502"
+"https://vocabs.dariah.eu/tadirah/expressingOpinion","expressingOpinion",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/videoConference","videoConference","video conference",FALSE,"Q238354"
+"https://vocabs.dariah.eu/tadirah/managing","managing","control",FALSE,"Q29017603"
+"https://vocabs.dariah.eu/tadirah/removing","removing","removal",FALSE,"Q23009442"
+"https://vocabs.dariah.eu/tadirah/defining","defining","definition",FALSE,"Q101072"
+"https://vocabs.dariah.eu/tadirah/coOccurrence","coOccurrence",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/crowdsourcing","crowdsourcing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/textMessaging","textMessaging","text messaging",FALSE,"Q17166101"
+"https://vocabs.dariah.eu/tadirah/discourseAnalysis","discourseAnalysis","discourse analysis",FALSE,"Q1129466"
+"https://vocabs.dariah.eu/tadirah/collating","collating",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/browsing","browsing","browsing",FALSE,"Q516508"
+"https://vocabs.dariah.eu/tadirah/plotting","plotting","Q98846923",TRUE,"Q98846923"
+"https://vocabs.dariah.eu/tadirah/comparing","comparing","Q98845331",TRUE,"Q98845331"
+"https://vocabs.dariah.eu/tadirah/structuralAnalysis","structuralAnalysis",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/interpreting","interpreting",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/gathering","gathering",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/editing","editing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/programming","programming",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/cataloging","cataloging","cataloging",FALSE,"Q3535655"
+"https://vocabs.dariah.eu/tadirah/preprocessing","preprocessing","Preprocessing",FALSE,"Q28838080"
+"https://vocabs.dariah.eu/tadirah/upload","upload","upload",FALSE,"Q7126699"
+"https://vocabs.dariah.eu/tadirah/aggregating","aggregating","aggregation",FALSE,"Q23007394"
+"https://vocabs.dariah.eu/tadirah/visualAnnotation","visualAnnotation","Q98847784",TRUE,"Q98847784"
+"https://vocabs.dariah.eu/tadirah/dataIngestion","dataIngestion","Q98847455",TRUE,"Q98847455"
+"https://vocabs.dariah.eu/tadirah/bitStreamPreservation","bitStreamPreservation","Q98847577",TRUE,"Q98847577"
+"https://vocabs.dariah.eu/tadirah/segmenting","segmenting",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/clusterAnalysis","clusterAnalysis","cluster analysis",FALSE,"Q622825"
+"https://vocabs.dariah.eu/tadirah/modifying","modifying","Q98848358",TRUE,"Q98848358"
+"https://vocabs.dariah.eu/tadirah/preservationMetadata","preservationMetadata","preservation metadata",FALSE,"Q7241044"
+"https://vocabs.dariah.eu/tadirah/abstractThinking","abstractThinking","abstract thinking",FALSE,"Q25501084"
+"https://vocabs.dariah.eu/tadirah/organizing","organizing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/tweet","tweet","tweet",FALSE,"Q56119332"
+"https://vocabs.dariah.eu/tadirah/lemmatizing","lemmatizing","lemmatisation",FALSE,"Q2554325"
+"https://vocabs.dariah.eu/tadirah/integrating","integrating","Q98847635",TRUE,"Q98847635"
+"https://vocabs.dariah.eu/tadirah/subtracting","subtracting","Q98848418",TRUE,"Q98848418"
+"https://vocabs.dariah.eu/tadirah/blogging","blogging","blogging",FALSE,"Q21124681"
+"https://vocabs.dariah.eu/tadirah/recording","recording",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/namedEntityRecognition","namedEntityRecognition","named-entity recognition",FALSE,"Q403574"
+"https://vocabs.dariah.eu/tadirah/discovering","discovering",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/linkedOpenData","linkedOpenData","linked open data",FALSE,"Q18692990"
+"https://vocabs.dariah.eu/tadirah/versioning","versioning",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/finding","finding","Finding",FALSE,"Q28195064"
+"https://vocabs.dariah.eu/tadirah/userGeneratedContent","userGeneratedContent","user-generated content",FALSE,"Q579716"
+"https://vocabs.dariah.eu/tadirah/naturalLanguageProcessing","naturalLanguageProcessing","natural language processing",FALSE,"Q30642"
+"https://vocabs.dariah.eu/tadirah/theorizing","theorizing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/contextualizing","contextualizing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/tagging","tagging","tagging",FALSE,"Q43401994"
+"https://vocabs.dariah.eu/tadirah/informationRetrieval","informationRetrieval","information retrieval",FALSE,"Q816826"
+"https://vocabs.dariah.eu/tadirah/namingConvention","namingConvention","naming convention",FALSE,"Q461984"
+"https://vocabs.dariah.eu/tadirah/dataRecognition","dataRecognition",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/dataMining","dataMining","data mining",FALSE,"Q172491"
+"https://vocabs.dariah.eu/tadirah/reasoning","reasoning","reasoning",FALSE,"Q1156402"
+"https://vocabs.dariah.eu/tadirah/speechRecognizing","speechRecognizing","Q98846987",TRUE,"Q98846987"
+"https://vocabs.dariah.eu/tadirah/discussing","discussing","Q98847226",TRUE,"Q98847226"
+"https://vocabs.dariah.eu/tadirah/sharing","sharing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/authorshipAttribution","authorshipAttribution",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/stylometry","stylometry",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/communicating","communicating",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/encoding","encoding","encoding",FALSE,"Q5375490"
+"https://vocabs.dariah.eu/tadirah/spatialAnalysis","spatialAnalysis",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/mindMapping","mindMapping","Q98846887",TRUE,"Q98846887"
+"https://vocabs.dariah.eu/tadirah/visualAnalysis","visualAnalysis",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/imaging","imaging",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/videoCapture","videoCapture","video capture",FALSE,"Q2778015"
+"https://vocabs.dariah.eu/tadirah/concordance","concordance","concordance",FALSE,"Q839018"
+"https://vocabs.dariah.eu/tadirah/posting","posting","posting",FALSE,"Q1453674"
+"https://vocabs.dariah.eu/tadirah/compiling","compiling","compilation",FALSE,"Q56248166"
+"https://vocabs.dariah.eu/tadirah/searching","searching","search",FALSE,"Q11540953"
+"https://vocabs.dariah.eu/tadirah/lettering","lettering","lettering",FALSE,"Q5538738"
+"https://vocabs.dariah.eu/tadirah/microblogging","microblogging","microblogging",FALSE,"Q92438"
+"https://vocabs.dariah.eu/tadirah/associating","associating","Q98847960",TRUE,"Q98847960"
+"https://vocabs.dariah.eu/tadirah/extracting","extracting",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/teaching","teaching",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/relationalAnalysis","relationalAnalysis",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/description","description","description",FALSE,"Q1200750"
+"https://vocabs.dariah.eu/tadirah/distanceMeasures","distanceMeasures","distance measures",FALSE,"Q1344778"
+"https://vocabs.dariah.eu/tadirah/photographing","photographing","photography",FALSE,"Q11633"
+"https://vocabs.dariah.eu/tadirah/informationMining","informationMining","Q98847165",TRUE,"Q98847165"
+"https://vocabs.dariah.eu/tadirah/parsing","parsing","parsing",FALSE,"Q194152"
+"https://vocabs.dariah.eu/tadirah/writing","writing","writing",FALSE,"Q110484020"
+"https://vocabs.dariah.eu/tadirah/opticalCharacterRecognition","opticalCharacterRecognition","optical character recognition",FALSE,"Q167555"
+"https://vocabs.dariah.eu/tadirah/dataMapping","dataMapping","data mapping",FALSE,"Q2330408"
+"https://vocabs.dariah.eu/tadirah/webDevelopment","webDevelopment",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/rhetoricalAnalysis","rhetoricalAnalysis","Q98845926",TRUE,"Q98845926"
+"https://vocabs.dariah.eu/tadirah/transcoding","transcoding","transcoding",FALSE,"Q1888734"
+"https://vocabs.dariah.eu/tadirah/preserving","preserving",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/conceptualizing","conceptualizing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/stylisticAnalysis","stylisticAnalysis",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/videoEditing","videoEditing","video editing",FALSE,"Q1154312"
+"https://vocabs.dariah.eu/tadirah/migration","migration","data migration",FALSE,"Q1932543"
+"https://vocabs.dariah.eu/tadirah/gamification","gamification","gamification",FALSE,"Q1067402"
+"https://vocabs.dariah.eu/tadirah/correcting","correcting","Q98848041",TRUE,"Q98848041"
+"https://vocabs.dariah.eu/tadirah/sequenceAlignment","sequenceAlignment","sequence alignment",FALSE,"Q827246"
+"https://vocabs.dariah.eu/tadirah/instantMessaging","instantMessaging","instant messaging",FALSE,"Q58199"
+"https://vocabs.dariah.eu/tadirah/digitalObjectIdentifier","digitalObjectIdentifier","digital object identifier",FALSE,"Q25670"
+"https://vocabs.dariah.eu/tadirah/opticalMusicRecognition","opticalMusicRecognition","Optical Music Recognition",FALSE,"Q1243229"
+"https://vocabs.dariah.eu/tadirah/screencast","screencast","screencast",FALSE,"Q1365447"
+"https://vocabs.dariah.eu/tadirah/collaborating","collaborating",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/designing","designing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/exploration","exploration","exploration",FALSE,"Q6502154"
+"https://vocabs.dariah.eu/tadirah/modeling","modeling",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/transformation","transformation","transformation",FALSE,"Q65757353"
+"https://vocabs.dariah.eu/tadirah/archiving","archiving",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/machineLearning","machineLearning","machine learning",FALSE,"Q2539"
+"https://vocabs.dariah.eu/tadirah/analyzing","analyzing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/commenting","commenting",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/drawing","drawing","drawing",FALSE,"Q93184"
+"https://vocabs.dariah.eu/tadirah/debugging","debugging","debugging",FALSE,"Q845566"
+"https://vocabs.dariah.eu/tadirah/academicPublishing","academicPublishing","academic publishing",FALSE,"Q5246046"
+"https://vocabs.dariah.eu/tadirah/translating","translating",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/sentimentAnalysis","sentimentAnalysis","sentiment analysis",FALSE,"Q2271421"
+"https://vocabs.dariah.eu/tadirah/genreRecognition","genreRecognition",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/storing","storing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/supplementing","supplementing","Q98848097",TRUE,"Q98848097"
+"https://vocabs.dariah.eu/tadirah/knowledgeDiscovery","knowledgeDiscovery","Q98847144",TRUE,"Q98847144"
+"https://vocabs.dariah.eu/tadirah/semantification","semantification",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/webScraping","webScraping","web scraping",FALSE,"Q665452"
+"https://vocabs.dariah.eu/tadirah/treeTagging","treeTagging","Q98845582",TRUE,"Q98845582"
+"https://vocabs.dariah.eu/tadirah/webCrawling","webCrawling","web crawling",FALSE,"Q61466324"
+"https://vocabs.dariah.eu/tadirah/posTagging","posTagging","part-of-speech tagging",FALSE,"Q1271424"
+"https://vocabs.dariah.eu/tadirah/formatting","formatting","Q98848248",TRUE,"Q98848248"
+"https://vocabs.dariah.eu/tadirah/converting","converting",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/contrastiveAnalysis","contrastiveAnalysis","contrastive analysis",FALSE,"Q614959"
+"https://vocabs.dariah.eu/tadirah/associate","associate","associate",FALSE,"Q2868277"
+"https://vocabs.dariah.eu/tadirah/georeferencing","georeferencing","georeferencing",FALSE,"Q772007"
+"https://vocabs.dariah.eu/tadirah/audioConferencing","audioConferencing","instant messaging",FALSE,"Q58199"
+"https://vocabs.dariah.eu/tadirah/wireframing","wireframing","Q98845203",TRUE,"Q98845203"
+"https://vocabs.dariah.eu/tadirah/uniformResourceIdentifier","uniformResourceIdentifier","Uniform Resource Identifier",FALSE,"Q61694"
+"https://vocabs.dariah.eu/tadirah/graphicsProgramming","graphicsProgramming","Q98845304",TRUE,"Q98845304"
+"https://vocabs.dariah.eu/tadirah/capturing","capturing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/networkAnalysis","networkAnalysis",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/publishing","publishing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/persistentIdentifier","persistentIdentifier","persistent identifier",FALSE,"Q420330"
+"https://vocabs.dariah.eu/tadirah/cropping","cropping","cropping",FALSE,"Q785116"
+"https://vocabs.dariah.eu/tadirah/dataCleansing","dataCleansing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/explanation","explanation","explanation",FALSE,"Q7958"
+"https://vocabs.dariah.eu/tadirah/topicModeling","topicModeling","Topic modeling",FALSE,"Q96468792"
+"https://vocabs.dariah.eu/tadirah/annotating","annotating",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/dataVisualization","dataVisualization","data visualization",FALSE,"Q6504956"
+"https://vocabs.dariah.eu/tadirah/querying","querying","Q98847088",TRUE,"Q98847088"
+"https://vocabs.dariah.eu/tadirah/eMailing","eMailing","emailing",FALSE,"Q386274"
+"https://vocabs.dariah.eu/tadirah/disseminating","disseminating",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/emulation","emulation","emulator",FALSE,"Q202871"
+"https://vocabs.dariah.eu/tadirah/knowledgeExtraction","knowledgeExtraction","knowledge extraction",FALSE,"Q1582085"
+"https://vocabs.dariah.eu/tadirah/replication","replication","data replication",FALSE,"Q1332873"
+"https://vocabs.dariah.eu/tadirah/collecting","collecting","collecting",FALSE,"Q208165"
+"https://vocabs.dariah.eu/tadirah/identifier","identifier","identifier",FALSE,"Q853614"
+"https://vocabs.dariah.eu/tadirah/textCategorization","textCategorization","text categorization",FALSE,"Q102190629"
+"https://vocabs.dariah.eu/tadirah/diagramming","diagramming","Q98845265",TRUE,"Q98845265"
+"https://vocabs.dariah.eu/tadirah/creating","creating",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/improving","improving","improvement",FALSE,"Q21255975"
+"https://vocabs.dariah.eu/tadirah/adding","adding","addition",FALSE,"Q32043"
+"https://vocabs.dariah.eu/tadirah/scanning","scanning","Q59155052",FALSE,"Q59155052"
+"https://vocabs.dariah.eu/tadirah/audioRecording","audioRecording","audio recording",FALSE,"Q3302947"
+"https://vocabs.dariah.eu/tadirah/collocationAnalysis","collocationAnalysis",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/identifying","identifying",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/socialNetworking","socialNetworking","social networking",FALSE,"Q19368491"
+"https://vocabs.dariah.eu/tadirah/transcribing","transcribing",NA,NA,NA
+"https://vocabs.dariah.eu/tadirah/digitalPublishing","digitalPublishing","Digital publishing",FALSE,"Q1224844"

@@ -15,4 +15,12 @@ data.tadirah <- f.read.json()
 f.json.types(data.tadirah[[1]])
 
 # read CSV of Open Refine export
-read_csv("tadirah-wikidata.csv")
+data.tadirah.wd <- read_csv("tadirah-wikidata.csv")
+# quickly fix values in the wd.deleted column
+data.tadirah.wd %>%
+  dplyr::mutate(wd.deleted = ifelse(!is.na(wd.item), # check if an item has a QId
+                                    ifelse(is.na(wd.deleted), # check if the item was deleted
+                                           FALSE, TRUE),
+                                    NA)
+                ) -> data.tadirah.wd
+write.csv(data.tadirah.wd, file = "tadirah-wikidata.csv", row.names = F)

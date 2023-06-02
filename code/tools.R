@@ -37,8 +37,36 @@ data.ssh %>%
   dplyr::rename(ssh.id = persistentId,
                 ssh.label = label,
                 ssh.desc = description) %>%
+  dplyr::mutate(ssh.label = str_replace(ssh.label, '^\\s+', '')) %>%
   dplyr::select(ssh.id, ssh.label, ssh.desc, tapor.id)-> data.tools.ssh.description
 remove(data.ssh)
+
+# clean the labels, which contain a lot of information, such as accronyms etc.
+# function to apply a regex search and replace on the ssh.label field
+f.get.abbr <- function(df.input, v.regex, min.length){
+  df.input %>%
+    dplyr::mutate(ssh.label.abbr = ifelse(is.na(ssh.label.abbr) == T,
+                                          ifelse(str_detect(ssh.label, v.regex) == T,
+                                                 str_replace_all(ssh.label, v.regex, '\\1'), 
+                                                 NA),
+                                          ssh.label.abbr),
+                  ssh.label.abbr = ifelse(str_length(ssh.label.abbr) >= min.length,
+                                          ssh.label.abbr,
+                                          NA)) 
+}
+data.ssh.labels <- data.tools.ssh.description %>%
+  dplyr::mutate(ssh.label.abbr = NA) %>%
+  dplyr::select(ssh.id, ssh.label, ssh.label.abbr, ssh.desc, tapor.id)
+v.regex.1 = c('^.*\\((\\w{2,})\\).*$') # find all single words in parentheses
+v.regex.2  = c('^.*\\b([A-Z]{3,})\\b.*$') # find all words in uppercase and min 3 letters long
+v.regex.3 = c('^.*?(([A-Z]+[a-z]*){2,}).*?$') # camel case
+v.regex.4 =c('^.*?([A-z]+\\d+[A-z]+).*?$') # character strings with numbers somewhere in between
+data.ssh.labels %>%
+  f.get.abbr(v.regex.4, 4) %>%
+  f.get.abbr(v.regex.3, 3) %>%
+  f.get.abbr(v.regex.2, 3) %>%
+  f.get.abbr(v.regex.1, 3) -> data.ssh.labels # this is only for testing. ultimately results can be directly written back to the source
+data.ssh.labels -> data.tools.ssh.description
 
 # df with mapping from TAPoR to Wikidata
 load("tapor/tapor_tools-wikidata.rda")
@@ -58,7 +86,7 @@ full_join(data.tools.ssh.description, data.tools.tapor.wd) -> data.tools.wd
 
 # add everything together
 left_join(data.tools.wd, data.tools.classification.wd) %>%
-  dplyr::select(ssh.id, tapor.id, ssh.label, tapor.label, ssh.desc, tapor.desc, tadirah.id, tadirah.uri, wd.tadirahid) -> data.tools.everything
+  dplyr::select(ssh.id, tapor.id, ssh.label, ssh.label.abbr, tapor.label, ssh.desc, tapor.desc, tadirah.id, tadirah.uri, wd.tadirahid) -> data.tools.everything
 
 # save joined dfs
 save(data.tools.wd, file = "tools_ssh-tapor-wd.rda")
@@ -67,29 +95,4 @@ save(data.tools.classification.wd, file = "tools_tadirah-wd.rda")
 save(data.tools.everything, file = "tools_ssh-tapor-wd-tadirah.rda")
 write.table(data.tools.everything, file = "tools_ssh-tapor-wd-tadirah.csv", row.names = F, sep = ",")
 
-# clean the labels, which contain a lot of information, such as accronyms etc.
-# function to apply a regex search and replace on the ssh.label field
-f.get.abbr <- function(df.input, v.regex, min.length){
-  df.input %>%
-    dplyr::mutate(ssh.label.abbr = ifelse(is.na(ssh.label.abbr) == T,
-                                          ifelse(str_detect(ssh.label, v.regex) == T,
-                                                 str_replace_all(ssh.label, v.regex, '\\1'), 
-                                                 NA),
-                                          ssh.label.abbr),
-                  ssh.label.abbr = ifelse(str_length(ssh.label.abbr) >= min.length,
-                                          ssh.label.abbr,
-                                          NA)) %>%
-    dplyr::arrange(desc(ssh.label.abbr))
-}
-data.ssh.labels <- data.tools.wd %>%
-  dplyr::mutate(ssh.label.abbr = NA) %>%
-  dplyr::select(ssh.id, ssh.label, ssh.label.abbr, ssh.desc)
-v.regex.1 = c('^.*\\((\\w{2,})\\).*$') # find all single words in parentheses
-v.regex.2  = c('^.*\\b([A-Z]{3,})\\b.*$') # find all words in uppercase and min 3 letters long
-v.regex.3 = c('^.*?(([A-Z]+[a-z]*){2,}).*?$') # camel case
-v.regex.4 =c('^.*?([A-z]+\\d+[A-z]+).*?$') # character strings with numbers somewhere in between
-data.ssh.labels %>%
-  f.get.abbr(v.regex.4, 4) %>%
-  f.get.abbr(v.regex.3, 3) %>%
-  f.get.abbr(v.regex.2, 3) %>%
-  f.get.abbr(v.regex.1, 3) -> data.ssh.labels
+

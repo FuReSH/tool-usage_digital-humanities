@@ -9,12 +9,14 @@ theme_set(theme_bw())
 
 # use string matching to include multi-word terms: inspired by https://stackoverflow.com/questions/65182347
 # df.input must have a column "text"  
+# df.terms must have two columns: "term", "id"
 ## this function returns the id of a text and all the terms it found therein with one row per term found and a frequency of how often this term was found in each text
-f.freq.term.per.text <- function(df.input, list.strings, ignore.case) {
+f.freq.term.per.text <- function(df.input, df.terms, ignore.case) {
+  print(paste("searching", length(df.input), "input texts for the occurrence of", length(df.terms), "terms", sep = " "))
   df.output <- df.input %>%
     dplyr::mutate(
       term = str_extract_all(text, 
-             regex(paste0("\\b", list.strings, "\\b", collapse = '|'),
+             regex(paste0("\\b", df.terms$term, "\\b", collapse = '|'),
                    ignore_case = ignore.case)) # it might make sense to add an input variable for this choice
     ) %>%
     unnest(term) %>%
@@ -25,7 +27,9 @@ f.freq.term.per.text <- function(df.input, list.strings, ignore.case) {
     # step 1: group by text and term: get frequency of number of hits per term per text
     dplyr::group_by(source, target) %>%
     dplyr::summarise(weight = n())
-  df.output
+  df.output %>% 
+    dplyr::left_join(df.terms, by = c("target" = "term")) %>%
+    dplyr::rename(target.id = id)
 }
 ## this function takes the output from the previous function and returns the number of texts, a given term occurs in
 f.freq.text.per.term <- function(df.input) {
@@ -37,8 +41,8 @@ f.freq.text.per.term <- function(df.input) {
     rename(term = target)
 }
 
-f.stringmatch.frequency <- function(df.input, list.strings) {
-  f.freq.term.per.text(df.input, list.strings, F) %>%
+f.stringmatch.frequency <- function(df.input, df.terms) {
+  f.freq.term.per.text(df.input, df.terms, F) %>%
     f.freq.text.per.term()
 }
 # control for correct case of matches

@@ -34,6 +34,9 @@ df.dfg <- df.dfg.projects %>%
   dplyr::rename(text = projektText) %>%
   dplyr::select(id, text)
 
+# DH conferences
+load(file = here("data", "dh-conferences", "dh-conferences_abstracts.rda"))
+
 # load tool list
 #load(file = here("data/furesh-tools.rda"))
 df.tools <- read_csv(here("data","tools.csv"))
@@ -53,7 +56,6 @@ write.table(df.dhconfs.ssh.tools.per.text, file = here("data/dh-conferences/dhco
 write.table(df.dhconfs.ssh.tools, file = here("data/dh-conferences/dhconfs-frequencies_tools-ssh.csv"), row.names = F, quote = T, sep = ",")
 #df.dhq.tools <- read.csv(file = here("data/dhq/dhq-frequencies_tools.csv"), sep = ",")
 f.prettify.df(df.dhconfs.ssh.tools, 'dhconfs-frequencies_tools')
-
 
 # run frequency analysis
 ## save edges table of sources mentioning a specific tool
@@ -91,5 +93,24 @@ f.wordcloud.frequency(df.dfg.tools, 100, v.label.title, "svg")
 # playground
 
 
-test.1 <- f.freq.term.per.text(df.dhconfs.abstracts[1:50,], df.tools.ssh$label)
+f.link.term.id <- function(df.term, df.id) {
+  # input data frames: df.term needs $term and df.id needs $term and $id
+  left_join(df.term, df.id, by = c("term" = "term"))
+}
+
+test.input <- df.dhconfs.abstracts[1:50,]
+test.terms <- data.tools.ssh.description %>%
+  dplyr::select(ssh.id, ssh.label.abbr) %>%
+  dplyr::rename(id = ssh.id, term = ssh.label.abbr) %>%
+  tidyr::drop_na(term)
+test.tools.per.text <- f.freq.term.per.text(test.input, test.terms, F)
+
+test.terms.2 <- data.tools.ssh.description %>%
+  dplyr::select(ssh.id, ssh.label) %>%
+  dplyr::rename(id = ssh.id, term = ssh.label) %>%
+  tidyr::drop_na(term)
+test.tools.per.text.2 <- f.freq.term.per.text(test.input, test.terms.2, F)
+
 test.2 <- f.stringmatch.frequency(df.dhconfs.abstracts[1:50,], df.tools$variant)
+
+

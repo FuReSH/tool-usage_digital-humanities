@@ -70,14 +70,15 @@
         </dhq:authorInfo>
 
       </titleStmt>
-      <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher><publisher>Association of Computers and the Humanities</publisher>
+      <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher>
+<publisher>Association for Computers and the Humanities</publisher>
         <!-- This information will be completed at publication -->
         <idno type="DHQarticle-id">000281</idno>
         <idno type="volume">011</idno>
         <idno type="issue">1</idno>
         <date when="2016-11-29">29 November 2016</date>
         <dhq:articleType>article</dhq:articleType>
-        <availability>
+        <availability status="CC-BY-ND">
           <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
         </availability>
       </publicationStmt>
@@ -466,7 +467,7 @@
             <ref target="http://ionicframework.com/">http://ionicframework.com/</ref></note>, an
           HTML5 mobile framework based on AngularJS<note>
             <ref target="https://angularjs.org/">https://angularjs.org/</ref></note> and Apache Cordova<note>
-            <ref target="https://cordova.apache.org/ ">https://cordova.apache.org/ </ref></note>.
+            <ref target="https://cordova.apache.org/">https://cordova.apache.org/</ref></note>.
           Ionic offers the mobile-optimized UI components that make it possible to build and test a
           mobile app quickly, as well as the APIs to interact with the device’s native functions
           such as camera and file storage. You can build an Ionic app with only HTML, CSS, and

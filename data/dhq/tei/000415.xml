@@ -17,7 +17,19 @@
                     <dhq:affiliation>Maastricht University</dhq:affiliation>
                     <email>k.papadopoulos@maastrichtuniversity.nl</email>
                     <dhq:bio>
-                        <p/>
+                        <p> Costas Papadopoulos is an Assistant Professor in Digital Humanities and
+                            Culture Studies at Maastricht University. His work has its roots in
+                            ethnography, archaeology, digital humanities, and museum and heritage
+                            studies, exploring modelling and representation at the intersections of
+                            the physical and the digital. It advances understandings of the
+                            experience and perception of heritage; engages in the development of
+                            open educational resources for the digital humanities; explores ways to
+                            build epistemological frameworks for multimodal research; and,
+                            integrates Arts into STE(A)M learning via socially-engaged research.
+                            Most of his research has focused on digital applications in archaeology
+                            and cultural heritage with a particular emphasis on 3D visualisation. He
+                            is PI of PURE3D which develops an Infrastructure for the Publication and
+                            Preservation of 3D Scholarship. </p>
                     </dhq:bio>
                 </dhq:authorInfo>
                 <dhq:authorInfo>
@@ -26,14 +38,21 @@
                     <dhq:affiliation>Maastricht University</dhq:affiliation>
                     <email>s.schreibman@maastrichtuniversity.nl</email>
                     <dhq:bio>
-                        <p/>
+                        <p>Susan Schreibman is Professor of Digital Arts and Culture at Maastricht
+                            University. She works at the intersections of computationally-based
+                            teaching and research in the interplay of the digital archive, cultural
+                            innovation, and participatory engagement design, processes and projects.
+                            A focus of her research is in the design, critical, and interpretative
+                            analysis of systems that remediate publication modalities and manuscript
+                            culture from the analogue world, while developing new born-digital
+                            paradigms. She has published and lectured widely in digital humanities
+                            and Irish poetic modernism. Her digital projects include Letters
+                            1916-1923, #dariahTeach, IGNITE, and PURE3D.</p>
                     </dhq:bio>
                 </dhq:authorInfo>
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000415</idno>
@@ -41,7 +60,7 @@
                 <idno type="issue">1</idno>
                 <date when="2019-06-11">11 June 2019</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -91,7 +110,9 @@
         </profileDesc>
         <revisionDesc>
             <!-- Each change should include @who and @when as well as a brief note on what was done. -->
-            <change/>
+            <change>The version history for this file can be found on <ref
+                    target="https://github.com/Digital-Humanities-Quarterly/dhq-journal/commits/master/articles/000415/000415.xml"
+                    >GitHub </ref></change>
         </revisionDesc>
     </teiHeader>
     <!-- If a translation is added to the original article, add an enclosing <text> and <group> element -->
@@ -113,7 +134,8 @@
             </dhq:abstract>
             <dhq:teaser>
                 <!-- Include a brief teaser, no more than a phrase or a single sentence -->
-                <p/>
+                <p>A case study on methods for digitally modelling complex spatial events with
+                    inspiration from digital scholarly editions.</p>
             </dhq:teaser>
         </front>
         <body>

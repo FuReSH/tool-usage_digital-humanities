@@ -110,14 +110,15 @@
                 </dhq:authorInfo>
 
             </titleStmt>
-            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher><publisher>Association of Computers and the Humanities</publisher>
+            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher>
+<publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000089</idno>
                 <idno type="volume">004</idno>
                 <idno type="issue">2</idno>
                 <date when="2010-09-01">1 September 2010</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -773,10 +774,10 @@
                     </row>
                     <row>
                         <cell>
-                     <eg>CALL SHIFT(A(J+1),7*(I-6),YY) </eg>
+                     <eg lang="fortran">CALL SHIFT(A(J+1),7*(I-6),YY) </eg>
                   </cell>
                         <cell>
-                     <eg>
+                     <eg lang="fortran">
                         <hi rend="italic">CALL SHIFT(A(J+1),7*(K-6),YY)</hi>
                                 <hi rend="bold">SUBROUTINE SHIFT (VAL,DIST,RES) IMPLICIT INTEGER
                                     (A-Z) RES=VAL IF(DIST)10,20,30 10 IDIST=-DIST DO 11 I=1,IDIST J
@@ -890,7 +891,7 @@
                     on the TOPS-10 and TOPS-20 operating systems <ptr target="#dec1987"/>, and can
                     be found at statement 1001 in the source code:</p>
                 
- <eg>1001 LTEXT(I)=0 I=1 CALL IFILE(1,'TEXT')</eg>
+ <eg lang="fortran">1001 LTEXT(I)=0 I=1 CALL IFILE(1,'TEXT')</eg>
                 
                 <p>As the source code defines a variety of other subroutines within itself, we can
                     assume that IFILE was probably part of an external library of FORTRAN functions

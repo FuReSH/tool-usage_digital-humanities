@@ -21,8 +21,6 @@
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000378<!-- including leading zeroes: e.g. 000110 --></idno>
@@ -30,7 +28,7 @@
                 <idno type="issue">2<!-- issue number, without leading zeroes: e.g. 2 --></idno>
                 <date when="2018-07-03">3 July 2018</date>
                 <dhq:articleType>editorial</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -294,7 +292,7 @@
                                 can be more effective to pretend that your work grew in a casually
                                 discursive, thesis­ driven way, and then happened to be illustrated
                                 with some scatterplots you had lying around</quote>
-                            <ptr target="#underwood2017" loc="par. 36"/>
+                            <ptr target="#underwood2017" loc="¶36"/>
                         </cit>. </note> analysis of most often large and generally quantitative sets
                     of data derived from various corpora or individual texts. It is important to
                     keep in mind that, as Andrew Goldstone has pointed out, while it may today be

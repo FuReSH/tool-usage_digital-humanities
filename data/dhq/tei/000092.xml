@@ -17,13 +17,14 @@
                </dhq:bio>
             </dhq:authorInfo>
          </titleStmt>
-         <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher><publisher>Association of Computers and the Humanities</publisher>
+         <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher>
+<publisher>Association for Computers and the Humanities</publisher>
             <idno type="DHQarticle-id">000092</idno>
             <idno type="volume">005</idno>
             <idno type="issue">2</idno>
             <date when="2011-05-17">17 May 2011</date>
             <dhq:articleType>article</dhq:articleType>
-            <availability>
+            <availability status="CC-BY-ND">
                <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
             </availability>
          </publicationStmt>
@@ -78,7 +79,7 @@
           in proletarian literature. However, this essay shows another origin for the form in
           concerns about the metropolis and mass culture that complicates our understanding. Drawing
           on examples from novels by John Dos Passos, Daniel Fuchs, Albert Halper, Josephine Herbst,
-          William S. Rollins, Jr., and Josephine Herbst it shows how these texts offered not only
+          William S. Rollins, Jr., and Edwin Seaver it shows how these texts offered not only
           radically ambivalent assessments of networked existence but often a pessimistic view of
           the possibilities of political community, extending at times to specific critiques of
           communist politics. In its conclusion, the essay draws links between these novels and the

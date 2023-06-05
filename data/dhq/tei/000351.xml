@@ -29,8 +29,6 @@
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000351<!-- including leading zeroes: e.g. 000110 --></idno>
@@ -38,9 +36,10 @@
                 <idno type="issue">1<!-- issue number, without leading zeroes: e.g. 2 --></idno>
                 <date when="2018-04-04">04 April 2018<!-- date: e.g. 22 July 2010 --></date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
+            	<dhq:revisionNote when="2022-09-02" previous="000351_01">This article has been updated since its original publication. An updated URL has been provided for Deepmind's AlphaGo Zero AI in <ref target="#note19">footnote 19</ref>.</dhq:revisionNote>
             </publicationStmt>
 
             <sourceDesc>
@@ -141,7 +140,7 @@
                     revisit and map out new ways in the motley field of humanities, with its many
                     different disciplines, often described as a big tent. We try to capture some of
                     this richness in our chapter by addressing central methodological issues we see
-                    in different practices in[our disciplinary field]. Going into technical detail
+                    in different practices in [our disciplinary field]. Going into technical detail
                     in one project is not in our interest, and we do not think it will be useful for
                     the readers of your book to get a detailed technical account when entering a
                     field of constant technological development. What we focus on is rather to set
@@ -1013,7 +1012,7 @@
                         <soCalled>companion species</soCalled>, of symbiotes, parasites, or some
                     other, as yet unrealised entanglement? </p>
                 <p>Deepmind’s AlphaGo Zero AI is one system provoking significant discussion in this
-                    area. AlphaGo<note> See <ref target="https://deepmind.com/research/alphago/">https://deepmind.com/research/alphago/</ref>, last accessed 8/10/2017,
+                    area. AlphaGo<note xml:id="note19">See <ref target="https://boltstatistics.com/alphago/">https://boltstatistics.com/alphago/</ref> (formerly at <ref target="https://deepmind.com/research/alphago/">https://deepmind.com/research/alphago/</ref>, last accessed 8/10/2017),
                         for details.</note> was originally created and trained to beat human
                     grandmasters of the game Go, a territory-claiming game that, unlike chess and
                     checkers, computers have struggled to compete at, even with only moderately

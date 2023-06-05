@@ -47,8 +47,6 @@
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000350</idno>
@@ -56,7 +54,7 @@
                 <idno type="issue">4</idno>
                 <date when="2018-01-22">22 January 2018</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -338,8 +336,7 @@
                     <dhq:example xml:id="code01">
                         <head>Implementation of <term>CTS</term>
                             <gi>refsDecl</gi> for an edition of the Iliad</head>
-                        <eg>
-                            
+                        <eg lang="xml">                            
 &lt;refsDecl n="CTS"&gt;
  &lt;cRefPattern n="line" matchPattern="(.+).(.+)"
    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[&lt;att&gt;@n&lt;/att&gt;='$1']//tei:l[&lt;att&gt;@n&lt;/att&gt;='$2'])"&gt;
@@ -457,7 +454,7 @@
                     <dhq:example xml:id="code02">
                         <head>Code sample, Pseudo-python sample integration of Treebank Unit Test
                             class</head>
-                        <eg>
+                        <eg lang="python">
 class TreebankUnit(HookTest.units.TESTUnit):
     tests = ["parsable", "has_root"]
     readable = {

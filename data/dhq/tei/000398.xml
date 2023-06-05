@@ -8,7 +8,7 @@
         <fileDesc>
             <titleStmt>
                 <!-- Author should supply the title and personal information-->
-                <title type="article" xml:lang="en">How Technology Means: Texts, History, and Their
+                <title type="article">How Technology Means: Texts, History, and Their
                     Associated Technologies</title>
                 <!-- Add a <title> with appropriate @xml:lang for articles in languages other than English -->
                 <dhq:authorInfo>
@@ -29,8 +29,6 @@
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000398</idno>
@@ -38,7 +36,7 @@
                 <idno type="issue">3</idno>
                 <date when="2018-09-12">12 September 2018</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -54,11 +52,9 @@
                             target="http://www.digitalhumanities.org/dhq/taxonomy.xml"
                             >http://www.digitalhumanities.org/dhq/taxonomy.xml</ref></bibl>
                 </taxonomy>
-                <!-- 
                 <taxonomy xml:id="authorial_keywords">
                     <bibl>Keywords supplied by author; no controlled vocabulary</bibl>
                 </taxonomy>
-                -->
             </classDecl>
         </encodingDesc>
         <profileDesc>
@@ -83,12 +79,14 @@
         </profileDesc>
         <revisionDesc>
             <!-- Each change should include @who and @when as well as a brief note on what was done. -->
-            <change/>
+        	<change>The version history for this file can be found on <ref target=
+        		"https://github.com/Digital-Humanities-Quarterly/dhq-journal/commits/master/articles/000398/000398.xml">GitHub
+        	</ref></change>
         </revisionDesc>
     </teiHeader>
 
 
-    <text>
+    <text xml:lang="en">
         <front>
 
             <!-- what to do w/ [special issue...] -->
@@ -497,7 +495,7 @@
                             >http://codexsinaiticus.org/en/manuscript.aspx</ref>. Cf. the New
                         Testament Virtual Manuscript Room by the Institut für Neutestamentliche
                         Textforschung: <ref
-                            target="http://ntvmr.uni-muenster.de/manuscript- workspace"
+                            target="http://ntvmr.uni-muenster.de/manuscript-workspace"
                             >http://ntvmr.uni-muenster.de/manuscript- workspace</ref>.</note>
                     Navigation <!-- footnotes --> is possible either by book/chapter/verse (like a
                     modern printed Bible) or quire/folio/verso-recto. The latter method is a good
@@ -717,7 +715,7 @@
                             >https://www.microsoft.com/microsoft-hololens/</ref>; cf. the similar
                         technology being developed by Magic Leap, a secretive but much-hyped
                             <q>Mixed Reality</q> start-up (<ref
-                            target="https://www.magicleap.com; http://www.wired.com/2016/04/magic-leap-vr/"
+                            target="https://www.magicleap.com;http://www.wired.com/2016/04/magic-leap-vr/"
                             >https://www.magicleap.com;
                             http://www.wired.com/2016/04/magic-leap-vr/</ref>).</note> With the
                     HoloLens, a user looks through a lens, seeing the real world, while the computer

@@ -17,14 +17,17 @@
                     <dhq:affiliation>Ontario Tech University</dhq:affiliation>
                     <email>adam.bradley@uoit.ca</email>
                     <dhq:bio>
-                        <p>After completing a Ph.D. in English and Systems Design Engineering at the University of Waterloo, Adam James Bradley
-                            joined the Visualization for Information Analysis Lab (Vialab) at Ontario Tech University as a research scientist.
-                            Adam's work is concerned with the problems of subjectivity, ambiguity, and interpretation that are omnipresent in
-                            digital tool design and text analysis. In some way all of Adam's work from visual text analytics, to interactive
-                            pen and paper applications, to visual search platforms are all trying to address the same question: How can we use
-                            technology to augment human actions in a way that allows us to be creative and imaginative, while still leveraging
-                            the power and speed of the machine.
-                        </p>
+                        <p>After completing a Ph.D. in English and Systems Design Engineering at the
+                            University of Waterloo, Adam James Bradley joined the Visualization for
+                            Information Analysis Lab (Vialab) at Ontario Tech University as a
+                            research scientist. Adam's work is concerned with the problems of
+                            subjectivity, ambiguity, and interpretation that are omnipresent in
+                            digital tool design and text analysis. In some way all of Adam's work
+                            from visual text analytics, to interactive pen and paper applications,
+                            to visual search platforms are all trying to address the same question:
+                            How can we use technology to augment human actions in a way that allows
+                            us to be creative and imaginative, while still leveraging the power and
+                            speed of the machine. </p>
                     </dhq:bio>
                 </dhq:authorInfo>
                 <dhq:authorInfo>
@@ -33,7 +36,8 @@
                     <dhq:affiliation>Ontario Tech University</dhq:affiliation>
                     <email>jay.sawal@uoit.ca</email>
                     <dhq:bio>
-                        <p>Victor Sawal is a developer in the Visualization for Information Analysis Lab (Vialab) at Ontario Tech University.</p>
+                        <p>Victor Sawal is a developer in the Visualization for Information Analysis
+                            Lab (Vialab) at Ontario Tech University.</p>
                     </dhq:bio>
                 </dhq:authorInfo>
                 <dhq:authorInfo>
@@ -42,7 +46,15 @@
                     <dhq:affiliation>University of Calgary</dhq:affiliation>
                     <email>sheelagh@ucalgary.ca</email>
                     <dhq:bio>
-                        <p/>
+                        <p>Sheelagh Carpendale is a Canada Research Chair in Information
+                            Visualization in Computing Science at Simon Fraser University. Her many
+                            awards include: IEEE Visualization Career Award, NSERC STEACIE, and a
+                            BAFTA. She is a Fellow in the Royal Society of Scientists and has been
+                            inducted into the both IEEE Visualization Academy and the ACM CHI
+                            Academy. By studying how people interact with data or information both
+                            in work and social settings, she works towards designing more natural,
+                            accessible and understandable interactive visual representations of
+                            data.</p>
                     </dhq:bio>
                 </dhq:authorInfo>
                 <dhq:authorInfo>
@@ -51,18 +63,19 @@
                     <dhq:affiliation>Ontario Tech University</dhq:affiliation>
                     <email>christopher.collins@uoit.ca</email>
                     <dhq:bio>
-                        <p>Christopher Collins received the PhD degree from University of Toronto in 2010.
-                            He is currently the Canada Research Chair in Linguistic Information Visualization and Associate Professor at Ontario Tech University.
-                            His research focus combines information visualization and human-computer interaction with natural language processing.
-                            He is a past member of the executive of the IEEE Visualization and Graphics Technical Committee and has served several
-                            roles on the IEEE VIS Conference Organizing Committee.</p>
+                        <p>Christopher Collins received the PhD degree from University of Toronto in
+                            2010. He is currently the Canada Research Chair in Linguistic
+                            Information Visualization and Associate Professor at Ontario Tech
+                            University. His research focus combines information visualization and
+                            human-computer interaction with natural language processing. He is a
+                            past member of the executive of the IEEE Visualization and Graphics
+                            Technical Committee and has served several roles on the IEEE VIS
+                            Conference Organizing Committee.</p>
                     </dhq:bio>
                 </dhq:authorInfo>
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000426</idno>
@@ -70,7 +83,7 @@
                 <idno type="issue">3</idno>
                 <date when="2019-10-14">14 October 2019</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -114,6 +127,9 @@
         <revisionDesc>
             <!-- Each change should include @who and @when as well as a brief note on what was done. -->
             <change when="2019-10-11" who="p:murelj">Added author edits and bios</change>
+            <change>The version history for this file can be found on <ref
+                    target="https://github.com/Digital-Humanities-Quarterly/dhq-journal/commits/master/articles/000426/000426.xml"
+                    >GitHub </ref></change>
         </revisionDesc>
     </teiHeader>
     <!-- If a translation is added to the original article, add an enclosing <text> and <group> element -->
@@ -233,7 +249,7 @@
                         <ptr target="#zellweger2000"/> has provided inspiration for working with
                         both analog and digital documents. Bondarenko and Janssen provide an
                         overview of what we can learn from paper to improve digital documents <ptr
-                            target="#bodarenko2005"/>, specifically important to this framework is
+                            target="#bondarenko2005"/>, specifically important to this framework is
                         their distinction between the affordances of paper versus digital texts in
                         terms of task management. Supporting active reading using hybrid interfaces
                         has been addressed by Hong et al. <ptr target="#hong2012"/>, and Shilit et
@@ -259,7 +275,7 @@
                         />, and Knotty gestures, which presents subtle traces to support interactive
                         use of paper <ptr target="#tsandilas2010"/>.</p>
                     <p>Paper-augmented digital documents merge physical annotations on paper with a
-                        digital representation <ptr target="#giumbretiere2003"/>. Paper and digital
+                        digital representation <ptr target="#guimbretiere2003"/>. Paper and digital
                         media have also been used together to support co-located group meetings <ptr
                             target="#haller2010"/>. Work has also been done on applying paper
                         affordances to digital workspaces such as page flipping and annotations in
@@ -312,7 +328,7 @@
                         references that directly affected our work and design decisions. Early text
                         visualizations such as ThemeRiver and TextArc demonstrate novel ways of
                         visualizing text <ptr target="#havre2002"/>
-                        <ptr target="#palev2002"/>. Sparklines over tag clouds have been previously
+                        <ptr target="#paley2002"/>. Sparklines over tag clouds have been previously
                         presented by Lee et al. <ptr target="#lee2010"/>. Projects such as SeeSoft
                             <ptr target="#eick1992"/>, a text-based tool for visualizing segments of
                         programming code, gave us an insight into how portions of a document could
@@ -369,7 +385,7 @@
                 <div>
                     <head>Textension Framework</head>
                     <p>Previous studies on digital document interaction, annotations, e-readers, and
-                        marginal interactions <ptr target="#annotation1997"/>
+                        marginal interactions <ptr target="#marshall1997"/>
                         <ptr target="#cheema2016"/>
                         <ptr target="#goffin2014"/>
                         <ptr target="#mehta2017"/> have identified five spaces that are interacted
@@ -500,7 +516,7 @@
                             background crop used for background synthesis. These parameters can be
                             adjusted for different documents because of localized color and lighting
                             effects.</head>
-                        <graphic url="resources/images/figure03.jpeg"></graphic>
+                        <graphic url="resources/images/figure03.jpeg"/>
                         <figDesc>Annotated digitized image of a document.</figDesc>
                     </figure>
                     <p>The Textension framework starts with a document image, processes the image to
@@ -583,7 +599,7 @@
                             <head>A. Original document image. B. A single line space inserted. C.
                                 Horizontal word space and vertical line space inserted into the
                                 document. D. The whole page with all line spaces opened.</head>
-                            <graphic url="resources/images/figure04.jpeg"></graphic>
+                            <graphic url="resources/images/figure04.jpeg"/>
                             <figDesc>Comparison of four digitized documents.</figDesc>
                         </figure>
                         <p>To improve image capture quality, which can affect background synthesis,
@@ -661,7 +677,7 @@
                                 tray with buttons that toggle on/off states for each augmentation.
                                 OCR confidence is in the word space, and a definition tool-tip is
                                 shown in the occlusion space.</head>
-                            <graphic url="resources/images/figure05.jpeg"></graphic>
+                            <graphic url="resources/images/figure05.jpeg"/>
                             <figDesc>Screenshot of tool interface, with menu on the left.</figDesc>
                         </figure>
                     </div>
@@ -990,10 +1006,10 @@
                         Computing Systems (CHI)</title>. ACM, 121–130. DOI: <ref
                         target="http://dx.doi.org/10.1145/1054972.1054990"
                         >http://dx.doi.org/10.1145/1054972.1054990</ref></bibl>
-                <bibl xml:id="ulrik2013" label="Ulrik 2013">Ulrik Brandes, Bobo Nick, Brigitte
-                    Rockstroh, and Astrid Steffen. 2013. Gestaltlines. In <title rend="italic">Proc.
-                        Eurographics Conf. on Visualization (EuroVis)</title>. 171–180. DOI: <ref
-                        target="http://dx.doi.org/10.1111/cgf.12104"
+                <bibl xml:id="brandes2013" label="Brandes et al 2013">Ulrik Brandes, Bobo Nick,
+                    Brigitte Rockstroh, and Astrid Steffen. 2013. Gestaltlines. In <title
+                        rend="italic">Proc. Eurographics Conf. on Visualization (EuroVis)</title>.
+                    171–180. DOI: <ref target="http://dx.doi.org/10.1111/cgf.12104"
                         >http://dx.doi.org/10.1111/cgf.12104</ref></bibl>
                 <bibl xml:id="chang1998" label="Chang 1998">Bay-Wei Chang, Jock D. Mackinlay, Polle
                     T. Zellweger, and Takeo Igarashi. 1998. A negotiation architecture for fluid
@@ -1152,19 +1168,20 @@
                         Graphics</title> 16, 6 (Nov. 2010), 1182–1189. DOI: <ref
                         target="http://dx.doi.org/10.1109/TVCG.2010.194"
                         >http://dx.doi.org/10.1109/TVCG.2010.194</ref></bibl>
-                <bibl xml:id="liang2010" label="Liang 2010">Jian Liang, David Doermann, and Huiping
+                <bibl xml:id="liang2005" label="Liang 2005">Jian Liang, David Doermann, and Huiping
                     Li. 2005. Camera-based Analysis of Text and Documents: A Survey. <title
                         rend="italic">Int. J. Doc. Anal. Recognit.</title> 7, 2-3 (July 2005),
                     84–104. DOI: <ref target="http://dx.doi.org/10.1007/s10032-004-0138-z"
                         >http://dx.doi.org/10.1007/s10032-004-0138-z</ref>
                 </bibl>
+                <!-- Updated and verified against OJS original -->
                 <bibl xml:id="liao2008" label="Liao 2008">Chunyuan Liao, François Guimbretière, Ken
                     Hinckley, and Jim Hollan. 2008. Papiercraft: A Gesture-based Command System for
                     Interactive Paper. <title rend="italic">ACM Trans. Comput.-Hum.
                         Interact.</title> 14, 4, Article 18 (Jan. 2008), 27 pages. DOI: <ref
                         target="http://dx.doi.org/10.1145/1314683.1314686"
                         >http://dx.doi.org/10.1145/1314683.1314686</ref></bibl>
-                <bibl xml:id="lLiao2010" label="Liao 2010">Chunyuan Liao, Qiong Liu, Bee Liew, and
+                <bibl xml:id="liao2010" label="Liao 2010">Chunyuan Liao, Qiong Liu, Bee Liew, and
                     Lynn Wilcox. 2010. Pacer: Fine-grained Interactive Paper via Camera-touch Hybrid
                     Gestures on a Cell Phone. In <title rend="italic">Proc. SIGCHI Conf. on Human
                         Factors in Computing Systems (CHI)</title>. ACM, 2441–2450. DOI: <ref

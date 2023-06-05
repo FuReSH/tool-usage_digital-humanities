@@ -21,14 +21,15 @@
                     </dhq:bio>
                 </dhq:authorInfo>
             </titleStmt>
-            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher><publisher>Association of Computers and the Humanities</publisher>
+            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher>
+<publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000195</idno>
                 <idno type="volume">008</idno>
                 <idno type="issue">4</idno>
                 <date when="2014-12-20">20 December 2014</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -1064,7 +1065,7 @@
                     traced in the code itself; the procedures that dictate
                     turtle behaviors are radically simplified. For example, here
                     is Throne’s code that simulates the activity of book-buying:
-               <eg>to buy-book
+               <eg lang="code-general">to buy-book
                      if any? sellers-here with [ inventory &gt; 0 ] ;; if the reader meets a seller with books to sell 
                      [ ask one-of sellers-here with [ inventory &gt; 0 ] 
                        [ set inventory inventory - 1             ;; take a book from the seller

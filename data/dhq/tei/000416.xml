@@ -87,8 +87,6 @@
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000416</idno>
@@ -96,7 +94,7 @@
                 <idno type="issue">2</idno>
                 <date when="2019-08-01">01 August 2019</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -149,7 +147,11 @@
         <front>
             <dhq:abstract>
                 <!-- Include a brief abstract of the article -->
-                <p/>
+                <p>An introduction to the Special Issue on <title rend="quotes">Invisible Work in 
+                	Digital Humanities</title> where the authors address a 2016 symposium on the 
+                	issue, interrogate critical factors which effect the invisibility of work, 
+                	and offer a potential framework to move forward.</p>
+            	<!-- Abstract provided after-the-fact by DHQ editor. -->
             </dhq:abstract>
             <dhq:teaser>
                 <!-- Include a brief teaser, no more than a phrase or a single sentence -->

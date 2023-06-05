@@ -34,8 +34,6 @@
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id"
@@ -44,7 +42,7 @@
                 <idno type="issue"><!-- issue number, without leading zeroes: e.g. 2 -->3</idno>
                 <date when="2018-12-03">2018-12-03</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -125,6 +123,7 @@
         </front>
         <body>
             <div>
+                <head/>
                 <epigraph>
                     <cit>
                         <quote rend="block" source="cabanne2009">Any three-dimensional object, which
@@ -796,7 +795,7 @@
                 <bibl xml:id="johnson1935" label="Johnson 1935">Johnson, James Weldon. <title
                         rend="italic">The Speech Lab Recordings: Reading at Columbia
                         University,</title> December 24, 1935. Ed. by Chris Mustazza. PennSound.
-                        <ref target="http:// writing.upenn.edu/pennsound/x/Johnson-JW.php">http://
+                        <ref target="http://writing.upenn.edu/pennsound/x/Johnson-JW.php">http://
                         writing.upenn.edu/pennsound/x/Johnson-JW.php</ref>.</bibl>
                 <bibl xml:id="kittler1999" label="Kittler 1999">Kittler, Friedrich A. <title
                         rend="italic">Gramophone, Film, Typewriter</title>, tr. Geoffrey

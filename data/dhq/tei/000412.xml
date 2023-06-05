@@ -62,8 +62,6 @@
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000412</idno>
@@ -71,7 +69,7 @@
                 <idno type="issue">1</idno>
                 <date when="2019-04-26">26 April 2019</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -114,7 +112,7 @@
         </profileDesc>
         <revisionDesc>
             <!-- Each change should include @who and @when as well as a brief note on what was done. -->
-            <change/>
+            <change when="2022-08-10" who="BRG">fixed encoding errors</change>
         </revisionDesc>
     </teiHeader>
     <!-- If a translation is added to the original article, add an enclosing <text> and <group> element -->
@@ -275,7 +273,7 @@
                     regularity of medieval hands and scripts overall, which may be analogous in some
                     ways to print typefaces in a general way.<note> On distinctions between OCR and
                         HTR, and critique of the former, see <ptr target="#kestemont2017"
-                            loc="S89-91"/>; and, e.g., <ptr target="#transkribus"/>, with
+                        	loc="S89–91"/>; and, e.g., <ptr target="#transkribus"/>, with
                         documentation about both OCR and HTR at the project wiki, <ref
                             target="https://transkribus.eu/wiki/index.php/Main_Page"
                             >https://transkribus.eu/wiki/index.php/Main_Page</ref>.</note> Recent

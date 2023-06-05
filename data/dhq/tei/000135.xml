@@ -90,14 +90,15 @@
                     </dhq:bio>
                 </dhq:authorInfo>
             </titleStmt>
-            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher><publisher>Association of Computers and the Humanities</publisher>
+            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher>
+<publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000135</idno>
                 <idno type="volume">006</idno>
                 <idno type="issue">3</idno>
                 <date when="2012-11-27">27 November 2012</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -486,7 +487,7 @@
                         before we gave papers on this, I can send you or if you look at my website,
                         let me see ... [Among the earlier publications and presentations see, for
                         example, <ptr target="#rockwell1998"/>, <ptr target="#rockwell1999"/>, <ptr target="#rockwell1994"/>, <ptr target="#rockwell1994"/>.] </p>
-                    <p> On my website, <ref target="www.geoffreyrockwell.com">www.geoffreyrockwell.com</ref>, there is a page of publications and
+                    <p> On my website, <ref target="http://www.geoffreyrockwell.com">www.geoffreyrockwell.com</ref>, there is a page of publications and
                         you'll see a bunch of publications about visualisation, in fact, if I go
                         into my CV I can find the oral papers that we were giving. When I started I
                         was doing text technologies but I got moved into being an instructional

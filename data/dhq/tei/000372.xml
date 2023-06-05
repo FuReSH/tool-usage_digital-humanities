@@ -30,8 +30,6 @@
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000372</idno>
@@ -39,7 +37,7 @@
                 <idno type="issue">1</idno>
                 <date when="2018-05-07">7 May 2018</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -164,7 +162,7 @@
                     identified within Blake’s corpus. </p>
                 <p>The problem of representing relationships in a digital archive is of course
                     nothing new; indeed, it’s a fundamental one when designing an archive. But there
-                    are varying forms of the problem, which Manuel Portela summarizes well <ptr target="#portela2014" loc="para. 32"/>:<list type="ordered">
+                    are varying forms of the problem, which Manuel Portela summarizes well <ptr target="#portela2014" loc="¶32"/>:<list type="ordered">
                         <item> representation of relationships between original materials and their
                             digital surrogates;</item>
                         <item>representation of relationships of digital objects to themselves and
@@ -178,7 +176,7 @@
                     Witt inherits and takes to mean relationships encoded in metadata that <cit>
                         <quote rend="inline" source="#witt2016">can be tracked and made discoverable by future
                             users</quote>
-                        <ptr target="#witt2016" loc="para. 16"/>
+                        <ptr target="#witt2016" loc="¶16"/>
                     </cit>. The primary function of this archive is to provide access to metadata
                     about commentary on a literary work. Naturally, the designer must work to encode
                     relationships falling under Portela’s categories 2 and 3. The Blake Archive,
@@ -244,7 +242,7 @@
                             was every one of Blake’s illustrations of the Bible
                                 <soCalled>related</soCalled> to every other one — with God
                             understood as <soCalled>author</soCalled>?</quote>
-                        <ptr target="#reed2014" loc="para. 13"/>
+                        <ptr target="#reed2014" loc="¶13"/>
                     </cit>
                 </p>
                 <p>During Ashley’s tenure as project manager, efforts to address such questions
@@ -261,7 +259,7 @@
                         application of pre-existing classification schemes to, or the <soCalled>post
                             hoc</soCalled> identification of clusters among a sample of, for
                         example, texts</quote>
-                    <ptr target="#mcqueen2004" loc="para. 4"/>. Our classification of relations is
+                    <ptr target="#mcqueen2004" loc="¶4"/>. Our classification of relations is
                     decidedly <soCalled>post hoc</soCalled>, and the difficulty increases given that
                     our sample involves both texts and images. We suspect that our struggles will be
                     recognizable to other digital projects confronting the same issues, and we hope
@@ -282,7 +280,7 @@
                                 the <soCalled>object</soCalled>: art-historical terms that, in the
                                 case of Blake’s work, exist on a kind of sliding scale from the
                                 theoretical to the material</quote>
-                            <ptr target="#reed2014" loc="para. 11"/>
+                            <ptr target="#reed2014" loc="¶11"/>
                         </cit>. According to the Archive’s Editorial Principles, <quote rend="inline" source="#x_eaves"><emph>we emphasize the physical object — the plate, page,
                                 or canvas — over the logical textual unit — the poem or other work
                                 abstracted from its physical medium</emph></quote>
@@ -302,7 +300,7 @@
                     box listing other copies containing the same object, despite that object
                     potentially being ordered in a different place in different copies; users can
                     select which copies they wish to compare, the pertinent objects for which are
-                    then arrayed horizontally—and made linkable—in a pop-up window (Figure 4). <figure>
+                    then arrayed horizontally — and made linkable — in a pop-up window (Figure 4). <figure>
                         <graphic url="resources/figure04.jpg"/>
                     </figure></p>
                 <p>Users can easily compare and contrast objects in different copies that Blake
@@ -418,7 +416,7 @@
                         connections</quote> that are <cit>
                         <quote rend="inline" source="#reed2014">not bound by the Archive’s own standards for
                             relatedness, but are left to the user’s discretion</quote>
-                        <ptr target="#reed2014" loc="para. 16"/>
+                            <ptr target="#reed2014" loc="¶16"/>
                     </cit>.</p>
                 <p>Given the problems detailed above, the redesigned site is being developed to
                     present Blakean relationships in a more systematic manner. After lengthy email
@@ -583,7 +581,7 @@
                         attribute, is object 2 contained in another BAD for another work, <title rend="italic">A Small Book of Designs</title>, the ID of which begins
                         with the string <quote rend="inline" source="#x">bb136</quote>. An XQuery expression in
                         the code makes the connection.
-                        <eg>
+                        <eg lang="xml">
 BAD filename: mhh.g.xml
 &lt;desc id="mhh.g.illbk.11" dbi="mhh.G.P11" compwith="bb136.B2"&gt;
                         </eg>
@@ -603,7 +601,7 @@ BAD filename: mhh.g.xml
                         multiple connections to complete the representations of the relations. One
                         can imagine reciprocal <gi>related</gi> elements for each of the related
                         objects contained in their own BADs.
-                        <eg>
+                        <eg lang="xml">
 BAD filename: BUT146.1.xml
 &lt;desc id="but146.1.wc.01" dbi="BUT146.1.1.WC"&gt;
     &lt;relatedobjectid="but550.1.wc.02"/&gt;
@@ -646,7 +644,7 @@ BAD filename: BUT146.1.xml
                         a related object that is actually in the Archive, an XQuery expression must
                         read the <gi>link</gi> attributes, string them together, and find the
                         resulting ID in the pool of BADs in the eXist database.
-                        <eg>
+                        <eg lang="xml">
 Work info page filename: esxiii.info.xml
 &lt;related&gt;
     &lt;relationship&gt;
@@ -673,7 +671,7 @@ Work info page filename: esxiii.info.xml
                         together by their IDs using <gi>include</gi> elements. Virtual groups can be
                         thought of as editor-defined ideal works with multiple objects; they are the
                         most interpretive of the sets of relations in the Archive.
-                        <eg>
+                        <eg lang="xml">
 Virtual group filename: biblicalwc.xml
 &lt;vgroup name="Water Color Drawings Illustrating the Bible" id="biblicalwc"&gt;
     &lt;include bad="but146.1" header="Old Testament Subjects"/&gt;
@@ -704,7 +702,7 @@ Virtual group filename: biblicalwc.xml
                         respectively. As Stephen Ramsay says, in the context of humanistic study, a
                         relational database is a <cit>
                             <quote rend="inline" source="#ramsay2004">para-interpretive formation</quote>
-                            <ptr target="#ramsay2004" loc="para. 4"/>
+                            <ptr target="#ramsay2004" loc="¶4"/>
                         </cit>. It yields to the scholar’s will. Here is how a couple of rows from
                         the table might look:<note>For the sake of clarity and efficient use of
                             space on the page, we decided to show numbers for object IDs in the
@@ -971,7 +969,7 @@ Virtual group filename: biblicalwc.xml
                         Essay Concerning Human Understanding</title>, ed. Peter H. Nidditch (New
                     York: Oxford University Press, 1975).</bibl>
                 <bibl xml:id="portela2014" label="Portela 2014">Portela, Manuel. <title rend="quotes">Multimodal Editing and Archival Performance: A Diagrammatic
-                        Essay on Transcoding Experimental Literature</title>, <title rend="italic">Digital Humanities Quarterly</title> 8.1 (2014). <ref target=" http://digitalhumanities.org:8081/dhq/vol/8/1/000175/000175.html">http://digitalhumanities.org:8081/dhq/vol/8/1/000175/000175.html</ref></bibl>
+                        Essay on Transcoding Experimental Literature</title>, <title rend="italic">Digital Humanities Quarterly</title> 8.1 (2014). <ref target="http://digitalhumanities.org:8081/dhq/vol/8/1/000175/000175.html">http://digitalhumanities.org:8081/dhq/vol/8/1/000175/000175.html</ref></bibl>
                 <bibl xml:id="ramsay2004" label="Ramsay 2004">Ramsay, Stephen. <title rend="quotes">Databases</title>, in <title rend="italic">A Companion to Digital
                         Humanities</title>, ed. Susan Schreibman, Ray Siemens, John Unsworth
                     (Oxford: Blackwell, 2004). <ref target="http://www.digitalhumanities.org/companion/">http://www.digitalhumanities.org/companion/</ref></bibl>

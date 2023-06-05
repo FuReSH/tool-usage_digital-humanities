@@ -119,14 +119,15 @@
                     </dhq:bio>
                 </dhq:authorInfo>
             </titleStmt>
-            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher><publisher>Association of Computers and the Humanities</publisher>
+            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher>
+<publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000272</idno>
                 <idno type="volume">010</idno>
                 <idno type="issue">4</idno>
                 <date when="2016-10-24">24 October 2016</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -570,7 +571,7 @@
                         Humanities and Social Sciences projects making good use of Linked Data
                         technology, see: the <ref target="http://collection.britishmuseum.org/">British Museum collections site</ref> and the Netherlands Institute for
                         Sound and Vision’s DIVE event-based browsing of historical media collections
-                        online at: <ref target="http://dive.beeldengeluid.nl/">http://dive.beeldengeluid.nl/ </ref></note> As a result, Seshat data
+                        online at: <ref target="http://dive.beeldengeluid.nl/">http://dive.beeldengeluid.nl/</ref></note> As a result, Seshat data
                     can be easily linked to external data sets and also functions as an entry point
                     into other historical data sets.</p>
             </div>

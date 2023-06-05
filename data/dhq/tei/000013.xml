@@ -34,13 +34,14 @@
                </dhq:bio>
             </dhq:authorInfo>
          </titleStmt>
-         <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher><publisher>Association of Computers and the Humanities</publisher>
+         <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher>
+<publisher>Association for Computers and the Humanities</publisher>
             <idno type="DHQarticle-id">000013</idno>
             <idno type="volume">001</idno>
             <idno type="issue">2</idno>
             <dhq:articleType>editorial</dhq:articleType>
             <date when="2007-09-12">12 September 2007</date>
-            <availability>
+            <availability status="CC-BY-ND">
                <cc:License xmlns="http://digitalhumanities.org/DHQ/namespace"
                            rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
             </availability>
@@ -96,11 +97,11 @@
          <p>Welcome to the second issue of DHQ. It is difficult, at this stage in a journal’s
             progress, to monitor uptake, success, or readership. Where can we start? The launch of
             DHQ was emblazoned across various discussion lists (such as <ref target="http://www.princeton.edu/humanist/">Humanist</ref>, <ref target="http://wiki.digitalclassicist.org/discussion">Digital Classicist</ref>, <ref target="http://listserv.uleth.ca/mailman/listinfo/dm-l">Digital Medievalist</ref>,
-            <ref target="http://listserv.brown.edu/archives/cgi-bin/wa?a0=tei-l ">TEI-L</ref>)
+            <ref target="http://listserv.brown.edu/archives/cgi-bin/wa?a0=tei-l">TEI-L</ref>)
             and featured on many blogs (such as <ref target="http://grandtextauto.gatech.edu/">Grand
                 Text Auto</ref>, <ref target="http://www.stoa.org/">Stoa</ref>, and personal blogs
             from those within the digital humanities community). DHQ is pointed to from the Digital
-            Humanities entry on <ref target="http://en.wikipedia.org/wiki/digital_humanities">Wikipedia</ref>, linked to by over <ref target="http://www.google.co.uk/search?hl=en&amp;q=link%3ahttp%3a%2f%2fwww.digitalhumanities.org%2fdhq%2f&amp;btng=search&amp;meta= ">40 different home pages</ref>, and has been saved and tagged by 90 different
+            Humanities entry on <ref target="http://en.wikipedia.org/wiki/digital_humanities">Wikipedia</ref>, linked to by over <ref target="http://www.google.co.uk/search?hl=en&amp;q=link%3ahttp%3a%2f%2fwww.digitalhumanities.org%2fdhq%2f&amp;btng=search&amp;meta=">40 different home pages</ref>, and has been saved and tagged by 90 different
             individuals on <ref target="http://del.icio.us/url/723fc5626023597778345bc4297699a6">del.icio.us</ref>, suggesting we have reached thousands of potential readers.</p>
          <p>Still, with the comments feature yet to be enabled (we are still building the back end
             of the site, and this experiment of a journal will continue to evolve with each issue)

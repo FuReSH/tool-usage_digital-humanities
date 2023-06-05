@@ -25,14 +25,14 @@
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
+                <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000192</idno>
                 <idno type="volume">008</idno>
                 <idno type="issue">4</idno>
                 <date when="2014-12-25">25 December 2014</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -141,7 +141,7 @@
                 <p> This book is, I believe, one of the most coherent responses to the current shift
                     in reading technologies and offers insights into the role of books in the
                     preservation of human history through mechanical reproduction. Foer’s text works
-                    as an extension and modification of Johanna Drucker claim in <title
+                    as an extension and modification of Johanna Drucker's claim in <title
                         rend="italic">The Century of Artists’ Books </title>(1995) that the artist
                     book is representative of the 20th century social, cultural, and technological
                     development. In a 21<hi rend="superscript">st</hi>-century context, the generic

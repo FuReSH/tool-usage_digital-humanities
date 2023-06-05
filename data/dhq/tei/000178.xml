@@ -62,14 +62,14 @@
          </titleStmt>
          <publicationStmt>
             <publisher>Alliance of Digital Humanities Organizations</publisher>
-            <publisher>Association of Computers and the Humanities</publisher>
+            <publisher>Association for Computers and the Humanities</publisher>
             <!-- This information will be completed at publication -->
             <idno type="DHQarticle-id">000178</idno>
             <idno type="volume">008</idno>
             <idno type="issue">2</idno>
             <date when="2014-07-18">18 July 2014</date>
             <dhq:articleType>article</dhq:articleType>
-            <availability>
+            <availability status="CC-BY-ND">
                <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
             </availability>
          </publicationStmt>
@@ -1059,7 +1059,7 @@
             </bibl>
             <bibl label="Liu 2012" xml:id="liu2012" key="liu2012">Liu, Alan. <title rend="quotes"
                   >Where is Cultural Criticism in the Digital Humanities?</title>
-               <title rend="italic">Debates in the Digital Humanities. </title>Gold, Matthew K.
+               <title rend="italic">Debates in the Digital Humanities.</title> Gold, Matthew K.
                (ed.). Minneapolis: University of Minnesota Press, 2012.</bibl>
             <bibl label="Moretti 2005" xml:id="moretti2005" key="moretti2005">Moretti, Franco.
                   <title rend="italic">Graphs, Maps, Trees: Abstract Models for a Literary History.

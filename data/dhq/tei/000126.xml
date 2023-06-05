@@ -28,14 +28,14 @@
          </titleStmt>
          <publicationStmt>
             <publisher>Alliance of Digital Humanities Organizations</publisher>
-            <publisher>Association of Computers and the Humanities</publisher>
+            <publisher>Association for Computers and the Humanities</publisher>
             <!-- This information will be completed at publication -->
             <idno type="DHQarticle-id">000126</idno>
             <idno type="volume">006</idno>
             <idno type="issue">2</idno>
             <date when="2012-10-05">5 October 2012</date>
             <dhq:articleType>article</dhq:articleType>
-            <availability>
+            <availability status="CC-BY-ND">
                <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
             </availability>
          </publicationStmt>
@@ -862,7 +862,7 @@
                   Intelligence</title>. Reading, MA: Addison-Wesley, 1997.</bibl>
             <bibl label="Falliere, Murchu, and Chien 2011" xml:id="falliere2011" key="falliere2011">
                <title rend="quotes">W32.Stuxnet Dossier,</title> Symantec Security Response, at <ref
-                  target="http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/ w32_stuxnet_dossier.pdf"
+                  target="http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/w32_stuxnet_dossier.pdf"
                   >http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/
                   w32_stuxnet_dossier.pdf</ref>.</bibl>
             <bibl label="Gross 2011" xml:id="gross2011" key="gross2011">Gross, Michael Joseph.

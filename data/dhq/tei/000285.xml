@@ -42,14 +42,15 @@
                     </dhq:bio>
                 </dhq:authorInfo>
             </titleStmt>
-            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher><publisher>Association of Computers and the Humanities</publisher>
+            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher>
+<publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000285</idno>
                 <idno type="volume">011</idno>
                 <idno type="issue">2</idno>
                 <date when="2017-03-16">16 March 2017</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -957,7 +958,7 @@
                     stands for an activity and its associated means and roles. Therefore, in a
                         <title rend="italic">JavaScript</title> section of an <title rend="italic">HTML</title> page, a <hi rend="italic">flowchart</hi> could be represented
                     as below:</p>
-                <eg>var sipoc = [ {"activity":"Notes Taking", "MeanIn":"Books Treatises, erasable
+                <eg lang="javascript">var sipoc = [ {"activity":"Notes Taking", "MeanIn":"Books Treatises, erasable
                     surfaces...", "MeanOut":"Various written Surfaces" "Role":"Listeners, Readers"},
                     {"activity":"Notes discarding", "MeanIn":"Notes", "MeanOut":"Nothing or
                     Integrated notes","Role":"Compilers, heirs"}, {"activity":"Printing",
@@ -967,10 +968,10 @@
                     perform some appropriate <title rend="italic">d3js</title> function calls (using
                     the functional property of the <title rend="italic">JavaScript</title> language)
                     such as: </p>
-                <eg>var svg = d3.select('#graph') .append('svg') .style('width', 2000)
+                <eg lang="javascript">var svg = d3.select('#graph') .append('svg') .style('width', 2000)
                     .style('height',1000);</eg>
                 <p>to create a SVG plane, and: </p>
-                <eg>svg.selectAll('rect.activity') .data(sipoc) .enter() .append('rect')
+                <eg lang="javascript">svg.selectAll('rect.activity') .data(sipoc) .enter() .append('rect')
                     .attr('class','activity') .attr('x', xBarPosition) .attr('y', function (d,i)
                     {return ((i+1)*yBarPosition);}) .attr({width: widthBar, height: heigthBar,
                     style:"fill:#cb842e;stroke-

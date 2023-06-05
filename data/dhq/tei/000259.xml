@@ -61,14 +61,15 @@
                     </dhq:bio>
                 </dhq:authorInfo>
             </titleStmt>
-            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher><publisher>Association of Computers and the Humanities</publisher>
+            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher>
+<publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000259</idno>
                 <idno type="volume">10</idno>
                 <idno type="issue">4</idno>
                 <date when="2016-10-04">4 October 2016</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -1003,15 +1004,15 @@
                         single English word, yet it can be read as English, where the <q>words</q>
                         take on the sonic characteristics of English when read aloud. For example,
                         the first few lines of the poem are:</p>
-<eg>ygUDuh                   
+<eg lang="nohighlight">ygUDuh                   
     
       ydoan
       yunnuhstan</eg>
                     <p>That when read allowed becomes a phonetic map for a type of early 20<hi rend="superscript">th</hi> century urban slang exemplified by the
                         poem:</p>
-<eg>you gotta
+<eg lang="nohighlight">you gotta
                         
-      you don’t
+      you don't
       you understand</eg>
                     
 

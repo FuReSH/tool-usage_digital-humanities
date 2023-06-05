@@ -22,13 +22,14 @@
                </dhq:bio>
                 </dhq:authorInfo>
             </titleStmt>
-            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher><publisher>Association of Computers and the Humanities</publisher>
+            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher>
+<publisher>Association for Computers and the Humanities</publisher>
                 <idno type="DHQarticle-id">000099</idno>
                 <idno type="volume">005</idno>
                 <idno type="issue">3</idno>
               <date when="2011-11-15">15 November 2011</date>
               <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
             </availability>
             </publicationStmt>
@@ -403,7 +404,7 @@
                         New Yorker article <title rend="quotes">I ♥ NOVELS</title> (<ref target="http://www.newyorker.com/reporting/2008/12/22/081222fa_fact_goodyear">http://www.newyorker.com/reporting/2008/12/22/081222fa_fact_goodyear</ref>)</note> There
                     are YouTube videos of amateur literature readings, epistolary
                     videos,<note>See examples such as Aaron B Cohen’s videos, <title rend="quotes">Angry Letter On Love And Cheating [Epistolary Tormented
-                        Version]</title>, <ref target="http://youtu.be/f5Azj4OYPHM ">http://youtu.be/f5Azj4OYPHM </ref>. A search among YouTube videos for <term>amateur poetry</term>, <term>poetry reading</term>, or other similar literary terms will generate results ranging from amateurs’ reading their own poetry or fiction, to multimedia works, to video-taped performances.</note> or multimedia narratives in a wide range of aesthetic and literary types. None of these practices can be understood as continuing the formal or political avant-gardes of the 20th century.</p>
+                        Version]</title>, <ref target="http://youtu.be/f5Azj4OYPHM">http://youtu.be/f5Azj4OYPHM</ref>. A search among YouTube videos for <term>amateur poetry</term>, <term>poetry reading</term>, or other similar literary terms will generate results ranging from amateurs’ reading their own poetry or fiction, to multimedia works, to video-taped performances.</note> or multimedia narratives in a wide range of aesthetic and literary types. None of these practices can be understood as continuing the formal or political avant-gardes of the 20th century.</p>
                 <p>As these kinds of practices extend the definition of digital literature, they may also alleviate the burden of the modernist problem. The day may be coming when digital literature no longer views itself, or is viewed by interpreters and critics, as the avant-garde of print literature, nor as caught between the dual dynamics of formal and political innovation.</p>
             </div>
         </body>

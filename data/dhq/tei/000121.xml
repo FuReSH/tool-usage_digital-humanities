@@ -17,14 +17,15 @@
                     </dhq:bio>
                 </dhq:authorInfo>
             </titleStmt>
-            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher><publisher>Association of Computers and the Humanities</publisher>
+            <publicationStmt><publisher>Alliance of Digital Humanities Organizations</publisher>
+<publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000121</idno>
                 <idno type="volume">006</idno>
                 <idno type="issue">2</idno>
                 <date when="2012-10-12">12 October 2012</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -923,7 +924,7 @@
                     applies, and suggesting using of the W3C's Media Fragment specification
                     to identify a portion of the
                     target document where possible and what they call a "constrained target" if not
-                    <ptr target="#SandersonAndVanDeSompel2011" loc="sections 3.7.2 and 3.7.3"/>. Furthermore, the developments in the Semantic Web have muddied
+                    <ptr target="#SandersonAndVanDeSompel2011" loc="§3.7.2, §3.7.3"/>. Furthermore, the developments in the Semantic Web have muddied
                     the water here too: between a document <emph>about</emph> an object, a real-world object with
                     its digital surrogate, and the context – a document – in which the surrogate
                     appears. See, for example, Jeni Tennison's attempt to clarify URIs for documents

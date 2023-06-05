@@ -44,8 +44,6 @@
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000385</idno>
@@ -53,7 +51,7 @@
                 <idno type="issue">3</idno>
                 <date when="2018-11-19">19 November 2018</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -96,11 +94,11 @@
         </profileDesc>
         <revisionDesc>
             <!-- Each change should include @who and @when as well as a brief note on what was done. -->
-            <change/>
+            <change who="BRG" when="2022-07-21">updated to pass validation</change>
         </revisionDesc>
     </teiHeader>
     <!-- If a translation is added to the original article, add an enclosing <text> and <group> element -->
-    <text xml:lang="en" type="original">
+    <text xml:lang="en">
         <front>
             <dhq:abstract>
                 <!-- Include a brief abstract of the article -->

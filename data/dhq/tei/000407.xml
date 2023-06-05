@@ -17,7 +17,13 @@
                     <dhq:affiliation>Università degli Studi di Bari Aldo Moro</dhq:affiliation>
                     <email>viviana.deangelis@uniba.it</email>
                     <dhq:bio>
-                        <p/>
+                        <p>Viviana De Angelis is a researcher in the Department of Education,
+                            Psychology and Communication at the University of Bari Aldo Moro, where
+                            she carries out research and integrative teaching. Her scholarly
+                            interests include theoretical and applied philosophy and pedagogy, with
+                            the goal of identifying new development trajectories for an epistemology
+                            of educational research with which to filter complex situations and
+                            promote humanization.</p>
                     </dhq:bio>
                 </dhq:authorInfo>
                 <dhq:authorInfo>
@@ -26,7 +32,12 @@
                     <dhq:affiliation>University of Limerick</dhq:affiliation>
                     <email>Patricia.M.McNamara@ul.ie</email>
                     <dhq:bio>
-                        <p/>
+                        <p>Patricia Mannix McNamara is currently Head of the School of Education in
+                            the University of Limerick. She began her career as a post primary
+                            school teacher before completing her PhD in the examination of
+                            supervisory relationships from a critical theory perspective. Patricia
+                            teaches courses on leadership, teacher professionalism, research methods
+                            in Ireland and abroad at undergraduate and postgraduate levels. </p>
                     </dhq:bio>
                 </dhq:authorInfo>
                 <dhq:authorInfo>
@@ -34,7 +45,10 @@
                     <dhq:affiliation>Università degli Studi di Bari Aldo Moro</dhq:affiliation>
                     <email> rosa.gallelli@uniba.it</email>
                     <dhq:bio>
-                        <p/>
+                        <p>Rosa Gallelli is an associate professor in the Department of Education,
+                            Psychology and Communication at the University of Bari Aldo Moro.
+                            Gallelli's research focuses on Health Pedagogy and training processes
+                            aimed at honoring differences.</p>
                     </dhq:bio>
                 </dhq:authorInfo>
                 <dhq:authorInfo>
@@ -48,8 +62,6 @@
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000407</idno>
@@ -57,7 +69,7 @@
                 <idno type="issue">4</idno>
                 <date when="2019-07-26">26 July 2019</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -100,7 +112,9 @@
         </profileDesc>
         <revisionDesc>
             <!-- Each change should include @who and @when as well as a brief note on what was done. -->
-            <change/>
+            <change>The version history for this file can be found on <ref
+                    target="https://github.com/Digital-Humanities-Quarterly/dhq-journal/commits/master/articles/000407/000407.xml"
+                    >GitHub </ref></change>
         </revisionDesc>
     </teiHeader>
     <!-- If a translation is added to the original article, add an enclosing <text> and <group> element -->
@@ -1085,6 +1099,12 @@
                     Angeli (2011).</bibl>
                 <bibl xml:id="rovelli2014" label="Rovelli 2014">Rovelli, C. Sette brevi lezioni di
                     fisica. Milano: Adelphi (2014).</bibl>
+                <bibl xml:id="schnotz2001" label="Schnotz 2001">Schnotz, Wolfgang. <title
+                        rend="quotes">Sign systems, technologies, and the acquisition of
+                        knowledge.</title>
+                    <title rend="italic">Multimedia learning: Cognitive and Instructional
+                        Issues</title>. Biardeau, Agnes, Jarmo J. Levonen, and Jean Francois Rouet,
+                    eds. (2001): 9-29.</bibl>
                 <bibl xml:id="seel2003" label="Seel 2003">Seel, N.M., Model-Centered Learning and
                     Instruction. in <title rend="quotes">Technology, Instruction,cognition and
                         Learning</title>, I (2003): 59-85.</bibl>

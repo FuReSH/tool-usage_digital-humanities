@@ -17,7 +17,32 @@
                     <dhq:affiliation>Emerson College</dhq:affiliation>
                     <email>catherine_dignazio@emerson.edu</email>
                     <dhq:bio>
-                        <p/>
+                        <p> Catherine D’Ignazio is a scholar, artist/designer and hacker mama who
+                            focuses on feminist technology and data justice. She has run <ref
+                                target="https://kanarinka.github.io/makethebreastpumpnotsuck/"
+                                >reproductive justice hackathons</ref>, designed global news
+                            recommendation systems, created talking and tweeting water quality
+                            sculptures, and led walking data visualizations to envision the future
+                            of sea level rise. With Rahul Bhargava, she built the platform <ref
+                                target="https://databasic.io/en/">Databasic.io</ref>, a suite of
+                            tools and activities to introduce newcomers to data science. Her 2020
+                            book from MIT Press, Data Feminism, co-authored with Lauren Klein,
+                            charts a course for more ethical and empowering data science practices.
+                            Since 2019, she has co-organized <ref
+                                target="https://datoscontrafeminicidio.net/en/home-2/">Data Against
+                                Feminicide</ref>, a participatory action-research-design project,
+                            with Silvana Fumega and Helena Suárez Val. D'Ignazio's research at the
+                            intersection of technology, design and social justice has been published
+                            in Patterns, the Journal of Community Informatics, and the proceedings
+                            of Human Factors in Computing Systems (ACM SIGCHI). Her art and design
+                            projects have won awards from the Tanne Foundation, Turbulence.org and
+                            the Knight Foundation and exhibited at the Venice Biennial and the ICA
+                            Boston. D’Ignazio is an Associate Professor of Urban Science and
+                            Planning in the Department of Urban Studies and Planning at MIT. She is
+                            also Director of the <ref target="https://dataplusfeminism.mit.edu/"
+                                >Data + Feminism Lab</ref> which uses data and computational methods
+                            to work towards gender and racial justice, particularly in relation to
+                            space and place.</p>
                     </dhq:bio>
                 </dhq:authorInfo>
                 <dhq:authorInfo>
@@ -26,22 +51,40 @@
                     <dhq:affiliation>Massachusetts Institute of Technology</dhq:affiliation>
                     <email>rahulb@media.mit.edu </email>
                     <dhq:bio>
-                        <p/>
+                        <p>Rahul Bhargava is an educator, researcher, designer, and facilitator who
+                            builds collaborative projects to interrogate our datafied society with a
+                            focus on rethinking participation and power in data processes. He has
+                            created big data research tools to investigate media attention, built
+                            hands-on interactive museum exhibits that delight learners of all ages,
+                            and run over 100 workshops to build data culture in newsrooms,
+                            non-profits, and libraries. With Catherine D’Ignazio, he built <ref
+                                target="https://databasic.io/en/">Databasic.io</ref>, a suite of
+                            tools and activities that introduce learners from various domains to
+                            working with data. Rahul has collaborated with a wide range of groups,
+                            from the state of Minas Gerais in Brazil to the St. Paul library system
+                            and the World Food Program. His academic work on data literacy,
+                            technology, and civic media has been published in journals such as the
+                            International Journal of Communication, the Journal of Community
+                            Informatics, and been presented at conferences such as IEEE Vis and
+                            ICWSM. His museum installations have appeared at the Boston Museum of
+                            Science, Eyebeam in New York City, and the Tech Interactive in San Jose.
+                            Rahul is an Assistant Professor in Journalism and Art + Design at
+                            Northeastern University, where he directs the <ref
+                                target="https://dataculture.northeastern.edu/">Data Culture
+                                Group</ref>.</p>
                     </dhq:bio>
                 </dhq:authorInfo>
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
-
                 <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000403</idno>
                 <idno type="volume">012</idno>
                 <idno type="issue">4</idno>
-                <date/>
+                <date when="2019-02-04">4 February 2019</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -89,7 +132,9 @@
         </profileDesc>
         <revisionDesc>
             <!-- Each change should include @who and @when as well as a brief note on what was done. -->
-            <change/>
+            <change>The version history for this file can be found on <ref
+                    target="https://github.com/Digital-Humanities-Quarterly/dhq-journal/commits/master/articles/000403/000403.xml"
+                    >GitHub </ref></change>
         </revisionDesc>
     </teiHeader>
     <!-- If a translation is added to the original article, add an enclosing <text> and <group> element -->
@@ -207,8 +252,9 @@
                     do social science <ptr target="#crawford2014"/>
                     <ptr target="#sandvig2014"/>
                     <ptr target="#welles2014"/>, practice law <ptr target="#pasquale2015"/>, produce
-                    policy <ptr target="#goldsmith2014"/>, govern the city <ptr target="#jacobs2016"
-                    /> and create the news <ptr target="#diakopoulos2015"/>
+                    policy <ptr target="#goldsmith2014"/>, govern the city <ptr
+                        target="#jacobsetal_2016"/> and create the news <ptr
+                        target="#diakopoulos2015"/>
                     <ptr target="#kirchner2016"/>, to cite just some of the proliferating work in
                     this space. </p>
                 <p>While the scholarship of Critical Data Studies <ptr target="#dalton2016"/> has
@@ -470,11 +516,12 @@
                         </cit>. Project-based learning builds on the constructivist and
                         constructionist ideas that learning is something that is actively built by
                         learners rather than transmitted linearly from teacher to student - what
-                        <ptr target="#freire2000"/> called the <quote rend="inline" source="#freire2000">banking
-                            model</quote> of education. In project-based learning, projects help
-                        students encounter the central problems and questions of a discipline,
-                        involve students in a constructive investigation, and are student-driven and
-                        realistic <ptr target="#thomas2000"/>. </p>
+                            <ptr target="#freire2000"/> called the <quote rend="inline"
+                            source="#freire2000">banking model</quote> of education. In
+                        project-based learning, projects help students encounter the central
+                        problems and questions of a discipline, involve students in a constructive
+                        investigation, and are student-driven and realistic <ptr
+                            target="#thomas2000"/>. </p>
                     <p>What does a project-based learning approach look like for data analysis and
                         information visualization? First, project-based learning is inquiry driven
                         so the first step of project-based pedagogy with data is helping students to
@@ -534,8 +581,8 @@
                             <soCalled>physicalize</soCalled>
                         <ptr target="#huron2014"/>
                         <ptr target="#willett2016"/>
-                        <ptr target="#perovich2015"/>
-                        <ptr target="#DataPhys2016"/>
+                        <ptr target="#perovich_2014"/>
+                        <ptr target="#dataPhys_2016"/>
                         <ptr target="#bhargava2016"/> and otherwise make data tangible, embodied and
                         felt. While creative information displays such as these may not be the end
                         goal of a particular pedagogical process, showing these examples can expand
@@ -930,6 +977,10 @@
                         target="http://papers.ssrn.com/abstract=2761166"
                         >http://papers.ssrn.com/abstract=2761166</ref> [Accessed September 12,
                     2016].</bibl>
+                <bibl xml:id="dataPhys_2016" label="DataPhys wiki 2016">Data Physicalization Wiki
+                    contributors, 'Data Physicalization', Data Physicalization Wiki, 30 April 2021,
+                    12:25 UTC, <ref target="http://dataphys.org/">dataphys.org</ref> [Accessed 21
+                    July 2022] (Note: citation added post publication by DHQ Editors)</bibl>
                 <bibl xml:id="davenport2012" label="Davenport and Patil 2012">Davenport, T. &amp;
                     Patil, D.J., 2012. Data Scientist: The Sexiest Job of the 21st Century.
                     Available at: <ref
@@ -955,7 +1006,7 @@
                     penetration increases. <title rend="italic">Princeton: Center for Arts and
                         Cultural Policy Studies, Woodrow Wilson School, Princeton
                     University</title>, 4(1), pp.2–4. Available at: <ref
-                        target="http://www.princeton.edu/~artspol/workpap/WP15 - DiMaggio+Hargittai.pdf"
+                        target="http://www.princeton.edu/~artspol/workpap/WP15-DiMaggio+Hargittai.pdf"
                         >http://www.princeton.edu/~artspol/workpap/WP15 -
                         DiMaggio+Hargittai.pdf</ref> [Accessed September 12, 2016].</bibl>
                 <bibl xml:id="emerson2013" label="Emerson and TT Collective 2013">Emerson, J. &amp;
@@ -996,9 +1047,9 @@
                         target="https://hbr.org/2012/09/data-is-useless-without-the-skills"
                         >https://hbr.org/2012/09/data-is-useless-without-the-skills</ref> [Accessed
                     May 14, 2015].</bibl>
-                <bibl xml:id="hooks1994" label="hooks 1994">hooks, bell, 1994. <title rend="italic"
-                        >Teaching to transgress : education as the practice of freedom</title>, New
-                    York: Routledge.</bibl>
+                <bibl xml:id="hooks1994" label="hooks 1994" sortKey="Hooks">hooks, bell, 1994.
+                        <title rend="italic">Teaching to transgress : education as the practice of
+                        freedom</title>, New York: Routledge.</bibl>
                 <bibl xml:id="hourcade2009" label="Hourcade et al. 2009">Hourcade, J.P. et al.,
                     2009. Early OLPC experiences in a rural uruguayan school. <title rend="italic"
                         >Mobile Technology for Children</title>, pp. 225–243. </bibl>
@@ -1018,6 +1069,10 @@
                 <bibl xml:id="iliinksy2011" label="Iliinksy and Steele 2011">Iliinksy, N. &amp;
                     Steele, J., 2011. <title rend="italic">Designing Data Visualizations</title>,
                     O’Reilly Media. </bibl>
+                <bibl xml:id="jacobsetal_2016" label="Jacobs et al 2016">Jacobs, J.M., Cairns, S.
+                    and Strebel, I., 2016. <title rend="quotes">Materialising vision: Performing a
+                        high-rise view.</title> In <title rend="italic"
+                        >Visuality/Materiality</title> (pp. 147-166). Routledge.</bibl>
                 <bibl xml:id="keating2009" label="Keating 2009">Keating, J., 2009. Why did One
                     Laptop Per Child fail? <title>Foreign Policy</title>. Available at: <ref
                         target="https://foreignpolicy.com/2009/09/09/why-did-one-laptop-per-child-fail/"
@@ -1087,7 +1142,7 @@
                         target="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century"
                         >https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century</ref>
                     [Accessed May 14, 2015].</bibl>
-                <bibl xml:id="Perovich" label="Perovich">Perovich, L., 2014. Laura {Perovich}.
+                <bibl xml:id="perovich_2014" label="Perovich">Perovich, L., 2014. Laura {Perovich}.
                         <title rend="italic">Big Bar Chart in Laura Perovich’s Portfolio</title>.
                     Available at: <ref
                         target="http://www.lauraperovich.com/projects/bigbarchart.html"
@@ -1200,14 +1255,18 @@
                         target="http://dl.acm.org/citation.cfm?doid=2735450.2723168"
                         >http://dl.acm.org/citation.cfm?doid=2735450.2723168</ref> [Accessed
                     November 14, 2016]. </bibl>
+                <bibl xml:id="wolf2015" label="Wolf 2015">Wolff, Annika and Kortuem, Gerd (2015).
+                        <title rend="quotes">Visualising energy: teaching data literacy in
+                        schools.</title> In: Sencity 2, 08 Sep 2015, Osaka.</bibl>
                 <bibl xml:id="zer-aviv2014" label="Zer-Aviv 2014">Zer-Aviv, M., 2014. Disinformation
                     Visualization: How to lie with datavis. <title rend="italic">Visualizing
                         Information for Advocacy.</title> Available at: <ref
                         target="https://visualisingadvocacy.org/node/643.html"
                         >https://visualisingadvocacy.org/node/643.html</ref>.</bibl>
-                <bibl xml:id="zimmerman2000" label="Zimmerman 2000">Zimmerman, B. J., 2000. Attaining self-regulation: A
-                    social cognitive perspective. In M. Boekaerts, P. Pintrich &amp; M. Zeidner (Eds.),
-                    <title rend="italic">Handbook of self-regulation</title>, pp. 13–39. San Diego, CA: Academic Press.</bibl>
+                <bibl xml:id="zimmerman2000" label="Zimmerman 2000">Zimmerman, B. J., 2000.
+                    Attaining self-regulation: A social cognitive perspective. In M. Boekaerts, P.
+                    Pintrich &amp; M. Zeidner (Eds.), <title rend="italic">Handbook of
+                        self-regulation</title>, pp. 13–39. San Diego, CA: Academic Press.</bibl>
             </listBibl>
 
         </back>

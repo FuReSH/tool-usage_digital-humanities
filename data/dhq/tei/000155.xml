@@ -30,14 +30,14 @@
             </titleStmt>
             <publicationStmt>
                 <publisher>Alliance of Digital Humanities Organizations</publisher>
-                <publisher>Association of Computers and the Humanities</publisher>
+                <publisher>Association for Computers and the Humanities</publisher>
                 <!-- This information will be completed at publication -->
                 <idno type="DHQarticle-id">000155</idno>
                 <idno type="volume">007</idno>
                 <idno type="issue">1</idno>
                 <date when="2013-07-01">1 July 2013</date>
                 <dhq:articleType>article</dhq:articleType>
-                <availability>
+                <availability status="CC-BY-ND">
                     <cc:License rdf:about="https://creativecommons.org/licenses/by-nd/2.5/"/>
                 </availability>
             </publicationStmt>
@@ -956,7 +956,7 @@
                         both hypothetical and actual. The guidelines begin with a markup of William
                         Blake's <title rend="quotes">The Sick Rose.</title> The example
                         concludes:</p>
-<eg>&lt;!-- more poems go here -- &gt;</eg>
+<eg lang="xml">&lt;!-- more poems go here -- &gt;</eg>
                     <p>The standard adds that this <quote rend="inline" source="#tei2011">is an XML
                                 <term>comment </term>and is not treated as part of the text.</quote>
                         The example of the boundary between TEI and text is exemplified by the

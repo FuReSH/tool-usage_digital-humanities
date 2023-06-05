@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/schema/DHQauthor-TEI.rng" type="xml"?>
+<?oxygen SCHSchema="../../common/schema/dhqTEI-ready.sch"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:dhq="http://www.digitalhumanities.org/ns/dhq"
+   xmlns:mml="http://www.w3.org/1998/Math/MathML">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <!--Author should supply the title and personal information-->
+            <title type="article" xml:lang="en"><!--article title in English-->New Digital Worlds:
+               Postcolonial Digital Humanities in Theory, Praxis and Pedagogy</title>
+            <!--Add a <title> with appropriate @xml:lang for articles in languages other than English-->
+            <dhq:authorInfo>
+               <!--Include a separate <dhq:authorInfo> element for each author-->
+               <dhq:author_name>Onyekachi <dhq:family>Henry Ibekwe</dhq:family>
+               </dhq:author_name>
+               <idno type="ORCID"
+                  ><!--if the author has an ORCID ID, include the full URI, e.g. https://orcid.org/0000-0000-0000-0000-->https://orcid.org/0000-0002-2381-9313</idno>
+               <dhq:affiliation>University of Nigeria</dhq:affiliation>
+               <email>hibekwe@gmail.com</email>
+               <dhq:bio>
+                  <p>Currently a PhD student at the University of Nigeria, Onyekachi Henry Ibekwe
+                     has a B.Eng. in Engineering (University of Nigeria) and an MA in Philosophy
+                     (University of Zimbabwe). His research interests include neural networks,
+                     logic, philosophy of language, philosophy of science, and digital humanities as
+                     it affects Africa and African peoples. Ibekwe is the author of <title
+                        rend="italic">Igbo Proverbs: A Compilation</title> (2017) and <title
+                        rend="italic">The Orthographic Assimilation of Nsibidi Ideograms</title>
+                     (2016).</p>
+               </dhq:bio>
+            </dhq:authorInfo>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Alliance of Digital Humanities Organizations</publisher>
+            <publisher>Association for Computers and the Humanities</publisher>
+            <!--This information will be completed at publication-->
+
+            <idno type="DHQarticle-id"><!--including leading zeroes: e.g. 000110-->000617</idno>
+            <idno type="volume"
+               ><!--volume number, with leading zeroes as needed to make 3 digits: e.g. 006-->016</idno>
+            <idno type="issue"><!--issue number, without leading zeroes: e.g. 2-->2</idno>
+            <date when="2022-04-01">1 April 2022</date>
+            <dhq:articleType>review</dhq:articleType>
+            <availability status="CC-BY-ND">
+               <!--If using a different license from the default, choose one of the following:
+                  CC-BY-ND (DHQ default):        
+                  CC-BY:    
+                  CC0:  -->
+               <cc:License rdf:about="http://creativecommons.org/licenses/by-nd/2.5/"/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>This is the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="dhq_keywords">
+
+               <bibl>DHQ classification scheme; full list available at <ref
+                     target="http://www.digitalhumanities.org/dhq/taxonomy.xml"
+                     >http://www.digitalhumanities.org/dhq/taxonomy.xml</ref>
+
+               </bibl>
+            </taxonomy>
+            <taxonomy xml:id="authorial_keywords">
+               <bibl>Keywords supplied by author; no controlled vocabulary</bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en" extent="original"/>
+            <!--add <language> with appropriate @ident for any additional languages-->
+         </langUsage>
+         <textClass>
+            <keywords scheme="#dhq_keywords">
+               <!--Authors may suggest one or more keywords from the DHQ keyword list, visible at http://www.digitalhumanities.org/dhq/taxonomy.xml; these may be supplemented or modified by DHQ editors-->
+
+               <list type="simple">
+                  <item/>
+               </list>
+            </keywords>
+            <keywords scheme="#authorial_keywords">
+               <!--Authors may include one or more keywords of their choice-->
+               <list type="simple">
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <!--Each change should include @who and @when as well as a brief note on what was done.-->
+         <change when="2022-08-03" who="BRG">added teaser</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:lang="en" type="original">
+      <front>
+         <dhq:abstract>
+            <!--Include a brief abstract of the article-->
+            <p>Roopika Risam’s <title rend="italic">New Digital Worlds</title> interrogates the
+               ongoing digitization of analog cultural records that came into existence during colonial
+               times. Risam contends that the processes which produced the initial analog records were
+               often animated by a mix of ethical egoism, racial bias and cultural caricature. Risam
+               proposes a way out by embracing decolonial computing: a spectrum of techniques that seek
+               to elevate historically-disadvantaged worldviews. Risam hopes to employ interventionist
+               data approaches to address the challenges brought to bear upon peoples continually
+               affected by colonial aggression.</p>
+         </dhq:abstract>
+         <dhq:teaser>
+            <!--Include a brief teaser, no more than a phrase or a single sentence-->
+            <p>A review of Roopika Risam's recent work: New Digital Worlds</p>
+         </dhq:teaser>
+      </front>
+      <body>
+        
+         <p>Traditionally, the field known as digital humanities (DH) brings digital computational
+            methods to bear on traditional humanities scholarship. When digital humanities tools are
+            applied to cultural artifacts, sociofacts and mentifacts, a <term>digital
+               cultural record</term> may be produced. Post-colonial digital humanities (PDH) pushes
+            the envelope by interrogating the 'human' in digital humanities. PDH approaches the
+            digital cultural record by way of a hermeneutic of suspicion, recognizing that there
+            exists no suppositionless position from which to engage DH. Concretely, PDH rests on the
+            premise that, in creating the first analog cultural records, colonial authorities chose
+            to advance colonial interests whenever such interests bifurcated from those of the
+            colonized. When such analog records are eventually digitized, inherent imperfections
+            simply migrate into the digital domain. </p>
+         <p>In <title rend="italic">New Digital Worlds</title>, Roopika Risam takes the position that such
+            migration of imperfections precipitates the disruptions that subsist within the digital
+            cultural record. PDH, consequently, aims to uncover and intervene in disruptions
+            produced by colonialism and neocolonialism. It tackles the shadows cast by the
+            hermeneutical position of the colonizers who created cultural records for the colonized. </p>
+         <p>The digital cultural record, as a by-product of historical research work, naturally
+            inherits all the riddles emanating from the historical method. For instance, the word
+            history means 'what happened in the past', but it also means 'the study of what happened
+            in the past'. Historians often make a distinction between <emph>histories
+               from above</emph> <ptr target="#katz2013"/> and <emph>histories from below</emph> <ptr target="#bhattacharya1983"/>
+          <title rend="italic">. Histories from Above</title> dwell upon the big
+            books, the big concepts, the big institutions, the big thinkers, the big events and the
+            so-called golden ages. <title rend="italic">Histories from Below</title>, on the other hand,
+            account for historical events from the perspective of ordinary people rather than
+            leaders – emphasizing the disenfranchised, the oppressed, the poor, the non-conformists,
+            and other marginal groups.</p>
+         <p>In light of those two broad approaches to history, questions immediately arise regarding
+            the production of the digital cultural record. PDH embraces <title rend="italic">history
+               from below</title>, while accusing colonial authorities of embracing history from above.
+            Throughout the book, Risam maintains the need to checkmate the potential and actual
+            violence that colonized peoples have endured because of the existence of uncritiqued
+            cultural records, whether analog or digital, coming from above. Risam gives several
+            reasons why such interventions are necessary. </p>
+         <p>To begin with, the uncritiqued digital cultural record has consequences for people’s
+            lives. Risam cites an example from Puerto Rico. Following the devastation of Hurricane
+            Maria in 2017, it was found that existing digital maps (created by digitizing colonial
+            analog maps) were insufficient to support relief efforts. People suffered and died as
+            relief agencies faced difficulties in navigating the devastated island. The Mapathon
+            project, a PDH endeavor, helped fill the <quote rend="inline">gaps and omissions</quote> <ptr target="#risam2018" loc="24"/>
+            subsisting in the initial maps. Updated maps produced by the Mapathon project helped to
+            render relief efforts more efficient, thereby saving hundreds of lives.</p>
+         <p>In addition, re-evaluating the cultural record will help to checkmate the epistemic
+            violence which animated its initial production. Ontological categories do not typically
+            translate properly from one culture to another. Consequently, the colonial endeavour to
+            articulate universal claims generally meets with deep-seated conceptual stumbling
+            blocks. Colonizing empires often created justifying narratives by resorting to making
+            caricatures of peoples, things, and mores that do not fit snugly into the colonial
+            mindset. Evidence of such caricatures abound in historical records: records which end up
+            getting digitized. A lot of psychic damage occurs when such records are employed in
+            education, as colonized youths find themselves at the receiving end of a pedagogy
+            designed for mockery. Timely interventions by PDH will go a long way in correcting those
+            anomalies.</p>
+         <p>Furthermore, carefully crafted PDH projects will help to stem the tide of widespread
+            misrepresentation – one of the consequences of broadcasting widespread caricatures.
+            Nowadays, millions of people get their information from digital media. Inundating
+            digital media with negatively-biased cultural records exponentially multiplies
+            opportunities for misrepresentation, naturally leading to pervasive misunderstanding and
+            a breakdown in communication. A cascade of errors ensues, first leading to a devaluing
+            of Black and indigenous lives, then to the defunding of African-American, Americana,
+            Black, and Ethnic studies, as witnessed in a number of universities in the West <ptr target="#risam2018" loc="15"/> <ptr target="#rhodes2016"/> <ptr target="#brewer2019"/>. </p>
+         <p>Another reason to embrace PDH is to further enhance knowledge from the margins, an
+            emphasis of history from below. A famous African thinker once said that until the lions
+            have their own historians, the history of the hunt will always glorify the hunter
+            <ptr target="#brooks1994"/>. By choosing to lend a voice to the historically-disadvantaged <emph>digital </emph>Dalits and subalterns <ptr target="#risam2018" loc="10"/>, Risam hopes to
+            explore the unexamined questions of power, globalization, and colonial ideologies
+            (emanating from the global north) that have shaped the digital cultural record. By
+            choosing to hear from the kings, queens, peasants, and outcasts of history, the author
+            hopes to produce a richer encoding of the past as embodied in the digital cultural
+            record.</p>
+         <p>Going further, PDH intends to pay attention to decolonial computing, which calls for
+            renewed attention to critical race theory within technocultures <ptr target="#risam2018" loc="139"/>. After
+            much practice and rumination, data scientists eventually learn than data is not
+            information, information is not knowledge, knowledge is not understanding, understanding
+            is not wisdom. Decolonial computing is about interrogating who is doing computing, where
+            they are doing it, and, thereby, what computing means both epistemologically and
+            ontologically. PDH questions the hitherto presumed political and ethical neutrality of
+            computing techniques. Myriad questions about the objectivity of technical methods are
+            re-examined in new light.</p>
+         <p>This book is recommended for scholars that recognize the utmost importance of critical
+            historiography, while intending to expand the frontiers of digital humanities. Risam
+            walks the talk through a comprehensive listing of named PDH projects which take <title
+               rend="italic">history from below</title> seriously. Risam’s unusual decision to examine
+            the conceptual frameworks that animate the design of computing systems remains a good
+            example of dialectical engagement animated by a philosophical spirit. The products of
+            PDH research work will make tacit knowledge explicit, shed light upon hermeneutical
+            blind spots, and shake up existing digital humanities pedagogy. The new approaches
+            proposed will go a long way in answering many old, lingering questions. </p>
+
+         
+      </body>
+      <back>
+         <listBibl>
+            <bibl xml:id="bhattacharya1983" label="Bhattacharya 1983"> Battacharya, S. <title rend="quotes">History from Below,</title> <title rend="italic">Social
+               Scientist</title>, 11, 4 (April 1983): 3-20 <ref target="https://doi.org/10.2307/3517020">https://doi.org/10.2307/3517020</ref></bibl>
+            <bibl xml:id="brewer2019" label="Brewer 2019"> Brewer, R. M. <title rend="quotes">Politics and Power: Securing Resources for Black Study,</title> <title
+               rend="italic">Black Perspectives</title> (November 14, 2019)
+               <ref target="https://www.aaihs.org/politics-and-power-securing-resources-for-black-study/">https://www.aaihs.org/politics-and-power-securing-resources-for-black-study/</ref></bibl>
+            <bibl xml:id="brooks1994" label="Brooks 1994"> Brooks, J. <title rend="quotes">Chinua Achebe, The Art of Fiction,</title> <title rend="italic">The Paris
+               Review</title> 133 (Winter 1994)
+               <ref target='https://www.theparisreview.org/interviews/1720/the-art-of-fiction-no-139-chinua-achebe'>https://www.theparisreview.org/interviews/1720/the-art-of-fiction-no-139-chinua-achebe</ref></bibl>
+            <bibl xml:id="katz2013" label="Katz 2013"> Katz, D. S. <title rend="quotes">History from Way Above: Recognizing Patterns through the Fuzz and
+               Fog of the Past,</title> <title rend="italic">Common Knowledge</title> 19, 1 (2013): 40-50
+               <ref target="https://doi.org/10.1215/0961754X-1815642">https://doi.org/10.1215/0961754X-1815642</ref></bibl>
+            <bibl xml:id="rhodes2016" label="Rhodes 2016"> Rhodes, D. <title rend="quotes">Black studies struggle at state universities under current
+               fiscal climate,</title> <title rend="italic">Chicago Tribune</title>, 6 September 2016,
+               <ref target="https://www.chicagotribune.com/news/breaking/ct-african-american-studies-college-major-met-20160905-story.htm">https://www.chicagotribune.com/news/breaking/ct-african-american-studies-college-major-met-20160905-story.htm</ref>l</bibl>
+            <bibl xml:id="risam2018" label="Risam 2018"> Risam, R. <title rend="italic">New Digital Worlds: Postcolonial Digital
+               Humanities in Theory, Praxis and Pedagogy</title>. Northwestern University Press,
+               Evanston (2018).</bibl>
+         </listBibl>
+      </back>
+   </text>
+</TEI>

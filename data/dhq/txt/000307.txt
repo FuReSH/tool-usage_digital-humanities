@@ -29,7 +29,7 @@ Friedrich Kittler bequeathed texts, images, videos, and artifacts of his program
 
 The possibility to encounter Kittler’s files and source code everywhere made it necessary to show utmost restraint in the exclusion of suggested system directories. Furthermore, it is obvious for Kittler’s code that the respective programming environments are of relevance. Therefore, all files from hard drives and most of the readable disks and optical media were examined. Only obvious mass products (such as CD-R free samples enclosed in the magazine c’t ) were listed, but not copied. Consequently, a manual selection and conversion as it was carried out in the previous workflow would not work. Not only the amount, but also the specific complexity made evident that this was a special challenge to cope with, from which future estates might benefit. 
 
-In July 2012 a group of experts discussed how to approach Kittler’s digital estate. Jürgen Enge and Tabea Lurk proposed to examine the untapped data inventory by a full text index for further processing steps. In September 2012 Jürgen Enge presented a prototype working with sample data. In April 2013 substantial partitions and storage devices were analyzed and made available as image copies from which a representative selection was indexed. Since August 2013 Ironmaiden (as the package was called in jest ) was consolidated in a virtual machine on the DLA’s servers. It was then further developed and eventually confronted with the whole relevant data inventory. 
+In July 2012 a group of experts discussed how to approach Kittler’s digital estate. Jürgen Enge and Tabea Lurk proposed to examine the untapped data inventory by a full text index for further processing steps. In September 2012 Jürgen Enge presented a prototype working with sample data. In April 2013 substantial partitions and storage devices were analyzed and made available as image copies from which a representative selection was indexed. Since August 2013 Ironmaiden (as the package was called in jest [^Intelligent Read-Only Media Identification Engine or Intelligent Recursive Online Metadata and Indexing Engine . Due to copyright issues it will be called Indexer . ]) was consolidated in a virtual machine on the DLA’s servers. It was then further developed and eventually confronted with the whole relevant data inventory. 
 
 
 # Preparation Process 
@@ -48,7 +48,7 @@ Before the actual ingest of data into the Indexer, the preparation process consi
 These labels also served to create file names for sector images and simplified the administration in internal lists that could later be imported into the Indexer. 
 - Because there was no useable sequence of volumes available, disks were first of all dated according to the date of the latest file and arranged in a chronological order. Thus disk groups (for instance several disks of a backup set) could be reassembled which was also confirmed by the identical look (color, make, degree of soiling, label, captions). At this stage, a recursive data listing emerged, that could be used for an initial classification of content. 
 - All reading operations should be carried out under Linux, first of all because many disks were formatted with Linux file systems. Moreover, Linux offers a large range of possible file systems and permits efficient use of the command line in order to automate tasks. 
-- For sector-wise copying of floppy disks and CD-Rs a new set of scripts and tools was necessary in order to cope with various file systems and deficient media. Here, namely the tools ddrescue and h2cimage have proven to be very useful. They work well even with deficient media, and a fair amount of data could be restored. Further technical problems arose in the attempt to store original files of partitions and optical volumes on the actual file servers of the DLA (as it was previously possible with the floppy disk inventory): 
+- For sector-wise copying of floppy disks and CD-Rs a new set of scripts and tools was necessary in order to cope with various file systems and deficient media. Here, namely the tools ddrescue and h2cimage have proven to be very useful. They work well even with deficient media, and a fair amount of data could be restored. [^The sector-wise copying of disks could not be carried out with the previously used tool FloppImg because a large amount of ext2 and other file systems were included. CD-Rs were converted into .iso-files by the c’t -tool h2cdimage which creates partially usable images from deficient volumes like ddrescue. In contrast to common copy programs it will not continue reading in deficient sectors without any further progress, so that the drive will not degrade from continued reading attempts (see ). Kittler comments on one CD-R in the file komment (a kind of technical diary): "20.10.10: Viele Dateien auf CD Texte 89-99 sind schon korrupt; arme Nachlaßverwalter, die FAK-Vorlesungsnoten lesen möchten! "( "Many files on the CD [named] Texte 89-99 are already deficient; poor curators who would like to read FAK[ittler]-lecture notes! ") . It is remarkable to be addressed from the past in such a way. It is also remarkable that with the help of c’t – Kittler’s favourite computer magazine – an unexpected high amount of backup CD-Rs which Kittler himself expected to be damaged could at least be read . ]Further technical problems arose in the attempt to store original files of partitions and optical volumes on the actual file servers of the DLA (as it was previously possible with the floppy disk inventory): 
 
 - Usually, a digital estate is stored on the server file system under an extensive path, named after its holder with systematically labeled sub folders according to the processing state. If additional original files are stored under their own, deeply nested original path, the allowed path length of the operating system might be exceeded. 
 - Up-to-date virus scanners often impede the copying of original files contaminated with old (MS-DOS) viruses. 
@@ -58,13 +58,13 @@ These labels also served to create file names for sector images and simplified t
 
 
 
-At this point, preceding its functions as a full text indexing and MIME type analysis tool, the Indexer also serves as a document server which preserves the authentic path information and overcomes the described restrictions of the file systems (for instance through the structuring of its own finely balanced cache). Likewise, MS-DOS viruses do not interfere with the analysis under Linux. 
+At this point, preceding its functions as a full text indexing and MIME type analysis tool, the Indexer also serves as a document server which preserves the authentic path information and overcomes the described restrictions of the file systems (for instance through the structuring of its own finely balanced cache). [^273 sector images (exported by an NFS server) were mounted as loop-back devices and indexed. ]Likewise, MS-DOS viruses do not interfere with the analysis under Linux. 
 
 
 ## Basic components of the Indexer 
 
 
-The Indexer’s core is a SOLR-full text index. It results from an iterative identification cascade and extracts the technologically identified metadata from indexed hard drives and removable media. The full-text index is made accessible through a web-based search and a user interface. It supports the evaluation and decision-making in the archive pre-stage and the subsequent preliminary recording. Before this full-text index is generated, the Indexer creates – using only r/o access – an initial directory for all data in a MySQL-database. In addition to a SessionID , which through its naming system allows the administration of different file systems/different estates or object groups, the single files are recorded. In doing so, the files technical metadata as well as their immediate surrounding (within the file system) are recorded. Now follows an identification cascade that analyzes the data step-by-step and optimizes the identification quality or, respectively, the probability of accurate attribution. Since every tool has its own particular qualities and shortcomings, the Indexer combines different tools which can be replaced or upgraded at any time. The indexing cascade requires the following tools: 
+The Indexer’s core is a SOLR-full text index. [^Information on the SOLR-full text-indexer: http://lucene.apache.org/solr/ . ]It results from an iterative identification cascade and extracts the technologically identified metadata from indexed hard drives and removable media. The full-text index is made accessible through a web-based search and a user interface. It supports the evaluation and decision-making in the archive pre-stage and the subsequent preliminary recording. Before this full-text index is generated, the Indexer creates – using only r/o access – an initial directory for all data in a MySQL-database. [^Reading access ensures that operations run archive-compliant, so that the system does not leave any traces (own data) within the record. Metadata created within the analysis, as well as the information on the access path is filed beside the record. ]In addition to a SessionID , which through its naming system allows the administration of different file systems/different estates or object groups, the single files are recorded. In doing so, the files technical metadata as well as their immediate surrounding (within the file system) are recorded. [^The following features were extracted and recorded in a data base: sessionid (ID of the archiving), fileid (distinct file identification number within a session), parentid (ID of the data folder, in which the directory entry is filed), name (file or folder name), path (path of the directory entry), filetype (type, for instance “file”, “directory”, “reference”), filesize, sha256 (checksum – can be used for authenticity verification), filectime (date of creation), filemtime (changing date), fileatime (date of last access, here often mistakes occur, when data systems are mounted in write mode!), stat (all information of the Unix-call stat( )) archivetime (indexing date). To identify single files a combination of sessionid and fileid is recommended. ]Now follows an identification cascade that analyzes the data step-by-step and optimizes the identification quality or, respectively, the probability of accurate attribution. Since every tool has its own particular qualities and shortcomings, [^The varying results derive from different recognition algorithms and databases within the single tools. Since contradictory statements can occur, the Indexer treats all results as equal, so that the user has to decide which information he should trust. ]the Indexer combines different tools which can be replaced or upgraded at any time. [^The following list displays the order of the identification steps. ]The indexing cascade requires the following tools: 
 
 Mandatory are 
 
@@ -79,14 +79,14 @@ Mandatory are
 Highly recommended are 
 
 - Apache Tika: extracts not only MIME type and encodings, but also full text in case of texts. 
-- avconv/ffmpeg: extracts technical metadata from data which gvfs-info identified as time based media (MIME type video/* or audio/* ) 
+- avconv/ffmpeg: extracts technical metadata from data which gvfs-info identified as time based media (MIME type "video/* "or "audio/* ") 
 - ImageMagick: analyzes image- and PDF-data and creates thumbnails for the user interface. 
 
 
 
 Useful are 
 
-- Detex : extracts the content (text) from TeX-files (MIME-type text/x-tex ) and removes the TeX-commands. Antiword : extracts full text from older Word-files (MIME-type text/application-msword ).xscc.awk : extracts comments from source code. The NSRL-library (imported into an Oracle Berkeley DB 4 or 5). 
+- Detex [^Information on Detex available at: https://www.cs.purdue.edu/homes/trinkle/detex/ . ]: extracts the content (text) from TeX-files (MIME-type "text/x-tex ") and removes the TeX-commands. [^The renunciation of formats optimizes the performance at the full-text search. ]Antiword [^Information on Antiword available at: http://www.winfield.demon.nl/ . ]: extracts full text from older Word-files (MIME-type "text/application-msword ").xscc.awk [^Information on xscc.awk available at: http://amit.chakradeo.net/files/xscc.awk.txt . ]: extracts comments from source code. The NSRL-library (imported into an Oracle Berkeley DB 4 or 5). 
 - md5sum: creates a checksum (necessary, when the NSRL-bibrary is used). 
 
 
@@ -97,7 +97,7 @@ The following simplified scheme displays the system architecture:
 ## System Architecture. 
 
 
-The Indexer’s research and user interface was designed according to the KISS-principle. The core functionality of current search engines is created around a simple search slot offering options through a faceted search (see Figure 5) as automatic search suggestions. 
+The Indexer’s research and user interface was designed according to the KISS-principle. [^"Keep it simple, stupid ", definition online: https://en.wikipedia.org/wiki/KISS_principle . ]The core functionality of current search engines is created around a simple search slot offering options through a faceted search (see Figure 5) as automatic search suggestions. 
 
 
 ## Search field with auto-completion. 
@@ -127,16 +127,16 @@ The Indexer has been amended in a variety of aspects. As regards to the indexing
 ### National Software Reference Library 
 
 
-At a talk on the Kittler-project a listener referenced the free National Software Reference Library (NSRL) of the American National Institute of Standards and Technology (NIST) . Even though the NSRL aims to alleviate forensic analysis in the context of (suspected) cyber crime, the basic approach is to eliminate known and non-unique data. This is also useful in the domain of digital archiving .The NSRL version 2.42 from September 2013 of the type Minimal , which we integrated into the Indexer for the new recognition module, contains cryptographic hash values (MD5 and SHA-1) of 33,992,326 commercial or free files, as well as information on software packages and manufacturers. Figure 8 shows how a Kittler-source code-file CALLTEST.C could be identified through its hash value as part of the software package Borland C++ . Therefore, it can be identified as an example program and not as source code written by Kittler. 
+At a talk on the Kittler-project a listener referenced the free National Software Reference Library (NSRL) of the American National Institute of Standards and Technology (NIST) . Even though the NSRL aims to alleviate forensic analysis in the context of (suspected) cyber crime, [^"In most cases, NSRL file data is used to eliminate known files, such as operating system and application files during criminal forensic investigations. This reduces the number of files which must be manually examined and thus increases the eﬃciency of the investigation. "]the basic approach is to eliminate known and non-unique data. This is also useful in the domain of digital archiving .The NSRL version 2.42 from September 2013 of the type Minimal , which we integrated into the Indexer for the new recognition module, contains cryptographic hash values (MD5 and SHA-1) of 33,992,326 commercial or free files, as well as information on software packages and manufacturers. [^The full version describes 114,095,237 files, but hashes occur repeatedly. Also, the 34 million records of the minimal version were hardly manageable in MySQL, so that for the main table of the NSRL a less demanding Berkeley database was used. ]Figure 8 shows how a Kittler-source code-file CALLTEST.C could be identified through its hash value as part of the software package Borland C++ . Therefore, it can be identified as an example program and not as source code written by Kittler. 
 
 
 ### Identifcation of a .c source file with NSRL. 
 
 
-The example also reveals that even in the minimal NSRL, the product code is not unique. Due to the NSRL recognition module, we can determine that certain files are not Kittler’s. Further identification of software products, especially which system software version Kittler used, cannot be stated precisely. Without any manual research, the tool identified almost 570,000 files (around one third of the total) as user applications or system software mostly irrelevant to further indexing procedures. This is a good hit rate, since Gentoo-Linux is not a binary distribution but has to be fully compiled on its own. It goes without saying that for the most part, the remaining two thirds are also comprised of non-Kittler-files. In close examination, the qualitative gain becomes visible: without any search restrictions, 282,557 files are actually identified as C-source code. If one enters the search term fak with which Friedrich Adolf Kittler signed his comments, 1,176 hits remain. Nine of them, however, were found in the NSRL (they use fak as the name of variables). 
+The example also reveals that even in the minimal NSRL, the product code is not unique. Due to the NSRL recognition module, we can determine that certain files are not Kittler’s. Further identification of software products, especially which system software version Kittler used, cannot be stated precisely. Without any manual research, the tool identified almost 570,000 files (around one third of the total) as user applications or system software mostly irrelevant to further indexing procedures. This is a good hit rate, since Gentoo-Linux is not a binary distribution but has to be fully compiled on its own. It goes without saying that for the most part, the remaining two thirds are also comprised of non-Kittler-files. In close examination, the qualitative gain becomes visible: without any search restrictions, 282,557 files are actually identified as C-source code. If one enters the search term "fak "with which Friedrich Adolf Kittler signed his comments, 1,176 hits remain. Nine of them, however, were found in the NSRL (they use "fak "as the name of variables). 
 
 
-### Distillation of relevant files. 
+### "Distillation "of relevant files. 
 
 
 
@@ -153,16 +153,16 @@ Currently, there are three roles:
 - administrator 
 
 
-Editors and authorized users are allowed to change the traffic light settings , whereas only administrators can lock or unlock data files for all other roles. This is necessary for private content, which is per agreement locked for sixty years. Locking of data records is in general precarious but absolutely necessary. It is therefore subject to specific security measures and can only be imposed or removed by the administrators or the heiress. 
+Editors and authorized users are allowed to change the traffic light settings , whereas only administrators can lock or unlock data files for all other roles. This is necessary for private content, which is per agreement locked for sixty years. Locking of data records is in general precarious but absolutely necessary. It is therefore subject to specific security measures and can only be imposed or removed by the administrators or the heiress. [^In the case of problematic content where the instance (the file) is still displayed, a disclaimer can be integrated to inform the user, that the content does not derive from the author but is often created by net-related foreign content (spam, ads, junk). ]
 
 
-### Keys of file states ( lights and lock) 
+### Keys of file states ( "lights "and lock) 
 
 
 The system records every change together with the logged-in user names, so that it remains transparent as to who withdrew usage rights from documents. To enable a fast release of more than one document (for instance from a list of search results), dialogue boxes were avoided and the function was directly integrated into the list view. To execute the mass release function/lockage a script in server-side mode is implemented. 
 
 
-### Search result with traffic lights and locking state 
+### Search result with "traffic lights "and locking state 
 
 
 
@@ -196,19 +196,19 @@ And the following libraries/frameworks
 
 - HTML/JavaScript 
 
-- Bootstrap 
-- jquery 
-- jquery-ui 
-- backbone.js 
-- underscore.js 
-- visualsearch 
+- Bootstrap [^Information on Bootstrap available at: http://getbootstrap.com/ ]
+- jquery [^Information on jquery available at: http://jquery.com ]
+- jquery-ui [^Information on jquery-ui available at: http://jqueryui.com/ ]
+- backbone.js [^Information on backbone.js available at: http://backbonejs.org/ ]
+- underscore.js [^Information on underscore.js available at: http://underscorejs.org/ ]
+- visualsearch [^Information on visualsearch available at: http://documentcloud.github.io/visualsearch/ ]
 
 
 - Backend (PHP) 
 
-- Solarium 
-- Symfony 
-- ADOdb 
+- Solarium [^Information on Solarium available at: http://www.solarium-project.org/ ]
+- Symfony [^Information on Symfony available at: http://symfony.com/ ]
+- ADOdb [^Information on ADOdb available at: http://phplens.com/addb/ ]
 
 
 
@@ -225,7 +225,7 @@ The Indexer has proven itself as a powerful filtering tool, which automatically 
 
 The first impression of 2012 seems to be confirmed. Kittler’s digital estate is a testing ground, the complexity of which will not be seen again any time soon. The developed procedures, though, are principally applicable to other digital estates and more hard drives and media from other inheritances have arrived. 
 
-The Indexer itself, which was developed without any funding, will be continued as a community project, perhaps in cooperation with the BitCurator consortium. 
+The Indexer itself, which was developed without any funding, will be continued as a community project, perhaps in cooperation with the BitCurator consortium. [^Information on the BitCurator consortium: http://www.bitcurator.net/ . ]
 
 
 # notes

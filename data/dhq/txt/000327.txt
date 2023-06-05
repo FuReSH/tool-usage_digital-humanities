@@ -5,7 +5,7 @@
 
 Over the past few decades, an ever-growing amount of cultural heritage collections has been digitised and made available online. In principle, the materials in these collections are now available to larger audiences than ever before. In practice, the accessibility of many online collections is limited by the absence of easy, user-friendly ways to explore the collection and get an overview of their contents . This may result in users accessing only materials they already know or expect to be in the collection, while unknown items remain hidden. Finally, accessibility for the general public will be reduced if a collection is presented mainly from an expert perspective . 
 
-Whitelaw proposes to improve accessibility of online collections by designing so-called generous interfaces, rich, browsable interfaces that reveal the scale and complexity of digital heritage collections by allowing the whole content of a database to be accessed from a single starting point . This is a similar solution to the rich-prospect browsers proposed by Ruecker et al., which show a visual representation of every item in a given collection, combined with tools for manipulating the display . 
+Whitelaw proposes to improve accessibility of online collections by designing so-called generous interfaces, "rich, browsable interfaces that reveal the scale and complexity of digital heritage collections "by allowing the whole content of a database to be accessed from a single starting point . This is a similar solution to the rich-prospect browsers proposed by Ruecker et al., which show "a visual representation of every item in a given collection, combined with tools for manipulating the display ". 
 
 In this paper we demonstrate the use of a user-centred design approach for the development of generous interfaces/rich-prospect browsers for an online cultural heritage collection, by determining its primary user groups and designing different browsing tools to cater to their specific needs . In doing so, we address the following problems faced by many online cultural heritage collections: 
 
@@ -42,7 +42,7 @@ The poll ran for around 3 weeks in the spring of 2015 and was filled in by 226 u
 
 
 
-# Responses of visitors of the Dutch Folktale Database website to the question What do you want to use the information from the Folktale Database for? 
+# Responses of visitors of the Dutch Folktale Database website to the question "What do you want to use the information from the Folktale Database for? "
 
 
 | Use of the Dutch Folktale Database  || 2015  (n=226, single choice per user)  || 2012/2013  (n=88, multiple choices per user)  |
@@ -152,7 +152,7 @@ The next step was the design of the search interface. We created several alterna
 ## The final design of the faceted search interface. The implementation of this final design can be found at http://www.verhalenbank.nl/solr-search . 
 
 
-We tested the usability of the new search interface using a Dutch translation of the Standard Usability Test (SUS) . In this test, participants indicate their level of agreement with ten statements on a Likert scale ranging from 1 to 5. Example statements include, I found the system unnecessarily complex and I thought the system was easy to use . The new design was tested by nine participants recruited from a public library. We expected library visitors to be more likely than the average person to have an interest in folktales, and thus to more be representative of our target group of causal users. To compare the usability of the new search interface with that of the old version, we also tested the old search interface. The test of the old version involved a total of 14 participants: five library visitors, eight bachelor students from our university (study programme: Creative Technology), and one actual visitor of the Dutch Folktale Database who reacted to a call for participants on the website. None of the participants had used either of the tested interfaces before. 
+We tested the usability of the new search interface using a Dutch translation of the Standard Usability Test (SUS) . In this test, participants indicate their level of agreement with ten statements on a Likert scale ranging from 1 to 5. Example statements include, "I found the system unnecessarily complex "and "I thought the system was easy to use ". The new design was tested by nine participants recruited from a public library. We expected library visitors to be more likely than the average person to have an interest in folktales, and thus to more be representative of our target group of causal users. To compare the usability of the new search interface with that of the old version, we also tested the old search interface. The test of the old version involved a total of 14 participants: five library visitors, eight bachelor students from our university (study programme: Creative Technology), and one actual visitor of the Dutch Folktale Database who reacted to a call for participants on the website. None of the participants had used either of the tested interfaces before. 
 
 Participants were given a brief introduction to the Dutch Folktale Database, and were then asked to do a search using an initial query of their own choice. They were encouraged to explore the results page at their leisure, after which they filled in the SUS questionnaire. 
 

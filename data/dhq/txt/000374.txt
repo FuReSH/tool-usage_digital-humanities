@@ -10,9 +10,9 @@ The organizers had four primary objectives for the workshop:
 - to assess the current state of tools, services and infrastructure for the creation and preservation of digital editions and annotation of manuscripts, images, and related data objects; 
 - to determine the extent to which those tools, services and infrastructure that come closest to meeting the needs of our respective projects can be reused and linked together; 
 - to identify any apparent obstacles to their reuse and gaps in the functionality that they provide; 
-- to create a trading zone to foster dialogue between researchers, technologists, and librarians in the university, gallery, library, archive, and museum (GLAM) contexts regarding the functionality they would ideally like to see in an integrated image workspace. 
+- to create a trading zone [^On the concept and importance of "trading zones, "please see: . Galison suggests a model for cross-boundary collaboration through the development of new shared cultures and languages. He argues that different subcultures can collaborate and exchange knowledge at the local level, without global agreement, by developing an interlanguage that groups share and use to communicate. ]to foster dialogue between researchers, technologists, and librarians in the university, gallery, library, archive, and museum (GLAM) contexts regarding the functionality they would ideally like to see in an integrated image workspace. 
 
-Building on the insights of the distinguished group of scholars, curators, librarians, and technologists who participated in this two-day workshop , this work first will provide a general overview of the state of the field and then draft principles to help guide future development efforts. 
+Building on the insights of the distinguished group of scholars, curators, librarians, and technologists who participated in this two-day workshop [^In addition to the authors of the present work, the following individuals were also in attendance: John Abrahams (John Hopkins University), Alberto Campagnolo (Library of Congress), Hugh Cayless (Duke University/Digital Latin Library), Elijah Cooke (Roshan Institute for Persian Studies, University of Maryland), Hirad Dinavari (Library of Congress), Doug Emery (Schoenberg Institute for Manuscript Studies, University of Pennsylvania), Mahmood Gharavi (Columbia University), Ahmet T. Karamustafa (Roshan Institute for Persian Studies, University of Maryland), Fatemeh Keshavarz (Roshan Institute for Persian Studies, University of Maryland), Ida Meftahi (Roshan Institute for Persian Studies, University of Maryland), Patrick Murray-John (George Mason University/Omeka), Mark Patton (Johns Hopkins University), Simon Rettig (Freer Gallery of Art and Arthur M. Sackler Gallery), Raffaele Viglianti (Maryland Institute for Technology in the Humanities, University of Maryland), Joan Weeks (Library of Congress), and Jeffrey Witt (Loyola University Maryland). Daniel Gullo, Chad LaVigne, and William Straub from the Hill Museum and Manuscript Library also joined us for part of Friday afternoon to discuss the vHMML Reading Room. ], this work first will provide a general overview of the state of the field and then draft principles to help guide future development efforts. 
 
 
 # II. Problems and Desiderata 
@@ -22,7 +22,7 @@ Building on the insights of the distinguished group of scholars, curators, libra
 ## General Overview 
 
 
-While there has been tremendous advancement in the development of digital tools and platforms for the display and study of image data over the last decade, there is still no end-to-end solution that meets the myriad needs of scholars, curators, librarians, and students. This is not a criticism of the pioneering efforts of the developers of the existing tools and platforms. It is the result of the fact that there are an incredible number of diverse use cases, each of which demands different functionality and workflows. Users are also working with a wide variety of different sized collections and linguistic traditions that are not all well supported by current tools and platforms. 
+While there has been tremendous advancement in the development of digital tools and platforms for the display and study of image data over the last decade, there is still no end-to-end solution that meets the myriad needs of scholars, curators, librarians, and students. [^Henceforth, when we want to collectively refer to "scholars, curators, librarians, and students "we will use the term "users. "We will only use the more specific terms "scholars, ""curators, ""librarians, "or "students "when we want to differentiate one class of this broader category of "users "from the others. ]This is not a criticism of the pioneering efforts of the developers of the existing tools and platforms. It is the result of the fact that there are an incredible number of diverse use cases, each of which demands different functionality and workflows. Users are also working with a wide variety of different sized collections and linguistic traditions that are not all well supported by current tools and platforms. 
 
 This has led to a proliferation of tools and platforms that are specific to a particular collection or perform a discrete task (e.g., display, cataloging, transcription) — or, in some of the more well-developed tools, a set of discrete tasks — for the user. The tools and platforms listed in Table 1 are just some of the more popular tools and platforms that manuscript scholars report utilizing in their research. 
 
@@ -39,7 +39,7 @@ All of these platforms and tools have certain virtues and do certain tasks well.
 ## Requirements of Scholars, Curators, Librarians, and Technologists 
 
 
-Prior to the workshop we distributed a survey to colleagues in the Digital Humanities, Classics, Middle Eastern/Islamic Studies, and library science communities via the popular listservs associated with each. Twenty-seven respondents completed the entire survey. Admittedly, this was not a scientific or comprehensive survey, but its results are instructive and were echoed by many of the participants in the workshop itself. Before delving into the specific requirements of scholars, curators, and technologists, there are a couple general insights that emerged from this survey. 
+Prior to the workshop we distributed a survey to colleagues in the Digital Humanities, Classics, Middle Eastern/Islamic Studies, and library science communities via the popular listservs associated with each. [^For full list of the survey questions, see Appendix I. ]Twenty-seven respondents completed the entire survey. Admittedly, this was not a scientific or comprehensive survey, but its results are instructive and were echoed by many of the participants in the workshop itself. Before delving into the specific requirements of scholars, curators, and technologists, there are a couple general insights that emerged from this survey. 
 
 First, the sizes of the manuscript collections with which users are working vary widely. As can be seen in Figure 1 , the respondents to our survey are relatively evenly divided into the categories of small (< 100 mss), medium (100-999 mss), and large-scale (> 1,000 mss) users. The diversity in collection size is not surprising given the range of users — from scholars interested in studying a dozen manuscripts of one work to librarians and curators at large institutions with thousands of digital manuscripts — however, it should serve as a cautionary note for those looking to develop a universal, end-to-end solution for the diverse forms of manuscript study, display, and curation, which each have their own use cases and requisite workflows. 
 
@@ -62,7 +62,7 @@ Beyond these general observations, there was a wide array of other specific insi
 
 
 - A tool/workspace that aggregates previous scholarly comments on manuscripts of particular texts and authors; 
-- A collaborative space to draw on expertise of catalogers and content specialists of different areas (e.g., manuscript experts, textual scholars, art historians). As we heard repeatedly at the workshop, no one can do it alone ; 
+- A collaborative space to draw on expertise of catalogers and content specialists of different areas (e.g., manuscript experts, textual scholars, art historians). As we heard repeatedly at the workshop, "no one can do it alone "; 
 - Collaborative scholarly workflows (e.g., functionality and workflows that enable in digital space the scholarly workshop model of multiple scholars working together on one manuscript) and similar workflows for citizen science, knowledge-sourcing, or crowd-sourcing initiatives; 
 - Pedagogical workflows for use with students and citizen scientists ; 
 - Ability to access manuscript images from multiple digital repositories and use digital tools on them (i.e., a client application model); 
@@ -261,9 +261,9 @@ The following are our concluding insights and recommendations for future develop
 - Data must be easy to export and transform. 
 
 
-- We need to create more trading zones for technologists, librarians, curators, and scholars of manuscripts. 
+- We need to create more "trading zones "for technologists, librarians, curators, and scholars of manuscripts. 
 
-- We need to establish communities and spaces (i.e., trading zones ) composed of technologists, librarians, and scholars and develop interlanguages that facilitate collaboration. In the course of our workshop round tables with users, for example, it became clear that there are a number of types of functionality that users want but are unable to find in existing solutions and have not even been thought about before. Developers of such platforms will benefit from such trading zones through learning about the needs of their intended community of users, and thereby improve the overall design and functionality of the platform. 
+- We need to establish communities and spaces (i.e., "trading zones ") composed of technologists, librarians, and scholars and develop "interlanguages "that facilitate collaboration. In the course of our workshop round tables with users, for example, it became clear that there are a number of types of functionality that users want but are unable to find in existing solutions and have not even been thought about before. Developers of such platforms will benefit from such trading zones through learning about the needs of their intended community of users, and thereby improve the overall design and functionality of the platform. 
 
 
 - We need to better document the workflows and use cases our tools are meant to address. 
@@ -279,7 +279,7 @@ The following are our concluding insights and recommendations for future develop
 
 
 
-These insights and recommendations emerged from a collective effort of scholars, curators, and technologists to survey the state of digital tools available for manuscript study and curation. Through such trading zones we can come to a better understanding of the different emerging needs of these communities and increase their awareness about the status of digital infrastructure and the existing and emerging technologies. Such attempts can reduce redundancies and increase technological convergence. We hope these observations and recommendations encourage further collaboration between these communities and foster efforts aimed at co-creating shared extensible infrastructure. 
+These insights and recommendations emerged from a collective effort of scholars, curators, and technologists to survey the state of digital tools available for manuscript study and curation. Through such "trading zones "we can come to a better understanding of the different emerging needs of these communities and increase their awareness about the status of digital infrastructure and the existing and emerging technologies. Such attempts can reduce redundancies and increase technological convergence. We hope these observations and recommendations encourage further collaboration between these communities and foster efforts aimed at co-creating shared extensible infrastructure. 
 
 
 # Appendix I: Survey Information 
@@ -338,14 +338,14 @@ These insights and recommendations emerged from a collective effort of scholars,
 # Survey Distributed to the Following Scholarly Listservs: 
 
 
-- ArabicLitScholars 
-- Adabiyat 
-- IslamAAR 
-- Digital Classicist 
-- French DH 
-- The Digital Humanities Summer Institute 
-- Dublin Core Metadata Data Initiative - Cultural Heritage Task Group 
-- Association for Iranian Studies 
+- ArabicLitScholars (arabiclitscholars_at_utlists_dot_utexas_dot_edu) 
+- Adabiyat (adabiyat_at_lists_dot_uchicago_dot_edu) 
+- IslamAAR (islamaar_at_lists_dot_psu_dot_edu) 
+- Digital Classicist (digitalclassicist_at_jiscmail_dot_ac_dot_uk) 
+- French DH (dh_at_groupes_dot_renater_dot_fr) 
+- The Digital Humanities Summer Institute (institute_at_lists_dot_uvic_dot_ca) 
+- Dublin Core Metadata Data Initiative - Cultural Heritage Task Group (DC-CULTURAL-TG_at_jiscmail_dot_ac_dot_uk) 
+- Association for Iranian Studies (listserv_at_societyforiranianstudies_dot_org) 
 
 
 

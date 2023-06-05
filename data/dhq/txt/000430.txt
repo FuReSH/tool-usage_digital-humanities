@@ -31,45 +31,49 @@ This proposal has nothing to do either with the technology used to manipulate en
 # 2. A model of versions and layers 
 
 
-This model of versions and layers originally developed out of the author’s own work on the manuscripts of Ludwig Wittgenstein . It is most closely related to what Hans Walter Gabler calls the German school of editorial scholarship , including the historical-critical edition, in which the critical component referred not so much to the establishment of the text but to the analysis or critique of the text’s genesis and history . Gabler perhaps coined the term layers in his 1986 edition of Ulysses although the concept seems to apply only to levels of local revision. The same concept was taken over into the HyperNietzsche Markup Language . A similar approach is also taken in genetic editions like Dietrich Sattler’s Hölderlin, where the apparatus is placed inline by graphically arranging variants above the line of text they pertain to. As Sattler says, this results in a text where the variants are readable in their true context, not removed to a distant apparatus . The concept is basically the same here, except that it has been translated from the printed page into a simple arrangement of plain-text files. 
+This model of versions and layers originally developed out of the author’s own work on the manuscripts of Ludwig Wittgenstein . It is most closely related to what Hans Walter Gabler calls the "German school of editorial scholarship ", including the historical-critical edition, in which the "critical "component referred not so much to the establishment of the text but to the analysis or critique of the text’s genesis and history . Gabler perhaps coined the term "layers "in his 1986 edition of Ulysses although the concept seems to apply only to levels of local revision. The same concept was taken over into the HyperNietzsche Markup Language . A similar approach is also taken in genetic editions like Dietrich Sattler’s Hölderlin, where the apparatus is placed inline by graphically arranging variants above the line of text they pertain to. As Sattler says, this results in a text where the variants are readable in their true context, not removed to a distant apparatus . The concept is basically the same here, except that it has been translated from the printed page into a simple arrangement of plain-text files. 
 
 Out of the three classes of texts described in the introduction: printed books, medieval manuscript copies of earlier texts and modern holographs, the examples explored below use mostly the third category. This is because the model pertains to the process of writing itself, not to a particular text-type. Holographs were chosen because they typically exhibit higher levels of internal variation than the other two, and for the model to be universal it has to cater for the worst-case scenario. This is not meant to imply that the three classes of text are equivalent, except in so far as they all represent the phenomena of writing or printing on paper, parchment or other physical surfaces. 
 
-The examples are mostly taken from the manuscripts of the Australian poet Charles Harpur (1813-1868). The Charles Harpur Critical Archive has obtained permission from their owner, the State Library of New South Wales, to publish the images and content of all Harpur-related material in its possession. Also, thanks to recent changes in Australian copyright law, from 2019 unpublished manuscripts will have the same copyright duration — 70 years after the death of the author — as printed works . So these texts form a very useful set of freely available examples from which to develop the model described here. They are also very varied in nature, consisting of newspaper cuttings, printed pamphlets and books, drafts of corrected manuscripts and letters. As will be demonstrated below, only a very small number of basic editing operations on handwritten texts are needed to put the proposed model of versions and layers into practice. The focus on Harpur does not introduce a bias because all the textual phenomena being explored here are common to virtually all handwritten texts, and examples of each phenomenon have been verified as also existing in the manuscripts of Melville’s Typee , Wittgenstein , Samuel Beckett , the Faust Edition and the Shelley-Godwin Archive . The markup schema described in the Text Encoding Initiative Guidelines Chapter 11 Transcription of Primary Sources provides higher-level or finer grained descriptions of these same basic textual phenomena . They can also be found in Bryant The Fluid Text . 
+The examples are mostly taken from the manuscripts of the Australian poet Charles Harpur (1813-1868). The Charles Harpur Critical Archive has obtained permission from their owner, the State Library of New South Wales, to publish the images and content of all Harpur-related material in its possession. Also, thanks to recent changes in Australian copyright law, from 2019 unpublished manuscripts will have the same copyright duration — 70 years after the death of the author — as printed works . So these texts form a very useful set of freely available examples from which to develop the model described here. They are also very varied in nature, consisting of newspaper cuttings, printed pamphlets and books, drafts of corrected manuscripts and letters. As will be demonstrated below, only a very small number of basic editing operations on handwritten texts are needed to put the proposed model of versions and layers into practice. The focus on Harpur does not introduce a bias because all the textual phenomena being explored here [^
+1. i.e. transpositions, connected variants, open variants, incoherent corrections, separately revised test-blocks, and restoration of previously deleted text. 
+]are common to virtually all handwritten texts, and examples of each phenomenon have been verified as also existing in the manuscripts of Melville’s Typee , Wittgenstein , Samuel Beckett , the Faust Edition and the Shelley-Godwin Archive . The markup schema described in the Text Encoding Initiative Guidelines Chapter 11 Transcription of Primary Sources provides higher-level or finer grained descriptions of these same basic textual phenomena . They can also be found in Bryant The Fluid Text . 
 
 Figure 1 shows one stanza taken from Harpur’s poem Vestibulary Stanzas in manuscript B78 written in 1855 . Seven changes can be discerned: 
 
 
 - 
-line 2: the transposition of is strung and too high 
+line 2: the transposition of "is strung "and "too high "
 
 - 
 line 2: the replacement of the entire line by line 1 
 
 - 
-line 4: the replacement of thy by his 
+line 4: the replacement of "thy "by "his "
 
 - 
-line 4: the replacement of I do mark in by all may guess from 
+line 4: the replacement of "I do mark in "by "all may guess from "
 
 - 
-line 4: the replacement of beaming eye by fervent tongue 
+line 4: the replacement of "beaming eye "by "fervent tongue "
 
 - 
-line 5: the replacement of blaze by fire 
+line 5: the replacement of "blaze "by "fire "
 
 - 
-line 5: the replacement of The inward rolling fire by How burns the fire within 
+line 5: the replacement of "The inward rolling fire "by "How burns the fire within "
 
 
 
-The temporal order of these changes can be determined in only two cases. It is clear that the transposition in line 2 preceded its replacement by line 1. Also the replacement of blaze by fire in line 5 preceded the replacement of The inward rolling fire by How burns the fire within . Other than these inferences, the exact sequence of changes here is unrecoverable. For instance, it is not clear if the poet changed line 2 before lines 4 and 5. All remaining changes have thus to be treated as independent of one another. 
+The temporal order of these changes can be determined in only two cases. It is clear that the transposition in line 2 preceded its replacement by line 1. Also the replacement of "blaze "by "fire "in line 5 preceded the replacement of "The inward rolling fire "by "How burns the fire within ". Other than these inferences, the exact sequence of changes here is unrecoverable. For instance, it is not clear if the poet changed line 2 before lines 4 and 5. All remaining changes have thus to be treated as independent of one another. 
 
 Some definitions may now be put forward: 
 
 Definition 1: A change is independent if it can be carried out without affecting the sense, grammar or metre of the rest of the text. 
 
-Definition 2: A state is a hypothetical or actual reading of part of the text before or after one or more independent changes have been carried out or not. 
+Definition 2: A state is a hypothetical or actual reading of part of the text before or after one or more independent changes have been carried out or not. [^
+2. Scholarly editors typically use the term ‘state’ to indicate a document- or version-wide text. The technical requirement addressed here suggests its adaptation for local sites of textual revision. In fact this parallels, theoretically if not practically, the detection by bibliographers from the 1940s of in-press correction during the printing of Shakespeare’s First Folio. Printed sheets were not discarded, leading to variation in states of the text among copies made during the same print run. In the handpress period, no two surviving copies of the same edition of a printed work need necessarily bear the same state of the text. 
+]
 
 For example, line 4 may have once been in any of the following states: 
 
@@ -84,13 +88,13 @@ For example, line 4 may have once been in any of the following states:
 - And all may guess from his too fervent tongue 
 
 
-All possibilities are equally valid here, but the final state of the entire line is clearly And all may guess from his too fervent tongue . 
+All possibilities are equally valid here, but the final "state "of the entire line is clearly "And all may guess from his too fervent tongue ". 
 
 Also, following Bryant’s terminology, we offer: 
 
 Definition 3: A revision site is a hot-spot or cluster of dependent changes at some point in the text-stream. 
 
-In Figure 2 the substitutions and deletions the/his , whereon they/on which his spirit , to burn , the/some , to burn and , are revision-sites. Changes that are local to one revision-site are less likely to be connected with changes elsewhere in the same manuscript the further apart they are. A change at the start of a document is very probably (although not certainly) unrelated to a change at its end. Even changes in the same stanza, as in the example above, are more likely to be unrelated than related. 
+In Figure 2 the substitutions and deletions "the/his ", "whereon they/on which his spirit ", "to burn ", "the/some ", "to burn "and ", "are revision-sites. Changes that are local to one revision-site are less likely to be connected with changes elsewhere in the same manuscript the further apart they are. A change at the start of a document is very probably (although not certainly) unrelated to a change at its end. Even changes in the same stanza, as in the example above, are more likely to be unrelated than related. 
 
 Figure 2, from the same manuscript , is an example where several changes are related by grammar and sense. 
 
@@ -108,7 +112,7 @@ like some peculiar star of night,
 
 To burn Eternally apart — ) 
 
-The substitutions: whereon they by on which his spirit and stars by star are related by grammar, and were presumably carried out at the same time, not independently — the plural stars according with they and not his . Similarly, the deletion of To burn and its reinsertion on the final line are related by sense. However, each of these two sets of changes taken as a whole is independent of the other, and thus acts as a single independent change. 
+The substitutions: "whereon they "by "on which his spirit "and "stars "by "star "are related by grammar, and were presumably carried out at the same time, not independently — the plural "stars "according with "they "and not "his ". Similarly, the deletion of "To burn "and its reinsertion on the final line are related by sense. However, each of these two sets of changes taken as a whole is independent of the other, and thus acts as a single independent change. 
 
 This independency of individual or grouped dependent changes has an unfortunate mathematical consequence for storage. Each independent change consists of at least two states (carried out or not), so over the entire document the number of possible texts obtainable will be at least 2×2...or 2 N , where N is the total number of independent changes. In the single stanza in Figure 1, as described above, there were 3 independent changes and two pairs of temporally dependent changes, each having 3 states, for a total of 2 3 ×3 2 = 72 possible texts. Over an entire document the total number of possible texts will be exponentially large. For just 100 independent changes we have 2 100 or approximately 1.267 × 10 30 possible texts or 1267 with 27 zeroes after it. Many documents will contain far more changes than that. So any attempt to store all possible states of a document’s contents in this exhaustive fashion is bound to fail. 
 
@@ -172,7 +176,7 @@ How burns the fire within that bodes a wayward fate.
 
 
 
-An obvious objection here is that the author almost certainly never wrote layers 1 and 2. Mathematically, the chances that he did so in this case are just 1 in 72. However, so long as it is remembered that the only layer that ought to be considered a version is Layer-final , the objection is moot. Layers are merely a mechanism to record local changes, not a record of how the scribe or author wrote the document as a whole. They do not constitute an ontological claim. So long as it is remembered which transcriptions are layers, and which can be considered versions, no confusion should arise. 
+An obvious objection here is that the author almost certainly never wrote layers 1 and 2. Mathematically, the chances that he did so in this case are just 1 in 72. However, so long as it is remembered that the only layer that ought to be considered a version is "Layer-final ", the objection is moot. Layers are merely a mechanism to record local changes, not a record of how the scribe or author wrote the document as a whole. They do not constitute an ontological claim. So long as it is remembered which transcriptions are layers, and which can be considered versions, no confusion should arise. 
 
 
 ## 2.2 Deletion, insertion, substitution and transposition 
@@ -184,13 +188,13 @@ Furthermore, by marking the text as deleted or inserted etc., current digital en
 
 An example in Harpur can be found in The Bard of Paradise : 
 
-Harpur first wrote speckless before squeezing in gleaming above it. But speckless is not crossed-out and the added pair of brackets indicates that the author considered them both viable alternatives that, in this manuscript, he did not go on to resolve. For the proposed layering approach the usual assumption that text in an earlier layer is deleted may be resolved via markup. By this means the earlier variant can be labelled as undeleted without overly complicating the encoding of the layer itself. As we have seen, the layering approach is justified by its efficiency: even in the very uncommon case of open variants when markup cannot be avoided considerable savings in coding can nevertheless be realised. 
+Harpur first wrote "speckless "before squeezing in "gleaming "above it. But "speckless "is not crossed-out and the added pair of brackets indicates that the author considered them both viable alternatives that, in this manuscript, he did not go on to resolve. For the proposed layering approach the usual assumption that text in an earlier layer is deleted may be resolved via markup. By this means the earlier variant can be labelled as "undeleted "without overly complicating the encoding of the layer itself. As we have seen, the layering approach is justified by its efficiency: even in the very uncommon case of open variants when markup cannot be avoided considerable savings in coding can nevertheless be realised. 
 
 
 ## 2.3 Versions 
 
 
-Although the term version has been used variously by scholarly editors, the definition proposed here is practical and simple: 
+Although the term "version "has been used variously by scholarly editors, the definition proposed here is practical and simple: 
 
 Definition 5: A version is a single document-wide state of the text, determinable with reasonable certainty, in which the author or scribe completed or abandoned the entire documentary text at some point in time. 
 
@@ -202,7 +206,7 @@ Professionally produced manuscripts may contain similar internal versions. Many 
 
 The baseline text A was revised in three distinct hands A 1 , A 2 and A 3 . A 1 is probably the scribe himself, fixing simple mistakes of spelling. A 2 is probably a different but contemporary hand in which titles are added in the margins. A 3 is a Roman cursive hand of the second century or later . So A 1 is probably a layer of the first version, while A 2 and A 3 form two new versions, which subsume the final corrected texts of A 1 and A 2 respectively. In Figure 7 the three lines inserted at the top are by A 3 (a faint marginal mark inserts them before line 6), the title in the left margin ΙΩ ΑΘΗΝΑΙΟΙΣ was added by A 2 and the correction of ΧΑΛΚΕΝΤΥΠΟΥ to ΧΑΛΚΕΟΤΥΠΟΥ in line 7 was by A 1 . 
 
-Bryant likewise sees three internal versions in Melville’s Typee manuscript, which he calls transcription, transformation, and translation . Van Hulle and Neyt call internal versions revision campaigns when they can be reliably distinguished by a new writing instrument or change of ink . 
+Bryant likewise sees three internal versions in Melville’s Typee manuscript, which he calls "transcription, transformation, and translation ". Van Hulle and Neyt call internal versions "revision campaigns "when they can be reliably distinguished by a new writing instrument or change of ink . 
 
 However, in the absence of such information about discernible pens or differences in handwriting or style most holographs contain only one version. It is up to the human editor to decide whether a correction belongs to a specific layer or version. 
 
@@ -218,11 +222,11 @@ This model of versions and layers has certain advantages. These can be appreciat
 
 In the embedded markup method variants within a document are inserted directly into the text-stream wherever the transcriber encounters a revision-site. 
 
-Many markup languages have been proposed that adopt an embedded or inline approach to recording variants. (In what follows the terms inline and embedded are used interchangeably.) One of the earliest was MECS ( multi-element encoding system ), which evolved from the Wittgenstein markup developed at Tübingen in the 1970s . The same technique was later used in the TEI (Text Encoding Initiative) Guidelines, and in many ad hoc markup systems developed for individual editions, such as the Tagore Bichitra . In order to illustrate the disadvantages of inline recording of variants, a simple hypothetical markup language may be used that maintains the generality of the argument, while ensuring clarity, without reference to any specific system of markup. The language is defined by four rules: 
+Many markup languages have been proposed that adopt an embedded or inline approach to recording variants. (In what follows the terms "inline "and "embedded "are used interchangeably.) One of the earliest was MECS ( multi-element encoding system ), which evolved from the Wittgenstein markup developed at Tübingen in the 1970s . The same technique was later used in the TEI (Text Encoding Initiative) Guidelines, and in many ad hoc markup systems developed for individual editions, such as the Tagore Bichitra . In order to illustrate the disadvantages of inline recording of variants, a simple hypothetical markup language may be used that maintains the generality of the argument, while ensuring clarity, without reference to any specific system of markup. The language is defined by four rules: 
 
 
-- Deletions are enclosed in [ and ] . 
-- Insertions are enclosed in < and > . 
+- Deletions are enclosed in "[ "and "] ". 
+- Insertions are enclosed in "< "and "> ". 
 - Insertions and deletions may nest: inner ones are earlier than those on the outside. 
 - Insertions and deletions that immediately follow one another with no intervening spaces indicate a temporal succession from left to right. 
 
@@ -237,11 +241,15 @@ And [I do mark in]<all may guess from> [thy]<his> too [beaming eye]<fervent tong
 
 [[The inward rolling][blaze]<fire>]<How burns the fire within> that bodes a wayward fate. 
 
-The presence of the embedded variants here makes it difficult for a human editor to see in what state the text was at any stage in its revision, and requires him or her to visualise a complex series of steps using abstract symbols. The heavier the corrections the harder this task becomes. Occasionally our trained Harpur transcribers would even decline to encode Harpur’s more complex passages. For instance, one noted: Lines 15 and 31 contain numerous additions and deletions; only the final intentions have been transcribed here. 
+The presence of the embedded variants here makes it difficult for a human editor to see in what state the text was at any stage in its revision, and requires him or her to visualise a complex series of steps using abstract symbols. The heavier the corrections the harder this task becomes. Occasionally our trained Harpur transcribers would even decline to encode Harpur’s more complex passages. For instance, one noted: "Lines 15 and 31 contain numerous additions and deletions; only the final intentions have been transcribed here. "
 
-Searching will also be impaired, since the inline variants interfere with the retrieval of literal expressions. Search engines typically don’t see the markup. All they see is the text in the nonsensical word-order given above. As a result, searching for the literal phrase All may guess from his too fervent tongue , as finally formulated by the author, will not be found, while the expression ‘rolling blaze fire How burns the fire within’ will be found, even though the author never wrote it. 
+Searching will also be impaired, since the inline variants interfere with the retrieval of literal expressions. Search engines typically don’t see the markup. All they see is the text in the nonsensical word-order given above. As a result, searching for the literal phrase "All may guess from his too fervent tongue ", as finally formulated by the author, will not be found, while the expression ‘rolling blaze fire How burns the fire within’ will be found, even though the author never wrote it. [^
+3. While keyword search will retrieve all documents containing all or most of the words in a search expression but in any order, literal search is more useful for finding specific expressions. A survey by the author of 30 digital scholarly editions revealed that only 10% of editions could find literal expressions that span inline substitutions . 
+]
 
-When comparing two versions of a text, inline variants get in the way and must first be removed . Computer algorithms commonly used in the humanities for collating texts such as Heckel (1978) and Myers (1987) are not designed to handle inline variants. And no one has yet demonstrated a reliable method for comparing texts that contain them, or proven that it is technically feasible. 
+When comparing two versions of a text, inline variants get in the way and must first be removed . Computer algorithms commonly used in the humanities for collating texts such as Heckel (1978) and Myers (1987) are not designed to handle inline variants. And no one has yet demonstrated a reliable method for comparing texts that contain them, or proven that it is technically feasible. [^
+4. Dekker et al. 2015 attempt to overcome this problem by treating internal variants either as formats, or by marking them up as variant clusters to be passed through the collation engine without change. However, as yet they have offered no mathematical model that might vindicate this approach as a general solution for comparing texts containing embedded variants. Schäuble and Gabler (2018) achieved a partial success by extracting the first and last layers of document transcriptions containing embedded variants, and then used a collation tool to compute the differences between versions which were then used to create an intermediary transcription between documents . The "first "layer includes currente calamo corrections , both deletions and their replacements. 
+]
 
 
 ## 3.2 Difficulty of overcoming these problems 
@@ -255,7 +263,7 @@ One obvious solution to some of these problems would be to write a program to ex
 
 The original state of a text before any changes were made might seem to be one that could be readily recovered from an embedded encoding of variants, by simply accepting only first-level variants and simple deletions, and rejecting all others. However, the presence of corrections made in the process of writing, or currente calamo , as shown in Figure 8 , makes this difficult or impossible. 
 
-Here the author progressively revised the text as he wrote it. He started the sentence with All his , then corrected this immediately to The whole of his poetry . Later he started writing his political effusions lack th... then corrected this to his political effusions are wanting... then corrected the last two words to: are greatly wanting . All these changes were carried out on the baseline . Simply encoding them as deletions — as they appear on the page — and then writing a program to extract the original text before deletion would result in the nonsense: All his The whole of his poetry would be better for more plainness; while his political effusions lack th are wanting greatly wanting.... 
+Here the author progressively revised the text as he wrote it. He started the sentence with "All his ", then corrected this immediately to "The whole of his poetry ". Later he started writing "his political effusions lack th... "then corrected this to "his political effusions are wanting... "then corrected the last two words to: "are greatly wanting ". All these changes were carried out on the baseline . Simply encoding them as deletions — as they appear on the page — and then writing a program to extract the original text before deletion would result in the nonsense: "All his The whole of his poetry would be better for more plainness; while his political effusions lack th are wanting greatly wanting.... "
 
 
 ### 3.2.2 Interpretation in markup 
@@ -263,7 +271,7 @@ Here the author progressively revised the text as he wrote it. He started the se
 
 Marking up a text is generally agreed to be an interpretative act . Interpretation must therefore govern the choice of codes and their application to the representation of inline variants. Extracting coherent texts for searching, reading, or comparison from such transcriptions thus requires, at the very least, the writing of customised software for each set of documents encoded in a project-specific set of conventions. This is further complicated by the fact that even trained encoders have different understandings of what they are looking at on the page and therefore how to encode it. They may even change their encoding practice from day to day . For Harpur we found that over 30 different ways had been used by just three transcribers to record second-level corrections. Even if an encoding can be made syntactically consistent we must ask can it also be made semantically consistent: i.e. does each specific instance of an encoding always mean exactly the same thing, and is the same kind of textual phenomenon always encoded in the same way? 
 
-An example of the potential for semantic variation is shown in Figure 9. Taken from an early manuscript of Dawn and Sunrise in the Snowy Mountains , the revisions at the start of the line might be validly encoded in our simplified markup language as And Then [And] or equally as <And Then>[And] or as <And <Then>>[And] . However, the use of capitals at the start of all three words indicates that Harpur revised the text by gradually adding words to the left, so a better encoding might be to reverse the order: [And][<Then>]<And Then>. The question then becomes, how can software process alternative formulations of the same thing in a consistent fashion, and how can it determine the context of each change? 
+An example of the potential for semantic variation is shown in Figure 9. Taken from an early manuscript of Dawn and Sunrise in the Snowy Mountains , the revisions at the start of the line might be validly encoded in our simplified markup language as "And Then [And] "or equally as "<And Then>[And] "or as "<And <Then>>[And] ". However, the use of capitals at the start of all three words indicates that Harpur revised the text by gradually adding words to the left, so a better encoding might be to reverse the order: [And][<Then>]<And Then>. The question then becomes, how can software process alternative formulations of the same thing in a consistent fashion, and how can it determine the context of each change? 
 
 
 ### 3.2.3. Conflict between graphical and temporal encoding 
@@ -299,9 +307,9 @@ Layers can be grouped within folders or directories, one folder for each version
 # 4. Disadvantages of versions and layers 
 
 
-The main disadvantage of the layering and versioning approach is, at present, its unfamiliarity. Current editors of modern manuscripts who, are used to embedding variants in the transcription as they encounter them, would need to adjust their practice. Technicians who process the transcriptions would also need to learn new, albeit simpler, techniques. To be adapted to the new approach existing texts would have to be converted by splitting them into layers. Although practicable, this would involve some customisation of the conversion software to accommodate different encoding conventions, as well as manual intervention in difficult cases of textual variation. These costs would not be insignificant, but they would all be short-term, and outweighed by the longer-term benefits. For new projects using layers from the start these problems would not exist. 
+The main disadvantage of the layering and versioning approach is, at present, its unfamiliarity. Current editors of modern manuscripts, who are used to embedding variants in the transcription as they encounter them, would need to adjust their practice. Technicians who process the transcriptions would also need to learn new, albeit simpler, techniques. To be adapted to the new approach existing texts would have to be converted by splitting them into layers. Although practicable, this would involve some customisation of the conversion software to accommodate different encoding conventions, as well as manual intervention in difficult cases of textual variation. These costs would not be insignificant, but they would all be short-term, and outweighed by the longer-term benefits. For new projects using layers from the start these problems would not exist. 
 
-The computation of differences between versions and layers is sometimes imperfect. For example, in the text of Figure 11 : Nought might reward the his the aim blow, however true; a difference tool would compute the second the to be shared by layers 1 and 3, whereas in fact it was deleted and then restored. 
+The computation of differences between versions and layers is sometimes imperfect. For example, in the text of Figure 11 : "Nought might reward the his the aim blow, however true; "a difference tool would compute the second "the "to be shared by layers 1 and 3, whereas in fact it was deleted and then restored. 
 
 In the Harpur manuscripts about 2% of inline variants are restorations of earlier readings. Although this detail is not recorded in the layer representation itself it will still be visible in the facsimile, and if the page image is connected closely with the text this can easily be checked by the reader or editor. Although small inaccuracies such as these may be inherent in the layer model they are very much dwarfed by the widely recognised inaccuracies and limitations of hierarchical markup systems for representing internal variation . Heavily revised holographs are also extremely difficult to record using embedded markup, because the encoding quickly becomes too complex, but this difficulty is not shared by the layering technique, where the text of each layer is always simple, however complex the revisions. Variants are also not allowed to overlap when using embedded hierarchical markup, but with layering they are. This is a significant advantage. 
 
@@ -315,13 +323,15 @@ Although the model of versions and layers presented here greatly simplifies the 
 
 The preparation of versions and layers can be accomplished using a simple plain text editor. The transcriber may display the source document as an image on one side of the computer screen, and copy the transcribable text on the right, starting with the text’s final state. Once a complete copy of this has been obtained it may be regarded as sufficient in itself. If not, further layers can be transcribed by copying the final layer, and then undoing the topmost change at each local revision-site to record, successively, the lower layers. If the deleted text in some layer is unreadable due to being obscured by overwriting or crossing-out, such cases can be dealt via markup (internal or external) to indicate unclear or missing text. 
 
-Embedded mathematical formulae and graphics, as found for example in the Wittgenstein manuscripts , can be treated similarly. An approximation of the formula or graphic in plain text can be used to serve as a placeholder. For example, the formula x 2 could be written x^2 or an image as [picture of a ship] . This placeholder can then be marked up externally with the actual formula or graphic, and rendered using appropriate software into more elegant forms that replace the placeholder with the actual formula or graphic. In this way all content, textual or otherwise, can be recorded successfully in layers. 
+Embedded mathematical formulae and graphics, as found for example in the Wittgenstein manuscripts , can be treated similarly. An approximation of the formula or graphic in plain text can be used to serve as a placeholder. For example, the formula x 2 could be written "x^2 "or an image as "[picture of a ship] ". This placeholder can then be marked up externally with the actual formula or graphic, and rendered using appropriate software into more elegant forms that replace the placeholder with the actual formula or graphic. In this way all content, textual or otherwise, can be recorded successfully in layers. 
 
 
 ## 5.1 Comparison of versions and layers 
 
 
-The final piece of technology needed to make this model work is the ability to compute differences. Since the versions and layers are plain texts (or, if marked-up may be recovered as plain texts) they can simply be compared with each other. Such software is available now and will be in the future, since computation of differences is a fundamental computing problem. For example, computer scientists use difference-computing tools to save revisions of computer code for later restoration. Difference-computing software can evolve over time without affecting the simple representation of the textual data as versions and layers. 
+The final piece of technology needed to make this model work is the ability to compute differences. Since the versions and layers are plain texts (or, if marked-up may be recovered as plain texts) they can simply be compared with each other. Such software is available now and will be in the future, since computation of differences is a fundamental computing problem. For example, computer scientists use difference-computing tools to save revisions of computer code for later restoration. Difference-computing software can evolve over time without affecting the simple representation of the textual data as versions and layers. [^
+5. While striving to keep the argument on a purely theoretical footing, some examples of suitable textual alignment tools would establish the practicality of the alignment process. Bourdaillet and Ganascia (2006) with MEDITE were the first to show that Ukkonen’s suffix tree algorithm (1995) could be applied to humanities texts for the detection of transpositions . Schäuble and Gabler (2018) used the TUSTEP collate tool to align versions of Virginia Woolf’s A Sketch of the Past . The author’s own program, nmerge (2009), has been used to align the texts in the Charles Harpur Critical Archive . 
+]
 
 The display of versions and layers can be accomplished by using comparison software to compute the differences between layers, or between versions. When comparing layers the shared text may be greyed-out as a reminder to the reader-user that the text does not have the status of a full version. Full versions may have their text displayed in black. An example where this has been done can be seen in the edition of Harpur’s multi-versioned poem Creek of the Four Graves . The display of both versions and layers employs red (to indicate deletion) and blue (to indicate insertion). 
 

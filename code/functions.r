@@ -12,7 +12,11 @@ theme_set(theme_bw())
 # df.terms must have two columns: "term", "id"
 ## this function returns the id of a text and all the terms it found therein with one row per term found and a frequency of how often this term was found in each text
 f.freq.term.per.text <- function(df.input, df.terms, ignore.case) {
-  print(paste("searching", length(df.input), "input texts for the occurrence of", length(df.terms), "terms", sep = " "))
+  # make sure that terms are unique
+  #df.terms <- df.terms %>%
+   # distinct(term)
+  # document process in console
+  print(paste("searching", nrow(df.input), "input texts for the occurrence of", nrow(df.terms), "terms", sep = " "))
   df.output <- df.input %>%
     dplyr::mutate(
       term = str_extract_all(text, 

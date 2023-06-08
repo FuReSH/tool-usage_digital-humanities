@@ -38,6 +38,7 @@ df.dfg <- df.dfg.projects %>%
 load(file = here("data", "dh-conferences", "dh-conferences_abstracts.rda"))
 
 # load tool list
+## Our own list
 #load(file = here("data/furesh-tools.rda"))
 df.tools <- read_csv(here("data","tools.csv"))
 df.tools <- df.tools %>%
@@ -45,8 +46,7 @@ df.tools <- df.tools %>%
 df.tools.yml <- f.read.yaml.furesh(here("data/tools.yml")) 
 # load the tools list from the SSH Open Marketplace
 # quite a few of the labels are common English words, which ought to be filtered out at some point
-load(here("data/ssh-open-marketplace/ssh_tools.rda"))
-load(here("data/tapor/tapor_tools.rda"))
+load(here("data","tools_ssh-tapor-wd.rda"))
 
 # run frequency analysis
 #df.dhconfs.ssh.tools.per.text <- f.freq.term.per.text(df.dhconfs.abstracts, df.tools.ssh$label.clean)
@@ -98,19 +98,37 @@ f.link.term.id <- function(df.term, df.id) {
   left_join(df.term, df.id, by = c("term" = "term"))
 }
 
-test.input <- df.dhconfs.abstracts[1:50,]
-test.terms <- data.tools.ssh.description %>%
+test.input <- df.dhq
+test.terms <- df.tools.wd %>%
   dplyr::select(ssh.id, ssh.label.abbr) %>%
   dplyr::rename(id = ssh.id, term = ssh.label.abbr) %>%
   tidyr::drop_na(term)
 test.tools.per.text <- f.freq.term.per.text(test.input, test.terms, F)
 
-test.terms.2 <- data.tools.ssh.description %>%
+test.terms.2 <- df.tools.wd %>%
   dplyr::select(ssh.id, ssh.label) %>%
   dplyr::rename(id = ssh.id, term = ssh.label) %>%
   tidyr::drop_na(term)
 test.tools.per.text.2 <- f.freq.term.per.text(test.input, test.terms.2, F)
 
-test.2 <- f.stringmatch.frequency(df.dhconfs.abstracts[1:50,], df.tools$variant)
+test.terms.3 <- dplyr::bind_rows(test.terms, test.terms.2) %>%
+  dplyr::distinct(term)
 
+test.tools.per.text.3 <- dplyr::bind_rows(test.tools.per.text, test.tools.per.text.2) %>%
+  dplyr::group_by(source, target) %>%
+  dplyr::summarise(weight = mean(weight))
+test.texts.per.tool <- f.freq.text.per.term(test.tools.per.text.3)
+
+
+df.dhq.texts.per.tool.ssh <- test.texts.per.tool
+df.dhq.tools.per.text.ssh <- test.tools.per.text.3
+save(df.dhq.texts.per.tool.ssh, file = here("data/dhq", "dhq-ssh_texts-per-tool.rda"))
+save(df.dhq.tools.per.text.ssh, file = here("data/dhq", "dhq-ssh_tools-per-text.rda"))
+
+df.dhq.texts.per.tool.ssh %>% 
+  left_join(df.tools.wd, by = c('term' = 'ssh.label'), keep = F) %>%
+  dplyr::select(term, freq, ssh.id) %>%
+  left_join(df.tools.wd, by = c('term' = 'ssh.label.abbr')) %>%
+  dplyr::mutate(ssh.id = ifelse(is.na(ssh.id.x) == F, ssh.id.x, ssh.id.y)) %>%
+  dplyr::select(term, freq, ssh.id, tapor.id, wd.item, ssh.label) -> df.dhq.texts.per.tool.ssh
 

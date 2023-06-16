@@ -31,7 +31,7 @@ read_csv("ssh-open-marketplace/ssh_tools-classification.csv") %>%
 # load the full SSH tool list
 load("ssh-open-marketplace/ssh.rda") 
 ## df with mapping from SSH to TAPoR
-df.ssh %>%
+df.ssh <- data.ssh %>%
   tibble::as_tibble() %>%
   dplyr::mutate(tapor.id = ifelse(source.label == "TAPoR", sourceItemId, NA)) %>% # include TAPoR Id
   dplyr::rename(ssh.id = persistentId,
@@ -70,7 +70,7 @@ df.ssh.labels -> df.tools.ssh.description
 
 # df with mapping from TAPoR to Wikidata
 load("tapor/tapor_tools-wikidata.rda")
-df.tapor.wikidata %>%
+df.tapor.wikidata <- data.tapor.wikidata %>%
   dplyr::rename(tapor.id = id.tapor,
                 tapor.label = label,
                 tapor.desc = description) %>%
@@ -100,4 +100,17 @@ save(df.tools.classification.wd, file = "tools_tadirah-wd.rda")
 save(df.tools.everything, file = "tools_ssh-tapor-wd-tadirah.rda")
 write.table(df.tools.everything, file = "tools_ssh-tapor-wd-tadirah.csv", row.names = F, sep = ",")
 
+# playground
+setwd(here('data'))
+load(file = "tools_ssh-tapor-wd-tadirah.rda")
+load(file = "tools_ssh-tapor-wd.rda")
+
+# wikidata
+# - has use P31
+# - short name P1813
+f.wikidata.properties('Q2115', 'P1813')
+#f.wikidata.properties('Q2115', 'P31')
+f.wikidata.properties('Q2115', 'P2561')
+f.wikidata.properties('Q2115', 'P571')
+f.wikidata.properties('Q2115', 'P50')
 

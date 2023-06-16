@@ -232,10 +232,45 @@ f.get.text <- function(html, xpath) {
     rvest::html_text2()
 }
 
+# query Wikidata for properties using the WikidataR library
+f.wikidata.properties <- function(wd.id, wd.property) {
+  # get item from Wikidata
+  wd.item <- WikidataR::get_item(wd.id)
+  # list all available properties
+  wd.properties <- WikidataR::list_properties(wd.item)
+  # create empty output
+  output <- tibble()
+  # check if the property we are looking for is there
+  if (wd.property %in% wd.properties[[1]]) {
+    # get all data on the property
+    wd.claim <- WikidataR::extract_claims(wd.item, wd.property)
+    # properties are of various types, which will return different data types
+    wd.claim.type = wd.claim[[1]][[1]]$mainsnak$datavalue$type[1]
+    print(paste(wd.property, 'is of type', wd.claim.type, sep = ' '))
+    if (wd.claim.type == 'wikibase-entityid') {
+      wd.claim.names <- WikidataR::get_names_from_properties(wd.claim)
+      # reduce output to the main tibble
+      wd.claim.names[[1]] -> output
+    }
+    if (wd.claim.type == 'monolingualtext') {
+      # returns tibble of text-language pairs
+      wd.claim[[1]][[1]]$mainsnak$datavalue$value %>%
+        dplyr::as_tibble() %>%
+        dplyr::rename(value = text) -> output
+    }
+  } else {
+    print(paste(wd.id, 'does not carry the property', wd.property, sep = ' '))
+    print(paste('try these properties instead', wd.properties, sep = ' '))
+    # return NA
+    output = NA
+  }
+  output
+}
+
 # query wikidata for labels: https://www.wikidata.org/w/rest.php/wikibase/v0/entities/items/Q448335/labels
 # short names: Property:P1813: https://www.wikidata.org/w/rest.php/wikibase/v0/entities/items/Q448335/statements?property=P1813
 # output: list(s)
-f.wikidata.properties <- function(wd.id, wd.prop) {
+f.wikidata.api.properties <- function(wd.id, wd.prop) {
   v.url = paste0(wd.api.url.base, wd.id,"/", wd.api.url.statements, wd.prop)
   print(paste("Make API call to", v.url, sep = " "))
   json <- jsonlite::read_json(v.url, simplifyVector = T, flatten = F)

@@ -125,10 +125,13 @@ df.dhq.tools.per.text.ssh <- test.tools.per.text.3
 save(df.dhq.texts.per.tool.ssh, file = here("data/dhq", "dhq-ssh_texts-per-tool.rda"))
 save(df.dhq.tools.per.text.ssh, file = here("data/dhq", "dhq-ssh_tools-per-text.rda"))
 
+load( here("data/dhq", "dhq-ssh_texts-per-tool.rda"))
 df.dhq.texts.per.tool.ssh %>% 
   left_join(df.tools.wd, by = c('term' = 'ssh.label'), keep = F) %>%
   dplyr::select(term, freq, ssh.id) %>%
   left_join(df.tools.wd, by = c('term' = 'ssh.label.abbr')) %>%
   dplyr::mutate(ssh.id = ifelse(is.na(ssh.id.x) == F, ssh.id.x, ssh.id.y)) %>%
-  dplyr::select(term, freq, ssh.id, tapor.id, wd.item, ssh.label) -> df.dhq.texts.per.tool.ssh
+  dplyr::select(term, freq, ssh.id) %>%
+  # filter by ssh.id and left join for more information
+  dplyr::left_join(df.tools.wd, by = 'ssh.id', na_matches = 'never') -> df.dhq.texts.per.tool.ssh
 

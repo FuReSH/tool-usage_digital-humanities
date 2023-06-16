@@ -32,7 +32,10 @@ Die Daten liegen in folgenden Unterordnern:
     * `DHd/`: data on DHd conferences from the [DHd GitHub](https://github.com/DHd-Verband) repositories
         - `software-names-counts-total.csv`: [@HennyJettka2021SoftwarezitationData]
     - `dhq/`: TEI XML files from "[Digital Humanities Quarterly](http://digitalhumanities.org/)". A corpus of 429 articles published until 2019 is available as zipped folder at <http://digitalhumanities.org/dhq/data/dhq-xml.zip>.
-    - `nfdi4history`: a CSV/TSV dump of their user stories
+    - `nfdi4history/`: a CSV/TSV dump of their user stories
+    - `ssh-open-marketplace/`
+    - `tadirah/`
+    - `tapor/`
     - `txt/`: Plaintextdateien unserer eigenen User Stories. Unterordner für Sprachen
         - `de/`: deutsche Texte
         - `en/`: englische Texte
@@ -46,7 +49,9 @@ Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen User
 Wir haben Listen an Werkzeugen (mehrheitlich Software und Tutorials) von folgenden Quellen heruntergeladen
 
 - TaPOR: `data/tapor.json`
+- SSH Open Marketplace
 - [U of Toronto](https://find.digital.utsc.utoronto.ca/search-results): `data/utoronto-tools.csv`
+
 
 
 # to do
@@ -60,6 +65,8 @@ Wir haben Listen an Werkzeugen (mehrheitlich Software und Tutorials) von folgend
         * [@BarbotEtAl2019WhichDHTools]
     + [ ] add DHd abstracts from the GitHub repositories
     + [ ] add metadata for all conference presentations and all journal articles in our corpus to Wikidata in order to link them to the mentioned tools
+        * this will require significant work to translate bibliographic data to data models in Wikidata
+    + [x] add all 
 - analysis
     + [ ] use expanded TaPOR, SSH Open Marketplace tool list
     + [x] write output in form of edges table, which can then be used to link certain papers to certain tools on Wikidata
@@ -107,3 +114,7 @@ Wir haben Listen an Werkzeugen (mehrheitlich Software und Tutorials) von folgend
                     - <https://gepris.dfg.de/gepris/OCTOPUS?beginOfFunding=&bewilligungsStatus=&bundesland=DEU%23&context=projekt&einrichtungsart=-1&fachgebiet=11&fachkollegium=%23&findButton=historyCall&gefoerdertIn=&ggsHunderter=0&index=50&nurProjekteMitAB=false&oldGgsHunderter=0&oldfachgebiet=11&pemu=%23&task=doKatalog&teilprojekte=true&zk_transferprojekt=false>
                 * [x] iterate 318 pages for humanities (https://gepris.dfg.de/gepris/OCTOPUS?task=doKatalog&context=projekt&oldfachgebiet=11&fachgebiet=11&fachkollegium=%23&nurProjekteMitAB=false&bundesland=DEU%23&pemu=%23&zk_transferprojekt=false&teilprojekte=false&teilprojekte=true&bewilligungsStatus=&beginOfFunding=&gefoerdertIn=&oldGgsHunderter=0&ggsHunderter=0&einrichtungsart=-1&findButton=Finden)
     - [x] scraper functions
+- [x] download all DHQ articles
+    + DHQ provides a zipped corpus of 431 articles as TEI/XML files, which includes articles published until 2019
+    + to quickly scrape the remaining articles one can use this curl script: `curl -O 'http://digitalhumanities.org/dhq/vol/1/1/000[431-690].xml'`
+        * not that one does not need to iterate the volume and issue numbers, something that should be declared on the DHQ website

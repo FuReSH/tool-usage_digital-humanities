@@ -235,6 +235,7 @@ f.get.text <- function(html, xpath) {
 # query Wikidata for properties using the WikidataR library
 f.wikidata.properties <- function(wd.id, wd.property) {
   # get item from Wikidata
+  print(paste('get', wd.id, 'from Wikidata', sep = ' '))
   wd.item <- WikidataR::get_item(wd.id)
   # list all available properties
   wd.properties <- WikidataR::list_properties(wd.item)
@@ -265,6 +266,8 @@ f.wikidata.properties <- function(wd.id, wd.property) {
     output = NA
   }
   output
+  # add brief delay for use in dplyr::mutate
+  Sys.sleep(0.5)
 }
 
 # query wikidata for labels: https://www.wikidata.org/w/rest.php/wikibase/v0/entities/items/Q448335/labels

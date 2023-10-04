@@ -31,15 +31,15 @@ read_csv("ssh-open-marketplace/ssh_tools-classification.csv") %>%
 # load the full SSH tool list
 load("ssh-open-marketplace/ssh.rda") 
 ## df with mapping from SSH to TAPoR
-df.ssh <- data.ssh %>%
+df.tools.ssh.description <- data.ssh %>%
   tibble::as_tibble() %>%
   dplyr::mutate(tapor.id = ifelse(source.label == "TAPoR", sourceItemId, NA)) %>% # include TAPoR Id
   dplyr::rename(ssh.id = persistentId,
                 ssh.label = label,
                 ssh.desc = description) %>%
   dplyr::mutate(ssh.label = str_replace(ssh.label, '^\\s+', '')) %>%
-  dplyr::select(ssh.id, ssh.label, ssh.desc, tapor.id)-> df.tools.ssh.description
-remove(df.ssh)
+  dplyr::select(ssh.id, ssh.label, ssh.desc, tapor.id)
+remove(data.ssh)
 
 # clean the labels, which contain a lot of information, such as accronyms etc.
 # function to apply a regex search and replace on the ssh.label field
@@ -70,13 +70,13 @@ df.ssh.labels -> df.tools.ssh.description
 
 # df with mapping from TAPoR to Wikidata
 load("tapor/tapor_tools-wikidata.rda")
-df.tapor.wikidata <- data.tapor.wikidata %>%
+df.tools.tapor.wd <- data.tapor.wikidata %>%
   dplyr::rename(tapor.id = id.tapor,
                 tapor.label = label,
                 tapor.desc = description) %>%
   dplyr::select(!label.clean) %>%
-  dplyr::mutate(tapor.id = as.character(tapor.id)) -> df.tools.tapor.wd
-remove(df.tapor.wikidata)
+  dplyr::mutate(tapor.id = as.character(tapor.id))
+remove(data.tapor.wikidata)
 
 # join tool lists
 full_join(df.tools.ssh.tadirah, df.tools.tadirah.wd) %>%
@@ -91,7 +91,13 @@ df.tools.wd %>%
 
 # add everything together
 left_join(df.tools.wd, df.tools.classification.wd) %>%
-  dplyr::select(ssh.id, tapor.id, ssh.label, ssh.label.abbr, tapor.label, ssh.desc, tapor.desc, tadirah.id, tadirah.uri, wd.tadirahid) -> df.tools.everything
+  dplyr::select(ssh.id, tapor.id, wd.item, ssh.label, ssh.label.abbr, tapor.label, ssh.desc, tapor.desc, tadirah.id, tadirah.uri, wd.tadirahid) -> df.tools.everything
+
+# data sets for reconciliation of tools on wikidata
+df.wd.reconcile <- df.tools.everything %>%
+  tidyr::drop_na(wd.tadirahid, wd.item) %>%
+  dplyr::select(wd.item, tapor.id, ssh.id, wd.tadirahid, tadirah.id)
+
 
 # save joined dfs
 save(df.tools.wd, file = "tools_ssh-tapor-wd.rda")
@@ -99,6 +105,8 @@ write.table(df.tools.wd, file = "tools_ssh-tapor-wd.csv", row.names = F, sep = "
 save(df.tools.classification.wd, file = "tools_tadirah-wd.rda")
 save(df.tools.everything, file = "tools_ssh-tapor-wd-tadirah.rda")
 write.table(df.tools.everything, file = "tools_ssh-tapor-wd-tadirah.csv", row.names = F, sep = ",")
+save(df.wd.reconcile, file = "tools_ssh-tapor-wd-tadirah_basic.rda")
+write.table(df.wd.reconcile, file = "tools_ssh-tapor-wd-tadirah_basic.csv", row.names = F, sep = ",")
 
 # playground
 setwd(here('data'))

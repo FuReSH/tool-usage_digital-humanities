@@ -11,8 +11,7 @@ setwd(here("data"))
 # TaDiRAH with wikidata links
 read_csv("tadirah/tadirah-wikidata.csv") %>%
   tibble::as_tibble() %>%
-  dplyr::rename(tadirah.uri = subject,
-                tadirah.id = label) %>%
+  dplyr::rename(tadirah.uri = subject) %>%
   # remove all QIds that have been deleted from the Wikidata
   dplyr::mutate(wd.item = ifelse(wd.deleted == T, NA, wd.item)) %>%
   dplyr::select(tadirah.id, tadirah.uri, wd.item) -> df.tools.tadirah.wd

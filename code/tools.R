@@ -9,12 +9,13 @@ source(here("code", "functions.r"))
 # load data
 setwd(here("data"))
 # TaDiRAH with wikidata links
-read_csv("tadirah/tadirah-wikidata.csv") %>%
+df.tools.tadirah.wd <- read_csv("tadirah/tadirah-wikidata.csv") %>%
   tibble::as_tibble() %>%
-  dplyr::rename(tadirah.uri = subject) %>%
+  dplyr::rename(tadirah.uri = subject,
+                wd.label = label) %>%
   # remove all QIds that have been deleted from the Wikidata
   dplyr::mutate(wd.item = ifelse(wd.deleted == T, NA, wd.item)) %>%
-  dplyr::select(tadirah.id, tadirah.uri, wd.item) -> df.tools.tadirah.wd
+  dplyr::select(tadirah.id, tadirah.uri, wd.item, wd.label)
 
 # SSH Open Marketplace with TaDiRAH classification
 read_csv("ssh-open-marketplace/ssh_tools-classification.csv") %>%
@@ -109,6 +110,7 @@ write.table(df.wd.reconcile, file = "tools_ssh-tapor-wd-tadirah_basic.csv", row.
 
 # playground
 setwd(here('data'))
+
 load(file = "tools_ssh-tapor-wd-tadirah.rda")
 load(file = "tools_ssh-tapor-wd.rda")
 
@@ -116,8 +118,30 @@ load(file = "tools_ssh-tapor-wd.rda")
 # - has use P31
 # - short name P1813
 f.wikidata.properties('Q2115', 'P1813')
-#f.wikidata.properties('Q2115', 'P31')
+f.wikidata.properties('Q2115', 'P31')
 f.wikidata.properties('Q2115', 'P2561')
 f.wikidata.properties('Q2115', 'P571')
 f.wikidata.properties('Q2115', 'P50')
 
+df.test <- df.tools.wd %>%
+  dplyr::mutate(wd.short.name = if (is.na(wd.item) == T) {NA} else {f.wikidata.properties(wd.item, 'P1813')}
+  )  
+df.test <- df.tools.wd %>%
+  dplyr::mutate(wd.short.name = if_else(is.na(wd.item) == F,
+                                        f.wikidata.properties(wd.item, 'P1813'),
+                                        NA)
+  )  
+
+dplyr::mutate(wd.short.name = case_when(str_starts(wd.item,'Q\\d+') ~ f.wikidata.properties(wd.item, 'P1813')))
+
+df.tools.wd.properties <- df.tools.wd %>%
+  dplyr::select(wd.item) %>%
+  dplyr::distinct() %>%
+  drop_na() %>%
+  # dplyr::filter(is.na(wd.item) == F)# %>%
+  dplyr::mutate(wd.p1813 = f.wikidata.properties(wd.item, 'P1813'))
+
+df.tools.wd.properties <- df.tools.wd.properties %>%
+  dplyr::mutate(wd.p2561 = f.wikidata.properties(wd.item, 'P2561'))
+
+f.wikidata.properties('Q1031755', 'P856')

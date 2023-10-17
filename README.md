@@ -5,7 +5,7 @@ author:
     - Till Grallert
     - Sophie Eckenstaler
 affiliation: Future e-Research Support in the Humanities, Humboldt-Universität zu Berlin
-date: 2022-03-23 
+date: 2023-10-17
 lang: de
 bibliography: https://furesh.github.io/slides/assets/bibliography/FuReSH.csl.json
 reference-section-title: "Literatur"
@@ -40,6 +40,8 @@ Die Daten liegen in folgenden Unterordnern:
         - `de/`: deutsche Texte
         - `en/`: englische Texte
     - `csv/`
+- `documentation/`: mostly notes on the various data sources
+- `visualization/`: output from the R scripts visualising tool usage
 
 
 Es gibt eine simple Dateinamenkonvention für Plaintextdatein mit einzelnen Userstories: `user-story_{lang}_\d.md` Dieser Name ist gleichzeitig die ID der Userstory in anderen Kontexten.

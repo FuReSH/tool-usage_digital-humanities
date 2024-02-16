@@ -85,6 +85,10 @@ v.label.source = "Data: Digital Humanities Quarterly, http://digitalhumanities.o
 f.wordcloud.frequency(df.dhq.tools, 100, paste("tools in", nrow(df.dhq),  "articles from Digital Humanities Quarterly"), "png")
 f.wordcloud.frequency(df.dhq.tools, 100, paste("tools in", nrow(df.dhq),  "articles from Digital Humanities Quarterly"), "svg")
 
+v.label.source = "Data: DH Conference abstracts"
+f.wordcloud.frequency(df.dhconfs.abstracts.tools, 100, paste("tools in", nrow(df.dhconfs.abstracts),  "DH conference abstracts"), "png")
+f.wordcloud.frequency(df.dhconfs.abstracts.tools, 100, paste("tools in", nrow(df.dhconfs.abstracts),  "DH conference abstracts"), "svg")
+
 v.label.source = "Data: DFG GEPRIS"
 v.label.title = paste("tools in ", nrow(df.dfg),  " project descriptions from DFG GEPRIS (", min(df.dfg.projects$onset, na.rm = T), "-", max(df.dfg.projects$terminus, na.rm = T), ")", sep = '')
 f.wordcloud.frequency(df.dfg.tools, 100, v.label.title, "png")

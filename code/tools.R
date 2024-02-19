@@ -114,6 +114,24 @@ setwd(here('data'))
 load(file = "tools_ssh-tapor-wd-tadirah.rda")
 load(file = "tools_ssh-tapor-wd.rda")
 
+# compile a list of tool names
+df.tools.everything %>%
+  distinct(ssh.id, ssh.label) %>%
+  drop_na() %>%
+  rename(term = ssh.label) -> temp.1
+df.tools.everything %>%
+  distinct(ssh.id, ssh.label.abbr) %>%
+  drop_na() %>%
+  rename(term = ssh.label.abbr) -> temp.2
+df.tools.everything %>%
+  distinct(ssh.id, tapor.label) %>%
+  drop_na() %>%
+  rename(term = tapor.label) -> temp.3
+
+bind_rows(temp.1, temp.2, temp.3) %>%
+  distinct(ssh.id, term) -> df.tools.ssh.names
+
+
 # wikidata
 # - has use P31
 # - short name P1813

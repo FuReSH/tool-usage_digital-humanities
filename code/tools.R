@@ -9,12 +9,12 @@ source(here("code", "functions.r"))
 # load data
 setwd(here("data"))
 # TaDiRAH with wikidata links
-df.tools.tadirah.wd <- read_csv("tadirah/tadirah-wikidata.csv") %>%
+df.tools.tadirah.wd <- read_csv("tadirah/activities_tadirah-wikidata.csv") %>%
   tibble::as_tibble() %>%
   dplyr::rename(tadirah.uri = subject,
                 wd.label = label) %>%
-  # remove all QIds that have been deleted from the Wikidata
-  dplyr::mutate(wd.item = ifelse(wd.deleted == T, NA, wd.item)) %>%
+  # remove all QIds that have been deleted from Wikidata: this has become OBSOLETE
+  # dplyr::mutate(wd.item = ifelse(wd.deleted == T, NA, wd.item)) %>%
   dplyr::select(tadirah.id, tadirah.uri, wd.item, wd.label)
 
 # SSH Open Marketplace with TaDiRAH classification
@@ -41,7 +41,7 @@ df.tools.ssh.description <- data.ssh %>%
   dplyr::select(ssh.id, ssh.label, ssh.desc, tapor.id)
 remove(data.ssh)
 
-# clean the labels, which contain a lot of information, such as accronyms etc.
+# clean the labels, which contain a lot of information, such as acronyms etc.
 # function to apply a regex search and replace on the ssh.label field
 f.get.abbr <- function(df.input, v.regex, min.length){
   df.input %>%

@@ -76,6 +76,86 @@ Es gibt die Möglichkeit aus Wikidata auf externe Beschreibungen mit der Propert
 
 Wikidata betreibt einen [SPARQL query service](https://query.wikidata.org), der auch einen visuellen query builder bereitstellt.
 
+### all tools that have been classified with TaDiRAH
+
+1. select all items that have a TaDiRAH ID and are therefore assumed to be methods
+2. select all items which are linked to these methods through `has use`
+3. retrieve the logos and images for those tools that have them
+
+```sparql
+#defaultView:Graph
+SELECT DISTINCT ?tool ?toolLabel (COALESCE(?logo, ?pic) AS ?image) ?method ?methodLabel ?tadirahID 
+WHERE {
+  # select all items that have a TaDiRAH ID and are therefore assumed to be methods
+  ?method wdt:P9309 ?tadirahID.
+  # select all items which are linked to these methods through `has use`
+  ?tool wdt:P366 ?method;
+    # limit tools to software in the broadest sense
+    (wdt:P31/(wdt:P279*)) wd:Q7397.
+  # retrieve the logos and images for those tools that have them
+  OPTIONAL { ?tool wdt:P154 ?logo. }
+  OPTIONAL { ?tool wdt:P18 ?pic. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY DESC(?tool)
+LIMIT 10
+```
+
+### alternative labels
+
+This query can be combined with others to compile a list of tools with all their known labels
+
+```sparql
+SELECT *
+WHERE {
+  # get all labels for an example object
+  wd:Q165658 skos:altLabel ?altLabel.
+  # filter for language
+  FILTER (lang(?altLabel) = "en")
+}
+```
+
+```sparql
+SELECT DISTINCT ?tool ?toolLabel (COALESCE(?altLabel, ?name) AS ?altLabel) ?method ?methodLabel ?tadirahID 
+WHERE {
+  # select all items that have a TaDiRAH ID and are therefore assumed to be methods
+  ?method wdt:P9309 ?tadirahID.
+  # select all items which are linked to these methods through `has use`
+  ?tool wdt:P366 ?method;
+    # limit tools to software in the broadest sense
+    (wdt:P31/(wdt:P279*)) wd:Q7397.
+  # get all alternative labels and names
+  OPTIONAL { ?tool skos:altLabel ?altLabel. }
+  OPTIONAL { ?tool wdt:P2561 ?name. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY DESC(?tool)
+LIMIT 20
+```
+
+The following does the same but is **much slower**
+
+```sparql
+SELECT DISTINCT ?tool ?toolLabel ?altLabel ?method ?methodLabel ?tadirahID 
+WHERE {
+    {
+        SELECT ?tool ?method ?tadirahID WHERE {
+            # select all items that have a TaDiRAH ID and are therefore assumed to be methods
+            ?method wdt:P9309 ?tadirahID.
+            # select all items which are linked to these methods through `has use`
+            ?tool wdt:P366 ?method;
+                # limit tools to software in the broadest sense
+                (wdt:P31/(wdt:P279*)) wd:Q7397.
+        }
+        ORDER BY DESC(?tool)
+        LIMIT 10
+    }
+    # get all alternative labels
+    OPTIONAL { ?tool skos:altLabel ?altLabel. }
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+
 ## RESTful API
 
 Wikidata stellt auch eine RESTful API zur Verfügung. Basale Dokumentation gibt es [hier](https://www.wikidata.org/wiki/Wikidata:REST_API) außerdem gibt es eine [OpenAPI Swagger documentation](https://doc.wikimedia.org/Wikibase/master/js/rest-api/).

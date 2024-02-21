@@ -76,7 +76,23 @@ Es gibt die Möglichkeit aus Wikidata auf externe Beschreibungen mit der Propert
 
 Wikidata betreibt einen [SPARQL query service](https://query.wikidata.org), der auch einen visuellen query builder bereitstellt.
 
+### all TaDiRAH items
+
+```sparql
+SELECT DISTINCT ?method ?methodLabel ?tadirahID 
+WHERE {
+  # select all items that have a TaDiRAH ID and are therefore assumed to be methods
+  ?method wdt:P9309 ?tadirahID.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY ?methodLabel
+LIMIT 200
+```
+
+
 ### all tools that have been classified with TaDiRAH
+
+<https://w.wiki/968g>
 
 1. select all items that have a TaDiRAH ID and are therefore assumed to be methods
 2. select all items which are linked to these methods through `has use`
@@ -91,14 +107,40 @@ WHERE {
   # select all items which are linked to these methods through `has use`
   ?tool wdt:P366 ?method;
     # limit tools to software in the broadest sense
-    (wdt:P31/(wdt:P279*)) wd:Q7397.
+    wdt:P31/wdt:P279* wd:Q7397.
   # retrieve the logos and images for those tools that have them
   OPTIONAL { ?tool wdt:P154 ?logo. }
   OPTIONAL { ?tool wdt:P18 ?pic. }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
-ORDER BY DESC(?tool)
+ORDER BY ?toolLabel
 LIMIT 10
+```
+
+alternatively one can query for file formats, which we might want to consider in the context of tool usage in DH
+
+- Q235557: file format
+- Q24451526: data serialization format
+
+```sparql
+#defaultView:Graph
+SELECT DISTINCT ?tool ?toolLabel (COALESCE(?logo, ?pic) AS ?image) ?method ?methodLabel ?tadirahID 
+WHERE {
+  # select all items that have a TaDiRAH ID and are therefore assumed to be methods
+  ?method wdt:P9309 ?tadirahID.
+  # select all items which are linked to these methods through `has use`
+  { ?tool wdt:P366 ?method;
+        wdt:P31/wdt:P279* wd:Q235557. } # limit to file formates
+  UNION
+  { ?tool wdt:P366 ?method;
+        wdt:P31/wdt:P279* wd:Q24451526. } # or limit to data serialization
+  # retrieve the logos and images for those tools that have them
+  OPTIONAL { ?tool wdt:P154 ?logo. }
+  OPTIONAL { ?tool wdt:P18 ?pic. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY ?toolLabel
+LIMIT 1000
 ```
 
 ### alternative labels
@@ -116,21 +158,22 @@ WHERE {
 ```
 
 ```sparql
-SELECT DISTINCT ?tool ?toolLabel (COALESCE(?altLabel, ?name) AS ?altLabel) ?method ?methodLabel ?tadirahID 
+SELECT DISTINCT ?tool ?toolLabel (COALESCE(?altLabel, ?name) AS ?name) ?shortName ?method ?methodLabel ?tadirahID 
 WHERE {
   # select all items that have a TaDiRAH ID and are therefore assumed to be methods
   ?method wdt:P9309 ?tadirahID.
   # select all items which are linked to these methods through `has use`
   ?tool wdt:P366 ?method;
     # limit tools to software in the broadest sense
-    (wdt:P31/(wdt:P279*)) wd:Q7397.
+    wdt:P31/wdt:P279* wd:Q7397.
   # get all alternative labels and names
   OPTIONAL { ?tool skos:altLabel ?altLabel. }
   OPTIONAL { ?tool wdt:P2561 ?name. }
+  OPTIONAL { ?tool wdt:P1813 ?shortName. }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
-ORDER BY DESC(?tool)
-LIMIT 20
+ORDER BY ?toolLabel
+LIMIT 5000
 ```
 
 The following does the same but is **much slower**
@@ -145,7 +188,7 @@ WHERE {
             # select all items which are linked to these methods through `has use`
             ?tool wdt:P366 ?method;
                 # limit tools to software in the broadest sense
-                (wdt:P31/(wdt:P279*)) wd:Q7397.
+                wdt:P31/wdt:P279* wd:Q7397.
         }
         ORDER BY DESC(?tool)
         LIMIT 10

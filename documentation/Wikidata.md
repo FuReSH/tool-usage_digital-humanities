@@ -117,7 +117,7 @@ ORDER BY ?toolLabel
 LIMIT 10
 ```
 
-alternatively one can query for file formats, which we might want to consider in the context of tool usage in DH
+alternatively one can query for **file formats**, which we might want to consider in the context of tool usage in DH
 
 - Q235557: file format
 - Q24451526: data serialization format
@@ -143,6 +143,60 @@ ORDER BY ?toolLabel
 LIMIT 1000
 ```
 
+### get all file formats
+
+Query to gather all the file formats that can be read or written by the tools in our registry
+
+```sparql
+SELECT DISTINCT ?format ?formatLabel ?formatShortName ?formatName
+WHERE {
+  # select all items that have a TaDiRAH ID and are therefore assumed to be methods
+  ?method wdt:P9309 ?tadirahID.
+  # select all items which are linked to these methods through `has use`
+  ?tool wdt:P366 ?method;
+    # limit tools to software in the broadest sense
+    wdt:P31/wdt:P279* wd:Q7397.
+  # get the formats these tools interact with
+  { ?tool wdt:P1072 ?readFormat .} 
+  UNION
+  { ?tool wdt:P1073 ?writeFormat .}
+  BIND(
+    COALESCE(?readFormat, ?writeFormat) AS ?format)
+  # get alternative labels  
+  OPTIONAL { ?format skos:altLabel ?altLabel. }
+  OPTIONAL { ?format wdt:P2561 ?name. }
+  OPTIONAL { ?format wdt:P1813 ?formatShortName. }
+  BIND(COALESCE(?altLabel, ?name) AS ?formatName)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY ?methodLabel
+LIMIT 5000
+```
+
+shorter query to just get relevant QIDs
+
+```sparql
+SELECT DISTINCT ?tool ?format
+WHERE {
+  # select all items that have a TaDiRAH ID and are therefore assumed to be methods
+  ?method wdt:P9309 ?tadirahID.
+  # select all items which are linked to these methods through `has use`
+  ?tool wdt:P366 ?method;
+    # limit tools to software in the broadest sense
+    wdt:P31/wdt:P279* wd:Q7397.
+  # get the formats these tools interact with
+  { ?tool wdt:P1072 ?readFormat .} 
+  UNION
+  { ?tool wdt:P1073 ?writeFormat .}
+  BIND(
+    COALESCE(?readFormat, ?writeFormat) AS ?format)
+  # get alternative labels  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY ?methodLabel
+LIMIT 5000
+```
+
 ### alternative labels
 
 This query can be combined with others to compile a list of tools with all their known labels
@@ -158,7 +212,7 @@ WHERE {
 ```
 
 ```sparql
-SELECT DISTINCT ?tool ?toolLabel (COALESCE(?altLabel, ?name) AS ?name) ?shortName ?method ?methodLabel ?tadirahID 
+SELECT DISTINCT ?tool ?toolLabel ?name  ?shortName ?method ?methodLabel ?tadirahID 
 WHERE {
   # select all items that have a TaDiRAH ID and are therefore assumed to be methods
   ?method wdt:P9309 ?tadirahID.
@@ -170,8 +224,39 @@ WHERE {
   OPTIONAL { ?tool skos:altLabel ?altLabel. }
   OPTIONAL { ?tool wdt:P2561 ?name. }
   OPTIONAL { ?tool wdt:P1813 ?shortName. }
+  BIND(COALESCE(?altLabel, ?name) AS ?name)
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
+ORDER BY ?toolLabel
+LIMIT 5000
+```
+
+The same but with defining methods and tools as variables
+
+```sparql
+SELECT DISTINCT 
+    ?tool ?toolLabel ?name  ?shortName ?method ?methodLabel ?tadirahID
+WITH {
+    SELECT ?method ?tadirahID
+    WHERE {
+        ?method wdt:P9309 ?tadirahID.
+    } 
+} as %methods
+WITH {
+    SELECT ?tool ?toolLabel ?name  ?shortName
+    WHERE {
+        INCLUDE  %methods
+        ?tool wdt:P366 ?method;
+        # limit tools to software in the broadest sense
+        wdt:P31/wdt:P279* wd:Q7397.
+    }
+} as %tools
+WHERE {
+  INCLUDE %tools 
+  INCLUDE %methods
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,da,de,es,fr,jp,no,ru,sv,zh". }
+}
+ORDER BY ?methodLabel
 ORDER BY ?toolLabel
 LIMIT 5000
 ```

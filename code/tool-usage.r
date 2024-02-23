@@ -48,7 +48,7 @@ df.tools.yml <- f.read.yaml.furesh(here("data/tools.yml"))
 # quite a few of the labels are common English words, which ought to be filtered out at some point
 load(here("data","tools_ssh-tapor-wd.rda"))
 
-# run frequency analysis
+# run frequency analysis: on the DH conference abstracts
 #df.dhconfs.ssh.tools.per.text <- f.freq.term.per.text(df.dhconfs.abstracts, df.tools.ssh$label.clean)
 df.dhconfs.ssh.tools <- f.freq.text.per.term(df.dhconfs.ssh.tools.per.text) %>%
   f.normalise.freqs(total = nrow(df.dhconfs.abstracts))
@@ -57,14 +57,15 @@ write.table(df.dhconfs.ssh.tools, file = here("data/dh-conferences/dhconfs-frequ
 #df.dhq.tools <- read.csv(file = here("data/dhq/dhq-frequencies_tools.csv"), sep = ",")
 f.prettify.df(df.dhconfs.ssh.tools, 'dhconfs-frequencies_tools')
 
-# run frequency analysis
+# run frequency analysis: on the 4Memory corpus
 ## save edges table of sources mentioning a specific tool
 df.4memory.tools <- f.stringmatch.frequency(df.4memory, df.tools$variant)
 df.4memory.tools <- f.clean.variants(df.4memory.tools, nrow(df.4memory))
 write.table(df.4memory.tools, file = here("data/nfdi4memory/4memory-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")
 
-
-df.dhq.term.per.text <- f.freq.term.per.text(df.dhq, df.tools$variant)
+# run frequency analysis: on the DHQ corpus
+## with our custom tool list
+df.dhq.term.per.text <- f.freq.term.per.text(df.dhq, df.tools$variant) # this function takes FAR TOO long to complete and might fail upon post-processing the raw output
 df.dhq.tools <- f.freq.text.per.term(df.dhq.term.per.text) %>%
   f.clean.variants(number.of.texts = nrow(df.dhq))
 write.table(df.dhq.term.per.text, file = here("data/dhq/dhq_tools.csv"), row.names = F, quote = T, sep = ",")
@@ -72,6 +73,8 @@ write.table(df.dhq.tools, file = here("data/dhq/dhq-frequencies_tools.csv"), row
 #df.dhq.tools <- read.csv(file = here("data/dhq/dhq-frequencies_tools.csv"), sep = ",")
 f.prettify.df(df.dhq.tools, 'dhq-frequencies_tools')
 
+
+# run frequency analysis: on the DFG GEPRIS corpus
 df.dfg.tools <- f.stringmatch.frequency(df.dfg, df.tools$variant)
 df.dfg.tools <- f.clean.variants(df.dfg.tools, nrow(df.dfg))
 write.table(df.dfg.tools, file = here("data/dfg/dfg-frequencies_tools.csv"), row.names = F, quote = T, sep = ",")

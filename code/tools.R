@@ -129,7 +129,8 @@ df.tools.everything %>%
   rename(term = tapor.label) -> temp.3
 
 bind_rows(temp.1, temp.2, temp.3) %>%
-  distinct(ssh.id, term) -> df.tools.ssh.names
+  distinct(ssh.id, term) %>%
+  mutate(id = ssh.id)-> df.tools.ssh.names
 
 
 # wikidata

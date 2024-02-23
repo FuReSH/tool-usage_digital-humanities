@@ -17,13 +17,16 @@ f.freq.term.per.text <- function(df.input, df.terms, ignore.case) {
    # distinct(term)
   # document process in console
   print(paste("searching", nrow(df.input), "input texts for the occurrence of", nrow(df.terms), "terms", sep = " "))
-  df.output <- df.input %>%
+  df.output.raw <- df.input %>%
     dplyr::mutate(
       term = str_extract_all(text, 
              regex(paste0("\\b", df.terms$term, "\\b", collapse = '|'),
                    ignore_case = ignore.case)) # it might make sense to add an input variable for this choice
     ) %>%
-    unnest(term) %>%
+    unnest(term)
+  # safe the raw output in order to not lose results in case things go awry in postprocessing
+  # post-process
+  df.output <- df.output.raw %>%
     dplyr::select(id, term) %>% 
     # rename for clarity
     dplyr::rename(source = id,

@@ -79,13 +79,15 @@ Wikidata betreibt einen [SPARQL query service](https://query.wikidata.org), der 
 ### all TaDiRAH items
 
 ```sparql
-SELECT DISTINCT ?method ?methodLabel ?tadirahID 
-WHERE {
-  # select all items that have a TaDiRAH ID and are therefore assumed to be methods
-  ?method wdt:P9309 ?tadirahID.
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+SELECT DISTINCT ?method ?methodLabel ?tadirahID ?methodDesc WHERE {
+  ?method wdt:P9309 ?tadirahID.             # select all items that have a TaDiRAH ID
+  SERVICE wikibase:label { 
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". 
+    ?method rdfs:label ?methodLabel;        # get the labels. this line is not strictly necessary
+            schema:description ?methodDesc. # get the description
+    }
 }
-ORDER BY ?methodLabel
+ORDER BY ?tadirahID
 LIMIT 200
 ```
 
@@ -114,7 +116,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ORDER BY ?toolLabel
-LIMIT 10
+LIMIT 5000
 ```
 
 alternatively one can query for **file formats**, which we might want to consider in the context of tool usage in DH
@@ -197,6 +199,26 @@ ORDER BY ?methodLabel
 LIMIT 5000
 ```
 
+### get also all papers using these tools
+
+```sparql
+SELECT DISTINCT *
+WHERE {
+  # select all items that have a TaDiRAH ID and are therefore assumed to be methods
+  ?method wdt:P9309 ?tadirahID.
+  # select all items which are linked to these methods through `has use`
+  ?tool wdt:P366 ?method;
+    # limit tools to software in the broadest sense
+    wdt:P31/wdt:P279* wd:Q7397.
+  # get all papers
+  ?paper wdt:P4510 ?tool;
+    wdt:P31/wdt:P279* wd:Q13442814.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY ?toolLabel
+LIMIT 1
+```
+
 ### alternative labels
 
 This query can be combined with others to compile a list of tools with all their known labels
@@ -236,12 +258,14 @@ The same but with defining methods and tools as variables
 ```sparql
 SELECT DISTINCT 
     ?tool ?toolLabel ?name  ?shortName ?method ?methodLabel ?tadirahID
+# get all methods
 WITH {
     SELECT ?method ?tadirahID
     WHERE {
         ?method wdt:P9309 ?tadirahID.
     } 
 } as %methods
+# get all tools that implement a method
 WITH {
     SELECT ?tool ?toolLabel ?name  ?shortName
     WHERE {
@@ -251,14 +275,23 @@ WITH {
         wdt:P31/wdt:P279* wd:Q7397.
     }
 } as %tools
+# get all papers 
+WITH { 
+    SELECT ?usedBy 
+    WHERE {
+        INCLUDE %tools
+        ?tool wdt:P1535 ?usedBy.
+    }
+} as %papers
 WHERE {
   INCLUDE %tools 
   INCLUDE %methods
+  INCLUDE %papers
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,da,de,es,fr,jp,no,ru,sv,zh". }
 }
 ORDER BY ?methodLabel
 ORDER BY ?toolLabel
-LIMIT 5000
+LIMIT 10
 ```
 
 The following does the same but is **much slower**

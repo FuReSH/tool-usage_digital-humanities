@@ -68,7 +68,7 @@ Wir haben Listen an Werkzeugen (mehrheitlich Software und Tutorials) von folgend
     + [ ] add DHd abstracts from the GitHub repositories
     + [ ] add metadata for all conference presentations and all journal articles in our corpus to Wikidata in order to link them to the mentioned tools
         * this will require significant work to translate bibliographic data to data models in Wikidata
-    + [x] add all 
+    - compile our own tools lists with values from the alternative labels in Wikidata
 - analysis
     + [ ] use expanded TaPOR, SSH Open Marketplace tool list
     + [x] write output in form of edges table, which can then be used to link certain papers to certain tools on Wikidata

@@ -9,7 +9,7 @@ source(here("code", "functions.r"))
 # load data
 setwd(here("data"))
 # TaDiRAH with wikidata links
-df.tools.tadirah.wd <- read_csv("tadirah/activities_tadirah-wikidata.csv") %>%
+df.tadirah.wd <- read_csv("tadirah/activities_tadirah-wikidata.csv") %>%
   tibble::as_tibble() %>%
   dplyr::rename(tadirah.uri = subject,
                 wd.label = label) %>%
@@ -27,6 +27,35 @@ read_csv("ssh-open-marketplace/ssh_tools-classification.csv") %>%
                 tadirah.uri = concept.uri) %>%
   dplyr::select(ssh.id, ssh.label,tadirah.id, tadirah.uri) %>%
   dplyr::distinct() -> df.tools.ssh.tadirah
+
+# Mapping between SSH and TAPoR
+read_csv("ssh-open-marketplace/ssh_tools-classification.csv") %>%
+  tibble::as_tibble() %>%
+  dplyr::filter(source.label == "TAPoR") %>%
+  dplyr::rename(ssh.id = persistentId,
+                ssh.label = label,
+                tapor.id = sourceItemId) %>%
+  dplyr::select(ssh.id, ssh.label,tapor.id) %>%
+  dplyr::distinct() -> df.tools.ssh.tapor
+
+# df with mapping from TAPoR to Wikidata
+load("tapor/tapor_tools-wikidata.rda")
+df.tools.tapor.wd <- data.tapor.wikidata %>%
+  dplyr::rename(tapor.id = id.tapor,
+                tapor.label = label,
+                tapor.desc = description) %>%
+  dplyr::select(!label.clean) %>%
+  dplyr::mutate(tapor.id = as.character(tapor.id))
+remove(data.tapor.wikidata)
+
+# join tool lists
+## SSH tools and TaDiRAH classification on Wikidata
+df.tools.classification.wd <- full_join(df.tools.ssh.tadirah, df.tadirah.wd) %>%
+  dplyr::rename(wd.tadirahid = wd.item) %>%
+  # add tapor IDs
+  left_join(df.tools.ssh.tapor) %>%
+  # add Wikidata QIds based on tapor IDs
+  left_join(df.tools.tapor.wd)
 
 # load the full SSH tool list
 load("ssh-open-marketplace/ssh.rda") 
@@ -68,19 +97,6 @@ df.ssh.labels %>%
   f.get.abbr(v.regex.1, 3) -> df.ssh.labels # this is only for testing. ultimately results can be directly written back to the source
 df.ssh.labels -> df.tools.ssh.description
 
-# df with mapping from TAPoR to Wikidata
-load("tapor/tapor_tools-wikidata.rda")
-df.tools.tapor.wd <- data.tapor.wikidata %>%
-  dplyr::rename(tapor.id = id.tapor,
-                tapor.label = label,
-                tapor.desc = description) %>%
-  dplyr::select(!label.clean) %>%
-  dplyr::mutate(tapor.id = as.character(tapor.id))
-remove(data.tapor.wikidata)
-
-# join tool lists
-full_join(df.tools.ssh.tadirah, df.tools.tadirah.wd) %>%
-  dplyr::rename(wd.tadirahid = wd.item) -> df.tools.classification.wd
 # all tool information without TaDiRAH
 full_join(df.tools.ssh.description, df.tools.tapor.wd) -> df.tools.wd
 # get short names for those tools already reconciled with Wikidata

@@ -56,6 +56,9 @@ df.tools.classification.wd <- full_join(df.tools.ssh.tadirah, df.tadirah.wd) %>%
   left_join(df.tools.ssh.tapor) %>%
   # add Wikidata QIds based on tapor IDs
   left_join(df.tools.tapor.wd)
+# save results
+save(df.tools.classification.wd, file = "tools_tadirah-wd.rda")
+write.table(df.tools.classification.wd, file = "tools_tadirah-wd.csv")
 
 # load the full SSH tool list
 load("ssh-open-marketplace/ssh.rda") 

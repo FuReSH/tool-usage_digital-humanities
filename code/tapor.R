@@ -30,6 +30,7 @@ save(data.tools.tapor, file = "tapor_tools.rda")
 write.table(data.tools.tapor, file = "tapor_tools.csv", row.names = F, col.names = T, quote = T, sep = ",")
 
 # load the same data as reconciled with Wikidata
+# this was done manually in OpenRefine and exported as CSV
 data.tapor.wikidata <- readr::read_csv("TaPOR-Wikidata.csv") %>%
   dplyr::rename(id.tapor = tool_id,
                 label = name,
@@ -51,20 +52,3 @@ wd.3 <- f.wikidata.properties("Q7115951", "P1072")
 
 f.wikidata.label("Q251", 'en')
 
-
-
-# TaDiRAH classification
-load("ssh_tools.rda")
-f.json.types(data.ssh.tools)
-data.ssh.tools %>%
-  # TaDiRAH classification is part of the properties array
-  enter_object(properties) %>%
-  gather_array() %>%
-  spread_all() %>%
-  # filter for TaDiRAH classifications
-  dplyr::filter(concept.vocabulary.code == "tadirah2") %>%
-  dplyr::select(
-    id, label, persistentId, source.label, sourceItemId, source.urlTemplate, concept.vocabulary.code, concept.code, concept.uri
-  ) %>%
-  as_tibble() -> 
-  data.ssh.tools.classification

@@ -3,6 +3,7 @@
 library(dplyr)
 library(tibble)
 library(readr)
+library(stringr)
 library(here)
 # enable unicode
 Sys.setlocale("LC_ALL", "en_US.UTF-8")
@@ -20,26 +21,27 @@ df.tadirah.wd <- read_csv("tadirah/activities_tadirah-wikidata.csv") %>%
   # dplyr::mutate(wd.item = ifelse(wd.deleted == T, NA, wd.item)) %>%
   dplyr::select(tadirah.id, tadirah.uri, wd.item, wd.label)
 
+# load the full SSH tool list
+load("ssh-open-marketplace/ssh.rda") 
+## df with mapping from SSH to TAPoR
+data.ssh %>%
+  dplyr::mutate(tapor.id = ifelse(source.label == "TAPoR", sourceItemId, NA)) %>% # include TAPoR Id
+  dplyr::rename(ssh.id = persistentId,
+                ssh.label = label,
+                ssh.desc = description) %>%
+  dplyr::mutate(ssh.label = str_replace(ssh.label, '^\\s+', '')) %>%
+  dplyr::select(ssh.id, ssh.label, ssh.desc, tapor.id) %>%
+  dplyr::distinct() -> df.tools.ssh.tapor
+remove(data.ssh)
+
 # SSH Open Marketplace with TaDiRAH classification
 readr::read_csv("ssh-open-marketplace/ssh_tools-classification.csv") %>%
   tibble::as_tibble() %>%
   dplyr::filter(concept.vocabulary.code == "tadirah2") %>%
   dplyr::rename(ssh.id = persistentId,
-                ssh.label = label,
-                tadirah.id = concept.code,
-                tadirah.uri = concept.uri) %>%
-  dplyr::select(ssh.id, ssh.label,tadirah.id, tadirah.uri) %>%
+                tadirah.id = concept.code) %>%
+  dplyr::select(ssh.id, tadirah.id) %>%
   dplyr::distinct() -> df.tools.ssh.tadirah
-
-# Mapping between SSH and TAPoR
-readr::read_csv("ssh-open-marketplace/ssh_tools-classification.csv") %>%
-  tibble::as_tibble() %>%
-  dplyr::filter(source.label == "TAPoR") %>%
-  dplyr::rename(ssh.id = persistentId,
-                ssh.label = label,
-                tapor.id = sourceItemId) %>%
-  dplyr::select(ssh.id, ssh.label,tapor.id) %>%
-  dplyr::distinct() -> df.tools.ssh.tapor
 
 # df with mapping from TAPoR to Wikidata
 load("tapor/tapor_tools-wikidata.rda")
@@ -52,17 +54,22 @@ df.tools.tapor.wd <- data.tapor.wikidata %>%
 remove(data.tapor.wikidata)
 
 # join tool lists
-## SSH tools and TaDiRAH classification on Wikidata
-df.tools.classification.wd <- full_join(df.tools.ssh.tadirah, df.tadirah.wd) %>%
-  dplyr::rename(wd.tadirahid = wd.item) %>%
-  # add tapor IDs
-  left_join(df.tools.ssh.tapor) %>%
-  # add Wikidata QIds based on tapor IDs
-  left_join(df.tools.tapor.wd)
+## join SSH and TAPoR
+full_join(df.tools.ssh.tapor, df.tools.tapor.wd) %>%
+  # add TaDiRAH
+  left_join(df.tools.ssh.tadirah) %>%
+  # add Wikidata items for TaDiRAH
+  left_join(df.tadirah.wd, by = c("tadirah.id")) %>%
+  dplyr:: rename(wd.item = wd.item.x,
+                 wd.item.tadirah = wd.item.y,
+                 wd.label.tadirah = wd.label) -> df.tools.classification.wd
 
+# reduced data set
 df.tools.classification.wd %>%
-  dplyr::select(ssh.id, ssh.label, tapor.id, wd.item, wd.tadirahid, tadirah.uri) -> df.tools.classification.wd.basic
+  dplyr::select(ssh.id, ssh.label, tapor.id, wd.item, wd.item.tadirah, tadirah.uri) -> df.tools.classification.wd.basic
 # save results
 save(df.tools.classification.wd, file = "tools_tadirah-wd.rda")
-write.table(df.tools.classification.wd, file = "tools_tadirah-wd.csv")
-write.table(df.tools.classification.wd.basic, file = "tools_tadirah-wd_basic.csv")
+write.table(df.tools.classification.wd, file = "tools_tadirah-wd.csv", sep = ",", quote = T)
+write.table(df.tools.classification.wd.basic, file = "tools_tadirah-wd_basic.csv", sep = ",", quote = T)
+
+

@@ -116,33 +116,38 @@ f.scrape.gepris.project.desc <- function(project.id, delay) {
     project.id = as.character(project.id),
     # data from "details"
     project.title = f.get.text(v.page, paste(v.xpath.details, "h1[1]", sep = "/")),
-    fachlicheZuordnung = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'name'][text() = 'Fachliche Zuordnung']/following-sibling::span[@class = 'value']", sep = "//")),
+    discipline = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'name'][text() = 'Fachliche Zuordnung']/following-sibling::span[@class = 'value']", sep = "//")),
     dates = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'name'][text() = 'Förderung']/following-sibling::span[@class = 'value']", sep = "//")),
     # data from description
     project.desc = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']", sep = "/")),
-    programme = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[1]/span[@class = 'value']", sep = "/"))
+    programme = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[1]/span[@class = 'value']", sep = "/")),
     # international cooperation: country
-    #collaborator.country = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[2]/span[@class = 'value']", sep = "/"))
+    collaborator.country = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[2]/span[@class = 'value']", sep = "/"))
   ) %>%
     # process dates
   mutate(onset = as.double(str_replace(dates, '^.*?(\\d{4}).*$', '\\1')),
          terminus = as.double(str_replace(dates, '^.*(\\d{4})*.*(\\d{4}).*?$', '\\2')))
-  #print(f.get.text(v.page, v.xpath.description))
-  df.desc <- dplyr::tibble(
-    project.id = as.character(project.id),
-    # data from description
-    # international cooperation: country
-    collaborator.country = f.get.text(v.page, paste(v.xpath.description, 
-            "div/span[@class = 'name'][contains(text(), 'Internationaler Bezug')]/following-sibling::span[@class = 'value']", sep = "/"))
-  )
-  df.desc
+  
+  df.details
 }
+# create an empty placeholder dataframe 
+df.projects <- data.frame(
+  project.id = character(),
+  project.title = character(),
+  discipline = character(),
+  dates = character(),
+  onset = double(),
+  terminus = double(),
+  project.desc = character(),
+  programme = character(),
+  collaborator.country = character()
+)
 ```
 
 Test the scraping functions with a complex project
 
 ```{r test-scrape-gepris-project}
-v.project = '100000777' #'100000777' # '158416540'
+v.project = '158416540' #'100000777' # '158416540'
 f.scrape.gepris.project.desc(v.project, 1)
 ```
 
@@ -161,6 +166,12 @@ f.scrape.gepris.project.applicants <- function(project.id) {
     applicant.name = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'value'][starts-with(a/@href, '/gepris/person')]/a", sep = "//"))
   )
 }
+# create an empty placeholder dataframe 
+df.applicants <- data.frame(
+  project.id = character(),
+  applicant.id = character(),
+  applicant.name = character()
+)
 ```
 
 Test the scraping functions with a complex project
@@ -186,9 +197,14 @@ f.scrape.gepris.project.collaborators <- function(project.id) {
       '^.*?(\\d+)$', '\\1'),
     collaborator.name = f.get.text(v.page, paste(v.xpath.description, 
             "div/span[@class = 'name'][contains(text(), 'Beteiligte Personen')]/following-sibling::span[@class = 'value']/a[starts-with(@href, '/gepris/person')]", sep = "/"))
-    #collaborator.country = f.get.text(v.page, paste(v.xpath.description, "div[@id='projektbeschreibung']//span[@class = 'name'][. = 'Internationaler Bezug']/follow-sibling::span[@class = 'value']", sep = "/")),
   )
 }
+# create an empty placeholder dataframe 
+df.applicants <- data.frame(
+  project.id = character(),
+  collaborator.id = character(),
+  collaborator.name = character()
+)
 ```
 
 Test the scraping functions with a complex project
@@ -215,7 +231,7 @@ df.ids.project <- read_csv(here("data/dfg/dfg_project-ids.csv")) %>%
 
 ## 2. Iterate over project IDs
 
-We first create empty tibbles by running the scrape functions on an arbitrary project ID and then deleting all data from them.
+We have already created empty dataframes to be filled iteratively.
 
 ```{r}
 # create empty tibbles
@@ -232,14 +248,15 @@ df.collaborators <- f.scrape.gepris.project.collaborators(v.project) %>%
 v.onset = 1
 v.terminus = 2
 for(project.id in df.ids.project[v.onset:v.terminus, ]$project.id) {
-  print(paste0("Scraping DFG project no.", project.id, " from GEPRIS"))
+  print(paste0("try and scrape DFG project no.", project.id, " from GEPRIS"))
   # test if the project ID is already present in the target tibble
-  ifelse(df.projects$project.id == project.id,
-         print(paste('Project no.', project.id, 'has already been scraped', sep = " ")),
+  ifelse(project.id %in% df.projects$project.id,
+         print(paste0('project no.', project.id, ' has already been scraped')),
     #  else scrape data for project ID
-    df.projects <- df.projects %>%
-      dplyr::add_row(f.scrape.gepris.project.desc(project.id, 0.5)) 
+     df.projects <- df.projects %>%
+        dplyr::add_row(f.scrape.gepris.project.desc(project.id, 0.5))
   )
+  #case_when( project.id %in% df.projects$project.id ~ print(paste0("Scraping DFG project no.", project.id, " from GEPRIS")))
 }
 head(df.projects, 5)
 ```

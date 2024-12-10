@@ -1,0 +1,186 @@
+---
+title: "Scrape GEPRIS"
+author: "Till Grallert"
+format: html
+editor: visual
+---
+
+Initially it seemed simple to scrape all entries from the database as the URLs follow the pattern `https://gepris.dfg.de/gepris/projekt/{ID}` with numerical IDs. However, as examples showed that these can have at least 9 digits, a simple incrementing function would take more than 25 years with a one second delay between each call to the server in order to scrape the 135273 actual projects listed in GEPRIS (because IDs do not form an uninterrupted sequence of numbers this attempt would make many unnecessary calls).
+
+The first step, therefore, was to scrape the existent project IDs from the catalogue pages. In total this would require to iterate over 2706 catalogue pages with 50 projects IDs each but could be further decreased by limiting our call to a specific sub-field, namely the humanities, encoded in the catalogue URLs as `&fachgebiet=11`. This would reduce the number of catalogue pages to 319.
+
+### prepare the environment
+
+In order to scrape websites and extract information based on their position within the parsed HTML5 / XML, we need to load the `rvest()` library.
+
+```{r}
+library(tidyverse)
+library(rvest)
+library(here)
+```
+
+We also need a small helper function to extract the textual content of any element or attribute within a given HTML stream.
+
+```{r}
+# input for the xpath parameter is a string
+f.get.text <- function(html, xpath) {
+  rvest::html_elements(html, xpath = xpath) %>%  # return all nodes for which the XPath is true
+    rvest::html_text2()
+}
+```
+
+### Scrape the relevant project IDs from the catalogue
+
+The following function scrapes all project IDs from a GEPRIS catalogue page.
+
+```{r}
+f.scrape.gepris.ids <- function(url) {
+  v.page = rvest::read_html(url)
+  v.xpath.item = "/html/body//div[@class = 'listbox2']/div[@id = 'liste']/div"
+  v.urls.projects <- ''
+  for (item in html_elements(v.page, xpath = v.xpath.item)) {
+    v.urls.projects <- append(v.urls.projects,
+                            f.get.text(item, "div[@class = 'results']/h2[1]/a/@href"),
+                            after = 1)
+  }
+  str_replace(v.urls.projects, '^.*?(\\d+)$', '\\1')
+}
+```
+
+We can now use this function iterate over the catalogue pages using our knowledge of the URL patterns:
+
+-   '&index=0' needs to be incremented by 50
+-   '&fachgebiet=11' indicates humanities
+
+```{r}
+## parts of the URL as variables. 
+v.url.base = "https://gepris.dfg.de/gepris/OCTOPUS"
+v.url.params = "findButton=historyCall&context=projekt&einrichtungsart=-1&nurProjekteMitAB=false&pemu=%23&teilprojekte=true&zk_transferprojekt=false&hitsPerPage=50"
+v.url.param.area = "fachgebiet=" # 11: humanities
+v.url.param.index = "index="
+v.url.param.task = "task=doKatalog"        # doSearchExtended, doKatalog
+v.url.param.country = "continentId=5&countryKey=ISR" # ISR: Israel. I haven't got this to work yet
+```
+
+We also ought to be kind to the server and add some delay (unfortunately their really rudimentary robots.txt did not provide any guidance for crawlers).
+
+```{r scrape-gepris-ids, eval=FALSE, include=FALSE}
+# set delay in seconds
+v.delay = 0.1
+
+# iterate over catalogue pages with 50 results each to scrape all project IDs
+v.ids.project = c('')
+v.onset = 0
+v.terminus = 1000 #319 # terminus depends on the number of expected results.
+for (page in v.onset:v.terminus) {
+  print(paste('scrape GEPRIS IDs: page', page + 1, 'of', v.terminus + 1))       # progress message
+  v.url = paste0(v.url.base, '?', v.url.params, '&', v.url.param.task,           # compose target URL
+                 #'&', v.url.param.area, '11',                                   # limit to a field: humanities
+                 '&', v.url.param.index, page * 50) 
+  v.ids.project <- append(v.ids.project, f.scrape.gepris.ids(v.url), after = 1) # scrape URL and amend list of IDs
+  Sys.sleep(v.delay)                                                            # delay
+}
+
+# convert to tibble
+df.ids.project <- tibble(id = v.ids.project) %>%
+  dplyr::mutate(id = na_if(id, '')) %>%
+  tidyr::drop_na() %>%
+  dplyr::arrange(id)
+```
+
+```{r, eval=FALSE, include=FALSE}
+# save to disk
+write.table(df.ids.project, file = here("data/dfg/dfg_project-ids-humanities.csv"), row.names = F, sep = ",")
+```
+
+```{r load-grepris-ids, include=FALSE}
+# load DFG project IDs from file
+df.ids.project <- read_csv(here("data/dfg/dfg_project-ids-humanities.csv"))
+```
+
+### get individual project details
+
+```{r}
+f.scrape.gepris.project.desc <- function(project.id) {
+  v.url.base = "https://gepris.dfg.de/gepris/projekt/"
+  v.url = paste0(v.url.base, project.id)
+  v.page = rvest::read_html(v.url)
+  v.xpath.details = "/html/body//div[@class = 'details']"
+  v.xpath.description = "/html/body//div[@id = 'projektbeschreibung']"
+  dplyr::tibble(
+    project.id = as.character(project.id),
+    # data from "details"
+    project.title = f.get.text(v.page, paste(v.xpath.details, "h1[1]", sep = "/")),
+    fachlicheZuordnung = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'name'][text() = 'Fachliche Zuordnung']/following-sibling::span[@class = 'value']", sep = "//")),
+    dates = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'name'][text() = 'Förderung']/following-sibling::span[@class = 'value']", sep = "//")),
+    # data from description
+    project.desc = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']", sep = "/")),
+    programme = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[1]/span[@class = 'value']", sep = "/")),
+    # international cooperation: country
+    collaborator.country = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[2]/span[@class = 'value']", sep = "/"))
+  ) %>%
+    # process dates
+  mutate(onset = as.double(str_replace(dates, '^.*?(\\d{4}).*$', '\\1')),
+         terminus = as.double(str_replace(dates, '^.*(\\d{4})*.*(\\d{4}).*?$', '\\2')))
+}
+f.scrape.gepris.project.applicants <- function(project.id) {
+  v.url.base = "https://gepris.dfg.de/gepris/projekt/"
+  v.url = paste0(v.url.base, project.id)
+  v.page = rvest::read_html(v.url)
+  v.xpath.details = "/html/body//div[@class = 'details']"
+  dplyr::tibble(
+    project.id = as.character(project.id),
+    # data from "details"
+    applicant.id = str_replace(
+      f.get.text(v.page, paste(v.xpath.details, "span[@class = 'value']/a[starts-with(@href, '/gepris/person')]/@href", sep = "//")),
+      '^.*?(\\d+)$', '\\1'),
+    applicant.name = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'value'][starts-with(a/@href, '/gepris/person')]/a", sep = "//"))
+  )
+}
+f.scrape.gepris.project.collaborators <- function(project.id) {
+  v.url.base = "https://gepris.dfg.de/gepris/projekt/"
+  v.url = paste0(v.url.base, project.id)
+  v.page = rvest::read_html(v.url)
+  v.xpath.description = "/html/body//div[@id = 'projektbeschreibung']"
+  dplyr::tibble(
+    project.id = as.character(project.id),
+    collaborator.id = str_replace(
+      f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[3]/span[@class = 'value']/a[starts-with(@href, '/gepris/person')]/@href", sep = "//")),
+      '^.*?(\\d+)$', '\\1'),
+    collaborator.name = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[3]/span[@class = 'value']/a", sep = "/"))
+  )
+}
+```
+
+Test this scraping function with a complex project
+
+```{r test-scrape-gepris-project}
+v.project = '158416540'
+f.scrape.gepris.project.desc(v.project)
+f.scrape.gepris.project.applicants(v.project)
+f.scrape.gepris.project.collaborators(v.project)
+```
+
+# iterate over projects
+
+1. Iterate over a range of project IDs (or all of them) and scrape the details for each.
+2. Scrape the details for each involved person based on a list of unique IDs from those involved in the scraped projects
+
+
+```{r eval=FALSE, include=FALSE}
+# iterate through a range of project IDs
+df.dfg.projects = f.scrape.gepris.project(df.ids.project[1, "id"])
+v.onset = 2
+# set the terminus: for testing purposes this could be "v.onset + 10"
+v.terminus = nrow(df.ids.project)
+for(id in df.ids.project[v.onset:v.terminus, ]$id) {
+  print(paste("Scraping DFG project no.", id, "from GEPRIS", sep = " "))
+  df.dfg.projects <- df.dfg.projects %>%
+    add_row(f.scrape.gepris.entry(id))
+  Sys.sleep(0.5)
+}
+
+# save output
+save(df.dfg.projects, file = "dfg_projects.rda")
+write.table(df.dfg.projects, file = "dfg_projects.csv", row.names = F, sep = ",")
+```

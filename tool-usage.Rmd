@@ -170,7 +170,7 @@ Upon closer inspection, it turns out that not all abstracts are complete TEI XML
 
 ## scrape DFG GEPRIS
 
-Initially it seemed simple to scrape all entries from the database as the URLs follow the pattern `https://gepris.dfg.de/gepris/projekt/{ID}` with numerical IDs. However, as examples showed that these can have at least 9 digits, a simple incrementing function would take more than 25 years with a one second delay between each call to the server in order the 135273 actual projects listed in GEPRIS (because IDs do not form an uninterrupted sequence of numbers this attempt would make many unnecessary calls).
+Initially it seemed simple to scrape all entries from the database as the URLs follow the pattern `https://gepris.dfg.de/gepris/projekt/{ID}` with numerical IDs. However, as examples showed that these can have at least 9 digits, a simple incrementing function would take more than 25 years with a one second delay between each call to the server in order to scrape the 135273 actual projects listed in GEPRIS (because IDs do not form an uninterrupted sequence of numbers this attempt would make many unnecessary calls).
 
 The first step, therefore, was to scrape the existent project IDs from the catalogue pages. In total this would require to iterate over 2706 catalogue pages with 50 projects IDs each but could be further decreased by limiting our call to a specific sub-field, namely the humanities, encoded in the catalogue URLs as `&fachgebiet=11`. This would reduce the number of catalogue pages to 319.
 
@@ -225,15 +225,17 @@ We also ought to be kind to the server and add some delay (unfortunately their r
 
 ```{r scrape-gepris-ids, eval=FALSE, include=FALSE}
 # set delay in seconds
-v.delay = 2
+v.delay = 0.02
 
 # iterate over catalogue pages with 50 results each to scrape all project IDs
 v.ids.project = c('')
-for (i in 0:319) {
-  v.url = paste0(v.url.part.1, i * 50, v.url.part.2)
-  v.ids.project <- append(v.ids.project, f.scrape.gepris.ids(v.url), after = 1)
-  # delay
-  Sys.sleep(v.delay)
+v.onset = 0
+v.terminus = 350 #319
+for (page in v.onset:v.terminus) {
+  print(paste('scrape GEPRIS IDs: page', page + 1, 'of', v.terminus + 1))       # progress message
+  v.url = paste0(v.url.part.1, page * 50, v.url.part.2)                         # compose target URL
+  v.ids.project <- append(v.ids.project, f.scrape.gepris.ids(v.url), after = 1) # scrape URL and amend list of IDs
+  Sys.sleep(v.delay)                                                            # delay
 }
 
 # convert to tibble
@@ -273,7 +275,11 @@ f.scrape.gepris.entry <- function(project.id) {
     fachlicheZuordnung = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'name'][text() = 'Fachliche Zuordnung']/following-sibling::span[@class = 'value']", sep = "//")),
     dates = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'name'][text() = 'Förderung']/following-sibling::span[@class = 'value']", sep = "//")),
     projektText = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']", sep = "/")),
-    dfgVerfahren = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[1]/span[@class = 'value']", sep = "/"))
+    dfgVerfahren = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[1]/span[@class = 'value']", sep = "/")),
+    # international cooperation: country
+    coopCountry = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[2]/span[@class = 'value']", sep = "/")),
+    # international cooperation: people
+    coopPeople = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[3]/span[@class = 'value']", sep = "/"))
   )
   df.gepris
 }
@@ -282,7 +288,7 @@ f.scrape.gepris.entry <- function(project.id) {
 Test this scraping function
 
 ```{r test-scrape-gepris-project}
-f.scrape.gepris.entry(445975300)
+f.scrape.gepris.entry(516726624) -> df.test.project
 ```
 
 Iterate over a range of project IDs (or all of them) and scrape the details page for each.

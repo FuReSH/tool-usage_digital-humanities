@@ -120,9 +120,9 @@ f.scrape.gepris.project.desc <- function(project.id, delay) {
     dates = f.get.text(v.page, paste(v.xpath.details, "span[@class = 'name'][text() = 'Förderung']/following-sibling::span[@class = 'value']", sep = "//")),
     # data from description
     project.desc = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']", sep = "/")),
-    programme = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[1]/span[@class = 'value']", sep = "/")),
+    programme = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[1]/span[@class = 'value']", sep = "/"))
     # international cooperation: country
-    collaborator.country = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[2]/span[@class = 'value']", sep = "/"))
+    #collaborator.country = f.get.text(v.page, paste(v.xpath.description, "div[@id = 'projekttext']/following-sibling::div[2]/span[@class = 'value']", sep = "/"))
   ) %>%
     # process dates
   mutate(onset = as.double(str_replace(dates, '^.*?(\\d{4}).*$', '\\1')),
